@@ -311,6 +311,9 @@ Burghers/Jains/Vaisyas:
 Clergy:
     Added a privilege based on land ownership, giving +10% Morale of Armies and +5% Land Maintenance Modifier at 100%.
 
+Cossacks:
+	"Recruit Cossack Leaders" privilege now gives +1 Leaders without Upkeep instead of +1 Land Leader Shock.
+
 Nobility:
     "Boyars - Landed Army" privilege now gives up to +10% Cavalry Combat Ability instead of +20%.
     "Boyars - Rynda Infantry" privilege now gives up to +10% Infantry Combat Ability and -10% Infantry Cost instead of +15% and -20%.
@@ -466,8 +469,10 @@ Anglican:
 	"Progress of the Supreme Governor" aspect reduced to 150 church power cost.
 
 Orthodox:
-	"Icon of St. Michael" no longer gives manpower recovery speed.
-	Max patriarch authority now gives +25% Manpower instead of +33%.
+    "Icon of Eleusa" now gives -5 National Unrest and -0.5 Interest Per Annum, replacing its previous modifiers.
+    "Icon of St. Nicholas" now gives -15% Core Creation Cost and -30% Overextension Impact Modifier, replacing its previous modifiers.
+    "Icon of St. John Climacus" now gives -5% Technology Cost and -5% Idea Cost, replacing its previous modifiers.
+	Max Patriarch Authority now gives +25% Manpower instead of +33%.
 
 Coptic:
 	Now grants +20% Defensiveness as a base modifier instead of +15%.
@@ -476,8 +481,9 @@ Coptic:
 	"Will of the Martyrs" now grants +5% Discipline instead of +2.5%.
 
 All Muslim denominations:
+    Legalism and Mysticism no longer affect estate loyalty.
 	"Call on Religious Followers" Mysticism action now gives 0.2 years of manpower instead of 2.
-	No longer require diplomatic relations to invite scholars.
+	No longer requires diplomatic relations or piety to invite scholars.
 
 Sunni:
 	Now has +10% Global Tax Modifier as a base modifier instead of cav-to-inf ratio.

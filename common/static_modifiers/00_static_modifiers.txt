@@ -866,9 +866,6 @@ positive_piety = { #As of 1.23 Legalism
 	technology_cost = -0.1
 	global_manpower_modifier = 0.20
 	global_tax_modifier = 0.20
-	brahmins_muslim_loyalty_modifier = -0.1
-	church_loyalty_modifier = 0.1
-	piety_dhimmi_loyalty_modifier = -0.1
 }
 
 #For convenience, its multiplied by negative piety in code.
@@ -876,9 +873,6 @@ negative_piety = { #As of 1.23 Mysticism
 	land_morale = 0.10
 	global_missionary_strength = 0.03
 	idea_cost = -0.1
-	brahmins_muslim_loyalty_modifier = 0.1
-	piety_church_loyalty_modifier = -0.1
-	dhimmi_loyalty_modifier = 0.1
 }
 
 defender_of_faith = {

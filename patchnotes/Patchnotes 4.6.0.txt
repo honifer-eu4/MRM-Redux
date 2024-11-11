@@ -3,3 +3,20 @@ MRM Redux Patch 4.6.0:
 ############# General/Bugfixes ###############
 
 Updated mod to version 1.35.5.
+
+################# Estates ####################
+
+Cossacks:
+    "Recruit Cossack Leaders" privilege now gives +1 Leaders without Upkeep instead of +1 Land Leader Shock.
+
+################ Religions ###################
+
+All Muslim dominations:
+    All schools no longer have piety requirements.
+    Legalism and Mysticism no longer affect estate loyalty.
+
+Orthodox:
+    "Icon of St. Michael" now gives +10% Manpower Recovery Speed again.
+    "Icon of Eleusa" now gives -5 National Unrest and -0.5 Interest Per Annum, replacing its previous modifiers.
+    "Icon of St. Nicholas" now gives -15% Core Creation Cost and -30% Overextension Impact Modifier, replacing its previous modifiers.
+    "Icon of St. John Climacus" now gives -5% Technology Cost and -5% Idea Cost, replacing its previous modifiers.
