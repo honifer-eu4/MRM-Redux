@@ -1,0 +1,5 @@
+MRM Redux Patch 4.6.0:
+
+############# General/Bugfixes ###############
+
+Updated mod to version 1.35.5.

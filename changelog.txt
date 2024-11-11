@@ -1,4 +1,4 @@
-MRM Redux Version 4.0
+MRM Redux Version 4.6
 
 Notes: This changelog will mostly be covering changes that are not obvious in the game, such as events, defines, etc. Things like specific missions, map changes, idea group changes, etc. can be found in game.
 
