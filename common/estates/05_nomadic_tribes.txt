@@ -11,6 +11,12 @@ estate_nomadic_tribes = {
 		NOT = { has_government_attribute = disables_estate_nomadic_tribes }
 		NOT = { has_disabled_estate = { estate = estate_nomadic_tribes } }
 		OR = { 
+			OR = {
+				tag = MOR
+				tag = TUN 
+				was_tag = MOR
+				was_tag = TUN
+			}
 			has_country_modifier = enable_estate_nomadic_tribes_modifier 
 			has_country_flag = turkoman_unlocked_tribes
 			has_government_attribute = enables_estate_nomadic_tribes
