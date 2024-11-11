@@ -196,14 +196,9 @@ swe_scandinavian_colonialism_mission_slot = {
 				trade_goods = livestock
 				trade_goods = fish
 			}
-			if = {
-				limit = {
-					ROOT = { NOT = { has_country_flag = had_the_dacke_feud } }
-				}
-				OR = {
-					NOT = { development = 10 }
-					NOT = { has_manufactory_trigger = yes }
-				}
+			OR = {
+				NOT = { development = 10 }
+				NOT = { has_manufactory_trigger = yes }
 			}
 			else = {
 				NOT = { has_manufactory_trigger = yes }
@@ -223,20 +218,14 @@ swe_scandinavian_colonialism_mission_slot = {
 				has_manufactory_trigger = yes
 				value = 10
 			}
-			OR = {
-				custom_trigger_tooltip = {
-					tooltip = swe_swedish_peasantry_ct
-					has_country_flag = had_the_dacke_feud
+			num_of_owned_provinces_with = {
+				OR = {
+					trade_goods = grain
+					trade_goods = livestock
+					trade_goods = fish
 				}
-				num_of_owned_provinces_with = {
-					OR = {
-						trade_goods = grain
-						trade_goods = livestock
-						trade_goods = fish
-					}
-					development = 10
-					value = 10
-				}
+				development = 10
+				value = 10
 			}
 		}
 		effect = {

@@ -5053,7 +5053,6 @@ defined_text = {
 	text = { localisation_key = peasant_war								trigger = { has_disaster = peasant_war } }
 	text = { localisation_key = pol_struggle_for_royal_power_disaster	trigger = { has_disaster = pol_struggle_for_royal_power_disaster } }
 	text = { localisation_key = prussian_confederation_disaster			trigger = { has_disaster = prussian_confederation_disaster } }
-	text = { localisation_key = the_dacke_feud							trigger = { has_disaster = the_dacke_feud } }
 	text = { localisation_key = time_of_troubles						trigger = { has_disaster = time_of_troubles } }
 	text = { localisation_key = war_of_the_roses						trigger = { has_disaster = war_of_the_roses } }
 }

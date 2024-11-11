@@ -408,6 +408,9 @@ Theocracy:
 
 ########################## Disasters ##########################
 
+Dacke War: 
+	Removed from game.
+
 Dutch Revolt:
 	Removed from game.
 
