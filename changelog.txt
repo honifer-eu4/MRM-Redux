@@ -198,7 +198,7 @@ HRE:
 	Limitations on government rank removed. You can now always upgrade your rank in the Empire (provided you meet the dev/prestige reqs).
 	Diplomatic actions of "Grant Electorate", "Remove Electorate", "Grant Free City Status", "Demand Unlawful Territory", and "Bestow Imperial Grace" removed.
 	Most sources/penalties of imperial authority gain removed.
-	Tax/manpower/FL gained from free cities/princes in HRE removed, replaced with flat +25 force limit and +25k manpower triggered modifier. 
+	Tax/manpower/FL gained from free cities/princes in HRE removed, replaced with flat +40 force limit and +40k manpower triggered modifier. 
 	Development cost removed from first HRE reform (will be replaced by triggered modifier for HRE minors).
 	HRE minors now gain a triggered modifier granting -5% Development Cost, -10% Aggressive Expansion Impact, and -0.025 Monthly Autonomy Change until 1500.
 	Button to dismantle the HRE removed.

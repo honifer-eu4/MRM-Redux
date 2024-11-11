@@ -5,7 +5,7 @@ successful_bid_for_imperial_crown = {
 
 hab_austrian_bohemia = {
 	legitimacy = 1
-	global_heretic_missionary_strength = 0.05
+	years_to_integrate_personal_union = -30
 }
 
 estate_magyars_hungarian_autonomy_mod = {

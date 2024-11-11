@@ -366,3 +366,4 @@
  habsburg_empire:0 "Greater Austrian Empire"
  habsburg_empire_desc:0 "We have expanded our rule across Europe and declared a new Empire with Wien as its center."
  FUGGERS_SCALING_BONUS_TOOLTIP:0 "§YScales with Loyalty§!\nAt §Y100%§! loyalty the privilege has the following effects:\nYearly Inflation Reduction: §G+0.10§!\nCost of Advisors with Ruler's Culture: §G-15%§!"
+ redux_hab_bohemia_tt:0 "If @BOH Bohemia is our Personal Union, they will gain §G+100§! opinion of us and become our Incorporated Personal Union (we will be able to transfer trade and make vassal income)."
