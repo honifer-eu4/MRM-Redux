@@ -1413,3 +1413,56 @@ preview_mission_branch = {
 	preview_mission_branch_$branch$ = { batch = $batch$ }
 	hidden_effect = { swap_non_generic_missions = yes }
 }
+
+clear_preview_mission_key = {
+	if = {
+		limit = { can_preview_mission_of_key_and_batch = { key = $key$ batch = $batch$ } }
+		clr_country_flag = can_choose_$key$_$batch$_branching_missions
+		clr_preview_loc_branch = { key = $key$ batch = $batch$ }
+	}
+}
+clear_preview_mission_keys_for_batch = {
+	clr_country_flag = has_batch_$batch$_active
+}
+
+clear_mismatching_mission_key = {
+	if = {
+		limit = { has_mission_and_key_mismatch = { mission = $mission$ key = $key$ } }
+		clr_country_flag = can_choose_$key$_$batch$_branching_missions
+		clr_preview_loc_branch = { key = $key$ batch = $batch$ }
+	}
+}
+clear_mismatching_mission_keys_for_batch = {
+	clr_country_flag = has_batch_$batch$_active
+	change_variable = {
+		which = can_preview_missions_var
+		value = -1
+	}
+}
+
+update_mission_previews = {
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT = { has_branching_missions = yes }
+				has_any_previewable_batch_active = yes
+			}
+			clear_preview_mission_keys_for_batch = { batch = 1 }
+			clear_preview_mission_keys_for_batch = { batch = 2 }
+			clear_preview_mission_keys_for_batch = { batch = 3 }
+			set_variable = {
+				which = can_preview_missions_var
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				has_branching_missions = yes
+				has_any_mission_and_key_mismatch = yes
+			}
+			clear_mismatching_mission_keys_for_batch = { batch = 1 }
+			clear_mismatching_mission_keys_for_batch = { batch = 2 }
+			clear_mismatching_mission_keys_for_batch = { batch = 3 }
+		}
+	}
+}
