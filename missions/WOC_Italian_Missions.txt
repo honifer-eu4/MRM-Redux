@@ -1273,7 +1273,7 @@ JHC_ITA_overseas_branch = {
 			}
 			else_if = {
 				limit = {
-					any_country = {
+					any_known_country = {
 						capital_scope = {
 							region = horn_of_africa_region
 						}
@@ -1293,6 +1293,9 @@ JHC_ITA_overseas_branch = {
 					area = central_ethiopia_area
 					area = southern_ethiopia_area
 					area = tigray_area
+					area = damot_area
+					area = hadiya_area
+					area = shewa_area
 				}
 			}
 		}
@@ -1300,7 +1303,7 @@ JHC_ITA_overseas_branch = {
 			if = {
 				limit = {
 					OR = {
-						any_country = {
+						any_known_country = {
 							capital_scope = {
 								region = horn_of_africa_region
 							}
@@ -1321,14 +1324,14 @@ JHC_ITA_overseas_branch = {
 					}
 					if = {
 						limit = {
-							any_country = {
+							any_known_country = {
 								capital_scope = {
 									region = horn_of_africa_region
 								}
 								religion_group = christian
 							}
 						}
-						any_country = {
+						any_ally = {
 							custom_trigger_tooltip = {
 								tooltip = emp_ita_befriend_ethiopia_capital_tt
 								capital_scope = {
@@ -1336,7 +1339,6 @@ JHC_ITA_overseas_branch = {
 								}
 							}
 							religion_group = christian
-							alliance_with = ROOT
 						}
 					}
 					else = {
@@ -1351,11 +1353,49 @@ JHC_ITA_overseas_branch = {
 							type = all
 							country_or_non_sovereign_subject_holds = ROOT
 						}
+						damot_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
 						tigray_area = {
 							type = all
 							country_or_non_sovereign_subject_holds = ROOT
 						}
+						shewa_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+						hadiya_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
 					}
+				}
+			}
+			else = {
+				central_ethiopia_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				southern_ethiopia_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				damot_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				tigray_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				shewa_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				hadiya_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
 		}
