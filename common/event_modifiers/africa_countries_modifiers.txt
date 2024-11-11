@@ -1,0 +1,5 @@
+kon_modernization_modifier = {
+    technology_cost = -0.1
+    idea_cost = -0.1
+    movement_speed = 0.1
+}

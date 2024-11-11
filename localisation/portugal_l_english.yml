@@ -1,0 +1,22 @@
+﻿l_english:
+ #Missions
+ gc_por_consolidate_iberia_desc:0 "With the Castilians being defeated, there is a power vacuum in Iberia that is waiting to be filled. However, with France to the north, the Italians to the east, and worst of all, the heathens to our south - we must act quickly before any potential enemies can gain a foothold."
+ gc_por_consolidate_iberia_title:0 "Consolidate Iberia"
+ gc_por_conquer_west_africa_title:0 "West African Ports"
+ gc_por_conquer_west_africa_desc:0 "The coast of West Africa is of vital strategic importance. Not only is it essential to establish supply stations for ships sailing around the Cape, but we must also secure a steady supply of African slaves for transport to our colonies in the Americas."
+ gc_por_invade_kongo_title:0 "Invade the Kongo"
+ gc_por_invade_kongo_desc:0 "The African kingdoms that currently control the Kongo are so primitive that they will be easy to conquer. We should quickly secure the coast as a base to push inwards."
+ gc_por_conquer_zimbabwe_title:0 "Seize Zimbabwe"
+ gc_por_conquer_zimbabwe_desc:0 "There is gold to be found in East Africa, and the mines are within reachable distance of our colonies on the coast. We must seize these mines for the glory of Portugal!"
+
+ #Modifiers
+ redux_por_gold_modifier:0 "African Gold Rush"
+ desc_redux_por_gold_modifier:0 "Portuguese adventurers are flocking to Africa to exploit the gold mines there."
+
+ #Events
+ 
+ #Tooltips
+
+ #Other
+ greater_portuguese_monarchy_reform:0 "Lusitanian Empire"
+ greater_portuguese_monarchy_reform_desc:0 ""

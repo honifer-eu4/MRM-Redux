@@ -1,0 +1,20 @@
+redux_ibadi_tunis_tolerant = {
+    tolerance_heretic = 3
+    religion = yes
+}
+
+redux_ibadi_tunis_harsh = {
+    global_missionary_strength = 0.02
+    religion = yes
+}
+
+redux_sunni_tunis = {
+    tolerance_own = 1
+    global_missionary_strength = 0.01
+    religion = yes
+}
+
+redux_italy_united = {
+    infantry_power = 0.05
+    trade_efficiency = 0.1
+}

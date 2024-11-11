@@ -1,0 +1,14 @@
+bra_march_legacy = {
+    infantry_power = 0.1
+    land_forcelimit_modifier = 0.1
+}
+
+bra_conqueror_modifier = {
+    core_creation = -0.05
+    diplomatic_annexation_cost = -0.05
+}
+
+bra_careful_modifier = {
+    reduced_liberty_desire = 10
+    diplomatic_reputation = 1
+}

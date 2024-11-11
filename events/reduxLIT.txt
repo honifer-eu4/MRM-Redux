@@ -1,0 +1,58 @@
+namespace = redux_lit
+normal_or_historical_nations = yes
+
+# The Fate of Russia
+
+country_event = {
+    id = redux_lit.1
+    title = redux_lit.1.t
+    desc = redux_lit.1.d
+    picture = REVOLUTION_eventPicture
+
+    is_triggered_only = yes
+
+    option = { 
+        name = redux_lit.1.opta
+        add_years_of_income = 1
+        capital_scope = {
+			cossack_cavalry = ROOT 
+			cossack_cavalry = ROOT 
+			cossack_cavalry = ROOT 
+			cossack_cavalry = ROOT 
+			cossack_cavalry = ROOT 
+		}
+        add_country_modifier = {
+			name = "lit_conquered_rus"
+			duration = -1
+		}
+        add_country_modifier = { 
+			name = broke_the_rus
+			duration = 9125 
+		}
+    }
+
+    option = {
+        name = redux_lit.1.optb
+        add_yearly_manpower = 1
+        capital_scope = { 
+			streltsy_infantry = ROOT 
+			streltsy_infantry = ROOT 
+			streltsy_infantry = ROOT 
+			streltsy_infantry = ROOT 
+			streltsy_infantry = ROOT 
+			streltsy_infantry = ROOT 
+			streltsy_infantry = ROOT 
+			streltsy_infantry = ROOT 
+			streltsy_infantry = ROOT 
+			streltsy_infantry = ROOT 
+		}
+        add_country_modifier = {
+			name = "lit_lord_of_the_rus"
+			duration = -1
+		}
+        add_country_modifier = {
+            name = "redux_lith_rus" 
+            duration = 9125
+        }
+    }
+}

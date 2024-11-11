@@ -1,0 +1,70 @@
+MRM Redux Update 2.0:
+
+################### General ##################
+
+Game Rules added to the game, automatically blocking banned mechanics such as Enforce Peace and GP Interventions. These Game Rules can be turned off through Ming decisions by the host.
+
+Events:
+    Event for East Frisia to join the HRE removed.
+
+Mercenary Companies:
+    Added triggered modifier for having 4 and 8 merc companies recruited, giving +1.5 Yearly Army Tradition each.
+    New mercenary companies added for completing every mil group. Each mil group has 1 "main" group then 3 "reserve" groups (1 unlocked with each age after Age of Discovery).
+    New mercenary companies added with the following conditions: Austria (when HRE Emperor), Nordic primary culture, Orthodox religion (Lith/Muscovy).
+
+############## Country-specific ##############
+
+England:
+    Reduced crownland necessary to revoke "English Villeinage" privilege.
+    Removed development cost on mission for revoking the privilege.
+
+France:
+    French Absolutist Monarchy no longer gives development for centralizing state.
+    Mission for French Absolutist Monarchy now requires 20% Crownland instead of 50%.
+
+Russia:
+    +5% Discipline in mission tree replaced with +10% Land Force Limit.
+
+Switzerland:
+    Vanilla -0.5 Monthly Global Autonomy modifier in mission tree nerfed to -0.05.
+
+############# Defines/Mechanics ##############
+
+Army Professionalism:
+    Added +15% Supply Limit Modifier for full Army Professionalism.
+    Siege ability reduced to +10% from +30%.
+
+Army Tradition:
+    Siege ability removed.
+
+Buildings:
+    Forts now take 2 building slots. (Note that this is a temporary solution, there are still plans to add fort code in the future.)
+
+Decisions:
+    Decision added to gain independence upon being PU'd.
+
+Defines:
+	Minimum development to promote a culture reduced from 20 to 5.
+
+Edicts:
+	Defensive Edict reduced to +20% Fort Defense instead of +33%.
+
+Ideas: 
+    Maritime Ideas have been readded to the game, reskinned as Logistic Ideas, a group focused on reducing attrition and making troops cheaper. 
+    Expansion Ideas have been readded to the game, reskinned as a group focusing on expanding your nation and providing bonuses such as core creation cost.
+    Court Ideas have been readded to the game, with minor changes to its ideas and policies.
+    Ideas, policies, and events associated with reskinned groups have been modified as needed.
+    Minor rework to other admin ideas to work with reskinned Expansion better.
+
+############# Government Reforms #############
+
+Ethiopia:
+    Move Capital Cost reduced to -25% from -75%.
+    Stability Cost Modifier increased to -20% from -10%.
+
+
+################## Estates ###################
+
+Burghers/Jains/Vaisyas: 
+	"Control Over Monetary Policy" no longer gives Interest Per Annum or All Powers Cost.
+    "Exclusive Trade Rights" can now only be selected every 10 years.

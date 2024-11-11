@@ -1,0 +1,16 @@
+# Danish vassal, Holstein
+vassal = {
+	first = DAN
+	second = SHL
+	start_date = 1444.1.1
+	end_date = 1460.3.6
+}
+
+# Norway 
+
+vassal = {
+	first = DAN
+	second = NOR
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}

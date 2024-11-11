@@ -1,0 +1,60 @@
+﻿l_english:
+ #Missions
+ gc_tun_ibadi_title:0 "The Ibadi Faith"
+ gc_tun_ibadi_desc:0 "The Ibadi denomination of the Muslim faith is claimed to hold even greater legitimacy and age than the Sunni and Shia ones. While some are not convinced, our ruler has answered the call and is determined to lead an Ibadi state. However, is it possible that he is mistaken?"
+ gc_tun_desert_development_title:0 "Settle the Desert"
+ gc_tun_desert_development_desc:0 "Some nations are blessed with rich farmlands and resources. We are not one of those nations, but we will make do with what we have."
+ gc_tun_conquer_italy_desc:0 "Now that the glorious Sicilian Emirate has been restored, we shall do what they never managed to accomplish: march north and bring Genoa and Venice under our rule."
+ gc_tun_conquer_italy_title:0 "Conquer Italy"
+
+ #Modifiers
+ redux_ibadi_tunis_tolerant:0 "Sunni Tolerance"
+ desc_redux_ibadi_tunis_tolerant:0 "We have decided that all Muslims are our brothers in faith, even if they are a bit misguided."
+ redux_ibadi_tunis_harsh:0 "Anti-Sunni Campaigns"
+ desc_redux_ibadi_tunis_harsh:0 "We have decided that all must follow the true faith, no matter what!"
+ redux_sunni_tunis:0 "A Sunni State"
+ desc_redux_sunni_tunis:0 "We have decided against embracing the Ibadi faith."
+ redux_italy_united:0 "Italy United"
+ desc_redux_italy_united:0 "Despite seemingly all the odds being against us, we have managed to unite Italy under our rule."
+
+ #Events
+ redux_tun.1.t:0 "The Ibadi Question"
+ redux_tun.1.d:0 "We must decide whether we wish to commit to making Ibadi our state religion, and whether we should treat the Sunnis with respect or disdain."
+ redux_tun.1.opta:0 "The Sunnis are still our brothers in faith, no matter what."
+ redux_tun.1.optb:0 "The Sunnis are just as bad as heathens. They must be destroyed!"
+ redux_tun.1.optc:0 "Perhaps our ruler was mistaken..."
+ 
+ #Tooltips
+ tunis_ibadi_event_tt:0 "This event will have three options: \nDeal with the Sunnis using a tolerant approach, gaining §G+3 Tolerance of Heretics§!. \nDeal with the Sunnis using a harsh approach, gaining §G+2% Missionary Strength§!. \nRenounce the Ibadi faith and turn back to Sunni, gaining §G+1 Tolerance of the True Faith§! and §G+1% Missionary Strength§! for 20 years."
+ tun_desert_development_tooltip:0 "Completing this mission will give us access to the §YClergy Exploration Expeditions§! estate privilege, which will grant §G-20%§! local development cost in all §YDesert§! and §YCoastal Desert§! provinces."
+
+ #Other
+ TUN_Empire:0 "Emirate Of Sicily"
+ TUN_Empire_ADJ:0 "Sicilian"
+ TUN_Empire_2:0 "Emirate of Italy"
+ TUN_Empire_2_ADJ:0 "Italian"
+ gc_tun_emirate_of_sicily_title:0 "Emirate of Sicily"
+ gc_tun_emirate_of_sicily_desc:0 "Our conquest of Southern Italy has richly increased our wealth and prestige. Many have urged us to take the mantle of the Emirate of Sicily an further the dream of and Islamic Italy. Only glory and the Praise of Allah wait for us down this path."
+ sicilian_emirate_restored:0 "Sicilian Emirate Restored"
+
+ MGB:0 "Maghreb"
+ MGB_ADJ:0 "Maghrebi"
+ form_maghreb_nation_title:0 "Form the Maghrebi Nation"
+ form_maghreb_nation_desc:0 "The Maghreb must stand united if it is to stand at all."
+ MGB_ideas:0 "Maghrebi Ideas"
+ MGB_ideas_start:0 "Maghrebi Traditions"
+ MGB_ideas_bonus:0 "Maghrebi Ideas"
+ mgb_grand_fleet:0 "Grand Fleet"
+ mgb_grand_fleet_desc:0 "Our fleet must stand ready against the Iberian menace!"
+ mgb_moroccan_scholars:0 "Moroccan Scholars"
+ mgb_moroccan_scholars_desc:0 "The scholars of old Morocco have joined our court. Their knowledge and ideas shall spread throughout the Maghreb."
+ mgb_tunisian_merchants:0 "Tunisian Merchants"
+ mgb_tunisian_merchants_desc:0 "The merchants of Tunisia are well experienced in the art of the deal. Now they serve the Maghrebi, and we shall make good use of them."
+ mgb_tunisian_ships:0 "Tunisian Ships"
+ mgb_tunisian_ships_desc:0 "Tunisian naval shipwrights assure us that their galleys are the best in the world. Any who would say otherwise can come and prove it!"
+ mgb_maghrebi_unity:0 "Maghrebi Unity"
+ mgb_maghrebi_unity_desc:0 "The people of the Maghreb flock to the banners, determined to defend Maghreb against her enemies."
+ mgb_pirates_turned_admirals:0 "Pirates Turned Admirals"
+ mgb_pirates_turned_admirals_desc:0 "The old pirates have gained a nationalistic streak, and are joining the Maghrebi navy as experienced naval officers."
+ mgb_tame_the_desert:0 "Tame The Desert"
+ mgb_tame_the_desert_desc:0 "If we are to further develop our nation, then we must not ignore the Maghrebi desert. We must develop methods to gain the most from all our lands."

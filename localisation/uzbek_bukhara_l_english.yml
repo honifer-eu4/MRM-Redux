@@ -1,0 +1,27 @@
+﻿l_english:
+ #Missions
+ shy_rally_the_tribes_title:0 "Rally the Tribes"
+ shy_rally_the_tribes_desc:0 "The many tribes that make up our lands can often be problematic to deal with, but in the end, they do recognize us as their ruler. Speaking of the many dangers and enemies that we face may increase their loyalty to our khanate."
+ shy_reconquer_sibir_title:0 "Reconquer Sibir"
+ shy_reconquer_sibir_desc:0 "The tribes of Sibir have decided to rise up against our rule and forge their own destiny. This cannot be allowed."
+ shy_conquer_mongolia_title:0 "Conquer Mongolia"
+ shy_conquer_mongolia_desc:0 "The Oirat tribes of the east have been fractured and now is the time to strike. Their disunity shall be their weakness."
+ shy_siberian_frontier_title:0 "Siberian Frontier"
+ shy_siberian_frontier_desc:0 "With the Russians safely removed as a threat, we must look at establishing new frontiers for our people. While the west and east both look appealing, perhaps we need to take another look at the wastelands of the north."
+ shy_restore_mongol_empire_title:0 "Restore the Mongol Empire"
+ shy_restore_mongol_empire_desc:0 "Genghis Khan's conquests made him a legend across the entire planet, one that shall never be forgotten. The days of hordes and mighty empire such as his may seem to be in the past, but we have managed to replicate his conquests. Now it is time for us to restore his legacy and immortalize ourselves in the books of history!"
+
+ #Modifiers
+ shy_conquest_of_tibet:0 "Conquest of Tibet"
+ desc_shy_conquest_of_tibet:0 "Tibet has been brought under the rule of our empire."
+ shy_siberian_frontier_mod:0 "Siberian Frontier"
+ desc_shy_siberian_frontier_desc:0 "With the Russians safely removed as a threat, we are now focusing on colonizing the wastelands of Siberia."
+
+ #Events
+ 
+ #Tooltips
+ 
+ #Other
+ embrace_cossacks_title:0 "Embrace The Cossacks"
+ embrace_cossacks_desc:0 "The growing population of cossack tribesmen within our borders has prompted for us to reconsider our reliance on the Dhimmi. It may be in our best interest to abolish the Dhimmi, and organize the Cossacks in their place."
+ embrace_cossacks_effect_tt:0 "Lose the §YDhimmi§! estate. \nGain the §YCossacks§! estate."

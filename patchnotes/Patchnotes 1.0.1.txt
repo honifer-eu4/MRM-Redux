@@ -1,0 +1,31 @@
+MRM Redux Patch 1.0.1:
+
+################### General ##################
+
+Crownland:
+	Crownland changes are now correctly implemented, including seizing land being available at war and extra benefits for higher amounts of crownland.
+
+Drilling:
+	Drill gain buffed to +15 yearly from +10.
+	General skill gain from drilling buffed to average of 90 months from 120.
+
+Forts:
+	Base garrison size increased to 2000 per level from 1000.
+	Siege force needed per fort level reduced to 2x from 3x.
+
+Mercantilism:
+	Full mercantilism now gives an extra +15% Trade Efficiency in addition to its usual modifiers.
+
+Start Dates:
+    Added "Pax Europa", a start date with all of India being controlled by Ming (the AI "console" tag that cannot be attacked or otherwise interacted with)
+
+Trade:
+	Penalty for collecting in nodes other than main node removed.
+
+############## Country-specific ##############
+
+Persia: 
+	Can now be formed by tribes. 
+
+Sweden: 
+	Bugged mission fixed.

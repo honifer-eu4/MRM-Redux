@@ -1,0 +1,20 @@
+﻿l_english:
+ #Missions
+ mam_push_the_turk_title:0 "Push the Turk"
+ mam_push_the_turk_desc:0 "It is time to reclaim our rightful place as leaders of the Turkish tribes. With the destruction of the Osmanglu pretenders, we are in position to reform the Sultante of Rum. Even now the Turkmen flock to our banners!"
+ mam_prepare_to_cross_title:0 "Prepare to Cross"
+ mam_prepare_to_cross_desc:0 "The infidels have taken no time to seize land held by the collapsing Osmanglu dynasty. The Turkish beyliks and tribes have rallied behind us to liberate these lands from the perfidious Magyar and Venetian. We must ensure our navy and army is ready for the crossing, and be swift and decisive."
+ 
+ #Modifiers
+ crushed_the_turk:0 "Defeated the Ottomans"
+ desc_crushed_the_turk:0 "The Ottoman threat has been defeated once and for all, and we are now in the position to reclaim our lost glory!"
+ cross_the_straits:0 "Cross the Straits"
+ desc_cross_the_straits:0 "The City of the World's Desire is calling to us, all we need is a navy to cross."
+ egyptian_mil_westernization_5_modifier:0 "Westernized Land Army"
+ desc_egyptian_mil_westernization_5_modifier:0 "Our army is undergoing tremendous change to become more efficient."
+
+ #Events
+ 
+ #Tooltips
+
+ #Other

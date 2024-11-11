@@ -1,0 +1,34 @@
+government = republic
+add_government_reform = united_cantons_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = swiss
+capital = 165 # Bern
+add_army_professionalism = 0.1
+
+change_estate_land_share = {
+	estate = estate_nobles
+	share = 5
+}
+change_estate_land_share = {
+	estate = estate_church
+	share = 5
+}
+change_estate_land_share = {
+	estate = estate_burghers
+	share = -10
+}
+
+1434.1.1 = {
+	monarch = {
+		name = "Hans Burger"
+		birth_date = 1410.1.1
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = silver_tongue_personality
+	add_ruler_personality = lawgiver_personality
+}

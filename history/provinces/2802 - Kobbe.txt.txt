@@ -1,0 +1,16 @@
+#2802 - Kobbe
+
+culture = tunjur 
+religion = shamanism #Fetishism
+capital = "Kobbe"
+add_core = DAR
+trade_goods = grain
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+owner = DAR
+controller = DAR
+discovered_by = NUB
+is_city = yes
+discovered_by = ETH

@@ -1,0 +1,37 @@
+country_decisions = {
+    redux_discover_africa = {
+        major = yes
+        potential = {
+            ai = no
+            capital_scope = {
+                continent = africa
+            }
+            NOT = { has_country_flag = redux_discovered_africa_flag }
+        }
+        allow = {
+            prestige = 10 
+        }
+        effect = {
+            add_prestige = -10
+            africa = {
+                discover_country = ROOT
+            }
+            west_african_coast_sea_area = {
+                discover_country = ROOT
+            }
+            gulf_of_guinea_sea_area = {
+                discover_country = ROOT 
+            }
+            skeleton_coast_area = {
+                discover_country = ROOT 
+            }
+            swahili_coast_sea_area = {
+                discover_country = ROOT 
+            }
+            cape_of_storms_area = {
+                discover_country = ROOT 
+            }
+            set_country_flag = redux_discovered_africa_flag
+        }
+    }
+}

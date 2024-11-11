@@ -1,0 +1,100 @@
+#Wumpus Mod Modifiers
+#Goes in an event modifiers file in common>event_modifiers
+
+albanian_support = {
+	local_manpower_modifier = 0.15
+	local_governing_cost = -0.25
+	local_unrest = -2
+}
+
+great_greek_rebellion = {
+	tolerance_heathen = -2
+}
+
+lwow_staple_city = {
+	local_development_cost = -0.1
+	province_trade_power_modifier = 0.5
+}
+
+single_currency_commonwealth = {
+	global_tax_modifier = 0.1
+	inflation_reduction = -0.02
+}
+
+vilnius_growth = {
+	local_development_cost = -0.15
+	local_manpower_modifier = 0.1
+}
+
+vilnius_culture = {
+	local_governing_cost = -0.25	
+}
+
+vilnius_college = {
+	idea_cost = -0.05
+}
+
+english_normans = {
+	local_manpower_modifier = 0.25
+	local_defensiveness = 0.1
+}
+
+el_gran_capitan = {
+	infantry_power = 0.1
+}
+
+centralized_italian_republic_modifier = {
+	land_forcelimit_modifier = 0.10
+	global_autonomy = -0.05
+}
+
+decentralized_italian_republic_modifier = {
+	global_autonomy = 0.1
+	development_cost = -0.025
+	governing_capacity_modifier = 0.1
+}
+
+expelled_the_jews_modifier = {
+	land_morale = 0.05
+}
+
+influential_jewish_minority = {
+	local_tax_modifier = 0.2
+	interest = -0.1
+	trade_goods_size_modifier = 0.1
+}
+
+birthplace_of_pizza_modifier = {
+	local_development_cost = -0.1
+	trade_goods_size_modifier = 0.2
+}
+
+lordship_of_ireland_modifier = {
+	local_culture_conversion_cost = 1
+	local_missionary_strength = -0.05
+	min_local_autonomy = 25
+	papal_influence = 0.1
+}
+
+crown_of_ireland_modifier = {
+	local_culture_conversion_cost = 1
+	local_missionary_strength = -0.05
+	min_local_autonomy = 10
+	local_manpower_modifier = 0.2
+}
+
+act_of_unity_modifier = {
+	local_culture_conversion_cost = 1
+	local_missionary_strength = -0.05
+	min_local_autonomy = 25
+	local_unrest = 10
+}
+
+settlement_of_ireland_modifier = {
+	global_manpower_modifier = -0.05
+}
+
+promotion_of_irish_colonization_modifier = {
+	global_tax_modifier = -0.05
+	global_manpower_modifier = -0.05
+}

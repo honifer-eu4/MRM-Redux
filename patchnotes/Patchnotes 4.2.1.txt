@@ -1,0 +1,14 @@
+MRM Redux Patch 4.2.1:
+
+############# Country-specific #############
+
+Milan:
+    Fixed a bug preventing the 'The Death of Sforza' event from firing.
+    
+########## Goverment Mechanics #############
+
+Russian Modernization:
+    The Tier 2 government reform 'Separate the Boyars from Court' no longer unintentionally increases Modernization.
+
+System of Councils:
+    Fixed a bug causing interactions to still unintentionally give +1 of each mana.

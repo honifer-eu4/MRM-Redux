@@ -1,0 +1,1781 @@
+namespace = redux_formableInfoEvents
+normal_or_historical_nations = yes
+
+country_event = {
+    id = redux_formableInfoEvents.1
+    title = redux_formableInfoEvents.1.title
+    desc = redux_formableInfoEvents.1.desc
+    picture = COURT_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.1.loth
+        trigger = {
+            tag = BUR
+        }
+        country_event = { id = redux_formableInfoEvents.2 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.gbr
+        trigger = {
+            tag = ENG
+        }
+        country_event = { id = redux_formableInfoEvents.3 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.ave
+        trigger = {
+            OR = {
+                tag = ENG
+                tag = GBR
+            }
+        }
+        country_event = { id = redux_formableInfoEvents.4 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.spa
+        trigger = {
+            OR = {
+                tag = CAS
+                tag = POR 
+            }
+        }
+        country_event = { id = redux_formableInfoEvents.5 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.ita
+        trigger = {
+            OR = {
+                tag = MLO
+                tag = VEN
+                tag = NAP
+                tag = TTS
+                tag = SPI
+            }
+        }
+        country_event = { id = redux_formableInfoEvents.6}
+    }
+    
+    option = {
+        name = redux_formableInfoEvents.1.spi
+        trigger = {
+            tag = MLO 
+        }
+        country_event = { id = redux_formableInfoEvents.7 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.kof
+        trigger = {
+            OR = {
+                tag = TTS
+                tag = NAP
+            }
+        }
+        country_event = { id = redux_formableInfoEvents.8 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.tts
+        trigger = {
+            tag = NAP
+        }
+        country_event = { id = redux_formableInfoEvents.9 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.lae
+        trigger = {
+            tag = VEN
+        }
+        country_event = { id = redux_formableInfoEvents.10 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.ger
+        trigger = {
+            OR = { 
+                tag = SWI
+                tag = ROT
+                tag = FKN
+                tag = WES 
+                AND = {
+                    tag = HAB
+                    NOT = { has_country_flag = habsburg_empire_proclaimed }
+                }
+                tag = BRA
+                tag = PRU
+                tag = HAN
+            }
+        }
+        country_event = { id = redux_formableInfoEvents.11 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.nse
+        trigger = {
+            OR = { 
+                tag = DAN
+                tag = HAN
+            }
+        }
+        country_event = { id = redux_formableInfoEvents.12 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.sca
+        trigger = {
+            OR = { 
+                tag = DAN
+                tag = HAN
+                tag = SWE
+            }
+        }
+        country_event = { id = redux_formableInfoEvents.13 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.han
+        trigger = {
+            tag = DAN
+        }
+        country_event = { id = redux_formableInfoEvents.14 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.habgreater
+        trigger = {
+            tag = HAB
+            NOT = { has_country_flag = habsburg_empire_proclaimed }
+        }
+        country_event = { id = redux_formableInfoEvents.15 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.ahu
+        trigger = {
+            tag = HAB
+            NOT = { has_country_flag = habsburg_empire_proclaimed }
+        }
+        country_event = { id = redux_formableInfoEvents.16 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.ahu2
+        trigger = {
+            tag = HUN
+        }
+        country_event = { id = redux_formableInfoEvents.39 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.fkn
+        trigger = {
+            tag = ROT 
+        }
+        country_event = { id = redux_formableInfoEvents.17 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.wes
+        trigger = {
+            tag = ROT 
+        }
+        country_event = { id = redux_formableInfoEvents.18 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.pru
+        trigger = {
+            tag = BRA
+        }
+        country_event = { id = redux_formableInfoEvents.19 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.byz
+        trigger = {
+            tag = HUN
+        }
+        country_event = { id = redux_formableInfoEvents.20 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.ukr 
+        trigger = {
+            tag = LIT
+        }
+        country_event = { id = redux_formableInfoEvents.21 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.zaz
+        trigger = {
+            tag = LIT
+        }
+        country_event = { id = redux_formableInfoEvents.22 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.rus 
+        trigger = {
+            tag = MOS 
+        }
+        country_event = { id = redux_formableInfoEvents.23 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.rum
+        trigger = {
+            OR = {
+                tag = MAM
+                tag = QAR
+            }
+        }
+        country_event = { id = redux_formableInfoEvents.24 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.egy
+        trigger = {
+            tag = MAM 
+        }
+        country_event = { id = redux_formableInfoEvents.40 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.adu
+        trigger = {
+            OR = { 
+                tag = MOR
+                tag = TUN
+                tag = MGB 
+            }
+        }
+        country_event = { id = redux_formableInfoEvents.25 }
+    }
+
+    
+    option = {
+        name = redux_formableInfoEvents.1.mgb
+        trigger = {
+            OR = { 
+                tag = MOR
+                tag = TUN
+            }
+        }
+        country_event = { id = redux_formableInfoEvents.26 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.sok
+        trigger = {
+            OR = { 
+                tag = SON
+                tag = MAL
+            }
+        }
+        country_event = { id = redux_formableInfoEvents.27 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.aks
+        trigger = {
+            tag = ETH
+        }
+        country_event = { id = redux_formableInfoEvents.28 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.zul
+        trigger = {
+            tag = ZAN
+        }
+        country_event = { id = redux_formableInfoEvents.29 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.buk 
+        trigger = {
+            tag = SHY
+        }
+        country_event = { id = redux_formableInfoEvents.30 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.per 
+        trigger = {
+            OR = {
+                tag = QAR
+                tag = KHO
+                tag = ORM 
+            }
+        }
+        country_event = { id = redux_formableInfoEvents.31 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.arb
+        trigger = {
+            tag = ORM 
+        }
+        country_event = { id = redux_formableInfoEvents.32 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.mug
+        trigger = {
+            OR = {
+                tag = AFG
+                tag = SHY
+                tag = BUK 
+            }
+        }
+        country_event = { id = redux_formableInfoEvents.33 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.hin
+        trigger = {
+            OR = {
+                tag = SRH
+                tag = DLH
+                tag = PUN
+                tag = MER
+                tag = RJP
+                tag = BNG
+                tag = NPL
+                tag = BAH
+                tag = VIJ 
+                tag = DEC
+            }
+        }
+        country_event = { id = redux_formableInfoEvents.34 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.pun 
+        trigger = {
+            OR = {
+                tag = SRH
+                tag = DLH 
+            }
+        }
+        country_event = { id = redux_formableInfoEvents.35 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.rjp  
+        trigger = {
+            OR = {
+                tag = MER
+            }
+        }
+        country_event = { id = redux_formableInfoEvents.36 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.npl 
+        trigger = {
+            tag = BNG
+        }
+        country_event = { id = redux_formableInfoEvents.37 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.dec 
+        trigger = {
+            OR = {
+                tag = VIJ
+                tag = BAH  
+            }
+        }
+        country_event = { id = redux_formableInfoEvents.38 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.can
+        trigger = {
+            capital_scope = { colonial_region = colonial_canada }
+            NOT = { has_reform = h_reform_dominion }
+        }
+        country_event = { id = redux_formableInfoEvents.101 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.que
+        trigger = {
+            capital_scope = { colonial_region = colonial_canada }
+            NOT = { has_reform = h_reform_dominion }
+        }
+        country_event = { id = redux_formableInfoEvents.102 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.usa
+        trigger = {
+            capital_scope = { colonial_region = colonial_eastern_america }
+            NOT = { has_reform = h_reform_dominion }
+        }
+        country_event = { id = redux_formableInfoEvents.103 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.flo
+        trigger = {
+            capital_scope = { colonial_region = colonial_eastern_america }
+            NOT = { has_reform = h_reform_dominion }
+        }
+        country_event = { id = redux_formableInfoEvents.104 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.lou
+        trigger = {
+            capital_scope = { colonial_region = colonial_louisiana }
+            NOT = { has_reform = h_reform_dominion }
+        }
+        country_event = { id = redux_formableInfoEvents.105 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.tex
+        trigger = {
+            capital_scope = { colonial_region = colonial_louisiana }
+            NOT = { has_reform = h_reform_dominion }
+        }
+        country_event = { id = redux_formableInfoEvents.106 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.mex
+        trigger = {
+            capital_scope = { colonial_region = colonial_mexico }
+            NOT = { has_reform = h_reform_dominion }
+        }
+        country_event = { id = redux_formableInfoEvents.107 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.cam
+        trigger = {
+            capital_scope = { colonial_region = colonial_mexico }
+            NOT = { has_reform = h_reform_dominion }
+        }
+        country_event = { id = redux_formableInfoEvents.108 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.cub
+        trigger = {
+            capital_scope = { colonial_region = colonial_the_carribean }
+            NOT = { has_reform = h_reform_dominion }
+        }
+        country_event = { id = redux_formableInfoEvents.109 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.wsi
+        trigger = {
+            capital_scope = { colonial_region = colonial_the_carribean }
+            NOT = { has_reform = h_reform_dominion }
+        }
+        country_event = { id = redux_formableInfoEvents.110 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.col
+        trigger = {
+            capital_scope = { colonial_region = colonial_colombia }
+            NOT = { has_reform = h_reform_dominion }
+        }
+        country_event = { id = redux_formableInfoEvents.111 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.vnz
+        trigger = {
+            capital_scope = { colonial_region = colonial_colombia }
+            NOT = { has_reform = h_reform_dominion }
+        }
+        country_event = { id = redux_formableInfoEvents.112 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.brz
+        trigger = {
+            capital_scope = { colonial_region = colonial_brazil }
+            NOT = { has_reform = h_reform_dominion }
+        }
+        country_event = { id = redux_formableInfoEvents.113 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.prg
+        trigger = {
+            capital_scope = { colonial_region = colonial_brazil }
+            NOT = { has_reform = h_reform_dominion }
+        }
+        country_event = { id = redux_formableInfoEvents.114 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.peu
+        trigger = {
+            capital_scope = { colonial_region = colonial_peru }
+            NOT = { has_reform = h_reform_dominion }
+        }
+        country_event = { id = redux_formableInfoEvents.115 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.blv
+        trigger = {
+            capital_scope = { colonial_region = colonial_peru }
+            NOT = { has_reform = h_reform_dominion }
+        }
+        country_event = { id = redux_formableInfoEvents.116 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.chl
+        trigger = {
+            capital_scope = { colonial_region = colonial_la_plata }
+            NOT = { has_reform = h_reform_dominion }
+        }
+        country_event = { id = redux_formableInfoEvents.117 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.lap 
+        trigger = {
+            capital_scope = { colonial_region = colonial_la_plata }
+            NOT = { has_reform = h_reform_dominion }
+        }
+        country_event = { id = redux_formableInfoEvents.118 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.exit        
+    }
+}
+
+# Lotharingia
+
+country_event = {
+    id = redux_formableInfoEvents.2
+    title = redux_formableInfoEvents.2.title
+    desc = redux_formableInfoEvents.2.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.2.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.2.exit
+    }
+}
+
+# Great Britain 
+
+country_event = {
+    id = redux_formableInfoEvents.3
+    title = redux_formableInfoEvents.3.title
+    desc = redux_formableInfoEvents.3.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.3.ave
+        country_event = { id = redux_formableInfoEvents.4 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.3.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.3.exit
+    }
+}
+
+# Angevin Empire 
+
+country_event = {
+    id = redux_formableInfoEvents.4
+    title = redux_formableInfoEvents.4.title
+    desc = redux_formableInfoEvents.4.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.4.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.4.exit
+    }
+}
+
+# Spain 
+
+country_event = {
+    id = redux_formableInfoEvents.5
+    title = redux_formableInfoEvents.5.title
+    desc = redux_formableInfoEvents.5.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.5.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.5.exit
+    }
+}
+
+# Italy 
+
+country_event = {
+    id = redux_formableInfoEvents.6
+    title = redux_formableInfoEvents.6.title
+    desc = redux_formableInfoEvents.6.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.6.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.6.exit
+    }
+}
+
+# Sardinia-Piedmont 
+
+country_event = {
+    id = redux_formableInfoEvents.7
+    title = redux_formableInfoEvents.7.title
+    desc = redux_formableInfoEvents.7.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.7.ita
+        country_event = { id = redux_formableInfoEvents.6 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.7.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.7.exit
+    }
+}
+
+# Kingdom of Africa 
+
+country_event = {
+    id = redux_formableInfoEvents.8
+    title = redux_formableInfoEvents.8.title
+    desc = redux_formableInfoEvents.8.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.8.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.8.exit
+    }
+}
+
+# Two Sicilies 
+
+country_event = {
+    id = redux_formableInfoEvents.9
+    title = redux_formableInfoEvents.9.title
+    desc = redux_formableInfoEvents.9.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.9.ita
+        country_event = { id = redux_formableInfoEvents.6 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.9.kof
+        country_event = { id = redux_formableInfoEvents.8 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.9.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.9.exit
+    }
+}
+
+# Latin Empire
+
+country_event = {
+    id = redux_formableInfoEvents.10
+    title = redux_formableInfoEvents.10.title
+    desc = redux_formableInfoEvents.10.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.10.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.10.exit
+    }
+}
+
+# Germany  
+
+country_event = {
+    id = redux_formableInfoEvents.11
+    title = redux_formableInfoEvents.11.title
+    desc = redux_formableInfoEvents.11.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.11.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.11.exit
+    }
+}
+
+# North Sea Empire
+
+country_event = {
+    id = redux_formableInfoEvents.12
+    title = redux_formableInfoEvents.12.title
+    desc = redux_formableInfoEvents.12.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.12.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.12.exit
+    }
+}
+
+# Scandinavia
+
+country_event = {
+    id = redux_formableInfoEvents.13
+    title = redux_formableInfoEvents.13.title
+    desc = redux_formableInfoEvents.13.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.13.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.13.exit
+    }
+}
+
+# Hanover
+
+country_event = {
+    id = redux_formableInfoEvents.14
+    title = redux_formableInfoEvents.14.title
+    desc = redux_formableInfoEvents.14.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.14.ger
+        country_event = { id = redux_formableInfoEvents.11 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.14.nse
+        country_event = { id = redux_formableInfoEvents.12 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.14.sca
+        country_event = { id = redux_formableInfoEvents.13 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.14.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.14.exit
+    }
+}
+
+# Greater Austria
+
+country_event = {
+    id = redux_formableInfoEvents.15
+    title = redux_formableInfoEvents.15.title
+    desc = redux_formableInfoEvents.15.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.15.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.15.exit
+    }
+}
+
+# Austria-Hungary 
+
+country_event = {
+    id = redux_formableInfoEvents.16
+    title = redux_formableInfoEvents.16.title
+    desc = redux_formableInfoEvents.16.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.16.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.16.exit
+    }
+}
+
+# Franconia 
+
+country_event = {
+    id = redux_formableInfoEvents.17
+    title = redux_formableInfoEvents.17.title
+    desc = redux_formableInfoEvents.17.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.17.ger
+        country_event = { id = redux_formableInfoEvents.11 }
+    }
+    
+    option = {
+        name = redux_formableInfoEvents.17.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.17.exit
+    }
+}
+
+# Westphalia 
+
+country_event = {
+    id = redux_formableInfoEvents.18
+    title = redux_formableInfoEvents.18.title
+    desc = redux_formableInfoEvents.18.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.18.ger
+        country_event = { id = redux_formableInfoEvents.11 }
+    }
+    
+    option = {
+        name = redux_formableInfoEvents.18.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.18.exit
+    }
+}
+
+# Prussia 
+
+country_event = {
+    id = redux_formableInfoEvents.19
+    title = redux_formableInfoEvents.19.title
+    desc = redux_formableInfoEvents.19.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.19.ger
+        country_event = { id = redux_formableInfoEvents.11 }
+    }
+    
+    option = {
+        name = redux_formableInfoEvents.19.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.19.exit
+    }
+}
+
+# Byzantium
+
+country_event = {
+    id = redux_formableInfoEvents.20
+    title = redux_formableInfoEvents.20.title
+    desc = redux_formableInfoEvents.20.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.20.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.20.exit
+    }
+}
+
+# Ruthenia
+
+country_event = {
+    id = redux_formableInfoEvents.21
+    title = redux_formableInfoEvents.21.title
+    desc = redux_formableInfoEvents.21.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.21.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.21.exit
+    }
+}
+
+# Zaporozhie 
+
+country_event = {
+    id = redux_formableInfoEvents.22
+    title = redux_formableInfoEvents.22.title
+    desc = redux_formableInfoEvents.22.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.22.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.22.exit
+    }
+}
+
+# Russia  
+
+country_event = {
+    id = redux_formableInfoEvents.23
+    title = redux_formableInfoEvents.23.title
+    desc = redux_formableInfoEvents.23.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.23.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.23.exit
+    }
+}
+
+# Rum
+
+country_event = {
+    id = redux_formableInfoEvents.24
+    title = redux_formableInfoEvents.24.title
+    desc = redux_formableInfoEvents.24.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.24.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.24.exit
+    }
+}
+
+# Andalusia
+
+country_event = {
+    id = redux_formableInfoEvents.25
+    title = redux_formableInfoEvents.25.title
+    desc = redux_formableInfoEvents.25.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.25.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.25.exit
+    }
+}
+
+# Maghreb 
+
+country_event = {
+    id = redux_formableInfoEvents.26
+    title = redux_formableInfoEvents.26.title
+    desc = redux_formableInfoEvents.26.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.26.adu
+        country_event = { id = redux_formableInfoEvents.25 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.26.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.26.exit
+    }
+}
+
+# Sokoto 
+
+country_event = {
+    id = redux_formableInfoEvents.27
+    title = redux_formableInfoEvents.27.title
+    desc = redux_formableInfoEvents.27.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.27.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.27.exit
+    }
+}
+
+# Aksum 
+
+country_event = {
+    id = redux_formableInfoEvents.28
+    title = redux_formableInfoEvents.28.title
+    desc = redux_formableInfoEvents.28.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.28.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.28.exit
+    }
+}
+
+# Zulu  
+
+country_event = {
+    id = redux_formableInfoEvents.29
+    title = redux_formableInfoEvents.29.title
+    desc = redux_formableInfoEvents.29.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.29.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.29.exit
+    }
+}
+
+# Bukhara   
+
+country_event = {
+    id = redux_formableInfoEvents.30
+    title = redux_formableInfoEvents.30.title
+    desc = redux_formableInfoEvents.30.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.30.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.30.exit
+    }
+}
+
+# Persia   
+
+country_event = {
+    id = redux_formableInfoEvents.31
+    title = redux_formableInfoEvents.31.title
+    desc = redux_formableInfoEvents.31.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.31.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.31.exit
+    }
+}
+
+# Arabia    
+
+country_event = {
+    id = redux_formableInfoEvents.32
+    title = redux_formableInfoEvents.32.title
+    desc = redux_formableInfoEvents.32.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.32.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.32.exit
+    }
+}
+
+# Mughals    
+
+country_event = {
+    id = redux_formableInfoEvents.33
+    title = redux_formableInfoEvents.33.title
+    desc = redux_formableInfoEvents.33.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.33.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.33.exit
+    }
+}
+
+# Hindustan     
+
+country_event = {
+    id = redux_formableInfoEvents.34
+    title = redux_formableInfoEvents.34.title
+    desc = redux_formableInfoEvents.34.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.34.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.34.exit
+    }
+}
+
+# Punjab
+
+country_event = {
+    id = redux_formableInfoEvents.35
+    title = redux_formableInfoEvents.35.title
+    desc = redux_formableInfoEvents.35.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.35.hin
+        country_event = { id = redux_formableInfoEvents.34 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.35.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.35.exit
+    }
+}
+
+# Rajputana 
+
+country_event = {
+    id = redux_formableInfoEvents.36
+    title = redux_formableInfoEvents.36.title
+    desc = redux_formableInfoEvents.36.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.36.hin
+        country_event = { id = redux_formableInfoEvents.34 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.36.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.36.exit
+    }
+}
+
+# Nepal 
+
+country_event = {
+    id = redux_formableInfoEvents.37
+    title = redux_formableInfoEvents.37.title
+    desc = redux_formableInfoEvents.37.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.37.hin
+        country_event = { id = redux_formableInfoEvents.34 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.37.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.37.exit
+    }
+}
+
+# Deccan 
+
+country_event = {
+    id = redux_formableInfoEvents.38
+    title = redux_formableInfoEvents.38.title
+    desc = redux_formableInfoEvents.38.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.38.hin
+        country_event = { id = redux_formableInfoEvents.34 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.38.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.38.exit
+    }
+}
+
+# Austria-Hungary 2 
+
+country_event = {
+    id = redux_formableInfoEvents.39
+    title = redux_formableInfoEvents.39.title
+    desc = redux_formableInfoEvents.39.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.39.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.39.exit
+    }
+}
+
+# Egypt
+
+country_event = {
+    id = redux_formableInfoEvents.40
+    title = redux_formableInfoEvents.40.title
+    desc = redux_formableInfoEvents.40.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.40.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.40.exit
+    }
+}
+
+# Canada
+
+country_event = {
+    id = redux_formableInfoEvents.101
+    title = redux_formableInfoEvents.101.title
+    desc = redux_formableInfoEvents.101.desc
+    picture = COURT_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.101.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.101.exit
+    }
+}
+
+# Quebec
+
+country_event = {
+    id = redux_formableInfoEvents.102
+    title = redux_formableInfoEvents.102.title
+    desc = redux_formableInfoEvents.102.desc
+    picture = COURT_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.102.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.102.exit
+    }
+}
+
+# America
+
+country_event = {
+    id = redux_formableInfoEvents.103
+    title = redux_formableInfoEvents.103.title
+    desc = redux_formableInfoEvents.103.desc
+    picture = COURT_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.103.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.103.exit
+    }
+}
+
+# Florida
+
+country_event = {
+    id = redux_formableInfoEvents.104
+    title = redux_formableInfoEvents.104.title
+    desc = redux_formableInfoEvents.104.desc
+    picture = COURT_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.104.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.104.exit
+    }
+}
+
+# Louisiana
+
+country_event = {
+    id = redux_formableInfoEvents.105
+    title = redux_formableInfoEvents.105.title
+    desc = redux_formableInfoEvents.105.desc
+    picture = COURT_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.105.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.105.exit
+    }
+}
+
+# Texas
+
+country_event = {
+    id = redux_formableInfoEvents.106
+    title = redux_formableInfoEvents.106.title
+    desc = redux_formableInfoEvents.106.desc
+    picture = COURT_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.106.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.106.exit
+    }
+}
+
+# Mexico 
+
+country_event = {
+    id = redux_formableInfoEvents.107
+    title = redux_formableInfoEvents.107.title
+    desc = redux_formableInfoEvents.107.desc
+    picture = COURT_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.107.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.107.exit
+    }
+}
+
+# Central America 
+
+country_event = {
+    id = redux_formableInfoEvents.108
+    title = redux_formableInfoEvents.108.title
+    desc = redux_formableInfoEvents.108.desc
+    picture = COURT_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.108.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.108.exit
+    }
+}
+
+# Cuba
+
+country_event = {
+    id = redux_formableInfoEvents.109
+    title = redux_formableInfoEvents.109.title
+    desc = redux_formableInfoEvents.109.desc
+    picture = COURT_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.109.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.109.exit
+    }
+}
+
+# Caribbea
+
+country_event = {
+    id = redux_formableInfoEvents.110
+    title = redux_formableInfoEvents.110.title
+    desc = redux_formableInfoEvents.110.desc
+    picture = COURT_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.110.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.110.exit
+    }
+}
+
+# Colombia
+
+country_event = {
+    id = redux_formableInfoEvents.111
+    title = redux_formableInfoEvents.111.title
+    desc = redux_formableInfoEvents.111.desc
+    picture = COURT_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.111.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.111.exit
+    }
+}
+
+# Venezuela
+
+country_event = {
+    id = redux_formableInfoEvents.112
+    title = redux_formableInfoEvents.112.title
+    desc = redux_formableInfoEvents.112.desc
+    picture = COURT_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.112.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.112.exit
+    }
+}
+
+# Brazil
+
+country_event = {
+    id = redux_formableInfoEvents.113
+    title = redux_formableInfoEvents.113.title
+    desc = redux_formableInfoEvents.113.desc
+    picture = COURT_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.113.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.113.exit
+    }
+}
+
+# Paraguay
+
+country_event = {
+    id = redux_formableInfoEvents.114
+    title = redux_formableInfoEvents.114.title
+    desc = redux_formableInfoEvents.114.desc
+    picture = COURT_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.114.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.114.exit
+    }
+}
+
+# Peru
+
+country_event = {
+    id = redux_formableInfoEvents.115
+    title = redux_formableInfoEvents.115.title
+    desc = redux_formableInfoEvents.115.desc
+    picture = COURT_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.115.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.115.exit
+    }
+}
+
+# Bolivia
+
+country_event = {
+    id = redux_formableInfoEvents.116
+    title = redux_formableInfoEvents.116.title
+    desc = redux_formableInfoEvents.116.desc
+    picture = COURT_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.116.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.116.exit
+    }
+}
+
+# Chile 
+
+country_event = {
+    id = redux_formableInfoEvents.117
+    title = redux_formableInfoEvents.117.title
+    desc = redux_formableInfoEvents.117.desc
+    picture = COURT_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.117.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.117.exit
+    }
+}
+
+# La Plata
+
+country_event = {
+    id = redux_formableInfoEvents.118
+    title = redux_formableInfoEvents.118.title
+    desc = redux_formableInfoEvents.118.desc
+    picture = COURT_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.118.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.118.exit
+    }
+}

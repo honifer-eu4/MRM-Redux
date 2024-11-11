@@ -1,0 +1,4 @@
+redux_por_gold_modifier = {
+    monthly_gold_inflation_modifier = -0.1
+    gold_depletion_chance_modifier = -0.25
+}

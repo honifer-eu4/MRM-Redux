@@ -1,0 +1,847 @@
+
+emp_hab_prestige_branch = {
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}
+	potential = {
+		has_dlc = "Emperor"
+		tag = HAB
+		NOT = { map_setup = map_setup_random }
+	}
+	
+	has_country_shield = yes
+	
+	emp_hab_prospering_nation = {
+		position = 1
+		icon = austria_prospers
+		required_missions = { }
+		provinces_to_highlight = {
+			culture = austrian
+			OR = {
+				ROOT = {
+					NOT = {
+						development_in_provinces = {
+							value = 180 #start:122
+							culture = austrian
+						}
+					}
+				}
+				AND = {
+					ROOT = {
+						NOT = {
+							num_of_owned_provinces_with = {
+								value = 5
+								culture = austrian
+								has_tax_building_trigger = yes
+							}
+						}
+					}
+					has_tax_building_trigger = no
+					owned_by = root
+				}
+				AND = {
+					ROOT = {
+						NOT = {
+							num_of_owned_provinces_with = {
+								value = 5
+								culture = austrian
+								has_production_building_trigger = yes
+							}
+						}
+					}
+					has_production_building_trigger = no
+					owned_by = root
+				}
+			}
+		}
+		trigger = {
+			development_in_provinces = {
+				value = 180 #start:122
+				culture = austrian
+			}
+			num_of_owned_provinces_with = {
+				value = 5
+				culture = austrian
+				has_tax_building_trigger = yes
+			}
+			num_of_owned_provinces_with = {
+				value = 5
+				culture = austrian
+				has_production_building_trigger = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = hab_prosperity
+				duration = 7300
+			}
+		}
+	}
+	
+	emp_hab_viennese_waltz = {
+		icon = the_viennese_waltz
+		required_missions = { emp_hab_prospering_nation }
+		provinces_to_highlight = {
+			province_id = 134
+			OR = {
+				NOT = { owned_by = root }
+				NOT = { development = 50 }
+				NOT = { num_of_buildings_in_province = 6 }
+			}
+		}
+		trigger = {
+			OR = {
+				134 = {
+					owned_by = root
+					development = 50
+					num_of_buildings_in_province = 6
+				}
+				AND = {
+					134 = {
+						owned_by = root
+					}
+					hre_reform_passed = emperor_perpetual_diet
+				}
+			}
+			has_adm_advisor_3 = yes
+			has_dip_advisor_3 = yes
+			has_mil_advisor_3 = yes
+			is_in_deficit = no
+		}
+		effect = {
+			134 = {
+				add_province_modifier = {
+					name = hab_vienna_ballrooms
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+emp_hab_german_expansion_branch_2 = {
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}
+	potential = {
+		has_dlc = "Emperor"
+		tag = HAB
+		NOT = { map_setup = map_setup_random }
+	}
+	
+	has_country_shield = yes
+	
+	emp_hab_swabia = {
+		icon = control_swabia
+		position = 3
+		required_missions = { emp_hab_union_bayern }
+		provinces_to_highlight = {
+			OR = {
+				area = upper_swabia_area
+				area = lower_swabia_area
+				area = upper_rhineland_area
+				area = alsace_area
+			}
+			ROOT = {
+				NOT = {
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 8 #of 10 (you can spare the FCs)
+						OR = {
+							area = upper_swabia_area
+							area = lower_swabia_area
+							area = upper_rhineland_area
+							area = alsace_area
+						}
+					}
+				}
+			}
+			NOT = { country_or_non_sovereign_subject_holds = root }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 8 #of 10 (you can spare the FCs)
+				OR = {
+					area = upper_swabia_area
+					area = lower_swabia_area
+					area = upper_rhineland_area
+					area = alsace_area
+				}
+			}
+		}
+		effect = {
+			upper_swabia_area = {
+				limit = { country_or_non_sovereign_subject_holds = root }
+				add_nationalism = -5
+				add_province_modifier = {
+					name = hab_holdings_in_swabia
+					duration = 10950
+				}
+			}
+			lower_swabia_area = {
+				limit = { country_or_non_sovereign_subject_holds = root }
+				add_nationalism = -5
+				add_province_modifier = {
+					name = hab_holdings_in_swabia
+					duration = 10950
+				}
+			}
+			upper_rhineland_area = {
+				limit = { country_or_non_sovereign_subject_holds = root }
+				add_nationalism = -5
+				add_province_modifier = {
+					name = hab_holdings_in_swabia
+					duration = 10950
+				}
+			}
+			alsace_area = {
+				limit = { country_or_non_sovereign_subject_holds = root }
+				add_nationalism = -5
+				add_province_modifier = {
+					name = hab_holdings_in_swabia
+					duration = 10950
+				}
+			}
+			switzerland_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			romandie_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			franconia_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			upper_franconia_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+		}
+	}
+	emp_hab_franconia = {
+		icon = conquer_franconia
+		required_missions = { emp_hab_swabia } 
+		provinces_to_highlight = {
+			OR = {
+				area = upper_franconia_area
+				area = franconia_area
+			}
+			ROOT = {
+				NOT = {
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 7 #of 10 (you can spare the FCs)
+						OR = {
+							area = upper_franconia_area
+							area = franconia_area
+						}
+					}
+				}
+			}
+			NOT = { country_or_non_sovereign_subject_holds = root }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 7 #of 10 (you can spare the FCs)
+				OR = {
+					area = upper_franconia_area
+					area = franconia_area
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = hab_defeated_franconia
+				duration = -1
+			}
+			lower_rhineland_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			north_rhine_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			hesse_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+		}
+	}
+	emp_hab_rhineland = {
+		icon = mission_conquer_50_development
+		required_missions = { emp_hab_franconia }
+		provinces_to_highlight = {
+			OR = {
+				area = north_rhine_area
+				area = hesse_area
+				area = lower_rhineland_area
+			}
+			ROOT = {
+				NOT = {
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 10 #of 10 (you can spare the FCs)
+						OR = {
+							area = north_rhine_area
+							area = hesse_area
+							area = lower_rhineland_area
+						}
+					}
+				}
+			}
+			NOT = { country_or_non_sovereign_subject_holds = root }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10 #of 10 (you can spare the FCs)
+				OR = {
+					area = north_rhine_area
+					area = hesse_area	
+					area = lower_rhineland_area
+				}
+			}
+		}
+		effect = {
+			westphalia_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			north_westphalia_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+		}
+	}
+	emp_hab_westphalia = {
+		icon = mission_conquer_50_development
+		required_missions = { emp_hab_rhineland }
+		provinces_to_highlight = {
+			OR = {
+				area = westphalia_area
+				area = north_westphalia_area
+			}
+			ROOT = {
+				NOT = {
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 6 #of 10 (you can spare the FCs)
+						OR = {
+							area = westphalia_area
+							area = north_westphalia_area
+						}
+					}
+				}
+			}
+			NOT = { country_or_non_sovereign_subject_holds = root }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 6 #of 10 (you can spare the FCs)
+				OR = {
+					area = westphalia_area
+					area = north_westphalia_area
+				}
+			}
+		}
+		effect = {
+			frisia_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			north_brabant_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			holland_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+		}
+	}
+	emp_hab_austrian_netherlands = {
+		icon = mission_the_austrian_succession
+		required_missions = { emp_hab_westphalia }
+		provinces_to_highlight = {
+			OR = {
+				area = frisia_area
+				area = north_brabant_area
+				area = holland_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = root }
+		}
+		trigger = {
+			frisia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			north_brabant_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			holland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = hab_austrian_netherlands_mod
+				duration = -1
+			}
+		}
+	}
+}
+
+emp_hab_german_expansion_branch_0 = {
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}
+	potential = {
+		has_dlc = "Emperor"
+		tag = HAB
+		NOT = { map_setup = map_setup_random }
+	}
+	emp_hab_conquer_switzerland = {
+		icon = reorganize_the_confederacy
+		position = 4
+		required_missions = { emp_hab_swabia }
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					OR = {
+						area = romandie_area
+						area = switzerland_area
+					}
+					NOT = { country_or_non_sovereign_subject_holds = root }
+					ROOT = {
+						NOT = {
+							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+								value = 7 #Switzerland + Three Leagues
+								OR = {
+									area = romandie_area
+									area = switzerland_area
+								}
+							}
+						}
+					}
+				}
+				AND = {
+					owned_by = SWI
+					SWI = { NOT = { is_subject_of = ROOT } }
+				}
+			}
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 7 #Switzerland + Three Leagues
+				OR = {
+					area = romandie_area
+					area = switzerland_area
+				}
+			}
+			OR = {
+				NOT = { exists = SWI }
+				overlord_of = SWI
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = hab_defeated_swiss
+				duration = -1
+			}
+			bourgogne_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			lorraine_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+		}
+	}
+	
+	emp_hab_conquer_burgundy = {
+		icon = mission_italian_condottiere
+		
+		required_missions = { emp_hab_conquer_switzerland }
+		provinces_to_highlight = {
+			OR = {
+				area = bourgogne_area
+				area = lorraine_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = root }
+		}
+		trigger = {
+			bourgogne_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			lorraine_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = hab_conquered_burgundy
+				duration = -1
+			}
+			bourgogne_area = {
+				add_province_modifier = {
+					name = hab_back_into_empire
+					duration = 7300
+				}
+			}
+			lorraine_area = {
+				add_province_modifier = {
+					name = hab_back_into_empire
+					duration = 7300
+				}
+			}
+			every_country = {
+				limit = {
+					capital_scope = {
+						region = france_region
+					}
+					is_part_of_hre = yes
+				}
+				add_opinion = {
+					who = root
+					modifier = opinion_hab_back_into_empire
+				}
+			}
+		}
+	}
+}
+
+emp_hab_german_expansion_branch_1 = {
+	slot = 2
+	generic = no 
+	ai = yes
+
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}
+	potential = {
+		has_dlc = "Emperor"
+		tag = HAB
+		NOT = { map_setup = map_setup_random }
+	}
+	
+	has_country_shield = yes
+
+	emp_hab_conquer_hanover = {
+		icon = mission_noble_council
+		position = 6
+		required_missions = { emp_hab_union_brandenburg }
+
+		provinces_to_highlight = {
+			OR = {
+				area = weser_area
+				area = braunschweig_area
+				area = lower_saxony_area
+			}
+			ROOT = {
+				NOT = {
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 9 #of 10 (you can spare the FCs)
+						OR = {
+							area = weser_area
+							area = braunschweig_area
+							area = lower_saxony_area
+						}
+					}
+				}
+			}
+			NOT = { country_or_non_sovereign_subject_holds = root }
+		}
+
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 9 #of 10 (you can spare the FCs)
+				OR = {
+					area = weser_area
+					area = braunschweig_area
+					area = lower_saxony_area
+				}
+			}
+		}
+
+		effect = {
+			holstein_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			jutland_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			denmark_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	emp_hab_conquer_denmark = {
+		icon = defend_the_city
+		required_missions = { emp_hab_conquer_hanover }
+
+		provinces_to_highlight = {
+			OR = {
+				area = holstein_area
+				area = jutland_area
+				area = denmark_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = root }
+		}
+		trigger = {
+			holstein_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			jutland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			denmark_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = hab_defeated_denmark
+				duration = -1
+			}
+		}
+	}
+}
+
+emp_hab_balkans = {
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}
+	potential = {
+		has_dlc = "Emperor"
+		tag = HAB
+		NOT = { map_setup = map_setup_random }
+	}
+	
+	has_country_shield = yes
+	
+	emp_hab_take_serbia = {
+		icon = defeat_the_serbs
+
+		position = 5
+		
+		required_missions = { austrian_croatia }
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					province_id = 3002
+					NOT = { owned_by = root }
+				}
+				AND = {
+					OR = {
+						area = serbia_area
+						area = rascia_area
+						area = bosnia_area
+						area = east_adriatic_coast_area
+					}
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+			}
+		}
+		trigger = {
+			3002 = { owned_by = root }
+			serbia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			rascia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			bosnia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			east_adriatic_coast_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+		}
+		effect = {
+			3002 = {
+				change_province_name = "Sarajevo"
+				rename_capital = "Sarajevo"
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			
+			add_country_modifier = {
+				name = hab_conquered_serbia
+				duration = -1
+			}
+
+			bulgaria_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+		}
+	}
+	emp_hab_take_wallachia_bulgaria = {
+		icon = push_on_to_bulgaria
+
+		position = 6
+		
+		required_missions = { emp_hab_take_serbia conquer_transylvania }
+		provinces_to_highlight = {
+			OR = {
+				area = wallachia_area
+				area = silistria_area
+				area = bulgaria_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			wallachia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			silistria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			bulgaria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			balkan_region = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			custom_tooltip = emp_hab_take_wallachia_bulgaria_effect_tooltip
+			hidden_effect = {
+				europe = {
+					limit = {
+						owned_by = TUR
+						NOT = { is_core = root }
+						NOT = { is_permanent_claim = root }
+						NOT = { region = anatolia_region }
+						NOT = { region = caucasia_region }
+						NOT = { region = balkan_region }
+					}
+					add_claim = root
+				}
+			}
+		}
+	}
+	
+	emp_hab_scourge_of_europe = {
+		icon = mission_ottoman_diplomacy
+
+		position = 7
+		
+		required_missions = { emp_hab_take_wallachia_bulgaria hab_royal_hungary }
+		provinces_to_highlight = {
+			region = balkan_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			balkan_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_country_modifier = {
+				name = hab_victory_over_turks
+				duration = -1
+			}
+			if = {
+				limit = {
+					151 = { culture = turkish }
+				}
+				country_event = { id = new_flavour_hun.3 } #event used by Hungary too
+			}
+		}
+	}
+}
+

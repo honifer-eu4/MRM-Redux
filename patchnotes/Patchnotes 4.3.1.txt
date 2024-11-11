@@ -1,0 +1,71 @@
+MRM Redux Patch 4.3.1:
+
+############# General/Bugfixes ###############
+
+Slight rework to African pips, focusing on reducing their power spike at tech 5 and spreading it out to resemble other tech groups.
+
+############ Country-specific ################
+
+Burgundy:
+    Second idea now gives -10% Mercenary Maintenance instead of -15%.
+    Third idea now gives +25% Mercenary Manpower instead of +50%.
+    Incorporated Personal Unions now take diplomatic relation slots.
+    "Time of Glory" mission no longer gives cores on the Ile-De-France and Champagne states.
+
+Denmark:
+    Fourth idea now gives +25% National Manpower Modifier instead of +20%, and +5% Mercenary Discipline instead of +10%.
+
+Milan:
+    First idea now gives +15% Infantry Combat Ability instead of +10%.
+    Fourth idea now gives -15% Mercenary Maintenance and +5% Mercenary Discipline, instead of -20% and +10% respectively.
+    Ambition now gives +25% National Manpower Modifier instead of +20%.
+
+Switzerland:
+    Tradition now gives -10% Mercenary Maintenance instead of -15%.
+    First idea now gives +5% Mercenary Discipline instead of +10%.
+    "Autonomous Swiss Cantons" Tier 1 reform no longer grants +25% Mercenary Manpower.
+    "Expand the Swiss Guard" mission now grants -10% Mercenary Cost instead of -20%.
+
+Vijayanagar:
+    Ambition now gives +25% Mercenary Manpower instead of +50%.
+
+########### Government Mechanics #############
+
+Mercenary/Swiss Militarization:
+    No longer gives up to -10% Mercenary Maintenance.
+    Now passively ticks down by up to -1 a month instead of -0.5.
+    Now gives up to +5% Mercenary Discipline instead of +7.5%.
+
+############ Government Reforms ##############
+
+Common:
+    "Condottierri Contracts" Tier 5 reform now gives -20% Mercenary Cost instead of -33%. 
+    "Elite Mercenaries" Tier 5 reform now gives -5% Mercenary Cost instead of -15%.
+    "Expanded Black Army" Tier 5 reform now gives +33% Mercenary Manpower instead of +100%.
+    "Swiss Mercenaries" Tier 5 reform now gives -10% Mercenary Cost instead of -25%.
+    
+############### Idea groups ##################
+
+Administrative:
+    First idea now gives +10% Trade Efficiency instead of -20% Mercenary Cost.
+
+Policies:
+    Administrative-Diplomatic now gives -10% Mercenary Cost instead of -20%.
+    Plutocratic-Logistic now gives -10% Mercenary Cost instead of -20%, and +15% National Tax Modifier instead of +10%.
+
+################ Mechanics ###################
+
+Army Professionalism:
+	Low army professionalism no longer grants bonuses to Mercenary Cost and Mercenary Manpower.
+
+Mercenary Companies:
+    All nations now start with the Independent, Grand, and Free Companies regardless of development.
+    Drastically decreased the amount of mercenaries in the game, focusing on giving each nation an unique mercenary company with elite quality modifiers as well with smaller flavor mercs that are only available in the Age of Discovery.
+    "Mercenary Army Tradition" triggered modifiers now require 3 and 5 mercenary companies instead of 4 and 8.
+    The Independent, Grand, and Free Companies now become larger and more expensive every age.
+    Reduced the cost of mercenaries unlocked by Aristocratic Ideas.
+
+################# Estates ####################
+
+Burghers:
+    "Elite Mercenaries" now gives up to +10% Mercenary Discipline instead of +20%.

@@ -1,0 +1,91 @@
+estate_magyars = {
+	icon = 4
+
+	# If true, country will get estate
+	
+	trigger = {	
+		NOT = { has_reform = pirate_republic_reform }
+		NOT = { has_government_attribute = is_merchant_republic }
+		NOT = { has_reform = trading_city }
+		NOT = { is_revolutionary_republic_trigger = yes }
+		NOT = { government = native }
+		NOT = { has_reform = siberian_tribe }
+		NOT = { has_reform = veche_republic }
+		is_nomad = no
+		is_colonial_nation = no
+		NOT = { has_reform = celestial_empire }
+		tag = AUH
+		NOT = { was_tag = HUN }
+		NOT = { has_country_flag = redux_estates_destroyed }
+	}
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		cavalry_cost = -0.2
+		cavalry_power = 0.1
+	}
+	country_modifier_neutral = {
+		cavalry_power = 0.1
+	}	
+	country_modifier_angry = {
+		cavalry_cost = 0.2
+		cavalry_power = -0.1
+		global_autonomy = 0.05
+	}
+	land_ownership_modifier = {
+		magyars_loyalty_modifier = 0.2
+	}
+
+	# Influence modifiers
+	base_influence = 0
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}
+		influence = -40
+	}
+	influence_modifier = {
+		desc = EST_HUNGARIAN_PROVINCES
+		trigger = {
+			any_owned_province = {
+				culture = hungarian
+			}
+			num_of_cities = 10
+		}
+		influence = 10
+	}
+	influence_from_dev_modifier = 2.0
+	
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}
+		loyalty = -20
+	}
+
+	privileges = {
+		estate_magyars_recruit_hungarian_generals
+		estate_magyars_land_rights
+		estate_magyars_black_army
+		estate_magyars_hungarian_hussars
+		estate_magyars_increase_integration_efforts
+	}
+
+	color = { 200 125 125 }
+}

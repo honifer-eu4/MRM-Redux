@@ -1,0 +1,16 @@
+estate_magyars = {
+	modifier_definition = {
+		type = loyalty
+		key = magyars_loyalty_modifier
+		trigger = {
+			has_estate = estate_magyars
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = magyars_influence_modifier
+		trigger = {
+			has_estate = estate_magyars
+		}
+	}
+}

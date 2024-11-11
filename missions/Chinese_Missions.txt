@@ -1,0 +1,171 @@
+#Removed from game (Asia/Oceania)
+
+ming_console_missions_1 = {
+    slot = 1 
+    generic = no 
+    ai = yes 
+    potential = {
+        tag = MNG
+    }
+    has_country_shield = yes
+
+    reform_desire_1 = {
+        icon = mission_invade_island
+        trigger = {
+            OR = { 
+                is_year = 1480
+                ai = no 
+            }
+        }
+        effect = {
+            custom_tooltip = redux_ming_catholic_tooltip 
+            hidden_effect = {
+                change_religion = catholic
+                add_reform_desire = 0.25
+                change_religion = confucianism
+            }
+        }
+        ai_weight = {
+            factor = 500
+        }
+    }
+
+    reform_desire_2 = {
+        icon = mission_invade_island
+        trigger = {
+            OR = { 
+                is_year = 1490
+                ai = no 
+            }
+        }
+        effect = {
+            custom_tooltip = redux_ming_catholic_tooltip 
+            hidden_effect = {
+                change_religion = catholic
+                add_reform_desire = 0.25
+                change_religion = confucianism
+            }
+        }
+        ai_weight = {
+            factor = 500
+        }
+    }
+
+    reform_desire_3 = {
+        icon = mission_invade_island
+        trigger = {
+            OR = { 
+                is_year = 1500
+                ai = no 
+            }
+        }
+        effect = {
+            custom_tooltip = redux_ming_catholic_tooltip 
+            hidden_effect = {
+                change_religion = catholic
+                add_reform_desire = 0.25
+                change_religion = confucianism
+            }
+        }
+        ai_weight = {
+            factor = 500
+        }
+    }
+
+    reform_desire_4 = {
+        icon = mission_invade_island
+        trigger = {
+            OR = { 
+                is_year = 1510
+                ai = no 
+            }
+        }
+        effect = {
+            custom_tooltip = redux_ming_catholic_tooltip 
+            hidden_effect = {
+                change_religion = catholic
+                add_reform_desire = 0.25
+                change_religion = confucianism
+            }
+        }
+        ai_weight = {
+            factor = 500
+        }
+    }
+}
+
+ming_console_missions_2 = {
+    slot = 2
+    generic = no 
+    ai = yes 
+    potential = {
+        tag = MNG
+    }
+    has_country_shield = yes
+
+    dismantle_eoc = {
+        icon = mission_invade_island
+        trigger = {
+            always = yes 
+        }
+        effect = {
+            dismantle_empire_of_china = yes 
+        }
+        ai_weight = {
+            factor = 1000
+        }
+    }
+
+    burgundy_thing = {
+        icon = mission_invade_island
+        trigger = {
+            OR = {
+                AND = {
+                    exists = LOT 
+                    LOT = { has_country_modifier = bur_great_trial_mod }
+                    LOT = { NOT = { war_with = FRA } }
+                }
+                AND = {
+                    exists = BUR 
+                    BUR = { has_country_modifier = bur_great_trial_mod }
+                    BUR = { NOT = { war_with = FRA } }
+                }
+            }
+        }
+        effect = {
+            if = { 
+                limit = { exists = LOT }
+                LOT = { remove_country_modifier = bur_great_trial_mod }
+            }
+            if = { 
+                limit = { exists = BUR }
+                BUR = { remove_country_modifier = bur_great_trial_mod }
+            }
+        }
+        ai_weight = {
+            factor = 1000
+        }
+    }
+}
+
+ming_console_missions_3 = {
+    slot = 3
+    generic = no
+    ai = yes
+    potential = {
+        tag = MNG
+    }
+    has_country_shield = yes 
+
+    respawn_india_mission = {
+        icon = mission_invade_island
+        trigger = {
+            ai = no
+        }
+        effect = {
+            country_event = {
+                id = redux_ming.101
+            }
+        }
+    }
+}

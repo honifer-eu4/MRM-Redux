@@ -1,0 +1,531 @@
+#This file is necessary due to load order, so I can make use of column 3 rows 1-5 for DLC missions without overwriting the Vanilla mission at 3:6
+
+hab_gold_mine = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = HAB
+	}
+	has_country_shield = yes
+	
+	hab_schwaz_silver_mine = {
+		icon = mission_african_gold
+		required_missions = { }
+		position = 1
+		
+		completed_by = 1821.1.1
+		
+		trigger = {
+			owns = 73
+			73 = {
+				base_production = 10
+				has_tax_building_trigger = yes
+			}
+		}
+		
+		effect = {
+			country_event = { id = flavor_hab.11 }
+			custom_tooltip = hab_gold_mine_tooltip
+		}
+	}
+}
+
+hab_kill_venice = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = HAB
+	}
+	has_country_shield = yes
+
+	hab_eastern_diplo = {
+		icon = mission_alliances
+		required_missions = { hab_show_strength }
+		position = 2
+
+		provinces_to_highlight = {
+			is_capital = yes
+			OR = {
+				AND = {
+					owned_by = HUN
+					ROOT = { NOT = { alliance_with = HUN } }
+					NOT = {
+						HUN = {
+							OR = {
+								is_rival = root
+								root = { is_rival = prev }
+							}
+						}
+					}
+					ROOT = { NOT = { total_own_and_non_tributary_subject_development = HUN } }
+				}
+				AND = {
+					owned_by = VEN
+					ROOT = { NOT = { alliance_with = VEN } }
+					NOT = {
+						VEN = {
+							OR = {
+								is_rival = root
+								root = { is_rival = prev }
+							}
+						}
+					}
+					ROOT = { NOT = { total_own_and_non_tributary_subject_development = VEN } }
+				}
+			}
+		}
+
+		trigger = {
+			OR = {
+				HUN = {
+					custom_trigger_tooltip = {
+						tooltip = rivalled_or_rival_of
+						OR = {
+							is_rival = root
+							root = { is_rival = prev }
+						}
+					}
+				}
+				alliance_with = HUN
+				total_own_and_non_tributary_subject_development = HUN
+			}
+			OR = {
+				VEN = {
+					custom_trigger_tooltip = {
+						tooltip = rivalled_or_rival_of
+						OR = {
+							is_rival = root
+							root = { is_rival = prev }
+						}
+					}
+				}
+				alliance_with = VEN
+				total_own_and_non_tributary_subject_development = VEN
+			}
+		}
+
+		effect = {
+			carinthia_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			slovakia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			transdanubia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			alfold_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	hab_conquer_carniola = {
+		icon = mission_unite_home_region
+		required_missions = { hab_eastern_diplo }
+
+		provinces_to_highlight = {
+			area = carinthia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			carinthia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			venetia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	hab_defeat_venice = {
+		icon = mission_italian_condottiere
+		required_missions = { hab_conquer_carniola }
+
+		provinces_to_highlight = {
+			area = venetia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			venetia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = hab_defeated_venice
+				duration = -1
+			}
+			add_mercantilism = 5
+			venetia_area = {
+				add_province_modifier = {
+					name = "protected_italian_interests"
+					duration = -1
+				}
+			}
+			po_valley_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			emilia_romagna_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			central_italy_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+emp_hab_diplo_branch = {
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}
+	potential = {
+		has_dlc = "Emperor"
+		tag = HAB
+		NOT = { map_setup = map_setup_random }
+	}
+	
+	has_country_shield = yes
+	
+	emp_hab_fate_of_hre = {
+		icon = imperial_ascendancy
+		required_missions = {  }
+		position = 1
+		trigger = {
+			is_year = 1500
+		}
+		effect = {
+			country_event = {
+				id = hab_mission_events.22
+			}
+			custom_tooltip = fate_of_hre_tt
+		}
+	}
+	
+	emp_hab_power_to_habsburg = {
+		icon = glory_to_von_habsburg
+		required_missions = { emp_hab_fate_of_hre }
+		provinces_to_highlight = {
+			is_capital = yes
+			OR = {
+				AND = {
+					owned_by = root
+					root = { is_great_power = no }
+				}
+				AND = {
+					NOT = { owned_by = root }
+					owner = {
+						capital_scope = { continent = europe }
+						OR = {
+							AND = {
+								has_dlc = "Rights of Man"
+								is_great_power = yes
+							}
+							AND = {
+								NOT = { has_dlc = "Rights of Man" }
+								total_development = 300
+							}
+						}
+						NOT = { alliance_with = root }
+						NOT = { is_subject_of = root }
+						NOT = {
+							root = {
+								has_won_war_against = {
+									who = prev
+									max_years_since = 100
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		trigger = {
+			is_great_power = yes
+			custom_trigger_tooltip = {
+				tooltip = emp_hab_power_to_habsburg_trigger_tooltip
+				NOT = {
+					any_country = {
+						NOT = { tag = root }
+						capital_scope = { continent = europe }
+						is_great_power = yes
+						NOT = { alliance_with = root }
+						NOT = {
+							root = {
+								has_won_war_against = {
+									who = prev
+									max_years_since = 100
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 50
+			}
+			add_country_modifier = {
+				name = hab_supreme_in_europe
+				duration = -1
+			}
+		}
+	}
+}
+
+emp_hab_german_expansion_branch = {
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}
+	potential = {
+		has_dlc = "Emperor"
+		tag = HAB
+		NOT = { map_setup = map_setup_random }
+	}
+	
+	has_country_shield = yes
+	
+	emp_hab_take_salzburg = {
+		icon = take_the_bishoprics
+		
+		position = 1
+		
+		required_missions = {  }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 110
+				province_id = 76
+				province_id = 4710
+				province_id = 4709
+			}
+			ROOT = {
+				NOT = {
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 3
+						OR = {
+							province_id = 110
+							province_id = 76
+							province_id = 4710
+							province_id = 4709
+						}
+					}
+				}
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 3
+				OR = {
+					province_id = 110
+					province_id = 76
+					province_id = 4710
+					province_id = 4709
+				}
+			}
+		}
+		effect = {
+			upper_bavaria_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			lower_bavaria_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			east_bavaria_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+		}
+	}
+	
+	emp_hab_union_bayern = {
+		icon = duchy_of_bavaria
+		
+		required_missions = { emp_hab_take_salzburg }
+		provinces_to_highlight = {
+			OR = {
+				area = east_bavaria_area
+				area = upper_bavaria_area
+				area = lower_bavaria_area
+			}
+			ROOT = {
+				NOT = {
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 8 #out of 12
+						OR = {
+							area = east_bavaria_area
+							area = upper_bavaria_area
+							area = lower_bavaria_area
+						}
+					}
+				}
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 8 #out of 12
+				OR = {
+					area = east_bavaria_area
+					area = upper_bavaria_area
+					area = lower_bavaria_area
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = hab_bavarian_beer
+				duration = 7300
+			}
+			upper_swabia_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			lower_swabia_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			upper_rhineland_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			alsace_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+		}
+	}
+	
+	recover_silesia = {
+		icon = take_silesia
+		required_missions = { subjugate_bohemia }
+		completed_by = 1620.11.8
+		trigger = {
+			silesia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			area = silesia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			silesia_area = {
+				add_province_modifier = {
+					name = "austrian_silesia"
+					duration = 7300
+				}
+				add_nationalism = -5
+			}
+			slovakia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			malopolska_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+				
+			}
+			red_ruthenia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			sandomierz_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+

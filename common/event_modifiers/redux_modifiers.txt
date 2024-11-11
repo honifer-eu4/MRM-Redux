@@ -1,0 +1,61 @@
+PR_commandant_cooldown = {
+	discipline = 0.001
+}
+
+PR_grand_captain_cooldown = {
+	land_morale = 0.001
+}
+
+mrm_colonist_1 = {
+	colonists = 1
+	range = 0.5
+    may_explore = yes
+}
+
+mrm_colonist_2 = {
+	colonists = 1
+}
+
+mercantilism_priv_cooldown = {
+	
+}
+
+redux_destroy_estates_nobles_cooldown = {
+
+}
+
+redux_destroy_estates_burghers_cooldown = {
+	
+}
+
+redux_destroy_estates_clergy_cooldown = {
+	
+}
+
+redux_estate_church_development_of_temples_mod = {
+	local_development_cost = -0.1
+	religion = yes
+}
+
+redux_estate_brahmins_development_of_temples_mod = {
+	local_development_cost = -0.1
+	religion = yes
+}
+
+redux_estate_church_united_faith_and_culture = {
+	religion = yes
+	local_unrest = -1
+	local_tax_modifier = 0.2
+	local_production_efficiency = 0.2
+	local_manpower_modifier = 0.2
+}
+
+redux_orm_religious_culture_buff = {
+	religion = yes
+	local_unrest = -1
+	local_tax_modifier = 0.2
+	local_production_efficiency = 0.2
+	local_manpower_modifier = 0.2
+    province_trade_power_modifier = 0.1
+    local_governing_cost = -0.1
+}

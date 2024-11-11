@@ -1,0 +1,12 @@
+nap_two_sicilies_reunited = {
+    galley_power = 0.15
+    naval_maintenance_modifier = -0.1
+}
+
+calabrian_silk = {
+	trade_goods_size = 2
+}
+
+kof_conquered_maghreb_modifier = {
+    discipline = 0.05
+}

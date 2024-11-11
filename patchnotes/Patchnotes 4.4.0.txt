@@ -1,0 +1,111 @@
+MRM Redux Patch 4.4:
+
+############# General/Bugfixes ###############
+
+Added Wumpus larp events, a collection of 21 events intended to improve flavor for European nations including England, Poland, and the Ottomans.
+All playable slots now start with a maximum of 25% Burgher crownland.
+Removed certain options in events that changed the player to a releasable nation.
+
+############ Country-specific ################
+
+Brandenburg:
+    Fixed a bug causing national ideas to no longer give -15% Construction Cost.
+    Starting ruler buffed to a 3/3/3.
+
+Burgundy:
+    Third idea now gives +15% Mercenary Manpower instead of +25%.
+
+Denmark:
+    Starting ruler buffed to a 3/2/3.
+
+Mamluks:
+    "Center of the Islamic World" now gives some ruler buffs instead of a second Golden Era.
+    "Kashifs of Egypt" mission now accepts admin tech 10 instead of 12.
+
+Mughals:
+    Can no longer have the Cossacks estate if formed by Bukhara.
+
+Sweden:
+    "Swedish Mercenary Core" modifier now gives +15% Mercenary Manpower instead of +50%.
+
+Switzerland:
+    "The Mercenary Monopoly" event now gives Mercenary Manpower for 20 years instead of until the end of the game.
+
+########### Government Mechanics #############
+
+Mercenary/Swiss Militarization:
+    Now gives up to +15% Mercenary Manpower instead of +25%.
+
+############ Government Reforms ##############
+
+Ottoman Government/Sultanate of Rum:
+    New "Decadence" feature added that reduces the power of Janissaries each age (no nerf first age, -33% Special Unit Force Limit 2nd age, -50% Special Unit Force Limit 3rd and 4th ages). A future update will include missions to reduce/remove Decadence.
+    No longer gives -75% Special Unit Force Limit.
+    
+############### Idea groups ##################
+
+Administrative:
+    First idea now gives +10% Trade Efficiency instead of -20% Mercenary Cost.
+
+Aristocratic:
+    Sixth idea now gives +10% Morale Damage, replacing its previous modifiers.
+
+Defensive:
+    First idea now gives +100% Army Tradition from Battles instead of +50%.
+    
+Plutocratic:
+    First idea now gives +15% Mercenary Manpower instead of +25%.
+    Second idea now gives -15% Morale Damage Received instead of +10% Morale of Armies.
+    Third idea now gives +15% Recover Army Morale Speed instead of +20%.
+    
+Policies:
+    Administrative-Diplomatic now gives +15% Mercenary Manpower instead of +25%.
+    Administrative-Plutocratic now gives -10% Land Attrition instead of +25% Mercenary Manpower.
+    Aristocratic-Economic now gives +10% Cavalry Combat Ability instead of +10% National Tax Modifier, and is now a military policy instead of administrative.
+    Aristocratic-Logistics now gives -15% Morale Damage Received instead of +0.15 Cavalry Shock.
+    Plutocratic-Espionage now gives +20% National Manpower Modifier instead of +25%.
+    Religious-Offensive now gives +20% Manpower in True Faith Provinces instead of +10%.
+    Religious-Quality now gives +2.5% Discipline instead of +10% Morale Damage.
+
+Religious:
+    Fourth idea now gives +20% National Tax Modifier instead of +15%.
+    Seventh idea now doubles the buffs of the Clergy privileges Religious Culture, Expansionist Zealotry, and Development of Temples instead of giving +2.5% Morale of Armies.
+    Finisher now gives -15% General Cost instead of +10% Clergy Loyalty Equilibrium.
+
+################ Mechanics ###################
+
+Ages:
+    "Floating Batteries" age goal in Age of Reformation readded.
+    "Mercenary Discipline" age goal in Age of Reformation removed.
+
+Army Tradition:
+    Now gives up to +10% Recover Army Morale Speed instead of +20%.
+
+Defines:
+    Minimum monarch skill changed to 1 instead of 0.
+
+Mercenary Companies:
+    Completing idea groups now only give 1 mercenary company for the entire game (no extra mercenaries per age).
+    Removed all "regional" Mercenary Companies previously available in the Age of Discovery. Only the Independent/Grand/Free Companies, idea group mercenaries, and a unique company for every slot are still available.
+
+################ Religions ###################
+
+Anglican:
+    "Grant Monopoly" church aspect now costs 100 church power instead of 75.
+    "Grant Monopoly" church aspect now gives 1 month of income instead of 3.
+
+################# Estates ####################
+
+Burghers:
+    "Elite Mercenaries" now gives up to +7.5% Mercenary Discipline instead of +20%, and no longer gives Mercenary/Swiss Militarization.
+
+Cossacks:
+    "Establish the Cossack Regiments" now gives a flat +10% Cossack Force Limit Fraction instead of a scaling modifier based on crownland, and no longer exempts Cossacks from Seize Land.
+    "Expand the Cossack Regiments" now gives a flat +15% Cossack Force Limit Fraction instead of a scaling modifier based on crownland.
+
+Qizilbash:
+    No longer gives up to +20% Qizilbash Force Limit Fraction for being loyal.
+    "Establish the Qizilbash Regiments" now gives a flat +10% Qizilbash Force Limit Fraction instead of a scaling modifier based on crownland, and no longer gives +6 Qizilbash Force Limit.
+    "Expand the Qizilbash Regiments" now gives a flat +15% Qizilbash Force Limit Fraction instead of a scaling modifier based on crownland.
+    "Protected Communities" no longer gives +4 Qizilbash Force Limit.
+    "Regimental Discipline" privilege removed.

@@ -1,0 +1,58 @@
+MRM Redux Patch 2.1.0:
+
+################# General ####################
+
+Map:
+    Smolensk terrain changed from Grasslands to Woods.
+
+################### Ages #####################
+
+Age of Reformation:
+    Spanish Field Marshals now works correctly.
+
+############## Country-specific ##############
+
+England:
+    Fixed bug with the "Influence the Lowlands" and "Issue the Royal Charter" missions.
+
+Poland: 
+    Manpower given from the "Raise Noble Host" mission reduced by 75%.
+
+############## Defines/Mechanics #############
+
+Defines:
+    Scorched Earth now reduces Local Hostile Movement Speed by -30% instead of -50%.
+
+Estates:
+    Cossacks:
+        Army Tradition gained from "Conscript Elite Cossacks" interaction decreased to 2.5/5/7.5/10 instead of 10/15/20/25.
+    Marathas:
+        Discipline from "Marathas Military Leadership" reduced to 5% from 10%.
+
+Idea Groups:
+    Defensive Ideas:
+        -5% Regiment Manpower Usage removed.
+        Now has -10% Land Maintenance Modifier instead of -5%.
+    Espionage Ideas:
+        -75% Cost to Promote Mercantilism reduced to -50%.
+        +7.5% Goods Produced Modifier removed.
+    Expansion Ideas:
+        Now has -50% Culture Conversion Time.
+    Logistic Ideas:
+        Now has -5% Regiment Manpower Usage as finisher instead of +25% Allowed Marines.
+    Offensive Ideas:
+        Merc company changed to Infantry instead of Artillery.
+        Merc company now has +7.5% Shock Damage instead of +7.5% Damage from Backrow.
+    Policies:
+        Policy with Offensive and Logistic Ideas buffed to +10% Land Fire Damage instead of +7.5%.
+        Policy with Quality and Court Ideas buffed to +10% Infantry Combat Ability instead of +7.5%.
+        Policy with Quality and Logistic Ideas buffed to -15% Fire Damage Received instead of -10%.
+
+Parliament:
+    Manpower given from "The Draft" reduced by 75%.
+
+Technologies:
+    Mil tech 8 now grants +0.4 Cavalry Shock instead of +0.8.
+    Mil tech 12 now grants an additional +0.2 Cavalry Shock.
+    Mil tech 17 now grants +0.5 Cavalry Shock instead of +1.
+    Mil tech 20 now grants an additional +0.25 Cavalry Shock.

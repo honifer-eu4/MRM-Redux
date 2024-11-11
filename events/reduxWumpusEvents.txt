@@ -1,0 +1,1779 @@
+#Wumpus Mod Events
+#Goes in an event file in events
+
+namespace = flavor_kk
+
+country_event = {		#OttomanBosnia
+	id = flavor_kk.1
+	title = "flavor_kk.1.t"
+	desc = "flavor_kk.1.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	
+
+	trigger = {
+		AND = {
+			tag = TUR
+			is_year = 1550
+			3002 = {
+				controlled_by = TUR
+				owned_by = TUR
+				}
+			1828 = {
+				controlled_by = TUR
+				owned_by = TUR
+				}
+			}
+		}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+
+	option = {
+		name = "flavor_kk.BOSNIA1"
+		add_treasury = -50
+		3002 = {
+			change_religion = sunni
+			add_building = temple
+			add_base_tax = 3
+			add_base_production = 2
+			add_base_manpower = 2
+		}
+		1828 = {
+			change_religion = sunni
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+	}
+}
+
+
+
+country_event = {		#OttomanAlbania
+	id = flavor_kk.2
+	title = "flavor_kk.2.t"
+	desc = "flavor_kk.2.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	
+
+	trigger = {
+		AND = {
+			tag = TUR
+			is_year = 1600
+			143 = {
+				controlled_by = TUR
+				owned_by = TUR
+				}
+			4174 = {
+				controlled_by = TUR
+				owned_by = TUR
+				}
+			4175 = {
+				controlled_by = TUR
+				owned_by = TUR
+				}
+			4750 = {
+				controlled_by = TUR
+				owned_by = TUR
+				}
+			}
+		}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = "flavor_kk.ALBANIA1"
+		143 = {
+			change_religion = sunni
+			add_base_tax = 2
+			add_base_production = 1
+			add_base_manpower = 2
+			add_province_modifier = {
+				name = albanian_support
+				duration = -1
+				hidden = no
+			}
+			add_local_autonomy = 30
+		}
+		4174 = {
+			change_religion = sunni
+			add_base_tax = 3
+			add_base_production = 2
+			add_base_manpower = 3
+			add_province_modifier = {
+				name = albanian_support
+				duration = -1
+				hidden = no
+			}
+			add_local_autonomy = 30
+		}
+		4175 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 2
+			add_province_modifier = {
+				name = albanian_support
+				duration = -1
+				hidden = no
+			}
+			add_local_autonomy = 30
+		}
+		4750 = {
+			change_religion = sunni
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 2
+			add_province_modifier = {
+				name = albanian_support
+				duration = -1
+				hidden = no
+			}
+			add_local_autonomy = 30
+		}
+	}
+}
+
+country_event = {		#OttomanKosovo
+	id = flavor_kk.3
+	title = "flavor_kk.3.t"
+	desc = "flavor_kk.3.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	
+
+	trigger = {
+		AND = {
+			tag = TUR
+			143 = {
+				controlled_by = TUR
+				owned_by = TUR
+				}
+			4174 = {
+				controlled_by = TUR
+				owned_by = TUR
+				religion = sunni
+				}
+			4175 = {
+				controlled_by = TUR
+				owned_by = TUR
+				}
+			4750 = {
+				controlled_by = TUR
+				owned_by = TUR
+				}
+			1766 = {
+				controlled_by = TUR
+				owned_by = TUR
+				}
+			}
+		}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = "flavor_kk.KOSOVO1"
+		1766 = {
+			change_religion = sunni
+			change_culture = albanian
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+			add_province_modifier = {
+				name = albanian_support
+				duration = -1
+				hidden = no
+			}
+			add_local_autonomy = 30
+		}
+	}
+}
+
+country_event = {		#OttomanTirnovo
+	id = flavor_kk.4
+	title = "flavor_kk.4.t"
+	desc = "flavor_kk.4.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	
+
+	trigger = {
+		AND = {
+			tag = TUR
+			4704 = {
+				controlled_by = TUR
+				owned_by = TUR
+				}
+			4706 = {
+				controlled_by = TUR
+				owned_by = TUR
+				}
+			159 = {
+				controlled_by = TUR
+				owned_by = TUR
+				}
+			150 = {
+				controlled_by = TUR
+				owned_by = TUR
+				}
+			2750 = {
+				controlled_by = TUR
+				owned_by = TUR
+				}
+			2746 = {
+				controlled_by = TUR
+				owned_by = TUR
+				}
+			1765 = {
+				controlled_by = TUR
+				owned_by = TUR
+				}
+			4703 = {
+				controlled_by = TUR
+				owned_by = TUR
+				}
+			}
+		}
+
+	mean_time_to_happen = {
+		months = 600
+	}
+
+	option = {
+		name = "flavor_kk.TIRNOVO1"
+		add_adm_power = -50
+		add_dip_power = -50
+		add_mil_power = -50
+		add_treasury = -100
+		4704 = {
+			change_religion = sunni
+			change_culture = turkish
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+		}
+		2750 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+		1765 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+		2746 = {
+			add_base_tax = 1
+			add_base_manpower = 1
+		}
+		150 = {
+			add_base_tax = 1
+			add_base_manpower = 1
+		}
+	}
+
+	option = {
+		name = "flavor_kk.TIRNOVO2"
+		add_adm_power = 25
+		151 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+	}
+}
+
+country_event = {		#OttomanGreatGreekRevoltStart
+	id = flavor_kk.5
+	title = "flavor_kk.5.t"
+	desc = "flavor_kk.5.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			AND = {
+				tag = TUR
+				144 = {
+					controlled_by = TUR
+					owned_by = TUR
+					}
+				4699 = {
+					controlled_by = TUR
+					owned_by = TUR
+					}
+				147 = {
+					controlled_by = TUR
+					owned_by = TUR
+					}
+				146 = {
+					controlled_by = TUR
+					owned_by = TUR
+					}
+				145 = {
+					controlled_by = TUR
+					owned_by = TUR
+					}
+				4701 = {
+					controlled_by = TUR
+					owned_by = TUR
+					}
+				1773 = {
+					controlled_by = TUR
+					owned_by = TUR
+					}
+				}
+			AND = {
+				tag = TUR
+				is_year = 1500
+				147 = {
+					controlled_by = TUR
+					owned_by = TUR
+					}
+				148 = {
+					controlled_by = TUR
+					owned_by = TUR
+					}
+				}
+			}
+		}
+
+	mean_time_to_happen = {
+		months = 300
+	}
+
+	option = {
+		name = "flavor_kk.GREECE1"
+		random_owned_province = {
+			limit = {
+				culture = greek
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1
+			}
+		}
+		random_owned_province = {
+			limit = {
+				culture = greek
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1
+			}
+		}
+		random_owned_province = {
+			limit = {
+				culture = greek
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1
+			}
+		}
+		add_country_modifier = {
+				name = great_greek_rebellion
+				duration = 5475
+				hidden = no
+		}
+	}
+}
+
+country_event = {		#OttomanGreatGreekRevoltEnd
+	id = flavor_kk.6
+	title = "flavor_kk.6.t"
+	desc = "flavor_kk.6.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		AND = {
+			tag = TUR
+			has_country_modifier = great_greek_rebellion
+			}
+		}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "flavor_kk.GREECE2"
+		remove_country_modifier = great_greek_rebellion
+		if = {
+			limit = {
+				owns = 144
+			}
+			144 = {
+				add_local_autonomy = 75
+			}
+		}
+		if = {
+			limit = {
+				owns = 4699
+			}
+			4699 = {
+				add_local_autonomy = 75
+			}
+		}
+		if = {
+			limit = {
+				owns = 147
+			}
+			147 = {
+				add_local_autonomy = 75
+			}
+		}
+		if = {
+			limit = {
+				owns = 146
+			}
+			146 = {
+				add_local_autonomy = 75
+			}
+		}
+		if = {
+			limit = {
+				owns = 145
+			}
+			145 = {
+				add_local_autonomy = 75
+			}
+		}
+		if = {
+			limit = {
+				owns = 4701
+			}
+			4701 = {
+				add_local_autonomy = 75
+			}
+		}
+		if = {
+			limit = {
+				owns = 1773
+			}
+			1773 = {
+				add_local_autonomy = 75
+			}
+		}
+	}
+
+	option = {
+		name = "flavor_kk.GREECE3"
+		remove_country_modifier = great_greek_rebellion
+		random_owned_province = {
+			limit = {
+				culture = greek
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1
+			}
+		}
+		random_owned_province = {
+			limit = {
+				culture = greek
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1
+			}
+		}
+		random_owned_province = {
+			limit = {
+				culture = greek
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1
+			}
+		}
+		144 = {
+			add_base_tax = -1
+			add_base_production = -1
+			add_base_manpower = -1
+		}
+		4699 = {
+			add_base_tax = -1
+			add_base_production = -1
+			add_base_manpower = -1
+		}
+		147 = {
+			add_base_tax = -1
+			add_base_production = -1
+			add_base_manpower = -1
+		}
+	}
+}
+
+country_event = {		#PolandLwow
+	id = flavor_kk.7
+	title = "flavor_kk.7.t"
+	desc = "flavor_kk.7.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		AND = {
+			tag = POL
+			2961 = {
+				controlled_by = POL
+				owned_by = POL
+				}
+			}
+		}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = "flavor_kk.LWOW1"
+		add_treasury = -30
+		2961 = {
+			add_province_modifier = {
+				name = lwow_staple_city
+				duration = -1
+				hidden = no
+			}
+			add_culture_construction = {
+				speed = 1.0
+				cost = 0.0
+			}
+		}
+	}
+}
+
+country_event = {		#PolandLwow2
+	id = flavor_kk.8
+	title = "flavor_kk.8.t"
+	desc = "flavor_kk.8.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		AND = {
+			tag = POL
+			2961 = {
+				controlled_by = POL
+				owned_by = POL
+				culture = polish
+				}
+			}
+		}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = "flavor_kk.LWOW2"
+	2961 = {
+			change_religion = catholic
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+		}
+	}
+}
+
+country_event = {		#PolandCurrency
+	id = flavor_kk.9
+	title = "flavor_kk.9.t"
+	desc = "flavor_kk.9.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PLC
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = "flavor_kk.COMMONWEALTHCURRENCY"
+			add_country_modifier = {
+				name = single_currency_commonwealth
+				duration = -1
+				hidden = no
+		}
+	}
+}
+
+country_event = {		#PolesLithuania
+	id = flavor_kk.10
+	title = "flavor_kk.10.t"
+	desc = "flavor_kk.10.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		OR  = {
+			AND = {
+				tag = PLC
+				269 = {
+					controlled_by = PLC
+					owned_by = PLC
+					}
+				277 = {
+					controlled_by = PLC
+					owned_by = PLC
+					}
+				1937 = {
+					controlled_by = PLC
+					owned_by = PLC
+					}
+				4536 = {
+					controlled_by = PLC
+					owned_by = PLC
+					}
+				272 = {
+					controlled_by = PLC
+					owned_by = PLC
+					}
+				770 = {
+					controlled_by = PLC
+					owned_by = PLC
+					}
+				4535 = {
+					controlled_by = PLC
+					owned_by = PLC
+					}
+				}
+			AND = {
+				tag = POL
+				269 = {
+					controlled_by = POL
+					owned_by = POL
+					}
+				277 = {
+					controlled_by = POL
+					owned_by = POL
+					}
+				1937 = {
+					controlled_by = POL
+					owned_by = POL
+					}
+				4536 = {
+					controlled_by = POL
+					owned_by = POL
+					}
+				272 = {
+					controlled_by = POL
+					owned_by = POL
+					}
+				770 = {
+					controlled_by = POL
+					owned_by = POL
+					}
+				4535 = {
+					controlled_by = POL
+					owned_by = POL
+					}
+				}
+			}
+		}
+
+	mean_time_to_happen = {
+		months = 300
+	}
+
+	option = {
+		name = "flavor_kk.POLESLITHUANIA1"
+		277 = {
+			change_culture = polish
+			change_religion = catholic
+		}
+		1937 = {
+			change_culture = polish
+			change_religion = catholic
+		}
+		4536 = {
+			change_culture = polish
+			change_religion = catholic
+		}
+		272 = {
+			change_culture = polish
+			change_religion = catholic
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+			add_province_modifier = {
+				name = vilnius_growth
+				duration = -1
+				hidden = no
+			}
+		}
+		4535 = {
+			change_culture = polish
+			change_religion = catholic
+		}
+		770 = {
+			change_culture = polish
+			change_religion = catholic
+		}
+	}
+
+	option = {
+		name = "flavor_kk.POLESLITHUANIA2"
+		277 = {
+			change_culture = polish
+			change_religion = catholic
+		}
+		1937 = {
+			change_culture = polish
+			change_religion = catholic
+		}
+		4536 = {
+			change_culture = polish
+			change_religion = catholic
+		}
+		272 = {
+			change_culture = polish
+			change_religion = catholic
+			add_province_modifier = {
+				name = vilnius_culture
+				duration = -1
+				hidden = no
+			}
+		POL = {
+			add_country_modifier = {
+				name = vilnius_college
+				duration = -1
+				hidden = no
+				}
+			}
+		}
+		4535 = {
+			change_culture = polish
+			change_religion = catholic
+		}
+		770 = {
+			change_culture = polish
+			change_religion = catholic
+		}
+	}
+}
+
+country_event = {		#EnglishNormans
+	id = flavor_kk.11
+	title = "flavor_kk.11.t"
+	desc = "flavor_kk.11.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			AND = {
+				tag = ENG
+				167 = {
+					controlled_by = ENG
+					owned_by = ENG
+					culture = english
+					}
+				168 = {
+					controlled_by = ENG
+					owned_by = ENG
+					culture = english
+					}
+				4385 = {
+					controlled_by = ENG
+					owned_by = ENG
+					culture = english
+					}
+				}
+			AND = {
+				tag = GBR
+				167 = {
+					controlled_by = GBR
+					owned_by = GBR
+					culture = english
+					}
+				168 = {
+					controlled_by = GBR
+					owned_by = GBR
+					culture = english
+					}
+				4385 = {
+					controlled_by = GBR
+					owned_by = GBR
+					culture = english
+					}
+				}
+			}
+		}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = "flavor_kk.ENGLISHNORMANS1"
+			167 = {
+				add_province_modifier = {
+					name = english_normans
+					duration = -1
+					hidden = no
+				}
+			}
+			168 = {
+				add_province_modifier = {
+					name = english_normans
+					duration = -1
+					hidden = no
+				}
+			}
+			4385 = {
+				add_province_modifier = {
+					name = english_normans
+					duration = -1
+					hidden = no
+				}
+		}
+	}
+}
+
+country_event = {		#ElGranCapitan
+	id = flavor_kk.12
+	title = "flavor_kk.12.t"
+	desc = "flavor_kk.12.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		AND = {
+			is_year = 1470
+			NOT = {
+				is_year = 1515
+			}
+			OR = {
+				tag = CAS
+				tag = SPA
+			}
+			OR = { 
+				is_in_war = {
+					defender_leader = ROOT
+					attacker_leader = FRA
+				}
+				is_in_war = {
+					defender_leader = FRA
+					attacker_leader = ROOT
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "flavor_kk.GRANCAPITAN"
+		add_country_modifier = {
+			name = "el_gran_capitan"
+			duration = 5475
+		}
+	}
+}
+
+country_event = {		#SpainJewishExpulsion
+	id = flavor_kk.13
+	title = "flavor_kk.13.t"
+	desc = "flavor_kk.13.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = CAS
+			tag = SPA
+		}
+		is_year = 1492
+		NOT = {
+			full_idea_group = humanist_ideas
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "flavor_kk.SPAINEXILEDJEWS1"
+		219 = {
+			remove_province_modifier = influential_jewish_minority
+			add_base_tax = -2
+			add_base_production = -1
+		}
+		add_country_modifier = {
+				name = expelled_the_jews_modifier
+				duration = 4380
+				hidden = no
+		}
+		add_years_of_income = 2
+		add_adm_power = 300
+		add_stability = 1
+	}
+}
+
+country_event = {		#ItalianFederation
+	id = flavor_kk.14
+	title = "flavor_kk.14.t"
+	desc = "flavor_kk.14.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		AND = {
+			tag = ITA
+			government = republic
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "flavor_kk.ITALIANFEDERATION1"
+			add_country_modifier = {
+				name = centralized_italian_republic_modifier
+				duration = -1
+				hidden = no
+		}
+	}
+
+	option = {
+		name = "flavor_kk.ITALIANFEDERATION2"
+			override_country_name = ITALIAN_FEDERATION
+			add_country_modifier = {
+				name = decentralized_italian_republic_modifier
+				duration = -1
+				hidden = no
+		}
+	}
+}
+
+country_event = {		#SejmUnderminesAuthority
+	id = flavor_kk.15
+	title = "flavor_kk.15.t"
+	desc = "flavor_kk.15.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = no
+	
+	trigger = {
+		OR = {
+			tag = POL
+			tag = PLC
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+	}
+
+	option = {
+		name = "flavor_kk.SEJM1"
+		add_stability = -1
+	}
+
+	option = {
+		name = "flavor_kk.SEJM2"
+		change_government_reform_progress = -25
+	}
+}
+
+country_event = {		#ReligiousIdeasJewishExpulsion
+	id = flavor_kk.16
+	title = "flavor_kk.16.t"
+	desc = "flavor_kk.16.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = no
+	
+	trigger = {
+		AND = {
+			full_idea_group = religious_ideas
+			OR = {
+				AND = {
+					owns = 109
+					109 = {
+						has_province_modifier = influential_jewish_minority
+					}
+				}
+				AND = {
+					owns = 112
+					112 = {
+						has_province_modifier = influential_jewish_minority
+					}
+				}
+				AND = {
+					owns = 125
+					125 = {
+						has_province_modifier = influential_jewish_minority
+					}
+				}
+				AND = {
+					owns = 151
+					151 = {
+						has_province_modifier = influential_jewish_minority
+					}
+				}
+				AND = {
+					owns = 153
+					153 = {
+						has_province_modifier = influential_jewish_minority
+					}
+				}
+				AND = {
+					owns = 219
+					219 = {
+						has_province_modifier = influential_jewish_minority
+					}
+				}
+				AND = {
+					owns = 257
+					257 = {
+						has_province_modifier = influential_jewish_minority
+					}
+				}
+				AND = {
+					owns = 260
+					260 = {
+						has_province_modifier = influential_jewish_minority
+					}
+				}
+				AND = {
+					owns = 280
+					280 = {
+						has_province_modifier = influential_jewish_minority
+					}
+				}
+				AND = {
+					owns = 1876
+					1876 = {
+						has_province_modifier = influential_jewish_minority
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+	}
+
+	option = {
+		name = "flavor_kk.RELIGIOUSJEWISHEXPULSION1"
+		add_stability = -1
+	}
+
+	option = {
+		name = "flavor_kk.RELIGIOUSJEWISHEXPULSION2"
+		if = {
+			limit = {
+				owns = 109
+			}
+			109 = {
+				remove_province_modifier = influential_jewish_minority
+			}
+		}
+		if = {
+			limit = {
+				owns = 112
+			}
+			112 = {
+				remove_province_modifier = influential_jewish_minority
+			}
+		}
+		if = {
+			limit = {
+				owns = 125
+			}
+			125 = {
+				remove_province_modifier = influential_jewish_minority
+			}
+		}
+		if = {
+			limit = {
+				owns = 151
+			}
+			151 = {
+				remove_province_modifier = influential_jewish_minority
+			}
+		}
+		if = {
+			limit = {
+				owns = 153
+			}
+			153 = {
+				remove_province_modifier = influential_jewish_minority
+			}
+		}
+		if = {
+			limit = {
+				owns = 219
+			}
+			219 = {
+				remove_province_modifier = influential_jewish_minority
+			}
+		}
+		if = {
+			limit = {
+				owns = 257
+			}
+			257 = {
+				remove_province_modifier = influential_jewish_minority
+			}
+		}
+		if = {
+			limit = {
+				owns = 260
+			}
+			260 = {
+				remove_province_modifier = influential_jewish_minority
+			}
+		}
+		if = {
+			limit = {
+				owns = 280
+			}
+			280 = {
+				remove_province_modifier = influential_jewish_minority
+			}
+		}
+		if = {
+			limit = {
+				owns = 1876
+			}
+			1876 = {
+				remove_province_modifier = influential_jewish_minority
+			}
+		}
+		add_country_modifier = {
+				name = expelled_the_jews_modifier
+				duration = 4380
+				hidden = no
+		}
+		add_years_of_income = 2
+		add_adm_power = 200
+		add_stability = 1
+	}
+}
+
+country_event = {		#NaplesPizza
+	id = flavor_kk.17
+	title = "flavor_kk.17.t"
+	desc = "flavor_kk.17.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		owns = 121
+		is_year = 1500
+		121 = {
+			NOT = {
+				has_province_modifier = birthplace_of_pizza_modifier
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+	}
+
+	option = {
+		name = "flavor_kk.NAPLESPIZZA"
+		121 = {
+			add_base_production = 1
+			add_base_manpower = 1
+			add_province_modifier = {
+				name = birthplace_of_pizza_modifier
+				duration = -1
+				hidden = no
+			}
+		}
+	}
+}
+
+country_event = {		#EnglandCrownOfIreland
+	id = flavor_kk.18
+	title = "flavor_kk.18.t"
+	desc = "flavor_kk.18.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		NOT = {
+			religion = catholic
+		}
+		owns_core_province = 4121
+		owns_core_province = 372
+		owns_core_province = 4380
+		owns_core_province = 373
+		owns_core_province = 374
+		owns_core_province = 4120
+		owns_core_province = 4379
+		owns_core_province = 4119
+		owns_core_province = 376
+		owns_core_province = 375
+		owns_core_province = 4377
+		owns_core_province = 4118
+		owns_core_province = 4378
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "flavor_kk.ENGLANDCROWNOFIRELAND1"
+		ulster_area = {
+			remove_province_modifier = lordship_of_ireland_modifier
+			add_province_modifier = {
+				name = crown_of_ireland_modifier
+				duration = -1
+				hidden = no
+			}
+		}
+		leinster_area = {
+			remove_province_modifier = lordship_of_ireland_modifier
+			add_province_modifier = {
+				name = crown_of_ireland_modifier
+				duration = -1
+				hidden = no
+			}
+		}
+		connacht_area = {
+			remove_province_modifier = lordship_of_ireland_modifier
+			add_province_modifier = {
+				name = crown_of_ireland_modifier
+				duration = -1
+				hidden = no
+			}
+		}
+		munster_area = {
+			remove_province_modifier = lordship_of_ireland_modifier
+			add_province_modifier = {
+				name = crown_of_ireland_modifier
+				duration = -1
+				hidden = no
+			}
+		}
+	}
+
+	option = {
+		name = "flavor_kk.ENGLANDCROWNOFIRELAND2"
+		add_country_modifier = {
+				name = settlement_of_ireland_modifier
+				duration = -1
+				hidden = no
+		}
+		ulster_area = {
+			remove_province_modifier = lordship_of_ireland_modifier
+			add_province_modifier = {
+				name = act_of_unity_modifier
+				duration = -1
+				hidden = no
+			}
+		}
+		leinster_area = {
+			remove_province_modifier = lordship_of_ireland_modifier
+			add_province_modifier = {
+				name = act_of_unity_modifier
+				duration = -1
+				hidden = no
+			}
+		}
+		connacht_area = {
+			remove_province_modifier = lordship_of_ireland_modifier
+			add_province_modifier = {
+				name = act_of_unity_modifier
+				duration = -1
+				hidden = no
+			}
+		}
+		munster_area = {
+			remove_province_modifier = lordship_of_ireland_modifier
+			add_province_modifier = {
+				name = act_of_unity_modifier
+				duration = -1
+				hidden = no
+			}
+		}
+	}
+}
+
+country_event = {		#EnglandSettlementOfIreland
+	id = flavor_kk.19
+	title = "flavor_kk.19.t"
+	desc = "flavor_kk.19.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = no
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		ROOT = {
+			has_country_modifier = settlement_of_ireland_modifier
+		}
+		NOT = {
+			has_country_modifier = promotion_of_irish_colonization_modifier
+		}
+		owns_core_province = 4121
+		owns_core_province = 372
+		owns_core_province = 4380
+		owns_core_province = 373
+		owns_core_province = 374
+		owns_core_province = 4120
+		owns_core_province = 4379
+		owns_core_province = 4119
+		owns_core_province = 376
+		owns_core_province = 375
+		owns_core_province = 4377
+		owns_core_province = 4118
+		owns_core_province = 4378
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = "flavor_kk.ENGLANDSETTLEMENTOFIRELAND1"
+		add_prestige = 5
+	}
+
+	option = {
+		name = "flavor_kk.ENGLANDSETTLEMENTOFIRELAND2"
+		add_country_modifier = {
+				name = promotion_of_irish_colonization_modifier
+				duration = -1
+				hidden = no
+		}
+		add_adm_power = -200
+		add_dip_power = -200
+		add_mil_power = -200
+		373 = {
+			add_culture_construction = {
+				speed = 2.0
+				cost = 0.0
+			}
+		}
+		4121 = {
+			add_culture_construction = {
+				speed = 2.0
+				cost = 0.0
+			}
+		}
+		372 = {
+			add_culture_construction = {
+				speed = 4.0
+				cost = 0.0
+			}
+		}
+		374 = {
+			add_culture_construction = {
+				speed = 4.0
+				cost = 0.0
+			}
+		}
+		4120 = {
+			add_culture_construction = {
+				speed = 4.0
+				cost = 0.0
+			}
+		}
+		4379 = {
+			add_culture_construction = {
+				speed = 4.0
+				cost = 0.0
+			}
+		}
+		4377 = {
+			add_culture_construction = {
+				speed = 4.0
+				cost = 0.0
+			}
+		}
+		4118 = {
+			add_culture_construction = {
+				speed = 4.0
+				cost = 0.0
+			}
+		}
+		4378 = {
+			add_culture_construction = {
+				speed = 4.0
+				cost = 0.0
+			}
+		}
+	}
+}
+
+country_event = {		#EnglandSettlementOfIrelandEastComplete
+	id = flavor_kk.20
+	title = "flavor_kk.20.t"
+	desc = "flavor_kk.20.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		ROOT = {
+			has_country_modifier = settlement_of_ireland_modifier
+		}
+		owns_core_province = 4121
+		4121 = {
+			culture = english
+		}
+		owns_core_province = 372
+		372 = {
+			culture = english
+		}
+		owns_core_province = 4380
+		owns_core_province = 373
+		373 = {
+			culture = english
+		}
+		owns_core_province = 374
+		374 = {
+			culture = english
+		}
+		owns_core_province = 4120
+		4120 = {
+			culture = english
+		}
+		owns_core_province = 4379
+		4379 = {
+			culture = english
+		}
+		owns_core_province = 4119
+		owns_core_province = 376
+		owns_core_province = 375
+		owns_core_province = 4377
+		4377 = {
+			culture = english
+		}
+		owns_core_province = 4118
+		4118 = {
+			culture = english
+		}
+		owns_core_province = 4378
+		4378 = {
+			culture = english
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = "flavor_kk.ENGLANDSETTLEDEASTIRELAND"
+		373 = {
+			remove_province_modifier = act_of_unity_modifier
+		}
+		4121 = {
+			remove_province_modifier = act_of_unity_modifier
+		}
+		372 = {
+			remove_province_modifier = act_of_unity_modifier
+		}
+		374 = {
+			remove_province_modifier = act_of_unity_modifier
+		}
+		4120 = {
+			remove_province_modifier = act_of_unity_modifier
+		}
+		4379 = {
+			remove_province_modifier = act_of_unity_modifier
+		}
+		4377 = {
+			remove_province_modifier = act_of_unity_modifier
+		}
+		4118 = {
+			remove_province_modifier = act_of_unity_modifier
+		}
+		4378 = {
+			remove_province_modifier = act_of_unity_modifier
+		}
+	}
+}
+
+country_event = {		#EnglandSettlementOfIrelandWest
+	id = flavor_kk.21
+	title = "flavor_kk.21.t"
+	desc = "flavor_kk.21.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		OR = {
+			ENG = {
+				has_country_modifier = settlement_of_ireland_modifier
+			}
+			GBR = {
+				has_country_modifier = settlement_of_ireland_modifier
+			}
+		}
+		owns_core_province = 4121
+		4121 = {
+			AND = {
+				culture = english
+				NOT = {
+					has_province_modifier = act_of_unity_modifier
+				}
+			}
+		}
+		owns_core_province = 372
+		372 = {
+			AND = {
+				culture = english
+				NOT = {
+					has_province_modifier = act_of_unity_modifier
+				}
+			}
+		}
+		owns_core_province = 373
+		373 = {
+			AND = {
+				culture = english
+				NOT = {
+					has_province_modifier = act_of_unity_modifier
+				}
+			}
+		}
+		owns_core_province = 374
+		374 = {
+			AND = {
+				culture = english
+				NOT = {
+					has_province_modifier = act_of_unity_modifier
+				}
+			}
+		}
+		owns_core_province = 4120
+		4120 = {
+			AND = {
+				culture = english
+				NOT = {
+					has_province_modifier = act_of_unity_modifier
+				}
+			}
+		}
+		owns_core_province = 4379
+		4379 = {
+			AND = {
+				culture = english
+				NOT = {
+					has_province_modifier = act_of_unity_modifier
+				}
+			}
+		}
+		owns_core_province = 4377
+		4377 = {
+			AND = {
+				culture = english
+				NOT = {
+					has_province_modifier = act_of_unity_modifier
+				}
+			}
+		}
+		owns_core_province = 4118
+		4118 = {
+			AND = {
+				culture = english
+				NOT = {
+					has_province_modifier = act_of_unity_modifier
+				}
+			}
+		}
+		owns_core_province = 4378
+		4378 = {
+			AND = {
+				culture = english
+				NOT = {
+					has_province_modifier = act_of_unity_modifier
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "flavor_kk.ENGLANDSETTLEMENTWESTIRELAND1"
+		remove_country_modifier = settlement_of_ireland_modifier
+		remove_country_modifier = promotion_of_irish_colonization_modifier
+		4380 = {
+			remove_province_modifier = act_of_unity_modifier
+			add_province_modifier = {
+				name = crown_of_ireland_modifier
+				duration = -1
+				hidden = no
+			}
+		}
+		4119 = {
+			remove_province_modifier = act_of_unity_modifier
+			add_province_modifier = {
+				name = crown_of_ireland_modifier
+				duration = -1
+				hidden = no
+			}
+		}
+		376 = {
+			remove_province_modifier = act_of_unity_modifier
+			add_province_modifier = {
+				name = crown_of_ireland_modifier
+				duration = -1
+				hidden = no
+			}
+		}
+		375 = {
+			remove_province_modifier = act_of_unity_modifier
+			add_province_modifier = {
+				name = crown_of_ireland_modifier
+				duration = -1
+				hidden = no
+			}
+		}
+	}
+
+	option = {
+		name = "flavor_kk.ENGLANDSETTLEMENTWESTIRELAND2"
+		add_adm_power = -100
+		add_dip_power = -100
+		add_mil_power = -100
+		4380 = {
+			add_culture_construction = {
+				speed = 4.0
+				cost = 0.0
+			}
+		}
+		4119 = {
+			add_culture_construction = {
+				speed = 4.0
+				cost = 0.0
+			}
+		}
+		376 = {
+			add_culture_construction = {
+				speed = 4.0
+				cost = 0.0
+			}
+		}
+		375 = {
+			add_culture_construction = {
+				speed = 4.0
+				cost = 0.0
+			}
+		}
+	}
+}
+
+country_event = {		#EnglandSettlementOfIrelandWestComplete
+	id = flavor_kk.22
+	title = "flavor_kk.22.t"
+	desc = "flavor_kk.22.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		OR = {
+			ENG = {
+				has_country_modifier = settlement_of_ireland_modifier
+			}
+			GBR = {
+				has_country_modifier = settlement_of_ireland_modifier
+			}
+		}
+		owns_core_province = 4380
+		4380 = {
+			culture = english
+		}
+		owns_core_province = 4119
+		4119 = {
+			culture = english
+		}
+		owns_core_province = 376
+		376 = {
+			culture = english
+		}
+		owns_core_province = 375
+		375 = {
+			culture = english
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "flavor_kk.ENGLANDSETTLEDWESTIRELAND"
+		remove_country_modifier = settlement_of_ireland_modifier
+		remove_country_modifier = promotion_of_irish_colonization_modifier
+		4380 = {
+			remove_province_modifier = act_of_unity_modifier
+		}
+		4119 = {
+			remove_province_modifier = act_of_unity_modifier
+		}
+		376 = {
+			remove_province_modifier = act_of_unity_modifier
+		}
+		375 = {
+			remove_province_modifier = act_of_unity_modifier
+		}
+	}
+}

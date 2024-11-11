@@ -1,0 +1,22 @@
+#1162 - Wukari
+
+culture = jukun
+religion = shamanism #Fetishism
+capital = "Wukari"
+trade_goods = tropical_wood
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+
+
+
+is_city = yes
+discovered_by = sub_saharan
+
+
+1444.1.1 = {
+	owner = NUP
+	controller = NUP
+	add_core = NUP
+}

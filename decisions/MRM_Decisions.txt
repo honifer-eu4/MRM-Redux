@@ -1,0 +1,250 @@
+country_decisions = {
+    sm_hire_general = {
+			potential = {
+				ai = no
+				NOT = { has_country_flag = sm_hire_general }
+			}
+			allow = {
+				NOT = { army_tradition = 40 }
+			}
+			effect = {
+				add_years_of_income = -0.4
+				create_general = { tradition = 40 }
+				set_country_flag = sm_hire_general
+			}
+		}
+    educate_ruler = {
+		major = yes
+		potential = {
+			ai = no
+			NOT = { has_country_flag = educate_ruler_flag }
+			NOT = {
+				government = republic
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = educate_ruler_tooltip
+				OR = {
+					NOT = {
+						adm = 3
+						dip = 3
+						mil = 3
+					}
+					NOT = {
+						adm = 5
+						dip = 2
+						mil = 2
+					}
+					NOT = {
+						adm = 2
+						dip = 5
+						mil = 2
+					}
+					NOT = {
+						adm = 2
+						dip = 2
+						mil = 5
+					}
+					NOT = {
+						adm = 4
+						dip = 2
+						mil = 3
+					}
+					NOT = {
+						adm = 4
+						dip = 3
+						mil = 2
+					}
+					NOT = {
+						adm = 3
+						dip = 4
+						mil = 2
+					}
+					NOT = {
+						adm = 2
+						dip = 4
+						mil = 3
+					}
+					NOT = {
+						adm = 2
+						dip = 3
+						mil = 4
+					}
+					NOT = {
+						adm = 3
+						dip = 2
+						mil = 4
+					}
+					NOT = {
+						adm = 1
+						dip = 4
+						mil = 4
+					}
+					NOT = {
+						adm = 4
+						dip = 1
+						mil = 4
+					}
+					NOT = {
+						adm = 4
+						dip = 4
+						mil = 1
+					}
+					NOT = {
+						adm = 1
+						dip = 3
+						mil = 5
+					}
+					NOT = {
+						adm = 1
+						dip = 5
+						mil = 3
+					}
+					NOT = {
+						adm = 3
+						dip = 1
+						mil = 5
+					}
+					NOT = {
+						adm = 3
+						dip = 5
+						mil = 1
+					}
+					NOT = {
+						adm = 5
+						dip = 1
+						mil = 3
+					}
+					NOT = {
+						adm = 5
+						dip = 3
+						mil = 1
+					}
+					NOT = {
+						adm = 1
+						dip = 2
+						mil = 6
+					}
+					NOT = {
+						adm = 1
+						dip = 6
+						mil = 2
+					}
+					NOT = {
+						adm = 2
+						dip = 1
+						mil = 6
+					}
+					NOT = {
+						adm = 2
+						dip = 6
+						mil = 1
+					}
+					NOT = {
+						adm = 6
+						dip = 1
+						mil = 2
+					}
+					NOT = {
+						adm = 6
+						dip = 2
+						mil = 1
+					}
+					AND = {
+						adm = 6
+						NOT = {
+							dip = 1
+							mil = 1
+						}
+					}
+					AND = {
+						dip = 6
+						NOT = {
+							adm = 1
+							mil = 1
+						}
+					}
+					AND = {
+						mil = 6
+						NOT = {
+							dip = 1
+							adm = 1
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			change_ruler_stat = {
+				type = adm 
+				amount = 1
+			}
+			change_ruler_stat = {
+				type = dip  
+				amount = 1
+			}
+			change_ruler_stat = {
+				type = mil 
+				amount = 1
+			}
+			add_years_of_income = -0.5
+			set_country_flag = educate_ruler_flag
+		}
+	}
+		#From Dave and PR Mod
+	PR_critical_events = {
+		color = { 61 8 81 }
+		potential = {
+			ai = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = PR_radical_reform_decision
+				NOT = { has_country_flag = radical_mercantilist_reforms }
+			}
+			custom_trigger_tooltip = {
+				tooltip = PR_military_reform_decision
+				NOT = { has_country_flag = military_reform }
+			}
+			custom_trigger_tooltip = {
+				tooltip = PR_commandant_decision
+				NOT = { has_country_flag = commandant }
+			}
+			custom_trigger_tooltip = {
+				tooltip = PR_grand_captain_decision
+				NOT = { has_country_flag = grand_captain }
+			}
+			always = no
+		}
+		effect = {
+		}
+	}
+
+	manpower_edict_decision = {
+		major = yes
+		potential = {
+			ai = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+			any_state = {
+				NOT = { has_state_edict = edict_promote_military_recruitment }
+			}
+		}
+		effect = {
+			custom_tooltip = redux_manpower_edict_tt
+			every_owned_province = {
+				limit = {
+					is_state = yes
+				}
+				set_state_edict = edict_promote_military_recruitment
+			}
+		}
+	}
+}

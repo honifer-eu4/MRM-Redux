@@ -1,0 +1,34 @@
+government = tribal
+add_government_reform = steppe_horde
+primary_culture = kazani
+religion = sunni
+technology_group = nomad_group
+capital = 1082	# Kazan
+historical_rival = GOL
+historical_rival = MOS
+historical_rival = LIT
+religious_school = hanafi_school
+
+1438.1.1 = {
+	monarch = {
+		name = "Ulugh Muhammad"
+		dynasty = "Genghisid"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1438.1.1 = {
+	heir = {
+		name = "Mahmudak"
+		monarch_name = "Mahmudak"
+		dynasty = "Genghisid"
+		birth_date = 1430.1.1
+		death_Date = 1466.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

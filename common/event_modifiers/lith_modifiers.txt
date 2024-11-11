@@ -1,0 +1,36 @@
+redux_lith_cossacks = {
+    cossacks_loyalty_modifier = 0.1
+    cossacks_privilege_slots = 1
+}
+
+redux_lith_stabilize = {
+    stability_cost_modifier = -0.15
+    no_stability_loss_on_monarch_death = yes
+}
+
+redux_lith_magdeburg_laws = {
+    global_trade_goods_size_modifier = 0.1
+    global_autonomy = -0.05
+}
+
+redux_lith_east = {
+    land_morale = 0.05
+    land_maintenance_modifier = -0.1
+}
+
+redux_lith_moscow = {
+    interest = -0.5
+    global_unrest = -5
+    global_autonomy = -0.05
+    inflation_reduction = 0.15
+}
+
+redux_lith_rus = {
+    infantry_power = 0.1
+    artillery_power = 0.1
+}
+
+redux_lith_absolutism_mod = {
+    max_absolutism_effect = 0.1
+    legitimacy = 1
+}

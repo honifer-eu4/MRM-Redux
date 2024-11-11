@@ -1,0 +1,9 @@
+# African Filler countries
+LGW = "countries/Luangwa.txt"
+SHB = "countries/Shamba.txt"
+TNZ = "countries/Tanzania.txt"
+CMO = "countries/Cameroon.txt"
+
+# Maghreb
+
+MGB = "countries/Maghreb.txt"

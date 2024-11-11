@@ -1,0 +1,10 @@
+crushed_the_turk = {
+	global_unrest = -5
+	stability_cost_modifier = -0.25
+	yearly_corruption = -0.2
+	inflation_reduction = 0.15
+}
+cross_the_straits = {
+	siege_ability = 0.33
+	galley_power = 0.25
+}

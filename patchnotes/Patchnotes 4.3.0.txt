@@ -1,0 +1,99 @@
+MRM Redux Patch 4.3:
+
+############# General/Bugfixes ###############
+
+Added a trade center in the Lubeck node to the province of Stolp.
+Added 4 trade centers in the Southern Mediterranean node to the provinces of Cagliari, Calabria, Kabylia, and Malta.
+Fixed a bug causing Legitimacy to give less Reform Progress than intended.
+Fixed a bug that unintentionally removed the Oder Estuary on Stettin.
+The provinces of Calabria, Cosenza, and Palermo now start with Silk and the "Calabrian Silk" province modiifer, granting +2 Local Goods Produced.
+
+############ Country-specific ################
+
+Brandenburg:
+    Added 2 new missions, including the option to PU Pomerania diplomatically, claims on the Mecklenburg state, and the ability to obtain Kingdom rank.
+    First idea now gives +15% Fort Defense instead of +10% Infantry Combat Ability.
+    Now starts with the Margraviate Tier 1 reform instead of Prussian Monarchy, which gives +20% Fort Defense, -50% Fort Maintenance, and -25% Cost to Fabricate Claims.
+    Starting heir buffed to a 3/3/4.
+    Tradition now gives +10% Infantry Combat Ability instead of -20% Cost to Fabricate Claims.
+
+Burgundy:
+    "Carolingian Empire" mission now requires 50 provinces in the North Germany or South Germany regions instead of 25.
+    "Feast of Pheasants" mission now gives a missionary buff instead of providing Morale of Armies.
+    "Rex Francorum" mission now gives +10% Morale of Armies instead of +15%.
+    "The Great Trial" mission now gives -25% Cost to Reduce War Exhaustion instead of -10% Military Technology Cost, and +25% Garrison Size instead of +50%.
+    "Time of Glory" mission now lasts for 10 years instead of 20.
+
+Castile:
+    "Claims in Aragon" mission now requires being 1450 or later instead of directly owning Aragon.
+    "Spanish Armada" mission now gives +5% Morale of Navies instead of +20%.
+
+Mamluks:
+    All provinces no longer start with extra autonomy.
+
+Morocco:
+    Starting ruler buffed to a 4/5/4.
+
+Naples:
+    Mission to spawn Calabrian Silk now spawns/upgrades a workshop on Calabria instead.
+
+Portugal: 
+    Final idea now gives +0.75 Artillery Fire instead of +0.5.
+    First idea now gives +1 Fleet Movement Speed instead of +1 Colonist.
+    Tradition now gives +20% Infantry Combat Ability instead of +10%.
+    Tradition now has +1 Colonist instead of +1 Fleet Movement Speed.
+
+########### Government Mechanics #############
+
+Mercenary Militarization:
+    Now gives up to +7.5% Mercenary Discipline instead of +10%.
+
+Swiss Militarization:
+    Now gives up to +7.5% Mercenary Discipline and +15% when upgraded instead of +10% and +20% respectively.
+
+############ Government Reforms ##############
+
+Monarchy:
+    "Centralized Monarchical Bureaucracy" Tier 3 reform no longer gives -10% Culture Conversion Cost or -5% All Estates' Loyalty Equilibrium.
+    "Regional Councils" Tier 3 reform now gives -20% State Maintenance.
+    
+############### Idea groups ##################
+
+Court:
+    Now has -50% Estate Interaction Cooldown Timer instead of -20%.
+
+Plutocratic:
+    Now has +25% Mercenary Manpower and +5% Mercenary Discipline instead of +40% and +7.5% respectively.
+
+Policies:
+    Administrative-Plutocratic now gives +25% Mercenary Manpower instead of +40%.
+    Court-Offensive now gives +15% Morale Damage instead of +10%.
+    Espionage-Quantity now gives +10% Artillery Combat Ability and +20% National Supply Limit Modifier, replacing its previous modifiers.
+
+################ Mechanics ###################
+
+Ages:
+    "Danish Subject Loyalty" objective now gives +5% Mercenary Discipline instead of +10%.
+    "Mercenary Discipline" objective now gives +5% Mercenary Discipline instead of +10%.
+
+Defines: 
+    Innovativeness gain from taking an idea first reduced to 1 to 2.
+    Innovativeness gain from taking a technology level first reduced to 1 from 2.
+
+Events:
+	"The Italian Wars" event and triggered modifiers removed.
+
+Mercenary Companies:
+    "Mamluks of the Nile" now have +10% cost modifier instead of +50%.
+    "Mesopotamian Mamluks" now have +50% cost modifier instead of +10%.
+
+################# Estates ####################
+
+Burghers:
+    "Elite Mercenaries" no longer gives Land Fire Damage.
+
+Clergy:
+    "Religious Brigades" now gives up to +5% Land Maintenance Modifier instead of +10%.
+	
+General:
+    Sale of Titles now gives 1.5 years of Estate Land Income in the Age of Discovery and 1 year in all other ages instead of 2.5/2/1.5/1.

@@ -1,0 +1,26 @@
+MRM Redux Patch 4.0.2:
+
+################ Country-specific ###################
+
+Prussia:
+    Fixed a bug where the vanilla militarization mechanic would be used instead of the modded one for the Republic and Theocratic versions of the government.
+
+Russia:
+    Fixed an exploit that made "Proclaim the Emperor Title" easier than intended.
+
+################### Governments #####################
+
+Theocracy:
+    "One State Under God" Tier 13 reform now grants -10% Warscore Cost Against Other Religions instead of -30%.
+
+#################### Mechanics ######################
+
+Defines:
+    Fixed a bug where cannons would still unintentionally take damage in the backrow at times.
+
+Disasters:
+    "French Revolution" removed from game.
+    "Revolution" removed from game.
+
+Estates:
+    Added up to +10% Land Fire Damage to the Burghers' "Elite Mercenaries" privilege.

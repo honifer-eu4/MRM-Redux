@@ -1,0 +1,81 @@
+redux_ger_speed5_infra_mod = {
+	movement_speed = 0.05
+}
+
+redux_ger_gametactica_mod = {
+	drill_gain_modifier = 0.25
+	drill_decay_modifier = -0.25
+}
+
+redux_ger_paradox_mod = {
+	war_exhaustion = -0.1
+}
+
+redux_ger_iron_mod = {
+	recover_army_morale_speed = 0.2
+}
+
+redux_ger_capital_mod = {
+	defensiveness = 0.25
+}
+
+redux_ger_legitimacy_mod = {
+	legitimacy = 1
+	republican_tradition = 0.5
+	devotion = 1
+	horde_unity = 1
+	meritocracy = 1
+}
+
+redux_ger_pope_mod = {
+	papal_influence = 1
+	curia_powers_cost = -0.1
+}
+
+redux_ger_dotf_mod = {
+	manpower_in_true_faith_provinces = 0.1
+}
+
+redux_ger_princes_mod = {
+	yearly_absolutism = 0.5
+}
+
+redux_ger_convert_mod = {
+	missionary_maintenance_cost = -0.5
+}
+
+redux_ger_bishops_mod = {
+	global_tax_modifier = 0.1
+	curia_treasury_contribution = -0.5
+}
+
+redux_ger_trade_1_mod = {
+	global_trade_power = 0.1
+}
+
+redux_ger_trade_2_mod = {
+	global_trade_goods_size_modifier = 0.05
+}
+
+redux_ger_magnates_mod = {
+	trade_efficiency = 0.1
+}
+
+redux_ger_centralize_mod = {
+	global_autonomy = -0.05
+}
+
+redux_ger_sphere_mod = {
+	diplomatic_upkeep = 2
+	reduced_liberty_desire = 20
+}
+
+redux_ger_despots_mod = {
+	administrative_efficiency = 0.05
+}
+
+redux_ger_imperial_ambition_mod = {
+	max_absolutism = 25
+	max_absolutism_effect = 0.1
+	discipline = 0.05
+}

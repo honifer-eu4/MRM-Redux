@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = english_monarchy
+mercantilism = 25
+technology_group = western
+primary_culture = english
+add_accepted_culture = gascon
+add_accepted_culture = normand
+religion = catholic
+capital = 236 # London
+national_focus = DIP
+
+change_estate_land_share = {
+	estate = estate_church
+	share = -10
+}
+change_estate_land_share = {
+	estate = estate_burghers
+	share = -10
+}
+
+#1422.8.31 = { #Succession
+
+change_estate_land_share = { #compensates for lack of nobles, distributes 20 between the remaining estates
+	estate = all
+	share = 20
+}
+
+
+1429.11.6 = { #Coronation
+	monarch = {
+		name = "Henry VI"
+		dynasty = "Lancaster"
+		birth_date = 1421.12.6
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = infertile_personality
+	add_ruler_personality = kind_hearted_personality
+	set_ruler_flag = henry_vi_lancaster
+}
+
+#1434.1.1 = { leader = {	name = "Richard Neville"	type = general	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1460.12.31 } }
+
+1444.1.1 = {
+	leader = {
+		name = "John Talbot"
+		type = general
+		fire = 2
+		shock = 4
+		manuever = 3
+		siege = 0
+		death_date = 1453.7.17
+	}
+	set_estate_privilege = estate_nobles_english_villeinage
+}

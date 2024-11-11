@@ -1,0 +1,141 @@
+namespace = redux_swi
+normal_or_historical_nations = yes
+
+# The Question of Geneva
+
+country_event = {
+    id = redux_swi.1
+    title = redux_swi.1.t
+    desc = redux_swi.1.d
+    picture = REVOLUTION_eventPicture
+
+    is_triggered_only = yes
+
+    option = { 
+        name = redux_swi.1.opta
+        set_global_flag = redux_geneva_peaceful_solution
+        add_stability_or_adm_power = yes
+        vassalize = GNV
+    }
+
+    option = {
+        name = redux_swi.1.optb
+        set_global_flag = redux_geneva_hostile_solution
+        custom_tooltip = swi_geneva_debuff_tt
+    }
+}
+
+# Geneva - Peaceful Solution 
+
+country_event = {
+    id = redux_swi.2
+    title = redux_swi.2.t
+    desc = redux_swi.2.d
+    picture = COURT_eventPicture
+
+    is_triggered_only = yes 
+
+    option = {
+        name = redux_swi.2.opta
+        change_government_reform_progress = 50
+        add_republican_tradition = 10
+        add_adm_power = 100
+    }
+}
+
+# Geneva - Hostile Solution 
+
+country_event = {
+    id = redux_swi.3 
+    title = redux_swi.3.t
+    desc = redux_swi.3.d
+    picture = REVOLUTION_eventPicture
+
+    is_triggered_only = yes
+    
+    option = {
+        name = redux_swi.3.opta
+        add_manpower = 5
+        add_army_professionalism = 0.05
+        add_mil_power = 100
+    }
+}
+
+# Defend Switzerland - Victory
+
+country_event = {
+    id = redux_swi.4
+    title = redux_swi.4.t
+    desc = redux_swi.4.d
+    picture = DIPLOMACY_eventPicture
+
+    is_triggered_only = yes 
+
+    trigger = {
+        has_country_modifier = swiss_defend_the_confederation
+        NOT = {
+            is_in_war = {
+                defender_leader = ROOT
+            }
+        }
+    }
+
+    immediate = {
+        remove_country_modifier = swiss_defend_the_confederation
+    }
+
+    option = {
+        name = redux_swi.4.opta
+        add_power_projection = {
+            type = mission_rewards_power_projection
+            amount = 10
+        }
+        custom_tooltip = swi_defend_tt_2
+    }
+}
+
+# Defend Switzerland - Defeat 
+
+country_event = {
+    id = redux_swi.5
+    title = redux_swi.5.t
+    desc = redux_swi.5.d
+    picture = DIPLOMACY_eventPicture
+
+    is_triggered_only = yes 
+
+    trigger = {
+        has_country_modifier = swiss_defend_the_confederation
+        NOT = {
+            is_in_war = {
+                defender_leader = ROOT
+            }
+        }
+    }
+
+    immediate = {
+        remove_country_modifier = swiss_defend_the_confederation
+    }
+
+    option = {
+        name = redux_swi.5.opta
+        add_prestige = -10
+        custom_tooltip = swi_defend_tt_2
+    }
+}
+
+# Greater Switzerland 
+
+country_event = {
+    id = redux_swi.6
+    title = redux_swi.6.t
+    desc = redux_swi.6.d
+    picture = DIPLOMACY_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_swi.6.opta
+        add_government_reform = greater_switzerland_reform
+    }
+}

@@ -1,0 +1,55 @@
+namespace = redux_tun
+normal_or_historical_nations = yes
+
+# Religious Question 
+
+country_event = {
+    id = redux_tun.1
+    title = redux_tun.1.t
+    desc = redux_tun.1.d 
+    picture = RELIGION_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_tun.1.opta
+        if = {
+            limit = {
+                NOT = { religion = ibadi }
+            }
+            change_religion = ibadi
+        }
+        add_country_modifier = {
+            name = "redux_ibadi_tunis_tolerant"
+            duration = -1
+        }
+    }
+
+    option = {
+        name = redux_tun.1.optb
+        if = {
+            limit = {
+                NOT = { religion = ibadi }
+            }
+            change_religion = ibadi
+        }
+        add_country_modifier = {
+            name = "redux_ibadi_tunis_harsh"
+            duration = -1
+        }
+    }
+
+    option = {
+        name = redux_tun.1.optc
+        if = {
+            limit = {
+                NOT = { religion = sunni }
+            }
+            change_religion = sunni
+        }
+        add_country_modifier = {
+            name = "redux_sunni_tunis"
+            duration = 7300
+        }
+    }
+}

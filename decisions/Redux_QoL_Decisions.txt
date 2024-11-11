@@ -1,0 +1,72 @@
+country_decisions = {
+    redux_qol_disable_statutory_rights = {
+        potential = {
+            ai = no 
+            NOT = { has_country_flag = redux_qol_disable_statutory_rights_flag }
+        }
+        allow = {
+            always = yes 
+        }
+        effect = {
+            custom_tooltip = redux_qol_disable_statutory_rights_tt
+            set_country_flag = redux_qol_disable_statutory_rights_flag 
+        }
+    }
+    redux_qol_enable_statutory_rights = {
+        potential = {
+            ai = no 
+            has_country_flag = redux_qol_disable_statutory_rights_flag
+        }
+        allow = {
+            always = yes
+        }
+        effect = {
+            custom_tooltip = redux_qol_enable_statutory_rights_tt
+            clr_country_flag = redux_qol_disable_statutory_rights_flag 
+        }
+    }
+    redux_qol_fort_code_info = {
+        color = { 61 8 81 }
+        potential = {
+            ai = no 
+        }
+        allow = {
+            always = yes
+        }
+        effect = {
+            country_event = { id = redux_qol.1 }
+        }
+    }
+    redux_qol_parliament = {
+        major = yes
+        potential = { 
+            has_parliament = yes 
+            any_owned_province = { 
+                is_state = yes 
+                has_seat_in_parliament = no 
+            } 
+        }
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = redux_parliament_tt
+				any_owned_province = { 
+                    is_state = yes
+                    has_seat_in_parliament = no 
+                } 
+			}
+		}
+		effect = {
+			custom_tooltip = redux_parliament_tt2
+			hidden_effect = { 
+                every_owned_province = {
+                    limit = {
+                        is_state = yes
+                        has_seat_in_parliament = no
+                    }
+                    set_seat_in_parliament = yes 
+                }
+            }
+		}
+		ai_will_do = { factor = 0 }
+    }
+}

@@ -1,0 +1,15 @@
+redux_orthodox_hungary_tolerant = {
+    tolerance_heretic = 3
+    religion = yes
+}
+
+redux_orthodox_hungary_harsh = {
+    global_missionary_strength = 0.02
+    religion = yes
+}
+
+redux_catholic_hungary = {
+    tolerance_own = 1
+    global_missionary_strength = 0.01
+    religion = yes
+}

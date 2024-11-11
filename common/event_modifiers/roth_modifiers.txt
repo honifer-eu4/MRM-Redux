@@ -1,0 +1,31 @@
+fkn_kingdom_of_the_franks_modifier = {
+    cavalry_fire = 0.2
+    cavalry_power = 0.05
+}
+
+wes_peace_of_westphalia_mod = {
+    tolerance_heretic = 3
+    religious_unity = 0.25
+}
+
+wes_westphalian_sovereignty_mod = {
+    defensiveness = 0.15
+    global_spy_defence = 0.5
+    enemy_core_creation = 0.25
+}
+
+wes_westphalian_prosperity_mod = {
+    global_prosperity_growth = 0.1
+    development_cost = -0.1
+}
+
+wes_reformed_government = { 
+    global_unrest = -2
+    reform_progress_growth = 0.1
+    republican_tradition = 1
+}
+
+redux_ger_fkn_mod = {
+    infantry_power = -0.25 
+    cavalry_power = 0.25
+}

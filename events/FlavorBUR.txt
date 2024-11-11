@@ -1,0 +1,512 @@
+#1559.5.12 - New bishoprics in the Lowlands create an outrage
+#1565.1.1 - Letters of Segovia, Philip I orders the harsh persecution of Calvinists
+#1566.4.5 - 'Eedverbond der Edelen', Margaretha of Parma promises leniency
+#1567.9.10 - Counts of Egmont & Hoorne arrested
+#1569.1.1 - The Duke of Alba reforms the taxation system ('tiende penning')
+#1570.1.1 - The Duke of Alba reforms the penal system, 'Blood Council' (Bloedraad) established
+
+
+namespace = flavor_bur
+normal_or_historical_nations = yes
+
+# The Count of Charolais and the Edict of Blood
+country_event = {
+	id = flavor_bur.14
+	title = "flavor_bur.EVTNAME14"
+	desc = "flavor_bur.EVTDESC14"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BUR
+		NOT = { exists = NED }
+		has_country_flag = harsh_dutch
+		owns = 1744
+		owns = 97		
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {		# No Concessions
+		name = "flavor_bur.EVTOPTA14"
+		low_countries_region = {
+			limit = {
+				owned_by = BUR
+			}
+			add_unrest = 5
+		}		
+	}
+	option = {		# Don't introduce that Consumption Tax
+		name = "flavor_bur.EVTOPTB14"
+		add_legitimacy = -50
+		add_prestige = -100
+	}
+}
+
+# The Count of Ma�on and the Union of Arras
+country_event = {
+	id = flavor_bur.15
+	title = "flavor_bur.EVTNAME15"
+	desc = "flavor_bur.EVTDESC15"
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BUR
+		religion = catholic
+		has_country_flag = harsh_dutch
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {		# Sign the Union of Arras
+		name = "flavor_bur.EVTOPTA15"
+		low_countries_region = { 
+			limit = {
+				owned_by = BUR
+				NOT= { religion = catholic }
+			}
+			add_unrest = 2
+			add_local_autonomy = 10
+		}
+		add_legitimacy = -50
+		add_prestige = -50
+	}
+	option = {		# No Concessions
+		name = "flavor_bur.EVTOPTB15"
+		low_countries_region = {
+			limit = {
+				owned_by = BUR
+				NOT= { religion = catholic }
+			}		
+			add_unrest = 10
+		}		
+	}
+}
+
+# Netherland revolters call on the rivals of their enemy
+country_event = {
+	id = flavor_bur.20
+	title = "flavor_bur.EVTNAME20"
+	desc = "flavor_bur.EVTDESC20"
+	picture = BATTLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_bur.EVTOPTA20"
+		create_alliance = NED
+		join_all_offensive_wars_of = NED
+		set_ai_attitude = {
+			who = NED
+			attitude = attitude_friendly
+		}
+		NED = {
+			add_opinion = {
+				who = ROOT
+				modifier = supported_independence
+			}
+		}
+	}
+	option = {
+		name = "flavor_bur.EVTOPTB20"
+		add_prestige = -10
+	}
+}
+
+#BUR retains independence 
+country_event = {
+	id = flavor_bur.21
+	title = flavor_bur.21.t
+	desc = flavor_bur.21.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						has_female_heir = no
+						has_regency = yes
+					}
+				}
+				define_ruler = {
+					name = "Marie"
+					dynasty = "de Bourgogne"
+					culture = burgundian
+					age = 20
+					claim = 95
+					female = yes
+				}
+				if = {
+					limit = {
+						has_states_general_mechanic = yes
+					}
+					change_statists_vs_orangists = 1
+				}
+				if = {
+					limit = {
+						has_dlc = "Rights of Man" 
+					}
+					hidden_effect = { add_ruler_personality_ancestor = { key = kind_hearted } }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = flavor_bur.21.a
+		ai_chance = {
+			factor = 100
+		}
+		every_subject_country = {
+			limit = {
+				capital_scope = {
+					OR = {
+						region = france_region 
+						culture_group = french
+						culture = dutch
+						culture = flemish
+						is_part_of_hre = yes
+					}
+				}
+			}
+			add_liberty_desire = 25
+		}
+	}
+
+	option = {
+		name = flavor_bur.21.b
+		ai_chance = {
+			factor = 0
+		}
+		every_subject_country = {
+			limit = {
+				ai = yes
+				capital_scope = {
+					OR = {
+						region = france_region 
+						culture_group = french
+						culture = dutch
+						culture = flemish
+						is_part_of_hre = yes
+					}
+				}
+			}
+			BUR = { free_vassal = PREV }
+			if = {
+				limit = {
+					government = monarchy
+					NOT = { has_reform = celestial_empire }
+				}
+				random = {
+					chance = 20
+					change_government = republic
+					add_government_reform = merchants_reform
+				}
+			}
+			if = {
+				limit = {
+					government = monarchy
+					NOT = { has_reform = celestial_empire }
+				}
+				random = {
+					chance = 20
+					change_government = republic
+					#set_legacy_government = administrative_republic
+				}
+			}
+		}
+	}
+}
+
+
+
+#################################################################
+### New Burgundy events by Pierre du Plessis                  ###
+#################################################################
+
+#new start in a more civilised tongue
+namespace = new_flavour_bur
+
+#The Feast of the Pheasant
+country_event = {
+	id = new_flavour_bur.1
+	title = new_flavour_bur.1.name
+	desc = new_flavour_bur.1.desc
+	picture = FEAST_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = new_flavour_bur.1.A
+
+		if = {
+			limit = {
+				NOT = {
+					has_casus_belli = {
+						type = cb_crusade
+						target = TUR
+					}
+				}
+			}
+			add_casus_belli = {
+				type = cb_crusade_pheasants
+				target = TUR
+				months = 60
+			}
+		}
+	}
+}
+
+#The Feast of the Pheasant (Burgundy version)
+country_event = {
+	id = new_flavour_bur.2
+	title = new_flavour_bur.1.name
+	desc = new_flavour_bur.1.desc
+	picture = FEAST_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = new_flavour_bur.2.A
+		custom_tooltip = emp_bur_feast_of_pheasants_event_effect_tooltip
+		
+		if = {
+			limit = {
+				NOT = {
+					has_casus_belli = {
+						type = cb_crusade
+						target = TUR
+					}
+				}
+			}
+			add_casus_belli = {
+				type = cb_crusade_pheasants
+				target = TUR
+				months = 60
+			}
+		}
+	}
+}
+
+#The Feast of the Pheasant (Ottoman version)
+country_event = {
+	id = new_flavour_bur.3
+	title = new_flavour_bur.3.name
+	desc = new_flavour_bur.3.desc
+	picture = FEAST_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = new_flavour_bur.3.A
+		custom_tooltip = emp_bur_feast_of_pheasants_event_effect_tooltip
+	}
+}
+
+#Lothair's Legacy
+country_event = {
+	id = new_flavour_bur.4
+	title = new_flavour_bur.4.name
+	desc = {
+		trigger = {
+			religion = catholic
+			is_excommunicated = no
+			exists = PAP
+			PAP = {
+				has_opinion = {
+					who = ROOT
+					value = -10
+				}
+			}
+		}
+		desc = new_flavour_bur.4.desc.pope
+	}
+	desc = {
+		trigger = {
+			OR = {
+				NOT = { religion = catholic }
+				is_excommunicated = yes
+				NOT = { exists = PAP }
+				NOT = {
+					PAP = {
+						has_opinion = {
+							who = ROOT
+							value = -10
+						}
+					}
+				}
+			}
+		}
+		desc = new_flavour_bur.4.desc.nopope
+	}
+	picture = GOOD_WITH_MONARCH_eventPicture
+	is_triggered_only = yes
+
+	major = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						NOT = { religion = catholic }
+						is_excommunicated = yes
+						NOT = { exists = PAP }
+						NOT = {
+							PAP = {
+								has_opinion = {
+									who = ROOT
+									value = -10
+								}
+							}
+						}
+					}
+				}
+				set_saved_name = {
+					key = bur_bishop_name
+					type = advisor
+				}
+			}
+		}
+	}
+
+	option = {
+		name = new_flavour_bur.4.A
+		change_tag = LOT
+		on_change_tag_effect = yes
+		if = {
+			limit = {
+				NOT = {
+					government_rank = 2
+				}
+			}
+			set_government_rank = 2
+		}
+		add_prestige = 20
+		if = {
+			limit = {
+				has_custom_ideas = no
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		swap_non_generic_missions = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = { #nah
+		name = new_flavour_bur.4.B
+		add_prestige = 20
+
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	after = {
+		hidden_effect = { clear_saved_name = bur_bishop_name }
+	}
+}
+
+#The Court of [Ruler Name]
+country_event = {
+	id = new_flavour_bur.5
+	title = new_flavour_bur.5.name
+	desc = new_flavour_bur.5.desc
+	picture = FEAST_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = new_flavour_bur.5.A
+
+		add_country_modifier = {
+			name = bur_prestigious_duchy_mod
+			duration = -1
+		}
+		if = {
+			limit = { NOT = { tag = AVE } }
+			add_permanent_power_projection = {
+				type = 10_permanent_power_projection
+				amount = 10
+			}
+		}
+	}
+}
+
+
+#The League of the Public Weal
+country_event = {
+	id = new_flavour_bur.6
+	title = new_flavour_bur.6.name
+	desc = new_flavour_bur.6.desc
+	picture = COURT_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = new_flavour_bur.6.A
+
+		if = {
+			limit = { exists = LOT }
+			custom_tooltip = bur_league_tt_3
+		} else_if = {
+			limit = { exists = BUR }
+			custom_tooltip = bur_league_tt_2
+		}
+	}
+}
+
+
+
+#Burgundy is King of the Franks (tell France and the world)
+country_event = {
+	id = new_flavour_bur.7
+	title = new_flavour_bur.7.name
+	desc = new_flavour_bur.7.desc
+	picture = GOOD_WITH_MONARCH_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	major = yes
+
+	option = {
+		name = new_flavour_bur.7.A
+
+		from = { custom_tooltip = emp_bur_league_of_public_weal_effect_tooltip }
+
+		every_subject_country = {
+			limit = {
+				capital_scope = {
+					region = france_region
+				}
+			}
+			FRA = { free_vassal = prev }
+		}
+
+		hidden_effect = {
+			if = {
+				limit = {
+					has_opinion_modifier = {
+						who = from
+						modifier = opinion_bur_rebellious_burgundy
+					}
+				}
+				remove_opinion = {
+					who = from
+					modifier = opinion_bur_rebellious_burgundy
+				}
+			}
+		}
+		add_opinion = {
+			who = from
+			modifier = opinion_bur_usurpers_of_france
+		}
+	}
+}

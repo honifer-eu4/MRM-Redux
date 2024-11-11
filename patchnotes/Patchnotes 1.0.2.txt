@@ -1,0 +1,20 @@
+MRM Redux Patch 1.0.2:
+
+################### General ##################
+
+Decisions:
+    Decision added to purchase a second colonist, costing 1500 ducats and giving a permanent extra colonist. This decision is available after colonialism is embraced and the first colonization decision has been taken.
+    "Potential Formable Information" now works for colonial nations.
+
+Institutions:
+    Colonialism spawn requirement changed from having Exploration Ideas to having Interest in Colonies.
+
+############# Government Reforms #############
+
+Colonial Government:
+    Now has +1 Colonist.
+
+################## Missions ##################
+
+Denmark:
+    Mission tree updated to allow access to Carolean Infantry after forming Scandinavia.

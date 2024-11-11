@@ -1,0 +1,5 @@
+MRM Redux Patch 3.0.1:
+
+################### General ##################
+
+Fixed a bug causing merc companies to unintentionally cost army professionalism.

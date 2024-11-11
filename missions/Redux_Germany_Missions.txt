@@ -1,0 +1,772 @@
+# Inspired by the GameTactica/Speed5 Imperial Ambitions campaign.
+
+redux_germany_hlr_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}
+	potential = {
+		OR = {
+			tag = GER
+			tag = HLR
+		}
+		NOT = { map_setup = map_setup_random }
+		has_global_flag = redux_meme_ger_tree
+		has_dlc = "Emperor"
+	}
+	has_country_shield = yes
+	
+	redux_ger_speed5_infra = {
+		icon = mission_expand_into_the_forest 
+		required_missions = { }
+		position = 1
+		trigger = {
+			full_idea_group = maritime_ideas
+		}
+		effect = {
+			add_country_modifier = {
+				name = "redux_ger_speed5_infra_mod"
+				duration = -1
+			}
+		}
+	}
+
+	redux_ger_legitimacy = {
+		icon = mission_sovereign_principality
+		position = 2
+		trigger = {
+			legitimacy_equivalent = 100
+			stability = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = "redux_ger_legitimacy_mod"
+				duration = -1
+			}
+		}
+	}
+
+	redux_ger_dotf = {
+		icon = defender_of_the_faith
+		position = 3
+		required_missions = { redux_ger_legitimacy redux_ger_pope }
+		trigger = {
+			is_defender_of_faith = yes
+		}
+		effect = {
+			add_country_modifier = {
+				name = "redux_ger_dotf_mod"
+				duration = -1
+			}
+		}
+	}
+
+	redux_ger_princes = {
+		icon = mission_empire
+		position = 4
+		required_missions = { redux_ger_dotf }
+		trigger = {
+			NOT = { exists = SAX }
+			NOT = { exists = PAL }
+			NOT = { exists = BRB }
+			NOT = { exists = UBV }
+			NOT = { exists = BUR }
+			NOT = { exists = MLO }
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "redux_ger_princes_mod"
+				duration = -1
+			}
+		}
+	}
+}
+
+redux_germany_hlr_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}
+	potential = {
+		OR = {
+			tag = GER
+			tag = HLR
+		}
+		NOT = { map_setup = map_setup_random }
+		has_global_flag = redux_meme_ger_tree
+		has_dlc = "Emperor"
+	}
+	has_country_shield = yes
+	
+	redux_ger_gametactica = {
+		icon = spa_tercios_system 
+		required_missions = { }
+		position = 1
+		trigger = {
+			army_tradition = 80
+            army_professionalism = 0.8
+		}
+		effect = {
+			add_country_modifier = {
+				name = "redux_ger_gametactica_mod"
+				duration = -1
+			}
+		}
+	}
+
+	redux_ger_pope = {
+		icon = holy_state
+		position = 2
+		trigger = {
+			118 = {
+				OR = {
+					owned_by = ROOT
+					AND = {
+						owner = {
+							tag = PAP
+							has_opinion = {
+								who = ROOT
+								value = 100
+							}
+						}
+
+					}
+				}
+			}
+			is_papal_controller = yes
+		}
+		effect = {
+			add_country_modifier = {
+				name = "redux_ger_pope_mod"
+				duration = -1
+			}
+		}
+	}
+
+	redux_ger_convert = {
+		icon = mission_european_church
+		position = 3
+		required_missions = { redux_ger_pope redux_ger_objective_1 }
+		trigger = {
+			44 = { religion = ROOT }
+			97 = { religion = ROOT }
+			50 = { religion = ROOT }
+			85 = { religion = ROOT }
+			67 = { religion = ROOT }
+			1872 = { religion = ROOT }
+			134 = { religion = ROOT }
+			2980 = { religion = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "redux_ger_convert_mod"
+				duration = -1
+			}
+		}
+	}
+
+	redux_ger_bishops = {
+		icon = mission_hands_praying
+		position = 4
+		required_missions = { redux_ger_dotf redux_ger_convert }
+		trigger = {
+			NOT = { exists = TRI }
+			NOT = { exists = VER }
+			NOT = { exists = WBG }
+			NOT = { exists = TEU }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "redux_ger_bishops_mod"
+				duration = -1
+			}
+		}
+	}
+}
+
+redux_germany_hlr_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}
+	potential = {
+		OR = {
+			tag = GER
+			tag = HLR
+		}
+		NOT = { map_setup = map_setup_random }
+		has_global_flag = redux_meme_ger_tree
+		has_dlc = "Emperor"
+	}
+	has_country_shield = yes
+	
+	redux_ger_paradox = {
+		icon = mission_build_up_to_force_limit 
+		required_missions = { }
+		position = 1
+		trigger = {
+			is_at_war = yes 
+		}
+		effect = {
+			add_country_modifier = {
+				name = "redux_ger_paradox_mod"
+				duration = -1
+			}
+		}
+	}
+
+	redux_ger_objective_1 = {
+		icon = unite_the_realm 
+		position = 2
+		trigger = {
+			army_size_percentage = 1
+		}
+		effect = {
+			44 = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT 
+				}
+			}
+			97 = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT 
+				}
+			}
+			50 = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT 
+				}
+			}
+			85 = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT 
+				}
+			}
+			67 = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT 
+				}
+			}
+			1872 = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT 
+				}
+			}
+			134 = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT 
+				}
+			}
+			2980 = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT 
+				}
+			}
+		}
+	}
+
+	redux_ger_objective_2 = {
+		icon = mission_spanish_netherlands
+		position = 3
+		required_missions = { redux_ger_objective_1 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 44
+				province_id = 97
+				province_id = 50 
+				province_id = 85
+				province_id = 67
+				province_id = 1872
+				province_id = 134
+				province_id = 2980
+			}
+			OR = {
+				NOT = { owned_by = root }
+				NOT = { is_core = root }
+			}
+		}
+		trigger = {
+			owns_core_province = 44
+			owns_core_province = 97
+			owns_core_province = 50
+			owns_core_province = 85
+			owns_core_province = 67
+			owns_core_province = 1872
+			owns_core_province = 134 
+			owns_core_province = 2980
+		}
+		effect = {
+			43 = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT 
+				}
+			}
+			310 = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT 
+				}
+			}
+			236 = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT 
+				}
+			}
+			12 = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT 
+				}
+			}
+			153 = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT 
+				}
+			}
+			285 = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT 
+				}
+			}
+			121 = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT 
+				}
+			}
+			341 = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT 
+				}
+			}
+		}
+	}
+
+	redux_ger_objective_3 = {
+		icon = state_of_the_presidi
+		position = 4
+		required_missions = { redux_ger_objective_2 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 43
+				province_id = 310
+				province_id = 236
+				province_id = 12
+				province_id = 153
+				province_id = 285
+				province_id = 121
+				province_id = 341
+			}
+			OR = {
+				NOT = { owned_by = root }
+				NOT = { is_core = root }
+			}
+		}
+		trigger = {
+			OR = {
+				AND = {
+					owns_core_province = 43
+					owns_core_province = 310
+				}
+				AND = {
+					owns_core_province = 236
+					owns_core_province = 12
+				}
+				AND = {
+					owns_core_province = 153
+					owns_core_province = 285
+				} 
+				AND = {
+					owns_core_province = 121 
+					owns_core_province = 341
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = redux_ger_objective_3_tt 
+			hidden_effect = {
+				europe = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT 
+				}
+			}
+		}
+	}
+
+	redux_ger_imperial_ambition = {
+		icon = ger_kaiserreich
+		required_missions = { redux_ger_bishops redux_ger_magnates redux_ger_objective_3 redux_ger_despots redux_ger_princes }
+		position = 5
+		trigger = {
+			total_development = 3000
+		}
+		effect = {
+			add_country_modifier = {
+				name = "redux_ger_imperial_ambition_mod"
+				duration = -1
+			}
+		}
+	}
+}
+
+redux_germany_hlr_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}
+	potential = {
+		OR = {
+			tag = GER
+			tag = HLR
+		}
+		NOT = { map_setup = map_setup_random }
+		has_global_flag = redux_meme_ger_tree
+		has_dlc = "Emperor"
+	}
+	has_country_shield = yes
+	
+	redux_ger_iron = {
+		icon = Blood_Iron
+		required_missions = { }
+		position = 1
+		trigger = {
+			land_morale = 5
+		}
+		effect = {
+			add_country_modifier = {
+				name = "redux_ger_iron_mod"
+				duration = -1
+			}
+		}
+	}
+
+	redux_ger_centralize = {
+		icon = reform_bergordnung
+		required_missions = { }
+		position = 2
+		trigger = {
+			NOT = { average_autonomy = 10 }
+		}
+		effect = { 
+			add_country_modifier = { 
+				name = "redux_ger_centralize_mod"
+				duration = -1
+			}
+		}
+	}
+
+	redux_ger_sphere = {
+		icon = mission_alliances
+		required_missions = { redux_ger_centralize }
+		position = 3
+		trigger = {
+			vassal = 3
+		}
+		effect = {
+			add_country_modifier = {
+				name = "redux_ger_sphere_mod"
+				duration = -1
+			}
+		}
+	}
+
+	redux_ger_despots = {
+		icon = peace_in_europe
+		required_missions = { redux_ger_sphere redux_ger_objective_2 }
+		position = 4
+		trigger = {
+			NOT = { exists = FRA }
+			NOT = { exists = BOH }
+			NOT = { exists = TUR }
+			NOT = { exists = POL }
+			NOT = { exists = SWE }
+		}
+		effect = {
+			add_country_modifier = {
+				name "redux_ger_despots_mod"
+				duration = -1
+			}
+		}
+	}
+}
+
+redux_germany_hlr_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}
+	potential = {
+		OR = {
+			tag = GER
+			tag = HLR
+		}
+		NOT = { map_setup = map_setup_random }
+		has_global_flag = redux_meme_ger_tree
+		has_dlc = "Emperor"
+	}
+	has_country_shield = yes
+	
+	redux_ger_capital = {
+		icon = renovate_berlin
+		required_missions = { }
+		position = 1
+		trigger = {
+			capital_scope = {
+                development = 30
+            }
+		}
+		effect = {
+			capital_scope = {
+                area = {
+                    add_province_modifier = {
+				        name = "redux_ger_capital_mod"
+				        duration = -1
+			        }
+                }
+            }
+		}
+	}
+
+	redux_ger_trade_1 = {
+		icon = mission_dominate_home_trade_node 
+		required_missions = { }
+		position = 2
+		trigger = {
+			134 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+			1876 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+			45 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+			186 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "redux_ger_trade_1_mod"
+				duration = -1
+			}
+		}
+	}
+
+	redux_ger_trade_2 = {
+		icon = mission_asian_trader
+		required_missions = { redux_ger_trade_1 }
+		position = 3
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = redux_ger_trade_2_tt
+				OR = {
+					production_leader = {
+						trade_goods = grain
+					}
+					production_leader = {
+						trade_goods = wine
+					}
+					production_leader = {
+						trade_goods = wool
+					}
+					production_leader = {
+						trade_goods = cloth
+					}
+					production_leader = {
+						trade_goods = fish
+					}
+					production_leader = {
+						trade_goods = fur
+					}
+					production_leader = {
+						trade_goods = salt
+					}
+					production_leader = {
+						trade_goods = naval_supplies
+					}
+					production_leader = {
+						trade_goods = copper
+					}
+					production_leader = {
+						trade_goods = gold
+					}
+					production_leader = {
+						trade_goods = iron
+					}
+					production_leader = {
+						trade_goods = slaves
+					}
+					production_leader = {
+						trade_goods = ivory 
+					}
+					production_leader = {
+						trade_goods = tea
+					}
+					production_leader = {
+						trade_goods = chinaware 
+					}
+					production_leader = {
+						trade_goods = spices
+					}
+					production_leader = {
+						trade_goods = coffee 
+					}
+					production_leader = {
+						trade_goods = cotton
+					}
+					production_leader = {
+						trade_goods = sugar 
+					}
+					production_leader = {
+						trade_goods = tobacco
+					}
+					production_leader = {
+						trade_goods = cocoa 
+					}
+					production_leader = {
+						trade_goods = silk 
+					}
+					production_leader = {
+						trade_goods = dyes
+					}
+					production_leader = {
+						trade_goods = tropical_wood
+					}
+					production_leader = {
+						trade_goods = livestock
+					}
+					production_leader = {
+						trade_goods = incense 
+					}
+					production_leader = {
+						trade_goods = glass 
+					}
+					production_leader = {
+						trade_goods = paper
+					}
+					production_leader = {
+						trade_goods = gems 
+					}
+					production_leader = {
+						trade_goods = coal 
+					}
+					production_leader = {
+						trade_goods = cloves
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "redux_ger_trade_2_mod"
+				duration = -1
+			}
+		}
+	}
+
+	redux_ger_magnates = {
+		icon = mission_italian_condottiere
+		required_missions = { redux_ger_trade_2 }
+		position = 4
+		trigger = {
+			NOT = { exists = VEN }
+			NOT = { exists = GEN }
+			NOT = { exists = HSA }
+			NOT = { exists = FRI }
+			NOT = { exists = FRN }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "redux_ger_magnates_mod"
+				duration = -1
+			}
+		}
+	}
+}

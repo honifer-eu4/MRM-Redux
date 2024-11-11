@@ -1,0 +1,17 @@
+version="1.37.x"
+tags={
+	"Balance"
+	"Gameplay"
+	"Fixes"
+	"Events"
+	"Map"
+	"Missions And Decisions"
+	"National Ideas"
+	"Religion"
+}
+name="MRM Redux v4.0"
+replace_path="common/province_names"
+replace_path="common/bookmarks"
+replace_path="history/wars"
+supported_version="v1.37.2.0"
+remote_file_id="3248131756"

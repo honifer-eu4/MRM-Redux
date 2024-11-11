@@ -1,0 +1,13 @@
+﻿l_english:
+ # Estates
+ estate_church_administrative_privileges:0 "Religious Brigades"
+ estate_church_administrative_privileges_desc:0 "By allowing the [Root.GetClergyName] to have significant influence over our military, our soldiers will fight at an increased effectiveness under the banner of the true faith. Like all things, however, this will come at a cost."
+ estate_burghers_land_trade_rights:1 "Elite Mercenaries"
+ estate_burghers_land_trade_rights_desc:0 "By allowing the [Root.GetBurghersName] to negotiate our mercenary contracts, we can ensure only the most elite forces fight under our banner. Like all things, however, this will come at a cost."
+ estate_nobles_rynda_at:0 "While our ruler is a §Ygeneral§! we gain up to §G+10.0%§! Infantry Combat Ability.\nOtherwise, we gain up to §G-10.0%§! Infantry Cost instead."
+ estate_nobles_landed_army_tt:0 "We gain up to §G+10.0%§! Cavalry Combat Ability."
+ estate_jains_land_trade_rights:1 "Elite Mercenaries"
+ estate_jains_land_trade_rights_desc:0 "By allowing the [Root.GetBurghersName] to negotiate our mercenary contracts, we can ensure only the most elite forces fight under our banner. Like all things, however, this will come at a cost."
+ 
+ 
+ 

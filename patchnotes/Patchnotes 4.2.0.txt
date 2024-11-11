@@ -1,0 +1,79 @@
+MRM Redux Patch 4.2:
+
+############# General/Bugfixes ###############
+
+All of France and Low Countries regions removed from HRE.
+All of mainland Italy added to the HRE.
+
+############ Country-specific ################
+
+Burgundy:
+    "Time of Glory" mission now requires owning Paris instead of controlling it.
+
+Castile:
+    All missions requiring specific idea groups now accept any idea group of that mana type.
+
+Franconia:
+    Now has access to a decision replacing the Infantry Combat Ability in German ideas with Cavalry Combat Ability after forming Germany.
+
+Hungary:
+    Mean Time To Happen for the event unlocking Black Army reduced to 12 months.
+
+Lithuania:
+    All owned provinces now start as Orthodox.
+    Forming Ruthenia no longer changes the mission tree.
+    New content rework added, featuring new missions.
+
+Mamluks:
+    Can no longer form Egypt through decision (only available through mission).
+    Minor content rework added, featuring reworked Egypt formable with Egyptian Westernization mechanics. 
+
+########### Government Mechanics #############
+
+System of Councils:
+    Each interaction now gives -10% Advisor Cost for the corresponding mana type instead of +1 monthly.
+
+############ Government Reforms ##############
+
+Monarchy:
+    "Regional Councils" Tier 3 reform no longer gives State Maintenance.
+    "Royal Favoritism" Tier 3 reform no longer disables Call Diet.
+    "Strengthened Parliament" Tier 7 reform now gives +10% Manpower in Primary Culture Provinces instead of -10% Development Cost in Primary Culture Provinces.
+    
+############### Idea groups ##################
+
+Expansion: 
+    No longer has +10% Trade Efficiency.
+    No longer has +15% Manpower in Primary Culture Provinces.
+
+Policies:
+    Defensive-Economic now gives -15% Fire Damage Received instead of -10%.
+    Expansion-Offensive now gives +0.5 Artillery Shock instead of +0.75.
+
+Trade: 
+    Now has -5% Development Cost instead of -10%.
+
+################ Mechanics ###################
+
+Defines:
+	Legitimacy now additionally grants up to +25% Reform Progress Growth.
+	Republican Tradition now grants up to +75% Reform Progress Growth instead of +100%.
+
+Mercenary Companies:
+    All Mercenary Companies are now local (can be recruited anywhere and don't have a home province), with availability of certain companies depending on capital location.
+    Minimum/maximum merc size increased to 8/80 instead of 4/60.
+    Slightly reduced the total amount of Mercenary Companies while increasing the overall size of each.
+
+Institutions:
+    Printing Press now gives +10% Reform Progress Growth instead of -5% Stability Cost Modifier.
+
+Technology: 
+    The 6th, 7th, and 8th idea groups are now unlocked 1 admin tech earlier.
+
+################# Colonies ###################
+
+Government now allows hiring conquistadors and explorers.
+Removed -75% Mercenary Manpower from Human Colonial Nation and Human Dominion debuffs.
+
+	
+	

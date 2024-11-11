@@ -1,0 +1,18 @@
+country_decisions = {
+    showNationStats = {
+        color = { 61 8 81 }
+        potential = {
+            ai = no
+        }
+
+        allow = {
+            always = yes
+        }
+
+        effect = {
+            country_event = {
+                id = mrm_nationStats.1
+            }
+        }
+    }
+}

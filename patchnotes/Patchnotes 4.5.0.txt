@@ -1,0 +1,23 @@
+MRM Redux Patch 5.0:
+
+############# General/Bugfixes ###############
+
+All countries no longer start with a truce with Sicily, and Sicily is now a republic at game start.
+The province of Constantinople is now owned by Ottomans at game start.
+The province of Messina is now owned by Naples at game start.
+
+############ Country-specific ################
+
+Ethiopia:
+    Now has +10% Morale of Armies as a tradition instead of -10% Land Attrition.
+    Reduced the requirements of the "Centralize the State" mission.
+
+Mamluks:
+    "Karimi Merchants" mission now requires the year 1450 or later.
+    Mesopotamian Mamluks now have +20% Cavalry Combat Ability instead of +0.5 Cavalry Shock, and costs regular price instead of +50%.
+
+Naples:
+    Reduced requirements for "Neapolitan Navy" mission.
+    
+Tunis:
+    Reduced requirements for "Construct a Corsair Fleet" mission.

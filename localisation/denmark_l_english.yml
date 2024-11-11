@@ -1,0 +1,57 @@
+﻿l_english:
+ #Danish Missions
+
+ dan_conquer_lower_saxony_title:0 "Conquer Lower Saxony"
+ dan_conquer_lower_saxony_desc:0 "Our southern border currently leaves us very vulnerable to an attack by any of the princes of the Holy Roman Empire. By conquering the lands of Lower Saxony, we could not only solve this problem, but use its riches for our benefit."
+ dan_conquer_brunswick_title:0 "Conquer Brunswick"
+ dan_conquer_brunswick_desc:0 "With the majority of Lower Saxony under our control, the County of Brunswick is the only remaining challenge to our rule over the area. By defeating them, we can establish a safe buffer zone to our south for good."
+ dan_conquer_finland_title:0 "Retake Finland"
+ dan_conquer_finland_desc:0 "Finland was once an integral part of Sweden, and our rule once extended to the area under the Kalmar Union. Unfortunately, due to the struggles of late, their lands have slipped from our grasp. Now that Sweden is secured, we should look at reclaiming the area."
+ dan_build_up_navy_title:0 "Expand the Royal Navy"
+ dan_build_up_navy_desc:0 "The Danish have always been a people of the sea. We fought against the Englishmen, we fought against the Hanseatic fleet, and we shall fight whatever lies in our way. Let us expand our fleet in preparation."
+ dan_invade_scotland_title:0 "Invade Scotland"
+ dan_invade_scotland_desc:0 "The isles of [369.GetName], [1978.GetName] and [1979.GetName] are in possession of the Scottish Sinclair clan, who are technically a subject to Scotland. However, the Earldom of Orkney serves the [Root.GetAdjective] Crown, which of course wants to get the earldom for themselves, and punish the clan severely.\nWe should eliminate Scotland in order to protect our interests in the North Sea, as well as prevent any Scottish aggression against our holdings."
+ dan_north_sea_empire_title:0 "North Sea Empire"
+ dan_north_sea_empire_desc:0 "The North Sea Empire was created by the Great Sweyn Forkbeard, King of Denmark, Norway and England. His reign was of short duration though. After his death, his son Cnut the Great took over his mantle and united the three kingdoms yet again and ruled for 19 glorious years. Although he was a Christian, the Viking culture was at its height of power during his lifetime. It is time to restore what is rightfully ours, and reclaim the North Sea Empire - but this time under the true gods' guidance!"
+ nse_conquer_ireland_title:0 "Conquer Ireland"
+ nse_conquer_ireland_desc:0 "Now that England and Scotland have been brought under our control, we should extend our rule to the Emerald Isles."
+ nse_rule_britannia_title:0 "Rule Britannia"
+ nse_rule_britannia_desc:0 "All of the British Isles shall be our domain. We shall rule Britannia."
+ dan_the_carolean_units_title:0 "Reform the Military"
+ dan_the_carolean_units_desc:0 "Our military has been known to be pioneers in military innovativeness, and is feared for its quality in combat. However, our military system is always under the threat of corrupt advisors and generals, who consider more important to fill their own pockets instead of expanding our forces. If this ever happens then [Root.GetName] could be threatened even by petty kingdoms such as Denmark.\nWe must ensure an absolute rule within our country in order to neutralize the internal threat, and reform our government as well as our military."
+ dan_drill_the_carolean_title:0 "Drill the Caroleans"
+ dan_drill_the_carolean_desc:0 "The Caroleans are the result of our extensive military reforms. These battle-hardened soldiers go as close as possible to their enemies to unleash a barrage of lead. Afterwards, they charge into the enemy row, causing dread and panic at the frontline.\nWhile their strategy has proven to be working, it still needs further fine tuning as the casualties during the first fire intervalls are still unacceptable. We should drill our special units, and train their aiming skills."
+ 
+ 
+ #Danish Modifiers
+
+ #Events
+
+ redux_dan.18.b:0 "We must proceed with caution."
+
+ #Tooltips
+ 
+ redux_dan_establish_merc_contracts_ct:0 "This event will unlock access to the mercenaries of Germany."
+ 
+ #Other
+
+ NSE:0 "North Sea Empire"
+ NSE_ADJ:0 "Anglo-Scandinavian"
+ sea_NSE_ideas:0 "Anglo-Scandinavian Ideas"
+ sea_NSE_ideas_start:0 "Anglo-Scandinavian Traditions"
+ sea_NSE_ideas_bonus:0 "Anglo-Scandinavian Ambition"
+ nse_viking_redcoats:0 "Viking Redcoats"
+ nse_viking_redcoats_desc:0 "Viking Redcoats"
+ nse_everyone_must_serve:0 "Everyone Must Serve"
+ nse_everyone_must_serve_desc:0 "Everyone Must Serve"
+ nse_sharing_common_naval_traditions:0 "Sharing Common Naval Traditions"
+ nse_sharing_common_naval_traditions_desc:0 "Sharing Common Naval Traditions"
+ nse_proficient_army:0 "Proficient Army"
+ nse_proficient_army_desc:0 "Proficient Army"
+ nse_north_sea_rules_the_waves:0 "North Sea Rules the Waves"
+ nse_north_sea_rules_the_waves_desc:0 "North Sea Rules the Waves"
+ nse_industry_on_ships:0 "Industry on Ships"
+ nse_industry_on_ships_desc:0 "Industry on Ships"
+ nse_united_under_single_banner:0 "United Under Single Banner"
+ nse_united_under_single_banner_desc:0 "United Under Single Banner"
+        

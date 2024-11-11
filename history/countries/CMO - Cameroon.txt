@@ -1,0 +1,31 @@
+government = tribal
+add_government_reform = tribal_despotism
+primary_culture = sawabantu
+religion = shamanism
+unlock_cult = yemoja_cult
+unlock_cult = roog_cult
+unlock_cult = nyame_cult
+technology_group = sub_saharan
+unit_type = sub_saharan
+capital = 1164	# Cameroon
+
+#Awlad Kenz
+
+1444.1.1 = {
+	monarch = {
+		name = "Sulayman"
+		dynasty = "Came"
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+1596.1.1 = {
+	monarch = {
+		name = "Sulayman"
+		dynasty = "Came"
+		adm = 2
+		dip = 2
+		mil = 4	
+	}
+}

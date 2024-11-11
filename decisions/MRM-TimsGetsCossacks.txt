@@ -1,0 +1,34 @@
+country_decisions = {
+    embrace_cossacks = {
+        major = yes
+        potential = {
+            tag = BUK
+			NOT = { has_country_flag = buk_embraced_cossacks }
+        }
+
+        provinces_to_highlight = {
+            OR = {
+                province_id = 464 #Astrakhan
+                province_id = 471 #Alimuly
+                province_id = 476 #Kypshak
+                province_id = 1075 #Chimgi-Tura
+            }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+        }
+
+        allow = {
+            is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+            owns_core_province = 464 #Astrakhan
+            owns_core_province = 471 #Alimuly
+			owns_core_province = 476 #Kypshak
+			owns_core_province = 1075 #Chimgi-Tura
+        }
+
+        effect = {
+            custom_tooltip = embrace_cossacks_effect_tt
+			set_country_flag = buk_embraced_cossacks
+        }
+    }
+}

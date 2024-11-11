@@ -1,0 +1,21 @@
+#1216 - Tegali
+
+culture = nubian #Shilluk
+religion = shamanism #Fetishism
+capital = "Takala"
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+
+
+
+discovered_by = ALO
+discovered_by = MAK
+owner = NUB
+controller = NUB
+add_core = NUB
+discovered_by = NUB
+is_city = yes
+discovered_by = ETH
+trade_goods = slaves

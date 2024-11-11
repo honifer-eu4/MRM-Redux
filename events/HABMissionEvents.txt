@@ -1,0 +1,254 @@
+namespace = hab_mission_events
+normal_or_historical_nations = yes
+
+country_event = {
+    id = hab_mission_events.14
+    title = "hab_mission_events.EVTNAME14"
+    desc = "hab_mission_events.EVTDESC14"
+    picture = HRE_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = "hab_mission_events.EVTOPTA14"
+        ai_chance = {
+            factor = 100
+        }
+        change_tag = HLR
+		if = {
+			limit = {
+				has_custom_ideas = no
+				NOT = { has_idea_group = ARM_ideas }
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+        }	
+    }
+}
+
+country_event = {
+    id = hab_mission_events.15
+    title = "hab_mission_events.EVTNAME15"
+    desc = "hab_mission_events.EVTDESC15"
+    picture = COURT_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = "hab_mission_events.EVTOPTA15"
+        ai_chance = {
+            factor = 100
+        }
+        HUN = {
+            every_core_province = {
+                remove_core = HUN
+            }
+        }
+        slovakia_area = {
+            cede_province = HUN
+            add_core = HUN
+            remove_core = HAB
+        }
+        transdanubia_area = {
+            cede_province = HUN
+            add_core = HUN
+            remove_core = HAB
+        }
+        alfold_area = {
+            cede_province = HUN
+            add_core = HUN
+            remove_core = HAB
+        }
+        croatia_area = {
+            cede_province = HUN
+            add_core = HUN
+            remove_core = HAB
+        }
+        slavonia_area = {
+            cede_province = HUN
+            add_core = HUN
+            remove_core = HAB
+        }
+        southern_transylvania_area = {
+            cede_province = HUN
+            add_core = HUN
+            remove_core = HAB
+        }
+        transylvania_area = {
+            cede_province = HUN
+            add_core = HUN
+            remove_core = HAB
+        }
+        create_union = HUN
+        if = {
+            limit = {
+                NOT = { government_rank = 2 }
+            }
+            set_government_rank = 2
+        }
+        country_event = { id = hab_mission_events.16 }
+    }
+}
+
+country_event = {
+    id = hab_mission_events.16
+    title = "hab_mission_events.EVTNAME16"
+    desc = "hab_mission_events.EVTDESC16"
+    picture = COURT_eventPicture
+
+    is_triggered_only = yes
+
+    major = yes
+
+    option = {
+        name = "hab_mission_events.EVTOPTA16"
+        ai_chance = {
+            factor = 0
+        }
+        set_country_flag = habsburg_empire_proclaimed
+        add_government_reform = habsburg_empire
+        override_country_name = HAB_Greater
+    }
+
+    option = {
+        name = "hab_mission_events.EVTOPTB16"
+        ai_chance = {
+            factor = 100
+        }
+        change_tag = AUH
+        if = {
+			limit = {
+				has_custom_ideas = no
+				NOT = { has_idea_group = AHU_ideas }
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+        }
+        add_government_reform = austrian_dual_monarchy
+        add_accepted_culture = hungarian
+        add_accepted_culture = slovak
+        add_accepted_culture = croatian
+        add_accepted_culture = transylvanian
+    }
+}
+
+country_event = {
+    id = hab_mission_events.18
+    title = "hab_mission_events.EVTNAME18"
+    desc = "hab_mission_events.EVTDESC18"
+    picture = COURT_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = "hab_mission_events.EVTOPTA18"
+        ai_chance = {
+            factor = 100
+        }
+        inherit = HUN
+        set_country_flag = habsburg_empire_proclaimed
+        add_government_reform = habsburg_empire
+        override_country_name = HAB_Greater
+    }
+}
+
+country_event = {
+    id = hab_mission_events.19
+    title = "hab_mission_events.EVTNAME19"
+    desc = "hab_mission_events.EVTDESC19"
+    picture = COURT_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = "hab_mission_events.EVTOPTA19"
+        ai_chance = {
+            factor = 100
+        }
+        change_tag = AUH
+        if = {
+			limit = {
+				has_custom_ideas = no
+				NOT = { has_idea_group = ARM_ideas }
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+        }	
+        inherit = HUN
+        HUN = {
+            every_core_province = {
+                remove_core = HUN
+            }
+        }
+        add_government_reform = austrian_dual_monarchy
+        add_accepted_culture = hungarian
+        add_accepted_culture = slovak
+        add_accepted_culture = croatian
+        add_accepted_culture = transylvanian
+    }
+}
+
+
+country_event = {
+    id = hab_mission_events.21
+    title = "hab_mission_events.EVTNAME21"
+    desc = "hab_mission_events.EVTDESC21"
+    picture = DEATH_OF_HEIR_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = "hab_mission_events.EVTOPTA21"
+        ai_chance = {
+            factor = 1
+        }
+        add_treasury = -500
+        add_manpower = -5
+        BOH = {
+            add_treasury = 500
+            add_manpower = 5
+            add_liberty_desire = -15
+        }
+        add_imperial_influence = 2
+    }
+    option = {
+        name = "hab_mission_events.EVTOPTB21"
+        ai_chance = {
+            factor = 0
+        }
+        BOH = {
+            add_liberty_desire = 15
+        }
+    }
+}
+
+# Fate of the Empire 
+
+country_event = {
+    id = hab_mission_events.22
+    title = "hab_mission_events.EVTNAME22"
+    desc = "hab_mission_events.EVTDESC22"
+    picture = HRE_eventPicture
+
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = "hab_mission_events.EVTOPTA22"
+        add_country_modifier = { 
+            name = "hab_legacy_of_empire_modifier"
+            duration = 18250
+        }
+        dismantle_hre = yes
+        clr_country_flag = hab_must_dismantle_hre
+    }
+
+    option = {
+        name = "hab_mission_events.EVTOPTB22"
+        trigger = {
+            NOT = {
+                has_country_flag = hab_must_dismantle_hre
+            }
+        }
+        custom_tooltip = form_germany_as_hre_tt
+        set_country_flag = can_form_germany_as_hre
+    }
+}

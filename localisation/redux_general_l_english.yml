@@ -1,0 +1,99 @@
+﻿l_english:
+ # Opinion Modifiers
+ opinion_personal_union:0 "Close Ties"
+
+ # Institutions
+ tooltip_has_a_port_gets_colonialism:0 "Port province"
+ institution_bonus:0 "All Institutions Embraced"
+
+ # Other
+ hre_minor_nation:0 "HRE Minor Nation"
+ ALWAYS_ACCEPT:0 "AI will always accept this diplomatic action"
+ south_germanic:0 "South Germanic"
+
+ # Decisions
+ PR_critical_events_title:0 "Available Critical Events"
+ PR_critical_events_desc:0 "Check to see which critical events are still available, a green tick indicates it is available and a red cross indicates it has already been fired"
+ PR_radical_reform_decision:0 "Radical Reforms (200 §W£adm£ and 200 §W£dip£)"
+ PR_military_reform_decision:0 "Military Reforms (200 §W£mil£ and 20% Morale)"
+ PR_commandant_decision:0 "Inspirational Leader (10% Discipline)"
+ PR_grand_captain_decision:0 "Grand Captain (20% Morale)" 
+ 
+ redux_release_from_pu_title:0 "Gain Independence"
+ redux_release_from_pu_desc:0 "Used to gain independence upon accidentally being PU'd."
+
+ educate_ruler_title:0 "Educate Ruler"
+ educate_ruler_desc:0 "It has been noted by many that our ruler lacks critical skills needed to rule effectively. Some among the nobility claim a tutor would greatly improve the skills of the king."
+ educate_ruler_tooltip:0 "Ruler has less than 7 total skill"
+
+ sm_hire_general_title:0 "Hire a skilled foreign general"
+ sm_hire_general_desc:0 "The lack of leaders in our army has been noted, without a great deal of conflict it will difficult to find a suitable general in our ranks. Perhaps a foreign general will be prove useful? "
+
+ colonist_1_title:0 "Interest in Colonies"
+ colonist_1_desc:0 "It has come to our attention that foreign powers are attempting to enrich themselves off the unspoiled riches of recently discovered lands. We must not be left behind in this new race for power!"
+
+ colonist_1_non_western_title:0 "Interest in Colonies"
+ colonist_1_non_western_desc:0 "It has come to our attention that foreign powers are attempting to enrich themselves off the unspoiled riches of recently discovered lands. We must not be left behind in this new race for power!"
+ 
+ colonist_2_title:0 "Expand Colonial Investment"
+ colonist_2_desc:0 "The competition in the New World is fiercer than we thought. We must expand our investments and divert additional funds to ensure that we stay ahead of the curve and beat our competitors."
+ 
+ mrm_colonist_1:0 "Interest in Colonies"
+ desc_mrm_colonist_1:0 "We have decided to invest in colonialism and building an empire overseas."
+ mrm_colonist_2:0 "Expanded Colonial Investment"
+ desc_mrm_colonist_2:0 "We have decided to divert additional funds to our colonial empire."
+
+ showNationStats_title:0 "Show My National Statistics"
+ showNationStats_desc:0 "Show my national statistics."
+
+ redux_discover_africa_title:0 "Discover Africa"
+ redux_discover_africa_desc:0 "Africa has many interesting nations that we can learn a lot from. It would be wise for us to explore the entire continent."
+
+ manpower_edict_decision_title:0 "Enable Manpower Edict"
+ manpower_edict_decision_desc:0 "Sets every state in our nation to the 'Promote Military Recruitment' state edict."
+
+ redux_qol_parliament_title:0 "Add all Provinces to Parliament"
+ redux_qol_parliament_desc:0 "Adds all stated provinces to Parliament."
+ redux_parliament_tt:0 "At least one eligible province is not currently in Parliament."
+ redux_parliament_tt2:0 "Adds all stated provinces to Parliament."
+
+ redux_manpower_edict_tt:0 "Enables the §Y'Increased Enlistment'§! state edict on all of our states."
+
+ PR_grand_captain_cooldown_tooltip:0 "Perhaps another time..."
+ PR_commandant_cooldown_tooltip:0 "Perhaps another time..."
+ PR_can_fire_again_tt:0 "This event will be able to fire again after this modifier expires."
+ PR_cant_fire_again_tt:0 "This event will not be able to fire again during this campaign!"
+ PR_grand_captain_cooldown:0 "Grand Captain Cooldown"
+ desc_PR_grand_captain_cooldown:0 "We will not be able to get the Grand Captain advisor event until this modifier expires."
+ PR_commandant_cooldown:0 "Commandant Cooldown"
+ desc_PR_commandant_cooldown:0 "We will not be able to get the Commandant advisor event until this modifier expires."
+
+ showNationStats_title:0 "Show My National Statistics"
+ showNationStats_desc:0 "Show my national statistics."
+ mrm_nationStats.1.title:0 "National Statistics"
+ mrm_nationStats.1.a:0 "Thanks for the information!"
+ mrm_nationStats.1.desc:0 "You have developed provinces a total of §Y[Root.num_of_times_developed.GetValue]§! times.\nYou have increased the £adm£ development of provinces a total of §Y[Root.timesDevelopedAdmin.GetValue]§! times.\nYou have increased the £dip£ development of provinces a total of §Y[Root.timesDevelopedDiplo.GetValue]§! times.\nYou have increased the £mil£ development of provinces a total of §Y[Root.timesDevelopedMil.GetValue]§! times.\n\nYou have hired §Y[Root.numGenerals.GetValue]§! generals and §Y[Root.numAdmirals.GetValue]§! admirals, for a total of §Y[Root.numLeaders.GetValue]§! leaders."
+
+ CANNOT_INTERACT_WITH_MING:0 "We cannot interact with the Ming Empire."
+ capital_of_the_sleeping_giant:0 "Capital of the Sleeping Giant"
+
+ PAX_EUROPA:0 "Pax Europa"
+ PAX_EUROPA_DESC:0 "For a game with less players, focused on Europe. India is off limits and spawnable via Ming decisions for reslots."
+
+ redux_sleeping_giant:0 "The Sleeping Giant"
+ desc_redux_sleeping_giant:0 "Zzzzzzzzzzzzzzzzzzzzzz..."
+
+ redux_merc_at:0 "Mercenary Army Tradition 1"
+ redux_merc_at_2:0 "Mercenary Army Tradition 2"
+
+ redux_PR_fort_code_has_fort_trigger_tooltip:0 "Has a fort or is currently building a fort."
+ redux_PR_fort_code_is_strait_trigger_tooltip:0 "Is a province with a strait crossing."
+ redux_PR_fort_code_tooltip:0 "Meets the Fort Code requirements (check Fort Code under Mod Mechanics Information in Decisions for more info)."
+
+ # Game Rules
+
+ REDUX_ENFORCE_PEACE:0 "Enforce Peace is only allowed to protect colonial nations. This can be disabled by 'Toggle Game Rules' on Ming decisions if the host wishes."
+ REDUX_INFLUENCE:0 "Influence Nation is only allowed on AIs or colonial nations. This can be disabled by 'Toggle Game Rules' on Ming decisions if the host wishes."
+ REDUX_FOREIGNDEBT:0 "Take on Foreign Debt is only allowed on AIs. This can be disabled by 'Toggle Game Rules' on Ming decisions if the host wishes."
+ REDUX_INTERVENE:0 "Intervene in War is never allowed. This can be disabled by 'Toggle Game Rules' on Ming decisions if the host wishes."
+ REDUX_OTTOS_MAMS:0 "Ottomans and Mamluks are not allowed to ally until 1550. This can be disabled by 'Toggle Game Rules' on Ming decisions if the host wishes."

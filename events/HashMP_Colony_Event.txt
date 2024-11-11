@@ -1,0 +1,643 @@
+namespace = hashmp
+
+country_event = {
+	id = hashmp.18
+	title = hashmp.18.title
+	desc = hashmp.18.desc
+	picture = BIG_BOOK_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hashmp.18.a
+		add_adm_power = 25
+		add_country_modifier = {
+			name = h_event_adm
+			duration = -1
+		}
+		define_advisor = {
+			type = treasurer
+			skill = 1
+			discount = yes
+		}
+	}
+	
+	option = {
+		name = hashmp.18.b
+		add_dip_power = 25
+		add_country_modifier = {
+			name = h_event_dip
+			duration = -1
+		}
+		define_advisor = {
+			type = statesman
+			skill = 1
+			discount = yes
+		}
+	}
+	
+	option = {
+		name = hashmp.18.c
+		add_mil_power = 25
+		add_country_modifier = {
+			name = h_event_mil
+			duration = -1
+		}
+		define_advisor = {
+			type = grand_captain
+			skill = 1
+			discount = yes
+		}
+	}
+}
+
+country_event = {
+    id = hashmp.1
+    title = hashmp.1.title
+	desc = hashmp.1.desc
+	picture = BIG_BOOK_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = hashmp.1.a
+        trigger = {
+            capital_scope = { colonial_region = colonial_canada }
+        }
+		change_tag = CAN
+		add_government_reform = h_reform_dominion
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		add_prestige = 25
+		set_country_flag = became_dominion
+		hidden_effect = { country_event = { id = hashmp.2 } }
+    }
+	option = {
+        name = hashmp.1.b
+        trigger = {
+            capital_scope = { colonial_region = colonial_canada }
+        }
+		change_tag = QUE
+		add_government_reform = h_reform_dominion
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		add_prestige = 25
+		set_country_flag = became_dominion
+		hidden_effect = { country_event = { id = hashmp.2 } }
+    }
+	option = {
+        name = hashmp.1.c
+        trigger = {
+            capital_scope = { colonial_region = colonial_eastern_america }
+        }
+		change_tag = USA
+		add_government_reform = h_reform_dominion
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		add_prestige = 25
+		set_country_flag = became_dominion
+		hidden_effect = { country_event = { id = hashmp.2 } }
+    }
+	option = {
+        name = hashmp.1.d
+        trigger = {
+            capital_scope = { colonial_region = colonial_eastern_america }
+        }
+		change_tag = FLO
+		add_government_reform = h_reform_dominion
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		add_prestige = 25
+		set_country_flag = became_dominion
+		hidden_effect = { country_event = { id = hashmp.2 } }
+    }
+	option = {
+        name = hashmp.1.e
+        trigger = {
+            capital_scope = { colonial_region = colonial_louisiana }
+        }
+		change_tag = LOU
+		add_government_reform = h_reform_dominion
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		add_prestige = 25
+		set_country_flag = became_dominion
+		hidden_effect = { country_event = { id = hashmp.2 } }
+    }
+	option = {
+        name = hashmp.1.f
+        trigger = {
+            capital_scope = { colonial_region = colonial_louisiana }
+        }
+		change_tag = TEX
+		add_government_reform = h_reform_dominion
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		add_prestige = 25
+		set_country_flag = became_dominion
+		hidden_effect = { country_event = { id = hashmp.2 } }
+    }
+	option = {
+        name = hashmp.1.g
+        trigger = {
+            capital_scope = { colonial_region = colonial_the_carribean }
+        }
+		change_tag = CUB
+		add_government_reform = h_reform_dominion
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		add_prestige = 25
+		set_country_flag = became_dominion
+		hidden_effect = { country_event = { id = hashmp.2 } }
+    }
+	option = {
+        name = hashmp.1.h
+        trigger = {
+            capital_scope = { colonial_region = colonial_the_carribean }
+        }
+		change_tag = WSI
+		add_government_reform = h_reform_dominion
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		add_prestige = 25
+		set_country_flag = became_dominion
+		hidden_effect = { country_event = { id = hashmp.2 } }
+    }
+	option = {
+        name = hashmp.1.i
+        trigger = {
+            capital_scope = { colonial_region = colonial_mexico }
+        }
+		change_tag = MEX
+		add_government_reform = h_reform_dominion
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		add_prestige = 25
+		set_country_flag = became_dominion
+		hidden_effect = { country_event = { id = hashmp.2 } }
+    }
+	option = {
+        name = hashmp.1.j
+        trigger = {
+            capital_scope = { colonial_region = colonial_mexico }
+        }
+		change_tag = CAM
+		add_government_reform = h_reform_dominion
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		add_prestige = 25
+		set_country_flag = became_dominion
+		hidden_effect = { country_event = { id = hashmp.2 } }
+    }
+	option = {
+        name = hashmp.1.k
+        trigger = {
+            capital_scope = { colonial_region = colonial_colombia }
+        }
+		change_tag = COL
+		add_government_reform = h_reform_dominion
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		add_prestige = 25
+		set_country_flag = became_dominion
+		hidden_effect = { country_event = { id = hashmp.2 } }
+    }
+	option = {
+        name = hashmp.1.l
+        trigger = {
+            capital_scope = { colonial_region = colonial_colombia }
+        }
+		change_tag = VNZ
+		add_government_reform = h_reform_dominion
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		add_prestige = 25
+		set_country_flag = became_dominion
+		hidden_effect = { country_event = { id = hashmp.2 } }
+    }
+	option = {
+        name = hashmp.1.m
+        trigger = {
+            capital_scope = { colonial_region = colonial_peru }
+        }
+		change_tag = PEU
+		add_government_reform = h_reform_dominion
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		add_prestige = 25
+		set_country_flag = became_dominion
+		hidden_effect = { country_event = { id = hashmp.2 } }
+    }
+	option = {
+        name = hashmp.1.n
+        trigger = {
+            capital_scope = { colonial_region = colonial_peru }
+        }
+		change_tag = BLV
+		add_government_reform = h_reform_dominion
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		add_prestige = 25
+		set_country_flag = became_dominion
+		hidden_effect = { country_event = { id = hashmp.2 } }
+    }
+	option = {
+        name = hashmp.1.o
+        trigger = {
+            capital_scope = { colonial_region = colonial_brazil }
+        }
+		change_tag = BRZ
+		add_government_reform = h_reform_dominion
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		add_prestige = 25
+		set_country_flag = became_dominion
+		hidden_effect = { country_event = { id = hashmp.2 } }
+    }
+	option = {
+        name = hashmp.1.p
+        trigger = {
+            capital_scope = { colonial_region = colonial_brazil }
+        }
+		change_tag = PRG
+		add_government_reform = h_reform_dominion
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		add_prestige = 25
+		set_country_flag = became_dominion
+		hidden_effect = { country_event = { id = hashmp.2 } }
+    }
+	option = {
+        name = hashmp.1.q
+        trigger = {
+            capital_scope = { colonial_region = colonial_la_plata }
+        }
+		change_tag = LAP
+		add_government_reform = h_reform_dominion
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		add_prestige = 25
+		set_country_flag = became_dominion
+		hidden_effect = { country_event = { id = hashmp.2 } }
+    }
+	option = {
+        name = hashmp.1.r
+        trigger = {
+            capital_scope = { colonial_region = colonial_la_plata }
+        }
+		change_tag = CHL
+		add_government_reform = h_reform_dominion
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		add_prestige = 25
+		set_country_flag = became_dominion
+		hidden_effect = { country_event = { id = hashmp.2 } }
+    }
+}
+
+country_event = {
+	id = hashmp.2
+	title = hashmp.2.title
+	desc = hashmp.2.desc 
+	picture = BIG_BOOK_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		add_government_reform = h_reform_dominion
+	}
+
+	option = {
+		name = hashmp.2.a
+	}
+}
+
+# Colonial Event // Removes Provinces
+
+#country_event = {
+#	id = hashmp.19
+#	title = hashmp.19.title
+#	desc = hashmp.19.desc
+#	picture = BIG_BOOK_eventPicture
+#
+#	is_triggered_only = yes
+#	hidden = yes
+#	
+#	option = {
+#		name = hashmp.19.a
+#		if = {
+#			limit = {
+#				NOT = { has_country_flag = h_flag_cede_province_event }
+#			}
+#
+#			set_country_flag = h_flag_cede_province_event
+#		}
+#
+#		every_owned_province = {
+#			if = {
+#				limit = {
+#					ROOT = {
+#						capital_scope = {
+#							colonial_region = colonial_the_carribean
+#						}
+#					}
+#				}
+#
+#				if = {
+#					limit = {
+#						NOT = { colonial_region = colonial_the_carribean }
+#					}
+#
+#					cede_province = ---
+#				}
+#			}
+#
+#			if = {
+#				limit = {
+#					ROOT = {
+#						capital_scope = {
+#							colonial_region = colonial_brazil
+#						}
+#					}
+#				}
+#
+#				if = {
+#					limit = {
+#						NOT = { colonial_region = colonial_brazil }
+#					}
+#
+#					cede_province = ---
+#				}
+#			}
+#
+#			if = {
+#				limit = {
+#					ROOT = {
+#						capital_scope = {
+#							colonial_region = colonial_canada
+#						}
+#					}
+#				}
+#
+#				if = {
+#					limit = {
+#						NOT = { colonial_region = colonial_canada }
+#					}
+#
+#					cede_province = ---
+#				}
+#			}
+#
+#			if = {
+#				limit = {
+#					ROOT = {
+#						capital_scope = {
+#							colonial_region = colonial_colombia
+#						}
+#					}
+#				}
+#
+#				if = {
+#					limit = {
+#						NOT = { colonial_region = colonial_colombia }
+#					}
+#
+#					cede_province = ---
+#				}
+#			}
+#
+#			if = {
+#				limit = {
+#					ROOT = {
+#						capital_scope = {
+#							colonial_region = colonial_eastern_america
+#						}
+#					}
+#				}
+#
+#				if = {
+#					limit = {
+#						NOT = { colonial_region = colonial_eastern_america }
+#					}
+#
+#					cede_province = ---
+#				}
+#			}
+#
+#
+#			if = {
+#				limit = {
+#					ROOT = {
+#						capital_scope = {
+#							colonial_region = colonial_la_plata
+#						}
+#					}
+#				}
+#
+#				if = {
+#					limit = {
+#						NOT = { colonial_region = colonial_la_plata }
+#					}
+#
+#					cede_province = ---
+#				}
+#			}
+#
+#			if = {
+#				limit = {
+#					ROOT = {
+#						capital_scope = {
+#							colonial_region = colonial_louisiana
+#						}
+#					}
+#				}
+#
+#				if = {
+#					limit = {
+#						NOT = { colonial_region = colonial_louisiana }
+#					}
+#
+#					cede_province = ---
+#				}
+#			}
+#
+#			if = {
+#				limit = {
+#					ROOT = {
+#						capital_scope = {
+#							colonial_region = colonial_mexico
+#						}
+#					}
+#				}
+#
+#				if = {
+#					limit = {
+#						NOT = { colonial_region = colonial_mexico }
+#					}
+#
+#					cede_province = ---
+#				}
+#			}
+#
+#			if = {
+#				limit = {
+#					ROOT = {
+#						capital_scope = {
+#							colonial_region = colonial_peru
+#						}
+#					}
+#				}
+#
+#				if = {
+#					limit = {
+#						NOT = { colonial_region = colonial_peru }
+#					}
+#
+#					cede_province = ---
+#				}
+#			}
+#		}
+#
+#		country_event = {
+#			id = hashmp.19
+#			days = 30
+#		}
+#	}
+#}
+
+#country_event = {
+#	id = hashmp.20
+#	title = hashmp.20.title
+#	desc = hashmp.20.desc
+#	picture = BIG_BOOK_eventPicture
+#	
+#	trigger = {
+#		is_colonial_nation = yes
+#		NOT = { has_country_flag = h_flag_cede_province_event }
+#	}
+#
+#	mean_time_to_happen = {
+#		months = 12
+#	}
+#	
+#	hidden = yes
+#
+#	immediate = {
+#		country_event = {
+#			id = hashmp.19 
+#		}
+#	}
+#
+#	option = {
+#		name = hashmp.20.a
+#	}
+#}

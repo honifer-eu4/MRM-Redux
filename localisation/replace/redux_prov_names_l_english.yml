@@ -1,0 +1,20 @@
+﻿l_english:
+ # Province Names
+ PROV4815:0 "Indochina"
+ PROV_ADJ4815:0 "Indochinese"
+ PROV4657:0 "Far East"
+ PROV_ADJ4657:0 "Far Eastern"
+ PROV862:0 "California"
+ PROV_ADJ862:0 "Californian"
+ PROV1791:0 "Oceania"
+ PROV_ADJ1791:0 "Oceanian"
+ PROV1814:0 "Cascadia"
+ PROV_ADJ1814:0 "Cascadian"
+ PROV4402:0 "China"
+ PROV_ADJ4402:0 "Chinese"
+ 
+ # Trade Nodes
+ trade_company_tunis:0 "Southern Mediterranean Charter"
+ TRADE_COMPANY_TUNIS_Root_Culture_GetName:0 "[Root.Culture.GetName] Southern Mediterranean Company"
+ TRADE_COMPANY_TUNIS_African_Trade_Company:0 "Southern Mediterranean Trade Company"
+ tunis:0 "Southern Mediterranean"

@@ -1,0 +1,40 @@
+government = monarchy
+add_government_reform = apostolic_kingdom
+primary_culture = hungarian
+add_accepted_culture = slovak
+add_accepted_culture = transylvanian
+religion = catholic
+technology_group = eastern
+capital = 153 # Buda
+historical_friend = HAB
+
+change_estate_land_share = {
+	estate = estate_church
+	share = -5
+}
+
+1387.3.31 = {
+	monarch = {
+		name = "Sigismund I"
+		dynasty = "von Luxemburg"
+		birth_date = 1368.2.14	
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1444.1.1 = {
+	monarch = {
+		name = "János"
+		dynasty = "Hunyadi"
+		DIP = 5
+		ADM = 4
+		MIL = 5
+		birth_date = 1406.3.2
+		leader = {	name = "János Hunyadi"         	type = general	fire = 4	shock = 4	manuever = 4	siege = 1	death_date = 1445.1.1 }
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = silver_tongue_personality
+	add_ruler_personality = bold_fighter_personality
+}

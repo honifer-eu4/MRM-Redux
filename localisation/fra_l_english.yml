@@ -1,0 +1,21 @@
+﻿l_english:
+ #Missions
+ emp_fra_destroy_burgundy_title:0 "Destroy Burgundy"
+ emp_fra_destroy_burgundy_desc:0 "No matter how many of their lands we occupy, the fact is that the Burgundians will always be a threat to our nation as long as they exist. They will always desire the crown of France for themselves, and we must wipe them off the face of the planet if we wish to be safe for good."
+ fra_greater_france_title:0 "Greater French Empire"
+ fra_greater_france_desc:0 "From Catalonia to Piedmont, from Brittany to Flanders, from Navarra to the Rhine - we have expanded the French domain in nearly every direction and achieved the true natural borders of France. Europe will bow before us soon as today is the rise of the Greater French Empire!"
+ 
+ #Modifiers
+ fra_destroyed_burgundy_mod:0 "Ended the Burgundian Threat"
+ desc_fra_destroyed_burgundy_mod:0 "The Kingdom of Burgundy was the last remaining obstacle to consolidating our rule over France. Now that they are gone, the world knows who is truly in charge here."
+ redux_french_greater_empire_mod:0 "Greater French Empire"
+ desc_redux_french_greater_empire_mod:0 "The natural borders of France have been achieved. Glory to the French Empire!"
+  
+ #Events
+ 
+ #Tooltips
+ fra_if_alliance_tt_2:0 "This event will allow Provence to become our Personal Union. AI will always accept this event."
+
+ #Other
+ redux_FRA_Empire:0 "French Empire"
+ redux_FRA_Empire_ADJ:0 "French"

@@ -1,0 +1,10 @@
+rus_third_rome_modifier = {
+    global_missionary_strength = 0.03
+    yearly_patriarch_authority = 0.05
+    administrative_efficiency = 0.05
+    fire_damage = 0.1
+}
+
+rus_land_of_churches_mod = {
+    global_tax_modifier = 0.15
+}

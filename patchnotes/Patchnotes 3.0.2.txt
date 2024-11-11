@@ -1,0 +1,8 @@
+MRM Redux Patch 3.0.2:
+
+################### Bugfixes ##################
+
+Removed exploration ideas/"Quest for the New World" as a requirement for all events/decisions in the game.
+Removed some remaining references to removed tags/regions/events.
+Removed certain mission trees for unplayable tags that were potentially causing bugs, including Riga, Bavaria, and Bohemia.
+Removed being an elector as a requirement for all events/decisions in the game, and removed all irrelevant imperial incidents.

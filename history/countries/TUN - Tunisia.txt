@@ -1,0 +1,48 @@
+government = monarchy
+add_government_reform = barbary_sultanate_reform
+primary_culture = tunisian
+religion = ibadi
+technology_group = muslim
+capital = 341	# Tunis
+fixed_capital = 341 # Cannot move capital away from this province & no power cost to move to it
+religious_school = maliki_school
+
+change_estate_land_share = {
+	estate = estate_nobles
+	share = -7
+}
+change_estate_land_share = {
+	estate = estate_church
+	share = -15
+}
+change_estate_land_share = {
+	estate = estate_burghers
+	share = 10
+}
+
+1435.9.18 = {
+	monarch = {
+		name = "'Uthman"
+		dynasty = "Hafsid"
+		birth_date = 1416.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = incorruptible_personality
+}
+
+1435.9.18 = {
+	heir = {
+		name = "Yahy�"
+		monarch_name = "Yahy� III"
+		dynasty = "Hafsid"
+		birth_date = 1435.9.18
+		death_date = 1489.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}

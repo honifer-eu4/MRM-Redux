@@ -1,0 +1,531 @@
+MRM Redux Version 4.0
+
+Notes: This changelog will mostly be covering changes that are not obvious in the game, such as events, defines, etc. Things like specific missions, map changes, idea group changes, etc. can be found in game.
+
+########################### General ###########################
+
+All content relating to East Asia, Indochina, Oceania, Alaska, and California has been removed from the game. This includes provinces, tags, events, missions, and more.
+Game Rules added to the game, automatically blocking banned mechanics such as Enforce Peace and GP Interventions. These Game Rules can be turned off through Ming decisions by the host.
+Missions/content for most non-playable tags removed in order to reduce bugs and increase game performance. 
+Most North American natives/native content (besides Mexico) has been removed from the game and replaced with uncolonized provinces.
+Pirate Republics and all events related to spawning them removed from the game.
+Slight rework to African pips, focusing on reducing their power spike at tech 5 and spreading it out to resemble other tech groups.
+"May Raid Coasts" removed from the ideas/government reforms of all non-playable countries. Countries impacted by this change include the Knights and North African minors.
+
+###################### Country-specific #######################
+
+Austria:
+	"Schwaz Silver Mine" event can no longer fire randomly (now triggered only by mission).
+
+Burgundy:
+	Burgundian Inheritance event chain/mechanics removed. Certain events have been moved to missions (such as the Marie of Burgundy event).
+
+Castile:
+	All events for Aragon to become a Republic/break free of PU removed. 
+	Aragon will now always choose the option to give Castile +1 stability in "The Infantes of Aragon" event.
+	"Great Buillion Famine" events can no longer fire randomly (moved to mission)
+	"Iberian Wedding" event can no longer fire randomly (now triggered only by mission)
+
+Denmark:
+	Added option to decline the "Growth of the Cattle Trade" event.
+
+England:
+	"End of the Hundred Years War" event can no longer fire manually (triggered only by mission)
+	"Rule Britannia" mission on Ireland/Scotland nerfed. 
+
+France:
+	"End of the Hundred Years' War" event removed.
+	"The Duke of Alencon" event (release Alencon or -1 stab) removed from the game.
+
+Hungary:
+	All events regarding becoming a Personal Union of Austria removed. 
+	All events regarding Hunyadi and the regency removed. Hungary now starts with Hunyadi as ruler instead.
+	Event for Hungary to integrate Croatia for free when getting PU'd removed.
+    Mean Time To Happen for the event unlocking Black Army reduced to 12 months.
+	Roman of Moldavia event chain removed (no free Moldavia vassal).
+
+Lithuania:
+	Now starts as Historical Rivals with Novgorod, Great Horde, and Kazan.
+	Now has permanent access to the 'Vodka of the Crown' government reform (this stays upon tag-switching).
+
+Mamluks:
+	"Administrating the Northern Territories" and "Urban Planning of Cairo" events can no longer fire randomly (now triggered only by mission).
+	Development cost removed from "Export Grain" diplomatic action.
+
+Muscovy:
+	Now starts as Historical Rivals with Crimea, Great Horde, and Kazan. 
+	"The Tatar Yoke" events removed.
+
+Naples:
+	"Baronial Revolt" event (rebels/France gets PU) removed from the game.
+	Multiple flavor events made available for Kingdom of Africa.
+
+Ottomans:
+	Crimea will always choose to stay independent in the "Fate of the Crimean Khanate" event.
+	Skanderbeg nerfed to a 3/3/3/1 general.
+
+Poland:
+	Roman of Moldavia event chain removed (no free Moldavia vassal).
+	"The Prussian Confederation Revolts" event chain can no longer fire manually (only fired by missions).
+
+Qara Qoyunlu:
+	"Emirs of Baghdad" starting modifier no longer has minimum autonomy and has +0.1 monthly autonomy gain instead of +0.2.
+	"The Death of Ispend Mirza" event can no longer fire randomly (now triggered only by mission).
+
+###################### Defines/Mechanics ######################
+
+Advisors:
+	Court of Advisors added, allowing recruitment of every possible level 3 advisor at any time for double the recruitment cost.
+	Artist now gives -0.05 Monthly Autonomy Change instead of -10% Stability Cost Modifier.
+	Theologian now gives -0.05 War Exhaustion instead of -2 National Unrest.
+	Treasurer now gives +15% National Tax Modifier instead of +10%.
+	Navigator now gives +15 Global Settler Increase instead of +20% Colonial Range.
+	Statesman now gives +2 Diplomatic Reputation instead of +1.
+	Army Organizer now gives +15% Land Force Limit instead of +10%.
+	Master Recruiter now gives +15% National Manpower Modifier instead of +10%.
+
+Army Professionalism:
+	Drilling now grants double the army professionalism.
+	Full army professionalism now grants an extra +10% Movement Speed and +15% Supply Limit Modifier, in addition to its normal modifiers.
+	Full army professionalism now grants +10% Siege Ability instead of +20%.
+	Low army professionalism no longer grants bonuses to Mercenary Cost and Mercenary Manpower.
+
+Army Tradition:
+	Army Tradition no longer grants Siege Ability.
+	Full army tradition now grants an extra +10% Army Morale Recovery Speed, +15% Manpower Recovery Speed and +0.2% Army Professionalism, in addition to its normal modifiers.
+
+Buildings:
+	Churches now give +50% tax income instead of +40%.
+	Cathedrals now give +125% tax income instead of +60%.
+	Docks now give +20% Local Manpower Modifier in addition to its usual modifiers.
+    Drydocks now give +35% Local Manpower Modifier in addition to its usual modifier.
+    Ramparts now give +25% Local Defensiveness instead of +15%, and +50% Garrison Size instead of +1 Defender Dice Roll.
+	Purple Room Fort Code added - forts cannot be built next to other forts in the same country, with the exception of capital forts and strait crossings. New forts acquired through annexation will have an 180 day cooldown before being eligible for deletion.
+	Soldier's Households now give +60% manpower instead of +75%, and give a +40% bonus on eligible provinces instead of +75%.
+	Universities now cost 200 gold instead of 300, and give -10% Development Cost instead of -20%.
+	Universities now take 1 month to build instead of 12.
+
+Casus Belli: 
+	Humiliate Rival now never available against player nations.
+
+Centers of Trade:
+	Development required to upgrade to level 2 reduced from 10 to 8.
+	Development required to upgrade to level 3 reduced from 25 to 15.
+
+Decisions:
+	Added QoL decision allowing a player to prevent the event "Estate Statutory Rights" from firing.
+	Added QoL decision to add all provinces to Parliament.
+    Added QoL decision to enable manpower edict on all states.
+	Decision added for colonization, costing 500 ducats and giving a permanent colonist as well as allowing recruitment of explorers. This decision is available after embracing Renaissance.
+	Decision added to purchase a second colonist, costing 1500 ducats and giving a permanent extra colonist. This decision is available after colonialism is embraced and the first colonization decision has been taken.
+	Decision added to educate ruler, adding +1 to all stats and available when your ruler is under 7 total skill. This decision can only be used once a game and is never available to republics.
+	Decision added to gain independence upon being PU'd.
+	Decision added to hire a general for money, available once per game per nation.
+	Decision added to see available critical events (Radical Reforms, Grand Captain, Commandant, and Army Reform).
+	Decision added to see national statistics, including total amount of development clicks and generals hired.
+	Decision added to see possible formables, including their national ideas and missions.
+
+Defines:
+	Assaulting forts no longer costs mil points.
+	Attack Natives, Seize Colony, and Burn Colony no longer costs mil points.
+	Base cavalry to infantry ratio now 100%.
+	Centralize State government reform progress cost reduced to 10.
+	Change rival cost reduced to 0 from 100.
+	Dishonorable peace (- prestige for peacing out a war early) removed.
+	Time before 100% war score from full occupation of war leader changed from 5 years to 1.
+	Province loot has been doubled, and base looting speed is slightly faster (0.1 -> 0.2 for infantry, 0.3 -> 0.4 for cavalry).
+	Maximum corruption before debasing is blocked decreased from 90 to 35.
+	Mercenary companies now never reduce army professionalism.
+	Minimum autonomy required to decrease reduced from 10% to 0%.
+	Minimum development to promote a culture reduced from 20 to 5.
+	Minimum relations to ally changed to -200 (always possible).
+	Prestige hit from abandoning PUs/vassals removed. 
+	Prestige hit from declining call to arms removed. 
+	Prestige hit from losing/abandoning cores removed.
+	Prestige hit from selling provinces removed.
+	Prestige hit for downgrading center of trade removed.
+	Prestige hit from disinheriting heir reduced to 25 from 50.
+	Prestige hit from abdicating reduced to 25 from 50.
+	Scorched Earth now reduces Local Hostile Movement Speed by -30% instead of -50%.
+	Stability hit from monarch dying as a general removed.
+	Stability hit from breaking a royal marriage removed. 
+	Trade propagation reduced from 20% of trade power to 12.5%.
+	Morale damage taken in backrow set to 0. 
+	Innovativeness gain from taking an idea first reduced to 1 from 2.
+    Innovativeness gain from taking a technology level first reduced to 1 from 4.
+    Minimum policy time reduced to 1 year from 10.
+	Minimum revolt progress required to provoke rebels reduced to 30% from 50%.
+	Religious Zeal reduced to 10 years from 30.
+	Legitimacy now additionally grants up to +25% Reform Progress Growth.
+	Republican Tradition now grants up to +75% Reform Progress Growth instead of +100%.
+
+Devastation:
+	Local goods produced, manpower, sailors, and development cost debuffs halved.
+
+Drilling:
+	Drill gain buffed to +15 yearly from +10.
+	General skill gain from drilling buffed to average of 90 months from 120.
+
+Edicts:
+	Centralization Edict now gives -0.05 Local Autonomy Change instead of -0.03.
+	Defensive Edict reduced to +20% Fort Defense instead of +33%.
+	Edict of Absolutism now always available regardless of age.
+	Encourage Development removed (all state cores now have -10% Development Cost by default).
+	Minimum edict duration changed from 12 months to 6.
+
+Estates:
+	Sale of Titles + Seize Land can now be used regardless of rebels.
+	Seize Land can now be used at war.
+
+Events:
+	Event for East Frisia to join the HRE removed.
+	Grand Captain and Commandant events can now be declined, allowing them to trigger again after a 20 year cooldown.
+	"The Italian Wars" event and triggered modifiers removed.
+	MTTH for Grand Captain and Commandant events halved.
+	"Papal State" event no longer gives -1 Stability.
+    "Seat of Strong Aristocrats" modifier no longer gives +0.1 Local Monthly Autonomy.
+
+Forts:
+	Base garrison size increased to 2000 per level from 1000.
+	Siege force needed per fort level reduced to 2x from 3x.
+
+Great Projects:
+	"Baku Atesgah" no longer gives Discipline at any tier, and no longer requires the owner to be Zoroastrian.
+	"Kazan Kremlin" reduced to +10% Garrison Damage at Tier 1, and +25% Garrison Damage at Tier 2/3 instead of +50% and +100%.
+
+HRE:
+	Electors removed. Austria is now always the Emperor (they will always keep it regardless of heir/ruler, and the HRE will be dismantled if they die).
+	Limitations on government rank removed. You can now always upgrade your rank in the Empire (provided you meet the dev/prestige reqs).
+	Diplomatic actions of "Grant Electorate", "Remove Electorate", "Grant Free City Status", "Demand Unlawful Territory", and "Bestow Imperial Grace" removed.
+	Most sources/penalties of imperial authority gain removed.
+	Tax/manpower/FL gained from free cities/princes in HRE removed, replaced with flat +25 force limit and +25k manpower triggered modifier. 
+	Development cost removed from first HRE reform (will be replaced by triggered modifier for HRE minors).
+	HRE minors now gain a triggered modifier granting -5% Development Cost, -10% Aggressive Expansion Impact, and -0.025 Monthly Autonomy Change until 1500.
+	Button to dismantle the HRE removed.
+	Shadow Kingdom incident removed.
+
+Idea Groups:
+	All idea groups and policies have been rebalanced. Most groups are relatively similar to their vanilla purposes. 
+	Aristocratic and Plutocratic Ideas are no longer restricted based on government type.
+	Idea Group percentage changed to 40% (more commonly known as 1/1/1 ideas)
+	Maritime Ideas has been reskinned into Logistics Ideas, an idea group focusing on reducing attrition and making troops cheaper.
+	Exploration Ideas, Infrastructure Ideas, Naval Ideas, Mercenary Ideas, Divine Ideas, Horde Ideas, and Native Ideas have been removed. There are currently no plans to add these groups back.
+	All removed groups have had their events/content either removed or moved to other places in the game.
+
+Institutions/Technology:
+	Technology cost no longer increases for not having certain institutions embraced.
+	Having all active institutions embraced now gives a triggered modifier granting +25% Reform Progress Growth, -5% Technology Cost, +50% Innovativeness Gain, and -0.02 Monthly Autonomy Change.
+	Being ahead in military technology now gives -10% Land Maintenance Modifier, -10% Recruitment Time, and -0.05 Yearly Corruption.
+	The entire world now starts with Feudalism.
+	Renaissance now spreads naturally in Africa and Asia.
+	Colonialism now spreads naturally in all port provinces.
+	Printing Press now spreads naturally in Africa and Asia.
+	Printing Press now gives +10% Reform Progress Growth instead of -5% Stability Cost Modifier.
+
+Marines:
+	Now have -10% Shock Damage Received instead of +10%.
+
+Mercantilism:
+	Full mercantilism now gives an extra +15% Trade Efficiency in addition to its usual modifiers.
+
+Mercenary Companies:
+	All Mercenary Companies are now local (can be recruited anywhere and don't have a home province), with availability of certain companies depending on capital location.
+	All nations now start with the Independent, Grand, and Free Companies regardless of development.
+    Drastically decreased the amount of mercenaries in the game, focusing on giving each nation an unique mercenary company with elite quality modifiers as well with smaller flavor mercs that are only available in the Age of Discovery.
+    The Independent, Grand, and Free Companies now become larger and more expensive every age.
+	Added triggered modifier for having 3 and 5 merc companies recruited, giving +1.5 Yearly Army Tradition each.
+	Can no longer contain artillery. 
+	New mercenary companies added for completing every mil group. Each mil group has 1 "main" group then 2 "reserve" groups (1 unlocked with each age after Age of Reformation).
+	New mercenary companies added to regions lacking them in vanilla, including the Maghreb region and East Africa.
+	Now have a slightly higher cost, and a significantly lower manpower pool (2x per regiment -> 1.25x).
+
+Navy:
+	Transport base cost reduced to 1.
+	Transport base build time reduced to 1 month.
+	Transport sailor cost reduced by 90%.
+	Transport hull size reduced by 75%.
+	All cannons and blockade ability removed from transports.
+
+Other Mechanics:
+	Removed war exhaustion from Call for Peace (now it just does nothing).
+	Removed +25% stability cost from regency council.
+	Regency council no longer prevents declaring wars.
+	Removed diplomatic reputation hit from refusing call to arms. 
+	Lucky nations now has no effect (in case someone turns it on by accident).
+	Lost Hegemony no longer gives +10% All Powers Cost.
+	Lost Hegemony time period reduced to 10 years from 20.
+	Naval Hegemon now requires 250 Heavy Ships instead of 500 of any ship. 
+
+Parliament:
+	"Land Reform" removed.
+	Manpower given from "The Draft" reduced by 75%.
+
+Prosperity:
+	Now gives -15% State Maintenance Modifier instead of -10% Development Cost.
+
+Revanchism:
+	Now gives an extra -5 Global Unrest, -0.25 Inflation Reduction, and +10% Production Efficiency instead of -1 Interest Per Annum.
+
+Spies:
+	Sabotaged Recruitment now gives +10% Recruitment Time, replacing its previous modifiers. 
+	Sow Discontent no longer effects legitimacy/RT/devotion. 
+	Sabotage Reputation now only gives -1 diplomatic reputation instead of -3.
+
+Technology:
+	Admin techs 8 and 12 now grant 150 Governing Capacity instead of 100.
+	Admin techs 19 and 25 now grant an additional +10% Administrative Efficiency.
+	Diplo techs 1, 3, 10, 15, 23, and 26 now grant an additional +5 Global Settler Increase.
+	Diplo tech 0 now grants +100 Colonial Range instead of +60.
+	Diplo tech 7 now grants +150 Colonial Range instead of +110.
+	The 6th, 7th, and 8th idea groups are now unlocked at admin techs 20, 23, and 25, instead of 22, 26, and 29.
+	Mil techs 10, 14, and 21 now grant an additional +50% supply limit.
+
+Technology Groups:
+	All technology groups in the Old World now start at tech 3.
+
+Terrain:
+	Arid no longer gives +10% Development Cost or +1 Local Attrition.
+	Desert now gives +35% Development Cost instead of +50%. 
+	Monsoons no longer give attrition, and Severe Monsoons now give -35% Movement Speed instead of -50%.
+	Tropical no longer gives +10% Development Cost or +2 Local Attrition.
+
+Trade:
+	Penalty for collecting in nodes other than main node removed.
+
+War Score:
+	Ticking warscore from wargoal increased from 25 to 40.
+	Monthly ticking warscore increased from 0.4 to 0.8.
+	Max warscore from battles increased from 40 to 50.
+
+########################### Estates ###########################
+
+Burghers:
+	Added a privilege based on land ownership, giving +10% Mercenary Discipline, +10% Mercenary Cost, and +1 Monthly Swiss/Mercenary Militarization at 100%.
+	"Ask for Contribution" action no longer requires having at least 1 port.
+	"Promote Burgher Bookkeeping" privilege now grants -30% Inflation Reduction Cost instead of -50% and no longer grants State Maintenance.
+
+Burghers/Jains/Vaisyas:
+	"Control Over Monetary Policy" no longer gives Interest Per Annum or All Powers Cost.
+	"Exclusive Trade Rights" can now only be selected every 10 years.
+
+Clergy:
+    Added a privilege based on land ownership, giving +10% Morale of Armies and +5% Land Maintenance Modifier at 100%.
+
+Nobility:
+    "Boyars - Landed Army" privilege now gives up to +10% Cavalry Combat Ability instead of +20%.
+    "Boyars - Rynda Infantry" privilege now gives up to +10% Infantry Combat Ability and -10% Infantry Cost instead of +15% and -20%.
+
+Crownland:
+	0-1% Crownland now gives +0.3 Global Autonomy Gain instead of +0.4.
+	1-5% Crownland now gives +0.25 Global Autonomy Gain instead of +0.3.
+	50-60% Crownland now gives an additional +2.5% Land Force Limit.
+	60-70% Crownland now gives an additional +5% Land Force Limit and +2.5% Goods Produced Modifier. 
+	70-80% Crownland now gives an additional +7.5% Land Force Limit and +5% Goods Produced Modifier.
+	80-90% Crownland now gives an additional +10% Land Force Limit and +7.5% Goods Produced Modifier.
+	90-100% Crownland now gives an additional +15% Land Force Limit and +10% Goods Produced Modifier.
+	100% Crownland now gives an additional +20% Land Force Limit and +12.5% Goods Produced Modifier.
+
+General:    
+    Added a decision to destroy the estates. This decision is available starting in the Age of Absolutism and requires 90% Crownland as well as less than 2 privileges on all of your estates. Destroying the estates grants a triggered modifier which includes an upgraded version of max Crownland modifiers, as well as +1 of each mana point. 
+	Added new decisions unlocked by destroying the estates, giving mana, ducats, and free troops on a cooldown. These decisions can be further buffed by government reforms.
+
+#################### Government Mechanics #####################
+
+French Feudalism:
+	Appanages can no longer declare war on each other.
+
+Grand Duchy:
+	Now fixed at Kingdom rank instead of Duchy.
+
+Mamluk Government:
+	Event to select a new ruler now shows ruler stats.
+
+Mercenary Militarization:
+    No longer gives up to -10% Mercenary Maintenance.
+    Now passively ticks down by up to -1 a month instead of -0.5.
+    Now gives up to +5% Mercenary Discipline instead of +7.5%.
+
+Merchant Republics:
+	No longer have +25% State Governing Cost.
+
+Ottoman Government:
+	AI will now always accept turning a vassal into an eyalet.
+	AI will now always accept turning an eyalet into a core eyalet.
+	Core Eyalets now cost 9 diplo points per dev to annex (12.5% more expensive than normal vassals).
+	Eyalets/Core Eyalets are now automatically called into wars.
+	Eyalets/Core Eyalets can no longer be separately peaced out. 
+	Eyalets/Core Eyalets now use diplo slots.
+	Janissaries no longer have +50% Assault Fort Ability.
+	Max Decadence now only gives -50% Reform Progress, +50% Stability Cost Modifier, and -1 Yearly Legitimacy, replacing its previous modifiers.
+	Most sources of Decadence gain/removal removed, including events, being at peace, and fighting battles with the sultan. All remaining modifiers are from ages/missions.
+    Now gives -75% Special Unit Force Limit.
+
+Russian Principality:
+	Now fixed at Kingdom rank instead of Duchy.
+
+Russian Rule:
+	Administrative Rule now grants up to -10% Stability Cost Modifier instead of -10% Development Cost.
+	"New Order Regiments" government reform now grants an extra +5% Infantry Combat Ability instead of +15%.
+
+Russian Tsardom:
+	All sources of ticking modernization removed, including ruler skill, estate privileges, and technology. Modernization is now earned only through the Russian mission tree.
+	"Purchase Modern Ideas" and "Steal Modern Ideas" diplomatic actions removed.
+
+Sultanate of Rum:
+	Janissaries no longer have +50% Assault Fort Ability.
+	Now gives -75% Special Unit Force Limit.
+
+System of Councils:
+    Each interaction now gives -10% Advisor Cost for the corresponding mana type instead of +1 monthly.
+
+Venetian Government:
+    No longer has the Council of Ten government abilities.
+
+##################### Government Reforms ######################
+
+Common:
+    All reforms requiring Exploration/Expansion ideas now require the "Interest in Colonies" modifier instead.
+    "Condottierri Contracts" Tier 5 reform now gives -20% Mercenary Cost instead of -33%. 
+    "Elite Mercenaries" Tier 5 reform now gives -5% Mercenary Cost instead of -15%.
+    "Expanded Black Army" Tier 5 reform now gives +33% Mercenary Manpower instead of +100%.
+    "Swiss Mercenaries" Tier 5 reform now gives -10% Mercenary Cost instead of -25%.
+    "Separate the Clergy from State" Tier 4 reform now requires destroying the estates and now gives -10% Idea Cost and +25% Innovativeness Gain.
+    "Superiority of the State" Tier 7 reform now requires destroying the estates and now gives +1 Yearly Absolutism and -3 Global Unrest.
+    "Lockean Proviso" Tier 8 reform now requires destroying the estates and gives -100% War Taxes cost and +1 Free Policy.
+
+Monarchy:
+    "Puppet the Nobility" Tier 2 reform now requires destroying the estates and now gives -10% Military Technology Cost and +1% Yearly Army Professionalism.
+	"Centralized Monarchical Bureaucracy" Tier 3 reform no longer gives -10% Culture Conversion Cost or -5% All Estates' Loyalty Equilibrium.
+	"Regional Councils" Tier 3 reform now gives -20% State Maintenace instead of -25%.
+    "Royal Favoritism" Tier 3 reform no longer disables Call Diet.
+    "Strengthened Parliament" Tier 7 reform now gives +10% Manpower in Primary Culture Provinces instead of -10% Development Cost in Primary Culture Provinces.
+
+Theocracy:
+    "One State Under God" Tier 13 reform now grants -10% Warscore Cost Against Other Religions instead of -30%.
+
+########################## Disasters ##########################
+
+Dutch Revolt:
+	Removed from game.
+
+French Revolution:	
+	Removed from game.
+
+German Revolt:
+	Removed from game.
+
+Hungarian Revolt:
+	Removed from game.
+
+Mali: 
+	"Decline of Mali" disaster removed.
+
+Ottomans:
+	"Internal Power Struggle", "Janissary Coup", "Eyalet Rebellion", "Pasha Decadence", and "Plot of the Harem" disasters removed. 
+
+Revolution:
+	Removed from game.
+
+########################## Religions ##########################
+
+Defender of the Faith:
+	All religious groups now allow a Defender of the Faith.
+	All religions now allow female defender of the faiths.
+	All tiers now provide the same amount of morale and war exhaustion reduction.
+	Tiers reversed. Having less countries in your religion now grants a higher tier of Defender, and vice versa.
+
+General: 
+	-2% Missionary Strength on provinces removed from all religions.
+	Religious Leagues/League War events removed from game.
+	"Catholic Empire", "Protestant Empire", and "Reformed Empire" triggered modifiers removed.
+
+Catholic:
+	Excommunication effects removed. 
+	"Subjugation of the Papacy" triggered modifier removed. 
+	"The Occupation of Rome" triggered modifier removed.
+	"The Pope in the Empire" triggered modifier removed.
+	Counter-Reformation no longer gives +5% Technology Cost and +5% Idea Cost.
+	Now has +5% Morale of Armies and +1 Tolerance of True Faith as base modifiers.
+	Crusade nerfed (morale removed, manpower decreased to 20%)
+	Papal Blessing reduced to 7.5% Morale of Armies.
+	Construction Cost from Levy Church Tax removed.
+	Sanction Dynasty now gives -5% Development Cost.
+	There is now only one Golden Bull (grants -2 unrest in Catholic provinces, -30% Curia Powers Cost, -10% Institution Embracement Cost, and enables Crusades after Age Limit and Cardinals spreading Institutions).
+
+Protestant:
+	MTTH for "The Protestant Reformation" decreased from 4000 to 1000.
+	All temporary buffs gained from activating a church aspect removed and added to the permanent one.
+	"Holy Sacraments" aspect increased to 5% discipline.
+
+Reformed:
+    Fervor actions now cost 7 monthly fervor instead of 8.
+
+Anglican:
+	"Militarize Church Icons" aspect reduced to 100 church power cost.
+	"Grant Monopoly" aspect reduced to 75 church power cost.
+	"Progress of the Supreme Governor" aspect reduced to 150 church power cost.
+
+Orthodox:
+	"Icon of St. Michael" no longer gives manpower recovery speed.
+	Max patriarch authority now gives +25% Manpower instead of +33%.
+
+Coptic:
+	Now grants +20% Defensiveness as a base modifier instead of +15%.
+	Taiz and Mogadishu are now Holy Sites, replacing Antakiya and Yerevan.
+	"Legitimize Government" now grants an additional +10% Goods Produced.
+	"Will of the Martyrs" now grants +5% Discipline instead of +2.5%.
+
+All Muslim denominations:
+	"Call on Religious Followers" Mysticism action now gives 0.2 years of manpower instead of 2.
+	No longer require diplomatic relations to invite scholars.
+
+Sunni:
+	Now has +10% Global Tax Modifier as a base modifier instead of cav-to-inf ratio.
+
+Fetishist:
+	Now has +10% Shock Damage as a base modifier instead of +1 Diplo Reputation.
+	Mwari cult buffed to +5% Discipline instead of +2.5%.
+
+Hindu:
+	Now has +5% Discipline as a base modifier instead of +1 Tolerance of Heathens and +1 Tolerance of True Faith.
+	Shakti diety now gives +10% Fire Damage instead of +5% discipline.
+
+Zoroastrian:
+    All Zoroastrian provinces/events to convert to Zoroastrian removed.
+
+############################ Ages #############################
+
+Age of Discovery:
+	All countries now have the "Feudal Society" age goal instead of "Hold Three Thrones", regardless of religion.
+	"Cavalry Armies" objective now gives -10% Cavalry Cost, replacing its previous modifiers.
+	"Danish Subject Loyalty" objective now gives -20% Mercenary Cost and +5% Mercenary Discipline, replacing its previous modifiers.
+	"Feudal De Jure Law" objective now also gives -0.05 monthly war exhaustion.
+	"Feudal Society" objective now accepts other subject types in addition to vassals, such as marches and personal unions.
+	"Portuguese Colonial Growth" objective reduced to +25 Global Settler Increase.
+	"Ottoman Siegecraft" objective is now available to Rum.
+	"Venetian Trade" objective now gives +10% Trade Efficiency, replacing its previous modifiers, and is available to all countries in the Latin culture group.
+
+Age of Reformation:
+	"Create a Colonial Empire" objective changed to require 100% Religious Unity.
+	"Humanist or Religious" objective changed to require completing 3 idea groups.
+	"Floating Batteries" goal now gives -100% War Taxes Cost, replacing its previous modifiers.
+	"Institutional Spread" goal now gives an additional +25% Religious Unity.
+	"Mercenary Discipline" goal now gives +10% Mercenary Discipline instead of +5%.
+	"Persian Enlightenment" goal now gives -10% Development Cost instead of -20%.
+	"Polish Crown" goal now gives +20% Goods Produced instead of +33%.
+	"Spanish Field Marshals" goal now available to Andalusia.
+
+Age of Absolutism:
+    "Emperor of China" objective changed to require destroying the estates.
+    "Win Religious War" objective changed to require at least 75 Power Projection.
+    "Dutch Commercialization" goal is now available to Lotharingia.
+    "Edict of Absolutism" goal now allows revoking estate privileges without enough loyalty.
+    "Flexible Rivalries" goal now allows Free Force March.
+	
+########################## Colonies ###########################
+
+HashMP Colonial rework added (credit to Foffy123 and Xaime), giving colonies unique events/missions as well as formables for uniting their colonial region.
+Crown Colony is now the only available type. Most subject interactions such as Send Officers, etc. have been removed.
+Player Colonial Nations now get a debuff granting +40% Development Cost, -50% Manpower Recovery Speed, -50% Sailor Recovery Speed, -75% National Sailors Modifier, -25% Land Force Limit, and -50% Naval Force Limit.
+Forming a Dominion through the mission tree reduces this debuff to +25% Development Cost, -30% Manpower Recovery Speed, -30% Sailor Recovery Speed, -50% National Sailors Modifier, -15% Land Force Limit, -25% Naval Force Limit.
+Colonial nations cannot colonize outside of their region. An event has been added that automatically uncolonizes any provinces a CN obtains outside its region.

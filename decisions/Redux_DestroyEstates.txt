@@ -1,0 +1,266 @@
+country_decisions = {
+    redux_destroy_estates = {
+		color = { 195 160 20 }
+		potential = {
+			ai = no 
+			NOT = { has_country_flag = redux_estates_destroyed }
+		}
+		allow = {
+			OR = {
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
+			crown_land_share = 90
+			NOT = {
+				num_of_estate_privileges = {
+					estate = estate_church
+					value = 2
+				}
+			}
+			NOT = {
+				num_of_estate_privileges = {
+					estate = estate_burghers
+					value = 2
+				}
+			}
+			NOT = {
+				num_of_estate_privileges = {
+					estate = estate_nobles
+					value = 2
+				}
+			}
+			NOT = {
+				num_of_estate_privileges = {
+					estate = estate_brahmins
+					value = 2
+				}
+			}
+			NOT = {
+				num_of_estate_privileges = {
+					estate = estate_maratha
+					value = 2
+				}
+			}
+			NOT = {
+				num_of_estate_privileges = {
+					estate = estate_vaisyas
+					value = 2
+				}
+			}
+			NOT = {
+				num_of_estate_privileges = {
+					estate = estate_cossacks
+					value = 2
+				}
+			}
+			NOT = {
+				num_of_estate_privileges = {
+					estate = estate_nomadic_tribes
+					value = 2
+				}
+			}
+			NOT = {
+				num_of_estate_privileges = {
+					estate = estate_dhimmi
+					value = 2
+				}
+			}
+			NOT = {
+				num_of_estate_privileges = {
+					estate = estate_jains
+					value = 2
+				}
+			}
+			NOT = {
+				num_of_estate_privileges = {
+					estate = estate_janissaries
+					value = 2
+				}
+			}
+			NOT = {
+				num_of_estate_privileges = {
+					estate = estate_eunuchs
+					value = 2
+				}
+			}
+			NOT = {
+				num_of_estate_privileges = {
+					estate = estate_qizilbash
+					value = 2
+				}
+			}
+			NOT = {
+				num_of_estate_privileges = {
+					estate = estate_ghulams
+					value = 2
+				}
+			}
+		}
+		effect = {
+			set_country_flag = redux_estates_destroyed
+			custom_tooltip = redux_destroy_estates_tt
+		}
+	}
+    redux_destroy_estates_nobles = {
+        color = { 195 160 20 }
+        potential = {
+            ai = no 
+            has_country_flag = redux_estates_destroyed
+        }
+        allow = {
+            custom_trigger_tooltip = {
+                tooltip = redux_destroy_estates_mod_tt
+                has_country_flag = redux_estates_destroyed
+            }
+            NOT = { has_country_modifier = redux_destroy_estates_nobles_cooldown }
+            capital_scope = {
+				controller = { 
+					tag = ROOT
+				}
+				has_siege = no
+			}
+        }
+        effect = {
+            add_absolutism = 10
+            create_unit_forcelimit_percentage = {
+                type = infantry 
+                force_limit_percentage = 0.2 
+            }
+            if = { 
+                limit = { has_government_attribute = redux_destroy_estates_nobles_buff }
+                create_unit_forcelimit_percentage = {
+                    type = infantry
+                    force_limit_percentage = 0.1
+                }
+            } else = {
+                custom_tooltip = " "
+                custom_tooltip = redux_destroy_estates_nobles_tt
+            }
+            custom_tooltip = " "
+            if = {
+                limit = { NOT = { has_government_attribute = redux_destroy_estates_general_buff } }
+                add_country_modifier = {
+                    name = "redux_destroy_estates_nobles_cooldown"
+                    duration = 3650
+                }
+                custom_tooltip = redux_destroy_estates_nobles_tt_2
+            } else = {
+                add_country_modifier = {
+                    name = "redux_destroy_estates_nobles_cooldown" 
+                    duration = 1825
+                }
+            }
+        }
+    }
+    redux_destroy_estates_burghers = {
+        color = { 195 160 20 }
+        potential = {
+            ai = no 
+            has_country_flag = redux_estates_destroyed
+        }
+        allow = {
+            custom_trigger_tooltip = {
+                tooltip = redux_destroy_estates_mod_tt
+                has_country_flag = redux_estates_destroyed
+            }
+            NOT = { has_country_modifier = redux_destroy_estates_burghers_cooldown }
+        }
+        effect = {
+            add_absolutism = 10
+            add_years_of_income = 2
+            if = { 
+                limit = { has_government_attribute = redux_destroy_estates_burghers_buff }
+                add_years_of_income = 1
+            } else = {
+                custom_tooltip = " "
+                custom_tooltip = redux_destroy_estates_burghers_tt
+            }
+            custom_tooltip = " "
+            if = {
+                limit = { NOT = { has_government_attribute = redux_destroy_estates_general_buff } }
+                add_country_modifier = {
+                    name = "redux_destroy_estates_burghers_cooldown"
+                    duration = 3650
+                }
+                custom_tooltip = redux_destroy_estates_burghers_tt_2
+            } else = {
+                add_country_modifier = {
+                    name = "redux_destroy_estates_burghers_cooldown" 
+                    duration = 1825
+                }
+            }
+        }
+    }
+    redux_destroy_estates_clergy = {
+        color = { 195 160 20 }
+        potential = {
+            ai = no 
+            has_country_flag = redux_estates_destroyed
+        }
+        allow = {
+            custom_trigger_tooltip = {
+                tooltip = redux_destroy_estates_mod_tt
+                has_country_flag = redux_estates_destroyed
+            }
+            num_of_owned_provinces_with = {
+				value = 5
+				has_tax_building_trigger = yes
+			}
+            NOT = { has_country_modifier = redux_destroy_estates_clergy_cooldown }
+        }
+        effect = {
+            add_absolutism = 10
+            custom_tooltip = redux_destroy_estates_clergy_tt_3
+            for = {
+                amount = 5
+                effect = "
+                    random_owned_province = {
+						limit = {
+							has_tax_building_trigger = yes 
+						}
+                        remove_building = temple 
+                        remove_building = cathedral
+                    }
+                "
+            }
+            add_adm_power = 100
+            add_dip_power = 100
+            add_mil_power = 100
+            if = { 
+                limit = { has_government_attribute = redux_destroy_estates_clergy_buff }
+                add_adm_power = 50
+                add_dip_power = 50
+                add_mil_power = 50
+            } else = {
+                custom_tooltip = " "
+                custom_tooltip = redux_destroy_estates_clergy_tt
+            }
+            custom_tooltip = " "
+            if = {
+                limit = { NOT = { has_government_attribute = redux_destroy_estates_general_buff } }
+                add_country_modifier = {
+                    name = "redux_destroy_estates_clergy_cooldown"
+                    duration = 3650
+                }
+                custom_tooltip = redux_destroy_estates_clergy_tt_2
+            } else = {
+                add_country_modifier = {
+                    name = "redux_destroy_estates_clergy_cooldown" 
+                    duration = 1825
+                }
+            }
+        }
+    }
+    redux_destroy_estates_info = {
+        color = { 61 8 81 }
+        potential = {
+            ai = no 
+        }
+        allow = {
+            always = yes
+        }
+        effect = {
+            country_event = { id = redux_qol.2 }
+        }
+    }
+}

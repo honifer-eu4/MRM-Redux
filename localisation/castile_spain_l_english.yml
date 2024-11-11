@@ -1,0 +1,25 @@
+﻿l_english:
+ #Missions
+ gc_cas_spa_iberian_wedding_title:0 "The Iberian Wedding"
+ gc_cas_spa_iberian_wedding_desc:0 "Some marriages are born out of love and romance, and others are built of nothing but political opportunism. It seems that we have an opportunity to exploit the latter - we would be wise to take it."
+ gc_spa_occitania_title:0 "Invade Occitania"
+ gc_spa_occitania_desc:0 "Sharing a border with the Kingdom of France is a source of anxiety for many nations. We can never be sure that our military or diplomatic efforts will be enough to deter them if they should decide to invade. Instead, we must take the fight to them!"
+ gc_cas_barbary_ports2_title:0 "Combat Barbary Piracy"
+ gc_cas_barbary_ports2_desc:0 "The piratical slavers operating out of the North African coast are a constant menace to our coasts and our shipping. We must capture these corsair cities and end the threat they pose to innocent Christians."
+ gc_cas_tunis2_title:0 "Conquer Tunis"
+ gc_cas_tunis2_desc:0 "Tunis is more than a simple pirate port. It is the capital of a rival naval power with ties to the dreaded Turks, and must be destroyed before they can become a greater threat."
+ spa_defeat_morocco_title:0 "Defeat Morocco"
+ spa_defeat_morocco_desc:0 "Now that Iberia is secure for good, it is time to complete the final stage of the Reconquista - defeating the Sultanate of Morocco, and opening up our expansion in African against the Muslim menace."
+ spa_tafilalt_title:0 "End the Bullion Famine"
+ spa_tafilalt_desc:0 "The deficit of gold in Europe has become increasingly apparent in recent years. Now that we have access to the Moroccan gold in Tafilalt, we have been the first to successfully secure a source of gold outside of Europe. This will bring us great benefits."
+ gc_cas_golden_age_title:0 "Golden Century"
+ gc_cas_golden_age_desc:0 "We must bring about a golden era for our nation that will last for generations. Our wealth and prestige shall eclipse all other nations!"
+ 
+ #Modifiers
+
+ #Events
+ 
+ #Tooltips
+ spain_golden_century_tt:0 "If we are in a Golden Age, it will be extended by 50 years. If we have already completed our Golden Age, we will be able to Golden Age again."
+
+ #Other

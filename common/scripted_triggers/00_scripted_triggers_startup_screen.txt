@@ -1,0 +1,24 @@
+#These tags use the plural form of their names
+tag_with_plural_name_trigger = {
+	OR = {
+		tag = AKK
+		tag = AZT
+		tag = BAH
+		tag = CHG
+		tag = INC
+		tag = KAC
+		tag = MAM
+		tag = MAR
+		tag = MSY
+		tag = MUG
+		tag = OIR
+		tag = QAR
+		tag = RAS
+		tag = SHY
+		tag = TIM
+		tag = TUR
+		tag = YAS
+		tag = AVE
+		tag = EIC
+	}
+}

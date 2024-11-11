@@ -1,0 +1,49 @@
+MRM Redux Patch 1.1.0:
+
+################### General ##################
+
+Defines:
+    Centralize State government reform progress cost reduced to 10.
+
+Estates:
+    Loyal Cossacks now give +10% Cavalry Combat Ability and -10% Cavalry Cost, instead of +20% and -20%.
+    Removed estate interactions requiring deleted idea groups.
+
+HRE:
+    Great Peasants' War no longer gives +6 National Unrest.
+
+Parliament:
+    "Land Reform" removed.
+
+Start Dates:
+    Added "Pax Europa", a start date with all of India being controlled by Ming (the AI "console" tag that cannot be attacked or otherwise interacted with). This startdate will include decision to automatically save-edit countries into India (will be added in a later patch)
+
+
+############# Government Reforms #############
+
+Sich Rada:
+    "Raise Cossack Host" interaction no longer spawns infantry.
+    "Raise Cossack Host" interaction now spawns 15% of force limit of cavalry instead of 50%.
+
+################# Idea Groups ################
+
+Removal of Exploration Ideas, Naval Ideas, and Indigenous Ideas fully complete. All missions, events, etc. relating to the groups have either been changed to have different triggers or removed from the game.
+
+
+############### National Ideas ###############
+
+Poland: 
+    25% Cavalry Combat Ability reduced to 20%.
+    15% Morale of Armies reduced to 10%. 
+
+############## Country-specific ##############
+
+Poland: 
+    Polish Magnate Rebels no longer change the government to Elective Monarchy when enforcing demands.
+
+################## Colonies ##################
+
+Player Colonial Nation debuff reduced to +40% Development Cost instead of +50%.
+Player Dominion debuff reduced to +25% Development Cost instead of +30%.
+
+

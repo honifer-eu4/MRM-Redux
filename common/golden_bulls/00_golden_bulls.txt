@@ -1,0 +1,31 @@
+dei_gratia_rex = {
+    modifier = {
+        unrest_catholic_provinces = -2
+        curia_powers_cost = -0.3
+        embracement_cost = -0.1
+    }
+    mechanics = {
+        cardinals_spread_institution
+        crusades_after_age_limit
+    }
+	potential = {
+	}
+    trigger = {
+        is_papal_controller = yes
+    }
+    ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 1
+            average_unrest = 2
+        }
+        modifier = {
+            factor = 1
+            average_unrest = 4
+        }
+        modifier = {
+            factor = 1
+            average_unrest = 6
+        }
+    }
+}

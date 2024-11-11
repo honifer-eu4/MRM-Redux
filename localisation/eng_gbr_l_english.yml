@@ -1,0 +1,17 @@
+﻿l_english:
+ #Missions
+ gbr_reconquer_normandy_title:0 "Reconquer Normandy"
+ gbr_reconquer_normandy_desc:0 "Normandy has rebelled against our rule multiple times, and now it seems like the French are preparing to reclaim it once and for all. However, Normandy is English - and it always will be."
+ 
+ #Modifiers
+ redux_eng_hundred_years_war:0 "The Hundred Years' War"
+ desc_redux_eng_hundred_years_war:0 "This war may look bad now, but we will never give up on our mainland dream!"
+ desc_redux_eng_mainland_foothold:0 "With Normandy back in the fold, we now have a mainland foothold. We will use it as a base to push forward and reclaim our lost glory!"
+ redux_eng_mainland_foothold:0 "Mainland Foothold"
+ 
+ #Events
+ 
+ #Tooltips
+ redux_eng_hundred_years_war_tt:0 "This event will have two options: \nLose all cores in France besides Calais, and gain §G+1 Stability§!. \nGain §G+10% Infantry Combat Ability§! for 10 years. \n§RThis event will NOT have ICA if this mission is completed after 1450!§!"
+
+ #Other

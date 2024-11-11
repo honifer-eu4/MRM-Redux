@@ -1,0 +1,23 @@
+﻿l_english:
+ #Missions
+
+ emp_sav_union_with_lombardy_title:0 "Northern Italian Unity"
+ emp_sav_union_with_lombardy_desc:0 "It is no secret that our state has great ambitions, to not just be the powerhouse of the north, but the powerhouse of all of Italy! The days of regional conflicts is far past, it is time to emphasize our unity - whether you are Lombard, Piedmontese, Sardinian, or any other Italian who lives under our rule - now we work together for a greater Italy!"
+ 
+ #Modifiers
+
+ #Events
+ 
+ emp_mlo_deal_with_sforza_mission_title:0 "Deal with Sforza"
+ emp_mlo_deal_with_sforza_mission_desc:0 "Francesco Sforza is one of the greatest military leaders of our time. We have frequently found ourselves at odds with him, and he currently aids our enemies in times of war. We could attempt to turn him to our side, though significant concessions may have to be made. Alternatively, we could remove him as a threat for good."
+
+ #Tooltips
+ 
+ #Other
+
+ mlo_sforza_tooltip_1:0 "This event will give us two options: \nMake §YFrancesco Sforza§! (3/5/4/2) a general, although he will attempt to gain more power later on, or refuse to negotiate, causing him to rise up against us."
+ mlo_sforza_tooltip_2:0 "Sforza will attempt to establish a military dictatorship in about 3 years. We will be able to choose to fight him, or let him establish a Military Dictatorship."
+ mlo_sforza_tooltip_3:0 "Sforza will attempt to reform the government into a monarchy with himself as the king after about 15 years of rule. We will be able to restore the Ambrosian Republic if he attempts to seize the throne, or he dies of natural causes."
+ mlo_no_more_republic_tooltip:0 "§RWarning: we will not be able to restore the Ambrosian Republic if we choose this option!§!"
+ sforza_resolved_tt:0 "§YThe issue of Sforza will be resolved.§!"
+ mlo_dealt_with_sforza_tooltip:0 "The issue of Sforza has been resolved."

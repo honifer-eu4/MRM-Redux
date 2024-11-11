@@ -1,0 +1,3 @@
+opinion_franconian_league = {
+    opinion = 50
+}

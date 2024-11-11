@@ -1,0 +1,1288 @@
+namespace = redux_ming
+normal_or_historical_nations = yes
+
+# Respawn India 
+
+country_event = {
+    id = redux_ming.101
+    title = redux_ming.101.t 
+    desc = redux_ming.101.d
+    picture = RELIGION_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_ming.101.opta
+        kabulistan_area = {
+            add_core = AFG
+            cede_province = AFG
+            add_local_autonomy = -100
+            add_base_tax = 2
+            add_base_production = 3
+            add_base_manpower = 2
+        }
+        sistan_area = {
+            add_core = AFG
+            cede_province = AFG
+            add_local_autonomy = -100
+        }
+        balkh_area = {
+            add_core = AFG
+            cede_province = AFG
+            add_local_autonomy = -100
+        }
+        ghor_area = {
+            add_core = AFG
+            cede_province = AFG
+            add_local_autonomy = -100
+            add_base_tax = 1
+            add_base_production = 1
+            add_base_manpower = 1
+        }
+        kalat_area = {
+            add_core = AFG
+            cede_province = AFG
+            add_local_autonomy = -100
+            add_base_tax = 1
+            add_base_production = 1
+            add_base_manpower = 1
+        }
+        2073 = {
+            add_core = AFG
+            cede_province = AFG
+            add_local_autonomy = -100
+        }
+        2077 = {
+            add_core = AFG
+            cede_province = AFG
+            add_local_autonomy = -100
+            add_base_tax = 1
+            add_base_production = 3
+            add_base_manpower = 1
+        }
+        2078 = {
+            add_core = AFG
+            cede_province = AFG
+            add_local_autonomy = -100
+        }
+        2079 = {
+            add_core = AFG
+            cede_province = AFG
+            add_local_autonomy = -100
+        }
+        4509 = {
+            add_core = AFG
+            cede_province = AFG
+            add_local_autonomy = -100
+            add_base_tax = 1
+            add_base_production = 3
+            add_base_manpower = 1
+        }
+        506 = {
+            add_core = AFG
+            cede_province = AFG
+            add_local_autonomy = -100
+        }
+        makran_area = {
+            add_core = BAL
+            cede_province = BAL
+            add_local_autonomy = -100
+        }
+        northern_sindh_area = {
+            add_core = SND
+            cede_province = SND
+            add_local_autonomy = -100
+        }
+        sindh_area = {
+            add_core = SND
+            cede_province = SND
+            add_local_autonomy = -100
+        }
+        2086 = {
+            add_core = MUL
+            cede_province = MUL
+            add_local_autonomy = -100
+        }
+        4508 = {
+            add_core = MUL
+            cede_province = MUL
+            add_local_autonomy = -100
+        }
+        shanshan_area = {
+            add_core = KAS
+            cede_province = KAS
+            add_local_autonomy = -100
+        }
+        west_gansu_area = {
+            add_core = HMI
+            cede_province = HMI
+            add_local_autonomy = -100
+        }
+        508 = {
+            add_core = KSH
+            cede_province = KSH
+            add_local_autonomy = -100
+        }
+        4449 = {
+            add_core = KSH
+            cede_province = KSH
+            add_local_autonomy = -100
+        }
+        4521 = {
+            add_core = LDK 
+            cede_province = LDK
+            add_local_autonomy = -100
+        }
+        2074 = {
+            add_core = LDK 
+            cede_province = LDK
+            add_local_autonomy = -100
+        }
+        574 = {
+            cede_province = ---
+        }
+        1248 = {
+            add_core = DGL 
+            cede_province = DGL 
+            add_local_autonomy = -100
+        }
+        706 = {
+            add_core = SYG
+            cede_province = SYG
+            add_local_autonomy = -100
+        }
+        4204 = {
+            add_core = SYG
+            cede_province = SYG
+            add_local_autonomy = -100
+        }
+        2134 = {
+            add_core = KAM
+            cede_province = KAM
+            add_local_autonomy = -100
+        }
+        705 = {
+            add_core = KAM
+            cede_province = KAM
+            add_local_autonomy = -100
+        }
+        ngari_area = {
+            add_core = GUG
+            cede_province = GUG
+            add_local_autonomy = -100
+        }
+        tsang_area = {
+            add_core = UTS
+            cede_province = UTS
+            add_local_autonomy = -100
+        }
+        utsang_area = {
+            add_core = UTS
+            cede_province = UTS
+            add_local_autonomy = -100
+        }
+        4511 = {
+            add_core = DLH
+            cede_province = DLH
+            add_local_autonomy = -100
+        }
+        lahore_area = {
+            add_core = DLH
+            cede_province = DLH
+            add_local_autonomy = -100
+        }
+        sirhind_area = {
+            add_core = DLH
+            cede_province = DLH
+            add_local_autonomy = -100
+            add_base_tax = 2
+            add_base_manpower = 2
+            add_base_production = 2
+        }
+        upper_doab_area = {
+            add_core = DLH
+            cede_province = DLH
+            add_local_autonomy = -100
+        }
+        4507 = {
+            add_core = DLH
+            cede_province = DLH
+            add_local_autonomy = -100
+        }
+        katehar_area = {
+            add_core = DLH
+            cede_province = DLH
+            add_local_autonomy = -100
+        }
+        509 = {
+            add_core = KGR
+            cede_province = KGR
+            add_local_autonomy = -100
+        }
+        511 = {
+            add_core = GHR
+            cede_province = GHR
+            add_local_autonomy = -100
+        }
+        4493 = {
+            add_core = SRM
+            cede_province = SRM
+            add_local_autonomy = -100
+        }
+        2069 = {
+            add_core = KMN
+            cede_province = KMN
+            add_local_autonomy = -100
+        }
+        4492 = {
+            add_core = DTI
+            cede_province = DTI
+            add_local_autonomy = -100
+        }
+        4491 = {
+            add_core = DNG
+            cede_province = DNG
+            add_local_autonomy = -100
+        }
+        554 = {
+            add_core = JML
+            cede_province = JML
+            add_local_autonomy = -100
+        }
+        4485 = {
+            add_core = GRK
+            cede_province = GRK
+            add_local_autonomy = -100
+        }
+        2070 = {
+            add_core = GRK
+            cede_province = GRK
+            add_local_autonomy = -100
+        }
+        557 = {
+            add_core = KTU
+            cede_province = KTU
+            add_local_autonomy = -100
+        }
+        4484 = {
+            add_core = KTU
+            cede_province = KTU 
+            add_local_autonomy = -100
+        }
+        4483 = {
+            add_core = LWA
+            cede_province = LWA
+            add_local_autonomy = -100
+        }
+        2071 = {
+            add_core = LWA
+            cede_province = LWA
+            add_local_autonomy = -100
+        }
+        bhutan_area = {
+            add_core = PHA
+            cede_province = PHA
+            add_local_autonomy = -100
+        }
+        2047 = {
+            add_core = TRT
+            cede_province = TRT
+            add_local_autonomy = -100
+        }
+        4488 = {
+            add_core = TRT
+            cede_province = TRT
+            add_local_autonomy = -100
+        }
+        4487 = {
+            add_core = JNP 
+            cede_province = JNP
+            add_local_autonomy = -100
+        }
+        bihar_area = {
+            add_core = JNP 
+            cede_province = JNP
+            add_local_autonomy = -100
+        }
+        purvanchal_area = {
+            add_core = JNP 
+            cede_province = JNP
+            add_local_autonomy = -100
+        }
+        oudh_area = {
+            add_core = JNP 
+            cede_province = JNP
+            add_local_autonomy = -100
+        }
+        lower_doab_area = {
+            add_core = JNP 
+            cede_province = JNP
+            add_local_autonomy = -100
+        }
+        2096 = {
+            add_core = BNG 
+            cede_province = BNG
+            add_local_autonomy = -100
+        }
+        arakan_area = {
+            add_core = BNG 
+            cede_province = BNG
+            add_local_autonomy = -100
+        }
+        tripura_area = {
+            add_core = BNG 
+            cede_province = BNG
+            add_local_autonomy = -100
+        }
+        east_bengal_area = {
+            add_core = BNG 
+            cede_province = BNG
+            add_local_autonomy = -100
+        }
+        west_bengal_area = {
+            add_core = BNG 
+            cede_province = BNG
+            add_local_autonomy = -100
+        }
+        gaur_area = {
+            add_core = BNG 
+            cede_province = BNG
+            add_local_autonomy = -100
+        }
+        north_bengal_area = {
+            add_core = BNG 
+            cede_province = BNG
+            add_local_autonomy = -100
+        }
+        2042 = {
+            add_core = BNG 
+            cede_province = BNG
+            add_local_autonomy = -100
+        }
+        571 = {
+            add_core = ASS 
+            cede_province = ASS
+            add_local_autonomy = -100
+        }
+        4440 = {
+            add_core = ASS 
+            cede_province = ASS
+            add_local_autonomy = -100
+        }
+        566 = {
+            add_core = ASS 
+            cede_province = ASS
+            add_local_autonomy = -100
+        }
+        2040 = {
+            add_core = SDY 
+            cede_province = SDY
+            add_local_autonomy = -100
+        }
+        570 = {
+            add_core = KAC
+            cede_province = KAC
+            add_local_autonomy = -100
+        }
+        573 = {
+            add_core = KAC
+            cede_province = KAC
+            add_local_autonomy = -100
+        }
+        2041 = {
+            add_core = MLB 
+            cede_province = MLB 
+            add_local_autonomy = -100
+        }
+        4408 = {
+            add_core = CEY
+            cede_province = CEY
+            add_local_autonomy = -100
+        }
+        572 = {
+            add_core = CEY
+            cede_province = CEY
+            add_local_autonomy = -100
+        }
+        4407 = {
+            add_core = CEY
+            cede_province = CEY
+            add_local_autonomy = -100
+        }
+        2099 = {
+            add_core = KND 
+            cede_province = KND
+            add_local_autonomy = -100
+        }
+        4409 = {
+            add_core = KND 
+            cede_province = KND
+            add_local_autonomy = -100
+        }
+        madura_area = {
+            add_core = VIJ
+            cede_province = VIJ
+            add_local_autonomy = -100
+        }
+        kongu_area = {
+            add_core = VIJ
+            cede_province = VIJ
+            add_local_autonomy = -100
+        }
+        tanjore_area = {
+            add_core = VIJ
+            cede_province = VIJ
+            add_local_autonomy = -100
+        }
+        south_carnatic_area = {
+            add_core = VIJ
+            cede_province = VIJ
+            add_local_autonomy = -100
+        }
+        north_carnatic_area = {
+            add_core = VIJ
+            cede_province = VIJ
+            add_local_autonomy = -100
+        }
+        mysore_area = {
+            add_core = VIJ
+            cede_province = VIJ
+            add_local_autonomy = -100
+        }
+        rayalaseema_area = {
+            add_core = VIJ
+            cede_province = VIJ
+            add_local_autonomy = -100
+        }
+        2100 = {
+            add_core = VIJ
+            cede_province = VIJ
+            add_local_autonomy = -100
+        }
+        kanara_area = {
+            add_core = VIJ
+            add_core = BAH
+            cede_province = VIJ
+            add_local_autonomy = -100
+        }
+        konkan_area = {
+            add_core = VIJ
+            add_core = BAH
+            cede_province = VIJ
+            add_local_autonomy = -100
+        }
+        537 = {
+            add_core = VND
+            cede_province = VND
+            add_local_autonomy = -100
+        }
+        4410 = {
+            add_core = VND
+            cede_province = VND
+            add_local_autonomy = -100
+        }
+        535 = {
+            add_core = KOC
+            cede_province = KOC
+            add_local_autonomy = -100
+        }
+        534 = {
+            add_core = MAB 
+            cede_province = MAB
+            add_local_autonomy = -100
+        }
+        4413 = {
+            add_core = KLT
+            cede_province = KLT
+            add_local_autonomy = -100
+        }
+        mewar_area = {
+            add_core = MER
+            cede_province = MER
+            add_local_autonomy = -100
+            add_base_manpower = 1
+            add_base_production = 1
+            add_base_tax = 1
+        }
+        gird_area = {
+            add_core = MER
+            cede_province = MER
+            add_local_autonomy = -100
+            add_base_manpower = 1
+            add_base_production = 1
+            add_base_tax = 1
+        }
+        marwar_area = {
+            add_core = MER
+            cede_province = MER
+            add_local_autonomy = -100
+        }
+        512 = {
+            add_core = JAN
+            cede_province = JAN
+            add_local_autonomy = -100
+        }
+        2066 = {
+            add_core = NGA
+            cede_province = NGA
+            add_local_autonomy = -100
+        }
+        4502 = {
+            add_core = NGA
+            cede_province = NGA
+            add_local_autonomy = -100
+        }
+        2064 = {
+            add_core = DHU
+            cede_province = DHU
+            add_local_autonomy = -100
+        }
+        519 = {
+            add_core = DHU
+            cede_province = DHU
+            add_local_autonomy = -100
+        }
+        520 = {
+            add_core = MEW
+            cede_province = MEW
+            add_local_autonomy = -100
+        }
+        4500 = {
+            add_core = MEW
+            cede_province = MEW
+            add_local_autonomy = -100
+        }
+        malwa_area = {
+            add_core = MER
+            cede_province = MER
+            add_local_autonomy = -100
+        }
+        2053 = {
+            add_core = MER 
+            cede_province = MER 
+            add_local_autonomy = -100
+        }
+        4480 = {
+            add_core = MER 
+            cede_province = MER
+            add_local_autonomy = -100
+        }
+        503 = {
+            add_core = KAT
+            cede_province = KAT
+            add_local_autonomy = -100
+        }
+        2052 = {
+            add_core = KAT
+            cede_province = KAT
+            add_local_autonomy = -100
+        }
+        521 = {
+            add_core = KAT
+            cede_province = KAT
+            add_local_autonomy = -100
+        }
+        515 = {
+            add_core = JGD
+            cede_province = JGD
+            add_local_autonomy = -100 
+        }
+        4455 = {
+            add_core = JGD
+            cede_province = JGD
+            add_local_autonomy = -100 
+        }
+        4454 = {
+            add_core = PRB
+            cede_province = PRB
+            add_local_autonomy = -100
+        }
+        4456 = {
+            add_core = JGD
+            cede_province = JGD
+            add_local_autonomy = -100 
+        }
+        ahmedabad_area = {
+            add_core = GUJ
+            cede_province = GUJ
+            add_local_autonomy = -100 
+        }
+        raichur_doab_area = {
+            add_core = VIJ
+            add_core = BAH
+            cede_province = BAH
+            add_local_autonomy = -100
+        }
+        maidan_area = {
+            add_core = BAH
+            cede_province = BAH
+            add_local_autonomy = -100
+        }
+        desh_area = {
+            add_core = BAH
+            cede_province = BAH
+            add_local_autonomy = -100
+        }
+        ahmednagar_area = {
+            add_core = BAH
+            cede_province = BAH
+            add_local_autonomy = -100
+        }
+        telingana_area = {
+            add_core = BAH
+            cede_province = BAH
+            add_local_autonomy = -100
+        }
+        golconda_area = {
+            add_core = BAH
+            cede_province = BAH
+            add_local_autonomy = -100
+        }
+        berar_area = {
+            add_core = BAH
+            cede_province = BAH
+            add_local_autonomy = -100
+        }
+        tapti_area = {
+            add_core = BAH
+            cede_province = BAH
+            add_local_autonomy = -100
+        }
+        4434 = {
+            add_core = BAH
+            cede_province = BAH
+            add_local_autonomy = -100
+        }
+        527 = {
+            add_core = KHD
+            cede_province = KHD
+            add_local_autonomy = -100
+        }
+        4453 = {
+            add_core = KHD
+            cede_province = KHD
+            add_local_autonomy = -100
+        }
+        gondwana_area = {
+            add_core = MLW
+            cede_province = MLW
+            add_local_autonomy = -100
+        }
+        bundelkhand_area = {
+            add_core = MER
+            cede_province = MER
+            add_local_autonomy = -100
+        }
+        550 = {
+            add_core = MER
+            cede_province = MER
+            add_local_autonomy = -100
+        }
+        baghelkhand_area = {
+            add_core = BGL
+            cede_province = BGL
+            add_local_autonomy = -100
+        }
+        4452 = {
+            add_core = RTT
+            cede_province = RTT
+            add_local_autonomy = -100
+        }
+        2082 = {
+            add_core = RTT
+            cede_province = RTT
+            add_local_autonomy = -100
+        }
+        4451 = {
+            add_core = PTT
+            cede_province = PTT
+            add_local_autonomy = -100
+        }
+        4447 = {
+            add_core = PTT
+            cede_province = PTT
+            add_local_autonomy = -100
+        }
+        553 = {
+            add_core = PTT
+            cede_province = PTT
+            add_local_autonomy = -100
+        }
+        547 = {
+            add_core = BST
+            cede_province = BST
+            add_local_autonomy = -100
+        }
+        4445 = {
+            add_core = BST
+            cede_province = BST
+            add_local_autonomy = -100
+        }
+        4446 = {
+            add_core = KLH
+            cede_province = KLH
+            add_local_autonomy = -100
+        }
+        2048 = {
+            add_core = JPR 
+            cede_province = JPR
+            add_local_autonomy = -100
+        }
+        4448 = {
+            add_core = PRD 
+            cede_province = PRD
+            add_local_autonomy = -100
+        }
+        543 = {
+            add_core = YOR
+            cede_province = YOR
+            add_local_autonomy = -100
+        }
+        4425 = {
+            add_core = YOR
+            cede_province = YOR
+            add_local_autonomy = -100
+        }
+        2084 = {
+            add_core = YOR
+            cede_province = YOR
+            add_local_autonomy = -100
+        }
+        549 = {
+            add_core = ORI 
+            cede_province = ORI 
+            add_local_autonomy = -100
+        }
+        2080 = {
+            add_core = ORI 
+            cede_province = ORI 
+            add_local_autonomy = -100
+        }
+        orissa_area = {
+            add_core = ORI 
+            cede_province = ORI 
+            add_local_autonomy = -100
+        }
+        4470 = {
+            add_core = NGP 
+            cede_province = NGP 
+            add_local_autonomy = -100
+        }
+        560 = {
+            add_core = NGP 
+            cede_province = NGP 
+            add_local_autonomy = -100
+        }
+        4450 = {
+            add_core = KJH 
+            cede_province = KJH  
+            add_local_autonomy = -100
+        }
+        4471 = {
+            add_core = MBL  
+            cede_province = MBL 
+            add_local_autonomy = -100
+        }
+        524 = {
+            add_core = DLH 
+            cede_province = DLH
+            add_local_autonomy = -100
+        }
+        529 = {
+            add_core = BAH 
+            cede_province = BAH
+            add_local_autonomy = -100
+        }
+        2089 = {
+            add_core = BAH 
+            cede_province = BAH
+            add_local_autonomy = -100
+        }
+        1101 = {
+            cede_province = ---
+        }
+        every_province = {
+            limit = {
+                NOT = {
+                    province_id = 1821
+                }
+            }
+            remove_core = MNG
+        }
+        if = {
+			limit = {
+				449 = {
+					NOT = {
+						has_building = fort_15th
+					}
+		    		NOT = {
+						has_building = fort_16th
+					}
+					NOT = {
+						has_building = fort_17th
+					}
+					NOT = {
+						has_building = fort_18th
+					}
+				}
+			}
+			449 = {
+				add_building = fort_15th
+			}
+		}
+        if = {
+			limit = {
+				435 = {
+					NOT = {
+						has_building = fort_15th
+					}
+		    		NOT = {
+						has_building = fort_16th
+					}
+					NOT = {
+						has_building = fort_17th
+					}
+					NOT = {
+						has_building = fort_18th
+					}
+				}
+			}
+			435 = {
+				add_building = fort_15th
+			}
+		}
+        if = {
+			limit = {
+				4511 = {
+					NOT = {
+						has_building = fort_15th
+					}
+		    		NOT = {
+						has_building = fort_16th
+					}
+					NOT = {
+						has_building = fort_17th
+					}
+					NOT = {
+						has_building = fort_18th
+					}
+				}
+			}
+			4511 = {
+				add_building = fort_15th
+			}
+		}
+        set_global_flag = india_respawned 
+    }
+}
+
+country_event = {
+    id = redux_ming.102
+    title = redux_ming.102.t
+    desc = redux_ming.102.d
+    picture = RELIGION_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_ming.102.opta
+        capital_scope = {
+            ROOT = {
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+            }
+        }
+    }
+
+    option = {
+        name = redux_ming.102.optb
+        capital_scope = {
+            ROOT = {
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+            }
+        }
+    }
+    
+    option = {
+        name = redux_ming.102.optc 
+        capital_scope = {
+            ROOT = {
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+            }
+        }
+    }
+
+    option = {
+        name = redux_ming.102.optd 
+        capital_scope = {
+            ROOT = {
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+                infantry = PREV
+            }
+        }
+    }
+}
+
+country_event = {
+    id = redux_ming.103 
+    title = redux_ming.103.t
+    desc = redux_ming.103.d
+    picture = RELIGION_eventPicture
+
+    is_triggered_only = yes 
+
+    option = {
+        name = redux_ming.103.opta 
+        country_event = { id = redux_ming.104 }
+    }
+
+    option = {
+        name = redux_ming.103.optb
+        country_event = { id = redux_ming.105 }
+    }
+
+    option = {
+        name = redux_ming.103.optc
+        country_event = { id = redux_ming.106 }
+    }
+
+    option = {
+        name = redux_ming.103.optd
+        country_event = { id = redux_ming.107 }
+    }
+
+    option = {
+        name = redux_ming.103.opte 
+        country_event = { id = redux_ming.108 }
+    }
+
+    option = {
+        name = redux_ming.103.exit
+    }
+}
+
+# Enforce Peace
+
+country_event = {
+    id = redux_ming.104
+    title = redux_ming.104.t
+    desc = {
+        trigger = { NOT = { has_global_flag = redux_enforce_peace_allowed } }
+        desc = redux_ming.104.d.1
+    }
+    desc = {
+        trigger = { has_global_flag = redux_enforce_peace_allowed }
+        desc = redux_ming.104.d.2
+    }
+    picture = RELIGION_eventPicture
+
+    is_triggered_only = yes
+    
+    option = {
+        name = redux_ming.104.change
+        if = {
+            limit = { 
+                has_global_flag = redux_enforce_peace_allowed 
+            }
+            clr_global_flag = redux_enforce_peace_allowed
+        }
+        else = {
+            set_global_flag = redux_enforce_peace_allowed 
+        }
+    }
+
+    option = {
+        name = redux_ming.104.back
+        country_event = { id = redux_ming.103 }
+    }
+    
+    option = {
+        name = redux_ming.104.exit
+    }
+}
+
+country_event = {
+    id = redux_ming.105
+    title = redux_ming.105.t
+    desc = {
+        trigger = { NOT = { has_global_flag = redux_influence_allowed } }
+        desc = redux_ming.105.d.1
+    }
+    desc = {
+        trigger = { has_global_flag = redux_influence_allowed }
+        desc = redux_ming.105.d.2
+    }
+    picture = RELIGION_eventPicture
+
+    is_triggered_only = yes
+    
+    option = {
+        name = redux_ming.105.change
+        if = {
+            limit = { 
+                has_global_flag = redux_influence_allowed 
+            }
+            clr_global_flag = redux_influence_allowed
+        }
+        else = {
+            set_global_flag = redux_influence_allowed 
+        }
+    }
+
+    option = {
+        name = redux_ming.105.back
+        country_event = { id = redux_ming.103 }
+    }
+    
+    option = {
+        name = redux_ming.105.exit
+    }
+}
+
+country_event = {
+    id = redux_ming.106
+    title = redux_ming.106.t
+    desc = {
+        trigger = { NOT = { has_global_flag = redux_foreign_debt_allowed } }
+        desc = redux_ming.106.d.1
+    }
+    desc = {
+        trigger = { has_global_flag = redux_foreign_debt_allowed }
+        desc = redux_ming.106.d.2
+    }
+    picture = RELIGION_eventPicture
+
+    is_triggered_only = yes
+    
+    option = {
+        name = redux_ming.106.change
+        if = {
+            limit = { 
+                has_global_flag = redux_foreign_debt_allowed 
+            }
+            clr_global_flag = redux_foreign_debt_allowed
+        }
+        else = {
+            set_global_flag = redux_foreign_debt_allowed 
+        }
+    }
+
+    option = {
+        name = redux_ming.106.back
+        country_event = { id = redux_ming.103 }
+    }
+    
+    option = {
+        name = redux_ming.106.exit
+    }
+}
+
+country_event = {
+    id = redux_ming.107
+    title = redux_ming.107.t
+    desc = {
+        trigger = { NOT = { has_global_flag = redux_intervene_allowed } }
+        desc = redux_ming.107.d.1
+    }
+    desc = {
+        trigger = { has_global_flag = redux_intervene_allowed }
+        desc = redux_ming.107.d.2
+    }
+    picture = RELIGION_eventPicture
+
+    is_triggered_only = yes
+    
+    option = {
+        name = redux_ming.107.change
+        if = {
+            limit = { 
+                has_global_flag = redux_intervene_allowed 
+            }
+            clr_global_flag = redux_intervene_allowed
+        }
+        else = {
+            set_global_flag = redux_intervene_allowed 
+        }
+    }
+
+    option = {
+        name = redux_ming.107.back
+        country_event = { id = redux_ming.103 }
+    }
+    
+    option = {
+        name = redux_ming.107.exit
+    }
+}
+
+country_event = {
+    id = redux_ming.108
+    title = redux_ming.108.t
+    desc = {
+        trigger = { NOT = { has_global_flag = redux_ottos_mams_allowed } }
+        desc = redux_ming.108.d.1
+    }
+    desc = {
+        trigger = { has_global_flag = redux_ottos_mams_allowed }
+        desc = redux_ming.108.d.2
+    }
+    picture = RELIGION_eventPicture
+
+    is_triggered_only = yes
+    
+    option = {
+        name = redux_ming.108.change
+        if = {
+            limit = { 
+                has_global_flag = redux_ottos_mams_allowed 
+            }
+            clr_global_flag = redux_ottos_mams_allowed
+        }
+        else = {
+            set_global_flag = redux_ottos_mams_allowed 
+        }
+    }
+
+    option = {
+        name = redux_ming.108.back
+        country_event = { id = redux_ming.103 }
+    }
+    
+    option = {
+        name = redux_ming.108.exit
+    }
+}

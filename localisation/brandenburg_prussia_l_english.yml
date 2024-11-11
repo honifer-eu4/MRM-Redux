@@ -1,0 +1,49 @@
+﻿l_english:
+ #Brandenburg/Prussian Missions
+ 
+ emp_brapru_destiny_of_brandenburg_title:0 "Destiny of Brandenburg"
+ emp_brapru_destiny_of_brandenburg_desc:0 "We stand today as one of the most prosperous regions of the Empire. Our future looks bright, but we must decide where our destiny shall lie."
+ emp_brapru_north_germany_title:0 "Expand Our Realm"
+ emp_brapru_north_germany_desc:0 "Northern Germany is full of scheming princes that are surely plotting to usurp us as the powerhouse of the region. We must expand our realm quickly to prevent them from becoming a serious threat."
+ emp_brapru_imperial_ambition_title:0 "Imperial Ambition"
+ emp_brapru_imperial_ambition_desc:0 "We may only be one of the many princes of the Holy Roman Empire, but every empire starts somewhere. It is important to keep our eye on the throne."
+ emp_brapru_legacy_of_the_march_title:0 "Legacy of the March"
+ emp_brapru_legacy_of_the_march_desc:0 "Our land was settled by barbaric tribes until the Emperor created the March of Brandenburg to civilize the area. It is thanks only to the bravery and fortitude of our ancestors that we have a place to call home today. As desparate times lie ahead, it would be wise to look towards them for a source of inspiration."
+ emp_brapru_conquer_pomerania_2_desc:0 "With the question of the Pomeranian Succession handled, we must now decide whether we wish to reorganize our new subjects."
+ emp_brapru_conquer_pomerania_2_title:0 "Fate of Pomerania"
+ emp_brapru_defeat_our_rivals_title:0 "Defeat our Rivals"
+ emp_brapru_defeat_our_rivals_desc:0 "Now that many of the minor Princes are under our control, whether through diplomacy or conquest, it is time to go on the attack against our major rivals in the region. Time is of the essence if we are to emerge victorious."
+
+ #Brandenburg/Prussian Modifiers
+ bra_march_legacy:0 "Legacy of the March"
+ desc_bra_march_legacy:0 "§RThis modifier will expire if we are no longer in a defensive war!§! \nOur land was settled by barbaric tribes until the Emperor created the March of Brandenburg to civilize the area. It is thanks only to the bravery and fortitude of our ancestors that we have a place to call home today. As desparate times lie ahead, it would be wise to look towards them for a source of inspiration."
+ bra_conqueror_modifier:0 "Expansionist Focus"
+ desc_bra_conqueror_modifier:0 "We have decided that rapid expansion is necessary to secure the survival of the state."
+ bra_careful_modifier:0 "Diplomatic Focus"
+ desc_bra_careful_modifier:0 "We have decided that diplomacy is necessary if we wish to become a great power."
+
+ #Events
+ redux_brapru.1.t:0 "Victory"
+ redux_brapru.1.d:0 "It seems that we have managed to continue the legacy of the March of Brandenburg, pushing back the enemy armies even when the odds seemed stacked against us. We can now rest well knowing that we have made our forefathers proud."
+ redux_brapru.1.opta:0 "Glory to the state!"
+ redux_brapru.2.t:0 "Defeat"
+ redux_brapru.2.d:0 "Despite our best efforts, it seems that the enemy armies were simply too powerful to stop. While the sacrifices our men made will be honored, it remains to be seen whether we will be able to recover from this loss."
+ redux_brapru.2.opta:0 "We tried our best..."
+ redux_brapru.3.t:0 "Destiny of Brandenburg"
+ redux_brapru.3.d:0 "We are surrounded by many states that could become an obstacle if not dealt with correctly. Some in our court advocate for strength by aggressive expansion, while others warn of a potential coalition and promote more diplomatic methods. It has become apparent that our destiny depends on what our king decides."
+ redux_brapru.3.opta:0 "Fortune favors the bold - time is of the essence."
+ redux_brapru.3.optb:0 "It's best to be careful for now..."
+ redux_brapru.4.t:0 "Fate of Pomerania"
+ redux_brapru.4.d:0 "With Pomerania now under our rule, we must decide the fate of the county. Some have suggested creating the March of Pomerania, which could be of use as a buffer against potential enemies across the Baltic. We could also continue to let our [Root.Monarch.GetTitle] reign over both thrones, and do all in our power to strengthen our ties. Finally, we could depose the local leadership and place our own prince in charge, though this is likely to upset the lords of Pomerania."
+ redux_brapru.4.opta:0 "Create the March of Pomerania"
+ redux_brapru.4.optb:0 "Take direct control of Pomerania"
+ redux_brapru.4.optc:0 "Focus on strengthening ties with Pomerania"
+
+ #Tooltips
+ bra_not_available_to_prussia_tooltip:0 "This mission will §Rno longer be available§! if we form Prussia."
+ bra_goes_away_when_war_ends_tooltip:0 "§RThis modifier will expire if we are no longer in a defensive war!§!"
+ bra_march_legacy_removed_tt:0 "§YLegacy of the March§! will be removed."
+ bra_destiny_of_brandenburg_tt:0 "We will have two options in this event: the §YExpansionist§! option and the §YDiplomatic§! option. \nThe §YExpansionist§! option will give our ruler the §YConqueror§! trait (§G-5 Years of Separatism§!), and give us §G-5% Core Creation Cost§! and §G-5% Diplomatic Annexation Cost§! for 25 years. \nThe §YDiplomatic§! option will give our ruler the §YCareful§! trait (§G-10% Aggressive Expansion Impact§!), and give us §G-10% Subject Liberty Desire§! and §G+1 Diplomatic Reputation§! for 25 years."
+ bra_pomerania_mission_tt1:0 "If @POM Pomerania is our Personal Union, §Y'The Fate of Pomerania"§! event will fire."
+ bra_pomerania_mission_tt2:0 "This event will give us three options: \nMake Pomerania a March, and give them §G-20% Liberty Desire§! \nMake Pomerania a Vassal, and give them §R+10% Liberty Desire§! \nKeep Pomerania as a Personal Union, and give them §G-50% Liberty Desire§! and §G+100 Opinion§! of us"
+ redux_brapru_pomerania_tt:0 "If @POM Pomerania is our ally, we will gain them as a Personal Union. If @POM Pomerania is our rival, we will gain a §YRestoration of Union§! casus belli on them."

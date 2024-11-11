@@ -1,0 +1,71 @@
+#Kurdish Principalities generally autonomous under Qara Qoyunlu
+vassal = {
+	first = QAR
+	second = BTL
+	start_date = 1435.1.1
+	end_date = 1469.2.4
+}
+
+#Melikdoms of Kharabak
+
+vassal = {
+	first = QAR
+	second = MLK
+	start_date = 1435.1.1
+	end_date = 1469.2.4
+}
+
+#Biapis
+
+alliance = {
+	first = ARL
+	second = KRY
+	start_date = 1440.1.1
+	end_date = 1504.1.1
+}
+
+#Avar Khanate under the Shamkals
+vassal = {
+	first = GAZ
+	second = AVR
+	start_date = 1435.1.1
+	end_date = 1770.1.1
+}
+
+#Ardalan
+vassal = {
+	first = QOM
+	second = ARD
+	start_date = 1444.1.1
+	end_date = 1446.1.1
+}
+
+vassal = {
+	first = QAR
+	second = ARD
+	start_date = 1446.1.1
+	end_date = 1469.2.4
+}
+
+vassal = { #Viceroy of the Hejaz
+	first = MAM
+	second = HED
+	start_date = 1444.1.1
+	end_date = 1517.1.1
+}
+
+#Hejaz protected by the Mamluks
+guarantee = {
+	first = MAM
+	second = MDA
+	start_date = 1444.1.1
+	end_date = 1482.6.1
+}
+
+#Amir al Arab
+vassal = {
+	first = MAM
+	second = FAD
+	start_date = 1444.11.1
+	end_date = 1516.8.24
+}

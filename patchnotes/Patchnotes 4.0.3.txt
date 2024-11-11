@@ -1,0 +1,17 @@
+MRM Redux Patch 4.0.3:
+
+#################### General ########################
+
+Fixed a bug that prevented the events intended to trigger the Reformation in a timely matter from working properly.
+
+################ Country-specific ###################
+
+Burgundy:
+    Fixed a bug with the "King of the Franks" mission.
+
+Castile:
+    Fixed an oversight allowing Castile/Spain to get 250 Reform Progress for free with the Tercios mission.
+
+France:
+    Formation requirements as well as certain missions involving Burgundy now use a was_tag check, blocking unintended ways of completing them.
+    "Refine the Bombards" mission now requires mil tech 7 instead of 5, and grants +10% Assault Fort Ability instead of +25%.

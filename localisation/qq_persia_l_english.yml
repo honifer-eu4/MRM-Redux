@@ -1,0 +1,14 @@
+﻿l_english:
+ #Missions
+ per_build_army_title:0 "Prepare for War"
+ per_build_army_desc:0 "Any growing country must maintain a reasonably sized army. By expanding our forces we can both further our political interests abroad and stimulate our domestic economy."
+
+ #Modifiers
+
+ #Events
+ 
+ #Tooltips
+ redux_turkmen_emirs_of_baghdad_remove_tt:0 "Abolishes the §YEmirs of Baghdad§! estate privilege without changing the current Local Autonomy."
+ redux_turkmen_emirs_of_baghdad_tt:0 "This event will allow us to abolish the §YEmirs of Baghdad§! estate privilege."
+
+ #Other

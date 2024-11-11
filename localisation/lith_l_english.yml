@@ -1,0 +1,54 @@
+﻿l_english:
+ #Missions
+ tr_siberian_frontier_title:0 "Siberian Frontier"
+ tr_siberian_frontier_desc:0 "With all our enemies in Russia defeated, we can now focus on expanding into Siberia. It is time to begin the relentless push east!"
+ lit_stabilize_2_title:0 "Stable Rule"
+ lit_stabilize_2_desc:0 "We have managed to rebuild our nation into a stable power once more and can begin the reconstruction of our lands anew."
+ sca_lit_ukraine_1_title:0 "Restore Kiev"
+ sca_lit_ukraine_1_desc:0 "Kiev was once a proud city, capital of all the Rus. It has since fallen into decay, and should be restored."
+ lit_eastern_front_title:0 "Eastern Frontier"
+ lit_eastern_front_desc:0 "The Russian Princes are growing rapidly in power and influence. If we do not take action against them, they will eclipse us militarily and we will be at their mercy."
+ sca_lit_destroy_muscovy_desc:0 "Even with Moscow secured under our control, the remaining Rurikovich forces are surely plotting their revenge and could return to the Kremlin in time if we are not careful. We must remove them as a threat once and for all."
+ sca_lit_destroy_muscovy_title:0 "Destroy the Rurikovichs"
+ sca_mission_lit_cossacks_2_title:0 "Integrate the Cossacks"
+ sca_mission_lit_cossacks_2_desc:0 "The Cossacks have grown powerful - some would even say too powerful, but as long as they are on our side, there is no need to worry. We should officially integrate them into our administration."
+ lit_western_culture_title:0 "Learn from the West"
+ lit_western_culture_desc:0 "While our nation is firmly Eastern European, many of our cultures and traditions are in fact imports from the West. This need not be a bad thing - the West prospers in many ways we could only dream of."
+ lit_renaissance_title:0 "Lithuanian Renaissance"
+ lit_renaissance_desc:0 "The Renaissance has emerged in Western Europe and Italy. As it slowly spreads through Poland into the East, we must ensure we are not behind on this cultural development."
+ lit_absolutism_title:0 "Embrace Absolutism"
+ lit_absolutism_desc:0 "With the influence of our estates declining and the dawn of a new age, it is time to embrace the concept of absolutism to take our power to new heights."
+
+
+ #Modifiers
+ redux_lith_cossacks:0 "Loyal Cossacks"
+ desc_redux_lith_cossacks:0 "We have ensured the loyalty of our Cossacks to us and not our enemies."
+ redux_lith_stabilize:0 "Stabilize the Interior"
+ desc_redux_lith_stabilize:0 "We are focusing on our internal affairs and determined to rebuild our nation."
+ redux_lith_magdeburg_laws:0 "Expanded Magdeburg Laws"
+ desc_redux_lith_magdeburg_laws:0 "We have expanded local Magdeburg laws in our cities to enrich our nation."
+ redux_lith_east:0 "Intervention in the East"
+ desc_redux_lith_east:0 "It is time to stop the rapid expansion of the Russian Princes before it is too late."
+ redux_lith_moscow:0 "Moscow Secured"
+ desc_redux_lith_moscow:0 "Now that our flag is flying over the Kremlin, we have truly managed to prove our authority and glory to all of our peoples."
+ redux_lith_rus:0 "Russian Recruits"
+ desc_redux_lith_rus:0 "Our recruitment campaign in Russia has had great impact on both the quality and quantity of our army."
+ redux_lith_absolutism_mod:0 "An Absolute State"
+ desc_redux_lith_absolutism_mod:0 "We have embraced the concept of absolutism to increase our power."
+
+ #Events
+ redux_lit.1.t:0 "The Fate of Russia"
+ redux_lit.1.d:0 "With Russia subjugated under our control, the question arises of what to do with the spoils of war. The Cossacks suggest that we entrust the administration of our new lands to them, as they will force the Russian people into submission with their ways of looting and violence. However, the Nobility suggests beginning a recruitment campaign in Russia, convincing the people that they are better off under our rule and using their tactics to improve our army."
+ redux_lit.1.opta:0 "We will accept the proposal of the Cossacks."
+ redux_lit.1.optb:0 "We will accept the proposal of the Nobility."
+
+ #Tooltips
+ redux_lith_tech_tt:0 "This event will give us §G-10% Technology Cost§! for §Y20 years§!."
+ redux_lith_rus_tt:0 "This event will have two options: accepting the proposal of the §YCossacks§! or the proposal of the §YNobility§!.\nThe §YCossack§! proposal will give us §G1 year of income§!, provide us §G+10% Cavalry Combat Ability§! and §G-10% Cavalry Cost§! for §Y25 years§!, and grant us §G-10% Core Creation Cost§! and §G+10% Cossacks Loyalty Equilibrium§! §Ypermanently§!.\nThe §YNobility§! proposal will give us §G1 year of manpower§!, provide us §G+10% Infantry Combat Ability§! and §G+10% Artillery Combat Ability§! for §Y25 years§!, and grant us §G+15% National Manpower Modifier§! and §G+10% Nobility Loyalty Equilibrium§! §Ypermanently§!."
+ redux_lith_tribes_tt:0 "This event will gives us the option to unlock the §YTribes§! estate."
+ redux_lith_west_tt:0 "Has taken at least one age goal"
+
+ #Other
+ form_zaporozhie_title:0 "Form Zaporozhie"
+ form_zaporozhie_desc:0 "The steppes call to us. The bravery and ingenuity of the Cossacks in the steppes have impressed our people. With the rise of Muscovy and Poland we must be willing to adapt or face destruction, perhaps it is time to embrace this way of life to defend our nation?"
+

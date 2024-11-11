@@ -1,0 +1,891 @@
+########################################
+# Custom Colony missions for the HashMP CE Multiplayer mod
+#
+# by Xaime
+########################################
+
+##BranchStart 0
+colonial_branch_1 = {
+	slot = 1
+	generic = no
+	ai = no
+	potential = {
+		is_colonial_nation = yes
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+
+	COLONY_dominion_1 = {
+		icon = mission_hanseatic_city
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					colonial_region = colonial_canada
+					ROOT = {
+						capital_scope = {
+							colonial_region = colonial_canada
+						}
+					}
+				}
+				AND = {
+					colonial_region = colonial_eastern_america
+					ROOT = {
+						capital_scope = {
+							colonial_region = colonial_eastern_america
+						}
+					}
+				}
+				AND = {
+					colonial_region = colonial_louisiana
+					ROOT = {
+						capital_scope = {
+							colonial_region = colonial_louisiana
+						}
+					}
+				}
+				AND = {
+					colonial_region = colonial_mexico
+					ROOT = {
+						capital_scope = {
+							colonial_region = colonial_mexico
+						}
+					}
+				}
+				AND = {
+					colonial_region = colonial_the_carribean
+					ROOT = {
+						capital_scope = {
+							colonial_region = colonial_the_carribean
+						}
+					}
+				}
+				AND = {
+					colonial_region = colonial_peru
+					ROOT = {
+						capital_scope = {
+							colonial_region = colonial_peru
+						}
+					}
+				}
+				AND = {
+					colonial_region = colonial_colombia
+					ROOT = {
+						capital_scope = {
+							colonial_region = colonial_colombia
+						}
+					}
+				}
+				AND = {
+					colonial_region = colonial_la_plata
+					ROOT = {
+						capital_scope = {
+							colonial_region = colonial_la_plata
+						}
+					}
+				}
+				AND = {
+					colonial_region = colonial_brazil
+					ROOT = {
+						capital_scope = {
+							colonial_region = colonial_brazil
+						}
+					}
+				}
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		trigger = {
+			if = {
+				limit = {
+					capital_scope = { colonial_region = colonial_canada }
+				}
+				colonial_canada = {
+					type = all
+					owned_by = ROOT 
+					is_core = ROOT 
+				}
+				NOT = { exists = CAN }
+				NOT = { exists = QUE }
+			}
+			if = {
+				limit = {
+					capital_scope = { colonial_region = colonial_eastern_america }
+				}
+				colonial_eastern_america = {
+					type = all
+					owned_by = ROOT 
+					is_core = ROOT 
+				}
+				NOT = { exists = USA }
+				NOT = { exists = FLO }
+			}
+			if = {
+				limit = {
+					capital_scope = { colonial_region = colonial_louisiana }
+				}
+				colonial_louisiana = {
+					type = all
+					owned_by = ROOT 
+					is_core = ROOT 
+				}
+				NOT = { exists = LOU }
+				NOT = { exists = TEX }
+			}
+			if = {
+				limit = {
+					capital_scope = { colonial_region = colonial_the_carribean }
+				}
+				colonial_the_carribean = {
+					type = all
+					owned_by = ROOT 
+					is_core = ROOT 
+				}
+				NOT = { exists = CUB }
+				NOT = { exists = WSI }
+			}
+			if = {
+				limit = {
+					capital_scope = { colonial_region = colonial_mexico }
+				}
+				colonial_mexico = {
+					type = all
+					owned_by = ROOT 
+					is_core = ROOT 
+				}
+				NOT = { exists = MEX }
+				NOT = { exists = CAM }
+			}
+			if = {
+				limit = {
+					capital_scope = { colonial_region = colonial_peru }
+				}
+				colonial_peru = {
+					type = all
+					owned_by = ROOT 
+					is_core = ROOT 
+				}
+				NOT = { exists = PEU }
+				NOT = { exists = BLV }
+			}
+			if = {
+				limit = {
+					capital_scope = { colonial_region = colonial_colombia }
+				}
+				colonial_colombia = {
+					type = all
+					owned_by = ROOT 
+					is_core = ROOT 
+				}
+				NOT = { exists = COL }
+				NOT = { exists = VNZ }
+			}
+			if = {
+				limit = {
+					capital_scope = { colonial_region = colonial_brazil }
+				}
+				colonial_brazil = {
+					type = all
+					owned_by = ROOT 
+					is_core = ROOT 
+				}
+				NOT = { exists = BRZ }
+				NOT = { exists = PRG }
+			}
+			if = {
+				limit = {
+					capital_scope = { colonial_region = colonial_la_plata }
+				}
+				colonial_la_plata = {
+					type = all
+					owned_by = ROOT 
+					is_core = ROOT 
+				}
+				NOT = { exists = CHL }
+				NOT = { exists = LAP }
+			}
+			if = {
+				limit = {
+					NOT = { 
+						capital_scope = {
+							OR = {
+								colonial_region = colonial_canada
+								colonial_region = colonial_eastern_america
+								colonial_region = colonial_louisiana
+								colonial_region = colonial_mexico
+								colonial_region = colonial_the_carribean
+								colonial_region = colonial_colombia
+								colonial_region = colonial_peru
+								colonial_region = colonial_brazil
+								colonial_region = colonial_la_plata
+							}
+						}
+					}
+				}
+				capital_scope = {
+					OR = {
+						colonial_region = colonial_canada
+						colonial_region = colonial_eastern_america
+						colonial_region = colonial_louisiana
+						colonial_region = colonial_mexico
+						colonial_region = colonial_the_carribean
+						colonial_region = colonial_colombia
+						colonial_region = colonial_peru
+						colonial_region = colonial_brazil
+						colonial_region = colonial_la_plata
+					}
+				}		
+			}
+		}
+		effect = {
+			country_event = { id = hashmp.1 }
+			if = {
+				limit = { 
+					capital_scope = { colonial_region = colonial_canada }
+				}
+				custom_tooltip = hashmp_form_dominion_tt_1
+			}
+			if = {
+				limit = {
+					capital_scope = { colonial_region = colonial_eastern_america }
+				}
+				custom_tooltip = hashmp_form_dominion_tt_2
+			}
+			if = {
+				limit = {
+					capital_scope = { colonial_region = colonial_louisiana }
+				}
+				custom_tooltip = hashmp_form_dominion_tt_3
+			}
+			if = {
+				limit = {
+					capital_scope = { colonial_region = colonial_mexico }
+				}
+				custom_tooltip = hashmp_form_dominion_tt_4
+			}
+			if = {
+				limit = {
+					capital_scope = { colonial_region = colonial_the_carribean }
+				}
+				custom_tooltip = hashmp_form_dominion_tt_5
+			}
+			if = {
+				limit = {
+					capital_scope = { colonial_region = colonial_colombia }
+				}
+				custom_tooltip = hashmp_form_dominion_tt_6
+			}
+			if = {
+				limit = {
+					capital_scope = { colonial_region = colonial_la_plata }
+				}
+				custom_tooltip = hashmp_form_dominion_tt_7
+			}
+			if = {
+				limit = {
+					capital_scope = { colonial_region = colonial_peru }
+				}
+				custom_tooltip = hashmp_form_dominion_tt_8
+			}
+			if = {
+				limit = {
+					capital_scope = { colonial_region = colonial_brazil }
+				}
+				custom_tooltip = hashmp_form_dominion_tt_9
+			}
+		}
+	}
+
+	COLONY_government = {
+		icon = contracts_of_correspondence
+		required_missions = {
+			
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			ai = no 
+			has_parliament = yes
+			num_of_owned_provinces_with = {
+				value = 5
+				has_seat_in_parliament = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = h_colony_parliament_established
+				duration = 9125
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	COLONY_reforms = {
+		icon = mission_noble_council
+		required_missions = {
+			COLONY_government
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			ai = no 
+			OR = {
+				has_reform = political_principle_reform
+				has_reform = moral_principle_reform
+			}
+			num_of_owned_provinces_with = {
+				value = 10
+				has_seat_in_parliament = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = h_colony_government_reform
+				duration = 3650
+			}
+			
+			capital_scope = {
+				add_province_modifier = {
+					name = h_colony_center_of_government
+					duration = -1
+				}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	COLONY_edict = {
+		icon = mission_early_modern_university
+		required_missions = {
+			COLONY_reforms
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			ai = no 
+			has_institution = enlightenment
+		}
+		effect = {
+			change_innovativeness = 5
+		
+			add_country_modifier = {
+				name = h_colony_age_of_liberty
+				duration = -1
+			}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 0
+##BranchStart 1
+colonial_branch_2 = {
+	slot = 2
+	generic = no
+	ai = no
+	potential = {
+		is_colonial_nation = yes
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	COLONY_scale_1 = {
+		icon = mission_colonial
+		required_missions = {
+			COLONY_founded
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			ai = no 
+			temple = 5
+			workshop = 5
+			development_in_provinces = {
+				value = 30
+				area = capital
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = h_colony_develop_economy_modifier
+				duration = 3650
+			}
+			capital_scope = {
+				add_base_production = 2
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	COLONY_scale_2 = {
+		icon = the_london_steelyard
+		required_missions = {
+			COLONY_scale_1
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			ai = no 
+			num_of_owned_provinces_with = {
+				value = 10
+				has_building = temple
+			}
+			num_of_owned_provinces_with = {
+				value = 10
+				has_building = workshop
+			}
+			capital_scope = {
+				has_manufactory_trigger = yes
+			}
+			development_in_provinces = {
+				value = 40
+				area = capital
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = h_colony_expand_infrastructure_modifier
+				duration = 3650
+			}
+			
+			capital_scope = {
+				add_permanent_province_modifier = {
+					name = h_colony_infrastructure_center_modifier
+					duration = -1
+				}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	COLONY_scale_3 = {
+		icon = mission_court_education
+		required_missions = {
+			COLONY_scale_2
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			ai = no 
+			years_of_income = 1
+			num_of_owned_provinces_with = {
+				value = 5
+				has_manufactory_trigger = yes
+			}		
+			development_in_provinces = {
+				value = 50
+				area = capital
+			}
+		}
+		effect = {
+			add_years_of_income = -1
+			country_event = { id = hashmp.18 }
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 1
+##BranchStart 2
+colonial_branch_3 = {
+	slot = 3
+	generic = no
+	ai = no
+	potential = {
+		is_colonial_nation = yes
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	COLONY_founded = {
+		icon = mission_settlers_north_america
+		required_missions = {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			ai = no 
+			stability = 1
+		}
+		effect = {
+			add_prestige = 10
+			
+			add_country_modifier = {
+				name = h_colony_founded_modifier
+				duration = 9125
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	COLONY_frontier = {
+		icon = mission_expel_the_moriscos
+		required_missions = {
+			COLONY_founded
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			ai = no 
+			grown_by_development = 300
+		}
+		effect = {
+			add_country_modifier = {
+				name = h_colony_expand_frontier
+				duration = 9125
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	COLONY_dominion = {
+		icon = mission_empire
+		required_missions = {
+			COLONY_scale_3 COLONY_frontier COLONY_mil_3
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			ai = no 
+			has_reform = h_reform_dominion
+		}
+		effect = {
+			add_country_modifier = {
+				name = h_colony_dominion_founded
+				duration = -1
+			}
+			add_republican_tradition = 10
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 2
+##BranchStart 3
+colonial_branch_4 = {
+	slot = 4
+	generic = no
+	ai = no
+	potential = {
+		is_colonial_nation = yes
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	COLONY_marines = {
+		icon = mission_launch_a_flagship
+		required_missions = {
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			ai = no 
+			sailors = 10000
+		}
+		effect = {
+			add_country_modifier = {
+				name = h_colony_colonial_marines
+				duration = -1
+			}
+		}
+	}
+	
+	##Mission Start
+	COLONY_mil_1 = {
+		icon = mission_assemble_an_army
+		required_missions = {
+			COLONY_founded
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			ai = no 
+			land_forcelimit = 15
+			army_size_percentage = 1
+			capital_scope = {
+				OR = {
+					has_building = regimental_camp
+					has_building = barracks
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = h_colony_colonial_militia
+				duration = 9125
+			}
+			
+			capital_scope = {
+				add_unit_construction = {
+					type = infantry
+					amount = 5
+					speed = 0.1
+					cost = 0
+				}
+			}
+			
+			create_general = { tradition = 20 }
+		}
+	}
+	##Mission End
+	##Mission Start
+	COLONY_mil_2 = {
+		icon = army_reforms
+		required_missions = {
+			COLONY_mil_1
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			ai = no 
+			army_professionalism = 0.05
+			mil_power = 100
+			num_of_owned_provinces_with = {
+				value = 10
+				OR = {
+					has_building = barracks
+					has_building = regimental_camp
+				}
+			}
+		}
+		effect = {
+			add_mil_power = -100
+			define_advisor = {
+				type = army_reformer
+				skill = 1
+				discount = yes
+			}
+			add_country_modifier = {
+				name = h_colony_train_militia
+				duration = 5475
+			}		
+			add_country_modifier = {
+				name = h_colony_train_militia_drill
+				duration = -1
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	COLONY_mil_3 = {
+		icon = professional_army
+		required_missions = {
+			COLONY_mil_2
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			ai = no 
+			army_professionalism = 0.25
+			army_tradition = 50
+			republican_tradition = 50
+		}
+		effect = {
+			if = {
+				limit = {
+					mil = 5
+				}
+				define_ruler_to_general = {
+					fire = 4
+					shock = 4
+					manuever = 5
+					siege = 1
+				}
+			}
+			else = {
+				define_ruler_to_general = {
+					fire = 3
+					shock = 3
+					manuever = 3
+					siege = 1
+				}
+			}
+			add_ruler_modifier = {
+				name = h_colony_governor_general
+				duration = -1
+			}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 3
+##BranchStart 4
+colonial_branch_5 = {
+	slot = 5
+	generic = no
+	ai = no
+	potential = {
+		is_colonial_nation = yes
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	COLONY_fortify = {
+		icon = mission_rb_increase_our_reach
+		required_missions = {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			ai = no 
+			num_of_owned_provinces_with = {
+				value = 5
+				OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
+		}
+		effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_building = fort_15th
+						has_building = fort_16th
+						has_building = fort_17th
+						has_building = fort_18th
+					}
+				}
+				add_permanent_province_modifier = {
+					name = h_colony_fortify
+					duration = 9125
+				}
+			}
+			add_country_modifier = {
+				name = h_colony_fortify_country
+				duration = 9125
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	COLONY_culture = {
+		icon = mission_native_reductions
+		required_missions = {
+			
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			ai = no 
+			OR = {
+				num_accepted_cultures = 4
+				num_of_owned_provinces_with = {
+					value = 20
+					has_owner_culture = yes
+				}
+			}
+		}
+		effect = {
+			add_dip_power = 100
+			add_country_modifier = {
+				name = h_colony_culture
+				duration = 3650
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	COLONY_religion = {
+		icon = support_the_orders
+		required_missions = {
+			
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			ai = no 
+			stability = 2
+			religious_unity = 1
+			all_owned_province = {
+				NOT = { unrest = 1 }		
+			}
+		}
+		effect = {
+			add_stability_or_adm_power = yes
+			add_country_modifier = {
+				name = h_colony_religion
+				duration = 9125
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	COLONY_production = {
+		icon = reform_the_state
+		required_missions = {
+			
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			ai = no 
+			num_of_owned_provinces_with = {
+				value = 20
+				has_manufactory_trigger = yes
+			}
+			has_institution = manufactories
+		}
+		effect = {
+			add_country_modifier = {
+				name = h_colonial_industry
+				duration = 9125
+			}				
+			add_treasury = 500
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 4

@@ -1,0 +1,9 @@
+MRM Redux Patch 2.0.1:
+
+################### General ##################
+
+Disasters:
+    All estate disasters no longer tick when under 60 loyalty. (Only 50 and under now)
+
+Estates:
+    Bug with Brahmins "Development of Temples" privilege fixed.

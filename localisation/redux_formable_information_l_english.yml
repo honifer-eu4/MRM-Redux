@@ -1,0 +1,481 @@
+﻿l_english:
+ # Formable Information 
+ 
+ redux_formableInfo_title:0 "Potential Formable Information"
+ redux_formableInfo_desc:0 "Click to see information about all potential formables for our nation, including national ideas, relevant missions, and more."
+
+ redux_formableInfoEvents.1.title:0 "Potential Formable Information"
+ redux_formableInfoEvents.1.desc:0 "Click on an option below to see the national ideas of the formable, and any other relevant information."
+ redux_formableInfoEvents.1.exit:0 "Close"
+ redux_formableInfoEvents.1.loth:0 "Lotharingia"
+ redux_formableInfoEvents.1.gbr:0 "Great Britain"
+ redux_formableInfoEvents.1.ave:0 "Angevin Empire"
+ redux_formableInfoEvents.1.spa:0 "Spain"
+ redux_formableInfoEvents.1.ita:0 "Italy"
+ redux_formableInfoEvents.1.spi:0 "Sardinia-Piedmont"
+ redux_formableInfoEvents.1.kof:0 "Kingdom of Africa"
+ redux_formableInfoEvents.1.tts:0 "Two Sicilies"
+ redux_formableInfoEvents.1.lae:0 "Latin Empire"
+ redux_formableInfoEvents.1.ger:0 "Germany"
+ redux_formableInfoEvents.1.nse:0 "North Sea Empire"
+ redux_formableInfoEvents.1.sca:0 "Scandinavia"
+ redux_formableInfoEvents.1.han:0 "Hanover"
+ redux_formableInfoEvents.1.habgreater:0 "Greater Austria"
+ redux_formableInfoEvents.1.ahu:0 "Austria-Hungary"
+ redux_formableInfoEvents.1.ahu2:0 "Austria-Hungary"
+ redux_formableInfoEvents.1.fkn:0 "Franconia"
+ redux_formableInfoEvents.1.wes:0 "Westphalia"
+ redux_formableInfoEvents.1.pru:0 "Prussia"
+ redux_formableInfoEvents.1.byz:0 "Byzantium"
+ redux_formableInfoEvents.1.ukr:0 "Ruthenia"
+ redux_formableInfoEvents.1.zaz:0 "Zaporozhie"
+ redux_formableInfoEvents.1.rus:0 "Russia"
+ redux_formableInfoEvents.1.rum:0 "Rum"
+ redux_formableInfoEvents.1.egy:0 "Egypt"
+ redux_formableInfoEvents.1.adu:0 "Andalusia"
+ redux_formableInfoEvents.1.mgb:0 "Maghreb"
+ redux_formableInfoEvents.1.sok:0 "Sokoto"
+ redux_formableInfoEvents.1.aks:0 "Aksum"
+ redux_formableInfoEvents.1.zul:0 "Zulu"
+ redux_formableInfoEvents.1.buk:0 "Bukhara"
+ redux_formableInfoEvents.1.per:0 "Persia"
+ redux_formableInfoEvents.1.arb:0 "Arabia"
+ redux_formableInfoEvents.1.mug:0 "Mughals"
+ redux_formableInfoEvents.1.hin:0 "Hindustan"
+ redux_formableInfoEvents.1.pun:0 "Punjab"
+ redux_formableInfoEvents.1.npl:0 "Nepal"
+ redux_formableInfoEvents.1.dec:0 "Deccan"
+ redux_formableInfoEvents.1.rjp:0 "Rajputana"
+ redux_formableInfoEvents.1.can:0 "Canada"
+ redux_formableInfoEvents.1.que:0 "Quebec"
+ redux_formableInfoEvents.1.usa:0 "America"
+ redux_formableInfoEvents.1.flo:0 "Florida"
+ redux_formableInfoEvents.1.lou:0 "Louisiana"
+ redux_formableInfoEvents.1.tex:0 "Texas"
+ redux_formableInfoEvents.1.mex:0 "Mexico"
+ redux_formableInfoEvents.1.cam:0 "Central America"
+ redux_formableInfoEvents.1.cub:0 "Cuba"
+ redux_formableInfoEvents.1.wsi:0 "Caribbea"
+ redux_formableInfoEvents.1.col:0 "Colombia"
+ redux_formableInfoEvents.1.vnz:0 "Venezuela"
+ redux_formableInfoEvents.1.brz:0 "Brazil"
+ redux_formableInfoEvents.1.prg:0 "Paraguay"
+ redux_formableInfoEvents.1.peu:0 "Peru"
+ redux_formableInfoEvents.1.blv:0 "Bolivia"
+ redux_formableInfoEvents.1.chl:0 "Chile"
+ redux_formableInfoEvents.1.lap:0 "La Plata"
+
+ # Lotharingia 
+
+ redux_formableInfoEvents.2.title:0 "Lotharingia Formable Information"
+ redux_formableInfoEvents.2.desc:0 "@LOT Lotharingia is formable through the mission §GThe Crown of Lothair§! in our mission tree.\n\nNational Ideas:\n Traditions: §G+25%§! National Manpower Modifier and §G+10%§! Infantry Combat Ability\n §G-1.0%§! Prestige Decay\n §G+10%§! Morale of Armies\n §G+10%§! Trade Efficiency\n §G-10%§! Idea Cost\n §G+0.50§! Yearly Prestige and §G+1§! Possible Advisors\n §G+5%§! Discipline\n §G-20%§! Core Creation Cost\n Ambition: §G-5%§! Development Cost \n\nOther Formables: No. Lotharingia is an end-game tag. \n\nMissions: Forming Lotharingia §Gextends§! Burgundy's mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.2.back:0 "Back"
+ redux_formableInfoEvents.2.exit:0 "Close"
+
+ # Great Britain 
+
+ redux_formableInfoEvents.3.title:0 "Great Britain Formable Information"
+ redux_formableInfoEvents.3.desc:0 "@GBR Great Britain is formable through the decision §GForce Acts of Union Debate§!.\n\nNational Ideas:\n Traditions: §G+15%§! Heavy Ship Combat Ability and §G+15%§! Land Fire Damage\n §G+15%§! National Manpower Modifier\n §G+1§! Colonist and §G+15%§! Global Tariffs\n §G-1§! National Unrest and §G+1§! Possible Parliament Issues\n §G-5%§! Technology Cost\n §G+5%§! Discipline\n §G+10%§! Goods Produced Modifier\n §G+1§! Naval Leader Manuever, §G+33%§! Blockade Efficiency, and §G+25%§! Marine Force Limit\n Ambition: §G+10%§! Infantry Combat Ability \n\nOther Formables: Yes (Angevin Empire). Other formables are blocked since Great Britain is an end-game tag. \n\nMissions: Forming Great Britain §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.3.back:0 "Back"
+ redux_formableInfoEvents.3.exit:0 "Close"
+ redux_formableInfoEvents.3.ave:0 "Angevin Empire"
+
+ # Angevin Empire
+
+ redux_formableInfoEvents.4.title:0 "Angevin Empire Formable Information"
+ redux_formableInfoEvents.4.desc:0 "@AVE Angevin Empire is formable through the English/British mission §GThe Angevin Kingdom§!.\n\nNational Ideas:\n Traditions: §G+15%§! Morale of Armies and §G+20%§! National Manpower Modifier\n §G-20%§! Core Creation Cost\n §G+15%§! National Tax Modifier and §G+1§! Possible Parliament Issues\n §G+5%§! Discipline\n §G+50%§! Chance of New Heir and §G-10§! Years for Personal Union Integration\n §G+10%§! Infantry Combat Ability\n §G+15%§! Governing Capacity Modifier\n §G+1§! Yearly Legitimacy/Devotion / §G+0.3§! Yearly Republican Tradition\n Ambition: §G-5%§! Development Cost\n\nOther Formables: No. The Angevin Empire is an end-game tag. \n\nMissions: Forming Angevin Empire §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.4.back:0 "Back"
+ redux_formableInfoEvents.4.exit:0 "Close"
+
+ # Spain
+
+ redux_formableInfoEvents.5.title:0 "Spain Formable Information"
+ redux_formableInfoEvents.5.desc:0 "@SPA Spain is formable through the decisions §GForm Spanish Nation Diplomatically§! and §GForm Spanish Nation Militarily§!.\n\nNational Ideas:\n Traditions: §G+10%§! Morale of Armies and §G+5%§! Discipline\n §G+2§! Yearly Papal Influence / §G+25%§! Church Power Modifier / §G+0.5§! Monthly Fervor\n §G+1§! Colonist and Can Fabricate Claims in colonial regions\n §G+10%§! Institution Spread and §G+10%§! Reform Progress Growth\n §G+25%§! Naval Force Limit Modifier and §G+10%§! Heavy Ship Combat Ability\n §G-5%§! Development Cost and §G+15%§! Global Tariffs\n §G+10%§! National Manpower Modifier and §G+1§! Yearly Prestige\n §G+1§! Diplomatic Possible Policy and §G+5%§! Estate Loyalty Change on Privilege Revoked\n Ambition: §G+0.75§! Artillery Fire\n\nOther Formables: No. Spain is an end-game tag. \n\nMissions: Forming Spain §Gextends§! the mission tree for Castile and §Greplaces§! the mission tree for any other country. \n\nOther Notable Information:"
+ redux_formableInfoEvents.5.back:0 "Back"
+ redux_formableInfoEvents.5.exit:0 "Close"
+
+ # Italy
+
+ redux_formableInfoEvents.6.title:0 "Italy Formable Information"
+ redux_formableInfoEvents.6.desc:0 "@ITA Italy is formable through the decision §GForm Italian Nation§!.\n\nNational Ideas:\n Traditions: §G+20%§! Trade Efficiency and §G+5%§! Discipline\n §G-33%§! Stability Cost Modifier and §G+15%§! Reform Progress Growth\n §G+20%§! Infantry Combat Ability\n §G-15%§! Galley Cost and §G+20%§! Galley Combat Ability\n §G+33%§! National Manpower Modifier\n §G+20%§! National Tax Modifier\n §G+1§! Yearly Prestige and §G+2§! Monthly Splendor\n §G-25%§! Core Creation Cost\n Ambition: §G+20%§! Fort Defense\n\nOther Formables: No. Italy is an end-game tag. \n\nMissions: Forming Italy §Greplaces§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.6.back:0 "Back"
+ redux_formableInfoEvents.6.exit:0 "Close"
+
+ # Sardinia-Piedmont 
+
+ redux_formableInfoEvents.7.title:0 "Sardinia-Piedmont Formable Information"
+ redux_formableInfoEvents.7.desc:0 "@SPI Sardinia-Piedmont is formable through the decision §GForm Sardinia-Piedmont§!.\n\nNational Ideas:\n Traditions: §G+25%§! National Manpower Modifier and §G-10%§! Idea Cost\n §G+1§! Diplomatic Relation\n §G+25%§! Fort Defense\n §G+0.5§! Yearly Prestige and §G+1§! Yearly Papal Influence\n §G+5%§! Discipline\n §G-5%§! Development Cost and §G-10%§! Core Creation Cost\n §G+10%§! Goods Produced Modifier\n §G-10%§! Regiment Costs\n Ambition: §G+15%§! National Tax Modifier\n\nOther Formables: Yes. Sardinia-Piedmont is not an end-game tag and can form @ITA Italy. \n\nMissions: Forming Sardinia-Piedmont §Greplaces§! the mission tree. \n\nOther Notable Information: Notable Missions include a mission for §G-10%§! Development Cost for 20 years and a mission for §G+10%§! Goods Produced Modifier permanently."
+ redux_formableInfoEvents.7.back:0 "Back"
+ redux_formableInfoEvents.7.exit:0 "Close"
+ redux_formableInfoEvents.7.ita:0 "Italy"
+
+ # Kingdom of Africa
+
+ redux_formableInfoEvents.8.title:0 "Kingdom of Africa Formable Information"
+ redux_formableInfoEvents.8.desc:0 "The @KOF Kingdom of Africa is formable through the mission §GKingdom of Africa§!.\n\nNational Ideas:\n Traditions: §G+20%§! Galley Combat Ability and §G+15%§! Shock Damage\n §G-10%§! Development Cost\n §G+3§! Yearly Papal Influence\n §G+2%§! Missionary Strength and §G+2§! Tolerance of Heathens\n §G+10%§! Recover Army Morale Speed\n §G-10%§! Infantry Cost\n §G+2§! Max Promoted Cultures\n §G+15%§! Morale of Armies\n Ambition: §G+10%§! Infantry Combat Ability\n\nOther Formables: No. The Kingdom of Africa is an end-game tag. \n\nMissions: Forming the Kingdom of Africa §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.8.back:0 "Back"
+ redux_formableInfoEvents.8.exit:0 "Close"
+
+ # Two Sicilies
+
+ redux_formableInfoEvents.9.title:0 "Two Sicilies Formable Information"
+ redux_formableInfoEvents.9.desc:0 "@TTS Two Sicilies is formable through the decision §GUnite the Two Sicilies§!.\n\nNational Ideas:\n Traditions: §G+10%§! Morale of Armies and §G+20%§! National Manpower Modifier\n §G-5%§! Development Cost and §G-10%§! Technology Cost\n §G-1§! National Unrest and §G+1§! Possible Policies\n §G+1§! Yearly Naval Tradition and §G+1§! Yearly Legitimacy / §G+0.2§! Yearly Republican Tradition\n §G-20%§! Core Creation Cost\n §G+15%§! Trade Efficiency\n §G+20%§! Galley Combat Ability\n §G+10%§! Goods Produced Modifier\n Ambition: §G+1§! Yearly Prestige\n\nOther Formables: Yes. Two Sicilies is not an end-game tag and can form @ITA Italy and the @KOF Kingdom of Africa. \n\nMissions: Forming Two Sicilies §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.9.back:0 "Back"
+ redux_formableInfoEvents.9.exit:0 "Close"
+ redux_formableInfoEvents.9.ita:0 "Italy"
+ redux_formableInfoEvents.9.kof:0 "Kingdom of Africa"
+
+ # Latin Empire 
+
+ redux_formableInfoEvents.10.title:0 "Latin Empire Formable Information"
+ redux_formableInfoEvents.10.desc:0 "The @LAE Latin Empire is formable through the mission §GThe Latin Empire§!.\n\nNational Ideas:\n Traditions: §G+20%§! Galley Combat Ability and §G+5%§! Discipline\n §G+1§! Missionary and §G+3%§! Missionary Strength\n §G+3§! Yearly Papal Influence and §G+15%§! Manpower in True Faith Provinces\n §G+10%§! Trade Efficiency\n §G+15%§! Land Force Limit Modifier\n §G-15%§! Core Creation Cost\n §G+3§! Tolerance of Heretics\n §G+10%§! Land Fire Damage\n Ambition: §G+15%§! Morale of Armies\n\nOther Formables: No. The Latin Empire is an end-game tag. \n\nMissions: Forming the Latin Empire §Gextends§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.10.back:0 "Back"
+ redux_formableInfoEvents.10.exit:0 "Close"
+
+ # Germany
+
+ redux_formableInfoEvents.11.title:0 "Germany Formable Information"
+ redux_formableInfoEvents.11.desc:0 "@GER Germany is formable through the decision §GForm German Nation§!.\n\nNational Ideas:\n Traditions: §G+25%§! Infantry Combat Ability and §G+1§! Yearly Legitimacy\n §G+25%§! National Manpower Modifier\n §G-10%§! Technology Cost\n §G+5%§! Discipline\n §G+10%§! Trade Efficiency\n §G+0.5§! Yearly Army Tradition\n §G+5%§! Administrative Efficiency\n §G+20%§! Goods Produced Modifier\n Ambition: §G+33%§! Land Force Limit Modifier\n\nOther Formables: No. Germany is an end-game tag. \n\nMissions: Forming Germany §Greplaces§! the mission tree. \n\nOther Notable Information: If formed by @FKN Franconia, Germany will gain access to a decision that replaces the Infantry Combat Ability in their ideas with Cavalry Combat Ability."
+ redux_formableInfoEvents.11.back:0 "Back"
+ redux_formableInfoEvents.11.exit:0 "Close"
+
+ # North Sea Empire 
+
+ redux_formableInfoEvents.12.title:0 "North Sea Empire Formable Information"
+ redux_formableInfoEvents.12.desc:0 "The @NSE North Sea Empire is formable through the mission §GNorth Sea Empire§!.\n\nNational Ideas:\n Traditions: §G+1§! Yearly Naval Tradition and §G+0.5§! Yearly Prestige\n §G+10%§! Land Fire Damage and §G+10%§! Shock Damage\n §G+20%§! National Manpower Modifier and §G+20%§! National Sailors Modifier\n §G+10%§! Morale of Armies\n §G+5%§! Infantry Combat Ability and §G+5%§! Discipline\n §G+10%§! Trade Efficiency\n §G+50%§! Naval Force Limit and §G-15%§! Naval Maintenance Modifier\n §G-1§! National Unrest and §G-5§! Years of Separatism\n Ambition: §G+33%§! Blockade Efficiency and §G+33%§! Marine Force Limit\n\nOther Formables: No. The North Sea Empire is an end-game tag. \n\nMissions: Forming the North Sea Empire §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.12.back:0 "Back"
+ redux_formableInfoEvents.12.exit:0 "Close"
+
+ # Scandinavia 
+
+ redux_formableInfoEvents.13.title:0 "Scandinavia Formable Information"
+ redux_formableInfoEvents.13.desc:0 "@SCA Scandinavia is formable through the decision §GForm Scandinavian Nation§!.\n\nNational Ideas:\n Traditions: §G+5%§! Discipline and §G+15%§! Goods Produced Modifier\n §G-10%§! Construction Cost\n §G+5%§! Administrative Efficiency and §G+1§! Possible Policy\n §G+10%§! Trade Efficiency and §G+5%§! Ship Durability\n §G+10%§! Marines Force Limit\n §G-15%§! Cavalry Cost and §G+0.5§! Cavalry Fire\n §G+5%§! Morale of Armies and §G+20%§! Infantry Combat Ability\n §G+1§! Yearly Absolutism and §G+10§! Maximum Absolutism\n Ambition: §G+20%§! National Manpower Modifier\n\nOther Formables: No. Scandinavia is an end-game tag. \n\nMissions: Forming Scandinavia §Gextends§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.13.back:0 "Back"
+ redux_formableInfoEvents.13.exit:0 "Close"
+
+# Hanover
+ 
+ redux_formableInfoEvents.14.title:0 "Hanover Formable Information"
+ redux_formableInfoEvents.14.desc:0 "@HAN Hanover is formable through the decision §GForm Hanover§!.\n\nNational Ideas:\n Traditions: §G-10%§! Construction Cost and §G+10%§! Trade Power Abroad\n §G-15%§! State Maintenance\n §G-10%§! Development Cost\n §G+5%§! Morale of Armies and §G+5%§! Land Fire Damage\n §G+1§! Yearly Prestige\n §G+10%§! Goods Produced Modifier\n §G+1§! Diplomatic Relation\n §G-15%§! Fire Damage Received and §G-10%§! Shock Damage Received\n Ambition: §G+5%§! Discipline\n\nOther Formables: Yes. Hanover is not an end-game tag and can form @GER Germany, @SCA Scandinavia, and the @NSE North Sea Empire. \n\nMissions: Forming Hanover §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.14.back:0 "Back"
+ redux_formableInfoEvents.14.exit:0 "Close"
+ redux_formableInfoEvents.14.sca:0 "Scandinavia"
+ redux_formableInfoEvents.14.nse:0 "North Sea Empire"
+ redux_formableInfoEvents.14.ger:0 "Germany"
+
+# Greater Austria
+
+ redux_formableInfoEvents.15.title:0 "Greater Austrian Formable Information"
+ redux_formableInfoEvents.15.desc:0 "@HAB Greater Austria is formable through the mission §GUnite the Crowns§!. \n\nNational Ideas: Greater Austria does not change ideas and keeps Austria's.\n\nOther Formables: No. Greater Austria is an end-game tag.\n\nMissions: Forming Greater Austria §Rdoes not change§! the mission tree.\n\nOther Notable Information: Forming Greater Austria unlocks a Tier 1 government reform, granting the following modifiers:\n §G+5%§! Administrative Efficiency\n §G+15%§! Infantry Combat Ability\n §G+15%§! Manpower Recovery Speed\n §G-25%§! Culture Conversion Cost\n §G-0.05§! Monthly Autonomy Change\n §G+25%§! Governing Capacity Modifier"
+ redux_formableInfoEvents.15.back:0 "Back"
+ redux_formableInfoEvents.15.exit:0 "Close"
+
+# Austria-Hungary
+
+ redux_formableInfoEvents.16.title:0 "Austria-Hungary Formable Information"
+ redux_formableInfoEvents.16.desc:0 "@AUH Austria-Hungary is formable through the mission §GUnite the Crowns§!.\n\nNational Ideas:\n Traditions: §G+10%§! Morale of Armies and §G-15%§! Advisor Costs\n §G-10%§! Cavalry Cost and §G+20%§! Cavalry Combat Ability\n §G+0.05§! Yearly Inflation Reduction and §G-0.5§! Interest Per Annum\n §G-2§! National Unrest and §G+3§! Max Promoted Cultures\n Heretics and heathens provinces do not give any penalties\n §G+25%§! National Manpower Modifier\n §G+5%§! Discipline\n §G+25%§! Global Tax Modifier\n Ambition: §G+15%§! Land Force Limit Modifier\n\nOther Formables: No. Austria-Hungary is an end-game tag. \n\nMissions: Forming Austria-Hungary §Rdoes not change§! the mission tree. \n\nOther Notable Information: This formable gives access to the §GMagyars§! estate, granting up to §G+10%§! Cavalry Combat Ability and many of the same bonuses as the Cossacks."
+ redux_formableInfoEvents.16.back:0 "Back"
+ redux_formableInfoEvents.16.exit:0 "Close"
+
+# Franconia
+ 
+ redux_formableInfoEvents.17.title:0 "Franconia Formable Information"
+ redux_formableInfoEvents.17.desc:0 "@FKN Franconia is formable through the decision §GForm Franconia§!.\n\nNational Ideas:\n Traditions: §G+5%§! Discipline and §G-10%§! Core Creation Cost\n §G-20%§! Cavalry Cost\n §G+10%§! Movement Speed\n §G+20%§! Fort Defense and §G+20%§! Garrison Size\n §G+25%§! Cavalry Combat Ability\n §G+10%§! Production Efficiency\n §G+10%§! Morale of Armies\n §G-10%§! Advisor Costs and §G+10%§! Nobility Loyalty Equilibrium\n Ambition: §G+1§! Monarch Military Skill\n\nOther Formables: Yes. Franconia is not an end-game tag and can form @GER Germany. \n\nMissions: Forming Franconia §Gextends§! the mission tree. \n\nOther Notable Information: Notable Missions include missions for conquering France that grant §G+5%§! Cavalry Combat Ability, §G+0.2§! Cavalry Fire, §G+10%§! Manpower Recovery Speed, and §G+10%§! Morale of Armies."
+ redux_formableInfoEvents.17.back:0 "Back"
+ redux_formableInfoEvents.17.exit:0 "Close"
+ redux_formableInfoEvents.17.ger:0 "Germany"
+
+# Westphalia
+ 
+ redux_formableInfoEvents.18.title:0 "Westphalia Formable Information"
+ redux_formableInfoEvents.18.desc:0 "@WES Westphalia is formable through the decision §GForm Westphalia§!.\n\nNational Ideas:\n Traditions: §G+20%§! Land Force Limit and §G+15%§! Reform Progress Growth\n §G-10%§! Idea Cost\n §G-10%§! Construction Cost and §G-10%§! Development Cost\n §G+20%§! National Manpower Modifier\n §G+1§! Max Promoted Culture and §G-25%§! Cost of Advisors with Ruler's Culture\n §G+15%§! Global Tax Modifier\n §G+10%§! Infantry Combat Ability\n §G+10%§! Trade Efficiency\n Ambition: §G+5%§! Discipline\n\nOther Formables: Yes. Westphalia is not an end-game tag and can form @GER Germany. \n\nMissions: Forming Westphalia §Greplaces§! the mission tree. \n\nOther Notable Information: Notable Missions include a mission that grants §G-10%§! Development Cost."
+ redux_formableInfoEvents.18.back:0 "Back"
+ redux_formableInfoEvents.18.exit:0 "Close"
+ redux_formableInfoEvents.18.ger:0 "Germany"
+
+# Prussia
+ 
+ redux_formableInfoEvents.19.title:0 "Prussia Formable Information"
+ redux_formableInfoEvents.19.desc:0 "@PRU Prussia is formable through the decision §GForm Kingdom of Prussia§!.\n\nNational Ideas:\n Traditions: §G+0.5§! Army Tradition and §G-10%§! Aggressive Expansion Impact\n §G-10%§! Stability Cost Modifier\n §G-1.0%§! Army Tradition Decay\n §G+20%§! Morale of Armies\n §G+10%§! Nobility Loyalty Equilibrium\n §G+20%§! Infantry Combat Ability\n §G+25%§! National Manpower Modifier and §G-10%§! Recruitment Time\n §G-5%§! Development Cost and §G+1§! Tolerance of Heretics\n Ambition: §G+5%§! Discipline\n\nOther Formables: Yes. Prussia is not an end-game tag and can form @GER Germany. \n\nMissions: Forming Prussia §Gextends§! the mission tree. \n\nOther Notable Information: Notable Missions allow Prussia to upgrade the militarization mechanic, providing up to §G+5%§! discipline."
+ redux_formableInfoEvents.19.back:0 "Back"
+ redux_formableInfoEvents.19.exit:0 "Close"
+ redux_formableInfoEvents.19.ger:0 "Germany"
+ 
+# Byzantium
+
+ redux_formableInfoEvents.20.title:0 "Byzantium Formable Information"
+ redux_formableInfoEvents.20.desc:0 "@BYZ Byzantium is formable through the decision §GRestore the Byzantine Empire§!.\n\nNational Ideas:\n Traditions: §G-10%§! Advisor Costs and §G+3§! Tolerance of the True Faith\n §G-15%§! Mercenary Maintenance\n §G+10%§! National Manpower Modifier and §G+10%§! Goods Produced Modifer\n §G+10%§! Morale of Armies\n §G+15%§! Infantry Combat Ability\n §G+10%§! Trade Efficiency\n §G+5%§! Discipline\n §G+1§! Missionary and §G+3%§! Missionary Strength\n Ambition: §G+20%§! Fort Defense\n\nOther Formables: No. Byzantium is an end-game tag. \n\nMissions: Forming Byzantium §Greplaces§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.20.back:0 "Back"
+ redux_formableInfoEvents.20.exit:0 "Close"
+
+# Ruthenia
+
+ redux_formableInfoEvents.21.title:0 "Ruthenia Formable Information"
+ redux_formableInfoEvents.21.desc:0 "@UKR Ruthenia is formable through the decision §GReclaim Ruthenian Legacy§!.\n\nNational Ideas:\n Traditions: §G+20%§! National Manpower Modifier and §G-10%§! Morale Damage Received\n §G+1§! Yearly Prestige and §G+1§! Yearly Legitimacy/Devotion\n §G+2§! Max Promoted Cultures and §G-25%§! Promote Culture Cost\n §G+20%§! Infantry Combat Ability\n §G+20%§! Land Force Limit Modifier\n §G+10%§! Goods Produced Modifier\n §G-10%§! Core Creation Cost and §G-5§! Years of Separatism\n §G-10%§! Development Cost §G+0.5§! Yearly Patriach Authority\n Ambition: §G+5%§! Discipline\n\nOther Formables: No. Ruthenia is mutually exclusive with @ZAZ Zaporozhie and forming one blocks the other from being formed.\n\nMissions: Forming Ruthenia §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.21.back:0 "Back"
+ redux_formableInfoEvents.21.exit:0 "Close"
+
+# Zaporozhie
+
+ redux_formableInfoEvents.22.title:0 "Zaporozhie Formable Information"
+ redux_formableInfoEvents.22.desc:0 "@ZAZ Zaporozhie is formable through the decision §GForm Zaporozhie§!.\n\nNational Ideas:\n Traditions: §G+15%§! National Manpower Modifier and §G+20%§! Cavalry Combat Ability\n §G+1§! Land Leader Shock\n §G+15%§! Movement Speed\n §G-15%§! Land Attrition\n §G+1§! Land Leader Manuever\n §G+100%§! Power Projection from Insults\n §G+10%§! Production Efficiency\n §G-10%§! Cavalry Cost and allows Winged Hussars\n Ambition: §G+5%§! Discipline\n\nOther Formables: No. Zaporozhie is mutually exclusive with @UKR Ruthenia and forming one blocks the other from being formed.\n\nMissions: Forming Zaporozhie §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.22.back:0 "Back"
+ redux_formableInfoEvents.22.exit:0 "Close"
+
+# Russia
+
+ redux_formableInfoEvents.23.title:0 "Russia Formable Information"
+ redux_formableInfoEvents.23.desc:0 "@RUS Russian is formable through the decision §GForm Russian Nation§!.\n\nNational Ideas:\n Traditions: §G+25%§! National Manpower Modifier and §G-15%§! Core Creation Cost\n §G-15%§! Aggressive Expansion Impact\n May Establish Siberian Frontiers\n §G-10%§! Artillery Cost and §G+10%§! Artillery Combat Ability\n §G+20%§! Land Force Limit\n §G-1§! Yearly Corruption and §G-10%§! Boyars Influence\n §G+0.25§! Yearly Army Tradition and §G-10%§! Advisor Costs\n §G+5%§! Morale of Armies and §G-10%§! Fire Damage Received\n Ambition: §G+5%§! Discipline\n\nOther Formables: No. Russia is an end game tag.\n\nMissions: Forming Russia §Gextends§! the mission tree. \n\nOther Notable Information: Modernization has been reworked. It is now earned only from missions, and all other ticking sources have been removed."
+ redux_formableInfoEvents.23.back:0 "Back"
+ redux_formableInfoEvents.23.exit:0 "Close"
+
+# Rum
+
+ redux_formableInfoEvents.24.title:0 "Rum Formable Information"
+ redux_formableInfoEvents.24.desc:0 "@RUM Rum is formable through the decision §GForm the Sultanate of Rum§!.\n\nNational Ideas:\n Traditions: §G+10%§! Morale of Armies and §G+20%§! Manpower Recovery Speed\n §G+5%§! Discipline\n §G-20%§! Core Creation Cost and §G+1§! Max Promoted Culture\n §G+1§! Yearly Legitimacy\n §G+3§! Tolerance of Heathens\n §G-15%§! Naval Maintenace Modifier\n §G-15%§! Construction Cost\n §G+3%§! Missionary Strength against Heretics\n Ambition: §G+25%§! Land Force Limit Modifier\n\nOther Formables: No. Rum is an end game tag.\n\nMissions: Forming Rum §Greplaces§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.24.back:0 "Back"
+ redux_formableInfoEvents.24.exit:0 "Close"
+
+# Andalusia
+
+ redux_formableInfoEvents.25.title:0 "Andalusia Formable Information"
+ redux_formableInfoEvents.25.desc:0 "@ADU Andalusia is formable through the decision §GRestore Al-Andalus§!.\n\nNational Ideas:\n Traditions: §G+10%§! Morale of Armies and §G+20%§! Cavalry Combat Ability\n §G-10%§! Fire Damage Received and §G+5%§! Discipline\n §G+100%§! Vassal Force Limit Contribution\n §G+3§! Tolerance of Heathens\n §G-10%§! Idea Cost and §G-0.1§! Monthly Piety\n §G+15%§! National Manpower Modifier and §G-15%§! Core Creation Cost\n §G+1§! Colonist\n §G+0.25§! Cavalry Fire and §G+10%§! Fort Defense\n Ambition: §G+10%§! Goods Produced Modifer\n\nOther Formables: No. Andalusia is an end game tag.\n\nMissions: Forming Andalusia §Greplaces§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.25.back:0 "Back"
+ redux_formableInfoEvents.25.exit:0 "Close"
+
+# Maghreb
+
+ redux_formableInfoEvents.26.title:0 "Maghreb Formable Information"
+ redux_formableInfoEvents.26.desc:0 "@MGB Maghreb is formable through the decision §GForm the Maghrebi Nation§!.\n\nNational Ideas:\n Traditions: §G+25%§! Naval Force Limit Modifier and §G+5%§! Discipline\n §G+10%§! Heavy Ship Combat Ability\n §G-10%§! Idea Cost and §G-0.3§! Monthly Piety\n §G+10%§! Trade Efficiency\n §G+20%§! Galley Combat Ability\n §G+25%§! National Manpower Modifier\n §G+1§! Naval Leader Fire\n §G-10%§! Development Cost\n Ambition: §G-10%§! Cavalry Cost and §G+25%§! Cavalry Combat Ability\n\nOther Formables: Yes. Maghreb is not an end-game tag and can form @ADU Andalusia.\n\nMissions: Forming Maghreb §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.26.back:0 "Back"
+ redux_formableInfoEvents.26.exit:0 "Close"
+ redux_formableInfoEvents.26.adu:0 "Andalusia"
+
+# Sokoto
+
+ redux_formableInfoEvents.27.title:0 "Sokoto Formable Information"
+ redux_formableInfoEvents.27.desc:0 "@SOK Sokoto is formable through the decision §GCreate the Sokoto Caliphate§!.\n\nNational Ideas:\n Traditions: §G+5%§! Discipline and §G-33%§! Culture Conversion Cost\n §G+1§! Missionary and §G+1%§! Missionary Strength\n §G+20%§! Fort Defense\n §G+25%§! National Manpower Modifier\n §G+10%§! Morale of Armies\n §G-10%§! Development Cost\n §G+1§! Max Promoted Cultures\n §G+10%§! Infantry Combat Ability\n Ambition: §G+75%§! Army Tradition from Battles\n\nOther Formables: No.\n\nMissions: Forming Sokoto §Greplaces§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.27.back:0 "Back"
+ redux_formableInfoEvents.27.exit:0 "Close" 
+
+# Aksum
+
+ redux_formableInfoEvents.28.title:0 "Aksum Formable Information"
+ redux_formableInfoEvents.28.desc:0 "@AKS Aksum is formable through the mission §GSurpass the Past§!.\n\nNational Ideas:\n Traditions: §G+5%§! Discipline and §G+15%§! Governing Capacity Modifier\n §G+1§! Yearly Prestige\n §G-15%§! Aggressive Expansion Impact\n §G-15%§! War Score Cost Against Other Religions\n §G+2§! Tolerance of the True Faith\n §G-5%§! Technology Cost and §G+10%§! Institution Spread\n §G+15%§! Trade Efficiency\n §G+0.1§! Yearly Inflation Reduction\n Ambition: §G+25%§! National Manpower Modifier\n\nOther Formables: No.\n\nMissions: Forming Aksum §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.28.back:0 "Back"
+ redux_formableInfoEvents.28.exit:0 "Close" 
+
+# Zulu
+
+ redux_formableInfoEvents.29.title:0 "Zulu Formable Information"
+ redux_formableInfoEvents.29.desc:0 "@ZUL Zulu is formable through the decision §GForm the Zulu Empire§!.\n\nNational Ideas:\n Traditions: §G+15%§! Land Force Limit Modifier and §G+50%§! Army Tradition from Battles\n §G-10%§! Stability Cost\n §G+20%§! Manpower Recovery Speed\n §G+10%§! Infantry Combat Ability and §G+10%§! Shock Damage\n §G-10%§! Core Creation Cost and §G-3§! Years of Separatism\n §G+10%§! Morale of Armies\n §G+10%§! Reform Progress Growth and §G+10%§! Governing Capacity Modifier\n §G+10§! Vassalization Acceptance\n Ambition: §G+5%§! Discipline\n\nOther Formables: No.\n\nMissions: Forming Zulu §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.29.back:0 "Back"
+ redux_formableInfoEvents.29.exit:0 "Close" 
+
+# Bukhara 
+
+ redux_formableInfoEvents.30.title:0 "Bukhara Formable Information"
+ redux_formableInfoEvents.30.desc:0 "@BUK Bukhara is formable through the decision §GForm Bukhara§!.\n\nNational Ideas:\n Traditions: §G-10%§! Cavalry Cost and §G+20%§! Cavalry Combat Ability\n §G+0.5§! Legitimacy and §G-20%§! Core Creation Cost\n §G-5%§! Technology Cost and §G+15%§! Institution Spread\n §G-10%§! Development Cost\n §G-2§! National Unrest and §G+1§! Maximum Tolerance of Heathens\n §G-10%§! Land Attrition and §G+10%§! Movement Speed\n §G+15%§! Governing Capacity Modifier\n §G+1§! Tolerance of the True Faith and §G+2%§! Missionary Strength against Heretics\n Ambition: §G+5%§! Discipline\n\nOther Formables: Yes. Bukhara can form the @MGE Mongol Empire by completing its mission tree.\n\nMissions: Forming Bukhara §Rdoes not change§! the mission tree. \n\nOther Notable Information: Forming Bukhara unlocks a decision to get the Cossacks estate."
+ redux_formableInfoEvents.30.back:0 "Back"
+ redux_formableInfoEvents.30.exit:0 "Close" 
+
+# Persia
+
+ redux_formableInfoEvents.31.title:0 "Persia Formable Information"
+ redux_formableInfoEvents.31.desc:0 "@PER Persia is formable through the decision §GForm Persian Nation§!.\n\nNational Ideas:\n Traditions: §G+15%§! Morale of Armies and §G+15%§! Cavalry Combat Ability\n §G+15%§! National Manpower Modifier\n §G+10%§! Goods Produced Modifier\n §G+5%§! Discipline\n §G+20%§! Caravan Power\n §G+5%§! Production Efficiency and §G+1§! Yearly Prestige\n §G+10%§! Manpower Recovery Speed\n §G+10%§! National Tax Modifier\n Ambition: §G-10%§! Cavalry Cost\n\nOther Formables: No. Persia is an end-game tag.\n\nMissions: Forming Persia §Greplaces§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.31.back:0 "Back"
+ redux_formableInfoEvents.31.exit:0 "Close" 
+
+# Arabia 
+
+ redux_formableInfoEvents.32.title:0 "Arabia Formable Information"
+ redux_formableInfoEvents.32.desc:0 "@ARB Arabia is formable through the decision §GForm Arabia§!.\n\nNational Ideas:\n Traditions: §G+25%§! National Manpower Modifier and §G+15%§! Trade Steering\n §G+15%§! Trade Efficiency\n §G-10%§! Cavalry Cost and §G+20%§! Cavalry Combat Ability\n §G-10%§! Development Cost\n §G+3%§! Missionary Strength and §G+15%§! Movement Speed\n §G-20%§! Reinforce Cost\n §G-15%§! Shock Damage Received\n §G+1§! Attrition for Enemies and §G+15%§! Fort Defense\n Ambition: §G+5%§! Discipline\n\nOther Formables: No. Arabia is an end-game tag.\n\nMissions: Forming Arabia §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.32.back:0 "Back"
+ redux_formableInfoEvents.32.exit:0 "Close" 
+
+# Mughals 
+
+ redux_formableInfoEvents.33.title:0 "Mughals Formable Information"
+ redux_formableInfoEvents.33.desc:0 "@MUG Mughals is formable through the decision §GForm Mughal Empire§!.\n\nNational Ideas:\n Traditions: §G+30%§! Cavalry Combat Ability and §G-25%§! Core Creation Cost\n §G+5%§! Discipline\n §G-1§! National Unrest and §G+15%§! National Manpower Modifier\n §G-10%§! Idea Cost\n §G+1§! Military Free Policies\n §G+15%§! Governing Capacity Modifier\n §G+1§! Yearly Prestige\n §G+10%§! Artillery Combat Ability\n Ambition: §G-10%§! Technology Cost\n\nOther Formables: No. Mughals is an end-game tag.\n\nMissions: Forming Mughals §Greplaces§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.33.back:0 "Back"
+ redux_formableInfoEvents.33.exit:0 "Close" 
+
+# Hindustan 
+
+ redux_formableInfoEvents.34.title:0 "Hindustan Formable Information"
+ redux_formableInfoEvents.34.desc:0 "@HIN Hindustan is formable through the decision §GForm Hindustan§!.\n\nNational Ideas:\n Traditions: §G+25%§! National Manpower Modifier and §G+20%§! Land Force Limit Modifier\n §G+15%§! Infantry Combat Ability\n §G-15%§! Advisor Cost\n §G-5§! Years of Separatism and §G+5%§! Administrative Efficiency\n §G+1§! Yearly Legitimacy and §G+15%§! Reform Progress Growth\n §G+20%§! Land Fire Damage\n §G+2%§! Missionary Strength\n §G-10%§! Development Cost\n Ambition: §G+5%§! Discipline\n\nOther Formables: No. Hindustan is an end-game tag.\n\nMissions: Forming Hindustan §Greplaces§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.34.back:0 "Back"
+ redux_formableInfoEvents.34.exit:0 "Close" 
+
+# Punjab 
+
+ redux_formableInfoEvents.35.title:0 "Punjab Formable Information"
+ redux_formableInfoEvents.35.desc:0 "@PUN Punjab is formable through the decision §GKingdom of Punjab§!.\n\nNational Ideas:\n Traditions: §G+10%§! Morale of Armies and §G+25%§! Religious Unity\n §G+10%§! Goods Produced Modifier\n §G+10%§! Trade Efficiency\n §G+15%§! Production Efficiency\n §G+20%§! National Manpower Modifier\n §G-10%§! Stability Cost Modifier\n §G-10%§! Cavalry Cost\n §G+5%§! Discipline\n Ambition: §G+10%§! Cavalry Combat Ability\n\nOther Formables: Yes. Punjab is not an end-game tag and can form @HIN Hindustan.\n\nMissions: Forming Punjab §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.35.hin:0 "Hindustan"
+ redux_formableInfoEvents.35.back:0 "Back"
+ redux_formableInfoEvents.35.exit:0 "Close" 
+
+# Rajputana 
+
+ redux_formableInfoEvents.36.title:0 "Rajputana Formable Information"
+ redux_formableInfoEvents.36.desc:0 "@RJP Rajputana is formable through the decision §GUnite the Rajputs§!.\n\nNational Ideas:\n Traditions: §G+10%§! Morale of Armies and §G+1§! Military Free Policy\n §G-15%§! Core Creation Cost\n §G+15%§! National Manpower Modifier\n §G+15%§! Cavalry Combat Ability and §G+10%§! Movement Speed\n §G+10%§! Land Fire Damage\n §G+2§! Tolerance of the True Faith\n §G+10%§! Artillery Combat Ability\n §G+1§! Yearly Legitimacy\n Ambition: §G+5%§! Discipline\n\nOther Formables: Yes. Rajputana is not an end-game tag and can form @HIN Hindustan.\n\nMissions: Forming Rajputana §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.36.hin:0 "Hindustan"
+ redux_formableInfoEvents.36.back:0 "Back"
+ redux_formableInfoEvents.36.exit:0 "Close" 
+
+# Nepal
+
+ redux_formableInfoEvents.37.title:0 "Nepal Formable Information"
+ redux_formableInfoEvents.37.desc:0 "@NPL Nepal is formable through the decision §GUnification of Nepal§!.\n\nNational Ideas:\n Traditions: §G+15%§! National Tax Modifier and §G+10%§! Manpower Recovery Speed\n §G+1§! Diplomatic Reputation\n §G+15%§! Fort Defense\n §G+15%§! National Manpower Modifier\n §G+0.5§! Yearly Army Tradition\n §G+10%§! Morale of Armies\n §G+10%§! Infantry Combat Ability\n §G+1§! Leader Siege\n Ambition: §G+15%§! Artillery Damage from Back Row\n\nOther Formables: Yes. Nepal is not an end-game tag and can form @HIN Hindustan.\n\nMissions: Forming Nepal §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.37.hin:0 "Hindustan"
+ redux_formableInfoEvents.37.back:0 "Back"
+ redux_formableInfoEvents.37.exit:0 "Close" 
+
+# Deccan
+
+ redux_formableInfoEvents.38.title:0 "Deccan Formable Information"
+ redux_formableInfoEvents.38.desc:0 "@DEC Deccan is formable through the decision §GSultan of the Deccan§!.\n\nNational Ideas:\n Traditions: §G+10%§! Morale of Armies and §G+5%§! Administrative Efficiency\n §G+1§! Max Promoted Culture\n §G+1§! Administrative Free Policy\n §G+10%§! Global Trade Power\n §G+20%§! Land Force Limit Modifier\n §G+5%§! Discipline\n §G+1§! Diplomatic Reputation\n §G+10%§! Goods Produced Modifier\n Ambition: §G+10%§! Infantry Combat Ability\n\nOther Formables: Yes. Deccan is not an end-game tag and can form @HIN Hindustan.\n\nMissions: Forming Deccan §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.38.hin:0 "Hindustan"
+ redux_formableInfoEvents.38.back:0 "Back"
+ redux_formableInfoEvents.38.exit:0 "Close" 
+
+# Austria-Hungary
+ 
+ redux_formableInfoEvents.39.title:0 "Austria-Hungary Formable Information"
+ redux_formableInfoEvents.39.desc:0 "@AUH Austria-Hungary is formable through the decision §GForm the Austro-Hungarian Empire§!.\n\nNational Ideas:\n Traditions: §G+10%§! Morale of Armies and §G-15%§! Advisor Costs\n §G-10%§! Cavalry Cost and §G+20%§! Cavalry Combat Ability\n §G+0.05§! Yearly Inflation Reduction and §G-0.5§! Interest Per Annum\n §G-2§! National Unrest and §G+3§! Max Promoted Cultures\n Heretics and heathens provinces do not give any penalties\n §G+25%§! National Manpower Modifier\n §G+5%§! Discipline\n §G+25%§! Global Tax Modifier\n Ambition: §G+15%§! Land Force Limit Modifier\n\nOther Formables: No. Austria-Hungary is an end-game tag. \n\nMissions: Forming Austria-Hungary §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.39.back:0 "Back"
+ redux_formableInfoEvents.39.exit:0 "Close"
+
+# Egypt
+ 
+ redux_formableInfoEvents.40.title:0 "Egypt Formable Information"
+ redux_formableInfoEvents.40.desc:0 "@EGY Egypt is formable through the mission §GKashifs of Egypt§!.\n\nNational Ideas:\n Traditions: §G+10%§! Trade Efficiency and §G+5%§! Administrative Efficiency\n §G-10%§! Development Cost\n §G+1§! Monthly Military Power\n §G+10%§! Burgher Loyalty Equilibrium\n §G+10%§! Production Efficiency\n §G+20%§! Land Fire Damage\n §G+10%§! Artillery Combat Ability\n §G+10%§! Global Trade Power\n Ambition: §G+1§! Free Policies\n\nOther Formables: No. Egypt is an end-game tag. \n\nMissions: Forming Egypt §Rdoes not change§! the mission tree. \n\nOther Notable Information: Forming Egypt unlocks the Egyptian Westernization government mechanic, which can grant up to §G+25%§! Governing Capacity Modifier, §G+15%§! Goods Produced Modifier, and §G+10%§! Morale of Armies permanently."
+ redux_formableInfoEvents.40.back:0 "Back"
+ redux_formableInfoEvents.40.exit:0 "Close"
+
+# Canada
+
+ redux_formableInfoEvents.101.title:0 "Canada Formable Information"
+ redux_formableInfoEvents.101.desc:0 "@CAN Canada is formable through the mission §GDominion Charter§!. \n\nNational Ideas:\n Traditions: §G+10%§! Trade Efficiency and §G+10%§! Morale of Armies\n §G+15%§! Goods Produced Modifier\n §G+1§! Diplomatic Possible Policy and §G+1§! Diplomatic Free Policy\n §G-15%§! Development Cost\n §G+33%§! National Sailors Modifier and §G+1§! Yearly Navy Tradition\n §G+2§! Tolerance of Heretics and Heretics and heathens provinces do not give any penalties\n §G-20%§! Institution Embracement Cost\n §G-10%§! Construction Cost\n Ambition: §G+0.5§! Yearly Republican Tradition\n\nOther Formables: No. Colonial tags can not form other nations.\n\nMissions: Forming colonial tags §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.101.back:0 "Back"
+ redux_formableInfoEvents.101.exit:0 "Close"
+
+# Quebec
+
+ redux_formableInfoEvents.102.title:0 "Quebec Formable Information"
+ redux_formableInfoEvents.102.desc:0 "@QUE Quebec is formable through the mission §GDominion Charter§!. \n\nNational Ideas:\n Traditions: §G+10%§! Infantry Combat Ability and §G-15%§! Land Attrition\n §G+10%§! Production Efficiency\n §G+10%§! Manpower Recovery Speed\n §G+1§! Yearly Prestige and §G+1§! Diplomatic Relations\n §G+1§! Attrition for Enemies and §G+20%§! Fort Defense\n §G+1§! Land Leader Shock and §G+1§! Land Leader Manuever\n §G-0.05§! Yearly Corruption and §G+15%§! Movement Speed\n §G+1§! Tolerance of the True Faith and §G+2§! Yearly Papal Influence\n Ambition: §G+15%§! Land Fire Damage\n\nOther Formables: No. Colonial tags can not form other nations.\n\nMissions: Forming colonial tags §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.102.back:0 "Back"
+ redux_formableInfoEvents.102.exit:0 "Close"
+
+# America
+
+ redux_formableInfoEvents.103.title:0 "America Formable Information"
+ redux_formableInfoEvents.103.desc:0 "@USA America is formable through the mission §GDominion Charter§!. \n\nNational Ideas:\n Traditions: §G-20%§! Fort Maintenance and §G-0.05§! Monthly War Exhaustion\n Heretic and heathen provinces do not give any penalties\n §G+0.5§! Yearly Republican Tradition\n §G+10%§! Infantry Combat Ability\n §G+10%§! Morale of Armies\n §G+10%§! Goods Produced Modifier\n §G+1§! Yearly Prestige\n §G+1%§! Yearly Army Professionalism and §G-25%§! Regiment Drill Loss\n Ambition: §G+0.5§! Yearly Army Tradition\n\nOther Formables: No. Colonial tags can not form other nations.\n\nMissions: Forming colonial tags §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.103.back:0 "Back"
+ redux_formableInfoEvents.103.exit:0 "Close"
+
+# Florida
+
+ redux_formableInfoEvents.104.title:0 "Florida Formable Information"
+ redux_formableInfoEvents.104.desc:0 "@FLO Florida is formable through the mission §GDominion Charter§!. \n\nNational Ideas:\n Traditions: §G-15%§! Development Cost and §G+15%§! National Tax Modifier\n §G+15%§! Goods Produced Modifier\n §G-5%§! Technology Cost\n §G+10%§! Trade Efficiency\n §G+1§! Max Promoted Cultures\n §G+10%§! Governing Capacity Modifier and §G-25%§! Centralize State Cost\n §G+0.5§! Yearly Republican Tradition\n §G+10%§! Production Efficiency\n Ambition: §G-25%§! Construction Time\n\nOther Formables: No. Colonial tags can not form other nations.\n\nMissions: Forming colonial tags §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.104.back:0 "Back"
+ redux_formableInfoEvents.104.exit:0 "Close"
+
+# Louisiana
+
+ redux_formableInfoEvents.105.title:0 "Louisiana Formable Information"
+ redux_formableInfoEvents.105.desc:0 "@LOU Louisiana is formable through the mission §GDominion Charter§!. \n\nNational Ideas:\n Traditions: §G-10%§! Fort Maintenance and §G-20%§! State Maintenance\n §G+20%§! Global Trade Power\n §G+50%§! National Sailors Modifier and §G-25%§! Light Ship Cost\n §G+15%§! Goods Produced Modifier\n §G+1§! Tolerance of the True Faith and §G+2§! Yearly Papal Influence\n §G-15%§! Development Cost\n §G-25%§! Construction Time\n §G+20%§! National Manpower Modifier\n Ambition: §G-1%§! Prestige Decay\n\nOther Formables: No. Colonial tags can not form other nations.\n\nMissions: Forming colonial tags §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.105.back:0 "Back"
+ redux_formableInfoEvents.105.exit:0 "Close"
+
+# Texas
+
+ redux_formableInfoEvents.106.title:0 "Texas Formable Information"
+ redux_formableInfoEvents.106.desc:0 "@TEX Texas is formable through the mission §GDominion Charter§!. \n\nNational Ideas:\n Traditions: §G+1§! Land Leader Shock and Heretic and heathen provinces do not give any penalties\n §G+1§! Yearly Prestige\n §G-10%§! Cavalry Cost and §G+15%§! Cavalry Combat Ability\n §G-5%§! Development Cost and §G+5%§! Production Efficiency\n §G-10%§! Land Attrition and §G+15%§! Movement Speed\n §G-1%§! Army Tradition Decay and §G+1§! Leaders without Upkeep\n §G-15%§! Stability Cost Modifier\n §G-5%§! Technology Cost\n Ambition: §G+10%§! Shock Damage\n\nOther Formables: No. Colonial tags can not form other nations.\n\nMissions: Forming colonial tags §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.106.back:0 "Back"
+ redux_formableInfoEvents.106.exit:0 "Close"
+
+# Mexico
+
+ redux_formableInfoEvents.107.title:0 "Mexico Formable Information"
+ redux_formableInfoEvents.107.desc:0 "@MEX Mexico is formable through the mission §GDominion Charter§!. \n\nNational Ideas:\n Traditions: §G+1§! Attrition for Enemies and §G-10%§! Administrative Technology Cost\n §G-10%§! Construction Cost and §G-10%§! Development Cost\n §G+2§! Max Promoted Cultures\n §G-0.05§! Monthly Autonomy Change\n §G+0.5§! Yearly Prestige and §G-20%§! Institution Embracement Cost\n §G+10%§! Production Efficiency\n §G+1§! Land Leader Shock\n §G+10%§! Recover Army Morale Speed\n Ambition: §G+10%§! Manpower Recovery Speed\n\nOther Formables: No. Colonial tags can not form other nations.\n\nMissions: Forming colonial tags §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.107.back:0 "Back"
+ redux_formableInfoEvents.107.exit:0 "Close"
+
+# Central America
+
+ redux_formableInfoEvents.108.title:0 "Central America Formable Information"
+ redux_formableInfoEvents.108.desc:0 "@CAM Central America is formable through the mission §GDominion Charter§!. \n\nNational Ideas:\n Traditions: §G+33%§! Reinforce Speed and §G+2§! Leaders without Upkeep\n §G+10%§! Recover Army Morale Speed\n §G-15%§! Infantry Cost and §G+15%§! Infantry Combat Ability\n §G-10%§! Idea Cost\n §G-50%§! Culture Conversion Cost\n §G+25%§! Manpower Recovery Speed\n §G+10%§! Fort Defense and §G+10%§! Garrison Size\n §G+33%§! Land Force Limit Modifier\n Ambition: §G-0.1§! Yearly Corruption\n\nOther Formables: No. Colonial tags can not form other nations.\n\nMissions: Forming colonial tags §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.108.back:0 "Back"
+ redux_formableInfoEvents.108.exit:0 "Close"
+
+
+# Cuba
+
+ redux_formableInfoEvents.109.title:0 "Cuba Formable Information"
+ redux_formableInfoEvents.109.desc:0 "@CUB Cuba is formable through the mission §GDominion Charter§!. \n\nNational Ideas:\n Traditions: §G+1%§! Missionary Strength and §G+25§! Naval Force Limit\n §G+25%§! Blockade Efficiency and §G+10%§! Chance to Capture Enemy Ships\n §G+33%§! National Sailors Modifier\n §G-10%§! Ship Costs and §G+5%§! Ship Durability\n §G+10%§! Production Efficiency\n §G+10%§! Trade Efficiency\n §G-10%§! Idea Cost\n §G+0.5§! Yearly Republican Tradition\n Ambition: §G+10%§! Morale of Navies\n\nOther Formables: No. Colonial tags can not form other nations.\n\nMissions: Forming colonial tags §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.109.back:0 "Back"
+ redux_formableInfoEvents.109.exit:0 "Close"
+
+# Caribbea
+
+ redux_formableInfoEvents.110.title:0 "Caribbea Formable Information"
+ redux_formableInfoEvents.110.desc:0 "@WSI Caribbea is formable through the mission §GDominion Charter§!. \n\nNational Ideas:\n Traditions: §G-10%§! Development Cost and §G+15000§! Manpower Increase\n §G-10%§! Construction Cost and §G+10%§! Production Efficiency\n §G+10%§! National Tax Modifier and §G+20%§! Institution Spread\n §G-2§! National Unrest\n §G+10%§! Trade Efficiency\n §G+2§! Max Promoted Cultures\n §G+2§! Papal Influence and §G+15%§! Manpower in True Faith Provinces\n §G+25%§! Naval Force Limit Modifier\n Ambition: §G+10%§! Movement Speed\n\nOther Formables: No. Colonial tags can not form other nations.\n\nMissions: Forming colonial tags §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.110.back:0 "Back"
+ redux_formableInfoEvents.110.exit:0 "Close"
+
+# Colombia
+
+ redux_formableInfoEvents.111.title:0 "Colombia Formable Information"
+ redux_formableInfoEvents.111.desc:0 "@COL Colombia is formable through the mission §GDominion Charter§!. \n\nNational Ideas:\n Traditions: §G+0.5§! Yearly Army Tradition and §G-20%§! General Cost\n §G+10%§! Infantry Combat Ability\n §G-1%§! Prestige Decay\n §G+10%§! Production Efficiency\n §G+1§! Max Promoted Cultures\n §G+2%§! Missionary Strength and §G+15%§! Manpower in True Faith Provinces\n §G+10%§! Domestic Trade Power and §G+25%§! National Sailors Modifier\n §G+0.5§! Yearly Republican Tradition\n Ambition: §G-10%§! Shock Damage Recieved\n\nOther Formables: No. Colonial tags can not form other nations.\n\nMissions: Forming colonial tags §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.111.back:0 "Back"
+ redux_formableInfoEvents.111.exit:0 "Close"
+
+# Venezuela
+
+ redux_formableInfoEvents.112.title:0 "Venezuela Formable Information"
+ redux_formableInfoEvents.112.desc:0 "@VNZ Venezuela is formable through the mission §GDominion Charter§!. \n\nNational Ideas:\n Traditions: §G-0.05§! Monthly War Exhaustion and §G-25%§! Cost of Advisors with Ruler's Culture\n §G-25%§! Culture Conversion Cost\n §G-10%§! Development Cost\n §G-0.1§! Yearly Corruption\n §G+0.5§! Yearly Republican Tradition\n §G-5%§! Technology Cost and §G-5%§! Idea Cost\n §G-2§! National Unrest\n §G-0.05§! Monthly Autonomy Change\n Ambition: §G+10%§! Morale of Armies\n\nOther Formables: No. Colonial tags can not form other nations.\n\nMissions: Forming colonial tags §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.112.back:0 "Back"
+ redux_formableInfoEvents.112.exit:0 "Close"
+
+# Brazil
+
+ redux_formableInfoEvents.113.title:0 "Brazil Formable Information"
+ redux_formableInfoEvents.113.desc:0 "@BRZ Brazil is formable through the mission §GDominion Charter§!. \n\nNational Ideas:\n Traditions: §G+1§! Missionary and §G+1§! Attrition for Enemies\n §G+10%§! National Tax Modifier\n §G-5%§! Idea Cost and §G+50%§! Innovativeness Gain\n §G-0.1§! Inflation Gain and §G+5%§! Goods Produced Modifier\n §G+15%§! Infantry Combat Ability\n §G-15%§! Core Creation Cost and §G-15%§! Cost of Advisors with Ruler's Culture\n §G-15%§! Stability Cost Modifier\n §G+0.5§! Yearly Republican Tradition\n Ambition: §G-15%§! Fire Damage Recieved\n\nOther Formables: No. Colonial tags can not form other nations.\n\nMissions: Forming colonial tags §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.113.back:0 "Back"
+ redux_formableInfoEvents.113.exit:0 "Close"
+
+# Paraguay
+
+ redux_formableInfoEvents.114.title:0 "Paraguay Formable Information"
+ redux_formableInfoEvents.114.desc:0 "@PRG Paraguay is formable through the mission §GDominion Charter§!. \n\nNational Ideas:\n Traditions: §G-10%§! Land Attrition and §G-10%§! Reinforce Cost\n §G-10%§! Construction Cost and §G-10%§! Development Cost\n §G+1§! Yearly Prestige\n §G+10%§! National Manpower Modifier\n §G+0.5§! Yearly Army Tradition\n §G-25%§! Construction Time\n §G+10%§! Production Efficiency\n §G-0.1§! Yearly Corruption\n Ambition: §G+20%§! Land Force Limit Modifier\n\nOther Formables: No. Colonial tags can not form other nations.\n\nMissions: Forming colonial tags §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.114.back:0 "Back"
+ redux_formableInfoEvents.114.exit:0 "Close"
+
+# Peru
+
+ redux_formableInfoEvents.115.title:0 "Peru Formable Information"
+ redux_formableInfoEvents.115.desc:0 "@PEU Peru is formable through the mission §GDominion Charter§!. \n\nNational Ideas:\n Traditions: §G+20%§! National Tax Modifier and §G-15%§! Land Attrition\n §G-15%§! Artillery Cost and §G+15%§! Artillery Combat Ability\n §G+10%§! Movement Speed and §G+10%§! Reinforce Speed\n §G+20%§! Siege Ability\n §G+0.5§! Yearly Republican Tradition\n §G+50%§! National Supply Limit Modifier\n §G+10%§! Morale of Armies\n §G-1%§! Prestige Decay\n Ambition: §G+1§! Leader Siege\n\nOther Formables: No. Colonial tags can not form other nations.\n\nMissions: Forming colonial tags §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.115.back:0 "Back"
+ redux_formableInfoEvents.115.exit:0 "Close"
+
+# Bolivia
+
+ redux_formableInfoEvents.116.title:0 "Bolivia Formable Information"
+ redux_formableInfoEvents.116.desc:0 "@BLV Bolivia is formable through the mission §GDominion Charter§!. \n\nNational Ideas:\n Traditions: §G+25%§! Provincial Trade Power Modifier and §G+25%§! Land Force Limit Modifier\n §G-15%§! Development Cost\n §G+15%§! Goods Produced Modifier\n §G-10%§! Construction Cost\n §G+0.5§! Yearly Army Tradition\n §G+10%§! Manpower Recovery Speed and §G+1§! Land Leader Manuever\n §G+10%§! Trade Efficiency and §G+1§! Merchant\n §G+0.5§! Yearly Republican Tradition\n Ambition: §G-15%§! Advisor Cost\n\nOther Formables: No. Colonial tags can not form other nations.\n\nMissions: Forming colonial tags §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.116.back:0 "Back"
+ redux_formableInfoEvents.116.exit:0 "Close"
+
+# Chile
+
+ redux_formableInfoEvents.117.title:0 "Chile Formable Information"
+ redux_formableInfoEvents.117.desc:0 "@CHL Chile is formable through the mission §GDominion Charter§!. \n\nNational Ideas:\n Traditions: §G+0.5§! Yearly Army Tradition and §G+25%§! Marines Force Limit\n §G+10%§! Naval Force Limit Modifier and §G-25%§! Transport Cost\n §G+0.5§! Yearly Republican Tradition\n §G-10%§! Land Attrition and §G+10%§! Movement Speed\n §G+20%§! Land Force Limit Modifier\n §G+20%§! Reinforce Speed and §G+25%§! Disembark Speed\n §G-10%§! Regiment Costs\n §G+10%§! Morale of Navies and §G+25%§! National Sailors Modifier\n Ambition: §G+15%§! National Manpower Modifier\n\nOther Formables: No. Colonial tags can not form other nations.\n\nMissions: Forming colonial tags §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.117.back:0 "Back"
+ redux_formableInfoEvents.117.exit:0 "Close"
+
+# La Plata
+
+ redux_formableInfoEvents.118.title:0 "La Plata Formable Information"
+ redux_formableInfoEvents.118.desc:0 "@LAP LAP is formable through the mission §GDominion Charter§!. \n\nNational Ideas:\n Traditions: §G-1§! National Unrest and §G+20%§! National Tax Modifier\n §G+10%§! Production Efficiency\n §G-15%§! Development Cost\n §G+0.5§! Yearly Republican Tradition\n §G-20%§! Infantry Cost and §G-10%§! Shock Damage Recieved\n §G+10%§! Goods Produced Modifier\n §G+25%§! Fort Defense\n §G+1§! Administrative Free Policy\n Ambition: §G+1§! Yearly Prestige\n\nOther Formables: No. Colonial tags can not form other nations.\n\nMissions: Forming colonial tags §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.118.back:0 "Back"
+ redux_formableInfoEvents.118.exit:0 "Close"

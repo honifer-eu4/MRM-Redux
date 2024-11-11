@@ -1,0 +1,104 @@
+government = republic
+add_government_reform = signoria_reform
+technology_group = western
+religion = catholic
+primary_culture = neapolitan
+capital = 121 # Napoli
+
+change_estate_land_share = {
+	estate = estate_nobles
+	share = 5
+}
+change_estate_land_share = {
+	estate = estate_church
+	share = 5
+}
+change_estate_land_share = {
+	estate = estate_burghers
+	share = -10
+}
+
+1399.1.1 = {
+	monarch = { 
+		name = "Louis II"
+		dynasty = "de Valois"
+		adm = 0
+		dip = 2
+		mil = 2
+	}
+}
+
+1399.1.1 = {
+	heir = {
+		name = "Ladislao"
+		monarch_name = "Ladislao I"
+		dynasty = "Durazzo"
+		birth_date = 1376.7.14
+		death_date = 1414.8.6
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+
+1399.11.1 = {
+	monarch = { 
+		name = "Ladislao I"
+		dynasty = "Durazzo"
+		dip = 2
+		mil = 1
+		adm = 2
+	}
+}
+
+1399.11.1 = {
+	heir = {
+		name = "Giovanna"
+		monarch_name = "Giovanna II"
+		dynasty = "de Valois"
+		birth_date = 1373.6.23
+		death_date = 1435.2.2
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 1
+		female = yes
+	}
+}
+
+1414.1.1 = {
+	monarch = { 
+		name = "Giovanna II"
+		dynasty = "de Valois"
+		dip = 2
+		mil = 1
+		adm = 2
+		female = yes
+	}
+}
+
+1414.1.1 = {
+	heir = {
+		name = "Renato"
+		monarch_name = "Renato I"
+		dynasty = "de Valois"
+		birth_date = 1409.1.16
+		death_date = 1480.7.10
+		claim = 95
+		adm = 2
+		mil = 2
+		dip = 2
+	}
+}
+
+1435.2.3 = {
+	monarch = { 
+		name = "Renato I"
+		dynasty = "de Valois"
+		dip = 3
+		mil = 3
+		adm = 3
+	}
+	add_ruler_personality = zealot_personality
+}

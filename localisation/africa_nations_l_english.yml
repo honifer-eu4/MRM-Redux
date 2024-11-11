@@ -1,0 +1,16 @@
+﻿l_english:
+ #Missions
+
+ #Modifiers
+ kon_modernization_modifier:0 "Modernization of the Kongo"
+ desc_kon_modernization_modifier:0 "We have learned from the Europeans to make our state the most technologically advanced in Africa."
+
+ #Events
+ 
+ #Tooltips
+ son_contact_with_morocco_tt_2:0 "The province of Tuat has been colonized by any country."
+ 
+ #Other
+ form_zulu_nation_title:0 "Form the Zulu Empire"
+ form_zulu_nation_desc:0 "With the aquistition of the bountiful land in South Africa, a new way of life has been discovered. The Zulu confederacy must be brought into being!"
+ 

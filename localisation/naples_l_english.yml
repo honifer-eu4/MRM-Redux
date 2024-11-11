@@ -1,0 +1,58 @@
+﻿l_english:
+ #Missions
+ emp_nap_conquer_central_italy_title:0 "Invade Central Italy"
+ emp_nap_conquer_central_italy_desc:0 "While the situation to our south is not the most favorable, our borders to the north cannot be ignored either. We should make a push up the peninsula and claim as much land as possible from the weak city-states that currently occupy it."
+ emp_nap_consolidate_our_holdings_title:0 "Consolidate Our Holdings"
+ emp_nap_consolidate_our_holdings_desc:0 "It is no doubt a glorious day for our country as Sicily is now back under our control, hopefully for good. However, we must not get too caught up in our celebrations - enemies are surely waiting for an opportunity to strike. We must consolidate our holdings and get ready to fight for our survival."
+ emp_nap_kingdom_of_africa_title:0 "Kingdom of Africa"
+ emp_nap_kingdom_of_africa_desc:0 "Our forebears, the Normans, conquered and created the Kingdom of Africa out of the old province of Africa. We can expect great resistance from the Arabs of Africa, but nothing great comes easily. The time has never been better to restore the Kingdom of Africa once again!"
+ emp_nap_conquer_the_baleares_title:0 "Conquer the Balearic Islands"
+ emp_nap_conquer_the_baleares_desc:0 "Our country was once under the rule of the King of Aragon, and it seems there are some who will never forget it. We must seize the Balearic Islands lest the Aragonese or Spanish use it as a base to attack us."
+ emp_nap_restore_albania_title:0 "Restore Albania" 
+ emp_nap_restore_albania_desc:0 "The Kingdom of Albania was a bastion of Catholicism in a sea of heretics and heathens. It failed on numerous occasions to defend itself against its threats, so it stands to reason that we should intervene in the region to help our brothers in faith."
+ emp_nap_calabrian_silk_title:0 "Develop Calabrian Silk"
+ emp_nap_calabrian_silk_desc:0 "Ever since the Dark Ages, Calabria and Catanzaro have been a great source of wealth due to the enormous potential of their silk industry. We must continue to invest in these provinces so they can bring prosperity and riches to our nation."
+ emp_nap_desert_development_desc:0 "Africa is filled with deserts that lack both resources and farmland. However, our clergy is more than up to the task of civilizing these barren lands."
+ emp_nap_desert_development_title:0 "Settle the Desert"
+ emp_nap_sahara_title:0 "Traverse the Sahara"
+ emp_nap_sahara_desc:0 "We must secure the Saharan trade that passes through Fezzan. If we can establish permanent trade posts along the route, we may gain the opportunity to launch a military campaign deeper into Africa."
+ emp_nap_conquer_maghreb_title:0 "Conquer the Maghreb"
+ emp_nap_conquer_maghreb_desc:0 "The old Kingdom of Africa conquered all of Tunis, but we will go one step further. Our holdings cannot be secure until we have taken over all of the Maghreb."
+
+
+ #Modifiers
+
+ nap_two_sicilies_reunited:0 "Two Sicilies Reunited"
+ desc_nap_two_sicilies_reunited:0 "Long ago, there was only one Kingdom of Sicily that controlled nearly all of Southern Italy. Due to internal conflicts and meddling by greater powers, the Two Sicilies were separated and divided over the Straits of Messina. But now, we have managed to reunite the two halves of the broken state."
+ calabrian_silk:0 "Calabrian Silk"
+ desc_calabrian_silk:0 "At the peak of silk production, Calabria and Catanzaro accounted for over 50% of European silk. Tens of thousands of workers are supported by the silk production in Catanzaro. Silk production and processing is a closely kept secret lest these arcane secrets spread further into Europe and cripple the economy of Calabria."
+ kof_conquered_maghreb_modifier:0 "Conquered the Maghreb"
+ desc_kof_conquered_maghreb_modifier:0 "Against all odds, we have managed to unite all of the Maghreb under our rule."
+
+ #Events
+
+ #Tooltips
+ 
+ #Other
+
+ KOF:0 "Kingdom of Africa"
+ KOF_ADJ:0 "African"
+ KOF_ideas:0 "Kingdom of Africa Ideas"
+ KOF_ideas_start:0 "Kingdom of Africa Traditions"
+ KOF_ideas_bonus:0 "Kingdom of Africa Ambition"
+ kof_repopulate_africa:0 "Re-populate Africa"
+ kof_repopulate_africa_desc:0 "The old Roman province of Africa was once the breadbasket of the empire. The desertification of the region and the ruin of the Arab invasion turned the once mighty province into little more than a desert with a few slave markets. We must restore Africa to its former glory! "
+ kof_fanatical_christianity:0 "Fanatical Christianity"
+ kof_fanatical_christianity_desc:0 "There is no question that our faith is genuine, just like the crusaders of old. We must ensure that the Church is put in its proper place and there is no questioning the one true faith."
+ kof_velvet_glove:0 "Rule with a Velvet Glove"
+ kof_velvet_glove_desc:0 "We, like the Kingdom of Africa that predates us, have shown tolerance to the Mohammedan. But make no mistake, our tolerance is not out of misplaced benevolence. We will convert these Arabized heathens to believe in Jesus Christ, but we must do so slowly and methodically."
+ kof_norman_will:0 "Norman Will"
+ kof_norman_will_desc:0 "What distinguished the Normans of centuries past from others, was their resolve and endless ambition. We carry not only their legacy and blood, but that of Rome and ancient Greece as well. Our will must be as strong as theirs was, there is no room for weakness or cowardice."
+ kof_recruit_condotierii:0 "Enlist Condottieri"
+ kof_recruit_condotierii_desc:0 "Italy is awash with mercenaries and condottieri. We must not just recruit these men, but enlist them into a new professional army to defend Africa."
+ kof_reberberization:0 "Re-berberization"
+ kof_reberberization_desc:0 "Before the Arab subjugation of the Maghreb, the province was a bastion of Christianity. Many of the early popes and Christian writers were Berbers, such as Saint Augistine. Rather than forcing a foreign culture upon the Berbers, we must aim to de-Arabify the region by restoring the Berber culture to its former place."
+ kof_legacy_of_saints:0 "Legacy of Saints"
+ kof_legacy_of_saints_desc:0 "The arid soil of Africa carries the blood of countless martyrs, such as Saint Louis himself. We have a duty to carry on their legacy, and their sacrifice must force us to be relentless."
+ kingdom_of_africa_reform:0 "Restored Norman Kingdom"
+ kingdom_of_africa_reform_desc:0 "We have restored the Kingdom of our Norman ancestors and will make it as great as its former self."

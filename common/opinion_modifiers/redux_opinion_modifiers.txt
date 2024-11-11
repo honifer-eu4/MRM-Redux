@@ -1,0 +1,3 @@
+opinion_personal_union = {
+    opinion = 100
+}

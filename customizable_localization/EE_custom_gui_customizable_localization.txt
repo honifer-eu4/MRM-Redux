@@ -1,0 +1,16 @@
+defined_text = {
+	name = GetToggleAdvisorsCourt
+	random = no
+	text = {
+		localisation_key = "Toggle the regular Advisor Pool."
+		trigger = {
+			has_country_flag = showing_advisor_choice_button
+		}
+	}
+	text = {
+		localisation_key = "Toggle the Court of Advisors."
+		trigger = {
+			always = yes
+		}
+	}
+}

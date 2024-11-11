@@ -1,0 +1,40 @@
+spriteTypes = {
+	### Advisor Court Toggle Button ###
+	spriteType = {
+		name = "GFX_advisor_court_toggle"
+		texturefile = "gfx/interface/custom_buttons/advisor_court_toggle.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_advisor_court_toggle_glow"
+		texturefile = "gfx/interface/custom_icons/advisor_court_toggle_glow.dds"
+		noOfFrames = 11
+		transparencecheck = yes
+		animation_rate_fps = 16
+		looping = yes
+		play_on_show = yes
+		alwaystransparent = yes
+	}
+	### Choice Advisor Banner ### choice_advisor_banner
+	spriteType = {
+		name = "GFX_choice_advisor_banner"
+		texturefile = "gfx/interface/choice_advisor_banner.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	### Choice Advisor refresh ### choice_advisor_banner
+	spriteType = {
+		name = "GFX_refresh_advisor"
+		texturefile = "gfx/interface/refresh_advisor.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	### advisor light bg ###
+	spriteType = {
+		name = "GFX_advisor_cover_light"
+		texturefile = "gfx/interface/custom_icons/advisor_cover_light.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+}

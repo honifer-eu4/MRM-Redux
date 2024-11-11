@@ -1,0 +1,135 @@
+namespace = redux_brapru
+normal_or_historical_nations = yes
+
+# Legacy of the March - Victory
+
+country_event = {
+    id = redux_brapru.1
+    title = redux_brapru.1.t
+    desc = redux_brapru.1.d
+    picture = DIPLOMACY_eventPicture
+
+    is_triggered_only = yes
+
+    trigger = {
+        has_country_modifier = bra_march_legacy
+        NOT = {
+            is_in_war = {
+                defender_leader = ROOT
+            }
+        }
+    }
+
+    immediate = {
+        remove_country_modifier = bra_march_legacy
+    }
+
+    option = {
+        name = redux_brapru.1.opta
+        remove_country_modifier = bra_march_legacy
+        add_power_projection = {
+			type = mission_rewards_power_projection
+			amount = 10
+		}
+        custom_tooltip = bra_march_legacy_removed_tt
+    }
+}
+
+# Legacy of the March - Defeat 
+
+country_event = {
+    id = redux_brapru.2
+    title = redux_brapru.2.t
+    desc = redux_brapru.2.d
+    picture = DIPLOMACY_eventPicture
+    
+    is_triggered_only = yes
+
+    trigger = {
+        has_country_modifier = bra_march_legacy
+        NOT = { 
+            is_in_war = {
+                defender_leader = ROOT
+            }
+        }
+    }
+    
+    immediate = {
+        remove_country_modifier = bra_march_legacy
+    }
+
+    option = {
+        name = redux_brapru.2.opta
+        add_prestige = -10
+        custom_tooltip = bra_march_legacy_removed_tt
+    }
+}
+
+# Destiny of Brandenburg
+country_event = {
+    id = redux_brapru.3
+    title = redux_brapru.3.t
+    desc = redux_brapru.3.d
+    picture = COURT_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_brapru.3.opta
+        if = {
+            limit = { NOT = { num_of_ruler_traits = { amount = 3 } } }
+            add_ruler_personality = conqueror_personality
+        }
+        add_country_modifier = {
+            name = bra_conqueror_modifier
+            duration = 9125
+        }
+    }
+
+    option = {
+        name = redux_brapru.3.optb
+        if = {
+            limit = { NOT = { num_of_ruler_traits = { amount = 3 } } }
+            add_ruler_personality = careful_personality
+        }
+        add_country_modifier = {
+            name = bra_careful_modifier
+            duration = 9125
+        }
+    }
+}
+
+# The Fate of Pomerania
+country_event = {
+    id = redux_brapru.4
+    title = redux_brapru.4.t
+    desc = redux_brapru.4.d
+    picture = COURT_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_brapru.4.opta
+        create_march = POM
+        POM = {
+            add_liberty_desire = -20
+        }
+    }
+    option = {
+        name = redux_brapru.4.optb
+        vassalize = POM
+        POM = {
+            add_liberty_desire = 10
+        }
+    }
+    option = {
+        name = redux_brapru.4.optc
+        POM = {
+            add_liberty_desire = -50
+        }
+        add_opinion = {
+			who = POM
+			modifier = opinion_personal_union
+		}
+    }
+}

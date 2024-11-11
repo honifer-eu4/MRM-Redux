@@ -1,0 +1,745 @@
+
+hab_holy_roman_ambitions = {
+	slot = 3 
+	generic = no #if a mission without generic = yes wants this slot then it overrides this.
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = HAB
+	}
+	has_country_shield = yes
+	
+	hab_show_strength = {
+		icon = mission_alliances
+		required_missions = {  } #None
+		position = 1
+		
+		completed_by = 1526.8.30
+
+		trigger = {
+			OR = {
+				army_size_percentage = 0.5
+				power_projection = 25
+			}
+		}
+		effect = {
+			tirol_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					exists = BOH
+					valid_for_personal_unions_trigger = yes
+					BOH = {
+						valid_for_personal_unions_trigger = yes
+					}
+				}
+				add_casus_belli = {
+					type = cb_restore_personal_union
+					months = 300
+					target = BOH
+				}
+			}
+			else = {
+				bohemia_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				erzgebirge_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				moravia_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			add_country_modifier = {
+				name = "successful_bid_for_imperial_crown"
+				duration = 5475 #15 years
+			}
+		}
+	}
+	subjugate_bohemia = {
+		icon = mission_empire
+		required_missions = { hab_show_strength }
+		
+		completed_by = 1526.8.30
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 266
+				AND = {
+					ROOT = {
+						NOT = {
+							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+								value = 8
+								OR = {
+									area = bohemia_area
+									area = erzgebirge_area
+									area = moravia_area
+								}
+							}
+						}
+					}
+					OR = {
+						area = bohemia_area
+						area = erzgebirge_area
+						area = moravia_area
+					}
+				}
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			owns_or_non_sovereign_subject_of = 266
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 8
+				OR = {
+					area = bohemia_area
+					area = erzgebirge_area
+					area = moravia_area
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "hab_austrian_bohemia"
+				duration = 5475 #15 years
+			}
+			BOH = {
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_personal_union
+				}
+			}
+			silesia_area = {
+				add_permanent_claim = ROOT
+			}
+			lusatia_area = {
+				add_permanent_claim = ROOT
+			}
+			hidden_effect = {
+				remove_casus_belli = {
+					type = cb_restore_personal_union
+					target = BOH
+				}
+			}
+		}
+	}
+}
+
+hab_north_german_expansion = {
+	slot = 3
+	generic = no
+	ai = yes 
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = HAB
+	}
+	has_country_shield = yes
+
+	hab_conquer_lusatia = {
+		icon = claim_the_borderlands
+		required_missions = { subjugate_bohemia }
+		position = 3
+		completed_by = 1620.11.8
+		trigger = {
+			lusatia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			area = lusatia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			thuringia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			south_saxony_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			northern_saxony_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	hab_conquer_saxony = {
+		icon = electorate_of_saxony
+		required_missions = { hab_conquer_lusatia }
+		completed_by = 1821.1.1
+		provinces_to_highlight = {
+			OR = {
+				area = thuringia_area
+				area = south_saxony_area
+				area = northern_saxony_area
+			}
+			ROOT = {
+				NOT = {
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 10 #of 10 (you can spare the FCs)
+						OR = {
+							area = thuringia_area
+							area = south_saxony_area
+							area = northern_saxony_area
+						}
+					}
+				}
+			}
+			NOT = { country_or_non_sovereign_subject_holds = root }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10 #of 10 (you can spare the FCs)
+				OR = {
+					area = thuringia_area
+					area = south_saxony_area
+					area = northern_saxony_area
+				}
+			}
+		}
+		effect = {
+			mittelmark_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			neumark_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	emp_hab_union_brandenburg = {
+		icon = electorate_of_brandenburg
+		
+		required_missions = { hab_conquer_saxony }
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					area = mittelmark_area
+					NOT = { country_or_non_sovereign_subject_holds = root }
+				}
+				AND = {
+					area = neumark_area
+					NOT = { country_or_non_sovereign_subject_holds = root }
+				}
+			}
+		}
+		trigger = {
+			mittelmark_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			neumark_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+		}
+		effect = {
+			define_advisor = {
+				type = army_reformer
+				skill = 3
+				cost_multiplier = 0.25
+				culture = saxon
+			}
+			weser_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			braunschweig_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_saxony_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			vorpommern_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			hinter_pommern_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			mecklenburg_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	emp_hab_conquer_pomerania = {
+		icon = mission_unite_home_region
+
+		required_missions = { emp_hab_union_brandenburg }
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					area = hinter_pommern_area
+					NOT = { country_or_non_sovereign_subject_holds = root }
+				}
+				AND = {
+					area = vorpommern_area
+					NOT = { country_or_non_sovereign_subject_holds = root }
+				}
+				AND = {
+					area = mecklenburg_area
+					NOT = { country_or_non_sovereign_subject_holds = root }
+				}
+			}
+		}
+		trigger = {
+			hinter_pommern_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			vorpommern_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			mecklenburg_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+		}
+		effect = {
+			west_prussia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			east_prussia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	emp_hab_conquer_prussia = {
+		icon = an_army_with_a_state
+
+		required_missions = { emp_hab_conquer_pomerania }
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					area = west_prussia_area
+					NOT = { country_or_non_sovereign_subject_holds = root }
+				}
+				AND = {
+					area = east_prussia_area
+					NOT = { country_or_non_sovereign_subject_holds = root }
+				}
+			}
+		}
+		trigger = {
+			west_prussia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			east_prussia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = hab_owns_prussia
+				duration = -1
+			}
+		}
+	}
+}
+
+hab_protect_the_balkans = {
+	slot = 5 #upper right column
+	generic = no #if a mission without generic = yes wants this slot then it overrides this.
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		tag = HAB
+	}
+	has_country_shield = yes
+	
+	hab_conquer_hungary = {
+		icon = mission_monarch_in_throne_room
+		required_missions = { hab_eastern_diplo }
+		position = 3
+		
+		provinces_to_highlight = {
+			OR = {
+				area = slovakia_area
+				area = transdanubia_area
+				area = alfold_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			slovakia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			transdanubia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			alfold_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+		}
+		effect = {
+			slavonia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			croatia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	austrian_croatia = {
+		icon = mission_galleys_in_port
+		required_missions = { hab_conquer_hungary }
+		position = 4
+		completed_by = 1526.8.30
+		
+		ai_weight = {
+			factor = 1
+			modifier = {
+				factor = 2
+				east_adriatic_coast_area = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					croatia_area = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					slavonia_area = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = croatia_area
+				area = slavonia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			croatia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			slavonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+		}
+		effect = {
+			transylvania_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			southern_transylvania_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bosnia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_adriatic_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			serbia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			rascia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	conquer_transylvania = {
+		icon = mission_eastern_european_city
+		required_missions = { austrian_croatia }
+		completed_by = 1699.1.26
+		ai_weight = {
+			factor = 2
+			modifier = {
+				factor = 2
+				southern_transylvania_area = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			modifier = {
+				factor = 2
+				transylvania_area = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = southern_transylvania_area
+				area = transylvania_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			southern_transylvania_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			transylvania_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			wallachia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			silistria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	hab_royal_hungary = {
+		icon = mission_monarch_in_throne_room
+		required_missions = { conquer_transylvania }
+		position = 6
+		completed_by = 1490.1.1
+		
+		provinces_to_highlight = {
+			OR = {
+				area = slovakia_area
+				area = transdanubia_area
+				area = alfold_area
+				area = croatia_area 
+				area = slavonia_area
+				area = transylvania_area
+				area = southern_transylvania_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			slovakia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			transdanubia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			alfold_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			croatia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			slavonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			southern_transylvania_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			transylvania_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "royal_hungary"
+				duration = -1
+			}
+			if = {
+				limit = {
+					is_emperor = yes
+				}
+				custom_tooltip = hab_royal_hungary_tt
+				hidden_effect = {
+					set_country_flag = hab_must_dismantle_hre
+					country_event = {
+						id = hab_mission_events.22
+					}
+					complete_mission = emp_hab_fate_of_hre
+				}
+			}
+		}
+	}
+
+	hab_integrate_hungary = {
+		icon = mission_monarch_in_throne_room 
+		required_missions = { hab_royal_hungary }
+		provinces_to_highlight = {
+			OR = {
+				area = slovakia_area
+				area = transdanubia_area
+				area = alfold_area
+				area = croatia_area 
+				area = slavonia_area
+				area = transylvania_area
+				area = southern_transylvania_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		trigger = {
+			slovakia_area = {
+				type = all
+				owned_by = root
+				is_core = root 
+			}
+			transdanubia_area = {
+				type = all
+				owned_by = root
+				is_core = root 
+			}
+			alfold_area = {
+				type = all
+				owned_by = root
+				is_core = root 
+			}
+			croatia_area = {
+				type = all
+				owned_by = root
+				is_core = root 
+			}
+			slavonia_area = {
+				type = all
+				owned_by = root
+				is_core = root 
+			}
+			southern_transylvania_area = {
+				type = all
+				owned_by = ROOT
+				is_core = root 
+			}
+			transylvania_area = {
+				type = all
+				owned_by = ROOT
+				is_core = root 
+			}
+		}
+		effect = {
+			country_event = {
+				id = hab_mission_events.16
+			}
+			custom_tooltip = hab_form_ahu_tooltip
+		}
+	}
+}
+
+
+

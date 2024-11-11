@@ -1,0 +1,19 @@
+MRM Redux Patch 4.1.1:
+
+############# Country-specific #############
+
+Burgundy:
+    Fixed a bug causing the "Support from Disloyal Appanages" modifier to apply unintentionally.
+
+France:
+    "Victory in the Franco-Iberian Wars" event now grants a vassal claims, not cores.
+    
+################ Estates ###################
+
+Clergy:
+    "Religious Brigades" now gives up to +10% Morale of Armies instead of +15%.
+
+############### Mechanics ##################
+
+Mercenary Companies:
+    Triggered modifiers giving Army Tradition now only apply while at war.

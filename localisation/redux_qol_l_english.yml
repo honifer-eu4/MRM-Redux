@@ -1,0 +1,21 @@
+﻿l_english:
+ # Quality of Life
+
+ redux_qol_disable_statutory_rights_title:0 "Disable Statutory Rights"
+ redux_qol_disable_statutory_rights_desc:0 "Clicking this decision will prevent the event 'Estates Statutory Rights' from firing on your nation, which gives you 30% Crownland at the cost of having 25% Minimum Autonomy for 20 years. You will be able to reenable it again if you wish."
+ redux_qol_disable_statutory_rights_tt:0 "Clicking this decision will prevent the event 'Estates Statutory Rights' from firing on your nation, which gives you 30% Crownland at the cost of having 25% Minimum Autonomy for 20 years. You will be able to reenable it again if you wish."
+ redux_qol_enable_statutory_rights_title:0 "Reenable Statutory Rights"
+ redux_qol_enable_statutory_rights_desc:0 "The event 'Estates Statutory Rights' will be able to fire on your nation again. You will be able to disable it again if you wish."
+ redux_qol_enable_statutory_rights_tt:0 "The event 'Estates Statutory Rights' will be able to fire on your nation again. You will be able to disable it again if you wish."
+
+ redux_qol.1.title:0 "Fort Code Information"
+ redux_qol.1.desc:0 "Fort Code Information:\n\nThis mod has implemented fort code (credit to Purple Room Mod by dave), which blocks neighboring forts from being built with a few exceptions. The rules of fort code can be found below:\n\n1. The capital of your country is always allowed to have a fort, and a fort on your capital does not count as a bordering fort for surrounding provinces. (i.e. England may build a fort on Essex even if you already have a fort on its capital London).\n2. Provinces with a strait crossing do not count as a bordering fort for other provinces with strait crossings, but they still count as a bordering fort for regular provinces. (i.e. a fort on Gibraltar will block you from building on Malaga, but not on Ceuta).\n3. The above rule applies even if two strait crossings are connected by land. (i.e. you can have a fort on both Gallipoli and Constantinople). \n4. When acquiring new provinces, there will be a 180 day cooldown before any ineligible forts are automatically deleted. Use this time to your advantage to ensure a beneficial fort placement.\n5. When moving your capital, there will be no cooldown before ineligible forts are automatically deleted. Keep this in mind when doing so.\n6. Forts are only counted as neighboring if they’re part of the same country - vassals/marches/etc. are separate."
+ redux_qol_fort_code_info_title:0 "Fort Code Information"
+ redux_qol_fort_code_info_desc:0 "Click to see a short event explaining the fort code in this mod."
+ redux_qol.1.a:0 "Close"
+
+ redux_qol.2.title:0 "Destroy the Estates Information"
+ redux_qol.2.desc:0 "Destroy the Estates Information:\n\n§G'Destroy the Estates'§! is a decision available beginning in the Age of Absolutism. To click the decision, you must have at least 90 Crownland and less than 2 privileges on all of your estates. This will result in permanently losing all estates and estate interactions as well as the entire crownland tab (including bonuses for high crownland), and unlocking a triggered modifier, which can be found by clicking the button on the bottom right. This modifier will be slightly buffed if you have completed §GCourt Ideas§!.\n\nAdditionally, the following decisions will be unlocked:\n-§G'Draft Noble Armies'§!, which grants 10 Absolutism and spawns 20% of your Force Limit as troops in your capital.\n-§G'Seize Burgher Riches'§!, which grants 10 Absolutism and gives you 2 years of income.\n-§G'Raid Clergy Properties'§!, which grants 10 Absolutism and 100 of each mana in exchange for destroying 5 random Temple/Cathedral buildings in your country.\n\nEach of these decisions will have a base cooldown of 10 years, but it is possible to reduce the cooldown as well as buff the rewards with the following government reforms:\n-§G'Puppet the Nobility'§! Tier 2 reform (only available to monarchies)\n-§G'Separate the Clergy from State'§! Tier 4 reform\n-§G'Superiority of the State'§! Tier 7 reform\n-§G'Lockean Proviso'§! Tier 8 reform"
+ redux_destroy_estates_info_title:0 "Destroy the Estates Information"
+ redux_destroy_estates_info_desc:0 "Click to see a short event explaining the §Y'Destroy the Estates§! mechanic in this mod."
+ redux_qol.2.a:0 "Close"

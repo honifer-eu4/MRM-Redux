@@ -1,0 +1,56 @@
+namespace = redux_hun
+normal_or_historical_nations = yes
+
+# Religious Question 
+
+country_event = {
+    id = redux_hun.1
+    title = redux_hun.1.t
+    desc = redux_hun.1.d 
+    picture = RELIGION_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_hun.1.opta
+        if = {
+            limit = {
+                NOT = { religion = orthodox }
+            }
+            change_religion = orthodox
+        }
+        add_country_modifier = {
+            name = "redux_orthodox_hungary_tolerant"
+            duration = 7300
+        }
+    }
+
+    option = {
+        name = redux_hun.1.optb
+        if = {
+            limit = {
+                NOT = { religion = orthodox }
+            }
+            change_religion = orthodox
+        }
+        add_country_modifier = {
+            name = "redux_orthodox_hungary_harsh"
+            duration = 7300
+        }
+    }
+
+    option = {
+        name = redux_hun.1.optc
+        if = {
+            limit = {
+                NOT = { religion = catholic }
+            }
+            change_religion = catholic
+        }
+        tooltip = {
+			custom_tooltip = hun_unlock_orthodox_privilege_tt
+		}
+        set_country_flag = hun_empower_orthodox_autonomy
+        custom_tooltip = hun_needs_ortho_for_byz_tt
+    }
+}

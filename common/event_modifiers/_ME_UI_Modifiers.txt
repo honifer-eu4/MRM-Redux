@@ -1,0 +1,20 @@
+ME_adm_rehired_advisor_4 = {
+	country_admin_power = 1
+}
+ME_adm_rehired_advisor_5 = {
+	country_admin_power = 2
+}
+
+ME_dip_rehired_advisor_4 = {
+	country_diplomatic_power = 1
+}
+ME_dip_rehired_advisor_5 = {
+	country_diplomatic_power = 2
+}
+
+ME_mil_rehired_advisor_4 = {
+	country_military_power = 1
+}
+ME_mil_rehired_advisor_5 = {
+	country_military_power = 2
+}

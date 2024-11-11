@@ -1,0 +1,178 @@
+MRM Redux Patch 4.0:
+
+############# General/Bugfixes ###############
+
+Mod updated to version 1.37.1.
+Disabled "Sell Province" and "Offer Knowledge Sharing" diplomatic actions with Ming.
+Fixed a bug causing the "Show My National Statistics" decision to display incorrect values.
+Removed content for several non-playable tags, including Bohemia, Netherlands, and multiple New World nations.
+
+############ Country-specific ################
+
+Austria: 
+    Winds of Change content temporarily removed, with a potential reworked version at a later date. Pre-DLC mission tree is still available.
+
+Austria-Hungary:
+    "Hungarian Cavalry" national idea now gives +20% Cavalry Combat Ability instead of +10%.
+    "Hungarian Revolt" and "German Revolt" disasters removed.
+    No longer gives the Magyar estate if formed by Hungary.
+
+Castile:
+    Holy Order for +1 Defender Dice Roll now gives +15% Local Defensiveness instead.
+
+Denmark:
+    Added option to decline the "Growth of the Cattle Trade" event.
+
+Ethiopia:
+    Cawa now spawn with 100 manpower instead of 500.
+    Now gains +0.05 Cawa Force Limit per development instead of +0.125.
+
+Germany:
+    New content added.
+
+Hormuz:
+    Added reworked version of new content.
+    Fixed bug that prevented Hormuz from being able to form Persia as intended.
+
+Hungary:
+    Added reworked version of new content.
+    Forming Austria-Hungary no longer requires admin tech 18 or having Austria as a PU.
+
+Italy:
+    New content added.
+
+Khorasan:
+    No longer has access to the "Clergy Mountain Exploration" privilege.
+
+Mughals:
+    New content added.
+
+Persia:
+    "Establish the Iranian Name" decision removed.
+    "Establish Safavid Order" estate agenda no longer gives manpower for completing.
+    No longer has access to the "Clergy Mountain Exploration" privilege.
+    "Shahanshan's Coffers" branch of mission tree removed.
+    Zoroastrian/Branching missions removed. Muslim missions are now enabled by default.
+
+Qara Qoyunlu:
+    No longer has access to the "Clergy Mountain Exploration" privilege.
+
+Russia:
+    "An Innovative Jump" event no longer gives a free level of technology.
+    "Establish the Streltsy" government reform nerfed to +10% Streltsy Force Limit from +20%.
+    No longer has access to the "Boyars Military Service" government reform.
+    "Profit from the Fur Trade" modifier no longer gives +1 Global Building Slots.
+
+Timurids: 
+    New content added.
+
+Venice:
+    Winds of Change content temporarily removed, with a potential reworked version at a later date. Pre-DLC mission tree is still available.
+
+################## Ages ######################
+
+Age of Reformation:
+    "Create a Colonial Empire" age objective changed to require 100% Religious Unity.
+    "Humanist or Religious" age objective changed to require completing 3 idea groups.
+
+Age of Absolutism:
+    "Emperor of China" age objective changed to require destroying the estates.
+    "Win Religious War" age objective changed to require at least 75 Power Projection.
+    "Dutch Commercialization" age goal is now available to Lotharingia.
+    "Edict of Absolutism" age goal now allows revoking estate privileges without enough loyalty.
+    "Flexible Rivalries" age goal now allows Free Force March.
+    
+
+################# Estates ####################
+
+General:    
+    Added a decision to destroy the estates. This decision is available starting in the Age of Absolutism and requires 90% Crownland as well as less than 2 privileges on all of your estates. Destroying the estates grants a triggered modifier which includes an upgraded version of max Crownland modifiers, as well as +1 of each mana point. 
+
+Burghers:
+    Added a privilege based on Burghers land ownership, giving +20% Mercenary Discipline and +10% Mercenary Cost at 100%.
+
+Clergy:
+    Added a privilege based on Clergy land ownership, giving +15% Morale of Armies and +10% Land Maintenance Modifier at 100%.
+
+Magyars:
+    "Promote Hungarian Hussars" now gives +25% Cavalry Flanking Ability instead of +10% Cavalry Combat Ability.
+
+Nobility:
+    "Boyars - Landed Army" privilege now gives up to +10% Cavalry Combat Ability instead of +20%.
+    "Boyars - Rynda Infantry" privilege now gives up to +10% Infantry Combat Ability and -10% Infantry Cost instead of +15% and -20%.
+
+########### Government Mechanics #############
+
+Ottoman Government:
+    Janissaries no longer have +50% Assault Fort Ability.
+    Now gives -75% Special Unit Force Limit.
+
+Sultanate of Rum: 
+    Janissaries no longer have +50% Assault Fort Ability.
+    Now gives -75% Special Unit Force Limit.
+
+Venetian Government:
+    No longer has the Council of Ten government abilities.
+
+############ Government Reforms ##############
+
+Common:
+    All reforms requiring Exploration/Expansion ideas now require the "Interest in Colonies" modifier instead.
+    "Elite Mercenaries" Tier 5 reform no longer requires Mercenary Ideas.
+    "Separate the Clergy from State" Tier 4 reform now requires destroying the estates and now gives -10% Idea Cost and +25% Innovativeness Gain.
+    "Superiority of the State" Tier 7 reform now requires destroying the estates and now gives +1 Yearly Absolutism and -3 Global Unrest.
+    "Lockean Proviso" Tier 8 reform now requires destroying the estates and gives -100% War Taxes cost and +1 Free Policy.
+
+Monarchy:
+    "Puppet the Nobility" Tier 2 reform now requires destroying the estates and now gives -10% Military Technology Cost and +1% Yearly Army Professionalism.
+
+############### Idea groups ##################
+
+Administrative:
+    Removed +5% Mercenary Discipline from first idea.
+
+Expansion:
+    -0.05 Monthly War Exhaustion and -0.25 Monthly Devastation replaced with +15% Manpower in Primary Culture.
+    -10% Development Cost in Primary Culture increased to -15%.
+
+Policies:
+    Defensive-Expansion policy increased to -20% Morale Damage Received from -10%.
+    Quality-Administrative policy decreased to +7.5% Infantry Combat Ability from +10%.
+    Quality-Expansion policy increased to -15% Fire Damage Received from -10%.
+    Quantity-Expansion policy is now administrative instead of military.
+
+
+################ Mechanics ###################
+
+Absolutism:
+    No longer decreased by assigning Parliament seats or decreasing war exhaustion.
+
+Centralize State:
+    Fixed bug that caused refunds to give back more reform progress than intended.
+
+Decisions:
+    Added QoL decision to add all provinces to Parliament.
+    Added QoL decision to enable manpower edict on all states.
+
+Defines:
+    Innovativeness gained from tech reduced to 2 from 4.
+    Minimum policy time reduced to 1 year from 10.
+    Minimum revolt progress required to provoke rebels reduced to 30% from 50%.
+    Religious Zeal reduced to 10 years from 30.
+
+Great Projects:
+	"Baku Atesgah" no longer gives Discipline at any tier, and no longer requires the owner to be Zoroastrian.
+
+Religions:
+    All Muslim denominations:
+        "Call on Religious Followers" Mysticism action now gives 0.2 years of manpower instead of 2.
+
+
+################ Religions ###################
+
+Catholic:
+    Counter-Reformation no longer gives +5% Technology Cost and +5% Idea Cost.
+
+Zoroastrian:    
+    All Zoroastrian provinces/events to convert to Zoroastrian removed.
+

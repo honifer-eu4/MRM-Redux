@@ -1,0 +1,144 @@
+MRM Redux Patch 4.1:
+
+############# General/Bugfixes ###############
+
+Updated mod to game version 1.37.2, integrating the recent hotfix patch to EU4.
+Fixed a bug with the "Toggle Game Rules" mechanic intended to allow disabling certain diplomatic actions.
+
+############ Country-specific ################
+
+Andalusia:
+    Now has an additional +0.25 Cavalry Fire on seventh idea.
+    Now has +20% Cavalry Combat Ability as a tradition instead of +1 Naval Leader Manuever.
+    +5% Discipline moved to first idea. 
+
+Burgundy:
+    New content rework added, featuring some new missions and a new vassal type, 
+	Starting heir buffed to 4/4/4.
+
+Germany:
+    Formation no longer gives the "Cultural Disunity" government reform.
+
+Hungary:
+    Slightly increased the requirements to form Austria-Hungary.
+
+Italy:
+    "Complete the Risorgimento" mission reward now gives +10% Local Goods Produced instead of +15%, and no longer gives Development Cost.
+    "Holy Roman Delusions" mission now requires 25 provinces in the South Germany region instead of HRE-related requirements.
+    "Train of Thought" mission reward now gives +10% Manpower in Primary Culture Provinces instead of -10% Development Cost.
+
+Lithuania:
+    Now has permanent access to the 'Vodka of the Crown' government reform (this stays upon tag-switching).
+
+Morocco:
+    "Establish the Black Guard" no longer requires completing "El Badi Palace".
+    "Raid Iberian Trade" now accepts having the strongest trade power in Sevilla.
+
+Naples:
+    "Calabrian Silk" mission no longer requires Workshops.
+
+Prussia:
+    "Army Reforms" mission requirement now accepts completing any military idea group instead of only specific ones.
+
+Russia:
+    "An Absolute Autocracy" mission no longer requires having 7 subjects.
+    "Beyond the Urals" mission now gives a 3/3/3/0 conquistador instead of a 6/6/5/0.
+    "Land of Churches" mission now always gives +15% National Tax Modifier, replacing the dynamic bonuses based on Orthodox icon.
+    "Weather the Troubles" mission now always gives the 'Stable Empire' modifier regardless of method of completion.
+    "Westernize the Court" mission no longer requires improving relations.
+
+Switzerland:
+    Mercenary Discipline idea nerf reverted back to 10% from 7.5%.
+    New content rework added, featuring some new missions and a new "Swiss Militarization" government mechanic.
+
+################## Ages ######################
+
+Age of Discovery:
+    "Feudal Society" objective now accepts other subject types in addition to vassals, such as marches and personal unions.
+
+################# Estates ####################
+
+General:    
+    Added new decisions unlocked by destroying the estates, giving mana, ducats, and free troops on a cooldown. These decisions can be further buffed by government reforms.
+
+Burghers:
+    "Ask for Contribution" action no longer requires having at least 1 port.
+	"Elite Mercenaries" privilege now additionally grants up to +1 Monthly Swiss/Mercenary Militarization.
+    "Promote Burgher Bookkeeping" privilege now grants -30% Inflation Reduction Cost instead of -50% and no longer grants State Maintenance.
+
+########### Government Mechanics #############
+
+Russian Rule:
+    Administrative Rule now grants up to -10% Stability Cost Modifier instead of -10% Development Cost.
+    "New Order Regiments" government reform now grants an extra +5% Infantry Combat Ability instead of +15%.
+    
+############### Idea groups ##################
+
+Administrative:
+    No longer has -25% Stability Cost Modifier. 
+
+Economic:
+    Now has -0.5 Interest Per Annum instead of -0.25.
+
+Espionage:
+    Now has an additional +10% Goods Produced Modifier in the finisher.
+
+Plutocratic:
+    Now has +20% Recover Army Morale Speed instead of +10% Monthly Reform Progress Modifier.
+    Now has -10% Infantry Cost instead of +1 Merchant.
+    Now has -15% Regiment Drill Loss instead of Provincial Trade Power Modifier and Caravan Power.
+    Now has +20% Land Fire Damage instead of +10%.
+
+Trade: 
+    Now has -10% Development Cost instead of -5% Construction Cost and +25% Caravan Power.
+
+Policies:
+    Administrative-Quality is now an Administrative policy instead of Military.
+    Defensive-Economic now gives -15% Fire Damage Received instead of -10%.
+    Diplomatic-Plutocratic now gives +0.2 Infantry Fire and -10% Infantry Cost, replacing its previous modifiers.
+    Economic-Espionage now gives -25% Cost to Promote Mercantilism instead of -0.05 Monthly Autonomy Change.
+    Economic-Offensive is now an Administrative policy instead of Military.
+    Economic-Quality now gives +15% Land Fire Damage instead of +10%.
+    Economic-Trade now gives -5% Development Cost instead of +10% Production Efficiency.
+    Espionage-Quality now gives +10% Artillery Damage from Back Row instead of +7.5%.
+    Influence-Offensive is now a Diplomatic policy instead of Military.
+    Influence-Quantity is now a Diplomatic policy instead of Military.
+    Innovative-Quality now gives +10% Land Fire Damage instead of -0.5% Army Tradition Decay.
+    Plutocratic-Court now gives +15% Land Fire Damage and +15% Movement Speed, replacing its previous modifiers.
+    Plutocratic-Espionage now gives +25% Global Manpower Modifier instead of +33%, and is now a Diplomatic policy instead of Military.
+    Plutocratic-Trade now gives +25% Reform Progress Growth, replacing its previous modifiers.
+    Religious-Quality now gives +10% Morale Damage instead of +5%.
+    
+
+################ Mechanics ###################
+
+Defines: 
+	Minimum revolt progress required to provoke rebels reduced to 30% from 50%.
+    Trade propagation reduced from 20% of trade power to 12.5%.
+
+Decisions:
+    Added a decision explaining the 'Destroy the Estates' mechanics and buffs.
+    "Designate Calais as the Staple Port" decision no longer requires not owning Antwerp.
+    Slightly revamped the decision system, with most 'info' decisions that have no impact on gameplay now being colored purple.
+
+Events: 
+    "Papal State" event no longer gives -1 Stability.
+    "Seat of Strong Aristocrats" modifier no longer gives +0.1 Local Monthly Autonomy.
+
+Great Projects:
+	"Kazan Kremlin" reduced to +10% Garrison Damage at Tier 1 and +25% Garrison Damage at Tier 2/3 instead of +50% and +100%.
+    "The Golden City" reduced to -0.25 Interest Per Annum at Tier 2 and -0.5 Interest Per Annum at Tier 3 instead of -0.5 and -1.
+
+Hegemons:
+    Naval Hegemon now requires 250 Heavy Ships instead of 500 of any ship. 
+
+Mercenary Companies:
+    Each military idea group now provides 2 "reserve" companies for each age after the Age of Discovery instead of 1.
+
+################ Religions ###################
+
+All Muslim dominations:
+    No longer require diplomatic relations to invite scholars.
+
+Reformed:
+    Fervor actions now cost 7 monthly fervor instead of 8.

@@ -1,0 +1,12 @@
+MRM Redux Patch 4.0.1:
+
+################ Mechanics ###################
+
+Absolutism:
+    No longer decreased by assigning Parliament seats or decreasing war exhaustion.
+
+Buildings: 
+    Docks now give +20% Local Manpower Modifier in addition to its usual modifiers.
+    Drydocks now give +35% Local Manpower Modifier in addition to its usual modifier.
+    Ramparts now give +25% Local Defensiveness instead of +15%, and +50% Garrison Size instead of +1 Defender Dice Roll.
+    Universities now take 1 month to build instead of 12.

@@ -1,0 +1,692 @@
+
+franconia_conquest_group_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = WBG
+			tag = ANS
+			tag = BAM
+			tag = BYT
+			tag = ROT
+			tag = NUM
+			tag = FKN
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	fkn_defeat_rivals = {
+		icon = mission_assemble_an_army
+		required_missions = { }
+
+		provinces_to_highlight = {
+			province_id = 79
+			OR = {
+				NOT = { owned_by = root }
+				NOT = { is_core = root }
+			}
+		}
+		
+		trigger = {
+			owns_core_province = 79
+			NOT = { exists = WBG }
+		}
+		
+		effect = {
+			franconia_area = {
+				limit = {
+					NOT = { owned_by = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			upper_franconia_area = {
+				limit = {
+					NOT = { owned_by = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			every_country = {
+				limit = {
+					OR = { 
+						alliance_with = root
+						is_subject_of = root
+					}
+					primary_culture = franconian
+				}
+				add_opinion = {
+					who = root
+					modifier = opinion_franconian_league
+				}
+				hidden_effect = {
+					reverse_add_opinion = {
+						who = root
+						modifier = opinion_franconian_league
+					}
+				}
+			}
+			custom_tooltip = roth_franconian_allies_tt
+		}
+	}
+	fkn_liberty = {
+		icon = mission_noble_council
+		required_missions = { fkn_defeat_rivals }
+
+		provinces_to_highlight = {
+			OR = {
+				area = franconia_area
+				area = upper_franconia_area
+			}
+			NOT = {
+				OR = {
+					owned_by = root
+					owner = {
+						OR = {
+							is_subject_of = root
+							alliance_with = root
+						}
+						has_opinion = {
+							who = ROOT 
+							value = 150
+						}
+					}
+				}
+			}
+		}
+		
+		trigger = {
+			franconia_area = {
+				type = all
+				OR = {
+					owned_by = root
+					owner = {
+						OR = {
+							is_subject_of = root
+							alliance_with = root
+						}
+						has_opinion = {
+							who = ROOT 
+							value = 150
+						}
+					}
+				}
+			}
+			upper_franconia_area = {
+				type = all
+				OR = {
+					owned_by = root
+					owner = {
+						OR = {
+							is_subject_of = root
+							alliance_with = root
+						}
+						has_opinion = {
+							who = ROOT 
+							value = 150
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			hesse_area = {
+				limit = {
+					NOT = { owned_by = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			palatinate_area = {
+				limit = {
+					NOT = { owned_by = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			83 = {
+				if = {
+					limit = {
+						NOT = { owned_by = root }
+						NOT = { is_permanent_claim = root }
+					}
+					add_permanent_claim = root
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						alliance_with = root
+						is_subject_of = root
+					}
+					primary_culture = franconian
+				}
+				country_event = { id = emp_mission_events.11 days = 5 }
+			}
+			custom_tooltip = fkn_liberty_effects_tt
+		}
+	}
+	fkn_greater_franconia = {
+		icon = mission_unite_home_region
+		required_missions = { fkn_liberty }
+
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					province_id = 1876
+					OR = {
+						NOT = { owned_by = root }
+						NOT = { is_core = root }
+					}
+				}
+				AND = {
+					OR = {
+						area = hesse_area
+						area = palatinate_area
+						province_id = 83
+					}
+					NOT = { country_or_non_sovereign_subject_holds = root }
+					ROOT = {
+						NOT = {
+							num_of_owned_provinces_with = {
+								value = 8 #of 9
+								OR = {
+									area = hesse_area
+									area = palatinate_area
+									province_id = 83
+								}
+							}
+						}
+					}
+				}
+			}
+			OR = {
+				area = hesse_area
+				area = palatinate_area
+				province_id = 83
+			}
+			NOT = { country_or_non_sovereign_subject_holds = root }
+		}
+		
+		trigger = {
+			owns_core_province = 1876
+			num_of_owned_provinces_with = {
+				value = 8 #of 9
+				OR = {
+					area = hesse_area
+					area = palatinate_area
+					province_id = 83
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = fkn_franconia_ascendant
+				duration = 7300
+			}
+
+			north_rhine_area = {
+				limit = {
+					NOT = { owned_by = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			lower_rhineland_area = {
+				limit = {
+					NOT = { owned_by = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+		}
+	}
+	fkn_take_rhineland = {
+		icon = mission_have_two_subjects
+		required_missions = { fkn_greater_franconia }
+
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					OR = {
+						area = north_rhine_area
+						area = lower_rhineland_area
+					}
+					NOT = { country_or_non_sovereign_subject_holds = root }
+				}
+			}
+		}
+		
+		trigger = {
+			north_rhine_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root 
+			}
+			lower_rhineland_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = root 
+			}
+		}
+		
+		effect = {
+			add_prestige = 20
+			if = { 
+				limit = { tag = FKN }
+				lorraine_area = {
+					limit = {
+						NOT = { owned_by = root }
+						NOT = { is_permanent_claim = root }
+					}
+					add_permanent_claim = root
+				}
+				wallonia_area = {
+					limit = {
+						NOT = { owned_by = root }
+						NOT = { is_permanent_claim = root }
+					}
+					add_permanent_claim = root
+				}
+			}
+			else = {
+				custom_tooltip = fkn_rhineland_effects_tt
+			}
+		}
+	}
+}
+
+franconia_conquest_group_2 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = FKN
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	fkn_western_expansion = {
+		icon = mission_empire
+		position = 5
+		required_missions = { fkn_take_rhineland }
+
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					OR = {
+						area = lorraine_area
+						area = wallonia_area
+					}
+					NOT = { country_or_non_sovereign_subject_holds = root }
+				}
+			}
+		}
+
+		trigger = {
+			OR = {
+				lorraine_area = {
+					type = all 
+					country_or_non_sovereign_subject_holds = root
+				}
+				wallonia_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = root
+				}
+			}
+		}
+
+		effect = {
+			champagne_area = {
+				limit = {
+					NOT = { owned_by = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			ile_de_france_area = {
+				limit = {
+					NOT = { owned_by = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			orleans_area = {
+				limit = {
+					NOT = { owned_by = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+		}
+	}
+	fkn_reclaim_west_francia = {
+		icon = mission_empire
+		position = 6
+		required_missions = { fkn_western_expansion }
+
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					province_id = 183
+					OR = {
+						NOT = { owned_by = root }
+						NOT = { is_core = root }
+					}
+				}
+				AND = {
+					OR = {
+						area = champagne_area
+						area = ile_de_france_area
+						area = orleans_area
+					}
+					NOT = { country_or_non_sovereign_subject_holds = root }
+				}
+			}
+		}
+		
+		trigger = {
+			owns_core_province = 183 #Paris
+			champagne_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = root
+			}
+			ile_de_france_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = root
+			}
+			orleans_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = root
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			add_country_modifier = {
+				name = fkn_kingdom_of_the_franks_modifier
+				duration = -1
+			}
+			france_region = {
+				limit = {
+					NOT = { owned_by = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+		}
+	}
+	fkn_unite_kingdom_of_the_franks = {
+		icon = centralize_france
+		required_missions = { fkn_reclaim_west_francia }
+
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					region = france_region
+					root = {
+						NOT = {
+							num_of_owned_provinces_with = {
+								value = 30
+								region = france_region
+								is_core = root
+							}
+						}
+						owns_core_province = 183
+						owns_core_province = 184
+						owns_core_province = 186
+					}
+				}
+				province_id = 183	# �le-de-France
+				province_id = 184	# Orl�annais
+				province_id = 186	# Champagne
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+
+		trigger = {
+			is_at_war = no
+			183 = {
+				is_state = yes
+			}
+			owns_core_province = 184	# Orl�annais
+			owns_core_province = 186	# Champagne
+			owns_core_province = 183	# �le-de-France
+			num_of_owned_provinces_with = {
+				value = 30
+				region = france_region
+				is_core = root
+			}
+		}
+		effect = {
+			183 = { #Paris
+				move_capital_effect = yes
+			}
+			remove_non_electors_emperors_from_empire_effect = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_country_flag = greater_francia_proclaimed
+			add_government_reform = frankish_empire
+			override_country_name = FKN_Greater
+		}
+	}
+}
+
+
+franconia_splendour_group = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = WBG
+			tag = ANS
+			tag = BAM
+			tag = BYT
+			tag = ROT
+			tag = NUM
+			tag = FKN
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	fkn_franconian_prosperity = {
+		icon = mission_high_income
+		required_missions = {  }
+
+		provinces_to_highlight = {
+			owned_by = root
+			OR = {
+				AND = {
+					is_capital = yes
+					NOT = { num_of_buildings_in_province = 2 }
+				}
+				NOT = { development = 10 }
+				NOT = { num_of_times_improved_by_owner = 3 }
+			}
+		}
+		
+		trigger = {
+			capital_scope = {
+				num_of_buildings_in_province = 2
+			}
+			num_of_owned_provinces_with = {
+				value = 3
+				development = 10
+				num_of_times_improved_by_owner = 3
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = fkn_we_prosper
+				duration = 7300
+			}
+		}
+	}
+	fkn_patronage_of_the_arts = {
+		icon = mission_early_modern_university
+		required_missions = { fkn_franconian_prosperity }
+		
+		trigger = {
+			has_adm_advisor_2 = yes
+			has_dip_advisor_2 = yes
+			has_mil_advisor_2 = yes
+			is_in_deficit = no
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = fkn_arts_patronised
+				duration = 7300
+			}
+		}
+	}
+	fkn_industrial_revolution = {
+		icon = mission_have_manufactories
+		required_missions = { fkn_patronage_of_the_arts }
+
+		provinces_to_highlight = {
+			owned_by = root
+			ROOT = {
+				NOT = {
+					num_of_owned_provinces_with = {
+						value = 5
+						has_manufactory_trigger = yes
+						development = 10
+					}
+				}
+			}
+			OR = {
+				AND = {
+					ROOT = {
+						num_of_owned_provinces_with = {
+							value = 5
+							has_manufactory_trigger = yes
+						}
+					}
+					has_manufactory_trigger = yes
+					NOT = { development = 10 }
+				}
+				AND = {
+					ROOT = {
+						num_of_owned_provinces_with = {
+							value = 5
+							development = 10
+						}
+					}
+					has_manufactory_trigger = no
+					development = 10
+				}
+				AND = {
+					NOT = {
+						ROOT = {
+							num_of_owned_provinces_with = {
+								value = 5
+								has_manufactory_trigger = yes
+							}
+						}
+					}
+					NOT = {
+						ROOT = {
+							num_of_owned_provinces_with = {
+								value = 5
+								development = 10
+							}
+						}
+					}
+					OR = {
+						has_manufactory_trigger = no
+						NOT = { development = 10 }
+					}
+				}
+			}
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				has_manufactory_trigger = yes
+				development = 10
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = fkn_we_produce_stuff
+				duration = 7300
+			}
+		}
+	}
+}
+franconia_splendour_group_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = FKN
+			tag = ANS
+			tag = BYT
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	fkn_sanspareil = {
+		icon = mission_monarch_in_throne_room
+		position = 4
+		required_missions = { fkn_industrial_revolution }
+
+		provinces_to_highlight = {
+			is_capital_of = root
+			NOT = { num_of_buildings_in_province = 5 }
+		}
+		
+		trigger = {
+			prestige = 80
+			legitimacy_equivalent = 95
+			capital_scope = {
+				num_of_buildings_in_province = 5
+			}
+		}
+		
+		effect = {
+			capital_scope = {
+				add_province_modifier = {
+					name = fkn_franconian_palace
+					duration = -1
+				}
+			}
+		}
+	}
+	fkn_franconian_expansion = {
+		icon = mission_alliances
+		required_missions = { fkn_sanspareil }
+		
+		trigger = {
+			total_development = 1000
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = fkn_expansionist_ambition
+				duration = -1
+			}
+		}
+	}
+}

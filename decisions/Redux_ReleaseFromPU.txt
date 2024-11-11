@@ -1,0 +1,15 @@
+country_decisions = {
+    redux_release_from_pu = {
+        major = yes 
+        potential = {
+            ai = no 
+            is_subject_of_type = personal_union
+        }
+        allow = {
+            always = yes
+        }
+        effect = {
+            grant_independence = yes
+        }
+    }
+}

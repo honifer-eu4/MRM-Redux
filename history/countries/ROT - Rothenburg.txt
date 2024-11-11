@@ -1,0 +1,30 @@
+government = republic
+add_government_reform = landtag_reform
+government_rank = 1
+mercantilism = 25
+technology_group = western
+religion = catholic
+primary_culture = franconian
+capital = 4715	# Rothenburg
+fixed_capital = 4715 # Cannot move capital away from this province & no power cost to move to it
+
+change_estate_land_share = {
+	estate = estate_burghers
+	share = -22
+}
+change_estate_land_share = {
+	estate = estate_nobles
+	share = 22
+}
+
+1436.1.1 = {
+	monarch = {
+		name = "Friedrich Kleinstadt"
+		birth_date = 1398.1.1
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = well_connected_personality
+}

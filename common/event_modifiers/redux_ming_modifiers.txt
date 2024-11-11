@@ -1,0 +1,29 @@
+capital_of_the_sleeping_giant = {
+    trade_value_modifier = -999
+    local_development_cost = 100
+    allowed_num_of_buildings = -20
+    local_regiment_cost = 100
+}
+
+redux_sleeping_giant = {
+    governing_capacity = 50000
+    global_unrest = -100
+    global_manpower_modifier = -1000
+    land_forcelimit_modifier = -1000
+    colonists = -100
+    global_trade_goods_size_modifier = -1000
+    global_ship_trade_power = -1000
+    global_prov_trade_power_modifier = -1000
+    global_trade_power = -1000
+    placed_merchant_power_modifier = -1000
+    center_of_trade_upgrade_cost = 10000
+    build_cost = 10000
+    global_regiment_cost = 1000
+    defensiveness = 10000
+    global_sailors_modifier = -1000
+    naval_forcelimit_modifier = -1000
+    development_cost = 10000
+    can_not_build_buildings = yes
+    can_not_build_missionaries = yes 
+    fort_maintenance_modifier = -1000
+}

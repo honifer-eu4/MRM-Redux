@@ -1,0 +1,54 @@
+country_decisions = {
+    colonist_1 = {
+        major = yes
+        potential = {
+            is_colonial_nation = no # Must not be a colonial nation to see the decision.
+			NOT = { has_country_flag = has_colonist_1 }
+            OR = {
+                ai = no
+                has_global_flag = redux_ai_can_colonize
+            }
+        }
+
+        allow = {
+            has_institution = renaissance # Colonialism must be embraced to complete the decision.
+            treasury = 500 # Must have at least 1000 gold.
+        }
+
+        effect = {
+			set_country_flag = has_colonist_1
+            add_treasury = -500 # Deduct 1000 gold.
+			add_country_modifier = {
+				name = "mrm_colonist_1"
+				duration = -1
+			}
+        }
+    }
+
+    colonist_2 = {
+        major = yes
+        potential = {
+            is_colonial_nation = no
+            has_country_flag = has_colonist_1
+            NOT = { has_country_flag = has_colonist_2 }
+            OR = {
+                ai = no
+                has_global_flag = redux_ai_can_colonize
+            }
+        }
+
+        allow = {
+            has_institution = new_world_i
+            treasury = 1500
+        }
+
+        effect = {
+            set_country_flag = has_colonist_2
+            add_treasury = -1500
+            add_country_modifier = {
+                name = "mrm_colonist_2"
+                duration = -1
+            }
+        }
+    }
+}

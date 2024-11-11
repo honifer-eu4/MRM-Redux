@@ -1,0 +1,40 @@
+﻿l_english:
+ # Russian Government
+ russian_modernization_desc:0 "Modernization measures the spread of modern the spread of ideas within the state and into your society.\n\nAll ticking sources of Modernization have been removed - the only sources of Modernization are from the following missions: \n-§Y'Secure Strong Leadership'§! \n-§Y'Consolidate Russia'§! \n-§Y'Russian Patriarchate'§! \n-§Y'Conquest of Finland'§! \n-§Y'Conquer Ruthenia'§! \n-§Y'March into the Caucasus'§! \n-§Y'Destroy the Hordes'§!, \n-§Y'Found the Tsardom'§! \n-§Y'Abolish the Mestnichestvo'§! \n-§Y'Modernize the State'§! \n-§Y'The Fate of the Peasantry'§! \n-§Y'An Absolute Autocracy'§! \nAt §G100§! Modernization, we will be able to Proclaim the Russian Empire in decisions, upgrading our government and enabling additional missions."
+ 
+ # Portugal
+ gc_por_african_gold_desc:0 "Africa is ripe with gold, and we have plenty of young adventurers that are yearning to make a profit. We should send them to develop these mines and use them to enrich our nation."
+ gc_por_lusitanian_empire_desc:0 "From Brazil to the Kongo, from the Caribbean to the Cape, we have managed to create an intercontinental trade empire that each Portuguese man can be proud of. From this day forward we are a Kingdom no longer - today is the rise of the Lusitanian Empire."
+ 
+ # Switzerland
+ emp_swi_geneva_title:0 "The Question of Geneva"
+ emp_swi_geneva_desc:0 "The wealthy state of Geneva would make a great addition to our Confederation. If we offer them the prospect of autonomy under the Swiss Confederacy, their leaders may surrender without a fight. Alternatively, our reports suggest that their populace would welcome us with cheers if we sent in our army."
+ 
+ # Mamluks
+ flavor_mam.100_tt:0 "This event will allow us to unlock 1 of 4 unique naval doctrines."
+ mam_nav_prof_reward_yes_tt:0 "Recruiting §YAdmirals§! will now generate §G1§! Navy Tradition"
+
+ # Persia
+ per_unify_the_shia_realms_at:1 " §Y[Root.Religion.GetName]§! provinces in §YArabia§!, §YIndia§! or in §YAfrica§! are hold by a §Y[Root.Religion.GetName]§! country which is either §Y[Root.GetName]§!, its subject or its ally."
+ per_great_shia_empire_title:1 "[Root.GetPreviewColorPER]Great [Root.Religion.GetName] Empire[Root.GetPreviewColorPER_end]"
+ per_great_shia_empire_desc:0 "We shall forge a empire which stands the test of time. A realm which puts the legendary empires of our ancestors such as the Achaemenid Empire in the shadow when it comes to actual world power."
+ per_unify_the_shia_realms_title:1 "[Root.GetPreviewColorPER]Unify the [Root.Religion.GetName] Realms[Root.GetPreviewColorPER_end]"
+ per_shia_empire:0 "Great Muslim Empire"
+ desc_per_shia_empire:0 "We forged a empire which stands the test of time. A realm that puts the legendary empires of our ancestors such as the Achaemenid Empire in the shadow when it comes to actual world power."
+ per_protector_of_the_shia_faith:0 "Protector of the Faith"
+ desc_per_protector_of_the_shia_faith:0 "We have guaranteed the freedom of our brothers in faith. Naturally, our reputation in the world sees great improvement from such selfless acts."
+ 
+ # Burgundy
+ emp_bur_subjects_title:0 "Placate Dutch Nobles"
+ NED_patronage_of_arts_desc:0 "Philip the Good has left a court in the Low Countries filled with many great artists. We must continue his legacy and bring our court to even newer heights."
+ NED_golden_age_title:0 "Our Golden Age"
+ ned_dutch_golden_age:0 "Golden Age of Lotharingia"
+
+ # Lithuania 
+ sca_lit_ukraine_2_desc:0 "With Kiev restored, we can now begin developing the remainder of the Ruthenian lands and profiting off their rich farmlands."
+ plc_break_the_rus_desc:0 "Now that we have dealt with the powerhouses of Novgorod and Muscovy, we must secure as much of Russia as possible so the world can recognize us as the one and only king of the region."
+ feo_black_sea_fleet_desc:0 "The Black Sea has been a hotspot of mercantile competition ever since the arrival of the Italians in the Crimean shores. Our nation has seen a slow decline in maritime actions, being pushed around by the Ottomans, Italians, Hordes, and even the Greeks. Creating a new fleet to combat these problems will be quite beneficial."
+ feo_black_sea_domination_desc:0 "Trade has always been the main source of income for the richest of nations. While we are not as fortunate currently, reclaiming our position in the Black Sea will do wonders for our trade routes."
+ sca_mission_lit_polish_union_title:0 "A Prosperous Commonwealth"
+ sca_mission_lit_polish_union_desc:0 "We have managed to reform our way out of the internal divisions that once plagued us, and we have created a prosperous nation that is now attracting migrants from all across Europe."
+ lit_enable_nomads_for_30_years:0 "Enables the §YTribes§! estate."

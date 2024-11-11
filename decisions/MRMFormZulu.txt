@@ -1,0 +1,93 @@
+country_decisions = {
+
+    form_zulu_nation = {
+        major = yes
+        potential = {
+            normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+            OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			NOT = { has_country_flag = free_the_copts }
+			OR = {
+				NOT = { tag = POR }
+				NOT = { was_tag = POR }
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			NOT = { tag = ZUL }
+
+            culture_group = african
+        }
+        provinces_to_highlight = {
+            OR = {
+                province_id = 1177 #Cape
+                province_id = 1178 #Great Kano
+                province_id = 1181 #Natal
+				province_id = 1183 #Inhamabane
+				province_id = 1196 #Kilwa
+                province_id = 1185 #Butua
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+        }
+        allow = {
+			NOT = { exists = ZUL }
+            is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+
+			adm_tech = 10
+
+            owns_core_province = 1177 #Cape
+            owns_core_province = 1178 #Great Kano
+            owns_core_province = 1181 #Natal
+			owns_core_province = 1183 #Inhamabane
+            owns_core_province = 1196 #Kilwa
+			owns_core_province = 1185 #Butua
+        }
+        effect = {
+			change_tag = ZUL
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+            south_africa_region = {
+				limit = {
+					NOT = { owned_by = ZUL }
+				}
+				add_permanent_claim = ZUL
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+            add_prestige = 20
+        }
+        ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #High Priority
+    }
+
+}

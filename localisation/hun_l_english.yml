@@ -1,0 +1,27 @@
+﻿l_english:
+ #Missions
+ emp_hun_integrate_croatia_title:0 "Integrate Croatia"
+ emp_hun_integrate_croatia_desc:0 "The Kingdom of Croatia has been governed by our ruler for centuries, yet they have not been fully brought into the fold for now. With potential enemies on all sides, they must be reigned in at once."
+
+ #Modifiers
+ redux_orthodox_hungary_tolerant:0 "A Tolerant Approach"
+ desc_redux_orthodox_hungary_tolerant:0 "We have taken a tolerant approach to converting our people to Orthodoxy."
+ redux_orthodox_hungary_harsh:0 "A Harsh Approach"
+ desc_redux_orthodox_hungary_harsh:0 "We have taken a harsh approach to converting our people to Orthodoxy."
+ redux_catholic_hungary:0 "A Catholic Empire"
+ desc_redux_catholic_hungary:0 "We have decided to stay devoted to Catholicism, no matter the cost."
+
+ #Events
+ flavor_hun.201.z:0 "[Root.Heir.GetName] would be a fine heir."
+ redux_hun.1.t:0 "The Religious Question"
+ redux_hun.1.d:0 "Hungary has traditionally been a Catholic kingdom, but as we continue our conquests of the Balkans, we find we have an increasingly large number of Orthodox subjects living under our rule. Some advisors in our court have suggested changing our state religion to appease our new peoples, adding that in time, we could even claim the mantle of the fallen empire of Byzantium. Others disagree, and paint a maintained devotion to Catholicism as the only path forward."
+ redux_hun.1.opta:0 "Convert to Orthodoxy, but take extra care not to anger our Catholic subjects."
+ redux_hun.1.optb:0 "Convert to Orthodoxy, and make it clear that all those who do not follow will perish."
+ redux_hun.1.optc:0 "Ridiculous! Catholicism is and always will be the one true religion!"
+ 
+ #Tooltips
+ hun_matyas_tooltip:0 "This event will give us the option to get §YMátyás Hunyadi§! (4/5/5) as our heir."
+ hun_needs_ortho_for_byz_tt:0 "§RWe will not be able to reform§! @BYZ §YByzantium§! §Runless we are Orthodox!§!"
+ hun_religious_question_tooltip:0 "This event will have three options: \nConvert to Orthodoxy using a tolerant approach, gaining §G+3 Tolerance of Heretics§! for 20 years. \nConvert to Orthodoxy using a harsh approach, gaining §G+2% Missionary Strength§! for 20 years. \nMaintain our devotion to Catholicism, allowing us to upgrade the §Y'Grant Orthodox Autonomy'§! Burghers privilege."
+
+ #Other

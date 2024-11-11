@@ -1,0 +1,140 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_prestige"
+		texturefile = "gfx/interface/ideas_EU4/prestige.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_production_efficiency"
+		texturefile = "gfx/interface/ideas_EU4/production_efficiency.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_stability_cost_modifier"
+		texturefile = "gfx/interface/ideas_EU4/stability_cost_modifier.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_global_tax_modifier"
+		texturefile = "gfx/interface/ideas_EU4/global_tax_modifier.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_global_unrest"
+		texturefile = "gfx/interface/ideas_EU4/global_unrest.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_inflation_reduction"
+		texturefile = "gfx/interface/ideas_EU4/inflation_reduction.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_global_missionary_strength"
+		texturefile = "gfx/interface/ideas_EU4/global_missionary_strength.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tolerance_heretic"
+		texturefile = "gfx/interface/ideas_EU4/tolerance_heretic.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_country_admin_power"
+		texturefile = "gfx/interface/ideas_EU4/country_admin_power.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_technology_cost"
+		texturefile = "gfx/interface/ideas_EU4/technology_cost.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_adm_tech_cost_modifier"
+		texturefile = "gfx/interface/ideas_EU4/adm_tech_cost_modifier.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_development_cost"
+		texturefile = "gfx/interface/ideas_EU4/development_cost.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_diplomatic_reputation"
+		texturefile = "gfx/interface/ideas_EU4/diplomatic_reputation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_naval_morale"
+		texturefile = "gfx/interface/ideas_EU4/naval_morale.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_trade_efficiency"
+		texturefile = "gfx/interface/ideas_EU4/trade_efficiency.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spy_offence"
+		texturefile = "gfx/interface/ideas_EU4/spy_offence.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_improve_relation_modifier"
+		texturefile = "gfx/interface/ideas_EU4/improve_relation_modifier.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_global_tariffs"
+		texturefile = "gfx/interface/ideas_EU4/global_tariffs.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_range"
+		texturefile = "gfx/interface/ideas_EU4/range.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_global_trade_power"
+		texturefile = "gfx/interface/ideas_EU4/global_trade_power.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_global_colonial_growth"
+		texturefile = "gfx/interface/ideas_EU4/global_colonial_growth.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_build_cost"
+		texturefile = "gfx/interface/ideas_EU4/build_cost.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_land_morale"
+		texturefile = "gfx/interface/ideas_EU4/land_morale.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_land_forcelimit_modifier"
+		texturefile = "gfx/interface/ideas_EU4/land_forcelimit_modifier.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_discipline"
+		texturefile = "gfx/interface/ideas_EU4/discipline.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_reinforce_speed"
+		texturefile = "gfx/interface/ideas_EU4/reinforce_speed.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_global_manpower_modifier"
+		texturefile = "gfx/interface/ideas_EU4/global_manpower_modifier.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_defensiveness"
+		texturefile = "gfx/interface/ideas_EU4/defensiveness.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_land_maintenance_modifier"
+		texturefile = "gfx/interface/ideas_EU4/land_maintenance_modifier.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_cavalry_power"
+		texturefile = "gfx/interface/ideas_EU4/cavalry_power.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mercenary_discipline"
+		texturefile = "gfx/interface/ideas_EU4/mercenary_discipline.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_siege_ability"
+		texturefile = "gfx/interface/ideas_EU4/siege_ability.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_war_exhaustion"
+		texturefile = "gfx/interface/ideas_EU4/war_exhaustion.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_global_autonomy"
+		texturefile = "gfx/interface/ideas_EU4/global_autonomy.dds"
+	}
+}

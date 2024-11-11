@@ -1,0 +1,18 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 2
+primary_culture = bemba
+religion = shamanism
+technology_group = central_african
+
+capital = 4050 # Luangwa
+
+1444.1.1 = {
+    monarch = {
+        name = "Mthaniya I"
+        dynasty = "Luangwa"
+        adm = 2
+        dip = 0
+        mil = 3
+    }
+}

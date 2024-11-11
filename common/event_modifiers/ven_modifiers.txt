@@ -1,0 +1,14 @@
+ven_venetian_renaissance_modifier = {
+    idea_cost = -0.1
+    technology_cost = -0.1
+}
+
+ven_standardized_relazioni_mod = {
+    yearly_absolutism = 0.5
+    max_absolutism = 20
+}
+
+lat_restore_the_arts = {
+    monthly_splendor = 2
+    num_accepted_cultures = 2
+}

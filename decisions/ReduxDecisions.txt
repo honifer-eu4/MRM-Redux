@@ -1,0 +1,68 @@
+country_decisions = {
+    gnv_deserters_decision = {
+        potential = {
+            tag = GNV
+            has_global_flag = redux_geneva_hostile_solution
+        }
+        allow = {
+            war_with = SWI
+        }
+        effect = {
+            add_country_modifier = {
+                name = "gnv_deserters"
+                duration = -1
+            }
+        }
+        ai_will_do = {
+            factor = 100
+        }
+    }
+
+    gnv_deserters_decision_2 = {
+        potential = {
+            tag = GNV
+            has_country_modifier = gnv_deserters
+        }
+        allow = {
+            NOT = { war_with = SWI }
+        }
+        effect = {
+            remove_country_modifier = gnv_deserters
+        }
+        ai_will_do = {
+            factor = 100
+        }
+    }
+
+    swi_remove_merc_contracts_decision = {
+        potential = {
+            tag = SWI
+            has_country_modifier = swi_mercenary_profits_mod
+        }
+        allow = {
+            is_at_war = yes
+            years_of_income = 1
+        }
+        effect = {
+            remove_country_modifier = swi_mercenary_profits_mod
+            add_years_of_income = -1
+        }
+    }
+
+    ger_fkn_cav_decision = {
+        potential = {
+            tag = GER
+            was_tag = FKN 
+        }
+        allow = {
+            has_idea = ger_german_confederation
+            NOT = { has_country_modifier = redux_ger_fkn_mod }
+        }
+        effect = {
+            add_country_modifier = {
+                name = redux_ger_fkn_mod
+                duration = -1
+            }
+        }
+    }
+}

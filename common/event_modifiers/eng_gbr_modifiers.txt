@@ -1,0 +1,8 @@
+redux_eng_hundred_years_war = {
+    infantry_power = 0.1
+}
+
+redux_eng_mainland_foothold = {
+    land_morale = 0.05
+    defensiveness = 0.15
+}

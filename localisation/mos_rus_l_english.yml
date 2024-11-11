@@ -1,0 +1,20 @@
+﻿l_english:
+ #Missions
+ mos_rus_fortify_gold_mine_title:0 "Secure Zlatoust"
+ mos_rus_fortify_gold_mine_desc:0 "If we move quickly, we can seize the gold mines of Zlatoust, currently controlled by the barbaric horde of Kazan. However, we must immediately fortify it after our conquest - there are surely other enemies in the east waiting for the right opportunity to attack."
+ 
+ #Modifiers
+ rus_third_rome_modifier:0 "Proclaimed the Third Rome"
+ desc_rus_third_rome_modifier:0 "We have secured our control over the City of the World's Desire and proclaimed ourselves as the true successor to the Roman Empire."
+ rus_land_of_churches_mod:0 "Land of Churches"
+ desc_rus_land_of_churches_mod:0 "We have filled our nation with churches to ensure that every citizen of our nation has access to spiritual guidance."
+
+ #Events
+ 
+ #Tooltips
+ mos_modernization_when_form_russia_tt:0 "If we have formed Russia, we will gain §G10.00§! Modernization. Otherwise, completing this mission will make the §Y'Form Russian Nation'§! decision give §G+10.00§! Modernization."
+ mos_modernization_when_form_russia_tt_2:0 "We will gain §G10.00§! Modernization for each of the following missions that is completed: §Y'Secure Strong Leadership'§!, §Y'Consolidate Russia'§!, §Y'Russian Patriarchate'§!, §Y'Conquest of Finland'§!, §Y'Conquer Ruthenia'§!, §Y'March into the Caucasus'§!, §Y'Destroy the Hordes'§!."
+ 
+ #Other
+ RUSSIA_THIRD_ROME:0 "Third Rome"
+ RUSSIA_THIRD_ROME_ADJ:0 "Third Roman"

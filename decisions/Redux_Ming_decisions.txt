@@ -1,0 +1,273 @@
+country_decisions = {
+    redux_ming_toggle_game_rules = {
+        major = yes
+        potential = {
+            ai = no
+            tag = MNG 
+        }
+        allow = {
+            always = yes
+        }
+        effect = {
+            country_event = { id = redux_ming.103 }
+        }
+    }
+    redux_ming_debug = {
+        major = yes 
+        potential = {
+            tag = MNG
+            ai = no
+        }
+        allow = {
+			always = yes
+        }
+        effect = {
+            SON = {
+                swap_non_generic_missions = yes
+            }
+        }
+    }
+    redux_ming_ger = {
+        major = yes
+        potential = {
+            tag = MNG
+            ai = no 
+            NOT = { has_global_flag = redux_meme_ger_tree }
+        }
+        allow = { 
+            NOT = { has_global_flag = redux_meme_ger_tree }
+        }
+        effect = {
+            set_global_flag = redux_meme_ger_tree
+            custom_tooltip = redux_ming_ger_tt
+        }
+    }
+    redux_afg_debug = {
+        major = yes
+        potential = {
+            tag = AFG
+            has_global_flag = india_respawned
+            NOT = { has_country_flag = save_edits_complete }
+            ai = no
+        }
+        allow = {
+            always = yes
+        }
+        effect = {
+            asia = {
+                discover_country = ROOT
+            }
+            arabian_sea_region = {
+                discover_country = ROOT
+            }
+            bay_of_bengal_area = {
+                discover_country = ROOT
+            }
+            set_capital = 451 
+            define_ruler = {
+                name = "Shah I Shahnah"
+                dynasty = "Timurid"
+                adm = 5
+                dip = 5
+                mil = 6
+                age = 20
+            }
+            add_ruler_personality = inspiring_leader_personality
+            add_stability_or_adm_power = yes
+            country_event = {
+                id = redux_ming.102
+            }
+            set_country_flag = save_edits_complete
+        }
+    }
+    redux_dlh_debug = {
+        major = yes
+        potential = {
+            tag = DLH
+            has_global_flag = india_respawned
+            NOT = { has_country_flag = save_edits_complete }
+            ai = no 
+        }
+        allow = {
+            always = yes
+        }
+        effect = {
+            asia = {
+                discover_country = ROOT
+            }
+            arabian_sea_region = {
+                discover_country = ROOT
+            }
+            bay_of_bengal_area = {
+                discover_country = ROOT
+            }
+            set_capital = 522 
+            define_ruler = {
+                name = "Lodi I Khan"
+                dynasty = "Lodi"
+                adm = 5
+                dip = 4
+                mil = 5
+                age = 20
+            }
+            add_ruler_personality = martial_educator_personality
+            add_stability_or_adm_power = yes
+            country_event = {
+                id = redux_ming.102
+            }
+            set_country_flag = save_edits_complete
+        }
+    }
+    redux_mer_debug = {
+        major = yes
+        potential = {
+            tag = MER
+            has_global_flag = india_respawned
+            NOT = { has_country_flag = save_edits_complete }
+            ai = no 
+        }
+        allow = {
+            always = yes
+        }
+        effect = {
+            asia = {
+                discover_country = ROOT
+            }
+            arabian_sea_region = {
+                discover_country = ROOT
+            }
+            bay_of_bengal_area = {
+                discover_country = ROOT
+            }
+            set_capital = 2058 
+            define_ruler = {
+                name = "Mewar I Singh"
+                dynasty = "Chandela"
+                adm = 5
+                dip = 5
+                mil = 5
+                age = 20
+            }
+            add_ruler_personality = lawgiver_personality
+            add_stability_or_adm_power = yes
+            country_event = {
+                id = redux_ming.102
+            }
+            set_country_flag = save_edits_complete
+        }
+    }
+    redux_bah_debug = {
+        major = yes
+        potential = {
+            tag = BAH
+            has_global_flag = india_respawned
+            NOT = { has_country_flag = save_edits_complete }
+            ai = no 
+        }
+        allow = {
+            always = yes
+        }
+        effect = {
+            asia = {
+                discover_country = ROOT
+            }
+            arabian_sea_region = {
+                discover_country = ROOT
+            }
+            bay_of_bengal_area = {
+                discover_country = ROOT
+            }
+            set_capital = 1948 
+            define_ruler = {
+                name = "Ahmed Shah I"
+                dynasty = "Bahmanid"
+                adm = 4
+                dip = 4
+                mil = 5
+                age = 20
+            }
+            add_ruler_personality = entrepreneur_personality
+            add_stability_or_adm_power = yes
+            country_event = {
+                id = redux_ming.102
+            }
+            set_country_flag = save_edits_complete
+        }
+    }
+    redux_vij_debug = {
+        major = yes
+        potential = {
+            tag = VIJ
+            has_global_flag = india_respawned
+            NOT = { has_country_flag = save_edits_complete }
+            ai = no 
+        }
+        allow = {
+            always = yes
+        }
+        effect = {
+            asia = {
+                discover_country = ROOT
+            }
+            arabian_sea_region = {
+                discover_country = ROOT
+            }
+            bay_of_bengal_area = {
+                discover_country = ROOT
+            }
+            set_capital = 541 
+            define_ruler = {
+                name = "Devaraya Shah I"
+                dynasty = "Sangama"
+                adm = 3
+                dip = 3
+                mil = 4
+                age = 20
+            }
+            add_ruler_personality = just_personality
+            add_stability_or_adm_power = yes
+            country_event = {
+                id = redux_ming.102
+            }
+            set_country_flag = save_edits_complete
+        }
+    }
+    redux_bng_debug = {
+        major = yes
+        potential = {
+            tag = BNG
+            has_global_flag = india_respawned
+            NOT = { has_country_flag = save_edits_complete }
+            ai = no 
+        }
+        allow = {
+            always = yes
+        }
+        effect = {
+            asia = {
+                discover_country = ROOT
+            }
+            arabian_sea_region = {
+                discover_country = ROOT
+            }
+            bay_of_bengal_area = {
+                discover_country = ROOT
+            }
+            set_capital = 563 
+            define_ruler = {
+                name = "Mahmed Shah I"
+                dynasty = "Shahi"
+                adm = 3
+                dip = 3
+                mil = 4
+                age = 20
+            }
+            add_ruler_personality = righteous_personality
+            add_stability_or_adm_power = yes
+            country_event = {
+                id = redux_ming.102
+            }
+            set_country_flag = save_edits_complete
+        }
+    }
+}

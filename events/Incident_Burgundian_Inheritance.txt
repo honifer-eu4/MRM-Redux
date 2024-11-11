@@ -1,0 +1,116 @@
+#### The Burgundian Inheritance ###
+### By James Beaumont ###
+
+
+namespace = incidents_bur_inheritance
+normal_or_historical_nations = yes
+
+# Mary is appointed regent
+country_event = {
+	id = incidents_bur_inheritance.0
+	title = "incidents_bur_inheritance.0.t"
+	desc = "incidents_bur_inheritance.0.d"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "incidents_bur_inheritance.0.a"
+		ai_chance = { 
+			factor = 10
+		}
+		if = {
+			limit = {
+				is_year = 1473
+			}
+			define_heir = {
+				name = "Marie"
+				dynasty = ROOT
+				birth_date = 1457.02.13
+				adm = 4
+				dip = 5
+				mil = 3
+				claim = 95
+				female = yes
+			}
+		}
+		else = {
+			define_heir = {
+				name = "Marie"
+				dynasty = ROOT
+				age = 16
+				adm = 4
+				dip = 5
+				mil = 3
+				claim = 95
+				female = yes
+			}
+		}
+	}
+	option = {
+		name = "incidents_bur_inheritance.0.b"
+		ai_chance = { 
+			factor = 10
+		}
+		add_legitimacy = 20
+	}
+}
+
+# Mary is successful and changes inheritance laws
+country_event = {
+	id = incidents_bur_inheritance.6
+	title = "incidents_bur_inheritance.6.t"
+	desc = "incidents_bur_inheritance.6.d"
+	picture = wihgfx_FEMALE_RULER_eventPicture
+	
+	trigger = {
+		mission_completed = emp_bur_secure_succession
+		is_female = yes
+	}
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1825
+	}
+
+	option = { # Mary changes the inheritance laws
+		name = "incidents_bur_inheritance.6.a"
+		add_country_modifier = { name = mary_inheritance_reforms duration = -1 }
+	}
+
+	option = { #Mary is a stable ruler to trust in
+		name = "incidents_bur_inheritance.6.b"
+		add_stability_or_adm_power = yes
+		add_ruler_modifier = { name = mary_reputation }
+	}
+}
+
+country_event = {
+	id = incidents_bur_inheritance.7
+	title = "incidents_bur_inheritance.7.t"
+	desc = "incidents_bur_inheritance.7.d"
+	picture = HRE_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { # Join the HRE  
+		name = "incidents_bur_inheritance.7.a"
+		custom_tooltip = bur_join_the_empire_tooltip_2
+		hidden_effect = {
+			set_in_empire = yes	
+			every_owned_province = {
+				limit = {
+					continent = europe
+				}
+				set_in_empire = yes	
+			}
+		}
+	}
+
+	option = {  # Nah
+		name = "incidents_bur_inheritance.7.b"
+		add_prestige = 20
+	}
+}

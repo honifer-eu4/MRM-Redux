@@ -1,0 +1,271 @@
+swiss_militarization_mechanic = {
+    alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 11
+	available = {
+		has_dlc = "Domination"
+	}
+
+    powers = {
+		swiss_militarization = {
+			max = 100
+			reset_on_new_ruler = no
+			base_monthly_growth = 0
+			development_scaled_monthly_growth = 0
+			scaled_modifier = {
+				modifier = {
+					mercenary_discipline = 0.05
+					mercenary_manpower = 0.15
+					monthly_swiss_militarization = -1
+				}
+			}
+            scaled_modifier = {
+                modifier = {
+                    defensiveness = 0.15
+                }
+                trigger = {
+                    has_country_flag = redux_swi_forts
+                }
+            }
+            scaled_modifier = {
+                modifier = {
+                    mercenary_discipline = 0.05
+                    mercenary_manpower = 0.15
+                    land_forcelimit_modifier = 0.2
+                }
+                trigger = {
+                    has_country_flag = redux_swi_mil_buff
+                }
+            }
+			is_good = yes
+		}
+	}
+
+    interactions = {
+		promote_swiss_militarization = {
+			gui = swiss_militarization_gov_mech
+			cost_type = swiss_militarization
+			center = no
+			trigger = {
+				NOT = {
+					has_government_power = {
+						mechanic_type = swiss_militarization_mechanic
+					    power_type = swiss_militarization
+						value = 100
+					}
+				}
+				years_of_income = 0.1
+			}
+			effect = {
+				add_years_of_income = -0.1
+				add_government_power = {
+					mechanic_type = swiss_militarization_mechanic
+					power_type = swiss_militarization
+					value = 5
+				}
+			}
+			ai_chance = {
+				factor = 0
+			}
+		}
+        
+        swiss_militarization_filler_1 = {
+            gui = swiss_militarization_gov_mech_interaction
+			icon = GFX_swiss_militarization_interaction_1
+			trigger = {
+				always = no 
+			}
+			effect = { 
+			}
+			cooldown_years = 5
+			ai_chance = {
+				factor = 0
+			}
+        }
+
+        swiss_militarization_filler_2 = {
+            gui = swiss_militarization_gov_mech_interaction
+			icon = GFX_swiss_militarization_interaction_1
+			trigger = {
+				always = no 
+			}
+			effect = { 
+			}
+			cooldown_years = 5
+			ai_chance = {
+				factor = 0
+			}
+        }
+
+        swiss_militarization_interaction_1 = {
+			gui = swiss_militarization_gov_mech_interaction
+			icon = GFX_swiss_militarization_interaction_1
+			trigger = {
+				has_government_power = {
+					mechanic_type = swiss_militarization_mechanic
+					power_type = swiss_militarization
+					value = 50
+				}
+                if = {
+                    limit = { 
+                        has_country_flag = swiss_army_reform_5 
+                    }
+                    custom_trigger_tooltip = {
+                        tooltip = swi_army_reform_completed_tt
+                        always = no
+                    }
+                } else_if = {
+                    limit = {
+                        has_country_flag = swiss_army_reform_4
+                    }
+                    mission_completed = emp_swi_greater_confederation
+                } else = {
+                    mission_completed = emp_swi_army_reforms
+                }
+                army_professionalism = 0.1
+			}
+			effect = { 
+                custom_tooltip = " "
+				add_government_power = {
+					mechanic_type = swiss_militarization_mechanic
+					power_type = swiss_militarization
+					value = -50
+				}
+                add_army_professionalism = -0.1
+                if = {
+                    limit = {
+                        has_country_flag = swiss_army_reform_5
+                    }
+                } else_if = {
+                    limit = {
+                        has_country_flag = swiss_army_reform_4
+                    }
+                    custom_tooltip = swi_army_reform_final_tt
+                } else = {
+                    custom_tooltip = swi_army_reform_tt
+                }
+                if = {
+                    limit = {
+                        has_country_flag = swiss_army_reform_4
+                    }
+                    set_country_flag = swiss_army_reform_5
+                } else_if = {
+                    limit = {
+                        has_country_flag = swiss_army_reform_3
+                    }
+                    set_country_flag = swiss_army_reform_4
+                } else_if = {
+                    limit = {
+                        has_country_flag = swiss_army_reform_2
+                    }
+                    set_country_flag = swiss_army_reform_3
+                } else_if = {
+                    limit = {
+                        has_country_flag = swiss_army_reform_1
+                    }
+                    set_country_flag = swiss_army_reform_2
+                } else = {
+                    set_country_flag = swiss_army_reform_1
+                }
+			}
+			cooldown_years = 5
+			ai_chance = {
+				factor = 0
+			}
+		}
+		
+		swiss_militarization_interaction_2 = {
+			gui = swiss_militarization_gov_mech_interaction
+			icon = GFX_swiss_militarization_interaction_2
+			trigger = {
+				NOT = {
+                    has_country_modifier = swi_mercenary_profits_mod
+                }
+                is_at_war = no
+                mission_completed = emp_swi_mercenary_profits
+			}
+			effect = { 
+                custom_tooltip = " "
+				add_country_modifier = {
+                    name = swi_mercenary_profits_mod
+                    duration = -1
+                }
+                custom_tooltip = swi_mercenary_profits_tt
+			}
+			cooldown_years = 0
+			ai_chance = {
+				factor = 0
+			}
+		}
+		
+		swiss_militarization_interaction_3 = {
+			gui = swiss_militarization_gov_mech_interaction
+			icon = GFX_swiss_militarization_interaction_3
+			trigger = {
+                mission_completed = emp_swi_elite_infantry
+				has_government_power = {
+					mechanic_type = swiss_militarization_mechanic
+				    power_type = swiss_militarization
+					value = 25
+				}
+			}
+			effect = { 
+                custom_tooltip = " "
+				add_government_power = {
+					mechanic_type = swiss_militarization_mechanic
+					power_type = swiss_militarization
+					value = -25
+				}
+                if = {
+                    limit = {
+                        has_country_flag = swiss_army_reform_5
+                    }
+                    add_country_modifier = {
+                        name = redux_swi_elite_infantry_6
+                        duration = 3650
+                    }
+                } else_if = {
+                    limit = {
+                        has_country_flag = swiss_army_reform_4
+                    }
+                    add_country_modifier = {
+                        name = redux_swi_elite_infantry_5
+                        duration = 3650
+                    }
+                } else_if = {
+                    limit = {
+                        has_country_flag = swiss_army_reform_3
+                    }
+                    add_country_modifier = {
+                        name = redux_swi_elite_infantry_4
+                        duration = 3650
+                    }
+                } else_if = {
+                    limit = {
+                        has_country_flag = swiss_army_reform_2
+                    }
+                    add_country_modifier = {
+                        name = redux_swi_elite_infantry_3
+                        duration = 3650
+                    }
+                } else_if = {
+                    limit = {
+                        has_country_flag = swiss_army_reform_1
+                    }
+                    add_country_modifier = {
+                        name = redux_swi_elite_infantry_2
+                        duration = 3650
+                    }
+                } else = {
+                    add_country_modifier = {
+                        name = redux_swi_elite_infantry
+                        duration = 3650
+                    }
+                }
+			}
+			cooldown_years = 10
+			ai_chance = {
+				factor = 0
+			}
+		}
+	}
+}

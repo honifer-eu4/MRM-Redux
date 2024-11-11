@@ -1,0 +1,7 @@
+# Montferrat and Savoy
+vassal = {
+	first = SAV
+	second = MFA
+	start_date = 1444.1.1
+	end_date = 1445.3.12
+}
