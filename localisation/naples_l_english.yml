@@ -18,7 +18,8 @@
  emp_nap_sahara_desc:0 "We must secure the Saharan trade that passes through Fezzan. If we can establish permanent trade posts along the route, we may gain the opportunity to launch a military campaign deeper into Africa."
  emp_nap_conquer_maghreb_title:0 "Conquer the Maghreb"
  emp_nap_conquer_maghreb_desc:0 "The old Kingdom of Africa conquered all of Tunis, but we will go one step further. Our holdings cannot be secure until we have taken over all of the Maghreb."
-
+ emp_nap_defense_title:0 "Fortify Molise"
+ emp_nap_defense_desc:0 "Our ambition to unify all of Italy is well-known, meaning a confrontation with other Italian powers is likely. We should begin investing extra funds into building fortifications in Molise, protecting us from any who wish to siege our great city."
 
  #Modifiers
 
@@ -32,6 +33,7 @@
  #Events
 
  #Tooltips
+ redux_nap_mil_tt:0 "Has a military advisor of skill 3 or higher"
  
  #Other
 

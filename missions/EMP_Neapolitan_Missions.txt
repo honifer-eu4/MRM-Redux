@@ -34,28 +34,67 @@ emp_naples_1 = {
 		effect = {
 			set_country_flag = naples_renaissance_flag
 			country_event = { id = flavor_nap.3 }
+			change_government_reform_progress = 50
 		}
 	}
-	emp_nap_develop_naples = {
-		icon = develop_naples
-		required_missions = { emp_nap_renaissance_city }
+	emp_nap_defense = {
+		icon = fortify_the_passes
+		required_missions = { emp_nap_independent_naples }
 		provinces_to_highlight = {
-			province_id = 121
-			NOT = { development = 30 }
+			province_id = 4733
+			AND = {
+				NOT = { has_building = fort_15th }
+				NOT = { has_building = fort_16th }
+				NOT = { has_building = fort_17th }
+				NOT = { has_building = fort_18th }
+			}
 		}
 		trigger = {
-			121 = {
+			4733 = {
 				owned_by = ROOT
-				development = 30
+				OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
 			}
-			num_of_owned_provinces_with = {
-				value = 10
-				development = 10
-				region = italy_region
+			custom_trigger_tooltip = {
+				tooltip = redux_nap_mil_tt
+				employed_advisor = {
+					category = mil
+					skill = 3
+				}
 			}
+			army_size = 40
 		}
 		effect = {
-			change_government_reform_progress = 50
+			custom_tooltip = emp_mlo_fortify_alps_effects_tooltip
+			4733 = {
+				add_province_modifier = {
+					name = mlo_expanded_fortifications
+					duration = 36500
+				}
+			}
+			hidden_effect = {
+				4733 = {
+					if = {
+						limit = { has_building = fort_17th }
+						remove_building = fort_17th
+						add_building = fort_18th
+					}
+					else_if = {
+						limit = { has_building = fort_16th }
+						remove_building = fort_16th
+						add_building = fort_17th
+					}
+					else_if = {
+						limit = { has_building = fort_15th }
+						remove_building = fort_15th
+						add_building = fort_16th
+					}
+				}
+			}
 		}
 	}
 	emp_nap_roman_relations = {

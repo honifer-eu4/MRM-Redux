@@ -4,12 +4,16 @@ MRM Redux Patch 4.6.0:
 
 Updated mod to version 1.35.5.
 Removed starting Ottoman truce with Karaman.
+The province of Molise now starts with a fort.
 
 ############# Country-specific ###############
 
 Austria:
     "Control Bohemia" mission now turns Bohemia into an Incorporated Personal Union, and reduces the integration time limit by 30 years.
     Now gets +40000 Manpower Increase and +40 Land Force Limit as the HRE Emperor bonus instead of +25000 and +25 respectively.
+
+Naples:
+    Now has a mission to upgrade the fort in Molise.
 
 Sweden:
     All provinces now start at 0 autonomy.

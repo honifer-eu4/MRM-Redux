@@ -18,3 +18,8 @@
  TRADE_COMPANY_TUNIS_Root_Culture_GetName:0 "[Root.Culture.GetName] Southern Mediterranean Company"
  TRADE_COMPANY_TUNIS_African_Trade_Company:0 "Southern Mediterranean Trade Company"
  tunis:0 "Southern Mediterranean"
+ south_slavic:0 "Balkan"
+ desc_rus_south_slavic_union:0 "Our conquest of the Balkans and the other South Slavic territories led to an expansion of our laws to include these people in our legislature.\n\n§YThis modifier gets removed should we demote any Balkan culture.§!"
+mos_rus_protect_south_slavs_at:0 "until any culture from the §YBalkan§! culture group gets demoted"
+
+ 
