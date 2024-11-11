@@ -305,6 +305,7 @@ merc_gorkhalis = {
 merc_mesopotamian_mamluks = {
     regiments_per_development = 0.05
     cavalry_weight = 1
+	cost_modifier = 0.75
 	sprites = { dlc080_alh_sprite_pack muslimgfx_sprite_pack }
     trigger = {
 		is_allowed_to_recruit_mercenaries = yes

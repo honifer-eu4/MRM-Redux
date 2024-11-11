@@ -3,6 +3,7 @@ MRM Redux Patch 4.6.0:
 ############# General/Bugfixes ###############
 
 Updated mod to version 1.35.5.
+Removed starting Ottoman truce with Karaman.
 
 ################# Estates ####################
 
@@ -14,6 +15,11 @@ Cossacks:
 Austria:
     "Control Bohemia" mission now turns Bohemia into an Incorporated Personal Union, and reduces the integration time limit by 30 years.
     Now gets +40000 Manpower Increase and +40 Land Force Limit as the HRE Emperor bonus instead of +25000 and +25 respectively.
+
+################ Mechanics ###################
+
+Mercenary Companies:
+    Mesopotamian Mamluks now cost 75% of the normal price instead of 100%.
 
 ################ Religions ###################
 
