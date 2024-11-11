@@ -1,0 +1,6 @@
+redux_mor_iberia = {
+    inflation_reduction = 0.25
+    global_unrest = -5
+    global_autonomy = -0.05
+    defensiveness = 0.15
+}

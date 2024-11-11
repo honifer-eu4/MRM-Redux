@@ -920,6 +920,14 @@ gc_morocco_4 = {
 		}
 		
 		effect = {
+			add_treasury = 500
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			add_country_modifier = {
+				name = "redux_mor_iberia"
+				duration = 7300
+			}
 			lower_andalucia_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
@@ -1192,6 +1200,8 @@ gc_morocco_5 = {
 				name = "mor_andalucia"
 				duration = 7300
 			}
+			custom_tooltip = redux_mor_adu_tt
+			set_country_flag = redux_mor_adu
 		}
 	}
 }

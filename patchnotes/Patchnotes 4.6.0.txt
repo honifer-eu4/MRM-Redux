@@ -9,12 +9,21 @@ The province of Molise now starts with a fort.
 
 ############# Country-specific ###############
 
+Andalusia:
+    Formation no longer moves your capital.
+
 Austria:
     "Control Bohemia" mission now turns Bohemia into an Incorporated Personal Union, and reduces the integration time limit by 30 years.
     Now gets +40000 Manpower Increase and +40 Land Force Limit as the HRE Emperor bonus instead of +25000 and +25 respectively.
 
+Castile:
+    Added a recovery mission for beating Morocco, giving some cash and mana. 
+
 Morocco:
-    Added new Wumpus larp events for Morocco, 
+    Added a mission allowing for the formation of Andalusia while being at war.
+    Added a recovery mission for beating Castile, giving some cash, mana, and a modifier reducing inflation and corruption.
+    Added new Wumpus larp events for Morocco.
+    Now starts with the Tribes estate.
 
 Naples:
     Now has a mission to upgrade the fort in Molise.
@@ -23,6 +32,9 @@ Sweden:
     All provinces now start at 0 autonomy.
     "Dacke War" removed.
 
+Tunis:
+    Now starts with the Tribes estate.
+
 ################# Estates ####################
 
 Burghers:
@@ -30,6 +42,9 @@ Burghers:
 
 Cossacks:
     "Recruit Cossack Leaders" privilege now gives +1 Leaders without Upkeep instead of +1 Land Leader Shock.
+
+Tribes:
+    "Greater Autonomy for Chieftains" privilege now gives +15% Shock Damage and +0.05 Monthly Autonomy Gain when used by Morocco or Tunis.
 
 ################## Ideas #####################
 

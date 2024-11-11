@@ -16,6 +16,9 @@
  desc_redux_sunni_tunis:0 "We have decided against embracing the Ibadi faith."
  redux_italy_united:0 "Italy United"
  desc_redux_italy_united:0 "Despite seemingly all the odds being against us, we have managed to unite Italy under our rule."
+ redux_mor_iberia:0 "Foothold in Iberia"
+ desc_redux_mor_iberia:0 "Against all odds, we have defeated the Christians in Iberia and established a foothold for further conquests. We must now begin a period of recovery while also remaining prepared and vigilant for any attacks by the heathens."
+
 
  #Events
  redux_tun.1.t:0 "The Ibadi Question"
@@ -27,6 +30,8 @@
  #Tooltips
  tunis_ibadi_event_tt:0 "This event will have three options: \nDeal with the Sunnis using a tolerant approach, gaining §G+3 Tolerance of Heretics§!. \nDeal with the Sunnis using a harsh approach, gaining §G+2% Missionary Strength§!. \nRenounce the Ibadi faith and turn back to Sunni, gaining §G+1 Tolerance of the True Faith§! and §G+1% Missionary Strength§! for 20 years."
  tun_desert_development_tooltip:0 "Completing this mission will give us access to the §YClergy Exploration Expeditions§! estate privilege, which will grant §G-20%§! local development cost in all §YDesert§! and §YCoastal Desert§! provinces."
+ redux_mor_adu_tt:0 "We will now be able to form @ADU Andalusia while being at war."
+ redux_mor_adu_tt2:0 "Has completed a mission allowing this decision in wartime"
 
  #Other
  TUN_Empire:0 "Emirate Of Sicily"
