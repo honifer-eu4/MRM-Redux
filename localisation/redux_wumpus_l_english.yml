@@ -118,3 +118,28 @@
  act_of_unity_modifier:0 "Act of Unity"
  settlement_of_ireland_modifier:0 "Settlement of Ireland"
  promotion_of_irish_colonization_modifier:0 "Promotion of Irish Colonization"
+
+ flavor_morwumpus.EVTNAME1:0 "Last Hurrah of Trans-Saharan Trade"
+ flavor_morwumpus.EVTDESC1:0 "For centuries, the Berbers have carried trade across the inhospitable Sahara Desert to our cities. This arrangement has been greatly beneficial to us, as we sit on the crossroads between the West African gold mines and slave hubs, and the Mediterranean markets. While the Trans-Saharan trade is in decline due to European intervention in African markets directly, we will still benefit from the current trade environment for decades to come."
+ flavor_morwumpus.EVTOPTA1:0 "Let us take advantage of this trade route while it lasts."
+ 
+ flavor_morwumpus.EVTNAME2:0 "Capture of Timbuktu"
+ flavor_morwumpus.EVTDESC2:0 "Timbuktu, the predominant Saharan trade hub and renowned scholarly metropolis of the Savannah, has fallen to our forces. While this surely marks as firm of an end to the Trans-Saharan Trade as is imagineable, direct access to such an abundance of scholarly material will certainly bring great yields to our national advancements in the near future."
+ flavor_morwumpus.EVTOPTA2:0 "A city of Kings!"
+ 
+ flavor_morwumpus.EVTNAME3:0 "The Golden Age of Tangiers"
+ flavor_morwumpus.EVTDESC3:0 "Holding back assaults from European expeditions over the decades, and retaining control of the city, Tangiers has burgeoned into a powerful center of civilization. With its full bazaars and exotic wares, the city is a true testament to Moorish prosperity."
+ flavor_morwumpus.EVTOPTA3:0 "Tangiers, bride of the North!"
+ 
+ flavor_morwumpus.EVTNAME4:0 "The Holy City of Fez"
+ flavor_morwumpus.EVTDESC4:0 "Fez, being declared a holy city in the 1430s and therefore unfit for dwelling by infidels such as the Jews. This outflow of the heathens has generated much wealth for the coffers of the city, rightfully ours for the taking, and spurred tremendous growth within its walls. Not only that, but the Borj Nord, the great citadel overlooking Fez, is in as powerful a state as ever, ready to repel any invaders or challengers to our rule at a moments notice."
+ flavor_morwumpus.EVTOPTA4:0 "The Medina of Fez, eternal."
+ 
+ flavor_morwumpus.EVTNAME5:0 "Influx of Slaves"
+ flavor_morwumpus.EVTDESC5:0 "The Trans-Saharan Slave Trade is robust, and has provided for our economy for nearly a thousand years. Caravans carrying slaves cross our borders from the sands of the deserts constantly, but at times, large wagon trains carrying an abundance of them arrive in various destinations across our empire. This never fails to bring great boons to the production of the cities which they settle in. Another massive shipment of slaves has just arrived in this city to bolster its production."
+ flavor_morwumpus.EVTOPTA5:0 "It's the world's oldest institution for a reason!"
+ 
+ wumpus_mor_trans_saharan_trade_modifier:0 "Last Hurrah of Trans-Saharan Trade"
+ wumpus_mor_conquest_of_timbuktu_modifier:0 "Conquest of Timbuktu"
+ wumpus_mor_tangier_golden_age:0 "Bride of the North"
+ wumpus_mor_fez_holy_city:0 "The Medina of Fez"

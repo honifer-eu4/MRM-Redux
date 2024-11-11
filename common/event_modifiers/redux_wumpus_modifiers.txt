@@ -98,3 +98,25 @@ promotion_of_irish_colonization_modifier = {
 	global_tax_modifier = -0.05
 	global_manpower_modifier = -0.05
 }
+
+#EventMods, put in common//event_modifiers
+
+wumpus_mor_trans_saharan_trade_modifier = {
+	trade_efficiency = 0.2
+}
+
+wumpus_mor_conquest_of_timbuktu_modifier = {
+	idea_cost = -0.1
+	technology_cost = -0.05
+	adm_advisor_cost = -0.1
+}
+
+wumpus_mor_tangier_golden_age = {
+	province_trade_power_modifier = 0.5
+	local_development_cost_modifier = -0.2
+}
+
+wumpus_mor_fez_holy_city = {
+	local_tax_modifier = 0.25
+	local_defensiveness = 0.1
+}

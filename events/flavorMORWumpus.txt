@@ -1,0 +1,189 @@
+#WumpusEvents, put in new events file titled "flavorMORWumpus"
+
+namespace = flavor_morwumpus
+normal_or_historical_nations = yes
+
+#Trans-SaharanTrade
+country_event = {
+	id = flavor_morwumpus.1
+	title = "flavor_morwumpus.EVTNAME1"
+	desc = "flavor_morwumpus.EVTDESC1"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+            tag = MOR
+            tag = ADU
+            tag = MGB
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "flavor_morwumpus.EVTOPTA1"
+		346 = {
+			add_building = marketplace
+			add_base_tax = 2
+			add_base_production = 2
+		}
+		2466 = {
+			add_building = marketplace
+			add_base_tax = 2
+			add_base_production = 2
+		}
+		1110 = {
+			add_building = marketplace
+			add_base_tax = 2
+			add_base_production = 2
+		}
+		add_country_modifier = {
+			name = wumpus_mor_trans_saharan_trade_modifier
+			duration = 7300
+			hidden = no
+		}
+	}
+}
+
+#CaptureOfTimbuktu
+country_event = {
+	id = flavor_morwumpus.2
+	title = "flavor_morwumpus.EVTNAME2"
+	desc = "flavor_morwumpus.EVTDESC2"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+            tag = MOR
+            tag = ADU
+            tag = MGB
+        }
+		owns = 1132
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "flavor_morwumpus.EVTOPTA2"
+		remove_country_modifier = wumpus_mor_trans_saharan_trade_modifier
+		add_country_modifier = {
+			name = wumpus_mor_conquest_of_timbuktu_modifier
+			duration = 10950
+			hidden = no
+		}
+	}
+}
+
+#GoldenAgeOfTangiers
+country_event = {
+	id = flavor_morwumpus.3
+	title = "flavor_morwumpus.EVTNAME3"
+	desc = "flavor_morwumpus.EVTDESC3"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+            tag = MOR
+            tag = ADU
+            tag = MGB
+        }
+		owns = 334
+		is_year = 1470
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "flavor_morwumpus.EVTOPTA3"
+		334 = {
+			add_province_modifier = {
+				name = wumpus_mor_tangier_golden_age
+				duration = 36500
+				hidden = no
+			}
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+		}
+	}
+}
+
+#FezTheHolyCity
+country_event = {
+	id = flavor_morwumpus.4
+	title = "flavor_morwumpus.EVTNAME4"
+	desc = "flavor_morwumpus.EVTDESC4"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+            tag = MOR
+            tag = ADU
+            tag = MGB
+        }
+		owns = 343
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = "flavor_morwumpus.EVTOPTA4"
+		343 = {
+			add_province_modifier = {
+				name = wumpus_mor_fez_holy_city
+				duration = -1
+				hidden = no
+			}
+		}
+	}
+}
+
+#TransSaharanSlaveTradeInfluxOfSlaves
+country_event = {
+	id = flavor_morwumpus.5
+	title = "flavor_morwumpus.EVTNAME5"
+	desc = "flavor_morwumpus.EVTDESC5"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	fire_only_once = no
+	
+	trigger = {
+		OR = {
+            tag = MOR
+            tag = ADU
+            tag = MGB
+        }
+		owns = 346
+		owns = 2466
+		NOT = {
+			is_year = 1600
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "flavor_morwumpus.EVTOPTA5"
+		random_owned_province = {
+			add_base_production = 1
+		}
+	}
+}
