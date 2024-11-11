@@ -5,16 +5,19 @@ MRM Redux Patch 4.6.0:
 Updated mod to version 1.35.5.
 Removed starting Ottoman truce with Karaman.
 
-################# Estates ####################
-
-Cossacks:
-    "Recruit Cossack Leaders" privilege now gives +1 Leaders without Upkeep instead of +1 Land Leader Shock.
-
 ############# Country-specific ###############
 
 Austria:
     "Control Bohemia" mission now turns Bohemia into an Incorporated Personal Union, and reduces the integration time limit by 30 years.
     Now gets +40000 Manpower Increase and +40 Land Force Limit as the HRE Emperor bonus instead of +25000 and +25 respectively.
+
+################# Estates ####################
+
+Burghers:
+    "Elite Mercenaries" privilege now gives up to +10% Mercenary Discipline instead of +7.5%.
+
+Cossacks:
+    "Recruit Cossack Leaders" privilege now gives +1 Leaders without Upkeep instead of +1 Land Leader Shock.
 
 ################ Mechanics ###################
 
