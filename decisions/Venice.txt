@@ -36,9 +36,6 @@ country_decisions = {
 				341 = { #Tunis
 					is_strongest_trade_power = ROOT
 				}
-				1110 = { #Safi
-					is_strongest_trade_power = ROOT
-				}
 
 				# Eastern Mediterranean
 				1308 = { # Venice
@@ -120,9 +117,6 @@ country_decisions = {
 							is_strongest_trade_power = ROOT
 						}
 						341 = { #Tunis
-							is_strongest_trade_power = ROOT
-						}
-						1110 = { #Safi
 							is_strongest_trade_power = ROOT
 						}
 					}

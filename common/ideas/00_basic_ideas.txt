@@ -298,6 +298,7 @@ innovativeness_ideas = {
 
 	patron_of_art  = {
 		prestige_decay = -0.01
+		yearly_innovativeness = 1.5
 	}
 	empiricism = {
 		innovativeness_gain = 1
@@ -370,7 +371,7 @@ religious_ideas = {
 	category = ADM
 
 	bonus = {
-		general_cost = -0.15
+		church_privilege_slots = 1
 	}
 
 	missionary_schools = {

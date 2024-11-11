@@ -3,6 +3,7 @@ MRM Redux Patch 4.6.0:
 ############# General/Bugfixes ###############
 
 Updated mod to version 1.35.5.
+Merged the trade nodes of Sevilla and Safi.
 Removed starting Ottoman truce with Karaman.
 The province of Molise now starts with a fort.
 
@@ -26,6 +27,14 @@ Burghers:
 
 Cossacks:
     "Recruit Cossack Leaders" privilege now gives +1 Leaders without Upkeep instead of +1 Land Leader Shock.
+
+################## Ideas #####################
+
+Innovative:
+    Now gives an additional +1.5 Yearly Innovativeness on first idea.
+
+Religious: 
+    Now gives +1 Clergy Privilege Slot as a finisher instead of -15% General Cost.
 
 ################ Mechanics ###################
 
