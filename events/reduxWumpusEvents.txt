@@ -935,6 +935,11 @@ country_event = {		#SpainJewishExpulsion
 		add_years_of_income = 2
 		add_adm_power = 300
 		add_stability = 1
+		add_country_modifier = {
+				name = edict_of_expulsion
+				duration = -1
+				hidden = no
+		}
 	}
 }
 
@@ -1017,6 +1022,9 @@ country_event = {		#ReligiousIdeasJewishExpulsion
 	
 	trigger = {
 		AND = {
+			NOT = {
+				has_country_modifier = edict_of_expulsion
+			}
 			full_idea_group = religious_ideas
 			OR = {
 				AND = {
@@ -1182,6 +1190,11 @@ country_event = {		#ReligiousIdeasJewishExpulsion
 		add_years_of_income = 2
 		add_adm_power = 200
 		add_stability = 1
+		add_country_modifier = {
+				name = edict_of_expulsion
+				duration = -1
+				hidden = no
+		}
 	}
 }
 
@@ -1775,5 +1788,177 @@ country_event = {		#EnglandSettlementOfIrelandWestComplete
 		375 = {
 			remove_province_modifier = act_of_unity_modifier
 		}
+	}
+}
+
+country_event = {		#ReligiousIdeasJewishExpulsionNew
+	id = flavor_kk.31
+	title = "flavor_kk.31.t"
+	desc = "flavor_kk.31.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = no
+	
+	trigger = {
+		AND = {
+			has_country_modifier = edict_of_expulsion
+			full_idea_group = religious_ideas
+			OR = {
+				AND = {
+					owns = 109
+					109 = {
+						has_province_modifier = influential_jewish_minority
+					}
+				}
+				AND = {
+					owns = 112
+					112 = {
+						has_province_modifier = influential_jewish_minority
+					}
+				}
+				AND = {
+					owns = 125
+					125 = {
+						has_province_modifier = influential_jewish_minority
+					}
+				}
+				AND = {
+					owns = 151
+					151 = {
+						has_province_modifier = influential_jewish_minority
+					}
+				}
+				AND = {
+					owns = 153
+					153 = {
+						has_province_modifier = influential_jewish_minority
+					}
+				}
+				AND = {
+					owns = 219
+					219 = {
+						has_province_modifier = influential_jewish_minority
+					}
+				}
+				AND = {
+					owns = 257
+					257 = {
+						has_province_modifier = influential_jewish_minority
+					}
+				}
+				AND = {
+					owns = 260
+					260 = {
+						has_province_modifier = influential_jewish_minority
+					}
+				}
+				AND = {
+					owns = 280
+					280 = {
+						has_province_modifier = influential_jewish_minority
+					}
+				}
+				AND = {
+					owns = 1876
+					1876 = {
+						has_province_modifier = influential_jewish_minority
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+	}
+
+	option = {
+		name = "flavor_kk.RELIGIOUSJEWISHEXPULSION1"
+		add_stability = -1
+	}
+
+	option = {
+		name = "flavor_kk.RELIGIOUSJEWISHEXPULSION2"
+		if = {
+			limit = {
+				owns = 109
+			}
+			109 = {
+				remove_province_modifier = influential_jewish_minority
+			}
+		}
+		if = {
+			limit = {
+				owns = 112
+			}
+			112 = {
+				remove_province_modifier = influential_jewish_minority
+			}
+		}
+		if = {
+			limit = {
+				owns = 125
+			}
+			125 = {
+				remove_province_modifier = influential_jewish_minority
+			}
+		}
+		if = {
+			limit = {
+				owns = 151
+			}
+			151 = {
+				remove_province_modifier = influential_jewish_minority
+			}
+		}
+		if = {
+			limit = {
+				owns = 153
+			}
+			153 = {
+				remove_province_modifier = influential_jewish_minority
+			}
+		}
+		if = {
+			limit = {
+				owns = 219
+			}
+			219 = {
+				remove_province_modifier = influential_jewish_minority
+			}
+		}
+		if = {
+			limit = {
+				owns = 257
+			}
+			257 = {
+				remove_province_modifier = influential_jewish_minority
+			}
+		}
+		if = {
+			limit = {
+				owns = 260
+			}
+			260 = {
+				remove_province_modifier = influential_jewish_minority
+			}
+		}
+		if = {
+			limit = {
+				owns = 280
+			}
+			280 = {
+				remove_province_modifier = influential_jewish_minority
+			}
+		}
+		if = {
+			limit = {
+				owns = 1876
+			}
+			1876 = {
+				remove_province_modifier = influential_jewish_minority
+			}
+		}
+		add_years_of_income = 0.25
 	}
 }

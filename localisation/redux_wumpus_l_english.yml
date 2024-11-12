@@ -143,3 +143,7 @@
  wumpus_mor_conquest_of_timbuktu_modifier:0 "Conquest of Timbuktu"
  wumpus_mor_tangier_golden_age:0 "Bride of the North"
  wumpus_mor_fez_holy_city:0 "The Medina of Fez"
+
+ flavor_kk.31.t:0 "Tensions with the Jews"
+ flavor_kk.31.d:0 "As a society with entrenched religious ideals, there is a rising tension between the true believers of our faith and the Jewish minority that dwells in our lands. Accusations of immorality and usury against the commoners has brought this tension to a boiling point, and there are many within our realm calling for an expulsion of the Jewry."
+ edict_of_expulsion:0 "Edict of Expulsion"

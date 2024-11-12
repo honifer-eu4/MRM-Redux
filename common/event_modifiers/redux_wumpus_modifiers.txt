@@ -120,3 +120,7 @@ wumpus_mor_fez_holy_city = {
 	local_tax_modifier = 0.25
 	local_defensiveness = 0.1
 }
+
+edict_of_expulsion = {
+	prestige_decay = -0.01
+}
