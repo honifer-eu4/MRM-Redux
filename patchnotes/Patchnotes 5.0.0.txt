@@ -1,0 +1,15 @@
+MRM Redux Patch 5.0.0:
+
+############# General/Bugfixes ###############
+
+Integrated new Wumpus events, featuring new flavor/buffs for Denmark, Brandenburg, and any nation with Humanist Ideas completed.
+
+############# Country-specific ###############
+
+Brandenburg:
+    Starting ruler buffed to a 4/4/4.
+
+############### Idea groups ##################
+
+Defensive:
+    Second idea now gives +10% Morale of Armies instead of +15%.

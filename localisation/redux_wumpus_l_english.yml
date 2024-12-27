@@ -147,3 +147,86 @@
  flavor_kk.31.t:0 "Tensions with the Jews"
  flavor_kk.31.d:0 "As a society with entrenched religious ideals, there is a rising tension between the true believers of our faith and the Jewish minority that dwells in our lands. Accusations of immorality and usury against the commoners has brought this tension to a boiling point, and there are many within our realm calling for an expulsion of the Jewry."
  edict_of_expulsion:0 "Edict of Expulsion"
+ 
+ flavor_kk.41.t:0 "Jews in Government"
+ flavor_kk.41.d:0 "Historically, Jews have been barred from holding public posts and certainly from serving in government and at the court, in most of Europe's nations. However, with our new humanistic outlook, moving past the old ideas we used to stubbornly hold onto, we recognize that the act of government must be performed by those most qualified by merit, and there are many Jews who would aid us in creating the most formidable state we can. We could easily let them into the ranks of the administration. However, doing so would not come without any difficulties."
+ flavor_kk.HUMANISTJEWS1:0 "It would be foolish to turn them away."
+ flavor_kk.HUMANISTJEWS2:0 "We must think about the consequences..."
+ 
+ flavor_kk.42.t:0 "An Adept Treasurer"
+ flavor_kk.42.d:0 "Having accepted the Jewry into the offices of our government, we have the opportunity to bring in another young talent of Jewish origin, a treasurer, particularly adept in the art of finance and the allocation of coin!"
+ flavor_kk.HUMANISTJEWSADM1:0 "He sure can sniff out a pretty penny!"
+ 
+ flavor_kk.43.t:0 "A Tactical Minter"
+ flavor_kk.43.d:0 "Having accepted the Jewry into the offices of our government, we have the opportunity to bring in another young talent of Jewish origin, a minter, known for his fascinating ways of stretching metals thin when minting coins, helping to fill our coffers!"
+ flavor_kk.HUMANISTJEWSADM2:0 "He sure can sniff out a pretty penny!"
+ 
+ flavor_kk.44.t:0 "A Shifty Merchant"
+ flavor_kk.44.d:0 "Having accepted the Jewry into the offices of our government, we have the opportunity to bring in another young talent of Jewish origin, a shifty and masterful trader, who is bound to bring us a large bounty of wealth from his tactful and impressive haggling abilities!"
+ flavor_kk.HUMANISTJEWSDIP1:0 "He sure can sniff out a pretty penny!"
+ 
+ flavor_kk.45.t:0 "Foreign Mercenaries Flock to Our Lands"
+ flavor_kk.45.d:0 "Having accepted the humanistic ideals of this age, many mercenaries who would be shunned in other lands due to their questionable origins are welcome in our realm, and as of late many more than usual have taken arms in the ranks of the great mercenary companies."
+ flavor_kk.HUMANISTFOREIGNMERCS1:0 "All, to arms!"
+ 
+ flavor_kk.46.t:0 "You Saved The Irish"
+ flavor_kk.46.d:0 "Woah good job dude, you saved the Irish! Wow! Now they can sit back, chill and smoke a blunt in peace without the Anglos harshing their vibe, nice one man!"
+ flavor_kk.SUBDUEDIRELAND1:0 "Hibernian patriots in control."
+ 
+ flavor_kk.47.t:0 "Fortifying Prignitz"
+ flavor_kk.47.d:0 "Prignitz, one of our westernmost provinces, sits on a critical crossroads of the Elbe River. There are many natural fortifications which could aid us in defending this chokepoint, and doing so would be a much easier process than building fortifications in other, less suitable locations. We should seize this opportunity to secure the west."
+ flavor_kk.BRANDENBURGPRIGNITZ1:0 "We must head off any threats before they present themselves."
+ flavor_kk.BRANDENBURGPRIGNITZ2:0 "We cannot handle the costs."
+ 
+ flavor_kk.48.t:0 "Legacy of Albert the Bear"
+ flavor_kk.48.d:0 "The Great Duke Albert the Bear ruled over both our lands and Saxon lands to the South in ages past. He was the great man in the North of his day, and his dream was far-reaching. Unfortunately, his dream to found an Ascanian dynasty was cut short, and his reign was only brief. However, as we reassert Brandenburg on the Holy Roman stage, we would be fools not to seize the opportunity to up-play our role as the fulfillment of Albert's legacy, and seize back what was once lost!"
+ flavor_kk.BRANDENBURGSAXONYUNION1:0 "The Ascanian did not struggle in vain!"
+ 
+ flavor_kk.49.t:0 "Albert's Inheritance"
+ flavor_kk.49.d:0 "Having taken the Saxon lands of the south, asserting our right to the throne by both birthright and conquest, our position in northern Germania is truly ascendant. Through our joining of the two realms, our own of Brandenburg with the time-honored realm of Saxony, we will push even further beyond the heights we once stood tall upon."
+ flavor_kk.BRANDENBURGSAXONYUNION2:0 "The memory of the Bear lives on."
+ 
+ flavor_kk.50.t:0 "Hanseatic Lubeck"
+ flavor_kk.50.d:0 "The great Hanseatic city of Lubeck has fallen under our control. As such, the treasured trade lanes of the Hanseatic merchants of this city have as well, placing us in a prime position to profit off of their valuable trade."
+ flavor_kk.HANSEATICLUBECK1:0 "Another jewel in our pockets."
+ 
+ flavor_kk.51.t:0 "Hanseatic Hamburg"
+ flavor_kk.51.d:0 "The great Hanseatic city of Hamburg has fallen under our control. As such, the treasured trade lanes of the Hanseatic merchants of this city have as well, placing us in a prime position to profit off of their valuable trade."
+ flavor_kk.HANSEATICHAMBURG1:0 "Another jewel in our pockets."
+ 
+ flavor_kk.52.t:0 "Hanseatic Bremen"
+ flavor_kk.52.d:0 "The great Hanseatic city of Bremen has fallen under our control. As such, the treasured trade lanes of the Hanseatic merchants of this city have as well, placing us in a prime position to profit off of their valuable trade."
+ flavor_kk.HANSEATICBREMEN1:0 "Another jewel in our pockets."
+ 
+ flavor_kk.53.t:0 "Inheritance of the Hansa"
+ flavor_kk.53.d:0 "Having united not only Lubeck, but also the prized cities of Hamburg and Bremen under our control, we are in near full control of the Hanseatic trade lanes which once dominated the whole of the Baltic. As such, we can easily take advantage of the Hanseatic position in Riga to leverage additional wealth and power in the region."
+ flavor_kk.DENMARKRIGA1:0 "Riga, city of plenty."
+ 
+ flavor_kk.54.t:0 "Frisian Communities"
+ flavor_kk.54.d:0 "The Frisian people, not too different from our own, have been loyal subjects throughout the ages. East Frisia, a significant Frisian holding just to our southwest on the coast of the North Sea, is a wonderful friend, and supporter of the Danish crown."
+ flavor_kk.FRISIANCOMMUNITIES1:0 "Worthy friends, indeed."
+ 
+ flavor_kk.55.t:0 "Frisian Fishing Rights"
+ flavor_kk.55.d:0 "With Schlewig under our control, we now find ourselves coming into an abundance of fisheries in the region of North Frisia, on the western Schlewig coast. The North Frisians of these hamlets have, for centuries, fished the great North Sea and made an abundant catch available to all in the region. The Frisians of this area have access to advantageous charters, granted to them centuries ago and still held to this day, which aid their ability to bring in a large catch independent of outside meddling. This, of course, profits the crown tremendously."
+ flavor_kk.FRISIANFISHINGRIGHTS:0 "What a catch!"
+ 
+ flavor_kk.56.t:0 "Teutonic Holdings"
+ flavor_kk.56.d:0 "Neumark, our eastern holding, was traditionally under the control of the Teutonic Order. Finding themselves falling upon difficult financial times, however, they have offered to sell off many of the local holdings that have been theirs for centuries to us. While this would cost a pretty penny, there is little doubt that control over these holdings would bring great profit and abundance to our eastern territories."
+ flavor_kk.BRANDENBURGTEUTONIC1:0 "At long last!"
+ flavor_kk.BRANDENBURGTEUTONIC2:0 "It is simply too expensive!"
+ 
+ flavor_kk.57.t:0 "Noble Timber Rights"
+ flavor_kk.57.d:0 "Brandenburg is home to some of the richest forests in all of central Europe. The nobles of our realm, as they often do, have cooked up a scheme for their benefit. Wishing to increase their control over their tenants, they desire a special treaty from the crown, which would enable them to cut away at these old forests of ours, in order to increase their own power by use of the timber. In return for this treaty, the nobles offer to harshly oppress their own tenants, promising us even higher yields in produce than we are used to. While this will likely add some difficulty in constructing works in the region, and will cause animosity among the populace, there is no doubt that such an agreement would be profitable to us."
+ flavor_kk.BRANDENBURGNOBLETIMBER1:0 "The nobility will have their wish granted."
+ flavor_kk.BRANDENBURGNOBLETIMBER2:0 "We will not risk angering the commoners."
+ 
+ wumpus_jews_in_government:0 "Jews in Government"
+ wumpus_humanist_mercenaries:0 "Foreign Mercenaries"
+ wumpus_subdued_ireland:0 "Subdued Ireland"
+ wumpus_hanseatic_lubeck:0 "Secured Lubeck"
+ wumpus_hanseatic_hamburg:0 "Secured Hamburg"
+ wumpus_hanseatic_bremen:0 "Secured Bremen"
+ wumpus_frisian_fishing_rights:0 "Frisian Fishing Rights"
+ wumpus_recently_purchased_teutonic_holdings:0 "Recent Purchase"
+ wumpus_noble_timber_rights:0 "Noble Timber Rights"
+ wumpus_tooltip_bb_albert:0 "We will inherit Saxony in roughly 5 years if we can place our ruler on their throne."

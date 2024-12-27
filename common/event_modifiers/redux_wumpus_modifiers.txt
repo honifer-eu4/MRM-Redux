@@ -50,7 +50,7 @@ centralized_italian_republic_modifier = {
 
 decentralized_italian_republic_modifier = {
 	global_autonomy = 0.1
-	development_cost = -0.025
+	development_cost = -0.05
 	governing_capacity_modifier = 0.1
 }
 
@@ -123,4 +123,48 @@ wumpus_mor_fez_holy_city = {
 
 edict_of_expulsion = {
 	prestige_decay = -0.01
+}
+
+wumpus_jews_in_government = {
+	idea_cost = -0.05
+	global_tax_modifier = 0.1
+	trade_efficiency = 0.1
+	tolerance_heretic = 1
+	tolerance_heathen = 1
+	yearly_corruption = 0.1
+	stability_cost_modifier = 0.2
+}
+
+wumpus_humanist_mercenaries = {
+	mercenary_manpower = 0.15
+}
+
+wumpus_subdued_ireland = {
+	prestige_decay = -0.01
+}
+
+wumpus_hanseatic_lubeck = {
+	trade_efficiency = 0.1
+}
+
+wumpus_hanseatic_hamburg = {
+	trade_efficiency = 0.1
+}
+
+wumpus_hanseatic_bremen = {
+	trade_efficiency = 0.1
+}
+
+wumpus_frisian_fishing_rights = {
+	trade_goods_size = 3
+}
+
+wumpus_recently_purchased_teutonic_holdings = {
+	local_development_cost_modifier = 0.05
+}
+
+wumpus_noble_timber_rights = {
+	trade_goods_size = 2
+	local_unrest = 3
+	local_build_cost = 0.1
 }

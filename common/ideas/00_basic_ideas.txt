@@ -685,7 +685,7 @@ defensive_ideas = {
 		naval_tradition_from_battle = 0.5
 	}
 	military_drill = {
-		land_morale = 0.15
+		land_morale = 0.1
 		drill_gain_modifier = 0.33
 	}
 	improved_manuever = {
