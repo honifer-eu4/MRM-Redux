@@ -1402,6 +1402,7 @@ portuguese_monarchy_reform = {
 		naval_forcelimit_modifier = 0.2
 		global_tax_modifier = 0.1
 		sailors_recovery_speed = 0.2
+		allowed_marine_fraction = 0.2
 	}
 	ai = {
 		factor = 1
@@ -1423,6 +1424,7 @@ greater_portuguese_monarchy_reform = {
 		treasure_fleet_income = 0.1
 		naval_forcelimit_modifier = 0.2
 		sailors_recovery_speed = 0.2
+		allowed_marine_fraction = 0.3
 		sunk_ship_morale_hit_recieved = -0.25
 		artillery_fire = 0.25
 		artillery_cost = -0.1

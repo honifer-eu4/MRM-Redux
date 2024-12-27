@@ -3887,6 +3887,7 @@ por_first_circumnavigation_modifier = {
 
 por_elite_marines_modifier = {
 	discipline = 0.05
+	morale_damage_received = -0.1
 	is_marine_modifier = yes 
 }
 por_minas_gerais = {
