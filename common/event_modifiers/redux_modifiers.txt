@@ -16,10 +16,6 @@ mrm_colonist_2 = {
 	colonists = 1
 }
 
-mrm_colonist_3 = {
-	colonists = 1
-}
-
 mercantilism_priv_cooldown = {
 	
 }
@@ -46,7 +42,7 @@ redux_estate_church_missions_mod = {
 	religion = yes
 }
 
-redux_estate_burghers_desert_oases_mod = {
+redux_estate_burghers_caravanserai_mod = {
 	local_development_cost = -0.1
 }
 

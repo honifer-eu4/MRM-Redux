@@ -566,25 +566,6 @@ tatar_missions_slot_2 = {
 			}
 		}
 	}
-
-shy_restore_mongol_empire = {
-	icon = mission_asian_city 
-	provinces_to_highlight = {
-		region = central_asia_region
-		NOT = {
-			country_or_non_sovereign_subject_holds = ROOT
-		}
-	}
-	trigger = {
-		tag = BUK
-		central_asia_region = {
-			type = all
-			country_or_non_sovereign_subject_holds = ROOT
-		}
-	}
-	effect = {
-		
-	}
 }
 
 tatar_missions_3 = {
@@ -681,6 +662,7 @@ tatar_missions_3 = {
 			}
 		}
 	}
+
 	mission_conquer_central_asia = {
 		icon = mission_arabian_fort
 		required_missions = { mission_conquer_samarkand }
@@ -718,6 +700,7 @@ tatar_missions_3 = {
 			}
 		}
 	}
+
 	mission_conquer_persia_tatars = {
 		icon = mission_persian_soldiers
 		required_missions = { mission_conquer_central_asia }
@@ -854,6 +837,28 @@ tatar_missions_3 = {
 			add_country_modifier = {
 				name = "silk_road_controlled"
 				duration = 7300
+			}
+		}
+	}
+
+	shy_restore_the_silk_road = {
+		icon = mission_asian_city 
+		provinces_to_highlight = {
+			region = central_asia_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			tag = BUK
+			central_asia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			unlock_estate_privilege = {
+				estate_privilege = redux_estate_burghers_caravanserai
 			}
 		}
 	}

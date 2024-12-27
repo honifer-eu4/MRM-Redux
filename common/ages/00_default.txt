@@ -376,12 +376,10 @@ age_of_reformation = {
 			}
 			effect = {
 				on_age_ability_taken = { age = age_of_reformation }
-				add_country_modifier = {
-					name = "mrm_colonist_3"
-				}
 			}
 			modifier = {
 				num_of_age_rewards = 1
+				colonists = 1
 			}
 			ai_will_do = {
 				factor = 0
@@ -506,6 +504,7 @@ age_of_reformation = {
 				OR = {
 					culture_group = germanic
 					culture_group = south_germanic
+				}
 
 			}
 			effect = { 

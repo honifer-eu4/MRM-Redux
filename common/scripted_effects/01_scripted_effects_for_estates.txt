@@ -1057,6 +1057,18 @@ on_province_religion_converted_estate_privileges_effect = {
 	}
 	if = {
 		limit = {
+			has_terrain = jungle
+			owner = {
+				has_estate_privilege = redux_estate_church_missions
+			}
+		}
+		add_province_modifier = {
+			name = redux_estate_church_missions_mod
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
 			owner = {
 				has_estate_privilege = estate_brahmins_development_of_temples
 			}
@@ -1869,6 +1881,18 @@ on_province_owner_change_estate_privileges_effect = {
 		}
 		add_province_modifier = {
 			name = ARB_estate_burghers_desert
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_terrain = desert
+			owner = {
+				has_estate_privilege = redux_estate_burghers_caravanserai
+			}
+		}
+		add_province_modifier = {
+			name = redux_estate_burghers_caravanserai_mod
 			duration = -1
 		}
 	}

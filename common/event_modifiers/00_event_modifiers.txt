@@ -1847,6 +1847,11 @@ granary_of_the_mediterranean = {
 	trade_goods_size = 2.0
 }
 
+redux_port_wine_vineyards = {
+	trade_goods_size = 2.0
+	province_trade_power_modifier = 0.25
+}
+
 ven_murano_glass_industry = {
 	trade_goods_size = 2.0
 	mr_guilds_influence = 0.02

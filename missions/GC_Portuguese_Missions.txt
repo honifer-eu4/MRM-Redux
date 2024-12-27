@@ -447,7 +447,10 @@ gc_por_2_b = {
 				is_strongest_trade_power = ROOT
 			}
 			1293 = {
-				is_strongest_trade_power = ROOT
+				trade_share = {
+					country = ROOT
+					share > 30
+				}
 			}
 		}
 		effect = {
@@ -1652,10 +1655,7 @@ gc_por_5_continued = {
 			trade_goods = wine
 			NOT = { owned_by = ROOT }
 			NOT = {
-				OR = {
-					has_building = workshop
-					has_building = counting_house
-				}
+				has_building = farm_estate
 			}
 			has_discovered = ROOT
 		}
@@ -1663,36 +1663,39 @@ gc_por_5_continued = {
 		trigger = {
 			OR = {
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 10
+					value = 4
 					trade_goods = wine
-					OR = {
-						has_building = workshop
-						has_building = counting_house
-					}
+					has_building = farm_estate
 				}
-				trading_bonus = {
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 4
 					trade_goods = wine
-					value = yes
-				}
-				production_leader = {
-					trade_goods = wine
+					has_building = workshop
+					base_production > 8
+					development > 20
 				}
 			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = "por_wine_monopolies"
-				duration = 7300
+			change_price = {
+				trade_goods = wine
+				key = PORTUGAL_PORT_WINE
+				value = 0.1
+				duration = 14600
 			}
-			
 			if = { 
 				limit = { has_dlc = "Domination" }
 				custom_tooltip = por_every_wine_prov_tt
 				tooltip = { add_base_production = 1 } 
 				hidden_effect = {
 					every_owned_province = {
-						limit = { trade_goods = wine } 
-						add_base_production = 1 
+						limit = {
+							trade_good = wine
+						}
+						add_province_modifier = {
+							name = redux_port_wine_vineyards
+							duration = -1 
+						}
 					}
 				}
 			}
