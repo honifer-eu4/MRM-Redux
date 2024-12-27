@@ -16,6 +16,10 @@ mrm_colonist_2 = {
 	colonists = 1
 }
 
+mrm_colonist_3 = {
+	colonists = 1
+}
+
 mercantilism_priv_cooldown = {
 	
 }
@@ -35,6 +39,15 @@ redux_destroy_estates_clergy_cooldown = {
 redux_estate_church_development_of_temples_mod = {
 	local_development_cost = -0.1
 	religion = yes
+}
+
+redux_estate_church_missions_mod = {
+	local_development_cost = -0.1
+	religion = yes
+}
+
+redux_estate_burghers_desert_oases_mod = {
+	local_development_cost = -0.1
 }
 
 redux_estate_brahmins_development_of_temples_mod = {

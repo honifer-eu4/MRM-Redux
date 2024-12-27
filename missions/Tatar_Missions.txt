@@ -566,6 +566,25 @@ tatar_missions_slot_2 = {
 			}
 		}
 	}
+
+shy_restore_mongol_empire = {
+	icon = mission_asian_city 
+	provinces_to_highlight = {
+		region = central_asia_region
+		NOT = {
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	trigger = {
+		tag = BUK
+		central_asia_region = {
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	effect = {
+		
+	}
 }
 
 tatar_missions_3 = {

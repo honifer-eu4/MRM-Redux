@@ -367,11 +367,18 @@ age_of_reformation = {
 	
 	
 	abilities = {	
-		ab_allow_religion_enforced = {
+		ab_extra_colonist = {
+			allow = {
+				OR = {
+                	ai = no
+					is_colonial_nation = no
+				}
+			}
 			effect = {
 				on_age_ability_taken = { age = age_of_reformation }
-				custom_tooltip = religion_enforced_edict
-				set_country_flag = religion_enforced_edict
+				add_country_modifier = {
+					name = "mrm_colonist_3"
+				}
 			}
 			modifier = {
 				num_of_age_rewards = 1
@@ -494,15 +501,19 @@ age_of_reformation = {
 				factor = 100
 			}
 		}
-		ab_mughal_artillery = {
+		ab_age_of_the_landsknechts = {
 			allow = {
-				tag = MUG
+				OR = {
+					culture_group = germanic
+					culture_group = south_germanic
+
 			}
 			effect = { 
 				on_age_ability_taken = { age = age_of_reformation }
 			}
 			modifier = {
-				artillery_power = 0.15
+				shock_damage_received = -0.2
+				mercenary_cost = -0.15
 				num_of_age_rewards = 1
 			}
 			ai_will_do = {
