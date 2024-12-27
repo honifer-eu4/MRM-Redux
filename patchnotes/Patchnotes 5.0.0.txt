@@ -7,6 +7,7 @@ Integrated new Wumpus events, featuring new flavor/buffs for Denmark, Brandenbur
 ############# Country-specific ###############
 
 Brandenburg:
+    "Renovate Berlin" mission now only requires 15 development instead of 25.
     Starting ruler buffed to a 4/4/4.
 
 ############### Idea groups ##################
