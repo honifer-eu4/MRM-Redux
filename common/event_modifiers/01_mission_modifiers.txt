@@ -3904,8 +3904,8 @@ por_houses_of_trade = {
 }
 
 por_arts_and_letters = {
-	advisor_cost = -0.1
-	technology_cost = -0.1
+	advisor_cost = -0.15
+	technology_cost = -0.05
 }
 
 por_triangle_trade_modifier = {

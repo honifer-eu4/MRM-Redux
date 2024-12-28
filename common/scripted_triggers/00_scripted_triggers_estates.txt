@@ -55,6 +55,7 @@ has_exempt_from_seize_land_for_estate_nobles = {
 		has_estate_privilege = estate_nobles_english_villeinage
 		#Prussia's privilege
 		has_estate_privilege = estate_nobles_consolidated_noble_contracts
+		has_estate_privilege = redux_estate_nobles_apex
 	}
 }
 has_exempt_from_seize_land_for_estate_brahmins = {
