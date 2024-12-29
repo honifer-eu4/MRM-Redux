@@ -5,6 +5,7 @@ Notes: This changelog will mostly be covering changes that are not obvious in th
 ########################### General ###########################
 
 All content relating to East Asia, Indochina, Oceania, Alaska, and California has been removed from the game. This includes provinces, tags, events, missions, and more.
+Added new Start Dates "Pax Europa" and "Solus Europa", allowing the removal of India and Africa (with the option to respawn them for reslots).
 Game Rules added to the game, automatically blocking banned mechanics such as Enforce Peace and GP Interventions. These Game Rules can be turned off through Ming decisions by the host.
 Missions/content for most non-playable tags removed in order to reduce bugs and increase game performance. 
 Most North American natives/native content (besides Mexico) has been removed from the game and replaced with uncolonized provinces.
