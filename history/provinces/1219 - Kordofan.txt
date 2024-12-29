@@ -17,3 +17,9 @@ discovered_by = NUB
 is_city = yes
 discovered_by = ETH
 trade_goods = slaves
+
+1444.11.12 = {
+    owner = MNG
+    controller = MNG
+    add_core = MNG
+}

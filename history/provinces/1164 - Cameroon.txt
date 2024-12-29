@@ -22,3 +22,7 @@ discovered_by = sub_saharan
 	controller = CMO
 	add_core = CMO
 }
+1444.11.12 = {
+    owner = ---
+    controller = ---
+}
