@@ -80,7 +80,7 @@
  PAX_EUROPA:0 "Pax Europa"
  PAX_EUROPA_DESC:0 "For a game with less players, focused on Europe. India is off limits and spawnable via Ming decisions for reslots."
  SOLUS_EUROPA:0 "Solus Europa"
- SOLUS_EUROPA_DESC:0 "For a game with only Europe, Africa, and the Middle East as playable nations. Most of Sub-Saharan Africa is removed."
+ SOLUS_EUROPA_DESC:0 "For a game with only Europe, North Africa, and the Middle East as playable nations. Most of Sub-Saharan Africa is removed."
 
  redux_sleeping_giant:0 "The Sleeping Giant"
  desc_redux_sleeping_giant:0 "Zzzzzzzzzzzzzzzzzzzzzz..."

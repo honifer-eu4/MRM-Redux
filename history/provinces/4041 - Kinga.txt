@@ -19,3 +19,9 @@ discovered_by = central_african
 	controller = TBK
 	add_core = TBK
 }
+
+1444.11.12 = {
+    owner = MNG
+    controller = MNG
+    add_core = MNG
+}

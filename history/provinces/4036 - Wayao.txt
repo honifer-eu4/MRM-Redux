@@ -19,10 +19,8 @@ discovered_by = central_african
 	controller = MRA
 	add_core = MRA
 }
-1710.1.1 = { discovered_by = OMA }
-1730.1.1 = {
-	owner = MKU
-	controller = MKU
-	add_core = MKU
-	trade_goods = ivory
+1444.11.12 = {
+    owner = MNG
+    controller = MNG
+    add_core = MNG
 }

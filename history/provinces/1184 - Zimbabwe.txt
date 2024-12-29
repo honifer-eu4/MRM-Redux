@@ -16,3 +16,8 @@ discovered_by = east_african
 discovered_by = central_african
 extra_cost = 8
 center_of_trade = 1
+1444.11.12 = {
+    owner = MNG
+    controller = MNG
+    add_core = MNG
+}

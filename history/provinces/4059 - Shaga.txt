@@ -18,3 +18,8 @@ capital = "Shaga"
 	controller = TNZ
 	add_core = TNZ
 }
+1444.11.12 = {
+    owner = MNG
+    controller = MNG
+    add_core = MNG
+}

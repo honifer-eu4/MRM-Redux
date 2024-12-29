@@ -1,0 +1,22 @@
+#1185 - Uteve
+
+owner = RZW
+controller = RZW
+add_core = RZW
+culture = shona
+religion = shamanism
+capital = "Khami"
+is_city = yes
+base_manpower = 1
+trade_goods = gold
+hre = no
+base_tax = 3 
+base_production = 3
+add_local_autonomy = 50
+discovered_by = east_african
+discovered_by = central_african
+1444.11.12 = {
+    owner = MNG
+    controller = MNG
+    add_core = MNG
+}
