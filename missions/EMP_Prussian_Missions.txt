@@ -36,18 +36,14 @@ emp_bra_pru_1 = {
 		provinces_to_highlight = {
 			province_id = 50
 			OR = {
-				has_tax_building_trigger = no
-				has_production_building_trigger = no
-				NOT = { development = 25 }
+				NOT = { development = 15 }
 				NOT = { owned_by = ROOT }
 			}
 		}
 		trigger = {
 			50 = {
 				owned_by = ROOT
-				development = 25
-				has_tax_building_trigger = yes
-				has_production_building_trigger = yes
+				development = 15
 			}
 		}
 		effect = {
@@ -60,7 +56,6 @@ emp_bra_pru_1 = {
 					add_province_modifier = {
 						name = pru_palace_of_berlin_modifier
 						duration = -1 
-						desc = until_its_sieged_desc
 					}
 				}
 			}

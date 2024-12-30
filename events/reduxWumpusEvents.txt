@@ -1026,6 +1026,9 @@ country_event = {		#ReligiousIdeasJewishExpulsion
 				has_country_modifier = edict_of_expulsion
 			}
 			full_idea_group = religious_ideas
+			NOT = {
+				full_idea_group = humanist_ideas
+			}
 			OR = {
 				AND = {
 					owns = 109
@@ -1801,6 +1804,9 @@ country_event = {		#ReligiousIdeasJewishExpulsionNew
 	
 	trigger = {
 		AND = {
+			NOT = {
+				full_idea_group = humanist_ideas
+			}
 			has_country_modifier = edict_of_expulsion
 			full_idea_group = religious_ideas
 			OR = {
@@ -1960,5 +1966,731 @@ country_event = {		#ReligiousIdeasJewishExpulsionNew
 			}
 		}
 		add_years_of_income = 0.25
+	}
+}
+
+country_event = {		#HumanistIdeasJewsInGovernment
+	id = flavor_kk.41
+	title = "flavor_kk.41.t"
+	desc = "flavor_kk.41.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = no
+	
+	trigger = {
+		NOT = {
+			has_country_modifier = edict_of_expulsion
+		}
+		NOT = {
+			has_country_modifier = wumpus_jews_in_government
+		}
+		NOT = {
+			full_idea_group = religious_ideas
+		}
+		AND = {
+			full_idea_group = humanist_ideas
+			OR = {
+				AND = {
+					owns = 109
+					109 = {
+						has_province_modifier = influential_jewish_minority
+					}
+				}
+				AND = {
+					owns = 112
+					112 = {
+						has_province_modifier = influential_jewish_minority
+					}
+				}
+				AND = {
+					owns = 125
+					125 = {
+						has_province_modifier = influential_jewish_minority
+					}
+				}
+				AND = {
+					owns = 151
+					151 = {
+						has_province_modifier = influential_jewish_minority
+					}
+				}
+				AND = {
+					owns = 153
+					153 = {
+						has_province_modifier = influential_jewish_minority
+					}
+				}
+				AND = {
+					owns = 219
+					219 = {
+						has_province_modifier = influential_jewish_minority
+					}
+				}
+				AND = {
+					owns = 257
+					257 = {
+						has_province_modifier = influential_jewish_minority
+					}
+				}
+				AND = {
+					owns = 260
+					260 = {
+						has_province_modifier = influential_jewish_minority
+					}
+				}
+				AND = {
+					owns = 280
+					280 = {
+						has_province_modifier = influential_jewish_minority
+					}
+				}
+				AND = {
+					owns = 1876
+					1876 = {
+						has_province_modifier = influential_jewish_minority
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = "flavor_kk.HUMANISTJEWS1"
+		add_stability = -1
+		add_country_modifier = {
+				name = wumpus_jews_in_government
+				duration = -1
+				hidden = no
+		}
+	}
+
+	option = {
+		name = "flavor_kk.HUMANISTJEWS2"
+		add_prestige = 10
+	}
+}
+
+country_event = {		#HumanistIdeasJewishTreasurer
+	id = flavor_kk.42
+	title = "flavor_kk.42.t"
+	desc = "flavor_kk.42.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = no
+	
+	trigger = {
+			has_country_modifier = wumpus_jews_in_government
+		}
+
+	mean_time_to_happen = {
+		months = 900
+	}
+
+	option = {
+		name = "flavor_kk.HUMANISTJEWSADM1"
+		define_advisor = {
+			type = treasurer
+			skill = 3
+			cost_multiplier = 0.5
+			religion = jewish
+		}
+	}
+}
+
+country_event = {		#HumanistIdeasJewishMint
+	id = flavor_kk.43
+	title = "flavor_kk.43.t"
+	desc = "flavor_kk.43.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = no
+	
+	trigger = {
+			has_country_modifier = wumpus_jews_in_government
+		}
+
+	mean_time_to_happen = {
+		months = 900
+	}
+
+	option = {
+		name = "flavor_kk.HUMANISTJEWSADM2"
+		define_advisor = {
+			type = master_of_mint
+			skill = 3
+			cost_multiplier = 0.5
+			religion = jewish
+		}
+	}
+}
+
+country_event = {		#HumanistIdeasJewishTrader
+	id = flavor_kk.44
+	title = "flavor_kk.44.t"
+	desc = "flavor_kk.44.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = no
+	
+	trigger = {
+			has_country_modifier = wumpus_jews_in_government
+		}
+
+	mean_time_to_happen = {
+		months = 900
+	}
+
+	option = {
+		name = "flavor_kk.HUMANISTJEWSDIP1"
+		define_advisor = {
+			type = trader
+			skill = 3
+			cost_multiplier = 0.5
+			religion = jewish
+		}
+	}
+}
+
+country_event = {		#HumanistIdeasForeignMercenaries
+	id = flavor_kk.45
+	title = "flavor_kk.45.t"
+	desc = "flavor_kk.45.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = no
+	
+	trigger = {
+			full_idea_group = humanist_ideas
+			NOT = {
+				has_country_modifier = wumpus_humanist_mercenaries
+			}
+		}
+
+	mean_time_to_happen = {
+		months = 18250
+	}
+
+	option = {
+		name = "flavor_kk.HUMANISTFOREIGNMERCS1"
+		add_country_modifier = {
+				name = wumpus_humanist_mercenaries
+				duration = 3650
+				hidden = no
+		}
+	}
+}
+
+country_event = {		#IrelandRemoveModifiersFix
+	id = flavor_kk.46
+	title = "flavor_kk.46.t"
+	desc = "flavor_kk.46.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = no
+	
+	trigger = {
+			NOT = {
+				tag = ENG
+			}
+			NOT = {
+				tag = GBR
+			}
+			AND = {
+				owns = 4121
+				owns = 372
+				owns = 4380
+				owns = 373
+				owns = 4120
+				owns = 374
+				owns = 4379
+				owns = 4119
+				owns = 376
+				owns = 375
+				owns = 4377
+				owns = 4118
+				owns = 4378
+			}
+			NOT = {
+				has_country_modifier = wumpus_subdued_ireland
+			}
+		}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "flavor_kk.SUBDUEDIRELAND1"
+		4121 = {
+			remove_province_modifier = lordship_of_ireland_modifier
+			remove_province_modifier = crown_of_ireland_modifier
+			remove_province_modifier = act_of_unity_modifier
+		}
+		372 = {
+			remove_province_modifier = lordship_of_ireland_modifier
+			remove_province_modifier = crown_of_ireland_modifier
+			remove_province_modifier = act_of_unity_modifier
+		}
+		4380 = {
+			remove_province_modifier = lordship_of_ireland_modifier
+			remove_province_modifier = crown_of_ireland_modifier
+			remove_province_modifier = act_of_unity_modifier
+		}
+		373 = {
+			remove_province_modifier = lordship_of_ireland_modifier
+			remove_province_modifier = crown_of_ireland_modifier
+			remove_province_modifier = act_of_unity_modifier
+		}
+		4120 = {
+			remove_province_modifier = lordship_of_ireland_modifier
+			remove_province_modifier = crown_of_ireland_modifier
+			remove_province_modifier = act_of_unity_modifier
+		}
+		374 = {
+			remove_province_modifier = lordship_of_ireland_modifier
+			remove_province_modifier = crown_of_ireland_modifier
+			remove_province_modifier = act_of_unity_modifier
+		}
+		4379 = {
+			remove_province_modifier = lordship_of_ireland_modifier
+			remove_province_modifier = crown_of_ireland_modifier
+			remove_province_modifier = act_of_unity_modifier
+		}
+		4119 = {
+			remove_province_modifier = lordship_of_ireland_modifier
+			remove_province_modifier = crown_of_ireland_modifier
+			remove_province_modifier = act_of_unity_modifier
+		}
+		376 = {
+			remove_province_modifier = lordship_of_ireland_modifier
+			remove_province_modifier = crown_of_ireland_modifier
+			remove_province_modifier = act_of_unity_modifier
+		}
+		375 = {
+			remove_province_modifier = lordship_of_ireland_modifier
+			remove_province_modifier = crown_of_ireland_modifier
+			remove_province_modifier = act_of_unity_modifier
+		}
+		4377 = {
+			remove_province_modifier = lordship_of_ireland_modifier
+			remove_province_modifier = crown_of_ireland_modifier
+			remove_province_modifier = act_of_unity_modifier
+		}
+		4118 = {
+			remove_province_modifier = lordship_of_ireland_modifier
+			remove_province_modifier = crown_of_ireland_modifier
+			remove_province_modifier = act_of_unity_modifier
+		}
+		4378 = {
+			remove_province_modifier = lordship_of_ireland_modifier
+			remove_province_modifier = crown_of_ireland_modifier
+			remove_province_modifier = act_of_unity_modifier
+		}
+		add_country_modifier = {
+				name = wumpus_subdued_ireland
+				duration = -1
+				hidden = no
+		}
+	}
+}
+
+country_event = {		#BrandenburgFortifyPrignitz
+	id = flavor_kk.47
+	title = "flavor_kk.47.t"
+	desc = "flavor_kk.47.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+			tag = BRA
+			owns = 4786
+		}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = "flavor_kk.BRANDENBURGPRIGNITZ1"
+		add_mil_power = -25
+		4786 = {
+			add_building = fort_15th
+		}
+	}
+
+	option = {
+		name = "flavor_kk.BRANDENBURGPRIGNITZ2"
+		add_prestige = 5
+	}
+}
+
+country_event = {		#BrandenburgSaxonUnion
+	id = flavor_kk.48
+	title = "flavor_kk.48.t"
+	desc = "flavor_kk.48.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+			tag = BRA
+		}
+
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	option = {
+		name = "flavor_kk.BRANDENBURGSAXONYUNION1"
+		custom_tooltip = wumpus_tooltip_bb_albert
+		add_casus_belli = {
+			type = cb_restore_personal_union
+			months = 300
+			target = SAX
+		}
+	}
+}
+
+country_event = {		#BrandenburgSaxonUnionIntegrate
+	id = flavor_kk.49
+	title = "flavor_kk.49.t"
+	desc = "flavor_kk.49.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+			tag = BRA
+			senior_union_with = SAX
+		}
+
+	mean_time_to_happen = {
+		months = 30
+	}
+
+	option = {
+		name = "flavor_kk.BRANDENBURGSAXONYUNION2"
+		inherit = SAX
+	}
+}
+
+country_event = {		#DenmarkBBLubeck
+	id = flavor_kk.50
+	title = "flavor_kk.50.t"
+	desc = "flavor_kk.50.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+			OR = {
+				tag = BRA
+				tag = DAN
+			}
+			45 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = "flavor_kk.HANSEATICLUBECK1"
+		add_country_modifier = {
+				name = wumpus_hanseatic_lubeck
+				duration = 7300
+				hidden = no
+		}
+	}
+}
+
+country_event = {		#DenmarkBBHamburg
+	id = flavor_kk.51
+	title = "flavor_kk.51.t"
+	desc = "flavor_kk.51.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+			OR = {
+				tag = BRA
+				tag = DAN
+			}
+			44 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = "flavor_kk.HANSEATICHAMBURG1"
+		add_country_modifier = {
+				name = wumpus_hanseatic_hamburg
+				duration = 7300
+				hidden = no
+		}
+	}
+}
+
+country_event = {		#DenmarkBBBremen
+	id = flavor_kk.52
+	title = "flavor_kk.52.t"
+	desc = "flavor_kk.52.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+			OR = {
+				tag = BRA
+				tag = DAN
+			}
+			1874 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = "flavor_kk.HANSEATICBREMEN1"
+		add_country_modifier = {
+				name = wumpus_hanseatic_bremen
+				duration = 7300
+				hidden = no
+		}
+	}
+}
+
+country_event = {		#DenmarkRiga
+	id = flavor_kk.53
+	title = "flavor_kk.53.t"
+	desc = "flavor_kk.53.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+			tag = DAN
+			owns = 45
+			owns = 44
+			owns = 1874
+			exists = RIG
+			NOT = {
+				RIG = {
+					is_vassal = yes
+				}
+			}
+		}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "flavor_kk.DENMARKRIGA1"
+		vassalize = RIG
+		add_years_of_income = 0.5
+	}
+}
+
+country_event = {		#DenmarkFrisianCommunitiesEastFrisia
+	id = flavor_kk.54
+	title = "flavor_kk.54.t"
+	desc = "flavor_kk.54.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+			tag = DAN
+			
+		}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "flavor_kk.FRISIANCOMMUNITIES1"
+		EFR = {
+			add_opinion = {
+				who = DAN
+				modifier = supported_independence
+			}
+		}
+	}
+}
+
+country_event = {		#DenmarkFrisianCommunitiesSchleswig
+	id = flavor_kk.55
+	title = "flavor_kk.55.t"
+	desc = "flavor_kk.55.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+			tag = DAN
+			owns = 13
+		}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = "flavor_kk.FRISIANFISHINGRIGHTS"
+		13 = {
+			change_trade_goods = fish
+		}
+		13 = {
+			add_province_modifier = {
+				name = wumpus_frisian_fishing_rights
+				duration = -1
+				hidden = no
+			}
+		}
+	}
+}
+
+country_event = {		#BrandenburgTeutonicHoldings
+	id = flavor_kk.56
+	title = "flavor_kk.56.t"
+	desc = "flavor_kk.56.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+			tag = BRA
+			owns = 2969
+			owns = 49
+			owns = 4747
+			owns = 2995
+		}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "flavor_kk.BRANDENBURGTEUTONIC1"
+		add_treasury = -40
+		2969 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			add_province_modifier = {
+				name = wumpus_recently_purchased_teutonic_holdings
+				duration = 3650
+				hidden = no
+			}
+		}
+		49 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			add_province_modifier = {
+				name = wumpus_recently_purchased_teutonic_holdings
+				duration = 3650
+				hidden = no
+			}
+		}
+		4747 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			add_province_modifier = {
+				name = wumpus_recently_purchased_teutonic_holdings
+				duration = 3650
+				hidden = no
+			}
+		}
+		2995 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			add_province_modifier = {
+				name = wumpus_recently_purchased_teutonic_holdings
+				duration = 3650
+				hidden = no
+			}
+		}
+	}
+
+	option = {
+		name = "flavor_kk.BRANDENBURGTEUTONIC2"
+		add_prestige = 5
+	}
+}
+
+country_event = {		#BrandenburgNobleTimberRights
+	id = flavor_kk.57
+	title = "flavor_kk.57.t"
+	desc = "flavor_kk.57.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+			tag = BRA
+			owns = 51
+			owns = 4748
+			owns = 1759
+		}
+
+	mean_time_to_happen = {
+		months = 36
+	}
+
+	option = {
+		name = "flavor_kk.BRANDENBURGNOBLETIMBER1"
+		51 = {
+			add_province_modifier = {
+				name = wumpus_noble_timber_rights
+				duration = 7300
+				hidden = no
+			}
+		}
+		4748 = {
+			add_province_modifier = {
+				name = wumpus_noble_timber_rights
+				duration = 7300
+				hidden = no
+			}
+		}
+		1759 = {
+			add_province_modifier = {
+				name = wumpus_noble_timber_rights
+				duration = 7300
+				hidden = no
+			}
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 20
+		}
+	}
+
+	option = {
+		name = "flavor_kk.BRANDENBURGNOBLETIMBER2"
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
 	}
 }

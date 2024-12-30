@@ -872,6 +872,7 @@ margraviate_reform = {
 		fort_maintenance_modifier = -0.5
 		defensiveness = 0.2
 		fabricate_claims_cost = -0.25
+		# country_military_power = 1
 	}
 	ai = {
 		factor = 1

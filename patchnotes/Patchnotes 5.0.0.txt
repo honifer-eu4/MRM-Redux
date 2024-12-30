@@ -1,0 +1,17 @@
+MRM Redux Patch 5.0.0:
+
+############# General/Bugfixes ###############
+
+Added the "Solus Europa" start date, an expansion to the Pax Europa start that also removes most of Africa.
+Integrated new Wumpus events, featuring new flavor/buffs for Denmark, Brandenburg, and any nation with Humanist Ideas completed.
+
+############# Country-specific ###############
+
+Brandenburg:
+    "Renovate Berlin" mission now only requires 15 development instead of 25.
+    Starting ruler buffed to a 4/4/4.
+
+############### Idea groups ##################
+
+Defensive:
+    Second idea now gives +10% Morale of Armies instead of +15%.
