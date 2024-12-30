@@ -1852,6 +1852,11 @@ redux_port_wine_vineyards = {
 	province_trade_power_modifier = 0.25
 }
 
+redux_por_supremacy_of_the_crown = {
+	local_development_cost_modifier = -0.1
+	local_governing_cost = -0.25
+}
+
 ven_murano_glass_industry = {
 	trade_goods_size = 2.0
 	mr_guilds_influence = 0.02

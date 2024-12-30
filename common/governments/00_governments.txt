@@ -286,6 +286,7 @@ monarchy = {
 				manrent_reform
 				merchant_arsenal_reform
 				tercios_reform
+				expand_the_fuzileiros
 				expanded_black_army_reform
 				theme_system_reform
 				#1.36
