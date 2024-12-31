@@ -3894,6 +3894,15 @@ por_minas_gerais = {
 	trade_goods_size = 2
 }
 
+por_lessons_from_the_berbers = {
+	land_morale = 0.1
+	mil_tech_cost_modifier = -0.1
+}
+
+por_settling_africa = {
+	global_colonial_growth = 25
+}
+
 redux_por_sebastians_reforms = {
 	reform_progress_growth = 0.3
 	interest = -0.25

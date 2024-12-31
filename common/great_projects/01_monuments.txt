@@ -17364,7 +17364,6 @@ mbanza_kongo = {
 	type = monument
 
 	build_trigger = {
-		culture_group = kongo_group
 		province_is_or_accepts_culture = yes
 	}
 

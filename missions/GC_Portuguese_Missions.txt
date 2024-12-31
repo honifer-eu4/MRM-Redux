@@ -208,7 +208,7 @@ gc_por_1 = {
 		icon = mission_unite_home_region
 		required_missions = { gc_por_build_the_navy }
 		completed_by = 1472.1.1
-		position = 7
+		position = 6
 		provinces_to_highlight = {
 			province_id = 334
 			NOT = { owned_by = ROOT }
@@ -217,7 +217,7 @@ gc_por_1 = {
 		trigger = {
 			ROOT = {
 				army_professionalism > 0.33
-				num_of_marines > 4
+				num_of_marines > 8
 			}
 		}
 		
@@ -227,50 +227,28 @@ gc_por_1 = {
 		}
 	}
 	
-	gc_conquer_the_north_african_coast = {
+	gc_por_lessons_from_the_berbers = {
 		icon = mission_arabian_fort
 		required_missions = { gc_por_portugese_fuzileiros }
 		completed_by = 1488.1.1
-		position = 8
+		position = 7
 		provinces_to_highlight = {
-			area = western_morocco_area
-			NOT = { owned_by = ROOT }
+			province_id = 1132
 		}
 		
 		trigger = {
-			western_morocco_area = {
-				type = all
-				owned_by = ROOT
+			ROOT = {
+				has_won_war_against = {
+					who = MOR
+				}
 			}
+			owns_core_province = 1132
 		}
 		
 		effect = {
-			western_morocco_area = {
-				limit = { 
-					owned_by = ROOT
-				}
-				add_province_modifier = {
-					name = "buffer_zone_commerce"
-					duration = 5475
-				}
-			}
-			northern_morocco_area = {
-				limit = { 
-					owned_by = ROOT
-				}
-				add_province_modifier = {
-					name = "buffer_zone_commerce"
-					duration = 5475
-				}
-			}
-			southern_morocco_area = {
-				limit = { 
-					owned_by = ROOT
-				}
-				add_province_modifier = {
-					name = "buffer_zone_commerce"
-					duration = 5475
-				}
+			add_country_modifier = {
+				name = por_lessons_from_the_berbers
+				duration = 3650
 			}
 		}
 	}
@@ -303,58 +281,54 @@ gc_por_2 = {
 		completed_by = 1445.1.1
 		
 		provinces_to_highlight = {
-			region = guinea_region
 			OR = {
-				is_city = no
-				NOT = { owned_by = ROOT }
+				area = jolof_area
+				area = futa_jallon_area
+				area = manding_area
+				area = tekrur_area
 			}
-			has_discovered = ROOT
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = { 
-			custom_trigger_tooltip = {
-				tooltip = miss_colonize_west_africa
-				guinea_region = {
-					owned_by = ROOT
-					is_city = yes
-				}
+			jolof_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			futa_jallon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			tekrur_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			manding_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
 			}
 		}
 	
 		effect = {
-			create_explorer = {
+			hidden_effect = {
+				niger_region = {
+					discover_country = ROOT 
+				}
+				sahel_region = {
+					discover_country = ROOT 
+				}
+			}
+			create_conquistador = {
 				tradition = 60
 			}
-			niger_region = {
-				discover_country = ROOT 
+			add_country_modifier = {
+				name = por_settling_africa
+				duration = 7300
 			}
 			sahel_region = {
-				discover_country = ROOT 
-			}
-			jolof_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT 
-			}
-			futa_jallon_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT 
-			}
-			tekrur_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT 
-			}
-			manding_area = {
-				limit = {
-					NOT = { is_core = ROOT }
+					NOT = { is_core = MNG }
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT 
@@ -367,37 +341,31 @@ gc_por_2 = {
 		required_missions = { gc_por_colonise_west_africa }
 		provinces_to_highlight = {
 			OR = {
-				area = jolof_area
-				area = futa_jallon_area
-				area = manding_area
-				area = tekrur_area
+				area = baghena_area
+				area = niger_bend_area
+				area = western_sahara_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 
 		trigger = {
-			jolof_area = {
+			baghena_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT 
 			}
-			futa_jallon_area = {
+			niger_bend_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT 
 			}
-			tekrur_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT 
-			}
-			manding_area = {
+			western_sahara_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT 
 			}
 		}
 		effect = {
-			sahel_region = {
+			guinea_region = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { is_core = MNG }
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT 
@@ -506,7 +474,7 @@ gc_por_2_c = {
 		icon = mission_sea_battles
 		required_missions = {}
 		completed_by = 1470.1.1
-		position = 6
+		position = 5
 		trigger = {
 			if = {
 				limit = { ai = no }
@@ -566,7 +534,7 @@ gc_por_2_c = {
 	gc_por_flagship = {
 		icon = mission_launch_a_flagship
 		required_missions = { gc_por_build_the_navy }
-		position = 7
+		position = 6
 		provinces_to_highlight = {
 			province_id = 227
 			NOT = { owned_by = ROOT }
@@ -595,7 +563,7 @@ gc_por_2_c = {
 	dom_portugal_reform_navy = {
 		icon = mission_aragonese_navy
 		required_missions = { gc_por_flagship }
-		position = 8
+		position = 7
 		trigger = {
 			num_of_owned_provinces_with = {
 				has_shipyard_building_trigger = yes 
@@ -675,7 +643,28 @@ gc_por_3_b = {
 				name = "the_unknown_frontier"
 				duration = 5475
 			}
-			guinea_region = {
+			jolof_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT 
+			}
+			futa_jallon_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT 
+			}
+			tekrur_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT 
+			}
+			manding_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -690,12 +679,6 @@ gc_por_3_b = {
 		required_missions = { gc_por_discover_african_coast }
 		completed_by = 1584.1.1
 		
-		provinces_to_highlight = {
-			region = kongo_region
-			NOT = { owned_by = ROOT }
-			has_discovered = ROOT
-		}
-		
 		trigger = { 
 			custom_trigger_tooltip = {
 				tooltip = miss_discover_kongo
@@ -703,25 +686,30 @@ gc_por_3_b = {
 					has_discovered = ROOT
 				}
 			}
-			custom_trigger_tooltip = {	
-				tooltip = miss_colonize_kongo
-				kongo_region = {
-					owned_by = ROOT
-					is_city = yes
-				}
-			}
 		}
 	
 		effect = {
+			add_country_modifier = {
+				name = por_settling_africa
+				duration = 21900
+			}
+			hidden_effect = {
+				kongo_area = {
+					discover_country = ROOT 
+				}
+				coastal_kongo = {
+					discover_country = ROOT 
+				}
+				angola_namibia_area = {
+					discover_country = ROOT 
+				}
+			}
 			kongo_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT 
-			}
-			kongo_area = {
-				discover_country = ROOT 
 			}
 			coastal_kongo = {
 				limit = {
@@ -730,9 +718,7 @@ gc_por_3_b = {
 				}
 				add_permanent_claim = ROOT 
 			}
-			coastal_kongo = {
-				discover_country = ROOT 
-			}
+
 			angola_namibia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -740,8 +726,15 @@ gc_por_3_b = {
 				}
 				add_permanent_claim = ROOT 
 			}
-			angola_namibia_area = {
-				discover_country = ROOT 
+			if = {
+				limit = {
+					1172 = {
+						is_city = no
+					}
+				}
+				create_colony_mission_reward = {
+					province = 1172
+				}
 			}
 		}
 	}
@@ -774,15 +767,8 @@ gc_por_3_b = {
 			}
 		}
 		effect = {
-			kongo_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT 
-			}
-			kongo_region = {
-				discover_country = ROOT 
+			1170 = {
+				change_trade_goods = gold
 			}
 		}
 	}
@@ -1411,7 +1397,7 @@ gc_por_5 = {
 		}
 		
 		trigger = {
-			num_of_marines > 40
+			num_of_marines > 60
 			army_professionalism > 0.50
 			2999 = {
 				country_or_non_sovereign_subject_holds = ROOT 
@@ -1427,8 +1413,8 @@ gc_por_5 = {
 	}
 }
 
-gc_por_3_continued = {
-	slot = 3
+gc_por_4_b = {
+	slot = 4
 	generic = no
 	ai = yes
 	potential_on_load = {
@@ -1446,10 +1432,10 @@ gc_por_3_continued = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-	
+
 	gc_por_portugese_renaissance  = {
 		icon = mission_arts_and_letters
-		position = 8
+		position = 7
 		
 		trigger = {
 			has_institution = renaissance 
@@ -1465,7 +1451,7 @@ gc_por_3_continued = {
 	gc_por_wine_monopolies = {
 		icon = mission_wine_monopolies
 		required_missions = { gc_por_portugese_renaissance }
-		position = 9
+		position = 8
 		
 		provinces_to_highlight = {
 			OR = {
@@ -1556,9 +1542,9 @@ gc_por_3_continued = {
 			custom_tooltip = swe_industrialize_sweden_tt
 		}
 	}
-	gc_por_wine_monopolies = {
+	gc_por_sebastians_reforms = {
 		icon = mission_wine_monopolies
-		required_missions = { gc_por_portugese_renaissance }
+		required_missions = { gc_por_wine_monopolies }
 		position = 9
 		
 		provinces_to_highlight = {
@@ -1566,7 +1552,7 @@ gc_por_3_continued = {
 		}
 		trigger = {
 			owns_core_province = 227
-			is_year > 1549
+			is_year > 1550
 		}
 		effect = {
 			add_country_modifier = {
@@ -1577,31 +1563,30 @@ gc_por_3_continued = {
 	}
 }
 
-gc_por_2_d = {
-	slot = 2
+gc_por_3_c = {
+	slot = 3
 	generic = no
 	ai = yes
 	potential_on_load = {
 		OR = {
-			has_dlc = "Domination" 
 			has_dlc = "Golden Century"
+			has_dlc = "Domination"
 		}
 	}
 	potential = {
 		OR = {
-			has_dlc = "Domination" 
 			has_dlc = "Golden Century"
+			has_dlc = "Domination"
 		}
 		tag = POR
 		NOT = { map_setup = map_setup_random }
-		is_random_new_world = no
 	}
 	has_country_shield = yes
-
+	
 	gc_por_call_cortes = {
 		icon = mission_wine_monopolies
 		required_missions = { gc_por_portugese_renaissance }
-		position = 9
+		position = 8
 		
 		trigger = {
 			ROOT = {
@@ -1633,8 +1618,8 @@ gc_por_2_d = {
 	}
 }
 
-gc_por_4_c = {
-	slot = 4
+gc_por_5_b = {
+	slot = 5
 	generic = no
 	ai = yes
 	potential_on_load = {
@@ -1656,7 +1641,7 @@ gc_por_4_c = {
 	gc_por_hegemon_of_the_south_atlantic = {
 		icon = mission_great_trading_houses
 		required_missions = { gc_por_portugese_renaissance }
-		position = 9
+		position = 8
 		provinces_to_highlight = {
 			province_id = 1293
 		}
@@ -1681,6 +1666,135 @@ gc_por_4_c = {
 				name = "por_controls_the_south_atlantic"
 				duration = -1
 			}
+		}
+	}
+}
+
+gc_por_2_d = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential_on_load = {
+		OR = {
+			has_dlc = "Domination" 
+			has_dlc = "Golden Century"
+		}
+	}
+	potential = {
+		OR = {
+			has_dlc = "Domination" 
+			has_dlc = "Golden Century"
+		}
+		tag = POR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	gc_por_settlement_of_the_coast = {
+		icon = mission_great_trading_houses
+		position = 7
+		provinces_to_highlight = {
+			province_id = 1293
+		}
+		trigger = {
+			ROOT = {
+				has_advisor_of_type_and_level = {
+					type = inquisitor
+					skill = 2
+				}
+			}
+		}
+		effect = {
+			
+		}
+	}
+	gc_por_dominion_over_sahel = {
+		icon = mission_great_trading_houses
+		required_missions = { gc_por_settlement_of_the_coast }
+		position = 8
+		provinces_to_highlight = {
+			province_id = 1293
+		}
+		
+		trigger = {
+
+		}
+		effect = {
+
+		}
+	}
+}
+
+gc_por_1_b = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential_on_load = {
+		OR = {
+			has_dlc = "Domination" 
+			has_dlc = "Golden Century"
+		}
+	}
+	potential = {
+		OR = {
+			has_dlc = "Domination" 
+			has_dlc = "Golden Century"
+		}
+		tag = POR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	gc_por_conversion_of_the_congo = {
+		icon = mission_great_trading_houses
+		required_missions = { gc_por_settlement_of_the_coast }
+		position = 9
+		provinces_to_highlight = {
+			province_id = 1293
+		}
+		
+		trigger = {
+
+		}
+		effect = {
+
+		}
+	}
+}
+
+gc_por_3_d = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential_on_load = {
+		OR = {
+			has_dlc = "Domination" 
+			has_dlc = "Golden Century"
+		}
+	}
+	potential = {
+		OR = {
+			has_dlc = "Domination" 
+			has_dlc = "Golden Century"
+		}
+		tag = POR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	gc_por_growth_of_the_cape_colony = {
+		icon = mission_great_trading_houses
+		required_missions = { gc_por_settlement_of_the_coast }
+		position = 8
+		provinces_to_highlight = {
+			province_id = 1293
+		}
+		
+		trigger = {
+
+		}
+		effect = {
+
 		}
 	}
 }
