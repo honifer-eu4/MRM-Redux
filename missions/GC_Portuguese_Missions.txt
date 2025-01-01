@@ -1698,10 +1698,7 @@ gc_por_2_d = {
 		}
 		trigger = {
 			ROOT = {
-				has_advisor_of_type_and_level = {
-					type = inquisitor
-					skill = 2
-				}
+				inquisitor = 3
 			}
 		}
 		effect = {
