@@ -590,10 +590,7 @@ emp_ned_slot4_branch = { # Statists
 					desc = emp_ned_strengthen_the_vroedschappen_tt
 					all_owned_province = {
 						region = low_countries_region
-						OR = {
-							has_building = workshop
-							has_building = counting_house
-						}
+						has_production_building_trigger = yes
 					}
 					amount = 5
 				}

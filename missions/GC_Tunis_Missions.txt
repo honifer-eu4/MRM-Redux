@@ -72,7 +72,7 @@ gc_tunis_1 = {
 					province_id = 354
 					OR = {
 						NOT = {	owned_by = ROOT }
-						NOT = { has_building = marketplace }
+						has_trade_building_trigger = no
 					}
 				}
 				AND = {
@@ -87,7 +87,7 @@ gc_tunis_1 = {
 		
 		trigger = {
 			354 = {
-				has_building = marketplace
+				has_trade_building_trigger = yes
 				owned_by = ROOT
 			}
 			owns_core_province = 2448
@@ -796,10 +796,7 @@ gc_tunis_5 = {
 				has_terrain = desert 
 				has_terrain = coastal_desert
 			}
-			AND = {
-				NOT = { has_building = temple }
-				NOT = { has_building = cathedral }
-			}
+			has_tax_building_trigger = no
 		}
 		trigger = {
 			num_of_owned_provinces_with = {
@@ -809,10 +806,7 @@ gc_tunis_5 = {
 					has_terrain = desert
 					has_terrain = coastal_desert
 				}
-				OR = {
-					has_building = temple
-					has_building = cathedral
-				}
+				has_tax_building_trigger = yes
 			}
 		}
 		effect = {
@@ -912,12 +906,7 @@ gc_tunis_5 = {
 			province_id = 4566
 			OR = {
 				NOT = { owned_by = ROOT }
-				NOT = {
-					OR = {
-						has_building = temple
-						has_building = cathedral
-					}
-				}
+				has_tax_building_trigger = no
 				NOT = { has_building = university }
 			}
 		}
@@ -925,10 +914,7 @@ gc_tunis_5 = {
 		trigger = {
 			4566 = {
 				owned_by = ROOT
-				OR = {
-					has_building = temple
-					has_building = cathedral
-				}
+				has_tax_building_trigger = yes
 				has_building = university
 			}
 			religious_unity = 1

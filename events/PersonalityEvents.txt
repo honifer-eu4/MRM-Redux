@@ -2384,13 +2384,8 @@ country_event = {
 					OR = {
 						is_capital = yes
 						base_production = 4
-						has_building = workshop
-						has_building = counting_house
-						has_building = tradecompany
-						has_building = plantations
-						has_building = textile
-						has_building = weapons
-						has_building = wharf
+						has_production_building_trigger = yes
+						has_manufactory_trigger = yes
 					}
 				}
 				save_event_target_as = industrious_province_boost

@@ -383,9 +383,7 @@ province_event = {
 			has_building = dock
 			has_building = shipyard
 			has_building = grand_shipyard
-			has_building = marketplace
-			has_building = trade_depot
-			has_building = stock_exchange
+			has_trade_building_trigger = yes
 		}
 		owner = { has_active_debate = yes }
 		is_backing_current_issue = no
@@ -525,8 +523,7 @@ province_event = {
 			has_building = textile
 			has_building = plantations
 			has_building = tradecompany
-			has_building = workshop
-			has_building = counting_house
+			has_production_building_trigger = yes
 			base_production = 8
 		}
 		owner = { has_active_debate = yes }
@@ -1033,8 +1030,7 @@ province_event = {
 			has_building = textile
 			has_building = plantations
 			has_building = tradecompany
-			has_building = workshop
-			has_building = counting_house
+			has_production_building_trigger = yes
 			base_production = 8
 		}
 		owner = { has_active_debate = yes }

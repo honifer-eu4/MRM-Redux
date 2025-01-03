@@ -453,11 +453,7 @@ gc_spain_2_b = {
 				}
 				490 = {
 					country_or_non_sovereign_subject_holds = ROOT
-					OR = {
-						has_building = temple
-						has_building = cathedral
-					}
-				
+					has_tax_building_trigger = yes				
 				}
 			}
 			else = {

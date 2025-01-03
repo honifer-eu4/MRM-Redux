@@ -762,7 +762,7 @@ emp_naples_4 = {
 					province_id = 354
 					OR = {
 						NOT = {	owned_by = ROOT }
-						NOT = { has_building = marketplace }
+						has_trade_building_trigger = no
 					}
 				}
 				AND = {
@@ -777,7 +777,7 @@ emp_naples_4 = {
 		
 		trigger = {
 			354 = {
-				has_building = marketplace
+				has_trade_building_trigger = yes
 				owned_by = ROOT
 			}
 			owns_core_province = 2448

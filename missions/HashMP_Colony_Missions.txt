@@ -444,11 +444,11 @@ colonial_branch_2 = {
 			ai = no 
 			num_of_owned_provinces_with = {
 				value = 10
-				has_building = temple
+				has_tax_building_trigger = yes
 			}
 			num_of_owned_provinces_with = {
 				value = 10
-				has_building = workshop
+				has_production_building_trigger = yes
 			}
 			capital_scope = {
 				has_manufactory_trigger = yes

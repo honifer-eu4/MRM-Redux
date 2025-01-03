@@ -21,10 +21,7 @@ ORM_1 = {
 				has_terrain = desert 
 				has_terrain = coastal_desert
 			}
-			AND = {
-				NOT = { has_building = temple }
-				NOT = { has_building = cathedral }
-			}
+			has_tax_building_trigger = no
 		}
 		trigger = {
 			num_of_owned_provinces_with = {
@@ -34,10 +31,7 @@ ORM_1 = {
 					has_terrain = desert
 					has_terrain = coastal_desert
 				}
-				OR = {
-					has_building = temple
-					has_building = cathedral
-				}
+				has_tax_building_trigger = yes
 			}
 		}
 		effect = {

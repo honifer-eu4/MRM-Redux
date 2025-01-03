@@ -25,10 +25,7 @@ tr_russia_religious_missions = {
 		trigger = {
 			num_of_owned_provinces_with = {
 				value = 20
-				OR = {
-					has_building = temple
-					has_building = cathedral
-				}
+				has_tax_building_trigger = yes
 			}
 		}
 		effect = {

@@ -247,8 +247,7 @@ innovativeness_aspect = {
 			random_owned_province = {
 				limit = {
 					OR = {
-						has_building = temple
-						has_building = cathedral
+						has_tax_building_trigger = yes
 						has_building = university
 					}
 					religion = ROOT

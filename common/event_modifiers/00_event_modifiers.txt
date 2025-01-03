@@ -1852,6 +1852,19 @@ redux_port_wine_vineyards = {
 	province_trade_power_modifier = 0.25
 }
 
+redux_por_settlers = {
+	local_culture_conversion_cost = -0.25
+	local_missionary_strength = 0.03
+}
+
+redux_kongolese_slave_markets = {
+	trade_goods_size_modifier = 0.15
+}
+
+redux_suqutra_supply = {
+	supply_limit = 300
+}
+
 redux_por_supremacy_of_the_crown = {
 	local_development_cost_modifier = -0.1
 	local_governing_cost = -0.25

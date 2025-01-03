@@ -168,18 +168,13 @@ lubeck_missions_1 = {
 			OR = {
 				45 = { 
 					higher_development_than = 6 
-					OR = {
-						has_building = workshop 
-						has_building = counting_house 
-					}
+					has_production_building_trigger = yes
 					development = 25 
 				}
 				6 = {
 					country_or_non_sovereign_subject_holds = ROOT 
-					OR = {
-						has_building = workshop 
-						has_building = counting_house 
-					}
+					has_production_building_trigger = yes
+
 					num_of_times_improved = 5
 				}
 			}
@@ -555,22 +550,16 @@ lubeck_missions_2 = {
 		provinces_to_highlight = {
 			province_id = 45 
 			NOT = {
-				OR = {
-					has_building = marketplace 
-					has_building = trade_depot
-					has_building = stock_exchange
-				}
+				has_trade_building_trigger = yes
 				num_of_times_improved = 4 
 			}
 		}
 		trigger = {
 			45 = {
 				OR = {
-					has_building = marketplace 
-					has_building = trade_depot
-					has_building = stock_exchange
+					has_trade_building_trigger = yes
+					num_of_times_improved = 4 
 				}
-				num_of_times_improved = 4 
 			}
 		}
 		effect = {
@@ -1733,10 +1722,7 @@ lubeck_missions_4 = {
 		position = 7
 		trigger = {
 			capital_scope = {
-				OR = {
-					has_building = workshop
-					has_building = counting_house
-				}
+				has_production_building_trigger = yes
 			}
 			OR = {
 				economic_ideas = 2 
@@ -2083,8 +2069,7 @@ lubeck_missions_5 = {
 				45 = {
 					OR = {
 						has_manufactory_trigger = yes 
-						has_building = workshop 
-						has_building = counting_house 
+						has_production_building_trigger = yes
 					}
 				}
 			}

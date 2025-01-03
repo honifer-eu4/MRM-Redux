@@ -342,7 +342,7 @@ dom_cas_missions_1_b = {
 						province_id = 220
 					}
 					OR = {
-						NOT = { has_building = marketplace }
+						has_trade_building_trigger = no
 						NOT = { owned_by = ROOT }
 					}
 				}
@@ -362,11 +362,11 @@ dom_cas_missions_1_b = {
 				}
 			}
 			213 = {
-				has_building = marketplace
+				has_trade_building_trigger = yes
 				owned_by = ROOT
 			}
 			220 = {
-				has_building = marketplace
+				has_trade_building_trigger = yes
 				owned_by = ROOT
 			}
 			reform_level = 3
@@ -966,10 +966,7 @@ dom_cas_missions_2 = {
 				religion = root 
 				province_has_center_of_trade_of_level = 3
 				base_production = 10
-				OR = {
-					has_building = temple
-					has_building = cathedral
-				}
+				has_tax_building_trigger = yes
 			}
 		}
 		effect = {
@@ -3056,11 +3053,7 @@ dom_cas_missions_4_c = {
 				}
 				490 = {
 					country_or_non_sovereign_subject_holds = ROOT
-					OR = {
-						has_building = temple
-						has_building = cathedral
-					}
-				
+					has_tax_building_trigger = yes
 				}
 			}
 			else = {
@@ -3961,10 +3954,7 @@ dom_cas_missions_5_c = {
 				}
 				484 = {
 					country_or_non_sovereign_subject_holds = ROOT
-					OR = {
-						has_building = workshop
-						has_building = counting_house
-					}
+					has_production_building_trigger = yes
 				}
 			}
 			else = {
