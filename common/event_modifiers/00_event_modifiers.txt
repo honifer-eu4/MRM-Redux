@@ -1852,7 +1852,12 @@ redux_port_wine_vineyards = {
 	province_trade_power_modifier = 0.25
 }
 
-redux_por_settlers = {
+redux_south_african_wine = {
+	trade_goods_size = 1.0
+	local_manpower_modifier = 0.25
+}
+
+redux_por_african_settlers = {
 	local_culture_conversion_cost = -0.25
 	local_missionary_strength = 0.03
 }
@@ -1866,7 +1871,7 @@ redux_suqutra_supply = {
 }
 
 redux_por_supremacy_of_the_crown = {
-	local_development_cost_modifier = -0.1
+	local_development_cost = -0.1
 	local_governing_cost = -0.25
 }
 

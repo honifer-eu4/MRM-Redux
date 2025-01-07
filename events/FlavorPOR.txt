@@ -1065,3 +1065,23 @@ country_event = {
 		add_prestige = 10
 	}
 }
+
+country_event = {
+	id = flavor_por.12
+	title = "flavor_por.EVTNAME12"
+	desc = "flavor_por.EVTDESC12"
+	picture = ADVISOR_eventPicture	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_por.EVTOPTOK"
+		
+		define_advisor = {
+			type = philosopher
+			name = "Garcia de Resende"
+			culture = portugese
+			skill = 3
+			cost_multiplier = 0.25
+		}
+	}
+}

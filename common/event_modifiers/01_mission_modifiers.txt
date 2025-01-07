@@ -3909,6 +3909,9 @@ redux_por_sebastians_reforms = {
 	idea_cost = -0.1
 }
 
+redux_por_triumph_in_africa = {
+	global_autonomy = -0.075
+}
 por_houses_of_trade = {
 	global_trade_power = 0.1
 	trade_efficiency = 0.1
