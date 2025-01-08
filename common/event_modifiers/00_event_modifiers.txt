@@ -1867,7 +1867,7 @@ redux_kongolese_slave_markets = {
 }
 
 redux_suqutra_supply = {
-	supply_limit = 300
+	supply_limit = 50
 }
 
 redux_por_supremacy_of_the_crown = {

@@ -3894,12 +3894,12 @@ por_minas_gerais = {
 	trade_goods_size = 2
 }
 
-por_lessons_from_the_berbers = {
+redux_por_lessons_from_the_berbers = {
 	land_morale = 0.1
 	mil_tech_cost_modifier = -0.1
 }
 
-por_settling_africa = {
+redux_por_settling_africa = {
 	global_colonial_growth = 25
 }
 
@@ -3909,15 +3909,26 @@ redux_por_sebastians_reforms = {
 	idea_cost = -0.1
 }
 
-redux_por_triumph_in_africa = {
-	global_autonomy = -0.075
+redux_lus_conversion_of_the_maghreb = {
+	global_missionary_strength = 0.03
 }
+
+lus_defend_iberia = {
+	interest = -0.5
+	manpower_recovery_speed = 0.2
+	land_morale = 0.1
+}
+
+redux_por_triumph_in_africa = {
+	global_autonomy = -0.05
+}
+
 por_houses_of_trade = {
 	global_trade_power = 0.1
 	trade_efficiency = 0.1
 }
 
-por_controls_the_south_atlantic = {
+redux_por_controls_the_south_atlantic = {
 	trade_steering = 0.2
 }
 
