@@ -13,7 +13,7 @@ country_event = {
 		ROOT = {
 			owns_core_province = 4781
 		}
-		is_year > 1535
+		is_year > 1520
 	}
 
 	mean_time_to_happen = {
@@ -31,6 +31,10 @@ country_event = {
 		4781 = {
 			change_trade_goods = gold
 			center_of_trade = 1
+			add_permanent_province_modifier = {
+				name = witwatersrand_banket
+				duration = -1
+			}
 		}
 	}
 }

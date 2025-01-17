@@ -512,7 +512,10 @@ gbr_rb_canada_group = {
 		position = 7
 		
 		provinces_to_highlight = {
-			colonial_region = colonial_canada
+			OR = {
+				region = canada_region
+				region = hudson_bay_region
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -528,8 +531,10 @@ gbr_rb_canada_group = {
 				tooltip = miss_colonize_canada
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 1
-					colonial_region = colonial_canada
-					is_city = yes
+					OR = {
+						region = canada_region
+						region = hudson_bay_region
+					}
 				}
 			}
 		}
@@ -1539,15 +1544,20 @@ eng_rb_thirteen_colonies_group = {
 		position = 7
 		
 		provinces_to_highlight = {
-			colonial_region = colonial_eastern_america
+			OR = {
+				region = southeast_america_region
+				region = northeast_america_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
 		
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					region = southeast_america_region
+					region = northeast_america_region
+				}
 				value = 15
-				colonial_region = colonial_eastern_america
 				is_city = yes
 			}
 		}

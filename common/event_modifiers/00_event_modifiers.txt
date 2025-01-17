@@ -1867,12 +1867,16 @@ redux_kongolese_slave_markets = {
 }
 
 redux_suqutra_supply = {
-	supply_limit = 50
+	supply_limit = 30
 }
 
 redux_por_supremacy_of_the_crown = {
 	local_development_cost = -0.1
 	local_governing_cost = -0.25
+}
+
+witwatersrand_banket = {
+	trade_goods_size_modifier = 0.5
 }
 
 ven_murano_glass_industry = {

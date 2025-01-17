@@ -251,7 +251,7 @@ por_brazilian_ambitions = {
 		completed_by = 1501.1.1
 		
 		provinces_to_highlight = {
-			colonial_region = colonial_brazil
+			region = brazil_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -259,7 +259,7 @@ por_brazilian_ambitions = {
 		trigger = { 
 			custom_trigger_tooltip = {
 			tooltip = miss_discover_brazil
-				colonial_brazil = {
+				brazil_region = {
 					has_discovered = ROOT
 				}
 			}
@@ -267,7 +267,7 @@ por_brazilian_ambitions = {
 				tooltip = miss_colonize_brazil
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 1
-					colonial_region = colonial_brazil
+					region = brazil_region
 					is_city = yes
 				}
 			}
@@ -290,7 +290,7 @@ por_brazilian_ambitions = {
 		completed_by = 1540.1.1
 		
 		provinces_to_highlight = {
-			colonial_region = colonial_brazil
+			region = brazil_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -298,7 +298,7 @@ por_brazilian_ambitions = {
 		trigger = { 
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 10
-				colonial_region = colonial_brazil
+				region = brazil_region
 				is_city = yes
 			}
 		}

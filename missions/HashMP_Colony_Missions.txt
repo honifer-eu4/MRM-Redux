@@ -22,74 +22,110 @@ colonial_branch_1 = {
 		provinces_to_highlight = {
 			OR = {
 				AND = {
-					colonial_region = colonial_canada
+					OR = {
+						region = canada_region
+						region = hudson_bay_region
+					}
 					ROOT = {
 						capital_scope = {
-							colonial_region = colonial_canada
+							OR = {
+								region = canada_region
+								region = hudson_bay_region
+							}
 						}
 					}
 				}
 				AND = {
-					colonial_region = colonial_eastern_america
+					OR = {
+						region = northeast_america_region
+						region = southeast_america_region
+						region = great_lakes_region
+					}
 					ROOT = {
 						capital_scope = {
-							colonial_region = colonial_eastern_america
+							OR = {
+								region = northeast_america_region
+								region = southeast_america_region
+								region = great_lakes_region
+							}						
 						}
 					}
 				}
 				AND = {
-					colonial_region = colonial_louisiana
+					OR = {
+						region = great_lakes_region
+						region = great_plains_region
+						region = mississippi_region
+					}
 					ROOT = {
 						capital_scope = {
-							colonial_region = colonial_louisiana
+							OR = {
+								region = great_lakes_region
+								region = great_plains_region
+								region = mississippi_region
+							}						
 						}
 					}
 				}
 				AND = {
-					colonial_region = colonial_mexico
+					OR = {
+						region = rio_grande_region
+						region = mexico_region
+						region = central_america_region
+					}
 					ROOT = {
 						capital_scope = {
-							colonial_region = colonial_mexico
+							OR = {
+								region = rio_grande_region
+								region = mexico_region
+								region = central_america_region
+							}						
 						}
 					}
 				}
 				AND = {
-					colonial_region = colonial_the_carribean
+					region = carribeans_region
 					ROOT = {
 						capital_scope = {
-							colonial_region = colonial_the_carribean
+							region = carribeans_region
 						}
 					}
 				}
 				AND = {
-					colonial_region = colonial_peru
+					OR = {
+						region = peru_region
+						region = upper_peru_region
+					}
 					ROOT = {
 						capital_scope = {
-							colonial_region = colonial_peru
+							OR = {
+								region = peru_region
+								region = upper_peru_region
+							}						
 						}
 					}
 				}
 				AND = {
-					colonial_region = colonial_colombia
+					region = colombia_region
 					ROOT = {
 						capital_scope = {
-							colonial_region = colonial_colombia
+							region = colombia_region
 						}
 					}
 				}
 				AND = {
-					colonial_region = colonial_la_plata
+					region = la_plata_region
 					ROOT = {
 						capital_scope = {
-							colonial_region = colonial_la_plata
+							region = la_plata_region
 						}
 					}
 				}
 				AND = {
-					colonial_region = colonial_brazil
+					region = brazil_region
 					ROOT = {
 						capital_scope = {
-							colonial_region = colonial_brazil
+							region = brazil_region
 						}
 					}
 				}
@@ -102,45 +138,83 @@ colonial_branch_1 = {
 		trigger = {
 			if = {
 				limit = {
-					capital_scope = { colonial_region = colonial_canada }
+					capital_scope = { 
+						OR = {
+							region = canada_region
+							region = hudson_bay_region
+						}
+					} 
 				}
-				colonial_canada = {
-					type = all
-					owned_by = ROOT 
-					is_core = ROOT 
+				AND = {
+					canada_region = {
+						type = all
+						owned_by = ROOT 
+						is_core = ROOT 
+					}
+					hudson_bay_region = {
+						type = all
+						owned_by = ROOT 
+						is_core = ROOT 
+					}
 				}
 				NOT = { exists = CAN }
 				NOT = { exists = QUE }
 			}
 			if = {
 				limit = {
-					capital_scope = { colonial_region = colonial_eastern_america }
+					capital_scope = { 
+						OR = {
+							region = northeast_america_region
+							region = southeast_america_region
+							region = great_lakes_region
+						}
+					}
 				}
-				colonial_eastern_america = {
-					type = all
-					owned_by = ROOT 
-					is_core = ROOT 
+				AND = {
+					northeast_america_region = {
+						type = all
+						owned_by = ROOT 
+						is_core = ROOT 
+					}
+					southeast_america_region = {
+						type = all
+						owned_by = ROOT 
+						is_core = ROOT 
+					}
 				}
 				NOT = { exists = USA }
 				NOT = { exists = FLO }
 			}
 			if = {
 				limit = {
-					capital_scope = { colonial_region = colonial_louisiana }
+					capital_scope = { 
+						OR = {
+							region = great_lakes_region
+							region = great_plains_region
+							region = mississippi_region
+						}
+					}
 				}
-				colonial_louisiana = {
-					type = all
-					owned_by = ROOT 
-					is_core = ROOT 
+				AND = {
+					great_plains_region = {
+						type = all
+						owned_by = ROOT 
+						is_core = ROOT 
+					}
+					mississippi_region = {
+						type = all
+						owned_by = ROOT 
+						is_core = ROOT 
+					}
 				}
 				NOT = { exists = LOU }
 				NOT = { exists = TEX }
 			}
 			if = {
 				limit = {
-					capital_scope = { colonial_region = colonial_the_carribean }
+					capital_scope = { region = carribeans_region }
 				}
-				colonial_the_carribean = {
+				carribeans_region = {
 					type = all
 					owned_by = ROOT 
 					is_core = ROOT 
@@ -150,33 +224,63 @@ colonial_branch_1 = {
 			}
 			if = {
 				limit = {
-					capital_scope = { colonial_region = colonial_mexico }
+					capital_scope = {
+						OR = {
+							region = mexico_region
+							region = central_america_region
+							region = rio_grande_region
+						}
+					}
 				}
-				colonial_mexico = {
-					type = all
-					owned_by = ROOT 
-					is_core = ROOT 
+				AND = {
+					mexico_region = {
+						type = all
+						owned_by = ROOT 
+						is_core = ROOT 
+					}
+					rio_grande_region = {
+						type = all
+						owned_by = ROOT 
+						is_core = ROOT 
+					}
+					central_america_region = {
+						type = all
+						owned_by = ROOT 
+						is_core = ROOT 
+					}
 				}
 				NOT = { exists = MEX }
 				NOT = { exists = CAM }
 			}
 			if = {
 				limit = {
-					capital_scope = { colonial_region = colonial_peru }
+					capital_scope = { 
+						OR = {
+							region = upper_peru_region
+							region = peru_region
+						}
+					}
 				}
-				colonial_peru = {
-					type = all
-					owned_by = ROOT 
-					is_core = ROOT 
+				AND = {
+					peru_region = {
+						type = all
+						owned_by = ROOT 
+						is_core = ROOT 
+					}
+					upper_peru_region = {
+						type = all
+						owned_by = ROOT 
+						is_core = ROOT 
+					}
 				}
 				NOT = { exists = PEU }
 				NOT = { exists = BLV }
 			}
 			if = {
 				limit = {
-					capital_scope = { colonial_region = colonial_colombia }
+					capital_scope = { region = colombia_region }
 				}
-				colonial_colombia = {
+				colombia_region = {
 					type = all
 					owned_by = ROOT 
 					is_core = ROOT 
@@ -186,9 +290,9 @@ colonial_branch_1 = {
 			}
 			if = {
 				limit = {
-					capital_scope = { colonial_region = colonial_brazil }
+					capital_scope = { region = brazil_region }
 				}
-				colonial_brazil = {
+				brazil_region = {
 					type = all
 					owned_by = ROOT 
 					is_core = ROOT 
@@ -198,9 +302,9 @@ colonial_branch_1 = {
 			}
 			if = {
 				limit = {
-					capital_scope = { colonial_region = colonial_la_plata }
+					capital_scope = { region = la_plata_region }
 				}
-				colonial_la_plata = {
+				la_plata_region = {
 					type = all
 					owned_by = ROOT 
 					is_core = ROOT 
@@ -213,30 +317,16 @@ colonial_branch_1 = {
 					NOT = { 
 						capital_scope = {
 							OR = {
-								colonial_region = colonial_canada
-								colonial_region = colonial_eastern_america
-								colonial_region = colonial_louisiana
-								colonial_region = colonial_mexico
-								colonial_region = colonial_the_carribean
-								colonial_region = colonial_colombia
-								colonial_region = colonial_peru
-								colonial_region = colonial_brazil
-								colonial_region = colonial_la_plata
+								colonial_region = colonial_north_america
+								colonial_region = colonial_south_america
 							}
 						}
 					}
 				}
 				capital_scope = {
 					OR = {
-						colonial_region = colonial_canada
-						colonial_region = colonial_eastern_america
-						colonial_region = colonial_louisiana
-						colonial_region = colonial_mexico
-						colonial_region = colonial_the_carribean
-						colonial_region = colonial_colombia
-						colonial_region = colonial_peru
-						colonial_region = colonial_brazil
-						colonial_region = colonial_la_plata
+						colonial_region = colonial_north_america
+						colonial_region = colonial_south_america
 					}
 				}		
 			}
@@ -245,55 +335,83 @@ colonial_branch_1 = {
 			country_event = { id = hashmp.1 }
 			if = {
 				limit = { 
-					capital_scope = { colonial_region = colonial_canada }
+					capital_scope = {
+						OR = {
+							region = canada_region
+							region = hudson_bay_region
+						}
+					}
 				}
 				custom_tooltip = hashmp_form_dominion_tt_1
 			}
 			if = {
 				limit = {
-					capital_scope = { colonial_region = colonial_eastern_america }
+					capital_scope = { 
+						OR = {
+							region = great_lakes_region
+							region = northeast_america_region
+							region = southeast_america_region
+						}
+					}
 				}
 				custom_tooltip = hashmp_form_dominion_tt_2
 			}
 			if = {
 				limit = {
-					capital_scope = { colonial_region = colonial_louisiana }
+					capital_scope = { 
+						OR = {
+							region = great_lakes_region
+							region = great_plains_region
+							region = mississippi_region
+						}
+					}
 				}
 				custom_tooltip = hashmp_form_dominion_tt_3
 			}
 			if = {
 				limit = {
-					capital_scope = { colonial_region = colonial_mexico }
+					capital_scope = {			
+						OR = {
+							region = rio_grande_region
+							region = mexico_region
+							region = central_america_region
+						}
+					}
 				}
 				custom_tooltip = hashmp_form_dominion_tt_4
 			}
 			if = {
 				limit = {
-					capital_scope = { colonial_region = colonial_the_carribean }
+					capital_scope = { region = carribeans_region }
 				}
 				custom_tooltip = hashmp_form_dominion_tt_5
 			}
 			if = {
 				limit = {
-					capital_scope = { colonial_region = colonial_colombia }
+					capital_scope = { region = colombia_region }
 				}
 				custom_tooltip = hashmp_form_dominion_tt_6
 			}
 			if = {
 				limit = {
-					capital_scope = { colonial_region = colonial_la_plata }
+					capital_scope = { region = la_plata_region }
 				}
 				custom_tooltip = hashmp_form_dominion_tt_7
 			}
 			if = {
 				limit = {
-					capital_scope = { colonial_region = colonial_peru }
+					capital_scope = { 			
+						OR = {
+							region = upper_peru_region
+							region = peru_region
+						}
+					}
 				}
 				custom_tooltip = hashmp_form_dominion_tt_8
 			}
 			if = {
 				limit = {
-					capital_scope = { colonial_region = colonial_brazil }
+					capital_scope = { region = brazil_region }
 				}
 				custom_tooltip = hashmp_form_dominion_tt_9
 			}

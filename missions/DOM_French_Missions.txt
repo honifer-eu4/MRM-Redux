@@ -1306,7 +1306,7 @@ french_missions_2_Continuation_b = {
 		required_missions = { dom_fra_france_discovers_north_america } 
 		position = 9
 		provinces_to_highlight = { 
-			colonial_region = colonial_the_carribean 
+			region = carribeans_region 
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
 		trigger = {
@@ -1325,7 +1325,7 @@ french_missions_2_Continuation_b = {
 						}
 					}
 					capital_scope = {
-						colonial_region = colonial_the_carribean
+						region = carribeans_region
 					}
 				}
 			}
@@ -1354,7 +1354,7 @@ french_missions_2_Continuation_b = {
 							is_subject_of_type = self_governing_colony
 						}
 						capital_scope = {
-							colonial_region = colonial_the_carribean
+							region = carribeans_region
 						}
 					}
 				}
@@ -1384,7 +1384,7 @@ french_missions_2_Continuation_b = {
 							is_subject_of_type = self_governing_colony
 						}
 						capital_scope = {
-							colonial_region = colonial_the_carribean
+							region = carribeans_region
 						}
 					}
 					add_country_modifier = {

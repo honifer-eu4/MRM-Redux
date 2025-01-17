@@ -494,16 +494,20 @@ swe_north_america_mission_slot = {
 		required_missions = { swe_colonial_ambitions }
 		provinces_to_highlight = {
 			OR = {
-				colonial_region = colonial_canada
-				colonial_region = colonial_eastern_america
+				region = canada_region
+				region = hudson_bay_region
+				region = northeast_america_region
+				region = southeast_america_region
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				OR = {
-					colonial_region = colonial_canada
-					colonial_region = colonial_eastern_america
+					region = canada_region
+					region = hudson_bay_region
+					region = northeast_america_region
+					region = southeast_america_region
 				}
 				value = 5
 			}
@@ -515,7 +519,7 @@ swe_north_america_mission_slot = {
 			}
 			custom_tooltip = swe_colonize_delaware_tt
 			hidden_effect = {
-				colonial_the_carribean = {
+				carribeans_region = {
 					limit = {
 						OR = {
 							has_river_estuary_trigger = yes
@@ -537,7 +541,7 @@ swe_north_america_mission_slot = {
 		position = 12
 		required_missions = { swe_colonize_delaware }
 		provinces_to_highlight = {
-			colonial_region = colonial_the_carribean
+			region = carribeans_region
 			OR = {
 				has_trade_building_trigger = yes
 				province_has_center_of_trade_of_level = 1
@@ -546,7 +550,7 @@ swe_north_america_mission_slot = {
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				colonial_region = colonial_the_carribean
+				region = carribeans_region
 				OR = {
 					has_trade_building_trigger = yes 
 					province_has_center_of_trade_of_level = 1

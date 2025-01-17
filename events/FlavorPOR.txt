@@ -1074,7 +1074,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "flavor_por.EVTOPTOK"
+		name = "flavor_por.EVTOPTA12"
 		
 		define_advisor = {
 			type = philosopher
@@ -1082,6 +1082,105 @@ country_event = {
 			culture = portugese
 			skill = 3
 			cost_multiplier = 0.25
+		}
+	}
+}
+
+country_event = {
+	id = flavor_por.13
+	title = "flavor_por.EVTNAME13"
+	desc = "flavor_por.EVTDESC13"
+	picture = wihgfx_FEMALE_RULER_eventPicture
+	fire_only_once = yes
+	trigger = {
+		is_year = 1554
+		tag = POR
+		has_regency = no
+		has_heir = no
+		is_lesser_in_union = no
+		government = monarchy
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "flavor_por.EVTOPTA13"
+		define_heir = {
+			name = "Sebastian "
+			dynasty = "Avis"
+			culture = portugese
+			male = yes
+			age = 0
+			adm = 6
+			dip = 5
+			mil = 5
+		}
+		if = {
+			limit = {
+				has_states_general_mechanic = yes
+			}
+			change_statists_vs_orangists = 1
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality_ancestor = { key = reformist } }
+		}
+	}
+	option = {
+		name = "flavor_por.EVTOPTB13"
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_meritocracy_effect = yes
+		define_advisor = {
+			culture = portugese
+			type = natural_scientist
+			skill = 3
+			cost_multiplier = 0.25
+			name = "Sebastian Avis"
+		}
+	}
+}
+
+country_event = {
+	id = flavor_por.14
+	title = "flavor_por.EVTNAME14"
+	desc = "flavor_por.EVTDESC14"
+	picture = ADVISOR_eventPicture	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_por.EVTOPTA14"
+		
+		add_mil_power = 200
+	}
+}
+
+country_event = {
+	id = flavor_por.15
+	title = "flavor_por.EVTNAME15"
+	desc = "flavor_por.EVTDESC15"
+	picture = ADVISOR_eventPicture	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_por.EVTOPTA14"
+		
+		add_treasury = 1500
+		343 = {
+			add_base_tax = -2
+			add_base_manpower = -2
+			add_base_production = -2
+			add_devastation = 75
+		}
+		227 = {
+			add_base_tax = 2
+			add_base_manpower = 2
+			add_base_production = 2
 		}
 	}
 }

@@ -437,7 +437,10 @@ dan_north_america_mission_slot_2 = {
 		position = 9
 		required_missions = { dan_colonize_north_america }
 		provinces_to_highlight = {
-			colonial_region = colonial_canada
+			OR = {
+				region = canada_region
+				region = hudson_bay_region
+			}
 			has_discovered = ROOT
 			OR = {
 				is_city = no
@@ -446,7 +449,10 @@ dan_north_america_mission_slot_2 = {
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				colonial_region = colonial_canada
+				OR = {
+					region = canada_region
+					region = hudson_bay_region
+				}
 				is_city = yes
 				value = 20
 			}
@@ -457,8 +463,10 @@ dan_north_america_mission_slot_2 = {
 				random_province = {
 					limit = {
 						country_or_non_sovereign_subject_holds = ROOT
-						colonial_region = colonial_canada
-						is_city = yes
+						OR = {
+							region = canada_region
+							region = hudson_bay_region
+						}
 						NOT = { has_province_flag = nor_colonize_canada_and_na_flag }
 						NOT = { has_production_building_trigger = yes }
 					}
@@ -467,8 +475,10 @@ dan_north_america_mission_slot_2 = {
 				random_province = {
 					limit = {
 						country_or_non_sovereign_subject_holds = ROOT
-						colonial_region = colonial_canada
-						is_city = yes
+						OR = {
+							region = canada_region
+							region = hudson_bay_region
+						}
 						NOT = { has_province_flag = nor_colonize_canada_and_na_flag }
 						NOT = { has_production_building_trigger = yes }
 					}
@@ -477,8 +487,10 @@ dan_north_america_mission_slot_2 = {
 				random_province = {
 					limit = {
 						country_or_non_sovereign_subject_holds = ROOT
-						colonial_region = colonial_canada
-						is_city = yes
+						OR = {
+							region = canada_region
+							region = hudson_bay_region
+						}
 						NOT = { has_province_flag = nor_colonize_canada_and_na_flag }
 						NOT = { has_production_building_trigger = yes }
 					}
@@ -487,8 +499,10 @@ dan_north_america_mission_slot_2 = {
 				random_province = {
 					limit = {
 						country_or_non_sovereign_subject_holds = ROOT
-						colonial_region = colonial_canada
-						is_city = yes
+						OR = {
+							region = canada_region
+							region = hudson_bay_region
+						}
 						NOT = { has_province_flag = nor_colonize_canada_and_na_flag }
 						NOT = { has_production_building_trigger = yes }
 					}
@@ -497,8 +511,10 @@ dan_north_america_mission_slot_2 = {
 				random_province = {
 					limit = {
 						country_or_non_sovereign_subject_holds = ROOT
-						colonial_region = colonial_canada
-						is_city = yes
+						OR = {
+							region = canada_region
+							region = hudson_bay_region
+						}
 						NOT = { has_province_flag = nor_colonize_canada_and_na_flag }
 						NOT = { has_production_building_trigger = yes }
 					}
@@ -544,12 +560,20 @@ dan_north_america_mission_slot_2 = {
 		position = 10
 		required_missions = { dan_colonize_the_caribbean }
 		provinces_to_highlight = {
-			colonial_region = colonial_louisiana
+			OR = {
+				region = great_lakes_region
+				region = great_plains_region
+				region = mississippi_region
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				colonial_region = colonial_louisiana
+				OR = {
+					region = great_lakes_region
+					region = great_plains_region
+					region = mississippi_region
+				}
 				value = 50
 			}
 		}
@@ -1035,14 +1059,14 @@ dan_caribbeans_mission_slot = {
 		position = 9
 		required_missions = { dan_colonize_north_america }
 		provinces_to_highlight = {
-			colonial_region = colonial_the_carribean
+			region = carribeans_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
 		trigger = {
 			owns_or_non_sovereign_subject_of = 493
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				colonial_region = colonial_the_carribean
+				region = carribeans_region
 				value = 5
 			}
 		}
@@ -1101,7 +1125,11 @@ dan_caribbeans_mission_slot = {
 		position = 10
 		required_missions = { dan_colonize_the_caribbean }
 		provinces_to_highlight = {
-			colonial_region = colonial_mexico
+			OR = {
+				region = rio_grande_region
+				region = mexico_region
+				region = central_america_region
+			}
 			has_discovered = ROOT
 			OR = {
 				is_city = no
@@ -1111,7 +1139,11 @@ dan_caribbeans_mission_slot = {
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				colonial_region = colonial_mexico
+				OR = {
+					region = rio_grande_region
+					region = mexico_region
+					region = central_america_region
+				}
 				is_city = yes
 				trade_goods = gold
 				value = 5

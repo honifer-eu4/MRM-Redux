@@ -540,11 +540,11 @@ eng_exploration_americas = {
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = miss_discover_eastern_america
-				colonial_eastern_america = { has_discovered = ROOT }
+				northeast_america_region = { has_discovered = ROOT }
 			}
 			custom_trigger_tooltip = {
 				tooltip = miss_discover_caribbean
-				colonial_the_carribean = { has_discovered = ROOT }
+				carribeans_region = { has_discovered = ROOT }
 			}
 		}
 		
@@ -566,7 +566,10 @@ eng_exploration_americas = {
 		completed_by = 1610.1.1
 		
 		provinces_to_highlight = {
-			colonial_region = colonial_eastern_america
+			OR = {
+				region = northeast_america_region
+				region = southeast_america_region
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -575,8 +578,11 @@ eng_exploration_americas = {
 			custom_trigger_tooltip = {
 				tooltip = miss_colonize_eastern_america
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					OR = {
+						region = northeast_america_region
+						region = southeast_america_region
+					}
 					value = 1
-					colonial_region = colonial_eastern_america
 					is_city = yes
 				}
 			}
@@ -598,7 +604,7 @@ eng_exploration_americas = {
 		completed_by = 1610.1.1
 		
 		provinces_to_highlight = {
-			colonial_region = colonial_the_carribean
+			region = carribeans_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -608,7 +614,7 @@ eng_exploration_americas = {
 			tooltip = english_colony_in_the_carribean.tooltip
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 5
-					colonial_region = colonial_the_carribean
+					region = carribeans_region
 					is_city = yes
 				}
 			}

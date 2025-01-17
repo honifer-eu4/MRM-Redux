@@ -10190,7 +10190,8 @@ country_event = {
 			NOT = { primary_culture = louisianans }
 			any_owned_province = {
 				OR = {
-					colonial_region = colonial_canada
+					region = canada_region
+					region = hudson_bay_region
 					region = northeast_america_region
 				}
 				OR = {
@@ -10210,8 +10211,13 @@ country_event = {
 			NOT = { primary_culture = quebecois }
 			NOT = { primary_culture = louisianans }
 			any_owned_province = {
-				NOT = { colonial_region = colonial_canada }
-				NOT = { region = northeast_america_region }
+				NOT = { 
+					OR = {					
+						region = canada_region
+						region = hudson_bay_region 
+						region = northeast_america_region
+					}
+				}
 				continent = north_america
 				OR = {
 					culture = cosmopolitan_french
@@ -10301,7 +10307,8 @@ country_event = {
 				NOT = { primary_culture = louisianans }
 				any_owned_province = {
 					OR = {
-						colonial_region = colonial_canada
+						region = canada_region
+						region = hudson_bay_region 
 						region = northeast_america_region
 					}
 					OR = {
@@ -10319,8 +10326,13 @@ country_event = {
 				NOT = { primary_culture = quebecois }
 				NOT = { primary_culture = louisianans }
 				any_owned_province = {
-					NOT = { colonial_region = colonial_canada }
-					NOT = { region = northeast_america_region }
+					NOT = { 
+						OR = {
+							region = canada_region
+							region = hudson_bay_region
+							region = northeast_america_region 
+						}
+					}
 					continent = north_america
 					OR = {
 						culture = cosmopolitan_french
@@ -10455,7 +10467,8 @@ country_event = {
 					NOT = { primary_culture = louisianans }
 					any_owned_province = {
 						OR = {
-							colonial_region = colonial_canada
+							region = canada_region
+							region = hudson_bay_region 
 							region = northeast_america_region
 						}
 						OR = {
@@ -10470,7 +10483,8 @@ country_event = {
 				random_owned_province = {
 					limit = {
 						OR = {
-							colonial_region = colonial_canada
+							region = canada_region
+							region = hudson_bay_region 
 							region = northeast_america_region
 						}
 						OR = {
@@ -10490,8 +10504,13 @@ country_event = {
 					NOT = { primary_culture = quebecois }
 					NOT = { primary_culture = louisianans }
 					any_owned_province = {
-						NOT = { colonial_region = colonial_canada }
-						NOT = { region = northeast_america_region }
+						NOT = { 
+							OR = {
+								region = canada_region
+								region = hudson_bay_region
+								region = northeast_america_region 
+							}
+						}
 						continent = north_america
 						OR = {
 							culture = cosmopolitan_french
@@ -10504,8 +10523,13 @@ country_event = {
 				}
 				random_owned_province = {
 					limit = {
-						NOT = { colonial_region = colonial_canada }
-						NOT = { region = northeast_america_region }
+						NOT = { 
+							OR = {
+								region = canada_region
+								region = hudson_bay_region
+								region = northeast_america_region 
+							}
+						}
 						continent = north_america
 						OR = {
 							culture = cosmopolitan_french
@@ -10750,7 +10774,8 @@ country_event = {
 			culture_group = french
 			any_owned_province = {
 				OR = {
-					colonial_region = colonial_canada
+					region = canada_region
+					region = hudson_bay_region
 					region = northeast_america_region
 				}
 				OR = {
@@ -10793,7 +10818,8 @@ country_event = {
 			culture_group = french
 			any_owned_province = {
 				OR = {
-					colonial_region = colonial_canada
+					region = canada_region
+					region = hudson_bay_region
 					region = northeast_america_region
 				}
 				OR = {
@@ -10818,8 +10844,13 @@ country_event = {
 		trigger = {
 			culture_group = french
 			any_owned_province = {
-				NOT = { colonial_region = colonial_canada }
-				NOT = { region = northeast_america_region }
+				NOT = { 
+					OR = {
+						region = canada_region
+						region = hudson_bay_region
+						region = northeast_america_region 
+					}
+				}
 				continent = north_america
 				OR = {
 					culture = cosmopolitan_french
@@ -10862,8 +10893,13 @@ country_event = {
 		trigger = {
 			culture_group = french
 			any_owned_province = {
-				NOT = { colonial_region = colonial_canada }
-				NOT = { region = northeast_america_region }
+				NOT = { 
+					OR = {
+						region = canada_region
+						region = hudson_bay_region
+						region = northeast_america_region 
+					}
+				}
 				continent = north_america
 				OR = {
 					culture = cosmopolitan_french

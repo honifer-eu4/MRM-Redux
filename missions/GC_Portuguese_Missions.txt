@@ -27,7 +27,7 @@ gc_por_1 = {
 		completed_by = 1501.1.1
 		
 		provinces_to_highlight = {
-			colonial_region = colonial_brazil
+			region = brazil_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -35,7 +35,7 @@ gc_por_1 = {
 		trigger = { 
 			custom_trigger_tooltip = {
 				tooltip = miss_discover_brazil
-				colonial_brazil = {
+				brazil_region = {
 					has_discovered = ROOT
 				}
 			}
@@ -43,7 +43,7 @@ gc_por_1 = {
 				tooltip = miss_colonize_brazil
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 1
-					colonial_region = colonial_brazil
+					region = brazil_region
 					is_city = yes
 				}
 			}
@@ -67,7 +67,7 @@ gc_por_1 = {
 		completed_by = 1540.1.1
 		
 		provinces_to_highlight = {
-			colonial_region = colonial_brazil
+			region = brazil_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -75,7 +75,7 @@ gc_por_1 = {
 		trigger = { 
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 10
-				colonial_region = colonial_brazil
+				region = brazil_region
 				is_city = yes
 			}
 		}
@@ -155,7 +155,7 @@ gc_por_1 = {
 		required_missions = { gc_por_bandeirantes }
 		position = 5
 		provinces_to_highlight = {
-			colonial_region = colonial_brazil
+			region = brazil_region
 		}
 		
 		trigger = {
@@ -168,7 +168,7 @@ gc_por_1 = {
 					tooltip = port_jesuits_tooltip
 					num_of_states_owned_or_owned_by_non_sovereign_subjects_with = {
 						holy_order = jesuit_order
-						colonial_region = colonial_brazil
+						region = brazil_region
 						value = 7
 					}
 				}
@@ -178,7 +178,7 @@ gc_por_1 = {
 					tooltip = port_jesuits_alternative_tooltip
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						religion = ROOT
-						colonial_region = colonial_brazil
+						region = brazil_region
 						value = 35
 					}
 				}
@@ -1897,6 +1897,9 @@ gc_por_3_e = {
 			ROOT = {
 				is_at_war = yes
 			}
+			CAS = {
+				ai = yes
+			}
 		}
 
 		effect = {
@@ -1910,7 +1913,7 @@ gc_por_3_e = {
 	gc_por_control_the_penninsula = {
 		icon = mission_reclaim_andalucia
 		required_missions = { gc_por_defense_of_iberia }
-		position = 13
+		position = 12
 		provinces_to_highlight = {
 			province_id = 210
 			province_id = 197
@@ -2113,7 +2116,12 @@ gc_por_1_d = {
 				}
 				add_permanent_claim = ROOT 
 			}
-			#Triumph in Paris
+			country_event_with_effect_insight = {
+				id = flavor_por.14
+				effect = "
+					add_mil_power = 200
+					"
+			}
 		}
 	}
 }
@@ -2337,7 +2345,23 @@ gc_por_5_c = {
 		}
 
 		effect = {
-			#sack of fez
+			country_event_with_effect_insight = {
+				id = flavor_por.15
+				effect = "
+					add_treasury = 1500
+					343 = {
+						add_base_tax = -2
+						add_base_manpower = -2
+						add_base_production = -2
+						add_devastation = 75
+					}
+					227 = {
+						add_base_tax = 2
+						add_base_manpower = 2
+						add_base_production = 2
+					}
+				"
+			}
 			add_country_modifier = {
 				name = redux_lus_conversion_of_the_maghreb
 				duration = 14600

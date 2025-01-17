@@ -642,7 +642,7 @@ dom_cas_missions_1_c = {
 		position = 8
 
 		provinces_to_highlight = {
-			colonial_region = colonial_la_plata
+			region = la_plata_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = yes
 		}
@@ -650,7 +650,7 @@ dom_cas_missions_1_c = {
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 5
-				colonial_region = colonial_la_plata
+				region = la_plata_region
 				is_city = yes
 			}
 		}
@@ -671,7 +671,7 @@ dom_cas_missions_1_c = {
 		completed_by = 1509.1.1
 		position = 9
 		provinces_to_highlight = {
-			colonial_region = colonial_colombia
+			region = colombia_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -684,7 +684,7 @@ dom_cas_missions_1_c = {
 					tooltip = colombia_holy_order_tooltip
 					num_of_states_owned_or_owned_by_non_sovereign_subjects_with = {
 						has_holy_order_trigger = yes
-						colonial_region = colonial_colombia
+						region = colombia_region
 						value = 5
 					}
 				}
@@ -694,12 +694,12 @@ dom_cas_missions_1_c = {
 					tooltip = colombia_holy_order_alternative_tooltip
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						religion = ROOT
-						colonial_region = colonial_colombia
+						region = colombia_region
 						value = 25
 					}
 				}
 			}
-			colonial_colombia = {
+			colombia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1321,14 +1321,14 @@ dom_cas_missions_2_c = {
 		required_missions = { gc_cas_spa_caribbean_discovery2 }
 		position = 8
 		provinces_to_highlight = {
-			colonial_region = colonial_colombia
+			region = colombia_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = yes
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 5
-				colonial_region = colonial_colombia
+				region = colombia_region
 				is_city = yes
 			}
 		}
@@ -2385,7 +2385,7 @@ dom_cas_missions_3_c = {
 		required_missions = { gc_cas_spa_plus_ultra2 }
 		position = 7
 		provinces_to_highlight = {
-			colonial_region = colonial_the_carribean 
+			region = carribeans_region 
 			NOT = { has_discovered = ROOT }
 		}
 		trigger = {
@@ -2422,7 +2422,7 @@ dom_cas_missions_3_c = {
 		required_missions = { gc_cas_spa_caribbean_discovery2 }
 		position = 8
 		provinces_to_highlight = {
-			colonial_region = colonial_the_carribean
+			region = carribeans_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -2432,7 +2432,7 @@ dom_cas_missions_3_c = {
 				tooltip = miss_colonize_caribbean
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 1
-					colonial_region = colonial_the_carribean
+					region = carribeans_region
 					is_city = yes
 				}
 			}

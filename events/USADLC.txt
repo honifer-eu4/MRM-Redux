@@ -229,7 +229,11 @@ country_event = {
 			AND = {
 				is_former_colonial_nation = yes
 				capital_scope = {
-					colonial_region = colonial_eastern_america
+					OR = {
+						region = northeast_america_region
+						region = southeast_america_region
+						region = great_lakes_region
+					}
 					is_core = ROOT
 				}
 				culture_group = british
@@ -2712,7 +2716,11 @@ country_event = {
 		}
 		every_province = {
 			limit = {
-				colonial_region = colonial_louisiana
+				OR = {
+					region = great_plains_region
+					region = mississippi_region
+					region = great_lakes_region
+				}
 				OR = {
 					owned_by = FRA
 					owner = {
@@ -3121,7 +3129,11 @@ country_event = {
 			ai = yes
 		}
 		any_province = {
-			colonial_region = colonial_eastern_america
+			OR = {
+				region = northeast_america_region
+				region = southeast_america_region
+				region = great_lakes_region
+			}
 			OR = {
 				owned_by = SPA
 				owner = {
@@ -3142,7 +3154,11 @@ country_event = {
 		}
 		every_province = {
 			limit = {
-				colonial_region = colonial_eastern_america
+				OR = {
+					region = northeast_america_region
+					region = southeast_america_region
+					region = great_lakes_region
+				}
 				OR = {
 					owned_by = SPA
 					owner = {

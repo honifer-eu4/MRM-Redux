@@ -2700,12 +2700,19 @@ expand_the_fuzileiros = {
 			primary_culture = portugese
 			primary_culture = brazilian
 		}
-	}
-	trigger = {
 		mission_completed = gc_por_portugese_fuzileiros
 		custom_trigger_tooltip = {
 			tooltip = has_unlocked_this_reform_tt
 			has_country_flag = enable_expand_the_fuzileiros_flag
+		}
+	}
+	trigger = {
+		if = {
+			limit = { has_modifier_locking_military_tier = yes }
+			OR = {
+				has_reform = expand_the_fuzileiros
+				has_not_modifier_locking_military_tier = yes
+			}
 		}
 	}
 	modifiers = {
@@ -2722,6 +2729,9 @@ expand_the_fuzileiros = {
 				hidden = yes
 			}
 		}
+	}
+	custom_attributes = {
+		marine_buff = yes	#Marines -20% Manpower Usage
 	}
 	ai = {
 		factor = 1000
