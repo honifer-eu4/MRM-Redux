@@ -7890,7 +7890,7 @@ ORL_ideas = {
 ORM_ideas = {
 	start = {
 		merchants = 1
-		shock_damage = 0.1
+		cavalry_shock = 0.5
 	}
 
 	bonus = {
@@ -7909,7 +7909,8 @@ ORM_ideas = {
 		defensiveness = 0.2
 	}
 	orm_moqarrariya = {
-		infantry_power = 0.1
+		cavalry_power = 0.15
+		cavalry_cost = -0.1
 	}
 	orm_far_reaching_diplomacy = {
 		diplomatic_upkeep = 1
@@ -7919,7 +7920,7 @@ ORM_ideas = {
 		global_trade_power = 0.1
 	}
 	orm_develop_qeshm_and_ormuz = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	orm_ormuzi_navy = {
 		naval_forcelimit_modifier = 0.25
@@ -13733,11 +13734,11 @@ LOT_ideas = {
 FKN_ideas = {
 	start = {
 		core_creation = -0.1
-		discipline = 0.05
+		monarch_military_power = 1
 	}
 	
 	bonus = {
-		monarch_military_power = 1
+		cavalry_fire = 2
 	}
 	
 	trigger = {
@@ -13745,21 +13746,22 @@ FKN_ideas = {
 	}
 	free = yes		#will be added at load.
 	
-	fkn_duchy_restored = {
+	fkn_free_knights_of_franconia = {
 		cavalry_cost = -0.2
+		cavalry_power = 0.25
 	}
-	fkn_main_trading = {
-		movement_speed = 0.1
+	fkn_ruhr_river_valley = {
+		development_cost = -0.1
 	}
 	fkn_rugged_land_of_fortresses = {
 		defensiveness = 0.2
 		garrison_size = 0.2
 	}
-	fkn_free_knights_of_franconia = {
-		cavalry_power = 0.25
+	fkn_main_trading = {
+		movement_speed = 0.1
 	}
-	franconian_wine = { #in WBG_ideas
-		#production_efficiency = 0.1
+	fkn_work_ethic = { 
+		global_trade_goods_size_modifier = 0.15
 	}
 	fkn_baroque = {
 		land_morale = 0.1
@@ -13861,26 +13863,28 @@ WES_ideas = {
 
 	wes_jewish_rights = {
 		idea_cost = -0.1
+		technology_cost = -0.05
 	}
-	wes_westphalian_decentralisation  = {
-		build_cost = -0.1
-		development_cost = -0.1
+	wes_forges_of_nuremburg = {
+		artillery_power = 0.15
+		artillery_cost = -0.15
 	}
 	wes_increased_conscription = {
-		global_manpower_modifier = 0.20
+		global_manpower_modifier = 0.25
 	}
 	wes_administrative_assimilation_of_rheinlanders = {
 		num_accepted_cultures = 1
 		same_culture_advisor_cost = -0.25
 	}
-	wes_taxation = {
-		global_tax_modifier = 0.15
+	wes_westphalian_decentralisation = {
+		build_cost = -0.1
 	}
 	wes_enlightenment = {
-		infantry_power = 0.1
+		fire_damage = 0.2
 	}
 	wes_cities_of_the_rhineland = {
-		trade_efficiency = 0.1
+		trade_efficiency = 0.2
+		trade_steering = 0.2
 	}
 }
 

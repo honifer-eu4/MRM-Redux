@@ -39,14 +39,12 @@ colonial_branch_1 = {
 					OR = {
 						region = northeast_america_region
 						region = southeast_america_region
-						region = great_lakes_region
 					}
 					ROOT = {
 						capital_scope = {
 							OR = {
 								region = northeast_america_region
 								region = southeast_america_region
-								region = great_lakes_region
 							}						
 						}
 					}
@@ -348,7 +346,6 @@ colonial_branch_1 = {
 				limit = {
 					capital_scope = { 
 						OR = {
-							region = great_lakes_region
 							region = northeast_america_region
 							region = southeast_america_region
 						}
@@ -360,7 +357,6 @@ colonial_branch_1 = {
 				limit = {
 					capital_scope = { 
 						OR = {
-							region = great_lakes_region
 							region = great_plains_region
 							region = mississippi_region
 						}

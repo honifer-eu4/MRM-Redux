@@ -287,7 +287,29 @@ nor_colonialism_mission_slot = {
 				}
 				custom_tooltip = nor_discover_new_world_tt
 				hidden_effect = {
-					colonial_north_america = {
+					northeast_america_region = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+							OR = {
+								province_has_center_of_trade_of_level = 1
+								has_river_estuary_trigger = yes
+							}
+						}
+						add_permanent_claim = ROOT
+					}
+					southeast_america_region = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+							OR = {
+								province_has_center_of_trade_of_level = 1
+								has_river_estuary_trigger = yes
+							}
+						}
+						add_permanent_claim = ROOT
+					}
+					great_lakes_region = {
 						limit = {
 							NOT = { is_core = ROOT }
 							NOT = { is_permanent_claim = ROOT }
@@ -2779,7 +2801,15 @@ nor_sca_colonize_sa_slot = {
 				}
 				add_permanent_claim = ROOT
 			}
-			colonial_peru = {
+			upper_peru_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { owner = { is_subject_of = ROOT } }
+				}
+				add_permanent_claim = ROOT
+			}
+			peru_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }

@@ -377,7 +377,7 @@ dan_north_america_mission_slot = {
 			}
 			custom_tooltip = swe_colonize_delaware_tt
 			hidden_effect = {
-				colonial_the_carribean = {
+				carribeans_region = {
 					limit = {
 						OR = {
 							has_river_estuary_trigger = yes
@@ -395,7 +395,15 @@ dan_north_america_mission_slot = {
 				limit = {
 					tag = SCA
 				}
-				colonial_canada = {
+				canada_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { owner = { is_subject_of = ROOT } }
+					}
+					add_permanent_claim = ROOT
+				}
+				hudson_bay_region = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
@@ -1100,7 +1108,7 @@ dan_caribbeans_mission_slot = {
 				limit = {
 					tag = SCA
 				}
-				colonial_louisiana = {
+				great_lakes_region = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
@@ -1108,7 +1116,39 @@ dan_caribbeans_mission_slot = {
 					}
 					add_permanent_claim = ROOT
 				}
-				colonial_mexico = {
+				great_plains_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { owner = { is_subject_of = ROOT } }
+					}
+					add_permanent_claim = ROOT
+				}
+				mississippi_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { owner = { is_subject_of = ROOT } }
+					}
+					add_permanent_claim = ROOT
+				}
+				rio_grande_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { owner = { is_subject_of = ROOT } }
+					}
+					add_permanent_claim = ROOT
+				}
+				central_america_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { owner = { is_subject_of = ROOT } }
+					}
+					add_permanent_claim = ROOT
+				}
+				mexico_region = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }

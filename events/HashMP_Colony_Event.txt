@@ -114,7 +114,6 @@ country_event = {
 				OR = {
 					region = southeast_america_region
 					region = northeast_america_region
-					region = great_lakes_region
 				}
 			}
         }
@@ -139,7 +138,6 @@ country_event = {
 				OR = {
 					region = southeast_america_region
 					region = northeast_america_region
-					region = great_lakes_region
 				}
 			}
         }
@@ -163,7 +161,6 @@ country_event = {
             capital_scope = { 
 				OR = {
 					region = mississippi_region
-					region = great_lakes_region
 					region = great_plains_region
 				}
 			}
@@ -188,7 +185,6 @@ country_event = {
             capital_scope = { 
 				OR = {
 					region = mississippi_region
-					region = great_lakes_region
 					region = great_plains_region
 				}
 			}

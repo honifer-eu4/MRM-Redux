@@ -131,7 +131,7 @@ country_decisions = {
 					}
 					if = {
 						limit = { mission_completed = dan_colonize_the_caribbean }
-						colonial_louisiana = {
+						great_lakes_region = {
 							limit = {
 								NOT = { is_core = ROOT }
 								NOT = { is_permanent_claim = ROOT }
@@ -139,7 +139,39 @@ country_decisions = {
 							}
 							add_permanent_claim = ROOT
 						}
-						colonial_mexico = {
+						great_plains_region = {
+							limit = {
+								NOT = { is_core = ROOT }
+								NOT = { is_permanent_claim = ROOT }
+								NOT = { owner = { is_subject_of = ROOT } }
+							}
+							add_permanent_claim = ROOT
+						}
+						mississippi_region = {
+							limit = {
+								NOT = { is_core = ROOT }
+								NOT = { is_permanent_claim = ROOT }
+								NOT = { owner = { is_subject_of = ROOT } }
+							}
+							add_permanent_claim = ROOT
+						}
+						mexico_region = {
+							limit = {
+								NOT = { is_core = ROOT }
+								NOT = { is_permanent_claim = ROOT }
+								NOT = { owner = { is_subject_of = ROOT } }
+							}
+							add_permanent_claim = ROOT
+						}
+						rio_grande_region = {
+							limit = {
+								NOT = { is_core = ROOT }
+								NOT = { is_permanent_claim = ROOT }
+								NOT = { owner = { is_subject_of = ROOT } }
+							}
+							add_permanent_claim = ROOT
+						}
+						central_america_region = {
 							limit = {
 								NOT = { is_core = ROOT }
 								NOT = { is_permanent_claim = ROOT }
@@ -150,7 +182,15 @@ country_decisions = {
 					}
 					if = {
 						limit = { mission_completed = dan_colonize_north_america }
-						colonial_canada = {
+						canada_region = {
+							limit = {
+								NOT = { is_core = ROOT }
+								NOT = { is_permanent_claim = ROOT }
+								NOT = { owner = { is_subject_of = ROOT } }
+							}
+							add_permanent_claim = ROOT
+						}
+						hudson_bay_region = {
 							limit = {
 								NOT = { is_core = ROOT }
 								NOT = { is_permanent_claim = ROOT }

@@ -523,8 +523,13 @@ gbr_rb_canada_group = {
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = miss_discover_canada
-				colonial_canada = {
-					has_discovered = ROOT
+				OR = {
+					canada_region = {
+						has_discovered = ROOT
+					}
+					hudson_bay_region = {
+						has_discovered = ROOT
+					}
 				}
 			}
 			custom_trigger_tooltip = {

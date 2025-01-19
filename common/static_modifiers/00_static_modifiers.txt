@@ -1430,8 +1430,6 @@ gbr_colonial_investment = {
 }
 
 crown_colony_overlord = {
-	merchants = 1
-	global_trade_power = 0.05
 }
 
 private_enterprise_overlord = {
@@ -1441,6 +1439,9 @@ self_governing_colony_overlord = {
 }
 
 crown_colony_subject = {
+	global_autonomy = -0.1
+	global_colonial_growth = 10
+	liberty_desire = -200
 }
 
 private_enterprise_subject = {

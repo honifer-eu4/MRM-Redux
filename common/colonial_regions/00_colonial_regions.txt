@@ -80,25 +80,14 @@ colonial_north_america = {
 		4624 4622 4623 4619 4618 4620 4621
 	}
 
-	# Specific
-	names = {
-		trigger = {
-			OR = {
-				tag = GBR
-				tag = ENG
-			}
-		}
-		name = "COLONIAL_EASTERN_AMERICA_Thirteen_Colonies"
-	}
 	names = {
 		trigger = {
 			OR = {
 				tag = FRA
 				culture_group = french
 			}
-			owns = 90 # Vlaanderen
 		}
-		name = "COLONIAL_EASTERN_AMERICA_Nouvelle_Flandre"
+		name = "COLONIAL_CANADA_Root_Culture_GetGroupName_Canada"
 	}
 	names = {
 		trigger = {
@@ -107,63 +96,22 @@ colonial_north_america = {
 				culture_group = french
 			}
 		}
-		name = "COLONIAL_EASTERN_AMERICA_Floride"
+		name = "COLONIAL_CANADA_Acadia"
 	}
 	names = {
 		trigger = {
-			OR = {
-				tag = SPA
-				tag = CAS
-				tag = ARA
-			}
+			culture_group = scandinavian
 		}
-		name = "COLONIAL_EASTERN_AMERICA_Florida"
+		name = "COLONIAL_CANADA_Vinland"
 	}
-	# Generic
+	names = {
+		trigger = {
+			culture_group = scandinavian
+		}
+		name = "COLONIAL_CANADA_Vinland"
+	}
 	names = {
 		name = "COLONIAL_REGION_New_Root_GetName"
-	}
-	names = {
-		name = "COLONIAL_EASTERN_AMERICA_Florida"
-	}
-	names = {
-		trigger = {
-			owns = 968
-		}
-		name = "PROV968" # Massachusets
-	}
-	names = {
-		trigger = {
-			owns = 2010
-		}
-		name = "PROV2010" # Connecticut
-	}
-	names = {
-		trigger = {
-			owns = 965
-		}
-		name = "PROV965" # Manhattan
-	}
-	names = {
-		trigger = {
-			owns = 957
-		}
-		name = "PROV957" # Delaware
-	}
-	names = {
-		trigger = {
-			owns = 953
-		}
-		name = "PROV953" # Conoy
-	}
-	names = {
-		trigger = {
-			owns = 924
-		}
-		name = "PROV924" # Alabama
-	}
-	names = {
-		name = "COLONIAL_EASTERN_AMERICA_Virginia"
 	}
 }
 # South America
@@ -231,8 +179,6 @@ colonial_south_america = {
 		772 773 2850 2851 2852 #Banda Oriental
 		783 784 787 792 793 796 2840 2841 2862 2873 2874 #Chile
 	}
-
-	# Specific
 	names = {
 		trigger = {
 			tag = FRA
@@ -247,13 +193,6 @@ colonial_south_america = {
 	}
 	names = {
 		trigger = {
-			tag = POR
-			religion_group = christian
-		}
-		name = "COLONIAL_BRAZIL_Terra_de_Vera_Cruz"
-	}
-	names = {
-		trigger = {
 			OR = {
 				tag = MOR
 				tag = GRA
@@ -263,24 +202,8 @@ colonial_south_america = {
 		}
 		name = "COLONIAL_BRAZIL_new_granada"
 	}
-	# Generic
-	names = {
-		name = "COLONIAL_BRAZIL_Root_Culture_GetName_Brazil"
-	}
 	names = {
 		name = "COLONIAL_REGION_New_Root_GetName"
-	}
-	names = {
-		trigger = {
-			owns = 753 # Rio Grande
-		}
-		name = "PROV753"
-	}
-	names = {
-		trigger = {
-			owns = 756 # Bahia
-		}
-		name = "PROV756"
 	}
 }
 

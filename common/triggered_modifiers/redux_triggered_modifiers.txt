@@ -160,3 +160,163 @@ redux_bur_league = {
 	land_forcelimit = 10
 	global_manpower = 10
 }
+
+small_colonial_nation_na = {
+	potential = {
+		colony = 1
+	}
+	trigger = {
+		NOT = {
+			OR = {
+				has_country_modifier = middling_colonial_nation_na
+				has_country_modifier = thriving_colonial_nation_na
+				has_country_modifier = dominant_colonial_nation_na
+			}
+		}
+		any_subject_country = {
+			capital_scope = {
+				continent = north_america
+			}
+			total_development = 100
+		}
+	}
+	merchants = 1
+	global_trade_power = 0.025
+}
+
+middling_colonial_nation_na = {
+	potential = {
+		colony = 1
+	}
+	trigger = {
+		NOT = {
+			OR = {
+				has_country_modifier = thriving_colonial_nation_na
+				has_country_modifier = dominant_colonial_nation_na
+			}
+		}
+		any_subject_country = {
+			capital_scope = {
+				continent = north_america
+			}
+			total_development = 250
+		}
+	}
+	merchants = 2
+	global_trade_power = 0.05
+}
+
+thriving_colonial_nation_na = {
+	potential = {
+		colony = 1
+	}
+	trigger = {
+		NOT = {
+				has_country_modifier = dominant_colonial_nation_na
+		}
+		any_subject_country = {
+			capital_scope = {
+				continent = north_america
+			}
+			total_development = 500
+		}
+	}
+	merchants = 3
+	global_trade_power = 0.1
+}
+
+dominant_colonial_nation_na = {
+	potential = {
+		colony = 1
+	}
+	trigger = {
+		any_subject_country = {
+			capital_scope = {
+				continent = north_america
+			}
+			total_development = 2000
+		}
+	}
+	merchants = 4
+	global_trade_power = 0.15
+}
+
+small_colonial_nation_sa = {
+	potential = {
+		colony = 1
+	}
+	trigger = {
+		NOT = {
+			OR = {
+				has_country_modifier = middling_colonial_nation_sa
+				has_country_modifier = thriving_colonial_nation_sa
+				has_country_modifier = dominant_colonial_nation_sa
+			}
+		}
+		any_subject_country = {
+			capital_scope = {
+				continent = south_america
+			}
+			total_development = 100
+		}
+	}
+	merchants = 1
+	global_trade_power = 0.025
+}
+
+middling_colonial_nation_sa = {
+	potential = {
+		colony = 1
+	}
+	trigger = {
+		NOT = {
+			OR = {
+				has_country_modifier = thriving_colonial_nation_sa
+				has_country_modifier = dominant_colonial_nation_sa
+			}
+		}
+		any_subject_country = {
+			capital_scope = {
+				continent = south_america
+			}
+			total_development = 250
+		}
+	}
+	merchants = 2
+	global_trade_power = 0.05
+}
+
+thriving_colonial_nation_sa = {
+	potential = {
+		colony = 1
+	}
+	trigger = {
+		NOT = {
+				has_country_modifier = dominant_colonial_nation_sa
+		}
+		any_subject_country = {
+			capital_scope = {
+				continent = south_america
+			}
+			total_development = 500
+		}
+	}
+	merchants = 3
+	global_trade_power = 0.1
+}
+
+dominant_colonial_nation_sa = {
+	potential = {
+		colony = 1
+	}
+	trigger = {
+		any_subject_country = {
+			capital_scope = {
+				continent = south_america
+			}
+			total_development = 2000
+		}
+	}
+	merchants = 4
+	global_trade_power = 0.15
+}

@@ -433,7 +433,6 @@ country_event = {
 				OR = {
 					region = southeast_america_region
 					region = northeast_america_region
-					region = great_lakes_region
 				}
 			}
             NOT = { has_reform = h_reform_dominion }
@@ -448,7 +447,6 @@ country_event = {
 				OR = {
 					region = southeast_america_region
 					region = northeast_america_region
-					region = great_lakes_region
 				}
 			}
             NOT = { has_reform = h_reform_dominion }
