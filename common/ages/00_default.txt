@@ -501,11 +501,13 @@ age_of_reformation = {
 		}
 		ab_age_of_the_landsknechts = {
 			allow = {
-				OR = {
-					culture_group = germanic
-					culture_group = south_germanic
+				NOT = {
+					OR = {
+						tag = BUR
+						tag = LOT
+					}
 				}
-
+				culture_group = germanic
 			}
 			effect = { 
 				on_age_ability_taken = { age = age_of_reformation }

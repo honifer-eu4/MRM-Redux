@@ -48,6 +48,8 @@
  obj_emperor_of_china_desc:0 "Has enacted the 'Destroy the Estates' decision."
  obj_win_religious_war:0 "Power Projection"
  obj_win_religious_war_desc:0 "Power Projection must be at least 75."
+ ab_age_of_the_landsknechts:0 "Age of the Landsknechts"
+ ab_extra_colonist:0 "Settling the New World"
  
  # Governments
  mechanic_new_order_regiment_buff_yes:1 "The §YMobilize New Order Regiments§! interaction grants an additional §G+5.0%§! Infantry Combat Ability!"

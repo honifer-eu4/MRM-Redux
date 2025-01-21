@@ -304,6 +304,12 @@
  desc_wes_reformed_government:0 "We will create a constitution to guarantee the freedom of our peoples, so that they may in turn support our government and help maximize its efficiency."
  redux_ger_fkn_mod:0 "Legacy of the Franconian Knights"
  desc_redux_ger_fkn_mod:0 ""
+ fkn_work_ethic:0 "Franconian Work Ethic"
+ fkn_work_ethic_desc:0 "North Germans are famous for their work ethic, but the people of the Rhineland and Franconia are the foremost among them. The industriousness of our people ensures the markets of our cities and villages are never short of manufactured goods and commodities"
+ fkn_rhine_river_valley:0 "The Rhine River Valley"
+ fkn_rhine_river_valley_desc:0 "Franconia and the Rhineland are among the richest and most fertile lands in all of Europe. This is in no small part thanks to the Rhine, the lifeblood of our nation, and its many tributaries which provide our people and cities with an almost limitless potential for growth."
+ wes_forges_of_nuremburg:0 "The Forges of Nuremburg"
+ wes_forges_of_nuremburg_desc:0 "The forges and smiths of Nuremburg have been renowned for their armor and blade production for hundreds of years. With the advent of firearms and artillery their skills can be put to better use, giving us access to some of the highest quality guns in Western Europe."
  
  #Landtag 
  

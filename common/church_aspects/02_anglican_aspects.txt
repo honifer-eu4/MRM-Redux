@@ -186,8 +186,8 @@ monopoly_aspect = {
 		NOT = { treasury = 1000000 }
 	}
 	effect = {
-		add_mercantilism = 1
-		add_years_of_income = 0.083
+		add_mercantilism = 0.1
+		add_years_of_income = 0.1
 	}
 	ai_will_do = {
 		factor = 1

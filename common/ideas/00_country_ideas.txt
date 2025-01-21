@@ -13764,7 +13764,7 @@ FKN_ideas = {
 		nobles_loyalty_modifier = 0.1
 		advisor_cost = -0.1
 	}
-	fkn_ruhr_river_valley = {
+	fkn_rhine_river_valley = {
 		development_cost = -0.1
 	}
 	fkn_baroque = {

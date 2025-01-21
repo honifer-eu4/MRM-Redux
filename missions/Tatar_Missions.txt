@@ -838,8 +838,8 @@ tatar_missions_3 = {
 	}
 }
 
-tatar_missions_5 = {
-	slot = 5
+tatar_missions_1_a = {
+	slot = 1
 	generic = no
 	ai = yes
 	potential = {
