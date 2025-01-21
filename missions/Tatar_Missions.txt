@@ -836,11 +836,25 @@ tatar_missions_3 = {
 			}
 		}
 	}
+}
+
+tatar_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = SHY
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
 
 	shy_restore_the_silk_road = {
 		icon = mission_asian_city 
 		provinces_to_highlight = {
-			region = central_asia_region
+			OR = {
+				region = central_asia_region
+				culture = afghani
+			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -850,6 +864,10 @@ tatar_missions_3 = {
 			central_asia_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				culture = afghani
+				value = 12
 			}
 		}
 		effect = {

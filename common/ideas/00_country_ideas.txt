@@ -13750,9 +13750,6 @@ FKN_ideas = {
 		cavalry_cost = -0.2
 		cavalry_power = 0.25
 	}
-	fkn_ruhr_river_valley = {
-		development_cost = -0.1
-	}
 	fkn_rugged_land_of_fortresses = {
 		defensiveness = 0.2
 		garrison_size = 0.2
@@ -13763,12 +13760,15 @@ FKN_ideas = {
 	fkn_work_ethic = { 
 		global_trade_goods_size_modifier = 0.1
 	}
-	fkn_baroque = {
-		cavalry_fire = 0.25
-	}
 	fkn_franconian_bourgeoisie = {
 		nobles_loyalty_modifier = 0.1
 		advisor_cost = -0.1
+	}
+	fkn_ruhr_river_valley = {
+		development_cost = -0.1
+	}
+	fkn_baroque = {
+		cavalry_fire = 0.25
 	}
 }
 

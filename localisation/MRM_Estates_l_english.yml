@@ -1,4 +1,18 @@
 ﻿l_english:
+ redux_estate_burghers_caravanserai:0 "Sponsor Silk Road Caravanserai"
+ redux_estate_burghers_caravanserai_desc:0 "To faciliate trade and the growth of local communities we should sponsor the restoration and establishment of caravanserai along the Silk Road."
+ redux_estate_burghers_caravanserai_mod:0 "Caravanserai"
+ desc_redux_estate_burghers_caravanserai_mod:0 "We are supporting caravanserai to the benefit of local villages and trade."
+ redux_estate_burghers_caravanserai_gt:1 "§G-10%§! local development cost in all §YDesert§! provinces"
+ redux_estate_burghers_caravanserai_rt:0 "Removes §YCaravanserai§! from all owned §YDesert§! provinces."
+ unlock_privilege_redux_estate_burghers_caravanserai_tt:0 "Enable the [Root.GetBurghersOrFallbackName] privilege '§YCaravanserai§!'."
+
+ redux_estate_church_missions:0 "Establish Jungle Missions"
+ redux_estate_church_missions_desc:0 "It is our solemn duty to bring civilization and the word of the Lord to the savages and tribes people of the jungle. This of course has the added benefit of helping us to better secure and control the interior."
+ redux_estate_church_missions_mod:0 "Jungle Missions"
+ desc_redux_estate_church_missions_mod:0 "The establishment of missions in this province is supporting the growth of new settlements."
+ redux_estate_church_missions_gt:1 "§G-10%§! local development cost in all §YJungle§! provinces"
+ redux_estate_church_missions_rt:0 "Removes §YJungle Missions§! from all owned §YJungle§! provinces."
 
  estate_clergy_exploration_expedition:0 "Clergy Exploration Expeditions"
  estate_clergy_exploration_expedition_desc:0 "[Root.GetClergyName] roam our unexplored frontiers, shifting them back year by year. We should harness their pioneering instincts to accelerate our settlement of these areas."
@@ -6,6 +20,7 @@
  desc_estate_clergy_exploration_expedition_mod:0 "We are harnessing the pioneering instincts of the clergy to accelerate the settlement and growth of this area."
  estate_clergy_exploration_expedition_effect_tooltip:1 "§G-20%§! local development cost in all §YDesert§! and §YCoastal Desert§! provinces"
  estate_clergy_exploration_expedition_mod_revoke_tooltip:0 "Removes §YClergy Exploration§! from all owned §YDesert§! and §YCoastal Desert§! provinces."
+
  estate_clergy_mountain_development:0 "Clergy Exploration Expeditions"
  estate_clergy_mountain_development_desc:0 "[Root.GetClergyName] have many contacts in the underdeveloped mountains. Utilizing their ingenuity and knowledge would be critical for us."
  estate_clergy_mountain_development_mod:0 "Clergy Exploration"

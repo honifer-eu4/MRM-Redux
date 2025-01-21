@@ -223,7 +223,7 @@ gc_por_1 = {
 		}
 	}
 	
-	gc_redux_por_lessons_from_the_berbers = {
+	gc_por_lessons_from_the_berbers = {
 		icon = league_of_the_public_weal
 		required_missions = { gc_por_portugese_fuzileiros }
 		completed_by = 1488.1.1
@@ -327,9 +327,7 @@ gc_por_2 = {
 			}
 			if = {
 				limit = {
-					NOT = {
-						has_country_modifier = redux_por_settling_africa
-					}
+					has_country_modifier = redux_por_settling_africa
 				}
 				extend_country_modifier = {
 					name = redux_por_settling_africa
@@ -743,9 +741,7 @@ gc_por_3_b = {
 			}
 			if = {
 				limit = {
-					NOT = {
-						has_country_modifier = redux_por_settling_africa
-					}
+					has_country_modifier = redux_por_settling_africa
 				}
 				extend_country_modifier = {
 					name = redux_por_settling_africa
@@ -833,7 +829,6 @@ gc_por_3_b = {
 				area = east_africa_region
 				area = east_africa_region
 				area = east_africa_region
-
 				region = south_africa_region
 			}
 			OR = {
@@ -931,9 +926,7 @@ gc_por_4 = {
 			}
 			if = {
 				limit = {
-					NOT = {
-						has_country_modifier = redux_por_settling_africa
-					}
+					has_country_modifier = redux_por_settling_africa
 				}
 				extend_country_modifier = {
 					name = redux_por_settling_africa
@@ -1112,7 +1105,8 @@ gc_por_4 = {
 				amount = 25 
 			}
 			custom_tooltip = chi_permanent_pp
-			set_country_flag = lusitanian_empire_proclaimed
+			set_country_flag = portuguese_empire_proclaimed
+			override_country_name = PORTUGUESE_EMPIRE
 			add_government_reform = greater_portuguese_monarchy_reform
 		}
 	}
@@ -1485,14 +1479,9 @@ gc_por_4_b = {
 			}
 		}
 		effect = {
-			change_price = {
-				trade_goods = wine
-				key = PORTUGAL_PORT_WINE
-				value = 0.1
-				duration = 14600
-			}
-			if = { 
-				limit = { has_dlc = "Domination" }
+			hidden_effect = {
+				if = { 
+					limit = { has_dlc = "Domination" }
 					231 = {
 						add_permanent_province_modifier = {
 							name = redux_port_wine_vineyards
@@ -1517,6 +1506,14 @@ gc_por_4_b = {
 							duration = -1 
 						}
 					}
+				}
+			}
+			custom_tooltip = redux_port_wine_vineyards_ct
+			change_price = {
+				trade_goods = wine
+				key = PORTUGAL_PORT_WINE
+				value = 0.1
+				duration = 14600
 			}
 			add_years_of_owned_provinces_production_income = {
 				years = 2
@@ -1529,7 +1526,7 @@ gc_por_4_b = {
 					}
 				}
 			}
-			custom_tooltip = swe_industrialize_sweden_tt
+			custom_tooltip = por_wine_monopolies_tt
 		}
 	}
 	gc_por_sebastians_reforms = {
@@ -1545,9 +1542,14 @@ gc_por_4_b = {
 			is_year > 1550
 		}
 		effect = {
-			add_country_modifier = {
-				name = redux_por_sebastians_reforms
-				duration = 9125
+			country_event_with_effect_insight = {
+				id = flavor_por.16
+				effect = "
+					add_country_modifier = {
+						name = redux_por_sebastians_reforms
+						duration = 9125
+					}
+				"
 			}
 		}
 	}
@@ -1587,22 +1589,13 @@ gc_por_3_c = {
 		}
 
 		effect = {
-			every_owned_province = {
-				limit = {
-					OR = {
-						area = alentejo_area 
-						area = beieras_area
-					}
-				}
-				add_province_modifier = {
-					name = redux_por_supremacy_of_the_crown
-					duration = -1
-				}
-			}
-			custom_tooltip = add_5_crown_land_share
-			change_estate_land_share = {
-				estate = estate_nobles
-				share = -10
+			country_event_with_effect_insight = {
+				id = flavor_por.16
+				effect = "
+					custom_tooltip = por_supremacy_of_the_crown_ct
+					custom_tooltip = add_10_crown_land_share
+
+				"
 			}
 		}
 	}
@@ -1628,7 +1621,7 @@ gc_por_5_b = {
 	}
 	has_country_shield = yes
 
-	gc_por_hegemon_of_the_south_atlantic = {
+	gc_por_hegemon_of_the_south = {
 		icon = spa_dominate_sevilla
 		required_missions = { gc_por_portugese_renaissance }
 		position = 8
@@ -1889,7 +1882,7 @@ gc_por_3_e = {
 	}
 	has_country_shield = yes
 
-	gc_por_defense_of_iberia = {
+	gc_por_defence_of_iberia = {
 		icon = mission_protect_granada
 		position = 9
 		
@@ -1904,15 +1897,15 @@ gc_por_3_e = {
 
 		effect = {
 			add_country_modifier = {
-				name = lus_defend_iberia
+				name = redux_por_struggle_for_iberia
 				duration = 5475
 			}
 		}
 	}
 
-	gc_por_control_the_penninsula = {
+	gc_por_control_the_peninsula = {
 		icon = mission_reclaim_andalucia
-		required_missions = { gc_por_defense_of_iberia }
+		required_missions = { gc_por_defence_of_iberia }
 		position = 12
 		provinces_to_highlight = {
 			province_id = 210
@@ -1967,7 +1960,7 @@ gc_por_1_d = {
 
 	gc_por_punish_the_vultures = {
 		icon = mission_invade_occitania
-		required_missions = { gc_por_defense_of_iberia }
+		required_missions = { gc_por_defence_of_iberia }
 		position = 11
 		provinces_to_highlight = {
 			OR = {
@@ -2149,7 +2142,7 @@ gc_por_2_e = {
 
 	gc_por_conquest_of_the_isles = {
 		icon = mission_seize_the_isles
-		required_missions = { gc_por_defense_of_iberia }
+		required_missions = { gc_por_defence_of_iberia }
 		position = 11
 		provinces_to_highlight = {
 			area = baleares_area
@@ -2214,7 +2207,7 @@ gc_por_4_c = {
 	
 	gc_por_masters_of_the_mediterranean = {
 		icon = mission_rule_italy
-		required_missions = { gc_por_defense_of_iberia }
+		required_missions = { gc_por_defence_of_iberia }
 		position = 11
 		provinces_to_highlight = {
 			OR = {
@@ -2289,9 +2282,9 @@ gc_por_5_c = {
 	}
 	has_country_shield = yes
 
-	gc_por_continue_the_reconqusita = {
+	gc_por_continue_the_reconquista = {
 		icon = mission_moroccan_ports
-		required_missions = { gc_por_defense_of_iberia }
+		required_missions = { gc_por_defence_of_iberia }
 		position = 11
 		provinces_to_highlight = {
 			province_id = 226
@@ -2316,7 +2309,7 @@ gc_por_5_c = {
 
 	gc_por_retribution = {
 		icon = mission_el_badi_palace
-		required_missions = { gc_por_continue_the_reconqusita }
+		required_missions = { gc_por_continue_the_reconquista }
 		position = 12
 		provinces_to_highlight = {
 			OR = {
@@ -2363,7 +2356,7 @@ gc_por_5_c = {
 				"
 			}
 			add_country_modifier = {
-				name = redux_lus_conversion_of_the_maghreb
+				name = redux_por_convert_maghreb
 				duration = 14600
 			}
 		}

@@ -1107,12 +1107,12 @@ country_event = {
 	
 	option = {
 		name = "flavor_por.EVTOPTA13"
-		define_heir = {
+		define_ruler = {
 			name = "Sebastian "
 			dynasty = "Avis"
 			culture = portugese
 			male = yes
-			age = 0
+			age = 15
 			adm = 6
 			dip = 5
 			mil = 5
@@ -1168,7 +1168,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "flavor_por.EVTOPTA14"
+		name = "flavor_por.EVTOPTA15"
 		
 		add_treasury = 1500
 		343 = {
@@ -1181,6 +1181,56 @@ country_event = {
 			add_base_tax = 2
 			add_base_manpower = 2
 			add_base_production = 2
+		}
+	}
+}
+
+country_event = {
+	id = flavor_por.16
+	title = "flavor_por.EVTNAME16"
+	desc = "flavor_por.EVTDESC16"
+	picture = ADVISOR_eventPicture	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_por.EVTOPTA16"
+		
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = alentejo_area 
+						area = beieras_area
+					}
+				}
+				add_province_modifier = {
+					name = redux_por_supremacy_of_the_crown
+					duration = -1
+				}
+			}
+		}
+		custom_tooltip = por_supremacy_of_the_crown_ct
+		custom_tooltip = add_10_crown_land_share
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = -10
+		}
+	}
+}
+
+country_event = {
+	id = flavor_por.17
+	title = "flavor_por.EVTNAME17"
+	desc = "flavor_por.EVTDESC17"
+	picture = ADVISOR_eventPicture	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_por.EVTOPTA17"
+		
+		add_country_modifier = {
+			name = redux_por_sebastians_reforms
+			duration = 9125
 		}
 	}
 }

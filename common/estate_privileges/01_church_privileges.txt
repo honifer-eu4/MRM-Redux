@@ -3385,7 +3385,7 @@ redux_estate_church_missions = {
 		}
 	}
 	on_granted = {
-		custom_tooltip = estate_burghers_forest_expansion_gt
+		custom_tooltip = redux_estate_church_missions_gt
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
@@ -3399,7 +3399,7 @@ redux_estate_church_missions = {
 		}
 	}
 	on_revoked = {
-		custom_tooltip = estate_burghers_forest_expansion_rt
+		custom_tooltip = redux_estate_church_missions_rt
 		hidden_effect = {
 			every_owned_province = {
 				limit = {

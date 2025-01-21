@@ -1418,7 +1418,7 @@ greater_portuguese_monarchy_reform = {
 			tag = POR
 			was_tag = POR 
 		}
-		has_country_flag = lusitanian_empire_proclaimed
+		has_country_flag = portuguese_empire_proclaimed
 	}
 	modifiers = {
 		global_tariffs = 0.1
