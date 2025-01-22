@@ -10,6 +10,8 @@
  shy_siberian_frontier_desc:0 "With the Russians safely removed as a threat, we must look at establishing new frontiers for our people. While the west and east both look appealing, perhaps we need to take another look at the wastelands of the north."
  shy_restore_mongol_empire_title:0 "Restore the Mongol Empire"
  shy_restore_mongol_empire_desc:0 "Genghis Khan's conquests made him a legend across the entire planet, one that shall never be forgotten. The days of hordes and mighty empire such as his may seem to be in the past, but we have managed to replicate his conquests. Now it is time for us to restore his legacy and immortalize ourselves in the books of history!"
+ shy_restore_the_silk_road_title:0 "Restore the Silk Road"
+ shy_restore_the_silk_road_desc:0 "To better facilitate trade and to encourage the growth of our more remote villages and cities we should improve the infrastructure along the old Silk Road."
 
  #Modifiers
  shy_conquest_of_tibet:0 "Conquest of Tibet"
