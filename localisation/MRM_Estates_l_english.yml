@@ -18,7 +18,7 @@
  estate_clergy_exploration_expedition_desc:0 "[Root.GetClergyName] roam our unexplored frontiers, shifting them back year by year. We should harness their pioneering instincts to accelerate our settlement of these areas."
  estate_clergy_exploration_expedition_mod:0 "Clergy Exploration"
  desc_estate_clergy_exploration_expedition_mod:0 "We are harnessing the pioneering instincts of the clergy to accelerate the settlement and growth of this area."
- estate_clergy_exploration_expedition_effect_tooltip:1 "§G-20%§! local development cost in all §YDesert§! and §YCoastal Desert§! provinces"
+ estate_clergy_exploration_expedition_effect_tooltip:1 "§G-25%§! local development cost in all §YDesert§! and §YCoastal Desert§! provinces"
  estate_clergy_exploration_expedition_mod_revoke_tooltip:0 "Removes §YClergy Exploration§! from all owned §YDesert§! and §YCoastal Desert§! provinces."
 
  estate_clergy_mountain_development:0 "Clergy Exploration Expeditions"

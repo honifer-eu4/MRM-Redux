@@ -5,7 +5,7 @@ hre_emperor_bonus = {
 	trigger = {
 		is_emperor = yes
 	}
-	land_forcelimit = 40
+	land_forcelimit = 30
 	global_manpower = 40
 }
 

@@ -4,13 +4,7 @@ redux_ibadi_tunis_tolerant = {
 }
 
 redux_ibadi_tunis_harsh = {
-    global_missionary_strength = 0.02
-    religion = yes
-}
-
-redux_sunni_tunis = {
-    tolerance_own = 1
-    global_missionary_strength = 0.01
+    global_heretic_missionary_strength = 0.03
     religion = yes
 }
 

@@ -1,0 +1,30 @@
+country_decisions = {
+	tun_move_capital = {
+		potential = { 
+			tag = TUN
+			owns_core_province = 118
+		}
+		allow = {
+			is_at_war = no
+		}
+		effect = {
+			set_capital = 118
+			if = {
+				limit = {
+					ROOT = {
+						religion = sunni
+					}
+				}
+				118 = {
+					change_religion = sunni
+				}
+			}
+			else = {
+				118 = {
+					change_religion = ibadi
+				}
+			}
+			add_prestige = 20
+		}
+	}
+}

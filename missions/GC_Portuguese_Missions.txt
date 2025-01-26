@@ -1738,6 +1738,7 @@ gc_por_2_d = {
 				limit = {
 					region = sahel_region
 				}
+				add_nationalism = -5
 			}
 		}
 	}

@@ -1,5 +1,5 @@
 estate_clergy_exploration_expedition_mod = {
-	local_development_cost = -0.20
+	local_development_cost = -0.25
 }
 estate_clergy_mountain_development_mod = {
 	local_development_cost = -0.1

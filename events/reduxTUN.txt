@@ -47,9 +47,11 @@ country_event = {
             }
             change_religion = sunni
         }
-        add_country_modifier = {
-            name = "redux_sunni_tunis"
-            duration = 7300
+        every_owned_province = {
+            limit = {
+                religion = ibadi
+            }
+            change_religion = sunni
         }
     }
 }
