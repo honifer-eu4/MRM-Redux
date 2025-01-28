@@ -88,7 +88,8 @@
  redux_por_struggle_for_iberia_desc:0 "A titanic struggle for control of the peninsula is underway."
  redux_por_convert_maghreb:0 "Conversion of the Maghreb"
  redux_por_convert_maghreb_desc:0 "We must restore Christian rule over the peoples of North Africa."
- 
+ witwatersrand_basin:0 "Witwatersrand Basin"
+ witwatersrand_basin:0 "We have uncovered what may be the largest single concentration of gold in the world."
  # Decisions
  lusitanian_nation_title:0 "Form Lusitanian Nation"
  lusitanian_nation_desc:0 ""
@@ -113,6 +114,9 @@
  flavor_por.EVTNAME17:0 "The Reforms of Sebastian de Avis"
  flavor_por.EVTDESC17:0 "Among his many acts as king, a number still stand out today. Sebastian furthered the cause of education in Portugal by establishing scholarships for medicine at the University of Coimbra, he would reform the legal system by creating the Código Sebastiânico, he helped provide for the poor in times of hunger, plague, or poor harvest, he reformed the organizational system of the military under the Lei das Armas, freed Brazilian natives from slavery, established a standard system of weights anf measurements with the Carta de Lei de Almeirim, and was a patron of poets, artists, and architects throughout his reign."
  flavor_por.EVTOPTA17:0 "Rex populi"
+ transvaal_gold_rush.1.EVTNAME:0 "Witwatersrand Gold Rush"
+ transvaal_gold_rush.1.EVTDESC:0 "The Witwatersrand Basin is thought to have produced as much as 22% of all gold ever mined on Earth. Though we are limited by technology, the mines of Transvaal will surely still provide our nation with a great economic boon."
+ transvaal_gold_rush.1.EVTOPTA "SHOW ME THE MONEY"
  # Tooltips
  por_wine_monopolies_tt:0 "from the provinces in §YPortugal§!, which produce §YWine§!."
  por_supremacy_of_the_crown_ct:0 "Every owned province in §YPortugal§! gets '§YSupremacy of the Crown§!' until the end of the game, giving the following effects:\nLocal Develpment Cost: §G-10.0%§!\nProvince Governing Cost: §G-25.0%§!"

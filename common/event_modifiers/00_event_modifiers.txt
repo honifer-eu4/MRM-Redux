@@ -1876,7 +1876,7 @@ redux_por_supremacy_of_the_crown = {
 }
 
 witwatersrand_basin = {
-	trade_goods_size_modifier = 0.75
+	trade_goods_size_modifier = 0.66
 }
 
 ven_murano_glass_industry = {

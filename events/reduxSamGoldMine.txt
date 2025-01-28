@@ -4,7 +4,7 @@ country_event = {
 	id = transvaal_gold_rush.1
 	title = "transvaal_gold_rush.1.EVTNAME"
 	desc = "transvaal_gold_rush.1.EVTDESC"
-	picture = MONGOL_BANNERS_eventPicture	
+	picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture	
 	
 	trigger = {
 		NOT = {
@@ -13,7 +13,7 @@ country_event = {
 		ROOT = {
 			owns_core_province = 4781
 		}
-		is_year > 1520
+		is_year > 1530
 	}
 
 	mean_time_to_happen = {
