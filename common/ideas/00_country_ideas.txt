@@ -12795,7 +12795,7 @@ TUN_ideas = {
 		global_sailors_modifier = 0.25
 	}
 	tun_board_of_captains = {
-		leader_naval_fire = 1
+		leader_naval_manuever = 1
 	}
 	tun_export_monopolies = {
 		global_own_trade_power = 0.2

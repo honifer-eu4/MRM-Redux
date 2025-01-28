@@ -1235,10 +1235,26 @@ sicilian_emirate_restored = {
 		infantry_power = 0.1
 		sailors_recovery_speed = 0.15
 		land_forcelimit_modifier = 0.2
-    	num_accepted_cultures = 2
 	}
 	custom_attributes = {
 		ai = no
+	}
+}
+
+integrate_italian_nobility = {
+	icon = "ordenancas"
+	allow_normal_conversion = yes
+	potential = {
+		tag = TUN
+		has_country_flag = tunis_italian_nobility
+	}
+	modifiers = {
+		num_accepted_cultures = 8
+		promote_culture_cost = -0.8
+		advisor_cost = -0.15
+	}
+	ai = {
+		factor = 1000
 	}
 }
 

@@ -2691,7 +2691,7 @@ ordennancas_reform = {
 }
 
 expand_the_fuzileiros = {
-	icon = "ordenancas"
+	icon = "new_order_regiments"
 	allow_normal_conversion = yes
 	potential = {
 		has_dlc = "Domination"
@@ -2700,11 +2700,7 @@ expand_the_fuzileiros = {
 			primary_culture = portugese
 			primary_culture = brazilian
 		}
-		mission_completed = gc_por_portugese_fuzileiros
-		custom_trigger_tooltip = {
-			tooltip = has_unlocked_this_reform_tt
-			has_country_flag = enable_expand_the_fuzileiros_flag
-		}
+		has_country_flag = fuzileiros_flag
 	}
 	trigger = {
 		if = {

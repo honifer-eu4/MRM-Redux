@@ -47,6 +47,7 @@ country_event = {
             }
             change_religion = sunni
         }
+        add_adm_power = 200
         every_owned_province = {
             limit = {
                 religion = ibadi

@@ -888,18 +888,16 @@ mam_missions_3 = {
 			}
 			owned_by = ROOT
 			if = {
-				limit = { has_dlc = "Mandate of Heaven" }
-				OR = {
-					is_prosperous = no 
-					NOT = { num_of_times_improved = 1 }
-					NOT = { num_of_buildings_in_province = 1 }
+				limit = { 
+					has_dlc = "Mandate of Heaven" 
 				}
+				is_prosperous = no 
+				NOT = { num_of_times_improved = 2 }
+				NOT = { num_of_buildings_in_province = 1 }
 			}
 			else = {
-				OR = {
-					NOT = { num_of_times_improved = 1 }
-					NOT = { num_of_buildings_in_province = 1 }
-				}
+				NOT = { num_of_times_improved = 2 }
+				NOT = { num_of_buildings_in_province = 1 }
 			}
 		}
 		trigger = {
@@ -907,61 +905,47 @@ mam_missions_3 = {
 				tooltip = mam_every_province_nile_tt
 				362 = {
 					owned_by = ROOT
-					OR = {
-						num_of_buildings_in_province = 1
-						num_of_times_improved = 1
-						is_prosperous = yes
-					}
+					num_of_buildings_in_province = 1
+					num_of_times_improved = 2
+					is_prosperous = yes
 				}
 				363 = {
 					owned_by = ROOT
-					OR = {
-						num_of_buildings_in_province = 1
-						num_of_times_improved = 1
-						is_prosperous = yes
-					}
+					num_of_buildings_in_province = 1
+					num_of_times_improved = 2
+					is_prosperous = yes
 				}
 				2316 = {
 					owned_by = ROOT
-					OR = {
-						num_of_buildings_in_province = 1
-						num_of_times_improved = 1
-						is_prosperous = yes
-					}
+					num_of_buildings_in_province = 1
+					num_of_times_improved = 2
+					is_prosperous = yes
 				}
 				361 = {
 					owned_by = ROOT
-					OR = {
-						num_of_buildings_in_province = 1
-						num_of_times_improved = 1
-						is_prosperous = yes
-					}
+					num_of_buildings_in_province = 1
+					num_of_times_improved = 2
+					is_prosperous = yes
 				}
 				359 = {
 					owned_by = ROOT
-					OR = {
-						num_of_buildings_in_province = 1
-						num_of_times_improved = 1
-						is_prosperous = yes
-					}
+					num_of_buildings_in_province = 1
+					num_of_times_improved = 2
+					is_prosperous = yes
 				}
 				vostani_area = {
 					owned_by = ROOT
 					type = all 
-					OR = {
-						num_of_buildings_in_province = 1
-						num_of_times_improved = 1
-						is_prosperous = yes
-					}
+					num_of_buildings_in_province = 1
+					num_of_times_improved = 2
+					is_prosperous = yes
 				}
 				said_area = {
 					owned_by = ROOT
 					type = all
-					OR = {
-						num_of_buildings_in_province = 1
-						num_of_times_improved = 1
-						is_prosperous = yes
-					}
+					num_of_buildings_in_province = 1
+					num_of_times_improved = 2
+					is_prosperous = yes
 				}
 			}
 		}

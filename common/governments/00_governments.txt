@@ -179,6 +179,7 @@ monarchy = {
 				sidhi_recruitment
 				corvee_reform
 				council_of_the_indies_reform
+				integrate_italian_nobility
 				#1.35
 				ottoman_provincial_government_system_reform
 				namestnik_reform

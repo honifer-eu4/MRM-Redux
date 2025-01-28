@@ -212,13 +212,14 @@ gc_por_1 = {
 		
 		trigger = {
 			ROOT = {
+				reform_level > 4
 				army_professionalism > 0.33
 				num_of_marines > 8
 			}
 		}
 		
 		effect = {
-			set_country_flag = enable_expand_the_fuzileiros_flag
+			set_country_flag = fuzileiros_flag
 			add_government_reform = expand_the_fuzileiros
 		}
 	}
@@ -1449,7 +1450,7 @@ gc_por_4_b = {
 				NOT = { is_core = ROOT }
 				NOT = { base_production > 7 }
 				has_production_building_trigger = no
-				has_no_manufactory_trigger = yes
+				has_manufactory_trigger = no
 			}
 		}
 		trigger = {
@@ -1721,12 +1722,9 @@ gc_por_2_d = {
 		}
 		
 		trigger = {
-			sahel_region = {
-				ROOT = {
-					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						value = 14
-					}
-				}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = sahel_region
+				value = 13
 			}
 		}
 		effect = {

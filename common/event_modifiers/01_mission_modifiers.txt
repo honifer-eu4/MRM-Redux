@@ -3821,7 +3821,7 @@ tun_barbary_pirates = {
 }
 
 tun_morocco = {
-	ship_durability = 0.1
+	heavy_ship_power = 0.1
 }
 
 tun_restoration_of_alexandra = {
@@ -11648,6 +11648,7 @@ estate_church_muslim_integration_mod = {
 
 grain_trade_imports_modifier = {
 	supply_limit_modifier = 0.1
+	global_manpower_modifier = 0.05
 	global_unrest = -1
 }
 

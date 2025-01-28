@@ -32,19 +32,6 @@ change_estate_land_share = {
 		mil = 4
 	}
 	clear_scripted_personalities = yes
-	add_ruler_personality = incorruptible_personality
-}
-
-1435.9.18 = {
-	heir = {
-		name = "Yahy�"
-		monarch_name = "Yahy� III"
-		dynasty = "Hafsid"
-		birth_date = 1435.9.18
-		death_date = 1489.1.1
-		claim = 95
-		adm = 3
-		dip = 3
-		mil = 3
-	}
+	add_ruler_personality = tactical_genius_personality
+	add_ruler_personality = lawgiver_personality
 }
