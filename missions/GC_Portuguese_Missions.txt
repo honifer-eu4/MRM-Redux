@@ -318,10 +318,37 @@ gc_por_2 = {
 			create_conquistador = {
 				tradition = 60
 			}
-			sahel_region = {
+			baghena_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { is_core = MNG }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT 
+			}
+			western_sahara_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT 
+			}
+			niger_bend_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT 
+			}
+			azbin_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT 
+			}
+			east_azbin_area = {
+				limit = {
+					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT 
@@ -352,6 +379,8 @@ gc_por_2 = {
 				area = baghena_area
 				area = niger_bend_area
 				area = western_sahara_area
+				area = azbin_area
+				area = east_azbin_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}

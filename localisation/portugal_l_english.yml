@@ -67,7 +67,9 @@
  redux_por_settling_africa:0 "Settling Africa"
  redux_por_settling_africa_desc:0 "We must claim as much of Africa for ourselves as we can before competing powers arrive."
  redux_port_wine_vineyards:0 "Port Wine Vineyards"
- redux_port_wine_vineyards_desc:0 "With the expansion of production, Port wine has quickly become a favorite of the nobles across Europe."
+ redux_port_wine_vineyards_desc:0 "With the expansion of production in Portugal, Port wine has quickly become a favorite aperitif and dessert wine of aristocracies across the continent."
+ maderia_sugar_cane:0 "Maderia Sugar Plantations"
+ maderia_sugar_cane_desc:0 "Until the mid-16th century the sugar plantations of Maderia were the largest source of raw sugarcane in Europe."
  redux_por_controls_the_south_atlantic:0 "Control Over the South Atlantic"
  redux_por_controls_the_south_atlantic_desc:0 "We have a controlling share of trade in the South Atlantic."
  redux_por_supremacy_of_the_crown:0 "Supremacy of the Crown"
@@ -89,7 +91,7 @@
  redux_por_convert_maghreb:0 "Conversion of the Maghreb"
  redux_por_convert_maghreb_desc:0 "We must restore Christian rule over the peoples of North Africa."
  witwatersrand_basin:0 "Witwatersrand Basin"
- witwatersrand_basin:0 "We have uncovered what may be the largest single concentration of gold in the world."
+ witwatersrand_basin_desc:0 "We have uncovered what may be the largest single concentration of gold in the world."
  # Decisions
  lusitanian_nation_title:0 "Form Lusitanian Nation"
  lusitanian_nation_desc:0 ""
@@ -116,7 +118,7 @@
  flavor_por.EVTOPTA17:0 "Rex populi"
  transvaal_gold_rush.1.EVTNAME:0 "Witwatersrand Gold Rush"
  transvaal_gold_rush.1.EVTDESC:0 "The Witwatersrand Basin is thought to have produced as much as 22% of all gold ever mined on Earth. Though we are limited by technology, the mines of Transvaal will surely still provide our nation with a great economic boon."
- transvaal_gold_rush.1.EVTOPTA "SHOW ME THE MONEY"
+ transvaal_gold_rush.1.EVTOPTA:0 "SHOW ME THE MONEY"
  # Tooltips
  por_wine_monopolies_tt:0 "from the provinces in §YPortugal§!, which produce §YWine§!."
  por_supremacy_of_the_crown_ct:0 "Every owned province in §YPortugal§! gets '§YSupremacy of the Crown§!' until the end of the game, giving the following effects:\nLocal Develpment Cost: §G-10.0%§!\nProvince Governing Cost: §G-25.0%§!"

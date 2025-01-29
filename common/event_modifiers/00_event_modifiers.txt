@@ -1879,6 +1879,14 @@ witwatersrand_basin = {
 	trade_goods_size_modifier = 0.66
 }
 
+maderia_sugar_cane = {
+	trade_goods_size = 2
+}
+
+saharan_salt_mines = {
+	trade_goods_size = 2
+}
+
 ven_murano_glass_industry = {
 	trade_goods_size = 2.0
 	mr_guilds_influence = 0.02

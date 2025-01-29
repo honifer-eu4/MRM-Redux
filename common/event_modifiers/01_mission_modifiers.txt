@@ -3698,12 +3698,26 @@ mor_saharan_trade = {
 	caravan_power = 0.33
 }
 
-conquest_of_benin_mor = {
+redux_mor_muslim_dominance_of_africa = {
+	global_trade_power = 0.1
+	trade_efficiency = 0.1
+}
+
+redux_mor_growing_sahara_trade = {
+	local_development_cost = -0.2
+}
+
+redux_mor_conquest_of_west_africa = {
 	global_autonomy = -0.05
 }
 
-mor_privateering = {
-	capture_ship_chance = 0.25
+redux_mor_building_a_war_fleet = {
+	heavy_ship_cost = -0.2
+}
+
+redux_mor_barbary_pirates = {
+	local_sailors_modifier = 0.5
+	local_manpower_modifier = 0.25
 }
 
 mor_el_badi_palace = {
@@ -3725,18 +3739,22 @@ mor_barbary_pirate_coast = {
 	privateer_efficiency = 0.2
 }
 
-mor_north_sea_corsairs = {
+redux_mor_letters_of_marque = {
 	heavy_ship_power = 0.1
 }
+
 mor_andalucia = {
 	global_missionary_strength = 0.03
 	land_morale = 0.1
+
 }
 mor_tunis_conquest = {
 	galley_power = 0.2
+
 }
 mor_beyond_the_canaries = {
 	range = 0.25
+
 }
 mor_colonized_brazil = {
 	global_colonial_growth = 20

@@ -47,35 +47,7 @@ country_decisions = {
 			}
 		}
 		provinces_to_highlight = {
-			OR = {
-				province_id = 221	# Murcia
-				province_id = 223	# Granada
-				province_id = 224	# Andalucia
-				province_id = 225	# Cordoba
-				province_id = 226	# Gibraltar
-				province_id = 1748	# Jaen
-				province_id = 1749	# Cadiz
-				province_id = 222	# Almeria
-				province_id = 4547
-				province_id = 4549
-				province_id = 4548
-				AND = {
-					OR = {
-						province_id = 229
-						province_id = 230
-					}
-					ROOT = { NOT = { owns_core_province = 1750 } }
-				}
-				AND = {
-					OR = {
-						province_id = 1750
-						province_id = 4549
-					}
-					ROOT = { NOT = { owns_core_province = 230 } }
-					ROOT = { NOT = { owns_core_province = 229 } }
-					ROOT = { NOT = { owns_core_province = 4549 } }
-				}
-			}
+			region = iberia_region
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
@@ -93,55 +65,30 @@ country_decisions = {
 				}
 			}
 			is_tribal = no
-			owns_core_province = 221			# Murcia
-			owns_core_province = 223			# Granada
-			owns_core_province = 224			# Andalucia
-			owns_core_province = 226			# Gibraltar
-			owns_core_province = 1748			# Jaen
-			owns_core_province = 1749			# Cadiz
-			owns_core_province = 222			# Almeria
-			owns_core_province = 4547
-			owns_core_province = 4548
-			owns_core_province = 225			# Cordoba
-			OR = {
-				AND = {
-					owns_core_province = 230			# Algarve
-					owns_core_province = 229			# Alentejo
-				}
-				AND = {
-					owns_core_province = 1750			# Alicante
-					owns_core_province = 4549
-				}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 15
+				region = iberia_region
 			}
+			upper_andalucia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			lower_andalucia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			owns_core_province = 225			# Cordoba
 		}
 		effect = {
-			hidden_effect = {
-				if = {
-					limit = { 
-						tag = MOR 
-						has_dlc = "Golden Century"
-					}
-					complete_mission = gra_overcome_internal_strife
-				}
-			}
-			hidden_effect = {
-				if = {
-					limit = { 
-						tag = MOR 
-						has_dlc = "Golden Century"
-					}
-					complete_mission = gra_friends_in_high_places
-				}
-			}
 			change_tag = ADU
 			on_change_tag_effect = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 3 }
 				}
-				set_government_rank = 2
+				set_government_rank = 3
 			}
 			add_prestige = 25
 			add_country_modifier = {
@@ -166,19 +113,7 @@ country_decisions = {
 				limit = { is_revolutionary = no }
 				add_government_reform = al_andalusia_government
 			}
-			lower_andalucia_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ADU
-			}
-			upper_andalucia_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ADU
-			}
-			toledo_area = {
+			iberia_region = {
 				limit = {
 					NOT = {
 						owned_by = ROOT
@@ -186,167 +121,7 @@ country_decisions = {
 				}
 				add_permanent_claim = ADU
 			}
-			add_permanent_claim = 218
-			add_permanent_claim = 220
-			add_permanent_claim = 1750
-			add_permanent_claim = 1747
 			set_country_flag = formed_andalusia_flag
-			if = {
-				limit = {
-					mission_completed = gra_reconquer_sevilla
-					has_dlc = "Golden Century"
-				}
-				alentejo_area = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-				beieras_area = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			if = {
-				limit = {
-					mission_completed = gra_restore_trade_superiority
-					has_dlc = "Golden Century"
-				}
-				corsica_sardinia_area = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-				baleares_area = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			if = {
-				limit = {
-					mission_completed = gra_restore_faith_in_the_throne
-					has_dlc = "Golden Century"
-				}
-				algiers_area = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-				hautes_plaines_area = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-				barbary_coast_area = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-				kabylia_area = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-				tunisia_area = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-				djerba_area = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-				tripolitania_area = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			if = {
-				limit = {
-					mission_completed = gra_restore_faith_in_the_throne
-					has_dlc = "Golden Century"
-				}
-				northern_morocco_area = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-						}
-						NOT = {
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-				marrekesh_area = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-						}
-						NOT = {
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-				western_morocco_area = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-						}
-						NOT = {
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas

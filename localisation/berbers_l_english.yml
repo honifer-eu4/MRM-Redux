@@ -18,6 +18,14 @@
  gc_tun_sack_of_rome_desc:0 "We have struck at the heart of Christendom, with the sack of Rome itself we have surely struck fear into the hearts of every Christian in Italy and perhaps across all of Europe. The Islamic conquests in Western Europe which were reversed by the Spanish and Portuguese Reconquista have been brought further than ever before in Italy."
  gc_tun_integrate_the_mamluks_title:0 "Integrate the Mamluk Soldiers"
  gc_tun_integrate_the_mamluks_desc:0 "With most of Egypt under our control, it only makes sense to continue the effective practice of the previous administration of importing elite Mamluk soldiers for our armies."
+ gc_mor_scraps_of_empire_title:0 "Scraps of Empire"
+ gc_mor_scraps_of_empire_desc:0 "With the defeat of the Portuguese in West Africa their other African possessions, and any unclaimed lands in Sub-Saharan Africa, are now lightly defended and vulerable to attack. We should take this opportunity to grab these scraps of empire before other European colonizers beat us to it."
+ gc_mor_salt_trade_title:0 "Saharan Salt Trade"
+ gc_mor_salt_trade_desc:0 "One of the most lucrative aspects of the Saharan trade routes besides gold and ivory is salt. A good necessary for people of all walks of life to keep their food from spoiling for more than a few days, control over this trade will bring us great riches."
+ gc_mor_algerian_ports_title:0 "Algerian Ports"
+ gc_mor_algerian_ports_desc:0 "We should focus our efforts on developing our new Algerian possessions into greater centers of trade. Expanding the port facilities on the Barbary Coast has the added effect of giving the Barbary Pirates a larger, more sophisticated base of operations. And, as long as they're not attacking our shipping, who are we to stop them from bringing slaves and wealth to our shores?"
+ gc_mor_control_the_atlantic_title:0 "Control the Atlantic"
+ gc_mor_control_the_atlantic_desc:0 "Control over the Atlantic is crucial if we want to prevent the Iberians from continuing their conquests into North Africa, or if we ever want to launch a successful invasion of our own into the Iberian peninsula"
 
  #Modifiers
  redux_tunis_art_and_religion:0 "Art and Religion"
@@ -28,6 +36,21 @@
  redux_ibadi_tunis_harsh_desc:0 "We have decided that all must follow the true faith, no matter what!"
  redux_mor_iberia:0 "Foothold in Iberia"
  redux_mor_iberia_desc:0 "Against all odds, we have defeated the Christians in Iberia and established a foothold for further conquests. We must now begin a period of recovery while also remaining prepared and vigilant for any attacks by the heathens."
+ saharan_salt_mines:0 "Saharan Salt Mines"
+ saharan_salt_mines_desc:0 "The salt mines of the Sahara seem almost inexhaustible."
+ redux_mor_growing_sahara_trade:0 "Growing Saharan Trade"
+ redux_mor_growing_sahara_trade_desc:0 "With our control over the region firmly established, the trade link between the Maghreb and the Sub-Sahara have never been stronger, we expect communities along the trade route to benefit greatly from this arrangement."
+ redux_mor_barbary_pirates:0 "Barbary Pirates"
+ redux_mor_barbary_pirates_desc:0 "The Algerian coast is full of adventuring young men and pirates, we should use this valuable source of eager recruits to fill our ranks."
+ redux_mor_barbary_pirates_ct:0 "Every owned port in §YAlgeria§! gets '§YBarbary Pirates§!' until the end of the game, giving the following effects:\nLocal Manpower Modifier: §G+25.0%§!\nLocal Sailors Modifier: §G+50.0%§!"
+ redux_mor_letters_of_marque:0 "Letters of Marque"
+ redux_mor_letters_of_marque:0 "We have found that by allowing the various pirates and corsairs of the North African Coast to fight alongside us we are able to use their expertise and tactics in engaging foreign navies to our advantage."
+ redux_mor_building_a_war_fleet:0 "Building a War Fleet"
+ redux_mor_building_a_war_fleet_desc:0 "It has become apparent by our raids on the Iberian coast that if we are to fight the Iberians in open battle on the high seas a larger war fleet of ships of the line is necessary."
+ redux_mor_conquest_of_west_africa:0 "Conquest of West Africa"
+ redux_mor_conquest_of_west_africa_desc:0 "With the conquest of West Africa we must perform the arduous task of establishing a new administration among the various tribes and petty kings of the region."
+ redux_mor_muslim_dominance_of_africa:0 "Muslim Control of Africa"
+ redux_mor_muslim_dominance_of_africa_desc:0 "From Cairo to Fez, from the gold mines of Timbuktu to the merchants of the Horn, from the jungles of the Congo to the islands of Zanzibar all is under the control of Islam. With this dominance of the continent comes many benefits including control over its trade."
 
 
  #Events
@@ -44,6 +67,7 @@
  #Tooltips
  tunis_ibadi_event_tt:0 "This event will have three options: \nDeal with the Sunnis using a tolerant approach, gaining §G+3 Tolerance of Heretics§!, §G+3 Tolerance of Heathens§!, and §G+25.0% Religious Unity§!. \nDeal with the Sunnis using a harsh approach, gaining §G+2% Missionary Strength§!, §R-2 Tolerance of Heretics§! and §R-2 Tolerance of Heathens§!. \nRenounce the Ibadi faith and turn back to Sunni, gaining §G200 Administrative Power§!"
  tun_desert_development_tooltip:0 "Completing this mission will give us access to the §YClergy Exploration Expeditions§! estate privilege, which will grant §G-25%§! local development cost in all §YDesert§! and §YCoastal Desert§! provinces."
+ redux_tunis_monument_change_tt:0 "Completeing this mission will give us Discipline:  §G+5.0%§! and Manpower in True Faith provinces: §G+10.0%§! if we have upgraded the §YHoly City of Kairouan§! to tier 3."
  redux_mor_adu_tt:0 "We will now be able to form @ADU Andalusia while being at war."
  redux_mor_adu_tt2:0 "Has completed a mission allowing this decision in wartime"
 

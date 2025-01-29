@@ -1,17 +1,17 @@
 #338 - Al-Djazair
 
-owner = TUN
-controller = TUN 
+owner = TLC
+controller = TLC 
 culture = algerian
 religion = ibadi
 capital = "Al-Djazair"
 trade_goods = grain
 hre = no
-base_tax = 5 
-base_production = 5
-base_manpower = 3
+base_tax = 3
+base_production = 3
+base_manpower = 2
 is_city = yes
-add_core = TUN
+add_core = TLC
 add_core = ALG
 discovered_by = western
 discovered_by = muslim

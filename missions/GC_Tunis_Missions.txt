@@ -174,11 +174,27 @@ gc_tunis_1 = {
 				discover_country = ROOT
 			}
 			sahel_region = {
+				discover_country = ROOT
+			}
+			baghena_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				discover_country = ROOT
+				add_permanent_claim = ROOT
+			}
+			western_sahara_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			niger_bend_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
 				add_permanent_claim = ROOT
 			}
 		}
@@ -301,6 +317,7 @@ gc_tunis_2 = {
 			}
 		}
 		effect = {
+			custom_tooltip = redux_tunis_monument_change_tt
 			override_country_name = TUN_Empire_2
 		}
 	}
@@ -746,7 +763,7 @@ gc_tunis_4 = {
 			}
 		}
 	}
-	gc_tun_integrate_mamluks = {
+	gc_tun_integrate_the_mamluks = {
 		icon = mission_conquer_alexandria
 		required_missions = { gc_tun_alexandria }
 		position = 3
@@ -896,29 +913,15 @@ gc_tunis_5 = {
 		required_missions = { gc_tun_barbary_coast  }
 		position = 4
 		
-		provinces_to_highlight = {	
-			OR = {
-				province_id = 1298
-				AND = {
-					province_id = 338
-					NOT = {
-						owned_by = ROOT
-					}
-					has_shipyard_building_trigger = no
-				}
-			}
+		provinces_to_highlight = {
+			has_port = yes
+			has_shipyard_building_trigger = no
+			owned_by = ROOT
 		}
 		
 		trigger = {
 			num_of_owned_provinces_with = {
 				value = 10
-				OR = {
-					has_building = shipyard
-					has_building = grand_shipyard
-				}
-			}
-			338 = { 
-				owned_by = ROOT 
 				OR = {
 					has_building = shipyard
 					has_building = grand_shipyard
@@ -930,42 +933,7 @@ gc_tunis_5 = {
 			country_event = {
 				id = flavor_tun.1
 			}
-			northern_morocco_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			western_morocco_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			marrekesh_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			tafilalt_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			sus_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			southern_morocco_area = {
+			maghreb_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }

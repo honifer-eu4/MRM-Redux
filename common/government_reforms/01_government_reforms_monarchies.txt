@@ -1233,6 +1233,7 @@ sicilian_emirate_restored = {
 		may_perform_slave_raid = yes
 		coast_raid_range = 1 
 		infantry_power = 0.1
+		global_sailors_modifier = 0.2
 		sailors_recovery_speed = 0.15
 		land_forcelimit_modifier = 0.2
 	}
@@ -1242,7 +1243,7 @@ sicilian_emirate_restored = {
 }
 
 integrate_italian_nobility = {
-	icon = "ordenancas"
+	icon = "military_dictatorship_reform"
 	allow_normal_conversion = yes
 	potential = {
 		tag = TUN
