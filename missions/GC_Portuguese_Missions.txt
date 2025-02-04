@@ -1178,6 +1178,7 @@ gc_por_5_dom = {
 				fire = 5
 				manuever = 5
 				siege = 0
+				trait = great_explorer_personality
 			}
 		}
 	}

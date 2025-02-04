@@ -1236,6 +1236,8 @@ sicilian_emirate_restored = {
 		global_sailors_modifier = 0.2
 		sailors_recovery_speed = 0.15
 		land_forcelimit_modifier = 0.2
+		allowed_marine_fraction = 0.1
+		num_accepted_cultures = 2
 	}
 	custom_attributes = {
 		ai = no
@@ -1250,7 +1252,7 @@ integrate_italian_nobility = {
 		has_country_flag = tunis_italian_nobility
 	}
 	modifiers = {
-		num_accepted_cultures = 8
+		num_accepted_cultures = 6
 		promote_culture_cost = -0.8
 		advisor_cost = -0.15
 	}

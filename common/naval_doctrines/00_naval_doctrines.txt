@@ -99,7 +99,7 @@ grand_armada = {
 
 	cost = 0.1
 	country_modifier = {
-		allowed_marine_fraction = 0.25
+		allowed_marine_fraction = 0.1
 		leader_naval_manuever = 1
 		treasure_fleet_income = 0.5
 	}
@@ -331,6 +331,8 @@ maghrebi_corsairs = {
 
 	cost = 0.1
 	country_modifier = {
+		allowed_marine_fraction = 0.1
+		galley_power = 0.1
 		privateer_efficiency = 0.25
 		may_perform_slave_raid = yes
 		available_province_loot = 0.5
@@ -465,7 +467,7 @@ basque_marines = {
 	country_modifier = {
 		may_explore = yes 
 		landing_penalty = -1
-		allowed_marine_fraction = 0.25
+		allowed_marine_fraction = 0.15
 	}
 	effect = {}
 	removed_effect = {}

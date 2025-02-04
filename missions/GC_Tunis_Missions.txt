@@ -310,10 +310,10 @@ gc_tunis_2 = {
 			}
 		}
 		trigger = {
-			italy_region = {
-				type = all
-				owned_by = ROOT
-				is_core = ROOT
+			num_of_owned_provinces_with = {
+				value = 45
+				region = italy_region
+				is_core = root
 			}
 		}
 		effect = {
@@ -922,10 +922,7 @@ gc_tunis_5 = {
 		trigger = {
 			num_of_owned_provinces_with = {
 				value = 10
-				OR = {
-					has_building = shipyard
-					has_building = grand_shipyard
-				}
+				has_shipyard_building_trigger = yes
 			}
 		}
 		effect = {

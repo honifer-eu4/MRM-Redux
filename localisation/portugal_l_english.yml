@@ -92,6 +92,9 @@
  redux_por_convert_maghreb_desc:0 "We must restore Christian rule over the peoples of North Africa."
  witwatersrand_basin:0 "Witwatersrand Basin"
  witwatersrand_basin_desc:0 "We have uncovered what may be the largest single concentration of gold in the world."
+ redux_suqutra_supply:0 "Portuguese Outpost"
+ redux_suqutra_supply_desc:0 ""
+
  # Decisions
  lusitanian_nation_title:0 "Form Lusitanian Nation"
  lusitanian_nation_desc:0 ""

@@ -31,7 +31,8 @@ country_event = {
 			fire = 6
 			manuever = 5
 			siege = 4
-			trait = prize_hunter_personality
+			trait = buccaneer_personality
+			trait = inspirational_captain_personality		
 		}
 	}
 }

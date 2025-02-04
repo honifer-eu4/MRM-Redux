@@ -4121,24 +4121,23 @@ gra_mouth_of_mediterranean = {
 	province_trade_power_modifier = 0.25
 }
 
-gra_reconvert_giralda = {
+adu_reconvert_the_cordoba_mosque = {
 	local_development_cost = -0.15
 	local_monthly_devastation = -0.1
 	local_unrest = -3
 }
 
-gra_merchants_inspired = {
-	global_ship_trade_power = 0.2
-	embargo_efficiency = 0.2
+adu_western_caliph = {
+	shock_damage = 0.2
+	cavalry_power = 0.1
 }
 
 gra_eagerness_to_serve = {
 	manpower_recovery_speed = 0.2
 }
 
-adu_new_world_discoveries = {
-	global_colonial_growth = 25
-	range = 0.25
+the_stables_of_cordoba = {
+	cavalry_cost = -0.2
 }
 
 adu_trade_hub = {
