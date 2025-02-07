@@ -1134,11 +1134,13 @@ caliphate_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 50
 	modifiers = {
-		warscore_cost_vs_other_religion = -0.1
+		warscore_cost_vs_other_religion = -0.25
 		tolerance_own = 3
 		legitimacy = 1
-		governing_capacity = 100
+		governing_capacity = 500
 		missionaries = 1
+		land_morale = 0.1
+		discipline = 0.05
 		global_missionary_strength = 0.02
 	}
 	conditional = {
@@ -2072,12 +2074,13 @@ al_andalusia_government = {
 		primary_culture = andalucian
 	}
 	modifiers = {
-		idea_cost = -0.1
+		monarch_admin_power = 1
 		tolerance_of_heathens_capacity = 2
 		tolerance_heathen = 1
 	}
 	conditional = {
 		allow = { has_dlc = "Cradle of Civilization" }
+		allow_banners = yes
 		custom_attributes = {
 			allow_piety_switch_decision = yes	#Enables a decision which gives 1 stabhit, but turns your piety 180�
 		}

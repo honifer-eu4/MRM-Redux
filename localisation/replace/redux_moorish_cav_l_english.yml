@@ -1,0 +1,27 @@
+﻿l_english:
+ ONLY_BANNER_MODIFIER:0 "§YAffects only Moorish Cavalry Regiments§!"
+ BANNER_REGIMENT:3 "Moorish Cavalry Regiment\n$EFFECT$"
+ MODIFIER_AMOUNT_OF_BANNERS:0 "Possible Moorish Cavalry"
+ MODIFIER_LOCAL_AMOUNT_OF_BANNERS:0 "Possible Moorish Cavalry"
+ MODIFIER_HAS_BANNERS:1 "Allows Moorish Cavalry"
+ BANNER_CANT_HAVE:1 "Your nation cannot raise Moorish Cavalry.\n"
+ BANNER_NOT_OWNED_PROV:0 "You can only raise Moorish Cavalry from states that you own. Please select a province that you are the owner of.\n"
+ BANNER_LIMIT_CULTURE:0 "$PROVINCE$ is a $CULTURE$ province, so you cannot recruit Moorish Cavalry Regiments here."
+ mechanic_allow_banners_yes:1 "Allows recruiting §YMoorish Cavalry§!"
+ mechanic_allow_banners_no:0 ""
+ BANNERS_FROM_TT:3 "§YMoorish Cavalry Forcelimit§!\nThis is the amount of current and possible Moorish Cavalry our nation can have.\nMoorish Cavalry costs Corruption to raise and have higher Discipline than normal troops.\n\nMoorish Cavalry are raised from the state's full core provinces with Andalusian culture.\n\n$NAME$ provide $AMOUNT|Y$ Force Limit of Moorish Cavalry due to the development in:\n"
+ CONFIRRAISEBANNER:0 "Confirm Raise Moorish Cavalry"
+ AVAILABLE_BANNERS_LIMIT:0 "The number is reduced to $VAL|Y$ because we already raised $CURRENT|Y$ out of $MAX|Y$ Moorish Cavalry."
+ BANNER_NOWHERE_TO_GO:0 "There is no province fully under our control in $NAME$ for us to be able to raise Moorish Cavalry."
+ BANNER_NONE_AVAIL:3 "There are not enough $CULTURE$ People in full cores within the $NAME$ to raise any Moorish Cavalry."
+ BANNER_ALL_RAISED:1 "$NAME$ cannot raise more Moorish Cavalry, as there are already $CURR|Y$ raised.\n"
+ ab_manchu_banner:0 "Moorish Cavalry"
+ ab_manchu_banner_tt:0 "§G+50%§! Possible Moorish Cavalry if available"
+ BANNER_NAME:0 "$HOME$'s $NUM$$ORDER$ Moorish Cavalry"
+ BANNERS_DESC:0 "Countries of §YAndalusian§! culture can raise Moorish Cavalry. Moorish Cavalry cost Corruption to raise and have higher Discipline than normal troops."
+ REGCAT_banner:0 "Moorish"
+ RAISE_MANCHU_BANNERS:0 "Raise Moorish Cavalry"
+ STATE_CORRUPTION_INC:2 "Raising $RAISED|Y$ regiments as Moorish Cavalry will increase corruption by $INC$.\n"
+
+ 
+ 

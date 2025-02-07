@@ -608,10 +608,10 @@ country_event = {
 	
 	option = {
 		name = "flavor_mor.14.a"
-		153 = {
+		225 = {
 			change_trade_goods = cloth
 		}
-		153 = {
+		225 = {
 			add_base_production = 1
 		}
 		ai_chance = {
@@ -621,10 +621,10 @@ country_event = {
 	
 	option = {
 		name = "flavor_mor.14.b"
-		153 = {
+		225 = {
 			change_trade_goods = cotton
 		}
-		153 = {
+		225 = {
 			add_base_production = 1
 		}
 		ai_chance = {
@@ -634,10 +634,10 @@ country_event = {
 	
 	option = {
 		name = "flavor_mor.14.c"
-		153 = {
+		225 = {
 			change_trade_goods = silk
 		}
-		153 = {
+		225 = {
 			add_base_production = 1
 		}
 		ai_chance = {
@@ -647,10 +647,10 @@ country_event = {
 	
 	option = {
 		name = "flavor_mor.14.d"
-		153 = {
+		225 = {
 			change_trade_goods = paper
 		}
-		153 = {
+		225 = {
 			add_base_production = 1
 		}
 		ai_chance = {
@@ -660,8 +660,44 @@ country_event = {
 	
 	option = {
 		name = "flavor_mor.14.e"
-		153 = {
+		225 = {
 			add_base_manpower = 3
 		}
 	}	
+}
+
+country_event = {
+	id = flavor_mor.15
+	title = flavor_mor.15.t
+	desc = flavor_mor.15.d
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_mor.15.a"
+		every_owned_province = {
+			limit = {
+				region = iberia_region
+			}
+			add_province_modifier = {
+				name = adu_return_of_the_moors
+				duration = -1
+			}
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+	
+	option = {
+		name = "flavor_mor.15.b"
+		add_country_modifier = {
+			name = adu_spanish_support
+			duration = -1
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
 }

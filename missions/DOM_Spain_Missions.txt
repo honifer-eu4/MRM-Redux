@@ -74,7 +74,18 @@ dom_cas_missions_1 = {
 		effect = {
 			set_country_flag = fate_of_granada_mission_flag 
 			country_event = { id = flavor_spa.8 }
-			126 = {
+			marrekesh_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			western_morocco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
 				add_permanent_claim = ROOT
 			}
 			northern_morocco_area = {
@@ -115,7 +126,7 @@ dom_cas_missions_1 = {
 			add_adm_power = 100
 			add_dip_power = 100
 			add_mil_power = 100
-			western_morocco_area = {
+			southern_morocco_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
@@ -123,6 +134,13 @@ dom_cas_missions_1 = {
 				add_permanent_claim = ROOT
 			}
 			tafilalt_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = ROOT 
+			}
+			sus_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }
@@ -921,20 +939,6 @@ dom_cas_missions_2 = {
 			add_country_modifier = {
 				name = "completing_the_reconquista"
 				duration = 5475
-			}
-			southern_morocco_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			sus_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_claim = ROOT }
-				}
-				add_permanent_claim = ROOT 
 			}
 		}
 	}

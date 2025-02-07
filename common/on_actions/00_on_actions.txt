@@ -3773,6 +3773,12 @@ on_province_religion_converted = {
 		}
 		remove_province_modifier = ottoman_siyasah_tax_reform_manpower
 	}
+	if = {
+		limit = {
+			has_province_modifier = gra_rebuilding_mosques
+		}
+		remove_province_modifier = gra_rebuilding_mosques
+	}
 }
 
 on_province_religion_changed = {
@@ -3827,6 +3833,12 @@ on_province_religion_changed = {
 		}
 		remove_province_modifier = ottoman_siyasah_tax_reform_manpower
 	}
+	if = {
+		limit = {
+			has_province_modifier = gra_rebuilding_mosques
+		}
+		remove_province_modifier = gra_rebuilding_mosques
+	}
 }
 
 # province, manually conversion
@@ -3841,6 +3853,12 @@ on_province_culture_converted = {
 			has_province_modifier = redux_por_african_settlers
 		}
 		remove_province_modifier = redux_por_african_settlers
+	}
+	if = {
+		limit = {
+			has_province_modifier = adu_return_of_the_moors
+		}
+		remove_province_modifier = adu_return_of_the_moors
 	}
 }
 
@@ -4543,12 +4561,6 @@ on_revolutionary_guard_raised = {
 }
 
 on_banner_raised = {
-	owner = { 
-		if = { 
-			limit = { has_country_flag = refund_partial_corruption_on_banner_recruited_flag }
-			add_corruption = -0.04
-		}
-	}
 }
 
 on_cossack_raised = {

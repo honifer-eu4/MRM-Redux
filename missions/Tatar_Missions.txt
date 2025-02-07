@@ -844,6 +844,7 @@ tatar_missions_1_a = {
 	ai = yes
 	potential = {
 		tag = SHY
+		has_country_flag = formed_bukhara_flag 
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -851,20 +852,12 @@ tatar_missions_1_a = {
 	shy_restore_the_silk_road = {
 		icon = mission_asian_city 
 		provinces_to_highlight = {
-			OR = {
-				region = central_asia_region
-				culture = afghani
-			}
+			culture = afghani
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			tag = BUK
-			central_asia_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				culture = afghani
 				value = 12

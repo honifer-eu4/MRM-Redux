@@ -22,7 +22,6 @@ country_decisions = {
 			NOT = { is_core = ROOT }
 		}
 		allow = {
-			adm_tech = 5
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no

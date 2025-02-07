@@ -1,0 +1,58 @@
+country_decisions = {
+	tun_move_capital = {
+		potential = { 
+			tag = TUN
+			owns_core_province = 118
+			NOT = {
+				has_country_flag = tun_rome_capital
+			}
+		}
+		allow = {
+			is_at_war = no
+		}
+		effect = {
+			set_capital = 118
+			if = {
+				limit = {
+					ROOT = {
+						religion = sunni
+					}
+				}
+				118 = {
+					change_religion = sunni
+				}
+			}
+			else = {
+				118 = {
+					change_religion = ibadi
+				}
+			}
+			set_country_flag = tun_rome_capital
+			add_prestige = 20
+		}
+	}
+
+	adu_restore_the_mosque_of_cordoba = {
+		potential = { 
+			tag = ADU
+			owns_core_province = 225
+			NOT = {
+				has_country_flag = adu_restored_cordoba_mosque
+			}
+		}
+		allow = {
+			controls = 225
+			treasury = 300
+		}
+		effect = {
+			add_treasury = -300
+			225 = {
+				add_province_modifier = {
+					name = adu_restored_cordoba_mosque
+					duration = -1
+				}
+			}
+			set_country_flag = adu_restored_cordoba_mosque
+		}
+	}
+}

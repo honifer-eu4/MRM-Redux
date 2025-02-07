@@ -376,19 +376,8 @@ ORM_2 = {
 		}
 		provinces_to_highlight = { 
 			OR = {
-				province_id = 358			#Alexandria
-				province_id = 361			#Cairo
-				province_id = 377			#Aleppo
-				province_id = 379			#Jerusalem
-				province_id = 382			#Damascus
 				province_id = 384			#Medina
 				province_id = 385			#Mecca
-				province_id = 388			#Aden
-				province_id = 390			#Sanaa
-				province_id = 392			#Al-Arid
-				province_id = 394			#Qatif
-				province_id = 400			#Muscat
-				province_id = 403			#Nizwa
 				province_id = 410			#Baghdad
 			}
 			OR = {
@@ -398,19 +387,8 @@ ORM_2 = {
 		} 
 
 		trigger = {  
-			owns_core_province = 358			#Alexandria
-			owns_core_province = 361			#Cairo
-			owns_core_province = 377			#Aleppo
-			owns_core_province = 379			#Jerusalem
-			owns_core_province = 382			#Damascus
 			owns_core_province = 384			#Medina
 			owns_core_province = 385			#Mecca
-			owns_core_province = 388			#Aden
-			owns_core_province = 390			#Sanaa
-			owns_core_province = 392			#Al-Arid
-			owns_core_province = 394			#Qatif
-			owns_core_province = 400			#Muscat
-			owns_core_province = 403			#Nizwa
 			owns_core_province = 410			#Baghdad
 		} 
 
@@ -537,17 +515,17 @@ ORM_3 = {
 
 		trigger = {  
 			monthly_income = 250
-			capital_scope = {
+			home_trade_node = {
 				highest_value_trade_node = yes
 				is_strongest_trade_power = ROOT
-			}
-			541 = {
+			} 
+			428 = {
 				trade_share = {
 					country = ROOT
 					share = 50
 				}
 			}
-			564 = {
+			1315 = {
 				trade_share = {
 					country = ROOT
 					share = 50
@@ -607,6 +585,7 @@ ORM_3 = {
 			give_claims = { area = upper_yemen_area }
 			give_claims = { area = tihama_al_yemen_area }
 			give_claims = { area = yemen_area }
+			give_claims = { area = aussa_area }
 			custom_tooltip = " " 
 			custom_tooltip = ORM_REMOVE_AUTONOMY_IN_OWNED_PROVINCES
 			hidden_effect = {
@@ -839,25 +818,9 @@ ORM_4 = {
 	ORM_across_hormuz = {
 		icon = mission_invade_island
 		position = 1
-		provinces_to_highlight = {  
-			OR = {
-				province_id = 431
-				province_id = 2219
-				province_id = 4332
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		} 
 
 		trigger = {  
-			431 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			2219 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			4332 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			army_size_percentage = 1
 		} 
 
 		effect = {  
@@ -1008,23 +971,35 @@ ORM_4 = {
 			OR = {
 				province_id = 395
 				province_id = 396
+				province_id = 400
+				province_id = 2999
 			}
 			OR = {
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				NOT = { has_production_building_trigger = yes }
-				NOT = { base_production = 4 }
+				NOT = { base_production = 6 }
 			}
 		}
 
 		trigger = {  
 			395 = {
 				country_or_non_sovereign_subject_holds = ROOT
-				base_production = 4
+				base_production = 6
 				has_production_building_trigger = yes
 			}
 			396 = {
 				country_or_non_sovereign_subject_holds = ROOT
-				base_production = 4
+				base_production = 6
+				has_production_building_trigger = yes
+			}
+			400 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				base_production = 6
+				has_production_building_trigger = yes
+			}
+			2999 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				base_production = 6
 				has_production_building_trigger = yes
 			}
 		} 
@@ -1036,22 +1011,13 @@ ORM_4 = {
 			396 = {
 				add_or_upgrade_production_building = yes
 			}
-			custom_tooltip = " "
-			if = {
-				limit = {
-					has_dlc = "Mandate of Heaven"
-				}
-				custom_tooltip = ORM_PROSPERITY_FOR_EVERY_GEM_PROVINCE
-				hidden_effect = {
-					every_owned_province = {
-						limit = {
-							trade_goods = gems
-						}
-						add_prosperity = 100
-					}
-				}
+			400 = {
+				add_or_upgrade_production_building = yes
 			}
-			else = {
+			2999 = {
+				add_or_upgrade_production_building = yes
+			}
+			custom_tooltip = " "
 				add_mercantilism = 3
 				add_years_of_owned_provinces_production_income = {
 					years = 24
@@ -1063,9 +1029,8 @@ ORM_4 = {
 					}
 					custom_tooltip = FROM_BAHRAIN_GEMS
 				}
-			}
-		} 
-	}
+		}
+	} 
 }
 ORM_5 = {
 	slot = 5

@@ -425,6 +425,7 @@ renaissance = {
 new_world_i = {
 
 	bonus = {
+		colonists = 1
 		global_prov_trade_power_modifier = 0.10
 	}
 

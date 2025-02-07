@@ -11,3 +11,9 @@ base_manpower = 1
 native_size = 10
 native_ferocity = 1
 native_hostileness = 3
+
+1444.11.10 = {
+    owner = MNG
+    controller = MNG
+    add_core = MNG
+}

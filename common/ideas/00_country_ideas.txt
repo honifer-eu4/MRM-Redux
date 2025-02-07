@@ -2349,10 +2349,11 @@ KOF_ideas = {
 		recover_army_morale_speed = 0.1
 	}
 	kof_recruit_condotierii = {
-		infantry_cost = -0.1
+		mercenary_cost = -0.15
 	}
 	kof_reberberization = {
 		num_accepted_cultures = 2
+		same_culture_advisor_cost = -0.1
 	}
 	kof_legacy_of_saints = {
 		land_morale = 0.15

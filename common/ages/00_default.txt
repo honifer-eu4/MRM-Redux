@@ -373,6 +373,7 @@ age_of_reformation = {
                 	ai = no
 					is_colonial_nation = no
 				}
+				NOT = { num_of_colonists = 4 }
 			}
 			effect = {
 				on_age_ability_taken = { age = age_of_reformation }

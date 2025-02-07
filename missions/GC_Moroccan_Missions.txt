@@ -1112,7 +1112,7 @@ granada_development_missions = {
 			country_event = {
 				id = flavor_mor.14
 			}
-			custom_tooltip = hun_pest_production_insight_tt
+			custom_tooltip = adu_cordoba_production_insight_tt
 		}
 	}
 
@@ -1131,16 +1131,16 @@ granada_development_missions = {
 				province_id = 222
 				province_id = 4550
 			}
-			NOT = { owned_by = ROOT }
-			NOT = { is_core = ROOT }
-			has_manufactory_trigger = no
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+				has_manufactory_trigger = no
+			}
 		}
 		
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = adu_grain_manus_tt
-			}
-			hidden_trigger = {
 				owns_core_province = 218
 				owns_core_province = 4787
 				owns_core_province = 1851
@@ -1191,9 +1191,7 @@ granada_development_missions = {
 		required_missions = { adu_the_andalusian }
 		
 		provinces_to_highlight = {
-			iberia_region = {
-				type = all
-			}
+			region = iberia_region
 			has_manpower_building_trigger = no
 			has_forcelimit_building_trigger = no
 		}
@@ -1208,7 +1206,10 @@ granada_development_missions = {
 		}
 		
 		effect = {
-
+			add_country_modifier = {
+				name = adu_moorish_shock_cav_expansion
+				duration = -1
+			}
 		}
 	}
 }
@@ -1319,6 +1320,9 @@ granada_slot_2_missions = {
 				every_owned_province = {
 					limit = {
 						region = iberia_region 
+						NOT = {
+							religion_group = muslim
+						}
 					}
 					add_province_modifier = {
 						name = gra_rebuilding_mosques
@@ -1331,7 +1335,7 @@ granada_slot_2_missions = {
 
 	adu_the_fate_of_the_christians = { #art
 		icon = mission_al-wadi_al-kabir
-		required_missions = { gra_own_iberia adu_develop_cordoba }
+		required_missions = { adu_reconversion_of_iberia }
 		
 		provinces_to_highlight = {
 			region = iberia_region
@@ -1349,10 +1353,10 @@ granada_slot_2_missions = {
 		}
 		
 		effect = {
-			country_event_with_effect_insight = {
-				id = randomeventsstapehordes.25
-				effect = x
+			country_event = {
+				id = flavor_mor.15
 			}
+			custom_tooltip = adu_the_fate_of_the_christians_tt
 		}
 	}
 }
@@ -1515,18 +1519,15 @@ granada_slot_3_missions = {
 		trigger = {
 			languedoc_area = {
 				type = all
-				owned_by = ROOT
-				is_core = ROOT
+				country_or_subject_holds = ROOT
 			}
 			guyenne_area = {
 				type = all
-				owned_by = ROOT
-				is_core = ROOT
+				country_or_subject_holds = ROOT
 			}
 			pyrenees_area = {
 				type = all
-				owned_by = ROOT
-				is_core = ROOT
+				country_or_subject_holds = ROOT
 			}			
 		}
 		
@@ -1566,25 +1567,22 @@ granada_slot_3_missions = {
 				area = provence_area
 			}
 			NOT = {
-				owned_by = ROOT
+				country_or_subject_holds = ROOT
 			}
 		}
 		
 		trigger = {
 			massif_central_area = {
 				type = all
-				owned_by = ROOT
-				is_core = ROOT
+				country_or_subject_holds = ROOT
 			}
 			savoy_dauphine_area = {
 				type = all
-				owned_by = ROOT
-				is_core = ROOT
+				country_or_subject_holds = ROOT
 			}
 			provence_area = {
 				type = all
-				owned_by = ROOT
-				is_core = ROOT
+				country_or_subject_holds = ROOT
 			}			
 		}
 		
@@ -1889,7 +1887,7 @@ granada_slot_5_missions = {
 		}
 	}
 	
-	adu_own_tunisia = {
+	adu_own_tunisia_1 = {
 		icon = mission_conquer_tunisia
 		required_missions = { adu_strike_at_the_heart }
 		position = 7
@@ -1922,7 +1920,7 @@ granada_slot_5_missions = {
 	
 	adu_fatimid_lands = {
 		icon = mission_fatimid_caliphate
-		required_missions = { adu_own_tunisia }
+		required_missions = { adu_own_tunisia_1 }
 		
 		provinces_to_highlight = {
 			OR = {

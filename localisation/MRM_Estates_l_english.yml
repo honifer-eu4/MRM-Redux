@@ -32,3 +32,6 @@
  estate_burghers_enslaving_rights_rt:0 "Removes §YHydraulic Rights§! from all owned §YDesert§! and §YCoastal Desert§! provinces."
 
  unlock_privilege_estate_nobles_enlist_the_mamluks_tt:0 "Enable the [Root.GetNobilityOrFallbackName] privilege '§YEnlist the Mamluks§!'."
+
+ redux_estate_nobles_apex:0 "Apex of the Nobility"
+ redux_estate_nobles_apex_desc:0 "The crown has no estates except the high roads of Portugal"

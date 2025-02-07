@@ -319,6 +319,10 @@ gc_tunis_2 = {
 		effect = {
 			custom_tooltip = redux_tunis_monument_change_tt
 			override_country_name = TUN_Empire_2
+			change_country_color = { 
+				color =  { 111 0 130 }
+			}
+			set_country_flag = has_overriden_color_flag
 		}
 	}
 	

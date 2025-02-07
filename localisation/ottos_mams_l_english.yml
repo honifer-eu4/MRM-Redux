@@ -18,5 +18,3 @@
  #Tooltips
 
  #Other
- mam_export_grain_title:0 "Export Grain"
- mam_export_grain_desc:2 "Do you wish to export grain to §Y[From.GetName]§!? This will cost us 50 £adm£ and we will gain §G+2§! Mercantilism. \n\n[From.GetName] gains '§YGrain Trade Imports§!' until the death of their ruler or cutting our diplomatic ties, giving the following effects:\nSupply Limit Modifier: §G+10%§!\nNational Manpower Modifier: §G5.0%§!\nNational Unrest: §G-1§!"

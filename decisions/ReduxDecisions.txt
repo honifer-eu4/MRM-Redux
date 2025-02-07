@@ -72,12 +72,12 @@ country_decisions = {
             ROOT = {
                 religion_group = christian
             }
-        }
-        allow = {
-            owns_core_province = 118
             118 = {
                 religion_group = muslim
             }
+        }
+        allow = {
+            owns_core_province = 118
         }
         effect = {
             118 = {

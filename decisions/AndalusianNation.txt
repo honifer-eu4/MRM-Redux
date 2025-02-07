@@ -96,6 +96,9 @@ country_decisions = {
 				duration = 3650
 			}
 			set_capital = 225 # Cordoba
+			225 = {
+				add_building = fort_15th
+			}
 			if = {
 				limit = {
 					NOT = { primary_culture = andalucian }

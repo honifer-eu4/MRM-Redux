@@ -13,6 +13,9 @@
  # Mamluks
  flavor_mam.100_tt:0 "This event will allow us to unlock 1 of 4 unique naval doctrines."
  mam_nav_prof_reward_yes_tt:0 "Recruiting §YAdmirals§! will now generate §G1§! Navy Tradition"
+ mam_export_grain_title:0 "Export Grain"
+ mam_export_grain_desc:2 "Do you wish to export grain to §Y[From.GetName]§!? This will cost us 50 £adm£ and we will gain §G+2§! Mercantilism. \n\n[From.GetName] gains '§YGrain Trade Imports§!' until the death of their ruler or cutting our diplomatic ties, giving the following effects:\nSupply Limit Modifier: §G+10%§!\nNational Manpower Modifier: §G5.0%§!\nNational Unrest: §G-1§!"
+ mam_every_province_nile_tt:0 "All highlighted provinces across the §YNile§!: \nAre prosperous\nHave been developed at least §Ytwice§!\nHave at least §Yone§! building"
 
  # Persia
  per_unify_the_shia_realms_at:1 " §Y[Root.Religion.GetName]§! provinces in §YArabia§!, §YIndia§! or in §YAfrica§! are hold by a §Y[Root.Religion.GetName]§! country which is either §Y[Root.GetName]§!, its subject or its ally."
