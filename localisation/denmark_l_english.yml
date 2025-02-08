@@ -21,6 +21,10 @@
  dan_the_carolean_units_desc:0 "Our military has been known to be pioneers in military innovativeness, and is feared for its quality in combat. However, our military system is always under the threat of corrupt advisors and generals, who consider more important to fill their own pockets instead of expanding our forces. If this ever happens then [Root.GetName] could be threatened even by petty kingdoms such as Denmark.\nWe must ensure an absolute rule within our country in order to neutralize the internal threat, and reform our government as well as our military."
  dan_drill_the_carolean_title:0 "Drill the Caroleans"
  dan_drill_the_carolean_desc:0 "The Caroleans are the result of our extensive military reforms. These battle-hardened soldiers go as close as possible to their enemies to unleash a barrage of lead. Afterwards, they charge into the enemy row, causing dread and panic at the frontline.\nWhile their strategy has proven to be working, it still needs further fine tuning as the casualties during the first fire intervalls are still unacceptable. We should drill our special units, and train their aiming skills."
+ dan_steel_for_the_hakkapeliitta_title:0 "The Hakkapeliitta"
+ dan_steel_for_the_hakkapeliitta_desc:0 "The Hakkapeliitta are the Finnish light cavalry, which excell in skirmishing, raiding and scouting. Their speed allows them to outmaneuver enemy fire and charge through the enemy lines. However, their numbers are few, and the Finns do not have the infrastructure to train more for the Swedish [Root.GovernmentName].\nWe should construct barracks in Finland, and adapt our tactics so we can utilize more Hakkapeliitta in combat."
+ dan_monopolize_the_baltic_sea_title:0 "Monopolize the Baltic"
+ dan_monopolize_the_baltic_sea_desc:0 "Now that we have established trade dominance in the Baltic Sea, it is time to expand our power and monopolize the Baltic Sea as well as the North Sea and Lübeck. Nobody but us should gain the benefits from the wares which arrive in the Baltic."
  
  
  #Danish Modifiers
@@ -32,6 +36,7 @@
  #Tooltips
  
  redux_dan_establish_merc_contracts_ct:0 "This event will unlock access to the mercenaries of Germany."
+ redux_dan_copper_tt:0 "If §Y'The Copper of Dalaskogen'§! event has not fired, this mission will cause it to happen. Otherwise, we will gain §G+10 years§! of copper income and §G+5 Mercantilism§!."
  
  #Other
 
