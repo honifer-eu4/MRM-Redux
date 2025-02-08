@@ -26,3 +26,33 @@ redux_mor_barbary_pirates = {
 	local_sailors_modifier = 0.5
 	local_manpower_modifier = 0.25
 }
+
+adu_restored_cordoba_mosque = {
+	local_development_cost = -0.15
+	local_monthly_devastation = -0.1
+	prestige = 0.5
+	tolerance_own = 1
+}
+
+adu_western_caliph = {
+	shock_damage = 0.2
+	cavalry_power = 0.1
+}
+
+the_stables_of_cordoba = {
+	cavalry_cost = -0.2
+}
+
+adu_moorish_shock_cav_expansion = {	
+	amount_of_banners = 1
+}
+
+adu_return_of_the_moors = {
+	local_culture_conversion_cost = -0.25
+	local_unrest = 2
+}
+
+adu_spanish_support = {
+	manpower_in_accepted_culture_provinces = 0.15
+	global_tax_modifier = 0.1
+}
