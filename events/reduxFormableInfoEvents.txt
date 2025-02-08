@@ -39,12 +39,17 @@ country_event = {
     option = {
         name = redux_formableInfoEvents.1.spa
         trigger = {
-            OR = {
-                tag = CAS
-                tag = POR 
-            }
+            tag = CAS
         }
         country_event = { id = redux_formableInfoEvents.5 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.1.lus
+        trigger = {
+            tag = POR
+        }
+        country_event = { id = redux_formableInfoEvents.41 }
     }
 
     option = {
@@ -1417,6 +1422,24 @@ country_event = {
 
     option = {
         name = redux_formableInfoEvents.40.exit
+    }
+}
+
+country_event = {
+    id = redux_formableInfoEvents.41
+    title = redux_formableInfoEvents.41.title
+    desc = redux_formableInfoEvents.41.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.41.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.41.exit
     }
 }
 
