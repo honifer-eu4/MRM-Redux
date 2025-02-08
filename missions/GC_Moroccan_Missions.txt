@@ -959,7 +959,7 @@ gc_morocco_5 = {
 		required_missions = { gc_mor_canaries }
 		
 		provinces_to_highlight = {
-			colonial_region = colonial_south_america
+			colonial_region = colonial_brazil
 			OR = {
 				is_city = no
 				NOT = { owned_by = ROOT }
@@ -970,7 +970,7 @@ gc_morocco_5 = {
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 5
-				colonial_region = colonial_south_america
+				colonial_region = colonial_brazil
 				is_city = yes
 			}
 		}

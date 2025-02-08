@@ -177,9 +177,6 @@ swe_scandinavian_colonialism_mission_slot = {
 				NOT = { development = 10 }
 				NOT = { has_manufactory_trigger = yes }
 			}
-			else = {
-				NOT = { has_manufactory_trigger = yes }
-			}
 		}
 		trigger = {
 			stability = 2

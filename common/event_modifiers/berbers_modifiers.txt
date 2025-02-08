@@ -56,3 +56,7 @@ adu_spanish_support = {
 	manpower_in_accepted_culture_provinces = 0.15
 	global_tax_modifier = 0.1
 }
+
+redux_mor_letters_of_marque = {
+	heavy_ship_power = 0.1
+}
