@@ -36,8 +36,14 @@ Hormuz:
     Second tradition now gives +0.25 Cavalry Shock instead of +10% Shock Damage.
     Third idea now gives +15% Cavalry Combat Ability and -10% Cavalry Cost instead of +10% Infantry Combat Ability.
 
+Mamluks:
+    Now gains the new Ottoman mission tree instead of the old one upon forming Rum.
+
 Morocco:
     Minor update to Andalusia, including new missions and a special unit type.
+
+Ottomans:
+    "The Fate of the Mamluks" mission now gives +10% Goods Produced Modifier instead of +20%.
 
 Portugal:
     Full rework of mission tree, including new missions for invading the Middle East, colonizing the African coast and the New World, and a new formable (Lusitania).
