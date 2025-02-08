@@ -39,6 +39,9 @@ Hormuz:
 Morocco:
     Minor update to Andalusia, including new missions and a special unit type.
 
+Portugal:
+    Full rework of mission tree, including new missions for invading the Middle East, colonizing the African coast and the New World, and a new formable (Lusitania).
+
 Sweden:
     Minor reordering of mission tree to allow for conquering of Norway before the Skaneland.
 
