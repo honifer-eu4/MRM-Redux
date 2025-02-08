@@ -1,0 +1,69 @@
+government = monarchy
+add_government_reform = portuguese_monarchy_reform
+primary_culture = portugese
+religion = catholic
+technology_group = western
+historical_friend = SPA
+historical_friend = CAS
+capital = 227 # Lisboa
+add_army_professionalism = 0.05
+national_focus = DIP
+
+change_estate_land_share = {
+	estate = estate_church
+	share = -10
+}
+change_estate_land_share = {
+	estate = estate_burghers
+	share = -5
+}
+change_estate_land_share = {
+	estate = estate_nobles
+	share = 15
+}
+
+set_estate_privilege = redux_estate_nobles_apex
+1435.1.1 = { leader = {	name = "Earl of Avranches"	type = general	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1449.5.20 } }
+1444.9.10 = {
+	monarch = {
+		name = "Afonso"
+		monarch_name = "Afonso V"
+		dynasty = "de Avis"
+		birth_date = 1428.1.15
+		death_date = 1481.8.28
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 2
+		leader = {	name = "Afonso V"	type = general	fire = 3	shock = 2	manuever = 3	siege = 1 }
+	}
+	queen = {
+		country_of_origin = POR
+		name = "Isabella"
+		dynasty = "de Avis"
+		birth_date = 1428.3.1
+		death_date = 1455.12.2
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = expansionist_personality
+}
+
+1444.9.10 = {
+	heir = {
+			name = "João"
+			monarch_name = "João II"
+			dynasty = "de Avis"
+			birth_date = 1444.9.10
+			death_date = 1495.10.25
+			claim = 95
+			adm = 2
+			dip = 5
+			mil = 4
+	}
+}
+
+1443.1.1 = { leader = {	name = "Diogo Gomes"		type = explorer	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1462.12.31 } }

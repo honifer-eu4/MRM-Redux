@@ -24,7 +24,7 @@
  gc_por_portugese_fuzileiros_desc:0 "With our expansion overseas it is imperative that we expand the Portuguese marine corps to ensure we always have a standing army of well-trained soldiers ready to respond to global threats at a moments notice."
  gc_por_lessons_from_the_berbers_title:0 "Lessons From the Berbers"
  gc_por_lessons_from_the_berbers_desc:0 "Our wars with Morocco and Tunis has taught us a great deal about the current state of warfare, we should use this newfound knowledge to reform our army; lest it be made obsolete by our neighbors and the passage of time."
- gc_por_portugese_renaissance_title:0 "The Portuguese Renaissance"
+ gc_por_portugese_renaissance_title:0 "Portuguese Renaissance"
  gc_por_portugese_renaissance_desc:0 "The Portuguese Renaissance began with the Illustrious Generation of Portuguese nobles and monarchs. Under the patronage of Henry the Navigator and his successors great strides were made in the sciences and martitime technology. This would eventually lead to further explorations in the New World, Africa, and Asia bringing Portugal a great deal of wealth and prestige"
  gc_por_call_cortes_title:0 "Call a Cortes"
  gc_por_call_cortes_desc:0 "The nobles of Portugal have pushed the generosity of the crown to its limit, there are no more lands or privileges left to give. It is time for the crown to take a stand against the execesses of the nobles for the good of the nation and call a cortes."
@@ -137,3 +137,4 @@
  LUSITANIA_ADJ:0 "Lusitanian"
  PORTUGUESE_EMPIRE:0 "Portuguese Empire"
  PORTUGUESE_EMPIRE_ADJ:0 "Portuguese"
+ lusitanian_unification_effect_tt:0 "This will extend our mission tree, providing missions for the unification of Iberia and revenge against its invaders."
