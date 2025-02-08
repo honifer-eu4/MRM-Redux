@@ -1983,7 +1983,7 @@ country_event = {
 		NOT = { has_ruler_modifier = jnana }
 		NOT = { has_ruler_modifier = hindu_withdrawn_contemplation }
 		capital_scope = {
-			has_building = temple
+			has_tax_building_trigger = yes
 		}
 	}
 
@@ -1996,7 +1996,7 @@ country_event = {
 		modifier = {
 			factor = 0.75
 			all_owned_province = {
-				has_building = temple
+				has_tax_building_trigger = yes
 			}
 		}
 	}

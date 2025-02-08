@@ -1233,12 +1233,31 @@ sicilian_emirate_restored = {
 		may_perform_slave_raid = yes
 		coast_raid_range = 1 
 		infantry_power = 0.1
+		global_sailors_modifier = 0.2
 		sailors_recovery_speed = 0.15
 		land_forcelimit_modifier = 0.2
-    	num_accepted_cultures = 2
+		allowed_marine_fraction = 0.1
+		num_accepted_cultures = 2
 	}
 	custom_attributes = {
 		ai = no
+	}
+}
+
+integrate_italian_nobility = {
+	icon = "military_dictatorship_reform"
+	allow_normal_conversion = yes
+	potential = {
+		tag = TUN
+		has_country_flag = tunis_italian_nobility
+	}
+	modifiers = {
+		num_accepted_cultures = 6
+		promote_culture_cost = -0.8
+		advisor_cost = -0.15
+	}
+	ai = {
+		factor = 1000
 	}
 }
 
@@ -1403,6 +1422,7 @@ portuguese_monarchy_reform = {
 		naval_forcelimit_modifier = 0.2
 		global_tax_modifier = 0.1
 		sailors_recovery_speed = 0.2
+		allowed_marine_fraction = 0.1
 	}
 	ai = {
 		factor = 1
@@ -1417,13 +1437,17 @@ greater_portuguese_monarchy_reform = {
 			tag = POR
 			was_tag = POR 
 		}
-		has_country_flag = lusitanian_empire_proclaimed
+		has_country_flag = portuguese_empire_proclaimed
 	}
 	modifiers = {
 		global_tariffs = 0.1
 		treasure_fleet_income = 0.1
+		global_tax_modifier = 0.15
 		naval_forcelimit_modifier = 0.2
+		allowed_galleass_fraction = 0.1
+		allowed_galleon_fraction = 0.1
 		sailors_recovery_speed = 0.2
+		allowed_marine_fraction = 0.15
 		sunk_ship_morale_hit_recieved = -0.25
 		artillery_fire = 0.25
 		artillery_cost = -0.1
@@ -2048,12 +2072,13 @@ al_andalusia_government = {
 		primary_culture = andalucian
 	}
 	modifiers = {
-		idea_cost = -0.1
+		monarch_admin_power = 1
 		tolerance_of_heathens_capacity = 2
 		tolerance_heathen = 1
 	}
 	conditional = {
 		allow = { has_dlc = "Cradle of Civilization" }
+		allow_banners = yes
 		custom_attributes = {
 			allow_piety_switch_decision = yes	#Enables a decision which gives 1 stabhit, but turns your piety 180�
 		}

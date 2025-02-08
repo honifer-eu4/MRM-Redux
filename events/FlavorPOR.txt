@@ -1065,3 +1065,172 @@ country_event = {
 		add_prestige = 10
 	}
 }
+
+country_event = {
+	id = flavor_por.12
+	title = "flavor_por.EVTNAME12"
+	desc = "flavor_por.EVTDESC12"
+	picture = ADVISOR_eventPicture	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_por.EVTOPTA12"
+		
+		define_advisor = {
+			type = philosopher
+			name = "Garcia de Resende"
+			culture = portugese
+			skill = 3
+			cost_multiplier = 0.25
+		}
+	}
+}
+
+country_event = {
+	id = flavor_por.13
+	title = "flavor_por.EVTNAME13"
+	desc = "flavor_por.EVTDESC13"
+	picture = KING_DOING_GREAT_eventPicture
+	fire_only_once = yes
+	trigger = {
+		is_year = 1554
+		tag = POR
+		has_regency = no
+		has_heir = no
+		is_lesser_in_union = no
+		government = monarchy
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "flavor_por.EVTOPTA13"
+		define_ruler = {
+			name = "Sebastião"
+			dynasty = "Avis"
+			culture = portugese
+			male = yes
+			age = 15
+			adm = 6
+			dip = 5
+			mil = 5
+		}
+		if = {
+			limit = {
+				has_states_general_mechanic = yes
+			}
+			change_statists_vs_orangists = 1
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality_ancestor = { key = reformist } }
+		}
+	}
+	option = {
+		name = "flavor_por.EVTOPTB13"
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_meritocracy_effect = yes
+		define_advisor = {
+			culture = portugese
+			type = natural_scientist
+			skill = 3
+			cost_multiplier = 0.25
+			name = "Sebastião Avis"
+		}
+	}
+}
+
+country_event = {
+	id = flavor_por.14
+	title = "flavor_por.EVTNAME14"
+	desc = "flavor_por.EVTDESC14"
+	picture = CITY_VIEW_eventPicture	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_por.EVTOPTA14"
+		
+		add_mil_power = 200
+	}
+}
+
+country_event = {
+	id = flavor_por.15
+	title = "flavor_por.EVTNAME15"
+	desc = "flavor_por.EVTDESC15"
+	picture = SIEGE_PRAGUE_CASTLE_eventPicture	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_por.EVTOPTA15"
+		
+		add_treasury = 1500
+		343 = {
+			add_base_tax = -2
+			add_base_manpower = -2
+			add_base_production = -2
+			add_devastation = 75
+		}
+		227 = {
+			add_base_tax = 2
+			add_base_manpower = 2
+			add_base_production = 2
+		}
+	}
+}
+
+country_event = {
+	id = flavor_por.16
+	title = "flavor_por.EVTNAME16"
+	desc = "flavor_por.EVTDESC16"
+	picture = ASSASSINATION_eventPicture	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_por.EVTOPTA16"
+		
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = alentejo_area 
+						area = beieras_area
+					}
+				}
+				add_province_modifier = {
+					name = redux_por_supremacy_of_the_crown
+					duration = -1
+				}
+			}
+		}
+		custom_tooltip = por_supremacy_of_the_crown_ct
+		custom_tooltip = add_10_crown_land_share
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = -10
+		}
+	}
+}
+
+country_event = {
+	id = flavor_por.17
+	title = "flavor_por.EVTNAME17"
+	desc = "flavor_por.EVTDESC17"
+	picture = ENLIGHTENMENT_eventPicture	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_por.EVTOPTA17"
+		
+		add_country_modifier = {
+			name = redux_por_sebastians_reforms
+			duration = 9125
+		}
+	}
+}

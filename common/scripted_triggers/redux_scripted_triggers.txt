@@ -122,6 +122,8 @@ redux_PR_fort_code_is_strait_trigger = {
             province_id = 2999
             province_id = 536
             province_id = 2100
+            province_id = 1099
+            province_id = 402
         }
     }
 }

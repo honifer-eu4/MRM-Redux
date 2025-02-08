@@ -19,7 +19,6 @@ discovered_by = ottoman
 discovered_by = indian
 fort_15th = yes
 extra_cost = 8
-center_of_trade = 1
 
 1444.11.12 = {
     owner = MNG

@@ -829,8 +829,8 @@ arabian_ideas = {
 		trade_efficiency = 0.15
 	}
 	arabian_horses = {
-		cavalry_power = 0.2
-		cavalry_cost = -0.1 
+		cavalry_power = 0.25
+		cavalry_cost = -0.15
 	}
 	land_of_the_prophet = {
 		development_cost = -0.1
@@ -840,10 +840,10 @@ arabian_ideas = {
 		movement_speed = 0.15
 	}
 	bedouin_traders = {
-		reinforce_cost_modifier = -0.2
+		reinforce_cost_modifier = -0.3
 	}
 	arab_clan_loyalties = {
-		shock_damage_received = -0.15
+		fire_damage_received = -0.15
 	}
 	arabia = {
 		hostile_attrition = 1.0

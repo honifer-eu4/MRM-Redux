@@ -527,10 +527,7 @@ emp_tusc_renaissance_4 = {
 			}
 			else = {
 				any_owned_province = {
-					OR = {
-						has_building = temple
-						has_building = cathedral
-					}
+					has_tax_building_trigger = yes
 				}
 			}
 		}

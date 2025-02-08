@@ -2,6 +2,8 @@
  #Missions
  gbr_reconquer_normandy_title:0 "Reconquer Normandy"
  gbr_reconquer_normandy_desc:0 "Normandy has rebelled against our rule multiple times, and now it seems like the French are preparing to reclaim it once and for all. However, Normandy is English - and it always will be."
+ gbr_south_african_wine_title:0 "South African Wine"
+ gbr_south_african_wine_desc:0 "The valleys and climate of the Cape are well-suited for the cultivation of wine vineyards. With a little bit of investment and use of our knowledge from the home country, wine could become one of South Africa's top exports."
  
  #Modifiers
  redux_eng_hundred_years_war:0 "The Hundred Years' War"

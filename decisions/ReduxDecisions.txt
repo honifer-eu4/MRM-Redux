@@ -65,4 +65,27 @@ country_decisions = {
             }
         }
     }
+
+    restore_peters_city = {
+        potential = {
+            owns = 118
+            ROOT = {
+                religion_group = christian
+            }
+            118 = {
+                religion_group = muslim
+            }
+        }
+        allow = {
+            owns_core_province = 118
+        }
+        effect = {
+            118 = {
+                change_religion = ROOT
+            }
+        }
+        ai_will_do = {
+            factor = 100
+        }
+    }
 }

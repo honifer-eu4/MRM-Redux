@@ -2334,7 +2334,7 @@ gbr_row_4 = {
 
 	gbr_discover_india = {
 		icon = mission_coromandel_expansion
-		required_missions = { gbr_seize_the_cape }
+		required_missions = { gbr_south_african_wine }
 		position = 7
 		provinces_to_highlight = {
 			OR = {
@@ -3122,8 +3122,22 @@ gbr_row_5 = {
 			}
 		}	
 		effect = {
-			create_colony_mission_reward = {
-				province = 1177
+			if = {
+				limit = {
+					1177 = {
+						is_city = no
+					}
+				}
+				create_colony_mission_reward = {
+					province = 1177
+				}
+			}
+			south_africa_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 		ai_weight = {
@@ -3131,84 +3145,65 @@ gbr_row_5 = {
 		}
 	}
 
-	gbr_seize_the_cape = {
-		icon = mission_colonial
+	gbr_south_african_wine = {
+		icon = mission_great_trading_houses
 		required_missions = { gbr_sail_around_africa }
 		position = 6
 		provinces_to_highlight = {
-			OR = {
-				province_id = 833
-				province_id = 1177
-				province_id = 1179
-			}
-			NOT = { owned_by = ROOT }
-			has_discovered = ROOT
+			province_id = 1179
+			province_id = 1177
 		}
+		
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = ned_south_africa_colony.tooltip
-				OR = {
-					833 = {
-						owned_by = ROOT
-						is_city = yes
-					}
-					1177 = {
-						owned_by = ROOT
-						is_city = yes
-					}
-					1179 = {
-						owned_by = ROOT
-						is_city = yes
-					}
-				}
+			1179 = {
+				has_manufactory_trigger = yes
+				has_production_building_trigger = yes
+				is_core = ROOT
+			}
+			1177 = {
+				has_manufactory_trigger = yes
+				has_production_building_trigger = yes
+				is_core = ROOT
 			}
 		}
+
 		effect = {
-			random_list = {
-				1 = {
-					trigger = {
-						owns = 833
-						NOT = { owns = 1177 }
-					}
-					833 = {
-						add_building = stock_exchange
-					}
-				}
-				1 = {
-					trigger = {
-						owns = 1179
-						NOT = { owns = 1177 }
-					}
-					1179 = {
-						add_building = stock_exchange
-					}
-				}
-				1 = {
-					trigger = {
-						owns = 1177
-					}
-					1177 = {
-						add_building = stock_exchange
-					}
-				}
-				1 = {
-					trigger = {
-						NOT = { owns = 833 }
-						NOT = { owns = 1177 }
-						NOT = { owns = 1179 }
-					}
-					tooltip = {
-						random_list = {
-							1 = { 833  = { add_building = stock_exchange } }
-							1 = { 1177 = { add_building = stock_exchange } }
-							1 = { 1179 = { add_building = stock_exchange } }
+			if = {
+				limit = {
+					OR = {
+						1179 = {
+							has_province_modifier = redux_south_african_wine
+						}
+						1177 = {
+							has_province_modifier = redux_south_african_wine
 						}
 					}
 				}
+				1179 = {
+					add_base_manpower = 1
+					add_base_production = 2
+				}
+				1177 = {
+					add_base_manpower = 1
+					add_base_production = 2
+				}
 			}
-		}
-		ai_weight = {
-			factor = 250
+			else = {
+				1179 = {
+					change_trade_goods = wine
+					add_permanent_province_modifier = {
+						name = redux_south_african_wine
+						duration = -1
+					}
+				}
+				1177 = {
+					change_trade_goods = wine
+					add_permanent_province_modifier = {
+						name = redux_south_african_wine
+						duration = -1
+					}
+				}
+			}
 		}
 	}
 

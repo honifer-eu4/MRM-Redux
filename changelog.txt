@@ -159,6 +159,7 @@ Defines:
 	Religious Zeal reduced to 10 years from 30.
 	Legitimacy now additionally grants up to +25% Reform Progress Growth.
 	Republican Tradition now grants up to +75% Reform Progress Growth instead of +100%.
+	Removed the negative effects from Treaty of Tordesillas.
 
 Devastation:
 	Local goods produced, manpower, sailors, and development cost debuffs halved.
@@ -219,7 +220,7 @@ Institutions/Technology:
 	Being ahead in military technology now gives -10% Land Maintenance Modifier, -10% Recruitment Time, and -0.05 Yearly Corruption.
 	The entire world now starts with Feudalism.
 	Renaissance now spreads naturally in Africa and Asia.
-	Colonialism now spreads naturally in all port provinces.
+	Colonialism now spreads naturally in all port provinces, and gives an additional +1 Colonist.
 	Printing Press now spreads naturally in Africa and Asia.
 	Printing Press now gives +10% Reform Progress Growth instead of -5% Stability Cost Modifier.
 
@@ -452,6 +453,7 @@ Catholic:
 	"The Occupation of Rome" triggered modifier removed.
 	"The Pope in the Empire" triggered modifier removed.
 	Counter-Reformation no longer gives +5% Technology Cost and +5% Idea Cost.
+	Counter-Reformation now starts in 1545 instead of 1610 if the Pope does not exist.
 	Now has +5% Morale of Armies and +1 Tolerance of True Faith as base modifiers.
 	Crusade nerfed (morale removed, manpower decreased to 20%)
 	Papal Blessing reduced to 7.5% Morale of Armies.
@@ -469,7 +471,7 @@ Reformed:
 
 Anglican:
 	"Militarize Church Icons" aspect reduced to 100 church power cost.
-	"Grant Monopoly" aspect reduced to 75 church power cost.
+    "Grant Monopoly" aspect now gives 2 months of income instead of 3, and 0.1 Mercantilism instead of 1.
 	"Progress of the Supreme Governor" aspect reduced to 150 church power cost.
 
 Orthodox:
@@ -523,6 +525,7 @@ Age of Reformation:
 	"Mercenary Discipline" goal now gives +10% Mercenary Discipline instead of +5%.
 	"Persian Enlightenment" goal now gives -10% Development Cost instead of -20%.
 	"Polish Crown" goal now gives +20% Goods Produced instead of +33%.
+	"Religion Enforced Edict" goal replaced with "Securing the New World", which grants +1 Colonist.
 	"Spanish Field Marshals" goal now available to Andalusia.
 
 Age of Absolutism:
@@ -539,3 +542,4 @@ Crown Colony is now the only available type. Most subject interactions such as S
 Player Colonial Nations now get a debuff granting +40% Development Cost, -50% Manpower Recovery Speed, -50% Sailor Recovery Speed, -75% National Sailors Modifier, -25% Land Force Limit, and -50% Naval Force Limit.
 Forming a Dominion through the mission tree reduces this debuff to +25% Development Cost, -30% Manpower Recovery Speed, -30% Sailor Recovery Speed, -50% National Sailors Modifier, -15% Land Force Limit, -25% Naval Force Limit.
 Colonial nations cannot colonize outside of their region. An event has been added that automatically uncolonizes any provinces a CN obtains outside its region.
+Colonial nations now get a natural -0.1 Monthly Autonomy Change, +10 Global Settler Growth, and -200% Liberty Desire, no longer gain Liberty Desire from Development, and provide their overlord with 15% of their Force Limit instead of 10%.

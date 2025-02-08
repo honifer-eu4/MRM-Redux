@@ -1142,7 +1142,7 @@ province_event = {
 		NOT = { province_has_center_of_trade_of_level = 2 }
 		OR = {
 			development = 15
-			has_building = marketplace
+			has_trade_building_trigger = yes
 			feudalism = 100
 		}
 		owner = {

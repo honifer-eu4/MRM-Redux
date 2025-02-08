@@ -21,10 +21,7 @@ ORM_1 = {
 				has_terrain = desert 
 				has_terrain = coastal_desert
 			}
-			AND = {
-				NOT = { has_building = temple }
-				NOT = { has_building = cathedral }
-			}
+			has_tax_building_trigger = no
 		}
 		trigger = {
 			num_of_owned_provinces_with = {
@@ -34,10 +31,7 @@ ORM_1 = {
 					has_terrain = desert
 					has_terrain = coastal_desert
 				}
-				OR = {
-					has_building = temple
-					has_building = cathedral
-				}
+				has_tax_building_trigger = yes
 			}
 		}
 		effect = {
@@ -543,17 +537,17 @@ ORM_3 = {
 
 		trigger = {  
 			monthly_income = 250
-			capital_scope = {
+			home_trade_node = {
 				highest_value_trade_node = yes
 				is_strongest_trade_power = ROOT
-			}
-			541 = {
+			} 
+			428 = {
 				trade_share = {
 					country = ROOT
 					share = 50
 				}
 			}
-			564 = {
+			1315 = {
 				trade_share = {
 					country = ROOT
 					share = 50
@@ -613,6 +607,7 @@ ORM_3 = {
 			give_claims = { area = upper_yemen_area }
 			give_claims = { area = tihama_al_yemen_area }
 			give_claims = { area = yemen_area }
+			give_claims = { area = aussa_area }
 			custom_tooltip = " " 
 			custom_tooltip = ORM_REMOVE_AUTONOMY_IN_OWNED_PROVINCES
 			hidden_effect = {
@@ -845,25 +840,9 @@ ORM_4 = {
 	ORM_across_hormuz = {
 		icon = mission_invade_island
 		position = 1
-		provinces_to_highlight = {  
-			OR = {
-				province_id = 431
-				province_id = 2219
-				province_id = 4332
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		} 
 
 		trigger = {  
-			431 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			2219 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			4332 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			army_size_percentage = 1
 		} 
 
 		effect = {  
@@ -1014,23 +993,35 @@ ORM_4 = {
 			OR = {
 				province_id = 395
 				province_id = 396
+				province_id = 400
+				province_id = 2999
 			}
 			OR = {
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				NOT = { has_production_building_trigger = yes }
-				NOT = { base_production = 4 }
+				NOT = { base_production = 6 }
 			}
 		}
 
 		trigger = {  
 			395 = {
 				country_or_non_sovereign_subject_holds = ROOT
-				base_production = 4
+				base_production = 6
 				has_production_building_trigger = yes
 			}
 			396 = {
 				country_or_non_sovereign_subject_holds = ROOT
-				base_production = 4
+				base_production = 6
+				has_production_building_trigger = yes
+			}
+			400 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				base_production = 6
+				has_production_building_trigger = yes
+			}
+			2999 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				base_production = 6
 				has_production_building_trigger = yes
 			}
 		} 
@@ -1040,6 +1031,12 @@ ORM_4 = {
 				add_or_upgrade_production_building = yes
 			}
 			396 = {
+				add_or_upgrade_production_building = yes
+			}
+			400 = {
+				add_or_upgrade_production_building = yes
+			}
+			2999 = {
 				add_or_upgrade_production_building = yes
 			}
 			custom_tooltip = " "
@@ -1057,21 +1054,21 @@ ORM_4 = {
 					}
 				}
 			}
-			else = {
-				add_mercantilism = 3
-				add_years_of_owned_provinces_production_income = {
-					years = 24
-					trigger = {
-						OR = {
-							is_capital = yes #So that it doesn't display 0
-							trade_goods = gems
-						}
+			custom_tooltip = " "
+			add_mercantilism = 3
+			add_years_of_owned_provinces_production_income = {
+				years = 24
+				trigger = {
+					OR = {
+						is_capital = yes #So that it doesn't display 0
+						trade_goods = gems
 					}
-					custom_tooltip = FROM_BAHRAIN_GEMS
 				}
+				custom_tooltip = FROM_BAHRAIN_GEMS
 			}
-		} 
-	}
+			
+		}
+	} 
 }
 ORM_5 = {
 	slot = 5

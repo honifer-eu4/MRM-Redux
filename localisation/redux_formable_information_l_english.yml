@@ -239,7 +239,7 @@
 # Andalusia
 
  redux_formableInfoEvents.25.title:0 "Andalusia Formable Information"
- redux_formableInfoEvents.25.desc:0 "@ADU Andalusia is formable through the decision §GRestore Al-Andalus§!.\n\nNational Ideas:\n Traditions: §G+10%§! Morale of Armies and §G+20%§! Cavalry Combat Ability\n §G-10%§! Fire Damage Received and §G+5%§! Discipline\n §G+100%§! Vassal Force Limit Contribution\n §G+3§! Tolerance of Heathens\n §G-10%§! Idea Cost and §G-0.1§! Monthly Piety\n §G+15%§! National Manpower Modifier and §G-15%§! Core Creation Cost\n §G+1§! Colonist\n §G+0.25§! Cavalry Fire and §G+10%§! Fort Defense\n Ambition: §G+10%§! Goods Produced Modifer\n\nOther Formables: No. Andalusia is an end game tag.\n\nMissions: Forming Andalusia §Greplaces§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.25.desc:0 "@ADU Andalusia is formable through the decision §GRestore Al-Andalus§!.\n\nNational Ideas:\n Traditions: §G+10%§! Morale of Armies and §G+20%§! Cavalry Combat Ability\n §G-10%§! Fire Damage Received and §G+5%§! Discipline\n §G+100%§! Vassal Force Limit Contribution\n §G+3§! Tolerance of Heathens\n §G-10%§! Idea Cost and §G-0.1§! Monthly Piety\n §G+15%§! National Manpower Modifier and §G-15%§! Core Creation Cost\n §G+1§! Colonist\n §G+0.25§! Cavalry Fire and §G+10%§! Fort Defense\n Ambition: §G+10%§! Goods Produced Modifer\n\nOther Formables: No. Andalusia is an end game tag.\n\nMissions: Forming Andalusia §Gextends§! the mission tree. \n\nOther Notable Information: Forming Andalusia unlocks §GMoorish§! special units, similar to banners."
  redux_formableInfoEvents.25.back:0 "Back"
  redux_formableInfoEvents.25.exit:0 "Close"
 

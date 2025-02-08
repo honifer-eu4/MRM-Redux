@@ -1450,8 +1450,9 @@ iberian	= {
 		}
 	}
 	andalucian = {
-		primary = GRA
-		province = { local_has_caravel = yes local_has_galleon = yes }
+		primary = ADU
+		country = { has_banners = yes}
+		province = { local_has_banners = yes local_has_caravel = yes local_has_galleon = yes }
 		dynasty_names = {
 			Nasrid Ummayad Zirid
 		}
@@ -3627,6 +3628,24 @@ maghrebi = {
 	dynasty_names = {
 		"al-Ilighi" "al-Tadsi" "Zayyanid"
 	}
+	tuareg = {
+		primary = AIR
+		dynasty_names = {
+			Magsharen Stanbulewa "Ait Loaien" "Dag Rali" Iregenaten
+			"Kel Rela" "Kel Silet" Taituq "Tg�h� Millet" "Kel Afella"
+			"Kel Taghlit" "Kel Essouk" "Kel Ouzzeyn" Ifergoumessen Iriyaken
+			"Taghat Mellet" Idnan
+		}
+		male_names = {
+			Agg-Abba al-Amin al-Wali al-Mu'min Uthman Agg-A'isha Humad Guma al-Adil ad-Dani al-Baqiri Waffa Ibrahim 
+			Waffa al-Qadir ar-Raffa ad-Dusuki Mikitan ar-Rahman Umaru ag-Ibrahim Salah al-Khir Yunus Ag Mama al-Hajj 
+			Ahmad Aytarel Attici Musa Akhamuk Meslar Bayy
+		}
+		female_names = {
+			"Tin Hinan" Takama Tanteflest Tarayna Aygul Ayg�n AylIn Aynur Aysel Fatma FIdan Firuza Gulnar Gulnara 
+			G�nay G�nel Konul Leyla Parvana Parvin Sevda SevInc SevInj Tarana V�sala Zemfira Zeynab
+		}
+	}	
 }
 	
 iranian	= {
@@ -6118,8 +6137,6 @@ east_asian = {	# Chinese Group
 		}
 	}
 	altaic_new	= {
-		country = { has_banners = yes}
-		province = { local_has_banners = yes}
 		primary = YUA
 		male_names = {
 			Agbarjin Adai Altan Arigaba Arugtai Ayurparibhadra Bodi Bek Bahamu Bars Buyan Biligt� Dayan 
@@ -6157,8 +6174,6 @@ east_asian = {	# Chinese Group
 	}
 
 	manchu_new = {
-		country = { has_banners = yes}
-		province = { local_has_banners = yes}
 		primary = MCH
 		dynasty_names = {
 			"Aisin Gioro" Wanyan "Yehe Nara" "Ula Nara" "Magiya Hala" Niohuru
@@ -8702,25 +8717,7 @@ sahelian = {
 			Waheeda Wahida Widad Yasmeen Yusra Zaahira Zahia Zahida Zahira Zahra Zahrah Zaida Zaina Zainab Zakiah 
 			Zakiya Zakiyya Zaray Zayna Zaynab Zinat Zubaida Zulaykha Zulekha
 		}
-	}
-	tuareg = {
-		primary = AIR
-		dynasty_names = {
-			Magsharen Stanbulewa "Ait Loaien" "Dag Rali" Iregenaten
-			"Kel Rela" "Kel Silet" Taituq "Tg�h� Millet" "Kel Afella"
-			"Kel Taghlit" "Kel Essouk" "Kel Ouzzeyn" Ifergoumessen Iriyaken
-			"Taghat Mellet" Idnan
-		}
-		male_names = {
-			Agg-Abba al-Amin al-Wali al-Mu'min Uthman Agg-A'isha Humad Guma al-Adil ad-Dani al-Baqiri Waffa Ibrahim 
-			Waffa al-Qadir ar-Raffa ad-Dusuki Mikitan ar-Rahman Umaru ag-Ibrahim Salah al-Khir Yunus Ag Mama al-Hajj 
-			Ahmad Aytarel Attici Musa Akhamuk Meslar Bayy
-		}
-		female_names = {
-			"Tin Hinan" Takama Tanteflest Tarayna Aygul Ayg�n AylIn Aynur Aysel Fatma FIdan Firuza Gulnar Gulnara 
-			G�nay G�nel Konul Leyla Parvana Parvin Sevda SevInc SevInj Tarana V�sala Zemfira Zeynab
-		}
-	}		
+	}	
 	senegambian = {
 		primary = JOL
 		dynasty_names = {
@@ -9483,8 +9480,6 @@ evenks = {
 	}
 	manchu = {
 		graphical_culture = asiangfx
-		country = { has_banners = yes}
-		province = { local_has_banners = yes}
 		primary = MJZ
 		dynasty_names = {
 			"Aisin Gioro" Wanyan "Yehe Nara" "Ula Nara" "Magiya Hala" Niohuru

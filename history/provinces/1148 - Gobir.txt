@@ -16,7 +16,6 @@ base_production = 3
 
 
 discovered_by = sub_saharan
-
 1444.11.12 = {
     owner = MNG
     controller = MNG

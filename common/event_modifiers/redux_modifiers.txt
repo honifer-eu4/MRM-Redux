@@ -37,6 +37,15 @@ redux_estate_church_development_of_temples_mod = {
 	religion = yes
 }
 
+redux_estate_church_missions_mod = {
+	local_development_cost = -0.1
+	religion = yes
+}
+
+redux_estate_burghers_caravanserai_mod = {
+	local_development_cost = -0.1
+}
+
 redux_estate_brahmins_development_of_temples_mod = {
 	local_development_cost = -0.1
 	religion = yes

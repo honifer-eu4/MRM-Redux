@@ -2,3 +2,43 @@ redux_por_gold_modifier = {
     monthly_gold_inflation_modifier = -0.1
     gold_depletion_chance_modifier = -0.25
 }
+
+redux_port_wine_vineyards = {
+	trade_goods_size = 2.0
+	province_trade_power_modifier = 0.25
+}
+
+redux_south_african_wine = {
+	trade_goods_size = 1.0
+	local_manpower_modifier = 0.25
+}
+
+redux_por_african_settlers = {
+	local_culture_conversion_cost = -0.25
+	local_missionary_strength = 0.03
+}
+
+redux_kongolese_slave_markets = {
+	trade_goods_size_modifier = 0.15
+}
+
+redux_suqutra_supply = {
+	supply_limit = 30
+}
+
+redux_por_supremacy_of_the_crown = {
+	local_development_cost = -0.1
+	local_governing_cost = -0.25
+}
+
+witwatersrand_basin = {
+	trade_goods_size_modifier = 0.66
+}
+
+maderia_sugar_cane = {
+	trade_goods_size = 2
+}
+
+saharan_salt_mines = {
+	trade_goods_size = 2
+}s

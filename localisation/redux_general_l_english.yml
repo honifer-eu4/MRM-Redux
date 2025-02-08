@@ -1,4 +1,11 @@
 ﻿l_english:
+
+ # Colonial Regions
+ short_colonial_north_america:0 "North America"
+ colonial_north_america:0 "Colonial North America"
+ short_colonial_south_america:0 "South America"
+ colonial_south_america:0 "Colonial South America"
+
  # Opinion Modifiers
  opinion_personal_union:0 "Close Ties"
 
@@ -10,6 +17,7 @@
  hre_minor_nation:0 "HRE Minor Nation"
  ALWAYS_ACCEPT:0 "AI will always accept this diplomatic action"
  south_germanic:0 "South Germanic"
+ add_10_crown_land_share:0 "§Y[Root.GetName]§! gains §G10§! crown land ownership."
 
  # Decisions
  PR_critical_events_title:0 "Available Critical Events"

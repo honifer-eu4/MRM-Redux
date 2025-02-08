@@ -186,8 +186,8 @@ monopoly_aspect = {
 		NOT = { treasury = 1000000 }
 	}
 	effect = {
-		add_mercantilism = 1
-		add_years_of_income = 0.083
+		add_mercantilism = 0.1
+		add_years_of_income = 0.166
 	}
 	ai_will_do = {
 		factor = 1
@@ -247,8 +247,7 @@ innovativeness_aspect = {
 			random_owned_province = {
 				limit = {
 					OR = {
-						has_building = temple
-						has_building = cathedral
+						has_tax_building_trigger = yes
 						has_building = university
 					}
 					religion = ROOT

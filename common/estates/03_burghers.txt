@@ -301,6 +301,7 @@ estate_burghers = {
 		estate_burghers_ARB_oasis_development
 		estate_burghers_YEM_coffee_monopoly
 		estate_burghers_persian_rugs
+		redux_estate_burghers_caravanserai
 		# 1.37
 		estate_burghers_hungarian_royal_cities
 		estate_burghers_arabian_traders
