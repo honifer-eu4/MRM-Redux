@@ -665,16 +665,13 @@ country_event = {
 	
 	option = {
 		name = "flavor_mor.15.a"
-		custom_tooltip = 
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					region = iberia_region
-				}
-				add_province_modifier = {
-					name = adu_return_of_the_moors
-					duration = -1
-				}
+		every_owned_province = {
+			limit = {
+				region = iberia_region
+			}
+			add_province_modifier = {
+				name = adu_return_of_the_moors
+				duration = -1
 			}
 		}
 		ai_chance = {
