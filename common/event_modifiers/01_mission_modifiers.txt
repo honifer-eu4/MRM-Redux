@@ -3828,6 +3828,11 @@ tun_restoration_of_alexandra = {
 	province_trade_power_modifier = 0.2
 }
 
+tun_urbanization = {
+	build_cost = -0.1
+	build_time = -0.15
+}
+
 # Aragonese Missions
 
 llotja_de_la_seda = {
@@ -4101,6 +4106,17 @@ adu_trade_hub = {
 
 adu_native_concord = {
 	native_uprising_chance = -0.5
+}
+
+adu_return_of_the_moors = {
+	local_culture_conversion_cost = -0.25
+	local_culture_conversion_time = -0.25
+	local_unrest = 2
+}
+
+adu_spanish_support = {
+	manpower_in_accepted_culture_provinces = 0.15
+	global_tax_modifier = 0.1
 }
 
 sicily_in_safe_hands = {

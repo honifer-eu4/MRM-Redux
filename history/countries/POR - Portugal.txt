@@ -8,6 +8,8 @@ historical_friend = CAS
 capital = 227 # Lisboa
 add_army_professionalism = 0.05
 national_focus = DIP
+add_truce_with = SOF
+add_truce_with = TMB
 
 change_estate_land_share = {
 	estate = estate_church

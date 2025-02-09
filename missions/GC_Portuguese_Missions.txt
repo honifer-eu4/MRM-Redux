@@ -1063,6 +1063,10 @@ gc_por_4 = {
 		}
 		
 		effect = {
+			add_country_modifier = {
+				name = por_seculo_de_ouro
+				duration = 9125
+			}
 		}
 	}
 
