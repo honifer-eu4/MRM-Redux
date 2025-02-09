@@ -26,11 +26,6 @@
  estate_clergy_mountain_development_mod:0 "Clergy Exploration"
  desc_estate_clergy_mountain_development_mod:0 "We are harnessing the pioneering instincts of the clergy to accelerate the settlement and growth of this area."
 
- estate_burghers_hydraulic_rights:0 "Hydraulic Rights"
- estate_burghers_hydraulic_rights_desc:0 "The distribution of water has always been a topic the remote villages worry about. Through allowing the [Root.GetBurghersName] taking a more direct control over the rights of water we can ensure a fair and efficient distribution of water access."
- estate_burghers_enslaving_rights_gt:0 "§G-15%§! local development cost in all §YDesert§! and §YCoastal Desert§! provinces"
- estate_burghers_enslaving_rights_rt:0 "Removes §YHydraulic Rights§! from all owned §YDesert§! and §YCoastal Desert§! provinces."
-
  unlock_privilege_estate_nobles_enlist_the_mamluks_tt:0 "Enable the [Root.GetNobilityOrFallbackName] privilege '§YEnlist the Mamluks§!'."
 
  redux_estate_nobles_apex:0 "Apex of the Nobility"

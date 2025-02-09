@@ -9,5 +9,8 @@
  estate_jains_land_trade_rights:1 "Elite Mercenaries"
  estate_jains_land_trade_rights_desc:0 "By allowing the [Root.GetBurghersName] to negotiate our mercenary contracts, we can ensure only the most elite forces fight under our banner. Like all things, however, this will come at a cost."
  
- 
+ estate_burghers_hydraulic_rights:0 "Hydraulic Rights"
+ estate_burghers_hydraulic_rights_desc:0 "The distribution of water has always been a topic the remote villages worry about. Through allowing the [Root.GetBurghersName] taking a more direct control over the rights of water we can ensure a fair and efficient distribution of water access."
+ estate_burghers_enslaving_rights_gt:0 "§G-15%§! local development cost in all §YDesert§! and §YCoastal Desert§! provinces"
+ estate_burghers_enslaving_rights_rt:0 "Removes §YHydraulic Rights§! from all owned §YDesert§! and §YCoastal Desert§! provinces."
  

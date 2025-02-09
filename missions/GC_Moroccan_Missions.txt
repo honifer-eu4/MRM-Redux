@@ -1106,7 +1106,7 @@ granada_development_missions = {
 	}
 
 	adu_the_andalusian = {
-		icon = mission_develop_cordoba
+		icon = mam_refine_the_furusiyya
 		required_missions = { adu_develop_cordoba }
 		
 		provinces_to_highlight = {
@@ -1176,7 +1176,7 @@ granada_development_missions = {
 	}
 
 	adu_moorish_shock_cavalry = {
-		icon = mission_develop_cordoba
+		icon = league_of_the_public_weal
 		required_missions = { adu_the_andalusian }
 		
 		provinces_to_highlight = {
@@ -1255,7 +1255,7 @@ granada_slot_2_missions = {
 	}
 
 	adu_adopt_european_ships = { 
-		icon = mission_al-wadi_al-kabir
+		icon = mission_aragonese_navy
 		required_missions = { adu_conquer_portugal }
 		
 		provinces_to_highlight = {
@@ -1284,7 +1284,7 @@ granada_slot_2_missions = {
 	}
 
 	adu_reconversion_of_iberia = { #art
-		icon = mission_al-wadi_al-kabir
+		icon = mission_islamic_golden_age
 		required_missions = { gra_own_iberia adu_develop_cordoba }
 		
 		provinces_to_highlight = {
@@ -1322,8 +1322,8 @@ granada_slot_2_missions = {
 		}
 	}
 
-	adu_the_fate_of_the_christians = { #art
-		icon = mission_al-wadi_al-kabir
+	adu_the_fate_of_the_christians = { 
+		icon = mission_dhimmi
 		required_missions = { adu_reconversion_of_iberia }
 		
 		provinces_to_highlight = {
@@ -1365,7 +1365,7 @@ granada_slot_3_missions = {
 	has_country_shield = yes
 	
 	adu_strike_at_the_heart = {
-		icon = mission_retake_ceuta
+		icon = per_recruit_the_qizilbash
 		position = 6
 		
 		provinces_to_highlight = {
@@ -1491,7 +1491,7 @@ granada_slot_3_missions = {
 	}
 
 	adu_avenge_tours = {
-		icon = mission_the_french_menace
+		icon = mission_invade_occitania
 		required_missions = { gra_own_iberia }
 		
 		provinces_to_highlight = {
@@ -1598,7 +1598,7 @@ granada_slot_3_missions = {
 	}
 	
 	adu_caliph_of_the_west = {
-		icon = mission_the_french_menace
+		icon = mission_restore_caliphate_of_cordoba
 		required_missions = { adu_conquer_naples adu_raid_the_rhone adu_the_fate_of_the_christians}
 		
 		provinces_to_highlight = {
@@ -1651,7 +1651,7 @@ granada_slot_4_missions = {
 	has_country_shield = yes
 
 	adu_recover_the_coast = {
-		icon = mission_turning_the_tables
+		icon = mission_disrupt_portuguese_trade
 		required_missions = { adu_strike_at_the_heart }
 		position = 7
 		
@@ -1798,7 +1798,7 @@ granada_slot_4_missions = {
 	}
 
 	adu_conquer_naples = {
-		icon = mission_break_sicily
+		icon = king_of_naples
 		required_missions = { adu_retake_sicily }
 		
 		provinces_to_highlight = {

@@ -635,7 +635,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "flavor_mor.14.d"
+		name = "flavor_mor.14.de"
 		225 = {
 			change_trade_goods = paper
 		}
@@ -665,13 +665,16 @@ country_event = {
 	
 	option = {
 		name = "flavor_mor.15.a"
-		every_owned_province = {
-			limit = {
-				region = iberia_region
-			}
-			add_province_modifier = {
-				name = adu_return_of_the_moors
-				duration = -1
+		custom_tooltip = 
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					region = iberia_region
+				}
+				add_province_modifier = {
+					name = adu_return_of_the_moors
+					duration = -1
+				}
 			}
 		}
 		ai_chance = {
