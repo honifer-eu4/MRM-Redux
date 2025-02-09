@@ -1729,7 +1729,8 @@ court_ideas = {
 	}
 	
 	long_echo = {
-		national_focus_years = -10
+		monarch_diplomatic_power = 1
+		reelection_cost = -0.1
 	}
 	recognize_hierarchy = {
 		all_estate_loyalty_equilibrium = 0.1
@@ -1739,8 +1740,8 @@ court_ideas = {
 		prestige = 1 
 	}
 	tranquil_coordination = {
-		yearly_absolutism = 0.2
-		max_absolutism = 20
+		yearly_absolutism = 1
+		max_absolutism = 30
 	}
 	respected_authority = {
 		all_estate_possible_privileges = 1
@@ -1750,8 +1751,7 @@ court_ideas = {
 		estate_interaction_cooldown_modifier = -0.5
 	}
 	court_embassies = {
-		monarch_diplomatic_power = 1
-		reelection_cost = -0.1
+		leader_cost = -0.1
 	}
 
 	ai_will_do = {

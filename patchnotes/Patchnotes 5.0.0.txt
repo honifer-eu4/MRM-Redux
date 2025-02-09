@@ -81,6 +81,13 @@ Administrative:
     Sixth idea now gives +10% Trade Efficiency instead of -25% State Governing Cost.
     Finisher now gives +20% Land Force Limit instead of -10% Leader Cost.
 
+Court: 
+    First idea now gives +1 Monarch Diplomatic Skill and -10% Reelection Cost instead of -10 National Focus Years.
+    Fifth idea now gives +1 Yearly Absolutism instead of +0.2.
+    Fifth idea now gives +30 Max Absolutism instead of +20. 
+    Last idea now gives -10% Leader Cost instead of +1 Monarch Diplomatic Skill and -10% Reelection Cost.
+    Last idea now additionally buffs the privileges "Oversight by the Clergy", "Free Enterprise", and "Right of Counsel".
+
 ################ Mechanics ###################
 
 Defines:
