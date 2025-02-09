@@ -316,6 +316,9 @@
  fkn_franconian_knights_desc:0 "While some are wary of the power of our nobles, the knights of our realm have become as valiant as ever under the leadership of our Nobility. We should formalize not only a Noble Officer Corps, but an Order of Franconian Knights to bask our glory to the world."
  fkn_franconian_knights_tt:0 "The §YNoble Officer Corps§! Tier 2 government reform will now also give an additional §G+20% National Manpower Modifier§! and §G+0.25 Cavalry Shock§!."
  
+ FKN_grant_military_command_reform:1 "Noble Officer Corps"
+ FKN_grant_military_command_reform_desc:0 "While the clergy preaches, the burghers engage in commerce and the commoners do the heavy labor, the Nobility goes out to hunt and train in the arts of combat. By putting the nobles in charge of the military command we can ensure a relibale influx of competent leaders for our armies."
+ 
  #Rothenburg (Franconia/Westphalia) modifiers
 
  opinion_franconian_league:0 "Franconian Brothers"

@@ -3810,6 +3810,7 @@ grant_military_command_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		is_revolutionary = no
+		NOT = { has_country_flag = redux_FKN_knights }
 	}
 	modifiers = {
 		army_tradition = 0.25
@@ -3818,8 +3819,27 @@ grant_military_command_reform = {
 		maratha_exclusive_influence_modifier = 0.05
 		rajput_exclusive_influence_modifier = 0.05
 	}
-	conditional = {
-		allow = { has_country_flag = redux_FKN_knights }
+	custom_attributes = {
+		recruiting_generals_increases_nobles_loyalty = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+FKN_grant_military_command_reform = {
+	icon = "soldiers"
+	allow_normal_conversion = yes
+	potential = {
+		is_revolutionary = no
+		has_country_flag = redux_FKN_knights
+	}
+	modifiers = {
+		army_tradition = 0.25
+		cavalry_cost = -0.1
+		nobles_influence_modifier = 0.05
+		maratha_exclusive_influence_modifier = 0.05
+		rajput_exclusive_influence_modifier = 0.05
 		cavalry_shock = 0.25
 		global_manpower_modifier = 0.2
 	}
