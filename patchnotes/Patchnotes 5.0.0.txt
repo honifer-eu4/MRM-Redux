@@ -67,6 +67,20 @@ Tunis:
 Uzbek:
     Minor update to mission tree, including a mission to restore the Silk Road and gain development cost benefits.
 
+################# Estates ####################
+
+Burghers:
+    "Elite Mercenaries" privilege now also gives up to +10% Land Fire Damage.
+
+################## Ideas #####################
+
+Administrative:
+    First idea now gives +15% Mercenary Manpower instead of +10% Trade Efficiency.
+    Second idea now gives -25% State Governing Cost instead of -20% State Maintenance.
+    Fifth idea now gives -20% Mercenary Cost and -15% Mercenary Maintenance instead of -50% Move Capital Cost Modifier and +0.25 Global Prosperity Growth.
+    Sixth idea now gives +10% Trade Efficiency instead of -25% State Governing Cost.
+    Finisher now gives +20% Land Force Limit instead of -10% Leader Cost.
+
 ################ Mechanics ###################
 
 Defines:

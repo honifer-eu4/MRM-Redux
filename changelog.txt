@@ -302,7 +302,7 @@ War Score:
 ########################### Estates ###########################
 
 Burghers:
-	Added a privilege based on land ownership, giving +10% Mercenary Discipline and +10% Mercenary Cost at 100%.
+	Added a privilege based on land ownership, giving +10% Mercenary Discipline, +10% Land Fire Damage, and +10% Mercenary Cost at 100%.
 	"Ask for Contribution" action no longer requires having at least 1 port.
 	"Promote Burgher Bookkeeping" privilege now grants -30% Inflation Reduction Cost instead of -50% and no longer grants State Maintenance.
 

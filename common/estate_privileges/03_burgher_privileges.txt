@@ -677,6 +677,7 @@ estate_burghers_land_trade_rights = {
 	modifier_by_land_ownership = {
 		mercenary_discipline = 0.1
 		merc_maintenance_modifier = 0.1
+		fire_damage = 0.1
 	}
 	penalties = {
 	}

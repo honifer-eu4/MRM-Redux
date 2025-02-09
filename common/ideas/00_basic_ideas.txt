@@ -1475,77 +1475,39 @@ expansion_ideas = {
 
 
 administrative_ideas = {
-	category = ADM
+    category = ADM
 
-	bonus = {
-		leader_cost = -0.1
-	}
+    bonus = {
+        force_limit = 0.2
+    }
 
-	administrative_council = {
-		trade_efficiency = 0.1
-	}
-	local_rule = {
-		state_maintenance_modifier = -0.2
-		governing_capacity_modifier = 0.25
-	}
-	adaptability = {
-		expand_infrastructure_cost_modifier = -0.5
-		centralize_state_cost = -0.5
-	}
-	cultural_regulations = {
-		build_cost = -0.1
-		build_time = -0.1
-	}
-	stable_government = {
-		move_capital_cost_modifier = -0.5
-		global_prosperity_growth = 0.25
-	}
-	centralization = {
-		state_governing_cost = -0.25
-		interest = -0.25
-	}
-	civil_servants = {
-		free_adm_policy = 1
-		possible_policy = 1
-	}
-
-	ai_will_do = {
-		factor = 0.65
-		modifier = {
-			factor = 2
-			has_strong_mil_national_ideas = yes 
-		}
-		modifier = { 
-			factor = 0.75
-			NOT = { monthly_adm = 8 }
-		}
-		modifier = { 
-			factor = 1.05
-			is_great_power = yes 
-		}
-		modifier = { 
-			factor = 1.05
-			national_focus = ADM 
-		}
-		modifier = { 
-			factor = 1.1
-			personality = ai_militarist  
-		}
-		modifier = { 
-			factor = 1.25
-			OR = { 
-				has_global_modifier_value = { 
-					which = core_creation 
-					value = 0.15
-				}
-				has_reform = prussian_theocratic_reform
-				has_reform = prussian_republic_reform
-				has_reform = prussian_monarchy
-				has_reform = prussian_monarchy_base
-				governing_capacity_percentage = 0.9
-			}
-		}
-	}
+    administrative_council = {
+        mercenary_manpower = 0.15
+    }
+    local_rule = {
+        state_governing_cost = -0.25
+        governing_capacity_modifier = 0.25
+    }
+    adaptability = {
+        expand_infrastructure_cost_modifier = -0.5
+        centralize_state_cost = -0.5
+    }
+    cultural_regulations = {
+        build_cost = -0.1
+        build_time = -0.1
+    }
+    stable_government = {
+        mercenary_cost = -0.2
+        mercenary_maintenance = -0.15
+    }
+    centralization = {
+        trade_efficiency = 0.1
+        interest = -0.25
+    }
+    civil_servants = {
+        free_adm_policy = 1
+        possible_policy = 1
+    }
 }
 
 humanist_ideas = {
