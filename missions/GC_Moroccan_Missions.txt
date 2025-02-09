@@ -69,10 +69,8 @@ gc_morocco_1 = {
 		
 		provinces_to_highlight = {
 			OR = {
-				province_id = 1128
-				province_id = 1129
-				province_id = 1132
-				province_id = 2247
+				province_id = 1127
+
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -80,16 +78,7 @@ gc_morocco_1 = {
 		}
 		
 		trigger = {
-			1128 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			1129 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			1132 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			2247 = {
+			1127 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}

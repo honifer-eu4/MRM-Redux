@@ -342,17 +342,6 @@ country_event = {
 			add_core = MOR
 			cede_province = MOR
 		}
-		every_province = {
-			limit = {
-				OR = {
-					province_id = 1128
-					province_id = 1129
-					province_id = 1132
-					province_id = 2247
-				}
-			}
-			add_permanent_claim = MOR
-		}
 		every_country = {
 			limit = { has_country_flag = mor_crosses_sahara }
 			country_event = { id = flavor_mor.10 }
