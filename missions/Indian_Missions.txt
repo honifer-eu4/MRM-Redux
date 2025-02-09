@@ -645,10 +645,7 @@ gen_hindu = {
 		trigger = {
 			num_of_owned_provinces_with = {
 				value = 20
-				OR = {
-					has_building = temple
-					has_building = cathedral
-				}
+				has_tax_building_trigger = yes
 			}
 		}
 		
@@ -1547,11 +1544,7 @@ gen_north_india_4 = {
 				}
 				any_owned_province = {
 					province_has_center_of_trade_of_level = 3
-					OR = {
-						has_building = marketplace
-						has_building = trade_depot
-						has_building = stock_exchange
-					}
+					has_trade_building_trigger = yes
 				}
 			}
 			else = {

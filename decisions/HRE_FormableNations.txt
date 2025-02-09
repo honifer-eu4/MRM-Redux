@@ -332,6 +332,7 @@ country_decisions = {
 				}
 				change_government_to_monarchy = yes
 			}
+			add_government_reform = franconian_elective_kingdom_reform
 
 			swap_non_generic_missions = yes
 			

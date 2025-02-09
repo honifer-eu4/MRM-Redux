@@ -2531,6 +2531,36 @@ dan_indian_colonisation_mission_slot_2 = {
 			}
 		}
 	}
+
+	dan_steel_for_the_hakkapeliitta = {
+		icon = mission_the_hakkapeliitta
+		position = 12
+		required_missions = { dan_the_carolean_units }
+		provinces_to_highlight = {
+			culture = finnish
+			OR = {
+				has_manpower_building_trigger = no
+				NOT = { owned_by = ROOT }
+			}
+		}
+		trigger = {
+			has_global_modifier_value = {
+				which = discipline
+				value = 0.1
+			}
+			num_of_owned_provinces_with = {
+				culture = finnish
+				has_manpower_building_trigger = yes
+				value = 5
+			}
+		}
+		effect = {
+			unlock_merc_company = {
+				merc_company = merc_hakkapeliita_cavalry
+				free_merc = yes
+			}
+		}
+	}
 }
 
 dan_england_mission_slot = {
@@ -3016,9 +3046,107 @@ dan_merc_slot_1 = {
 		}
 	}
 
+	dan_monopolize_the_baltic_sea = {
+		icon = mission_rb_monopolize_the_channel
+		position = 10
+		required_missions = { 
+		}
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					province_id = 1975
+					OR = {
+						NOT = { is_strongest_trade_power = ROOT }
+						NOT = {
+							trade_share = {
+								country = ROOT
+								share = 25
+							}
+						}
+					}
+				}
+				AND = {
+					province_id = 45
+					OR = {
+						NOT = { is_strongest_trade_power = ROOT }
+						NOT = {
+							trade_share = {
+								country = ROOT
+								share = 25
+							}
+						}
+					}
+				}
+				AND = {
+					province_id = 1926
+					NOT = {
+						trade_share = {
+							country = ROOT
+							share = 50
+						}
+					}
+				}
+			}
+		}
+		trigger = {
+			tag = SCA
+			1926 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+			1975 = {
+				OR = {
+					is_strongest_trade_power = ROOT
+					trade_share = {
+						country = ROOT
+						share = 25
+					}
+				}
+			}
+			45 = {
+				OR = {
+					is_strongest_trade_power = ROOT
+					trade_share = {
+						country = ROOT
+						share = 25
+					}
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = redux_dan_copper_tt
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = redux_swe_copper_fired
+					}
+				}
+				country_event = {
+					id = flavor_swe.114
+				}
+			} else = {
+				add_years_of_owned_provinces_production_income = {
+					years = 10
+					trigger = {
+						OR = {
+							province_id = 8
+							province_id = 4
+							province_id = 5
+							province_id = 1985
+						}
+					}
+					custom_tooltip = swe_industrialize_sweden_tt
+				}
+				add_mercantilism = 5
+			}
+		}
+	}
+
 	dan_the_carolean_units = {
 		icon = mission_gustavus
-		position = 10
+		position = 11
 		required_missions = { }
 		provinces_to_highlight = {}
 		trigger = {
@@ -3084,7 +3212,7 @@ dan_merc_slot_1 = {
 	
 	dan_drill_the_carolean = {
 		icon = mission_the_caroleans
-		position = 11
+		position = 12
 		required_missions = { dan_the_carolean_units }
 		provinces_to_highlight = {}
 		trigger = {

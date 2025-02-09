@@ -375,6 +375,7 @@ estate_church = {
 		estate_church_TIM_yasa_supremacy
 		estate_church_TIM_promote_ijazah
 		estate_church_MUG_promote_divine_religion
+		redux_estate_church_missions
 	}
 
 	agendas = {

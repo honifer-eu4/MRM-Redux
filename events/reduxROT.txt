@@ -1,0 +1,72 @@
+namespace = redux_rot
+normal_or_historical_nations = yes
+
+# The City of Enchantment
+
+country_event = {
+	id = redux_rot.53
+	title = redux_rot.53.t
+	desc = redux_rot.53.d
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "redux_rot.53.a"
+		4715 = {
+			change_trade_goods = cloth
+		}
+		4715 = {
+			add_base_production = 1
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+	
+	option = {
+		name = "redux_rot.53.b"
+		4715 = {
+			change_trade_goods = copper
+		}
+		4715 = {
+			add_base_production = 1
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+	
+	option = {
+		name = "redux_rot.53.c"
+		4715 = {
+			change_trade_goods = iron
+		}
+		4715 = {
+			add_base_production = 1
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+	
+	option = {
+		name = "redux_rot.53.de"
+		4715 = {
+			change_trade_goods = glass
+		}
+		4715 = {
+			add_base_production = 1
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+	
+	option = {
+		name = "redux_rot.53.e"
+		4715 = {
+			add_base_production = 3
+		}
+	}	
+}

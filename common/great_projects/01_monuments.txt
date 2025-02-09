@@ -13247,11 +13247,12 @@ holy_city_kairouan = {
 		conditional_modifier = {
 			trigger = {
 				owner = {
-					mission_completed = ARB_maghreb
+					mission_completed = gc_tun_conquest_of_italy
 				}
 			}
 			modifier = {
-				overextension_impact_modifier = -0.1
+				discipline = 0.05
+				manpower_in_true_faith_provinces = 0.1
 			}
 		}
 	}
@@ -17364,7 +17365,6 @@ mbanza_kongo = {
 	type = monument
 
 	build_trigger = {
-		culture_group = kongo_group
 		province_is_or_accepts_culture = yes
 	}
 

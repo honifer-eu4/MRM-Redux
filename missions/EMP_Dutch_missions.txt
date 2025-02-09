@@ -590,10 +590,7 @@ emp_ned_slot4_branch = { # Statists
 					desc = emp_ned_strengthen_the_vroedschappen_tt
 					all_owned_province = {
 						region = low_countries_region
-						OR = {
-							has_building = workshop
-							has_building = counting_house
-						}
+						has_production_building_trigger = yes
 					}
 					amount = 5
 				}
@@ -878,7 +875,7 @@ emp_ned_slot4_colony_branch = {
 			else = {
 				custom_trigger_tooltip = {
 					tooltip = miss_discover_caribbean
-					colonial_the_carribean = {
+					carribeans_region = {
 						has_discovered = ROOT
 					}
 				}
@@ -901,7 +898,10 @@ emp_ned_slot4_colony_branch = {
 		completed_by = 1640.1.1
 		
 		provinces_to_highlight = {
-			colonial_region = colonial_eastern_america
+			OR = {
+				region = northeast_america_region
+				region = southeast_america_region
+			}
 			has_discovered = ROOT
 			NOT = { owned_by = ROOT }
 		}
@@ -921,7 +921,7 @@ emp_ned_slot4_colony_branch = {
 			else = {
 				custom_trigger_tooltip = {
 					tooltip = miss_discover_eastern_america
-					colonial_eastern_america = {
+					northeast_america_region = {	
 						has_discovered = ROOT
 					}
 				}
@@ -929,7 +929,10 @@ emp_ned_slot4_colony_branch = {
 					tooltip = miss_colonize_eastern_america
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						value = 1
-						colonial_region = colonial_eastern_america
+						OR = {
+							region = northeast_america_region
+							region = southeast_america_region
+						}						
 						is_city = yes
 					}
 				}
@@ -1230,7 +1233,7 @@ emp_ned_slot5_colony_branch = {
 		completed_by = 1650.1.1
 		
 		provinces_to_highlight = {
-			colonial_region = colonial_brazil
+			region = brazil_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -1238,7 +1241,7 @@ emp_ned_slot5_colony_branch = {
 		trigger = {
 			custom_trigger_tooltip = {
 			tooltip = miss_discover_brazil
-				colonial_brazil = {
+				brazil_region = {
 					has_discovered = ROOT
 				}
 			}
@@ -1246,14 +1249,14 @@ emp_ned_slot5_colony_branch = {
 				tooltip = miss_colonize_brazil
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 1
-					colonial_region = colonial_brazil
+					region = brazil_region
 					is_city = yes
 				}
 			}
 		}
 		
 		effect = {
-			colonial_brazil = {
+			brazil_region = {
 				limit = { 
 					OR = {
 						country_or_non_sovereign_subject_holds = CAS

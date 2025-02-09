@@ -77,10 +77,7 @@ country_decisions = {
 				}
 				random_owned_province = {
 					limit = {
-						OR = {
-							has_building = temple
-							has_building = cathedral
-						}
+						has_tax_building_trigger = yes
 					}
 					add_province_modifier = {
 						name = swe_influential_temple

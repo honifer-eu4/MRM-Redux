@@ -662,6 +662,7 @@ tatar_missions_3 = {
 			}
 		}
 	}
+
 	mission_conquer_central_asia = {
 		icon = mission_arabian_fort
 		required_missions = { mission_conquer_samarkand }
@@ -699,6 +700,7 @@ tatar_missions_3 = {
 			}
 		}
 	}
+
 	mission_conquer_persia_tatars = {
 		icon = mission_persian_soldiers
 		required_missions = { mission_conquer_central_asia }
@@ -821,11 +823,7 @@ tatar_missions_3 = {
 						region = central_asia_region
 						region = khorasan_region
 					}
-					OR = {
-						has_building = marketplace
-						has_building = trade_depot
-						has_building = stock_exchange
-					}
+					has_trade_building_trigger = yes
 					value = 8
 				}
 			}
@@ -835,6 +833,39 @@ tatar_missions_3 = {
 			add_country_modifier = {
 				name = "silk_road_controlled"
 				duration = 7300
+			}
+		}
+	}
+}
+
+tatar_missions_1_a = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = SHY
+		has_country_flag = formed_bukhara_flag 
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	shy_restore_the_silk_road = {
+		icon = mission_asian_city 
+		provinces_to_highlight = {
+			culture = afghani
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				culture = afghani
+				value = 12
+			}
+		}
+		effect = {
+			unlock_estate_privilege = {
+				estate_privilege = redux_estate_burghers_caravanserai
 			}
 		}
 	}

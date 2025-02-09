@@ -72,7 +72,7 @@ gc_tunis_1 = {
 					province_id = 354
 					OR = {
 						NOT = {	owned_by = ROOT }
-						NOT = { has_building = marketplace }
+						has_trade_building_trigger = no
 					}
 				}
 				AND = {
@@ -87,7 +87,7 @@ gc_tunis_1 = {
 		
 		trigger = {
 			354 = {
-				has_building = marketplace
+				has_trade_building_trigger = yes
 				owned_by = ROOT
 			}
 			owns_core_province = 2448
@@ -167,63 +167,122 @@ gc_tunis_1 = {
 				name = "conquest_of_air"
 				duration = 7300
 			}
-			katsina_area = {
+			guinea_region = {
+				discover_country = ROOT
+			}
+			niger_region = {
+				discover_country = ROOT
+			}
+			sahel_region = {
+				discover_country = ROOT
+			}
+			baghena_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			kanem_area = {
+			western_sahara_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				discover_country = ROOT
 				add_permanent_claim = ROOT
 			}
-			bornu_area = {
+			niger_bend_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				discover_country = ROOT
 				add_permanent_claim = ROOT
 			}
 		}
 	}
-	gc_tun_kanem = {
+	gc_tun_develop_the_interior = {
 		icon = mission_conquer_kanem_bornu
 		required_missions = { gc_tun_air }
 		
 		provinces_to_highlight = {
 			OR = {
-				area = katsina_area
-				area = kanem_area
-				area = bornu_area
+				area = east_azbin_area
+				area = azbin_area
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-			has_discovered = ROOT
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+				has_manpower_building_trigger = no				
+				has_forcelimit_building_trigger = no
+			}
 		}
 		
 		trigger = {
-			katsina_area = {
+			azbin_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
+				has_manpower_building_trigger = yes				
+				has_forcelimit_building_trigger = yes
 			}
-			kanem_area = {
+			east_azbin_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
+				has_manpower_building_trigger = yes				
+				has_forcelimit_building_trigger = yes
 			}
-			bornu_area = {
+		}
+		effect = {
+			azbin_area = {
+				add_base_manpower = 2
+			}
+			east_azbin_area = {
+				add_base_manpower = 2
+			}
+		}
+	}
+
+	gc_tun_urbanization_of_tunis = {
+		icon = per_reform_our_defenses
+		
+		provinces_to_highlight = {
+			OR = {
+				area = tunisia_area
+				area = djerba_area
+				area = kabylia_area
+				area = tripolitania_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+				NOT = { development = 15 }			
+			}
+		}
+		
+		trigger = {
+			kabylia_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT				
+				development = 15
+			}
+			tunisia_area = {
+				type = all
+				owned_by = ROOT
+				development = 15
+			}
+			djerba_area = {
+				type = all
+				owned_by = ROOT
+				development = 15
+			}
+			tripolitania_area = {
+				type = all
+				owned_by = ROOT
+				development = 15
 			}
 		}
 		effect = {
 			add_country_modifier = {
-				name = "tun_conquest_of_kanem"
-				duration = 7300
+				name = tun_urbanization
+				duration = 5475
 			}
 		}
 	}
@@ -255,8 +314,7 @@ gc_tunis_2 = {
 				area = apulia_area
 				area = corsica_sardinia_area
 			}
-			NOT = { owns_core_province = ROOT }
-			has_discovered = ROOT
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
@@ -287,7 +345,7 @@ gc_tunis_2 = {
 		}
 	}
 
-	gc_tun_conquer_italy = {
+	gc_tun_conquest_of_italy = {
 		icon = complete_the_risorgimento
 		required_missions = { gc_tun_emirate_of_sicily }
 
@@ -299,70 +357,110 @@ gc_tunis_2 = {
 			}
 		}
 		trigger = {
-			italy_region = {
-				type = all
-				owned_by = ROOT
-				is_core = ROOT
+			num_of_owned_provinces_with = {
+				value = 45
+				region = italy_region
+				is_core = root
 			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = redux_italy_united
-				duration = -1
-			}
+			custom_tooltip = redux_tunis_monument_change_tt
 			override_country_name = TUN_Empire_2
+			change_country_color = { 
+				color =  { 111 0 130 }
+			}
+			set_country_flag = has_overriden_color_flag
 		}
 	}
 	
-	gc_tun_genoa = {
-		icon = mission_raid_on_genoa
+	gc_tun_conquest_of_southern_italy = {
+		icon = king_of_naples
 		required_missions = { gc_tun_med_islands }
 		position = 3
 		
 		provinces_to_highlight = {
-			province_id = 101
+			OR = {
+				area = apulia_area
+				area = naples_area
+				area = calabria_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			101 = {
-				OR = {
-					country_or_non_sovereign_subject_holds = ROOT
-					AND = {
-						controlled_by = ROOT
-						NOT = { owned_by = ROOT }
-						devastation = 25
-					}
-				}
+			calabria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			naples_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			apulia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
-			add_treasury = 500
-			add_yearly_sailors = 5
+			lazio_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			central_italy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tuscany_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}	
-	gc_tun_valencia = {
-		icon = mission_raid_on_valencia
-		required_missions = { gc_tun_genoa }
+	gc_tun_conquest_of_central_italy = {
+		icon = mission_crush_eyalet_rebellion
+		required_missions = { gc_tun_conquest_of_southern_italy }
 		
 		provinces_to_highlight = {
-			province_id = 220
-		}
+			OR = {
+				area = lazio_area
+				area = central_italy_area
+				area = tuscany_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }		}
 		
 		trigger = {
-			220 = {
-				OR = {
-					country_or_non_sovereign_subject_holds = ROOT
-					AND = {
-						controlled_by = ROOT
-						NOT = { owned_by = ROOT }
-						devastation = 25
-					}
-				}
+			lazio_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			central_italy_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tuscany_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
-			add_treasury = 500
-			add_yearly_sailors = 5
+			italy_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			set_country_flag = tunis_italian_nobility
+			add_government_reform = integrate_italian_nobility
 		}
 	}
 }
@@ -438,6 +536,27 @@ gc_tunis_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			ouled_nail_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			north_saharan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			fezzan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	gc_tun_med_islands = {
@@ -469,39 +588,6 @@ gc_tunis_3 = {
 			}
 			add_treasury = 300
 			add_adm_power = 400
-			163 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			320 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			321 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
 			calabria_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -525,81 +611,90 @@ gc_tunis_3 = {
 			}
 		}
 	}
-	gc_tun_east_med_islands = {
-		icon = mission_dominate_the_mediterranean
+	gc_tun_conversion_of_sicily = {
+		icon = mission_quran
 		required_missions = { gc_tun_med_islands }
 		
 		provinces_to_highlight = {
 			OR = {
-				province_id = 163
-				province_id = 320
-				province_id = 321
+				area = sicily_area
+				area = western_sicily_area
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			163 = {
-				country_or_non_sovereign_subject_holds = ROOT
+			western_sicily_area = {
+				type = all
+				is_core = ROOT
+				NOT = {
+					nationalism > 10
+				}
 			}
-			320 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			321 = {
-				country_or_non_sovereign_subject_holds = ROOT
+			sicily_area = {
+				type = all
+				is_core = ROOT
+				NOT = {
+					nationalism > 10
+				}
 			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = "tun_med_conquest_east"
-				duration = 7300
+			add_accepted_culture_or_dip_power = {
+				culture = sicilian
 			}
-			112 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
+			if = {
+				limit = {
+					ROOT = {
+						religion = sunni
 					}
-					add_permanent_claim = ROOT
+				}
+				sicily_area = {
+					change_religion = sunni
+				}
+				western_sicily_area = {
+					change_religion = sunni
 				}
 			}
+			else = {
+				sicily_area = {
+					change_religion = ibadi
+				}
+				western_sicily_area = {
+					change_religion = ibadi
+				}
+			}
+
 		}
 	}
-	gc_tun_venice = {
-		icon = mission_raid_on_venice
-		required_missions = { gc_tun_east_med_islands }
+	gc_tun_sack_of_rome = {
+		icon = new_st_peters_basilica
+		required_missions = { gc_tun_conversion_of_sicily }
 		
 		provinces_to_highlight = {
-			province_id = 112
-			NOT = {
-				OR = {
-					country_or_non_sovereign_subject_holds = ROOT
-					AND = {
-						controlled_by = ROOT
-						NOT = { owned_by = ROOT }
-						devastation = 25
-					}
-				}
-			}
+			province_id = 118
 		}
 		
 		trigger = {
-			112 = {
-				OR = {
-					country_or_non_sovereign_subject_holds = ROOT
-					AND = {
-						controlled_by = ROOT
-						NOT = { owned_by = ROOT }
-						devastation = 25
-					}
-				}
-			}			
+			118 = {
+				owned_by = ROOT
+			}
 		}
 		effect = {
-			add_treasury = 500
-			add_yearly_sailors = 5
+			add_treasury = 1000
+			118 = {
+				add_devastation = 50
+			}
+			add_power_projection = { 
+				type = 25_permanent_power_projection
+				amount = 25 
+			}
+			custom_tooltip = chi_permanent_pp
+			add_prestige_or_monarch_power = {
+				amount = 40
+			}
+			add_legitimacy_or_mil_power = {
+				amount = 10
+			}			
 		}
 	}
 }
@@ -630,11 +725,208 @@ gc_tunis_4 = {
 			custom_tooltip = tunis_ibadi_event_tt
 		}
 	}
-	
-	gc_tun_barbary_coast = {
-		icon = mission_control_the_barbary_coast
+		
+	gc_tun_ottomans = {
+		icon = mission_ottoman_diplomacy
 		required_missions = { gc_tun_fleet }
 		position = 2
+		
+		provinces_to_highlight = {
+			owned_by = TUR
+			is_capital = yes
+		}
+		
+		trigger = {	
+			OR = {
+				alliance_with = TUR
+				is_rival = TUR
+				NOT = { exists = TUR }
+			}
+		}
+		effect = {
+			delta_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			cyrenaica_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	gc_tun_alexandria = {
+		icon = mission_conquer_alexandria
+		required_missions = { gc_tun_ottomans }
+		position = 3
+		
+		provinces_to_highlight = {
+			OR = {
+				area = cyrenaica_area
+				area = delta_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			delta_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			cyrenaica_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			egypt_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					has_dlc = "Dharma"
+					358 = {
+						NOT = {
+							province_has_center_of_trade_of_level = 3
+						}
+					}
+				}
+				358 = {
+					add_center_of_trade_level = 1
+				}
+			}
+			else = {
+				358 = {
+					add_province_modifier = {
+						name = "tun_restoration_of_alexandra"
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	gc_tun_integrate_the_mamluks = {
+		icon = mam_recruit_the_mamluks
+		required_missions = { gc_tun_alexandria }
+		position = 3
+		
+		provinces_to_highlight = {
+			culture = al_misr_arabic
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			ROOT = {
+				num_of_provinces_owned_or_owned_by_subjects_with = {
+					value = 15
+					culture = al_misr_arabic 
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = unlock_privilege_estate_nobles_enlist_the_mamluks_tt
+			set_country_flag = enable_mamluk_privilege
+			unlock_estate_privilege = {
+				name = estate_nobles_enlist_the_mamluks
+			}
+		}
+	}
+}
+
+gc_tunis_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Golden Century"
+	}
+	potential = {
+		has_dlc = "Golden Century"
+		tag = TUN
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	gc_tun_desert_development = {
+		icon = mission_traverse_the_sahara
+		position = 1 
+		provinces_to_highlight = {
+			owned_by = ROOT
+			OR = {
+				has_terrain = desert 
+				has_terrain = coastal_desert
+			}
+			has_tax_building_trigger = no
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				is_core = ROOT 
+				OR = {
+					has_terrain = desert
+					has_terrain = coastal_desert
+				}
+				has_tax_building_trigger = yes
+			}
+		}
+		effect = {
+			custom_tooltip = tun_desert_development_tooltip
+			set_country_flag = has_estate_clergy_exploration_expedition
+		}
+	}
+	gc_tun_art_religion = {
+		icon = mission_patronize_art_and_religion
+		position = 2
+		
+		provinces_to_highlight = {
+			province_id = 4566
+			OR = {
+				NOT = { owned_by = ROOT }
+				has_tax_building_trigger = no
+				NOT = { has_building = university }
+			}
+		}
+		
+		trigger = {
+			4566 = {
+				owned_by = ROOT
+				development = 20
+				has_tax_building_trigger = yes
+			}
+			OR = {
+				mil = 6
+				adm = 6
+				dip = 6
+			}
+			num_accepted_cultures = 5
+		}
+		effect = {
+			add_country_modifier = {
+				name = redux_tunis_art_and_religion
+				duration = 5475
+			}
+			4566 = {
+				add_great_project_tier = {
+					type = holy_city_kairouan 
+					tier = 1 
+				}
+			}
+		}
+	}
+
+	gc_tun_barbary_coast = {
+		icon = mission_control_the_barbary_coast
+		required_missions = { gc_tun_ottomans }
+		position = 3
 		
 		provinces_to_highlight = {
 			OR = {
@@ -669,44 +961,19 @@ gc_tunis_4 = {
 	}
 	gc_tun_privateer = {
 		icon = mission_sponsor_piracy
-		required_missions = { gc_tun_barbary_coast gc_tun_ottomans }
+		required_missions = { gc_tun_barbary_coast  }
+		position = 4
 		
-		provinces_to_highlight = {	
-			OR = {
-				province_id = 1298
-				AND = {
-					province_id = 338
-					NOT = {
-						owned_by = ROOT
-						OR = {
-							has_building = shipyard
-							has_building = grand_shipyard
-						}
-					}
-				}
-			}
+		provinces_to_highlight = {
+			has_port = yes
+			has_shipyard_building_trigger = no
+			owned_by = ROOT
 		}
 		
 		trigger = {
 			num_of_owned_provinces_with = {
 				value = 10
-				OR = {
-					has_building = shipyard
-					has_building = grand_shipyard
-				}
-			}
-			1298 = {
-				privateer_power = {
-					country = ROOT
-					share = 25
-				}
-			}
-			338 = { 
-				owned_by = ROOT 
-				OR = {
-					has_building = shipyard
-					has_building = grand_shipyard
-				}
+				has_shipyard_building_trigger = yes
 			}
 		}
 		effect = {
@@ -714,21 +981,7 @@ gc_tunis_4 = {
 			country_event = {
 				id = flavor_tun.1
 			}
-			northern_morocco_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			western_morocco_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			marrekesh_area = {
+			maghreb_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -740,6 +993,7 @@ gc_tunis_4 = {
 	gc_tun_morocco = {
 		icon = mission_moroccan_ports
 		required_missions = { gc_tun_privateer }
+		position = 5
 		
 		provinces_to_highlight = {
 			OR = {
@@ -767,188 +1021,7 @@ gc_tunis_4 = {
 		effect = {
 			add_country_modifier = {
 				name = "tun_morocco"
-				duration = 7300
-			}
-		}
-	}
-}
-
-gc_tunis_5 = {
-	slot = 5
-	generic = no
-	ai = yes
-	potential_on_load = {
-		has_dlc = "Golden Century"
-	}
-	potential = {
-		has_dlc = "Golden Century"
-		tag = TUN
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
-
-	gc_tun_desert_development = {
-		icon = mission_traverse_the_sahara
-		position = 1 
-		provinces_to_highlight = {
-			owned_by = ROOT
-			OR = {
-				has_terrain = desert 
-				has_terrain = coastal_desert
-			}
-			AND = {
-				NOT = { has_building = temple }
-				NOT = { has_building = cathedral }
-			}
-		}
-		trigger = {
-			num_of_owned_provinces_with = {
-				value = 5
-				is_core = ROOT 
-				OR = {
-					has_terrain = desert
-					has_terrain = coastal_desert
-				}
-				OR = {
-					has_building = temple
-					has_building = cathedral
-				}
-			}
-		}
-		effect = {
-			custom_tooltip = tun_desert_development_tooltip
-			set_country_flag = has_estate_clergy_exploration_expedition
-		}
-	}
-	
-	gc_tun_ottomans = {
-		icon = mission_ottoman_diplomacy
-		required_missions = {  }
-		position = 2
-		
-		provinces_to_highlight = {
-			owned_by = TUR
-			is_capital = yes
-		}
-		
-		trigger = {	
-			OR = {
-				alliance_with = TUR
-				is_rival = TUR
-				NOT = { exists = TUR }
-			}
-		}
-		effect = {
-			358 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			cyrenaica_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	gc_tun_alexandria = {
-		icon = mission_conquer_alexandria
-		required_missions = { gc_tun_ottomans }
-		
-		provinces_to_highlight = {
-			OR = {
-				area = cyrenaica_area
-				province_id = 358
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			358 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			cyrenaica_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			if = {
-				limit = {
-					has_dlc = "Dharma"
-					358 = {
-						NOT = {
-							province_has_center_of_trade_of_level = 3
-						}
-					}
-				}
-				358 = {
-					add_center_of_trade_level = 1
-				}
-			}
-			else = {
-				358 = {
-					add_province_modifier = {
-						name = "tun_restoration_of_alexandra"
-						duration = -1
-					}
-				}
-			}
-		}
-	}
-	gc_tun_art_religion = {
-		icon = mission_patronize_art_and_religion
-		required_missions = { gc_tun_privateer }
-		
-		provinces_to_highlight = {
-			province_id = 4566
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = {
-					OR = {
-						has_building = temple
-						has_building = cathedral
-					}
-				}
-				NOT = { has_building = university }
-			}
-		}
-		
-		trigger = {
-			4566 = {
-				owned_by = ROOT
-				OR = {
-					has_building = temple
-					has_building = cathedral
-				}
-				has_building = university
-			}
-			religious_unity = 1
-			num_accepted_cultures = 3
-		}
-		effect = {
-			add_prestige = 20
-			if = {
-				limit = {
-					religion_group = muslim
-					piety = 1
-				}
-				add_piety = 0.75
-			}
-			else_if = {
-				limit = {
-					religion_group = muslim
-					NOT = { piety = 1 }
-				}
-				add_piety = -0.75
+				duration = -1
 			}
 		}
 	}

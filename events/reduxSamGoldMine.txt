@@ -1,0 +1,40 @@
+namespace = transvaal_gold_rush
+
+country_event = {
+	id = transvaal_gold_rush.1
+	title = "transvaal_gold_rush.1.EVTNAME"
+	desc = "transvaal_gold_rush.1.EVTDESC"
+	picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture	
+	
+	trigger = {
+		NOT = {
+			has_global_flag = transvaal_gold_rush_happened
+		}
+		ROOT = {
+			owns_core_province = 4781
+		}
+		is_year > 1530
+	}
+
+	mean_time_to_happen = {
+		months = 180
+	}
+
+	immediate = {
+		set_global_flag = transvaal_gold_rush_happened
+	}
+	option = {
+		name = "transvaal_gold_rush.1.EVTOPTA"
+		ai_chance = { factor = 10 }
+		add_years_of_income = 1.0
+		add_inflation = 1
+		4781 = {
+			change_trade_goods = gold
+			center_of_trade = 1
+			add_permanent_province_modifier = {
+				name = witwatersrand_basin
+				duration = -1
+			}
+		}
+	}
+}

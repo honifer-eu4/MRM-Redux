@@ -3,6 +3,7 @@
  maritime_ideas:0 "Logistic Ideas"
  maritime_ideas_bonus:0 "Full Logistic"
  deus_vult_desc:0 "Join the battle cry of the crusades, 'God wills it' and crush the infidels.\n§GDoubles§! the buffs of Clergy/Brahmins privileges §YExpansionist Zealotry§!, §YDevelopment of Temples§!, and §YReligious Culture§!."
+ court_embassies_desc:0 "Establishing diplomatic communication posts between us and our allies is a vital addition to our court's influence. \nGives §Gadditional buffs§! to the estate privileges §YOversight to the Clergy§!, §YRight of Counsel§!, and §YFree Enterprise§!, based on their bonuses for being loyal."
  redux_estate_church_development_of_temples_mod:0 "Improved Development of Temples"
  desc_redux_estate_church_development_of_temples_mod:0 "The state has improved the development of the local temples."
  redux_estate_brahmins_for_the_faith:0 "Improved Expansionist Zealotry"
@@ -48,6 +49,8 @@
  obj_emperor_of_china_desc:0 "Has enacted the 'Destroy the Estates' decision."
  obj_win_religious_war:0 "Power Projection"
  obj_win_religious_war_desc:0 "Power Projection must be at least 75."
+ ab_age_of_the_landsknechts:0 "Age of the Landsknechts"
+ ab_extra_colonist:0 "Settling the New World"
  
  # Governments
  mechanic_new_order_regiment_buff_yes:1 "The §YMobilize New Order Regiments§! interaction grants an additional §G+5.0%§! Infantry Combat Ability!"

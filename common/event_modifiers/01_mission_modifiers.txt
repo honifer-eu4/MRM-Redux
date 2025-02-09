@@ -3821,11 +3821,16 @@ tun_barbary_pirates = {
 }
 
 tun_morocco = {
-	ship_durability = 0.1
+	heavy_ship_power = 0.1
 }
 
 tun_restoration_of_alexandra = {
 	province_trade_power_modifier = 0.2
+}
+
+tun_urbanization = {
+	build_cost = -0.1
+	build_time = -0.15
 }
 
 # Aragonese Missions
@@ -3887,6 +3892,7 @@ por_first_circumnavigation_modifier = {
 
 por_elite_marines_modifier = {
 	discipline = 0.05
+	morale_damage_received = -0.1
 	is_marine_modifier = yes 
 }
 por_minas_gerais = {
@@ -3898,13 +3904,13 @@ por_wine_monopolies = {
 }
 
 por_houses_of_trade = {
-	global_trade_power = 0.15
-	trade_efficiency = 0.05 
+	global_trade_power = 0.1
+	trade_efficiency = 0.1
 }
 
 por_arts_and_letters = {
-	advisor_cost = -0.1
-	technology_cost = -0.1
+	advisor_cost = -0.15
+	technology_cost = -0.05
 }
 
 por_triangle_trade_modifier = {
@@ -4100,6 +4106,17 @@ adu_trade_hub = {
 
 adu_native_concord = {
 	native_uprising_chance = -0.5
+}
+
+adu_return_of_the_moors = {
+	local_culture_conversion_cost = -0.25
+	local_culture_conversion_time = -0.25
+	local_unrest = 2
+}
+
+adu_spanish_support = {
+	manpower_in_accepted_culture_provinces = 0.15
+	global_tax_modifier = 0.1
 }
 
 sicily_in_safe_hands = {
@@ -8357,7 +8374,7 @@ tur_mamlukian_administration = {
 }
 
 tur_investment_into_infrastructure = {
-	trade_goods_size_modifier = 0.2
+	trade_goods_size_modifier = 0.1
 	local_development_cost = -0.1
 }
 
@@ -11618,6 +11635,7 @@ estate_church_muslim_integration_mod = {
 
 grain_trade_imports_modifier = {
 	supply_limit_modifier = 0.1
+	global_manpower_modifier = 0.05
 	global_unrest = -1
 }
 

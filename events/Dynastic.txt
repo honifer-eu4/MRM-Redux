@@ -62,8 +62,7 @@ country_event = {
 		NOT = { has_government_attribute = has_harem_events }
 		any_owned_province = {
 			num_free_building_slots = 1
-			NOT = { has_building = cathedral }
-			NOT = { has_building = temple }
+			has_tax_building_trigger = no
 		}
 		has_government_attribute = heir
 	}
@@ -77,10 +76,7 @@ country_event = {
 		kill_heir = {}
 		random_owned_province = {
 			limit = {
-				NOT = {
-					has_building = temple
-				}
-				NOT = { has_building = cathedral }
+				has_tax_building_trigger = no
 				num_free_building_slots = 1
 			}
 			add_building = temple

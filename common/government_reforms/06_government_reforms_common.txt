@@ -1900,6 +1900,8 @@ amphibious_specialization_reform = {
 			AND = { 
 				NOT = { primary_culture = english }
 				NOT = { primary_culture = anglois }
+				NOT = { primary_culture = portugese }
+				NOT = { primary_culture = brazilian }
 			}
 		}
 	}
@@ -2683,6 +2685,50 @@ ordennancas_reform = {
 		can_raise_manpower_from_home_region = yes
 	}
 	
+	ai = {
+		factor = 1000
+	}
+}
+
+expand_the_fuzileiros = {
+	icon = "new_order_regiments"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Domination"
+		NOT = { religion_group = muslim }
+		OR = {
+			primary_culture = portugese
+			primary_culture = brazilian
+		}
+		has_country_flag = fuzileiros_flag
+	}
+	trigger = {
+		if = {
+			limit = { has_modifier_locking_military_tier = yes }
+			OR = {
+				has_reform = expand_the_fuzileiros
+				has_not_modifier_locking_military_tier = yes
+			}
+		}
+	}
+	modifiers = {
+		regiment_disembark_speed = 0.25
+		transport_attrition = -0.25
+		allowed_marine_fraction = 0.15
+		sailors_recovery_speed = 0.2
+	}
+	effect = {
+		hidden_effect = {
+			add_country_modifier = {
+				name = amphibious_specialization_reform_modifier
+				duration = -1
+				hidden = yes
+			}
+		}
+	}
+	custom_attributes = {
+		marine_buff = yes	#Marines -20% Manpower Usage
+	}
 	ai = {
 		factor = 1000
 	}

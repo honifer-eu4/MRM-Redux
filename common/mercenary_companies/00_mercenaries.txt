@@ -116,21 +116,15 @@ merc_knights_templar = {
 }
 
 # Hessian Jaegerkorps (Hesse, Absolutism + Revolution)
-merc_hessian_jaegerkorps = {
-    regiments_per_development = 0.06
+merc_hessian_jaegerkorps_2 = {
+    regiments_per_development = 0.075
 	cavalry_weight = 1
 	artillery_weight = 0
-	cost_modifier = 0.66
+	cost_modifier = 0.3
 	sprites = { dlc028_hes_sprite_pack westerngfx_sprite_pack }
     trigger = {
 		is_allowed_to_recruit_mercenaries = yes
-		OR = {
-			tag = FKN
-			AND = {
-				tag = GER 
-				was_tag = FKN
-			}
-		}
+		has_country_flag = redux_FKN_jaegerkorps
 	}
 	modifier = {
 		fire_damage_received = -0.1
@@ -139,7 +133,7 @@ merc_hessian_jaegerkorps = {
 	}
 }
 
-merc_hessian_jaegerkorps_2 = {
+merc_hessian_jaegerkorps = {
     regiments_per_development = 0.06
 	cavalry_weight = 0
 	artillery_weight = 0
@@ -150,9 +144,10 @@ merc_hessian_jaegerkorps_2 = {
 		OR = {
 			tag = ROT 
 			tag = WES
+			tag = FKN
 			AND = {
 				tag = GER 
-				was_tag = WES
+				was_tag = ROT
 			}
 		}
 	}

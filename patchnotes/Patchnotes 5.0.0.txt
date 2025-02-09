@@ -1,0 +1,124 @@
+MRM Redux Patch 5.0.0:
+
+############# General/Bugfixes ###############
+
+Added the "Solus Europa" start date, an expansion to the Pax Europa start that also removes most of Africa.
+Baluchistan and Afghanistan readded to the Pax Europa and Solus Europa start dates.
+Integrated new Wumpus events, featuring new flavor/buffs for Denmark, Brandenburg, and any nation with Humanist Ideas completed.
+Added a starting fort to the province of Braganca (Portugal).
+Added starting trade centers to the provinces of Granada, Mecca, Cayor, Tajura, Air, Ngoyo, and multiple provinces in the New World. 
+Removed starting trade centers from the provinces of Cadiz, Jeddah, Ndongo, Harer, and Cape Coast.
+Tunis now starts with the province of Kabylia.
+
+################## Ages ######################
+
+Age of Reformation:
+    "Mughal Artillery" goal replaced with "Age of the Landsknechts", which is available to nations of North Germanic culture and gives -20% Shock Damage Received and -10% Mercenary Cost. 
+    "Religion Enforced Edict" goal replaced with "Securing the New World", which gives +1 Colonist.
+
+############# Country-specific ###############
+
+Arabia:
+    Second idea now gives +25% Cavalry Combat Ability and -15% Cavalry Cost, instead of +25% and -15% respectively.
+    Fifth idea now gives -30% Reinforce Cost instead of -20%.
+    Sixth idea now gives -15% Fire Damage Received instead of -15% Shock Damage Received.
+
+Brandenburg:
+    "Renovate Berlin" mission now only requires 15 development instead of 25.
+    Starting ruler buffed to a 4/4/4.
+
+England:
+    Minor update to mission tree, including a new mission and associated event about South African wine.
+
+Hormuz:
+    Minor update to mission tree.
+    Now starts with all of its provinces as Ibadi.
+    Second tradition now gives +0.25 Cavalry Shock instead of +10% Shock Damage.
+    Third idea now gives +15% Cavalry Combat Ability and -10% Cavalry Cost instead of +10% Infantry Combat Ability.
+
+Mamluks:
+    Now gains the new Ottoman mission tree instead of the old one upon forming Rum.
+    "Burghers Hydraulic Rights" privilege now gives -15% Development Cost on Deserts and Coastal Deserts instead of -25% and -17.5% respectively, and no longer gives a Development Cost discount on Savannahs and Steppes.
+
+Morocco:
+    Minor update to Andalusia, including new missions and a special unit type.
+
+Ottomans:
+    "The Fate of the Mamluks" mission now gives +10% Goods Produced Modifier instead of +20%.
+
+Portugal:
+    Full rework of mission tree, including new missions for invading the Middle East, colonizing the African coast and the New World, and a new formable (Lusitania).
+
+Rothenburg:
+    First idea now gives +0.5 Yearly Republican Tradition instead of No Religion Penalties.
+    Third idea now gives +5% Discipline instead of +0.2 Yearly Republican Tradition.
+    Fifth idea now gives No Religion Penalties instead of +5% Discipline.
+    Minor update to mission tree, including new mission branch for developing Rothenburg.
+    Forming Franconia now gives the Franconian Elective Monarchy government reform, a version of the normal Elective Monarchy with buffed ruler stats.
+    Minor update to Franconian mission tree, including new missions for cavalry buffs and an elite mercenary company.
+
+Sweden:
+    Minor reordering of mission tree to allow for conquering of Norway before the Skaneland.
+
+Tunis: 
+    Minor update to mission tree, including new missions for conquering all of Italy.
+    Starting development slightly increased, and most provinces now start as Ibadi.
+    Starting ruler buffed to a 3/3/4.
+
+Uzbek:
+    Minor update to mission tree, including a mission to restore the Silk Road and gain development cost benefits.
+
+################# Estates ####################
+
+Burghers:
+    "Elite Mercenaries" privilege now also gives up to +10% Land Fire Damage.
+
+################## Ideas #####################
+
+Administrative:
+    First idea now gives +15% Mercenary Manpower instead of +10% Trade Efficiency.
+    Second idea now gives -25% State Governing Cost instead of -20% State Maintenance.
+    Fifth idea now gives -20% Mercenary Cost and -15% Mercenary Maintenance instead of -50% Move Capital Cost Modifier and +0.25 Global Prosperity Growth.
+    Sixth idea now gives +10% Trade Efficiency instead of -25% State Governing Cost.
+    Finisher now gives +20% Land Force Limit instead of -10% Leader Cost.
+
+Court: 
+    First idea now gives +1 Monarch Diplomatic Skill and -10% Reelection Cost instead of -10 National Focus Years.
+    Fifth idea now gives +1 Yearly Absolutism instead of +0.2.
+    Fifth idea now gives +30 Max Absolutism instead of +20. 
+    Last idea now gives -10% Leader Cost instead of +1 Monarch Diplomatic Skill and -10% Reelection Cost.
+    Last idea now additionally buffs the privileges "Oversight by the Clergy", "Free Enterprise", and "Right of Counsel".
+
+Economic: 
+    Sixth idea now gives -0.25 Interest Per Annum instead of -0.5.
+
+################ Mechanics ###################
+
+Defines:
+    Removed the negative effects from Treaty of Tordesillas.
+
+Events:
+    Second option in "National Bank" event now gives -25% Cost to Reduce Inflation instead of -0.5 Interest Per Annum. 
+
+Institutions:
+    Colonialism now gives an additional +1 Colonist.
+
+Trade Goods:
+    Cloves now has a base price of 6 ducats instead of 8.
+
+################ Religions ###################
+
+Anglican:
+    "Grant Monopoly" aspect now gives 2 months of income instead of 1, and 0.1 Mercantilism instead of 1.
+
+Catholic: 
+    Counter-Reformation now starts in 1545 instead of 1610 if the Pope does not exist.
+
+############### Idea groups ##################
+
+Defensive:
+    Second idea now gives +10% Morale of Armies instead of +15%.
+
+################# Colonies ###################
+
+Colonial nations now get a natural -0.1 Monthly Autonomy Change, +10 Global Settler Growth, and -200% Liberty Desire, no longer gain Liberty Desire from Development, and provide their overlord with 15% of their Force Limit instead of 10%.

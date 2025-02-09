@@ -64,6 +64,7 @@
  redux_formableInfoEvents.1.blv:0 "Bolivia"
  redux_formableInfoEvents.1.chl:0 "Chile"
  redux_formableInfoEvents.1.lap:0 "La Plata"
+ redux_formableInfoEvents.1.lus:0 "Lusitania"
 
  # Lotharingia 
 
@@ -239,7 +240,7 @@
 # Andalusia
 
  redux_formableInfoEvents.25.title:0 "Andalusia Formable Information"
- redux_formableInfoEvents.25.desc:0 "@ADU Andalusia is formable through the decision §GRestore Al-Andalus§!.\n\nNational Ideas:\n Traditions: §G+10%§! Morale of Armies and §G+20%§! Cavalry Combat Ability\n §G-10%§! Fire Damage Received and §G+5%§! Discipline\n §G+100%§! Vassal Force Limit Contribution\n §G+3§! Tolerance of Heathens\n §G-10%§! Idea Cost and §G-0.1§! Monthly Piety\n §G+15%§! National Manpower Modifier and §G-15%§! Core Creation Cost\n §G+1§! Colonist\n §G+0.25§! Cavalry Fire and §G+10%§! Fort Defense\n Ambition: §G+10%§! Goods Produced Modifer\n\nOther Formables: No. Andalusia is an end game tag.\n\nMissions: Forming Andalusia §Greplaces§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.25.desc:0 "@ADU Andalusia is formable through the decision §GRestore Al-Andalus§!.\n\nNational Ideas:\n Traditions: §G+10%§! Morale of Armies and §G+20%§! Cavalry Combat Ability\n §G-10%§! Fire Damage Received and §G+5%§! Discipline\n §G+100%§! Vassal Force Limit Contribution\n §G+3§! Tolerance of Heathens\n §G-10%§! Idea Cost and §G-0.1§! Monthly Piety\n §G+15%§! National Manpower Modifier and §G-15%§! Core Creation Cost\n §G+1§! Colonist\n §G+0.25§! Cavalry Fire and §G+10%§! Fort Defense\n Ambition: §G+10%§! Goods Produced Modifer\n\nOther Formables: No. Andalusia is an end game tag.\n\nMissions: Forming Andalusia §Gextends§! the mission tree. \n\nOther Notable Information: Forming Andalusia unlocks §GMoorish§! special units, similar to banners."
  redux_formableInfoEvents.25.back:0 "Back"
  redux_formableInfoEvents.25.exit:0 "Close"
 
@@ -352,6 +353,13 @@
  redux_formableInfoEvents.40.desc:0 "@EGY Egypt is formable through the mission §GKashifs of Egypt§!.\n\nNational Ideas:\n Traditions: §G+10%§! Trade Efficiency and §G+5%§! Administrative Efficiency\n §G-10%§! Development Cost\n §G+1§! Monthly Military Power\n §G+10%§! Burgher Loyalty Equilibrium\n §G+10%§! Production Efficiency\n §G+20%§! Land Fire Damage\n §G+10%§! Artillery Combat Ability\n §G+10%§! Global Trade Power\n Ambition: §G+1§! Free Policies\n\nOther Formables: No. Egypt is an end-game tag. \n\nMissions: Forming Egypt §Rdoes not change§! the mission tree. \n\nOther Notable Information: Forming Egypt unlocks the Egyptian Westernization government mechanic, which can grant up to §G+25%§! Governing Capacity Modifier, §G+15%§! Goods Produced Modifier, and §G+10%§! Morale of Armies permanently."
  redux_formableInfoEvents.40.back:0 "Back"
  redux_formableInfoEvents.40.exit:0 "Close"
+
+# Lusitania
+
+ redux_formableInfoEvents.41.title:0 "Lusitania Formable Information"
+ redux_formableInfoEvents.41.desc:0 "@POR Lusitania is formable through the decision §GForm Lusitanian Nation§!. \n\nNational Ideas: Lusitania does not change national ideas and keeps Portugal's. \n\nOther Formables: No. \n\nOther Notable Information: Forming Lusitania unlocks an extra part of the mission tree. Notable missions include a morale mission if we are at war, a mission providing cores on Iberia if we manage to take Navarra or Roussillon, and missions providing claims on regions including the Maghreb and France."
+ redux_formableInfoEvents.41.back:0 "Back"
+ redux_formableInfoEvents.41.exit:0 "Close"
 
 # Canada
 

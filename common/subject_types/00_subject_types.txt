@@ -609,7 +609,7 @@ colony = {
 	can_concentrate_development = no
 	extend_trading_range = yes
 
-	liberty_desire_development_ratio = 0.1
+	liberty_desire_development_ratio = 0
 	opinion_on_subject_integration = 0
 	max_government_rank = 1
 	cities_required_for_bonuses = 10
@@ -692,11 +692,12 @@ crown_colony = {
 	can_send_missionary_to_subject = yes	
 	count = colony
 
-	forcelimit_to_overlord = 0.1
-	naval_forcelimit_to_overlord = 0.05
+	forcelimit_to_overlord = 0.15
+	naval_forcelimit_to_overlord = 0.15
 	
 	# Modifiers:
 	modifier_overlord = clear
+	
 	modifier_overlord = {
 		modifier = crown_colony_overlord
 	}

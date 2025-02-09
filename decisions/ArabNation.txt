@@ -31,17 +31,7 @@ country_decisions = {
 			NOT = { was_tag = MAM }
 		}
 		provinces_to_highlight = {
-			OR = {
-				province_id = 384			#Medina
-				province_id = 385			#Mecca
-				province_id = 388			#Aden
-				province_id = 390			#Sanaa
-				province_id = 392			#Al-Arid
-				province_id = 394			#Qatif
-				province_id = 400			#Muscat
-				province_id = 403			#Nizwa
-				province_id = 410			#Baghdad
-			}
+			region = arabia_region
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
@@ -58,13 +48,10 @@ country_decisions = {
 			}
 			owns_core_province = 384			#Medina
 			owns_core_province = 385			#Mecca
-			owns_core_province = 388			#Aden
-			owns_core_province = 390			#Sanaa
-			owns_core_province = 392			#Al-Arid
-			owns_core_province = 394			#Qatif
-			owns_core_province = 400			#Muscat
-			owns_core_province = 403			#Nizwa
-			owns_core_province = 410			#Baghdad
+			num_of_owned_provinces_with = {
+				region = arabia_region
+				value = 50
+			}
 		}
 		effect = {
 			on_change_tag_effect = yes

@@ -477,7 +477,7 @@ country_event = {
 			culture_group = south_germanic
 		}
 		any_owned_province = {
-			has_building = temple
+			has_tax_building_trigger = yes
 		}
 		adm_power = 30
 		years_of_income = 0.5

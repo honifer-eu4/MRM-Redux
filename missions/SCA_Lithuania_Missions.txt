@@ -751,12 +751,7 @@ lit_dlc_3 = {
 		position = 3
 		provinces_to_highlight = {
 			province_id = 4545
-			NOT = {
-				OR = {
-					has_building = counting_house
-					has_building = workshop
-				}
-			}
+			has_production_building_trigger = no
 		}
 		trigger = {
 			4545 = {

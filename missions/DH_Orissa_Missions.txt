@@ -665,21 +665,13 @@ ori_religious_missions = {
 				NOT = {
 					owned_by = ROOT
 				}
-				NOT = {
-					OR = {
-						has_building = temple
-						has_building = cathedral
-					}
-				}
+				has_tax_building_trigger = no
 			}
 		}
 		trigger = {
 			owns = 552
 			552 = {
-				OR = {
-					has_building = temple
-					has_building = cathedral
-				}
+				has_tax_building_trigger = yes
 			}
 			temple = 5
 			estate_loyalty = {

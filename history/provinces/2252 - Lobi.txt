@@ -21,4 +21,8 @@ base_manpower = 1
 discovered_by = sub_saharan
 
 
-
+1444.11.12 = {
+    owner = MNG
+    controller = MNG
+    add_core = MNG
+}

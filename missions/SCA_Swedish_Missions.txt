@@ -18,65 +18,10 @@ swe_scandinavian_colonialism_mission_slot = {
 	}
 	has_country_shield = yes
 	
-	swe_conquer_scania = {
-		icon = mission_conquer_skaneland
-		position = 2
-		required_missions = { 
-			swe_declare_independence
-		}
-		provinces_to_highlight = {
-			area = skaneland_area
-			NOT = { owned_by = ROOT }
-			NOT = { is_core = ROOT }
-		}
-		trigger = {
-			skaneland_area = {
-				owned_by = ROOT
-				is_core = ROOT
-				type = all
-			}
-		}
-		effect = {
-			country_event = {
-				id = flavor_swe.120
-			}
-			if = {
-				limit = {
-					315 = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-				}
-				add_permanent_claim = 315
-			}
-			eastern_norway = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			western_norway = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			northern_norway = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	
 	swe_claim_norwegian_crown = {
 		icon = mission_conquer_norway
-		position = 3
-		required_missions = { swe_conquer_scania }
+		position = 2
+		required_missions = { swe_declare_independence }
 		provinces_to_highlight = {
 			OR = {
 				area = eastern_norway
@@ -107,7 +52,7 @@ swe_scandinavian_colonialism_mission_slot = {
 				name = "norway_subjugated_swe"
 				duration = 5475
 			}
-			jutland_area = {
+			skaneland_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -115,6 +60,38 @@ swe_scandinavian_colonialism_mission_slot = {
 				add_permanent_claim = ROOT
 			}
 			denmark_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	swe_conquer_scania = {
+		icon = mission_conquer_skaneland
+		position = 3
+		required_missions = { 
+			swe_claim_norwegian_crown
+		}
+		provinces_to_highlight = {
+			area = skaneland_area
+			NOT = { owned_by = ROOT }
+			NOT = { is_core = ROOT }
+		}
+		trigger = {
+			skaneland_area = {
+				owned_by = ROOT
+				is_core = ROOT
+				type = all
+			}
+		}
+		effect = {
+			country_event = {
+				id = flavor_swe.120
+			}
+						jutland_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -134,7 +111,7 @@ swe_scandinavian_colonialism_mission_slot = {
 	swe_fall_of_denmark = {
 		icon = mission_end_the_sound_toll
 		position = 4
-		required_missions = { swe_claim_norwegian_crown }
+		required_missions = { swe_conquer_scania }
 		provinces_to_highlight = {
 			OR = {
 				AND = {
@@ -198,9 +175,6 @@ swe_scandinavian_colonialism_mission_slot = {
 			}
 			OR = {
 				NOT = { development = 10 }
-				NOT = { has_manufactory_trigger = yes }
-			}
-			else = {
 				NOT = { has_manufactory_trigger = yes }
 			}
 		}
@@ -924,8 +898,30 @@ swe_diplomacy_mission_slot = {
 			}
 		}
 		effect = {
-			country_event = {
-				id = flavor_swe.114
+			custom_tooltip = redux_dan_copper_tt
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = redux_swe_copper_fired
+					}
+				}
+				country_event = {
+					id = flavor_swe.114
+				}
+			} else = {
+				add_years_of_owned_provinces_production_income = {
+					years = 10
+					trigger = {
+						OR = {
+							province_id = 8
+							province_id = 4
+							province_id = 5
+							province_id = 1985
+						}
+					}
+					custom_tooltip = swe_industrialize_sweden_tt
+				}
+				add_mercantilism = 5
 			}
 		}
 	}
@@ -1022,7 +1018,30 @@ swe_kalmar_union_mission_slot = {
 			country_event = {
 				id = flavor_swe.121
 			}
-			skaneland_area = {
+			if = {
+				limit = {
+					315 = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				}
+				add_permanent_claim = 315
+			}
+			eastern_norway = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			western_norway = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			northern_norway = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }

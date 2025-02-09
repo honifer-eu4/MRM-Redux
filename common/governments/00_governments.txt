@@ -79,6 +79,7 @@ monarchy = {
 				holy_imperial_monarchy_reform
 				burgundian_state_reform
 				bohemian_elective_kingdom_reform
+				franconian_elective_kingdom_reform
 				stadthalter_monarchy_reform
 				janissary_autocracy_reform
 				system_of_councils_reform
@@ -122,6 +123,7 @@ monarchy = {
 				grant_noble_castle_rights_reform
 				maintain_nobles_status_quo_reform
 				grant_military_command_reform
+				FKN_grant_military_command_reform
 				#Visible but locked
 				grant_nobles_electorate_reform
 				blackmail_nobility_reform
@@ -179,6 +181,7 @@ monarchy = {
 				sidhi_recruitment
 				corvee_reform
 				council_of_the_indies_reform
+				integrate_italian_nobility
 				#1.35
 				ottoman_provincial_government_system_reform
 				namestnik_reform
@@ -286,6 +289,7 @@ monarchy = {
 				manrent_reform
 				merchant_arsenal_reform
 				tercios_reform
+				expand_the_fuzileiros
 				expanded_black_army_reform
 				theme_system_reform
 				#1.36

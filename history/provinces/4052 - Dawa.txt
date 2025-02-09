@@ -16,3 +16,8 @@ discovered_by = east_african
 	controller = AJU
 	add_core = AJU
 }
+1444.11.12 = {
+    owner = MNG
+    controller = MNG
+    add_core = MNG
+}

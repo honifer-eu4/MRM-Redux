@@ -17,3 +17,8 @@ discovered_by = sub_saharan
 	controller = KAN
 	add_core = KAN
 }
+1444.11.12 = {
+    owner = MNG
+    controller = MNG
+    add_core = MNG
+}

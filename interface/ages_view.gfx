@@ -638,4 +638,15 @@ spriteTypes = {
 		name = "GFX_ab_dutch_trade"
 		texturefile = "gfx/interface/ages/ab_dutch_trade.dds"
 	}
+
+	#MRM
+	spriteType = {
+		name = "GFX_ab_age_of_the_landsknechts"
+		texturefile = "gfx/interface/ages/ab_age_of_the_landsknechts.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ab_extra_colonist"
+		texturefile = "gfx/interface/ages/ab_extra_colonist.dds"
+	}
 }

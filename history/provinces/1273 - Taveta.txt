@@ -17,5 +17,8 @@ discovered_by = east_african
 	add_core = TNZ
 }
 
-1593.1.1 = { discovered_by = POR }
-1710.1.1 = { discovered_by = OMA }
+1444.11.12 = {
+    owner = MNG
+    controller = MNG
+    add_core = MNG
+}
