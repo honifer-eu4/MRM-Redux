@@ -9,9 +9,9 @@ tags={
 	"National Ideas"
 	"Religion"
 }
-name="MRM Redux v4.0"
+name="MRM Redux v5.0"
 replace_path="common/province_names"
 replace_path="common/bookmarks"
 replace_path="history/wars"
 supported_version="v1.37.5.0"
-remote_file_id="3248131756"
+remote_file_id="3423925261"
