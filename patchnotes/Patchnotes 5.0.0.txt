@@ -15,3 +15,5 @@ Brandenburg:
 
 Defensive:
     Second idea now gives +10% Morale of Armies instead of +15%.
+    
+..

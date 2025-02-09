@@ -1213,7 +1213,6 @@ gc_por_5_dom = {
 					duration = -1
 				}
 			}
-		}
 			tihama_al_yemen_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -1250,6 +1249,7 @@ gc_por_5_dom = {
 				add_permanent_claim = ROOT
 			}
 		}
+	}
 
 	gc_por_conquers_yemen = {
 		icon = mission_portuguese_oman
