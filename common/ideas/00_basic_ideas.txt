@@ -1478,7 +1478,7 @@ administrative_ideas = {
     category = ADM
 
     bonus = {
-        force_limit = 0.2
+        land_forcelimit_modifier = 0.2
     }
 
     administrative_council = {
@@ -1498,7 +1498,7 @@ administrative_ideas = {
     }
     stable_government = {
         mercenary_cost = -0.2
-        mercenary_maintenance = -0.15
+        merc_maintenance_modifier = -0.15
     }
     centralization = {
         trade_efficiency = 0.1

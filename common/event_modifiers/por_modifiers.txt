@@ -75,3 +75,7 @@ redux_por_triumph_in_africa = {
 redux_por_controls_the_south_atlantic = {
 	trade_steering = 0.2
 }
+
+por_seculo_de_oro = {
+    all_power_cost = -0.025
+}
