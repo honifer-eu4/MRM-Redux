@@ -48,6 +48,14 @@ Ottomans:
 Portugal:
     Full rework of mission tree, including new missions for invading the Middle East, colonizing the African coast and the New World, and a new formable (Lusitania).
 
+Rothenburg:
+    First idea now gives +0.5 Yearly Republican Tradition instead of No Religion Penalties.
+    Third idea now gives +5% Discipline instead of +0.2 Yearly Republican Tradition.
+    Fifth idea now gives No Religion Penalties instead of +5% Discipline.
+    Minor update to mission tree, including new mission branch for developing Rothenburg.
+    Forming Franconia now gives the Franconian Elective Monarchy government reform, a version of the normal Elective Monarchy with buffed ruler stats.
+    Minor update to Franconian mission tree, including new missions for cavalry buffs and an elite mercenary company.
+
 Sweden:
     Minor reordering of mission tree to allow for conquering of Norway before the Skaneland.
 

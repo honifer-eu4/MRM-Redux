@@ -10064,22 +10064,22 @@ ROT_ideas = {
 		tag = ROT
 	}
 	free = yes
-	
-	ROT_zarfat_registry = {
-		no_religion_penalty = yes
+
+	ROT_end_of_the_line = {
+		republican_tradition = 0.5
 	}
 	ROT_beautiful_city = {
 		prestige = 1
 		global_institution_spread = 0.1
 	}
-	ROT_end_of_the_line = {
-		republican_tradition = 0.2
+	ROT_drink_of_war = {
+		discipline = 0.05
 	}
 	ROT_hinterland_knights = {
 		build_cost = -0.1
 	}
-	ROT_drink_of_war = {
-		discipline = 0.05
+	ROT_zarfat_registry = {
+		no_religion_penalty = yes
 	}
 	ROT_holy_blood = {
 		global_prov_trade_power_modifier = 0.1

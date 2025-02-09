@@ -289,6 +289,33 @@
  FKN_Greater:0 "Greater Francia"
  FKN_Greater_ADJ:0 "Frankish"
 
+ redux_roth_city_1_title:0 "Develop Rothenburg"
+ redux_roth_city_1_desc:0 "The beloved city of our namesake, Rothenburg ob der Tauber, has great potential, but as it stands there is much work to be done. We must begin investing as many resources into this project as possible - we refuse to rest until our greatness can rival that of Berlin and Wien."
+ redux_roth_city_2_title:0 "Rothenburg Castle"
+ redux_roth_city_2_desc:0 "What use is a great city if we have no means to defend it? Our strength is not necessarily enough to always rival that of our neighbors, so instead we must double down on our defenses to ensure they cannot touch our prized jewel. Rothenburg is home to a great castle already, let us make the walls even taller."
+ redux_roth_city_3_title:0 "St. Jakobskirche"
+ redux_roth_city_3_desc:0 "From the very founding of our city, St. James Church, or St. Jakobskirche, has been at the center and a beloved attraction for all our townsfolk. Even as we build up Rothenburg with newer and more enriching attractions, we must take care not to forget the roots of what made us great."
+ redux_roth_city_4_title:0 "University of Rothenburg"
+ redux_roth_city_4_desc:0 "Our efforts have quickly borne fruit - Rothenburg has become a city with some of the highest Quality of Life across Europe. We must now begin attracting new residents to the city - what better way to do so than by investing in a university?"
+ redux_roth_city_5_title:0 "City of Enchantment"
+ redux_roth_city_5_desc:0 "Scholars across Europe are shocked at how quickly we have grown our little city, but we have no plans of stopping anytime soon. As visitors have nicknamed Rothenburg the 'City of Enchantment', we must continue its improvement until we can not only rival Berlin, but we can overcome it!"
+ redux_rot.53.t:0 "The Production Focus in [4715.GetName]"
+ redux_rot.53.d:0 "Our new investments in the development of [4715.GetName] have paid off, as the city continues to gain wealth and size, we now have the ability to look towards the future. Even now many question if we should use our newfound production capabilities to focus on producing different kinds of trade goods in our capital. Perhaps we should look to producing goods that will stand a better chance of generating profit in the future. Many have been suggesting to focus on the processing of raw material imported from mines, while others wish to establish new manufactories for the production of cloth or glass, that would rival even the famed Bohemian and Venetian works. What shall we do?"
+ redux_rot.53.a:0 "Let us invest in the cloth industry"
+ redux_rot.53.b:0 "Copper is a vital trade good for many things"
+ redux_rot.53.c:0 "We shall process the raw materials from our mines"
+ redux_rot.53.de:0 "Our glass will rival that of Bohemia and Venice"
+ redux_rot.53.e:0 "The current focus works well for us"
+ redux_rot_production_insight_tt:0 "\n§GEvent Insight:§!\nThis event allows us to pick §YIron§!, §YCopper§!, §YCloth§! or §YGlass§! as the new trade good of §Y[4715.GetName]§! and gain §G1§! local £dip£ development, or keep the current trade goods and gain §G3§! local £dip£ development."
+
+ fkn_jaegerkorps_title:0 "Expand the Jaegercorps"
+ fkn_jaegerkorps_desc:0 "The Hessian Jaegercorps have fought under our employment for decades. As we transition our army to more of a heavy focus on Knights and cavalry, we must ensure we can convince our mercenaries to adopt this approach as well."
+ fkn_jaegerkorps_tt:0 "Unlocks the §YElite Hessian Jaegercorps§! mercenary company, a cheap and elite cavalry force"
+
+ fkn_franconian_knights_title:0 "Knights of Franconia"
+ fkn_franconian_knights_desc:0 "While some are wary of the power of our nobles, the knights of our realm have become as valiant as ever under the leadership of our Nobility. We should formalize not only a Noble Officer Corps, but an Order of Franconian Knights to bask our glory to the world."
+ fkn_franconian_knights_tt:0 "The §YNoble Officer Corps§! Tier 2 government reform will now also give an additional §G+20% National Manpower Modifier§! and §G+0.25 Cavalry Shock§!."
+ 
  #Rothenburg (Franconia/Westphalia) modifiers
 
  opinion_franconian_league:0 "Franconian Brothers"
@@ -304,12 +331,24 @@
  desc_wes_reformed_government:0 "We will create a constitution to guarantee the freedom of our peoples, so that they may in turn support our government and help maximize its efficiency."
  redux_ger_fkn_mod:0 "Legacy of the Franconian Knights"
  desc_redux_ger_fkn_mod:0 ""
+ redux_roth_city_1_mod:0 "Development of Rothenburg"
+ desc_redux_roth_city_1_mod:0 "We are developing a great city that will one day rival not only Berlin and Wien, but Paris and Constantinople."
+ redux_roth_city_2_mod:0 "Rothenburg Castle"
+ desc_redux_roth_city_2_mod:0 "To those who wish to inflict harm upon our great city - the walls of Rothenburg Castle invite them to try."
+ redux_roth_city_3_mod:0 "St. Jakobskirche"
+ desc_redux_roth_city_3_mod:0 "St. James Church has been the center of our city for centuries, and our people have no plans of letting that change."
+ redux_roth_city_4_mod:0 "University of Rothenburg"
+ desc_redux_roth_city_4_mod:0 "We have created a university that will attract some of the brightest minds across Germany to brainstorm ways to better our nation."
+ redux_roth_city_5_mod:0 "City of Enchantment"
+ desc_redux_roth_city_5_mod:0 "Known as the 'City of Enchantment', Rothenburg has become one of the greatest cities across Europe."
  
  #Landtag 
  
  landtag_reform:0 "Landtag"
  landtag_reform_desc:0 "The Landtag, or State Diet, is a composition of the representative assemblies (Landstande) that primarily defends class interests. Decisions are based on a class-based electoral system."
-
+ franconian_elective_kingdom_reform:0 "Franconian Elective Monarchy"
+ franconian_elective_kingdom_reform_desc:0 "The nobility in Franconia has always had a lot to say about who should rule them, and they will elect their next ruler from all the available candidates regardless of the bloodline."
+ 
  #Venice missions 
 
  emp_ven_venetian_renaissance_title:0 "Venetian Renaissance"

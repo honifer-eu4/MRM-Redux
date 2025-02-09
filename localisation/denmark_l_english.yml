@@ -36,7 +36,7 @@
  #Tooltips
  
  redux_dan_establish_merc_contracts_ct:0 "This event will unlock access to the mercenaries of Germany."
- redux_dan_copper_tt:0 "If §Y'The Copper of Dalaskogen'§! event has not fired, this mission will cause it to happen. Otherwise, we will gain §G+10 years§! of copper income and §G+5 Mercantilism§!."
+ redux_dan_copper_tt:0 "If §Y'The Copper of Dalaskogen'§! event has not fired, this mission will cause it to happen. Otherwise, we will gain §G10 years§! of copper income and §G+5 Mercantilism§!."
  
  #Other
 
