@@ -175,7 +175,6 @@ on_colonial_reintegration = {
 # country
 on_peace_actor = {
 	events = {
-		usa_dlc.36				# Evacuation Day
 	}
 }
 

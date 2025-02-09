@@ -1,4 +1,4 @@
-namespace = transvaal_gold_rush_event
+namespace = transvaal_gold_rush
 
 country_event = {
 	id = transvaal_gold_rush.1

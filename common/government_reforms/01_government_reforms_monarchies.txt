@@ -3108,10 +3108,6 @@ uparaja_reform = {
 			factor = 2
 			legitimacy = 75
 		}
-		modifier = {
-			factor = 3
-			tag = SIA
-		}
 	}
 }
 
