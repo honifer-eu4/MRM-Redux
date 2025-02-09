@@ -294,6 +294,9 @@ Terrain:
 Trade:
 	Penalty for collecting in nodes other than main node removed.
 
+Trade Goods:
+    Cloves now has a base price of 6 ducats instead of 8.
+
 War Score:
 	Ticking warscore from wargoal increased from 25 to 40.
 	Monthly ticking warscore increased from 0.4 to 0.8.

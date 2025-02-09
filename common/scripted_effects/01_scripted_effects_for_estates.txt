@@ -2026,24 +2026,6 @@ on_province_owner_change_estate_privileges_effect = {
 				duration = -1
 			}
 		}
-		if = {
-			limit = {
-				has_terrain = steppe
-			}
-			add_province_modifier = {
-				name = estate_burghers_hydraulic_rights_steppes
-				duration = -1
-			}
-		}
-		if = {
-			limit = {
-				has_terrain = savannah
-			}
-			add_province_modifier = {
-				name = estate_burghers_hydraulic_rights_savanna
-				duration = -1
-			}
-		}
 	}
 	if = {
 		limit = {

@@ -1538,8 +1538,6 @@ estate_burghers_hydraulic_rights = {
 			OR = {
 				has_terrain = desert
 				has_terrain = coastal_desert
-				has_terrain = steppe
-				has_terrain = savannah
 			}
 		}
 	}
@@ -1564,24 +1562,6 @@ estate_burghers_hydraulic_rights = {
 					duration = -1
 				}
 			}
-			every_owned_province = {
-				limit = {
-					has_terrain = steppe
-				}
-				add_province_modifier = {
-					name = estate_burghers_hydraulic_rights_steppes
-					duration = -1
-				}
-			}
-			every_owned_province = {
-				limit = {
-					has_terrain = savannah
-				}
-				add_province_modifier = {
-					name = estate_burghers_hydraulic_rights_savanna
-					duration = -1
-				}
-			}		
 		}
 	}
 	on_revoked = {
@@ -1592,14 +1572,10 @@ estate_burghers_hydraulic_rights = {
 					OR = {
 						has_province_modifier = estate_burghers_hydraulic_rights_desert
 						has_province_modifier = estate_burghers_hydraulic_rights_coastal_desert
-						has_province_modifier = estate_burghers_hydraulic_rights_steppes
-						has_province_modifier = estate_burghers_hydraulic_rights_savanna
 					}
 				}
 				remove_province_modifier = estate_burghers_hydraulic_rights_desert
 				remove_province_modifier = estate_burghers_hydraulic_rights_coastal_desert
-				remove_province_modifier = estate_burghers_hydraulic_rights_steppes
-				remove_province_modifier = estate_burghers_hydraulic_rights_savanna
 			}
 		}
 	}
@@ -2787,7 +2763,7 @@ estate_burghers_nile_goods_transport = {
 	loyalty_scaled_conditional_modifier = {
 		trigger = { always = yes }
 		modifier = {
-			production_efficiency = 0.2
+			production_efficiency = 0.1
 		}
 	}
 	

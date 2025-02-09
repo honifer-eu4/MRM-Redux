@@ -38,6 +38,7 @@ Hormuz:
 
 Mamluks:
     Now gains the new Ottoman mission tree instead of the old one upon forming Rum.
+    "Burghers Hydraulic Rights" privilege now gives -15% Development Cost on Deserts and Coastal Deserts instead of -25% and -17.5% respectively, and no longer gives a Development Cost discount on Savannahs and Steppes.
 
 Morocco:
     Minor update to Andalusia, including new missions and a special unit type.
@@ -95,6 +96,9 @@ Defines:
 
 Institutions:
     Colonialism now gives an additional +1 Colonist.
+
+Trade Goods:
+    Cloves now has a base price of 6 ducats instead of 8.
 
 ################ Religions ###################
 
