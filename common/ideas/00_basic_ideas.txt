@@ -883,7 +883,7 @@ economic_ideas = {
 		naval_maintenance_modifier = -0.05
 	}
 	debt_and_loans = {
-		interest = -0.5
+		interest = -0.25
 	}
 	merchant_passes = {
 		merchants = 1

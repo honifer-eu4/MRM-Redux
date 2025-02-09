@@ -89,10 +89,16 @@ Court:
     Last idea now gives -10% Leader Cost instead of +1 Monarch Diplomatic Skill and -10% Reelection Cost.
     Last idea now additionally buffs the privileges "Oversight by the Clergy", "Free Enterprise", and "Right of Counsel".
 
+Economic: 
+    Sixth idea now gives -0.25 Interest Per Annum instead of -0.5.
+
 ################ Mechanics ###################
 
 Defines:
     Removed the negative effects from Treaty of Tordesillas.
+
+Events:
+    Second option in "National Bank" event now gives -25% Cost to Reduce Inflation instead of -0.5 Interest Per Annum. 
 
 Institutions:
     Colonialism now gives an additional +1 Colonist.
