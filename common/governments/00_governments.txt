@@ -136,7 +136,6 @@ monarchy = {
 				house_of_lords_reform
 				ministerialis_promotion_reform
 				separation_of_boyars_from_court_reform
-				frankish_empire
 				#1.36
 				nakharar_title
 				reform_the_pronoiars_reform
@@ -195,6 +194,8 @@ monarchy = {
 				#1.37 Hungary
 				continue_the_renaissance_reform
 				timurid_diwan_reform
+				
+				frankish_empire
 			}
 		}
 		state_and_religion = {
