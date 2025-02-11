@@ -62,7 +62,12 @@ country_event = {
     option = {
         name = hashmp.1.a
         trigger = {
-            capital_scope = { colonial_region = colonial_canada }
+            capital_scope = { 
+				OR = {
+					region = hudson_bay_region
+					region = canada_region
+				}
+			}
         }
 		change_tag = CAN
 		add_government_reform = h_reform_dominion
@@ -81,7 +86,12 @@ country_event = {
 	option = {
         name = hashmp.1.b
         trigger = {
-            capital_scope = { colonial_region = colonial_canada }
+            capital_scope = { 
+				OR = {
+					region = hudson_bay_region
+					region = canada_region
+				}
+			}
         }
 		change_tag = QUE
 		add_government_reform = h_reform_dominion
@@ -100,7 +110,12 @@ country_event = {
 	option = {
         name = hashmp.1.c
         trigger = {
-            capital_scope = { colonial_region = colonial_eastern_america }
+			capital_scope = { 
+				OR = {
+					region = southeast_america_region
+					region = northeast_america_region
+				}
+			}
         }
 		change_tag = USA
 		add_government_reform = h_reform_dominion
@@ -119,7 +134,12 @@ country_event = {
 	option = {
         name = hashmp.1.d
         trigger = {
-            capital_scope = { colonial_region = colonial_eastern_america }
+            capital_scope = { 
+				OR = {
+					region = southeast_america_region
+					region = northeast_america_region
+				}
+			}
         }
 		change_tag = FLO
 		add_government_reform = h_reform_dominion
@@ -138,7 +158,12 @@ country_event = {
 	option = {
         name = hashmp.1.e
         trigger = {
-            capital_scope = { colonial_region = colonial_louisiana }
+            capital_scope = { 
+				OR = {
+					region = mississippi_region
+					region = great_plains_region
+				}
+			}
         }
 		change_tag = LOU
 		add_government_reform = h_reform_dominion
@@ -157,7 +182,12 @@ country_event = {
 	option = {
         name = hashmp.1.f
         trigger = {
-            capital_scope = { colonial_region = colonial_louisiana }
+            capital_scope = { 
+				OR = {
+					region = mississippi_region
+					region = great_plains_region
+				}
+			}
         }
 		change_tag = TEX
 		add_government_reform = h_reform_dominion
@@ -176,7 +206,9 @@ country_event = {
 	option = {
         name = hashmp.1.g
         trigger = {
-            capital_scope = { colonial_region = colonial_the_carribean }
+            capital_scope = { 
+				region = carribeans_region
+			}
         }
 		change_tag = CUB
 		add_government_reform = h_reform_dominion
@@ -195,7 +227,9 @@ country_event = {
 	option = {
         name = hashmp.1.h
         trigger = {
-            capital_scope = { colonial_region = colonial_the_carribean }
+            capital_scope = { 
+				region = carribeans_region
+			}
         }
 		change_tag = WSI
 		add_government_reform = h_reform_dominion
@@ -214,7 +248,13 @@ country_event = {
 	option = {
         name = hashmp.1.i
         trigger = {
-            capital_scope = { colonial_region = colonial_mexico }
+            capital_scope = { 
+				OR = {
+					region = rio_grande_region
+					region = mexico_region
+					region = central_america_region
+				}
+			}
         }
 		change_tag = MEX
 		add_government_reform = h_reform_dominion
@@ -233,7 +273,13 @@ country_event = {
 	option = {
         name = hashmp.1.j
         trigger = {
-            capital_scope = { colonial_region = colonial_mexico }
+            capital_scope = { 
+				OR = {
+					region = rio_grande_region
+					region = mexico_region
+					region = central_america_region
+				}
+			}
         }
 		change_tag = CAM
 		add_government_reform = h_reform_dominion
@@ -252,7 +298,9 @@ country_event = {
 	option = {
         name = hashmp.1.k
         trigger = {
-            capital_scope = { colonial_region = colonial_colombia }
+            capital_scope = { 
+				region = colombia_region
+			}
         }
 		change_tag = COL
 		add_government_reform = h_reform_dominion
@@ -271,7 +319,9 @@ country_event = {
 	option = {
         name = hashmp.1.l
         trigger = {
-            capital_scope = { colonial_region = colonial_colombia }
+            capital_scope = {
+				region = colombia_region
+			}
         }
 		change_tag = VNZ
 		add_government_reform = h_reform_dominion
@@ -309,7 +359,12 @@ country_event = {
 	option = {
         name = hashmp.1.n
         trigger = {
-            capital_scope = { colonial_region = colonial_peru }
+            capital_scope = { 
+				OR = {
+					region = peru_region
+					region = upper_peru_region
+				}
+			}
         }
 		change_tag = BLV
 		add_government_reform = h_reform_dominion
@@ -328,7 +383,9 @@ country_event = {
 	option = {
         name = hashmp.1.o
         trigger = {
-            capital_scope = { colonial_region = colonial_brazil }
+            capital_scope = { 
+				region = brazil_region
+			}
         }
 		change_tag = BRZ
 		add_government_reform = h_reform_dominion
@@ -347,7 +404,9 @@ country_event = {
 	option = {
         name = hashmp.1.p
         trigger = {
-            capital_scope = { colonial_region = colonial_brazil }
+            capital_scope = { 
+				region = brazil_region
+			}
         }
 		change_tag = PRG
 		add_government_reform = h_reform_dominion
@@ -366,7 +425,9 @@ country_event = {
 	option = {
         name = hashmp.1.q
         trigger = {
-            capital_scope = { colonial_region = colonial_la_plata }
+            capital_scope = { 
+				region = la_plata_region
+			}
         }
 		change_tag = LAP
 		add_government_reform = h_reform_dominion
@@ -385,7 +446,9 @@ country_event = {
 	option = {
         name = hashmp.1.r
         trigger = {
-            capital_scope = { colonial_region = colonial_la_plata }
+            capital_scope = { 
+				region = la_plata_region
+			}
         }
 		change_tag = CHL
 		add_government_reform = h_reform_dominion
@@ -447,14 +510,14 @@ country_event = {
 #				limit = {
 #					ROOT = {
 #						capital_scope = {
-#							colonial_region = colonial_the_carribean
+#							region = carribeans_region
 #						}
 #					}
 #				}
 #
 #				if = {
 #					limit = {
-#						NOT = { colonial_region = colonial_the_carribean }
+#						NOT = { region = carribeans_region }
 #					}
 #
 #					cede_province = ---
@@ -465,14 +528,14 @@ country_event = {
 #				limit = {
 #					ROOT = {
 #						capital_scope = {
-#							colonial_region = colonial_brazil
+#							region = brazil_region
 #						}
 #					}
 #				}
 #
 #				if = {
 #					limit = {
-#						NOT = { colonial_region = colonial_brazil }
+#						NOT = { region = brazil_region }
 #					}
 #
 #					cede_province = ---
@@ -501,14 +564,14 @@ country_event = {
 #				limit = {
 #					ROOT = {
 #						capital_scope = {
-#							colonial_region = colonial_colombia
+#							region = colombia_region
 #						}
 #					}
 #				}
 #
 #				if = {
 #					limit = {
-#						NOT = { colonial_region = colonial_colombia }
+#						NOT = { region = colombia_region }
 #					}
 #
 #					cede_province = ---
@@ -538,14 +601,14 @@ country_event = {
 #				limit = {
 #					ROOT = {
 #						capital_scope = {
-#							colonial_region = colonial_la_plata
+#							region = la_plata_region
 #						}
 #					}
 #				}
 #
 #				if = {
 #					limit = {
-#						NOT = { colonial_region = colonial_la_plata }
+#						NOT = { region = la_plata_region }
 #					}
 #
 #					cede_province = ---

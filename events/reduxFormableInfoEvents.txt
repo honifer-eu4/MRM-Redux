@@ -406,7 +406,12 @@ country_event = {
     option = {
         name = redux_formableInfoEvents.1.can
         trigger = {
-            capital_scope = { colonial_region = colonial_canada }
+            capital_scope = { 
+				OR = {
+					region = hudson_bay_region
+					region = canada_region
+				}
+			}
             NOT = { has_reform = h_reform_dominion }
         }
         country_event = { id = redux_formableInfoEvents.101 }
@@ -415,7 +420,12 @@ country_event = {
     option = {
         name = redux_formableInfoEvents.1.que
         trigger = {
-            capital_scope = { colonial_region = colonial_canada }
+            capital_scope = { 
+				OR = {
+					region = hudson_bay_region
+					region = canada_region
+				}
+			}
             NOT = { has_reform = h_reform_dominion }
         }
         country_event = { id = redux_formableInfoEvents.102 }
@@ -424,7 +434,12 @@ country_event = {
     option = {
         name = redux_formableInfoEvents.1.usa
         trigger = {
-            capital_scope = { colonial_region = colonial_eastern_america }
+            capital_scope = { 
+				OR = {
+					region = southeast_america_region
+					region = northeast_america_region
+				}
+			}
             NOT = { has_reform = h_reform_dominion }
         }
         country_event = { id = redux_formableInfoEvents.103 }
@@ -433,7 +448,12 @@ country_event = {
     option = {
         name = redux_formableInfoEvents.1.flo
         trigger = {
-            capital_scope = { colonial_region = colonial_eastern_america }
+            capital_scope = { 
+				OR = {
+					region = southeast_america_region
+					region = northeast_america_region
+				}
+			}
             NOT = { has_reform = h_reform_dominion }
         }
         country_event = { id = redux_formableInfoEvents.104 }
@@ -442,7 +462,13 @@ country_event = {
     option = {
         name = redux_formableInfoEvents.1.lou
         trigger = {
-            capital_scope = { colonial_region = colonial_louisiana }
+            capital_scope = { 
+				OR = {
+					region = mississippi_region
+					region = great_lakes_region
+					region = great_plains_region
+				}
+			}
             NOT = { has_reform = h_reform_dominion }
         }
         country_event = { id = redux_formableInfoEvents.105 }
@@ -451,7 +477,13 @@ country_event = {
     option = {
         name = redux_formableInfoEvents.1.tex
         trigger = {
-            capital_scope = { colonial_region = colonial_louisiana }
+            capital_scope = { 
+				OR = {
+					region = mississippi_region
+					region = great_lakes_region
+					region = great_plains_region
+				}
+			}
             NOT = { has_reform = h_reform_dominion }
         }
         country_event = { id = redux_formableInfoEvents.106 }
@@ -460,7 +492,13 @@ country_event = {
     option = {
         name = redux_formableInfoEvents.1.mex
         trigger = {
-            capital_scope = { colonial_region = colonial_mexico }
+            capital_scope = { 
+				OR = {
+					region = rio_grande_region
+					region = mexico_region
+					region = central_america_region
+				}
+			}
             NOT = { has_reform = h_reform_dominion }
         }
         country_event = { id = redux_formableInfoEvents.107 }
@@ -469,7 +507,13 @@ country_event = {
     option = {
         name = redux_formableInfoEvents.1.cam
         trigger = {
-            capital_scope = { colonial_region = colonial_mexico }
+            capital_scope = { 
+				OR = {
+					region = rio_grande_region
+					region = mexico_region
+					region = central_america_region
+				}
+			}
             NOT = { has_reform = h_reform_dominion }
         }
         country_event = { id = redux_formableInfoEvents.108 }
@@ -478,7 +522,9 @@ country_event = {
     option = {
         name = redux_formableInfoEvents.1.cub
         trigger = {
-            capital_scope = { colonial_region = colonial_the_carribean }
+            capital_scope = { 
+				region = carribeans_region
+			}
             NOT = { has_reform = h_reform_dominion }
         }
         country_event = { id = redux_formableInfoEvents.109 }
@@ -487,7 +533,9 @@ country_event = {
     option = {
         name = redux_formableInfoEvents.1.wsi
         trigger = {
-            capital_scope = { colonial_region = colonial_the_carribean }
+            capital_scope = { 
+				region = carribeans_region
+			}
             NOT = { has_reform = h_reform_dominion }
         }
         country_event = { id = redux_formableInfoEvents.110 }
@@ -496,7 +544,9 @@ country_event = {
     option = {
         name = redux_formableInfoEvents.1.col
         trigger = {
-            capital_scope = { colonial_region = colonial_colombia }
+            capital_scope = {
+				region = colombia_region
+			}
             NOT = { has_reform = h_reform_dominion }
         }
         country_event = { id = redux_formableInfoEvents.111 }
@@ -505,7 +555,9 @@ country_event = {
     option = {
         name = redux_formableInfoEvents.1.vnz
         trigger = {
-            capital_scope = { colonial_region = colonial_colombia }
+            capital_scope = {
+				region = colombia_region
+			}
             NOT = { has_reform = h_reform_dominion }
         }
         country_event = { id = redux_formableInfoEvents.112 }
@@ -514,7 +566,9 @@ country_event = {
     option = {
         name = redux_formableInfoEvents.1.brz
         trigger = {
-            capital_scope = { colonial_region = colonial_brazil }
+            capital_scope = { 
+				region = brazil_region
+			}
             NOT = { has_reform = h_reform_dominion }
         }
         country_event = { id = redux_formableInfoEvents.113 }
@@ -523,7 +577,9 @@ country_event = {
     option = {
         name = redux_formableInfoEvents.1.prg
         trigger = {
-            capital_scope = { colonial_region = colonial_brazil }
+            capital_scope = { 
+				region = brazil_region
+			}
             NOT = { has_reform = h_reform_dominion }
         }
         country_event = { id = redux_formableInfoEvents.114 }
@@ -532,7 +588,12 @@ country_event = {
     option = {
         name = redux_formableInfoEvents.1.peu
         trigger = {
-            capital_scope = { colonial_region = colonial_peru }
+            capital_scope = { 
+				OR = {
+					region = peru_region
+					region = upper_peru_region
+				}
+			}
             NOT = { has_reform = h_reform_dominion }
         }
         country_event = { id = redux_formableInfoEvents.115 }
@@ -541,7 +602,12 @@ country_event = {
     option = {
         name = redux_formableInfoEvents.1.blv
         trigger = {
-            capital_scope = { colonial_region = colonial_peru }
+            capital_scope = { 
+				OR = {
+					region = peru_region
+					region = upper_peru_region
+				}
+			}
             NOT = { has_reform = h_reform_dominion }
         }
         country_event = { id = redux_formableInfoEvents.116 }
@@ -550,7 +616,9 @@ country_event = {
     option = {
         name = redux_formableInfoEvents.1.chl
         trigger = {
-            capital_scope = { colonial_region = colonial_la_plata }
+            capital_scope = { 
+				region = la_plata_region
+			}
             NOT = { has_reform = h_reform_dominion }
         }
         country_event = { id = redux_formableInfoEvents.117 }
@@ -559,7 +627,9 @@ country_event = {
     option = {
         name = redux_formableInfoEvents.1.lap 
         trigger = {
-            capital_scope = { colonial_region = colonial_la_plata }
+            capital_scope = {
+				region = la_plata_region
+			}
             NOT = { has_reform = h_reform_dominion }
         }
         country_event = { id = redux_formableInfoEvents.118 }

@@ -219,12 +219,12 @@ emp_burgundy_1 = {
 		position = 7
 		required_missions = { NED_start_exploration }
 		provinces_to_highlight = {
-			colonial_region = colonial_the_carribean 
+			region = carribeans_region 
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {  
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				colonial_region = colonial_the_carribean 
+				region = carribeans_region 
 				value = 5
 			}
 		} 
@@ -235,7 +235,7 @@ emp_burgundy_1 = {
 			random_subject_country = {
 				limit = {
 					capital_scope = {
-						colonial_region = colonial_the_carribean
+						region = carribeans_region
 					}
 				}
 				add_country_modifier = {

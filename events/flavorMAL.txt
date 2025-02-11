@@ -1463,7 +1463,7 @@ country_event = {
 			}
 		}
 
-		colonial_brazil = {
+		brazil_region = {
 			add_permanent_claim = ROOT
 		}
 

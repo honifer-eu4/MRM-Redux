@@ -1134,7 +1134,10 @@ sca_colonialism_slot_3 = {
 		required_missions = { sca_a_grand_fleet }
 		position = 6
 		provinces_to_highlight = {
-			colonial_region = colonial_eastern_america
+			OR = {
+				region = southeast_america_region
+				region = northeast_america_region
+			}
 			OR = {
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				is_city = no
@@ -1142,7 +1145,10 @@ sca_colonialism_slot_3 = {
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				colonial_region = colonial_eastern_america
+				OR = {
+					region = southeast_america_region
+					region = northeast_america_region
+				}
 				is_city = yes
 				value = 10
 			}
@@ -1209,7 +1215,7 @@ sca_colonialism_slot_4 = {
 			}
 			custom_tooltip = sca_a_grand_fleet_tt
 			hidden_effect = {
-				colonial_eastern_america = {
+				northeast_america_region = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
@@ -1220,7 +1226,29 @@ sca_colonialism_slot_4 = {
 					}
 					add_permanent_claim = ROOT
 				}
-				colonial_canada = {
+				southeast_america_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+						OR = {
+							province_has_center_of_trade_of_level = 1
+							has_river_estuary_trigger = yes
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+				hudson_bay_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+						OR = {
+							province_has_center_of_trade_of_level = 1
+							has_river_estuary_trigger = yes
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+				canada_region = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
@@ -1273,7 +1301,7 @@ sca_colonialism_slot_4 = {
 		required_missions = { sca_a_grand_fleet }
 		position = 6
 		provinces_to_highlight = {
-			colonial_region = colonial_the_carribean
+			region = carribeans_region
 			OR = {
 				has_river_estuary_trigger = yes
 				province_has_center_of_trade_of_level = 1
@@ -1282,7 +1310,7 @@ sca_colonialism_slot_4 = {
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				colonial_region = colonial_the_carribean
+				region = carribeans_region
 				OR = {
 					has_river_estuary_trigger = yes
 					province_has_center_of_trade_of_level = 1
