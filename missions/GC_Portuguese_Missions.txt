@@ -856,9 +856,7 @@ gc_por_3_b = {
 			OR = {
 				region = guinea_region
 				area = kongo_area 
-				area = east_africa_region
-				area = east_africa_region
-				area = east_africa_region
+				region = east_africa_region
 				region = south_africa_region
 			}
 			OR = {
