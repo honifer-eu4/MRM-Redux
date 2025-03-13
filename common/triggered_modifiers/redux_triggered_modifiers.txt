@@ -105,6 +105,7 @@ redux_merc_at_2 = {
 
 redux_destroy_estates_mod = {
 	potential = {
+		is_colonial_nation = no
 		ai = no 
 	}
 	trigger = {
@@ -129,6 +130,7 @@ redux_destroy_estates_mod = {
 redux_destroy_estates_mod_2 = {
 	potential = {
 		ai = no 
+		is_colonial_nation = no
 	}
 	trigger = {
 		custom_trigger_tooltip = {

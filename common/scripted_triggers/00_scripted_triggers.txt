@@ -1067,13 +1067,7 @@ has_any_holy_order = {
 can_create_holy_orders = {
 	OR = {
 		AND = {
-			OR = { 
-				AND = { 
-					culture_group = iberian
-					religion = catholic
-				}
-				has_country_flag = enable_holy_orders_flag 
-			}
+			has_country_flag = enable_holy_orders_flag 
 			religion_group = christian
 		}
 		AND = {

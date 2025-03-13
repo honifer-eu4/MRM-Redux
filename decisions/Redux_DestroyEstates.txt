@@ -3,6 +3,7 @@ country_decisions = {
 		color = { 195 160 20 }
 		potential = {
 			ai = no 
+            is_colonial_nation = no
 			NOT = { has_country_flag = redux_estates_destroyed }
 		}
 		allow = {

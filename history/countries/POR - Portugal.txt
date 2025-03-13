@@ -24,6 +24,7 @@ change_estate_land_share = {
 	share = 15
 }
 
+set_country_flag = enable_holy_orders_flag
 set_estate_privilege = redux_estate_nobles_apex
 1435.1.1 = { leader = {	name = "Earl of Avranches"	type = general	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1449.5.20 } }
 1444.9.10 = {

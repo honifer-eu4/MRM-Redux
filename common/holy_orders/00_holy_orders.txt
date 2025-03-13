@@ -1,14 +1,10 @@
 benedictines = {
     icon = GFX_holy_order_benedictines
     trigger = {
-    	OR = { 
-			AND = { 
-				culture_group = iberian
-				religion = catholic
-			}
-			has_country_flag = enable_holy_orders_flag 
-		}
-		religion_group = christian
+        AND = {
+            has_country_flag = enable_holy_orders_flag 
+            religion_group = christian
+        }
     }
     color = { 141 153 119 }
     cost = 50
@@ -38,14 +34,10 @@ benedictines = {
 carthusians = {
     icon = GFX_holy_order_carthusians
     trigger = {
-    	OR = { 
-			AND = { 
-				culture_group = iberian
-				religion = catholic
-			}
-			has_country_flag = enable_holy_orders_flag 
-		}
-		religion_group = christian
+        AND = {
+            has_country_flag = enable_holy_orders_flag 
+            religion_group = christian
+        }
     }
     color = { 35 113 186 } 
     cost = 50
@@ -75,14 +67,10 @@ carthusians = {
 hieronymites = {
     icon = GFX_holy_order_hieronymites
     trigger = {
-    	OR = { 
-			AND = { 
-				culture_group = iberian
-				religion = catholic
-			}
-			has_country_flag = enable_holy_orders_flag 
-		}
-		religion_group = christian
+        AND = {
+            has_country_flag = enable_holy_orders_flag 
+            religion_group = christian
+        }
     }
     color = { 174 178 193 }
     cost = 50
@@ -112,15 +100,10 @@ hieronymites = {
 jesuit_order = {
     icon = GFX_holy_order_jesuits
     trigger = {
-    	OR = { 
-			AND = { 
-				culture_group = iberian
-				religion = catholic
-			}
-			has_country_flag = enable_holy_orders_flag 
-			#has_country_flag = enable_jesuit_order_flag
-		}
-		religion_group = christian
+        AND = {
+            has_country_flag = enable_holy_orders_flag 
+            religion_group = christian
+        }
     }
     color = { 255 240 200 }
     cost = 50
@@ -153,14 +136,10 @@ jesuit_order = {
 augustinians = {
     icon = GFX_holy_order_augustinians
     trigger = {
-    	OR = { 
-			AND = { 
-				culture_group = iberian
-				religion = catholic
-			}
-			has_country_flag = enable_holy_orders_flag 
-		}
-		religion_group = christian
+        AND = {
+            has_country_flag = enable_holy_orders_flag 
+            religion_group = christian
+        }
     }
     color = { 19 79 44 } 
     cost = 50
@@ -190,14 +169,10 @@ augustinians = {
 carmelites = {
     icon = GFX_holy_order_carmelites
     trigger = {
-    	OR = { 
-			AND = { 
-				culture_group = iberian
-				religion = catholic
-			}
-			has_country_flag = enable_holy_orders_flag 
-		}
-		religion_group = christian
+        AND = {
+            has_country_flag = enable_holy_orders_flag 
+            religion_group = christian
+        }
     }
     color = { 54 216 132 } 
     cost = 50
@@ -227,14 +202,10 @@ carmelites = {
 dominican_order = {
     icon = GFX_holy_order_dominicans
     trigger = {
-		OR = { 
-			AND = { 
-				culture_group = iberian
-				religion = catholic
-			}
-			has_country_flag = enable_holy_orders_flag 
-		}
-		religion_group = christian
+        AND = {
+            has_country_flag = enable_holy_orders_flag 
+            religion_group = christian
+        }
     }
     color = { 200 100 255 }
     cost = 50
@@ -284,14 +255,10 @@ dominican_order = {
 franciscan_order = {
     icon = GFX_holy_order_franciscans
     trigger = {
-        OR = { 
-			AND = { 
-				culture_group = iberian
-				religion = catholic
-			}
-			has_country_flag = enable_holy_orders_flag 
-		}
-		religion_group = christian
+        AND = {
+            has_country_flag = enable_holy_orders_flag 
+            religion_group = christian
+        }
     }
     color = { 110 190 240 }
     cost = 50
@@ -329,14 +296,10 @@ franciscan_order = {
 alcantara_order = {
     icon = GFX_holy_order_alcantara
     trigger = {
-    	OR = { 
-			AND = { 
-				culture_group = iberian
-				religion = catholic
-			}
-			has_country_flag = enable_holy_orders_flag 
-		}
-		religion_group = christian
+        AND = {
+            has_country_flag = enable_holy_orders_flag 
+            religion_group = christian
+        }
 		OR = { 
 			primary_culture = leonese
 			accepted_culture = leonese
@@ -370,14 +333,10 @@ alcantara_order = {
 avis_order = {
     icon = GFX_holy_order_avis
     trigger = {
-    	OR = { 
-			AND = { 
-				culture_group = iberian
-				religion = catholic
-			}
-			has_country_flag = enable_holy_orders_flag 
-		}
-		religion_group = christian
+        AND = {
+            has_country_flag = enable_holy_orders_flag 
+            religion_group = christian
+        }
 		OR = {
 			has_country_flag = enable_holy_orders_flag 
 			is_or_was_tag = { tag = POR }
@@ -412,14 +371,10 @@ avis_order = {
 calatrava_order = {
     icon = GFX_holy_order_calatrava
     trigger = {
-    	OR = { 
-			AND = { 
-				culture_group = iberian
-				religion = catholic
-			}
-			has_country_flag = enable_holy_orders_flag 
-		}
-		religion_group = christian
+        AND = {
+            has_country_flag = enable_holy_orders_flag 
+            religion_group = christian
+        }
 		OR = { 
 			tag = CAS
 			tag = SPA 
@@ -454,14 +409,10 @@ calatrava_order = {
 montesa_order = {
     icon = GFX_holy_order_montesa
     trigger = {
-    	OR = { 
-			AND = { 
-				culture_group = iberian
-				religion = catholic
-			}
-			has_country_flag = enable_holy_orders_flag 
-		}
-		religion_group = christian
+        AND = {
+            has_country_flag = enable_holy_orders_flag 
+            religion_group = christian
+        }
 		OR = {
 			has_country_flag = enable_holy_orders_flag 
 			is_or_was_tag = { tag = ARA } 
@@ -496,14 +447,10 @@ montesa_order = {
 san_juan_order = {
     icon = GFX_holy_order_san_juan
     trigger = {
-    	OR = { 
-			AND = { 
-				culture_group = iberian
-				religion = catholic
-			}
-			has_country_flag = enable_holy_orders_flag 
-		}
-		religion_group = christian
+        AND = {
+            has_country_flag = enable_holy_orders_flag 
+            religion_group = christian
+        }
 		OR = {	
 			alliance_with = KNI 
 			KNI = { is_subject_of = ROOT }
@@ -545,14 +492,10 @@ san_juan_order = {
 santiago_order = {
     icon = GFX_holy_order_santiago
     trigger = {
-    	OR = { 
-			AND = { 
-				culture_group = iberian
-				religion = catholic
-			}
-			has_country_flag = enable_holy_orders_flag 
-		}
-		religion_group = christian
+        AND = {
+            has_country_flag = enable_holy_orders_flag 
+            religion_group = christian
+        }
     }
     color = { 35 42 140 } 
     cost = 50

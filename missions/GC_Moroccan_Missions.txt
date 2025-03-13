@@ -440,38 +440,10 @@ gc_morocco_2 = {
 			}
 		}
 	}
-	gc_mor_black_guard = {
-		icon = mission_establish_the_black_guard
-		required_missions = { gc_mor_songhai }
-		
-		provinces_to_highlight = {
-			province_id = 1132
-			NOT = { is_strongest_trade_power = ROOT }
-		}
-		
-		trigger = {
-			1132 = {
-				is_strongest_trade_power = ROOT
-			}
-			num_of_owned_provinces_with = {
-				value = 10
-				OR = {
-					has_building = regimental_camp
-					has_building = conscription_center
-				}
-			}
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = "mor_black_guard"
-				duration = -1
-			}
-		}
-	}
+
 	gc_mor_salt_trade = {
 		icon = mission_horde_trade
-		required_missions = { gc_mor_mali }
+		required_missions = { gc_mor_songhai }
 		
 		provinces_to_highlight = {
 			OR = {
@@ -508,6 +480,35 @@ gc_morocco_2 = {
 					name = redux_mor_growing_sahara_trade
 					duration = 7300
 				}
+			}
+		}
+	}
+	gc_mor_black_guard = {
+		icon = mission_establish_the_black_guard
+		required_missions = { gc_mor_salt_trade }
+		
+		provinces_to_highlight = {
+			province_id = 1132
+			NOT = { is_strongest_trade_power = ROOT }
+		}
+		
+		trigger = {
+			1132 = {
+				is_strongest_trade_power = ROOT
+			}
+			num_of_owned_provinces_with = {
+				value = 10
+				OR = {
+					has_building = regimental_camp
+					has_building = conscription_center
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "mor_black_guard"
+				duration = -1
 			}
 		}
 	}

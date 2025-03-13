@@ -5,6 +5,11 @@ redux_mor_iberia = {
     defensiveness = 0.15
 }
 
+expanded_local_infrastructure = {
+	local_friendly_movement_speed = 0.5
+	local_hostile_movement_speed = 0.5
+}
+
 redux_mor_muslim_dominance_of_africa = {
 	global_trade_power = 0.1
 	trade_efficiency = 0.1

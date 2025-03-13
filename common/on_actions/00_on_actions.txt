@@ -3235,6 +3235,12 @@ on_five_year_pulse_4 = {
 			NOT = { has_global_flag = counter_reformation }
 		}
 		set_global_flag = counter_reformation
+		CAS = {
+			set_country_flag = enable_holy_orders_flag
+		}
+		SPA = {
+			set_country_flag = enable_holy_orders_flag
+		}
 	}
 	#fail-safe if for whatever reason these flags stay after being used in events
 	if = {
