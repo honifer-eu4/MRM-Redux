@@ -1903,7 +1903,7 @@ dom_cas_missions_3 = {
 		effect = {
 			add_country_modifier = {
 				name = "spa_rb_italian_ambition_mod"
-				duration = 5475
+				duration = -1
 			}
 			italy_region = {
 				limit = {
