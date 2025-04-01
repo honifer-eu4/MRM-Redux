@@ -1290,7 +1290,7 @@ sharp_wits_act = {
 	}
 	
 	power_projection_from_insults = 0.25
-	morale_damage = 0.15
+	morale_damage_received = -0.15
 
 	effect = {}
 	removed_effect = {}

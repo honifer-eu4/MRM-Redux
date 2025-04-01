@@ -20,6 +20,64 @@ merc_lombard_free_company = {
 	}
 }
 
+merc_hungarian_knights = {
+	regiments_per_development = 0.06
+	cost_modifier = 0.66
+	cavalry_weight = 1
+    artillery_weight = 0
+	sprites = { dlc102_hun_sprite_pack easterngfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
+		has_country_flag = ven_conquered_hungary
+	}
+	modifier = {
+		shock_damage = 0.2
+	}
+}
+
+merc_french_gendarmes = {
+	regiments_per_development = 0.06
+	cost_modifier = 0.66
+	cavalry_weight = 1
+    artillery_weight = 0
+	sprites = { dlc120_TOU_sprite_pack dlc001_amg_sprite_pack dlc049_FRA_sprite_pack dlc028_fra_sprite_pack dlc054_fra_sprite_pack fra_base_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			tag = MLO
+			was_tag = MLO
+		}
+		has_country_flag = mlo_french_gendarmes
+	}
+	modifier = {
+		cavalry_power = 0.1
+		morale_damage = 0.1
+	}
+}
+
+merc_stratioti_cavalry = {
+	regiments_per_development = 0.06
+	cost_modifier = 0.66
+	cavalry_weight = 1
+    artillery_weight = 0
+	sprites = { dlc006_byz_sprite_pack easterngfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			tag = NAP
+			was_tag = NAP
+		}
+		has_country_flag = nap_stratioti_cavalry
+	}
+	modifier = {
+		cavalry_fire = 0.25
+	}
+}
+
 # Tuscan Free Company
 #merc_tuscan_free_company = {
 #    regiments_per_development = 0.05

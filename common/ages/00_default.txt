@@ -19,6 +19,7 @@ age_of_discovery = {
 						continent = africa
 					}
 				}
+				ai = no
 			}
 			custom_trigger_tooltip = {
 				tooltip = obj_discover_america_tooltip
@@ -38,6 +39,7 @@ age_of_discovery = {
 						continent = africa
 					}
 				}
+				ai = no
 			}
 			total_development = 100
 
@@ -47,6 +49,9 @@ age_of_discovery = {
 		
 	
 		obj_5_centers_of_trade = {
+			allow = {
+				ai = no
+			}
 			calc_true_if = {
 				all_owned_province = {
 					OR = {
@@ -60,6 +65,9 @@ age_of_discovery = {
 			}
 		}
 		obj_30_development_city = {
+			allow = {
+				ai = no
+			}
 			custom_trigger_tooltip = {
 				tooltip = obj_30_development_city_tooltip
 				any_owned_province = {
@@ -72,6 +80,9 @@ age_of_discovery = {
 			}
 		}
 		obj_renaissance = {
+			allow = {
+				ai = no
+			}
 	 		has_institution = renaissance
 	 		all_state_province = {
 	 			renaissance = 100
@@ -79,14 +90,23 @@ age_of_discovery = {
 		}
 		
 		obj_many_vassals = {
-			num_of_subjects = 5
+			allow = {
+				ai = no
+			}
+			num_of_subjects = 4
 		}		
 	
 		obj_two_continents = {
+			allow = {
+				ai = no
+			}
 			num_of_continents = 2
 		}
 	
 		obj_humiliate_rival = {
+			allow = {
+				ai = no
+			}
 			custom_trigger_tooltip = {
 				tooltip = obj_humiliate_rival_tooltip
 				has_country_flag = humiliated_rival
@@ -129,8 +149,8 @@ age_of_discovery = {
 				on_age_ability_taken = { age = age_of_discovery }
 			}
 			modifier = {
-				can_transfer_vassal_wargoal = yes
 				can_chain_claim = yes
+				no_claim_cost_increasement = yes
 				num_of_age_rewards = 1
 			}
 			ai_will_do = {
@@ -283,6 +303,9 @@ age_of_reformation = {
 	
 	objectives = {
 		obj_christian_convert = {
+			allow = {
+				ai = no
+			}
 			OR = {
 				religion = protestant
 				religion = reformed
@@ -292,6 +315,9 @@ age_of_reformation = {
 		}
 		
 		obj_humanism_religious = {
+			allow = {
+				ai = no
+			}
 			custom_trigger_tooltip = {
 				tooltip = obj_humanism_religious_tt
 				calc_true_if = {
@@ -319,6 +345,9 @@ age_of_reformation = {
 		}
 		
 		obj_convert_10_provinces = {
+			allow = {
+				ai = no
+			}
 			custom_trigger_tooltip = {
 				tooltip = obj_convert_10_provinces_tooltip
 				check_variable = { which = num_converted_religion value = 10 }
@@ -326,10 +355,16 @@ age_of_reformation = {
 		}
 		
 		obj_colonial_empire = {
+			allow = {
+				ai = no
+			}
 			religious_unity = 1
 		}
 		
 		obj_force_converted = {
+			allow = {
+				ai = no
+			}
 			custom_trigger_tooltip = {
 				tooltip = obj_force_converted_tooltip
 				has_country_flag = force_converted
@@ -337,6 +372,9 @@ age_of_reformation = {
 		}
 		
 		obj_asian_trade = {
+			allow = {
+				ai = no
+			}
 			OR = {
 				trading_bonus = {
 					trade_goods = spices
@@ -359,7 +397,10 @@ age_of_reformation = {
 		
 		}
 		
-		obj_unify_culture = {	
+		obj_unify_culture = {
+			allow = {
+				ai = no
+			}	
 			is_subject = no
 			has_unified_culture_group = yes
 		}
@@ -597,10 +638,16 @@ age_of_absolutism = {
 		
 	objectives = {
 		obj_3_trade_companies = {
+			allow = {
+				ai = no
+			}
 			num_of_trade_companies = 3
 		}
 		
 		obj_universities = {
+			allow = {
+				ai = no
+			}
 			num_of_owned_provinces_with = {
 				has_building = university 
 				value = 5 
@@ -608,14 +655,23 @@ age_of_absolutism = {
 		}
 	
 		obj_large_forcelimit = {
+			allow = {
+				ai = no
+			}
 			land_forcelimit = 200
 		}
 		
 		obj_90_absolutism = {
+			allow = {
+				ai = no
+			}
 			absolutism = 90
 		}
 		
 		obj_emperor_of_china = {
+			allow = {
+				ai = no
+			}
 			custom_trigger_tooltip = {
 				tooltip = redux_destroy_estates_mod_tt
 				has_country_flag = redux_estates_destroyed
@@ -623,10 +679,16 @@ age_of_absolutism = {
 		}
 		
 		obj_cultures_accepted = {
+			allow = {
+				ai = no
+			}
 			num_accepted_cultures = 5
 		}
 		
 		obj_win_religious_war = {
+			allow = {
+				ai = no
+			}
 			power_projection = 75
 		}
 	}	
@@ -830,10 +892,16 @@ age_of_revolutions = {
 	
 	objectives = {
 		obj_parliament = {
+			allow = {
+				ai = no
+			}
 			has_parliament = yes
 		}
 		
 		obj_emperor = {
+			allow = {
+				ai = no
+			}
 			OR = {	
 				is_emperor = yes
 				government_rank = 3
@@ -841,11 +909,17 @@ age_of_revolutions = {
 			}
 		}
 		obj_large_subject = {
+			allow = {
+				ai = no
+			}
 			any_subject_country = {
 				total_development = 250
 			}
 		}
 		obj_disc_army = {
+			allow = {
+				ai = no
+			}
 			has_global_modifier_value = {
 				which = discipline
 				value = 0.25
@@ -853,15 +927,24 @@ age_of_revolutions = {
 			}
 		}
 		obj_huge_capital = {
+			allow = {
+				ai = no
+			}
 			capital_scope = {
 				development = 50
 			}
 		}
 		obj_great_general = {
+			allow = {
+				ai = no
+			}
 			has_commanding_three_star = yes
 		}
 	
 		obj_two_institutions = {
+			allow = {
+				ai = no
+			}
 			num_of_owned_and_controlled_institutions = 2
 		}
 	}

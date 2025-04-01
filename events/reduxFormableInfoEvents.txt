@@ -53,6 +53,17 @@ country_event = {
     }
 
     option = {
+        name = redux_formableInfoEvents.1.ity
+        trigger = {
+            OR = {
+                tag = TUN
+                was_tag = TUN
+            }
+        }
+        country_event = { id = redux_formableInfoEvents.42 }
+    }
+
+    option = {
         name = redux_formableInfoEvents.1.ita
         trigger = {
             OR = {
@@ -1495,6 +1506,8 @@ country_event = {
     }
 }
 
+# Lusitania
+
 country_event = {
     id = redux_formableInfoEvents.41
     title = redux_formableInfoEvents.41.title
@@ -1510,6 +1523,26 @@ country_event = {
 
     option = {
         name = redux_formableInfoEvents.41.exit
+    }
+}
+
+# Italiya
+
+country_event = {
+    id = redux_formableInfoEvents.42
+    title = redux_formableInfoEvents.42.title
+    desc = redux_formableInfoEvents.42.desc
+    picture = COURT_eventPicture 
+
+    is_triggered_only = yes
+
+    option = {
+        name = redux_formableInfoEvents.42.back
+        country_event = { id = redux_formableInfoEvents.1 }
+    }
+
+    option = {
+        name = redux_formableInfoEvents.42.exit
     }
 }
 

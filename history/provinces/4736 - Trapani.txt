@@ -1,7 +1,7 @@
 # - Syracusa
 
-owner = SIC
-controller = SIC
+owner = NAP
+controller = NAP
 culture = sicilian 
 religion = catholic 
 hre = no 
@@ -13,6 +13,7 @@ capital = "Trapani"
 is_city = yes
 add_core = SIC
 add_core = NAP
+fort_15th = yes
 
 
 

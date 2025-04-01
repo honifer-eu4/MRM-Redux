@@ -7,3 +7,4 @@ CMO = "countries/Cameroon.txt"
 # Maghreb
 
 MGB = "countries/Maghreb.txt"
+ITY = "countries/Italiya.txt"

@@ -3832,6 +3832,10 @@ tun_urbanization = {
 	build_time = -0.15
 }
 
+tun_italian_wines = {
+	trade_goods_size_modifier = 0.25
+}
+
 # Aragonese Missions
 
 llotja_de_la_seda = {
@@ -4065,8 +4069,8 @@ gra_bolstered_morale = {
 }
 
 gra_rebuilding_mosques = {
-	local_unrest = -2
-	local_missionary_strength = 0.03
+	global_unrest = -2
+	global_heathen_missionary_strength = 0.03
 }
 
 gra_seperation_of_power = {
@@ -4466,9 +4470,9 @@ guardians_of_the_fountain = {
 
 #Milanese Missions
 
-mlo_milan_victorious_modifier = {
-	prestige_from_land = 1
-	ae_impact = -0.15
+mlo_venetian_captains = {
+	naval_morale = 0.05
+	galley_power = 0.2
 }
 
 mlo_ascendant_force = {
@@ -4503,8 +4507,14 @@ mlo_expanded_fortifications = {
 	local_defensiveness = 0.25
 }
 
-mlo_alpine_fortifications = {
-	fort_maintenance_modifier = -0.2
+mlo_italian_siege_engineers = {
+	siege_ability = 0.2
+}
+
+mlo_swiss_captains = {
+	mercenary_discipline = 0.025
+	shock_damage_received = -0.05
+	mercenary_cost = -0.1
 }
 
 mlo_lombard_renaissance = {
@@ -4518,12 +4528,20 @@ mlo_the_swiss_mercs = {
 }
 
 mlo_capital_of_italy = {
-	local_tax_modifier = 0.1
+	allowed_num_of_manufactories = 1
+	allowed_num_of_buildings = 2	
 	trade_value = 10
-	local_institution_spread = 0.15
+	trade_goods_size = 0.5
 }
 
-mlo_controls_pope = {
+mlo_iron_crown1 = {
+	monarch_military_power = 1
+	governing_capacity_modifier = 0.15
+	papal_influence = 2
+}
+
+mlo_iron_crown2 = {
+	governing_capacity_modifier = 0.15
 	papal_influence = 2
 }
 
@@ -4595,24 +4613,28 @@ pro_marseille = {
 	local_manpower_modifier = 0.1
 }
 # Naples missions
-naples_dotf_modifier = {
-	tolerance_own = 1
+naples_navy_expansion = {
+	galley_power = 0.2
+	naval_morale = 0.05
+	global_ship_cost = -0.25
 }
 
-nap_italian_wars_modifier = {
-	mercenary_discipline = 0.05
+naples_wine_modifier = {
+	local_manpower_modifier = 0.25
+	trade_goods_size_modifier = 0.15
 }
 
-nap_ragusa_trade = {
-	global_trade_power = 0.2
+nap_crown_of_aragon = {
+	monarch_diplomatic_power = 1
+	same_religion_advisor_cost = -0.2
 }
 
-nap_liberty_desire = {
-	liberty_desire_from_subject_development = -0.15
+naples_expansion_of_roads = {
+	build_cost = -0.1
+	build_time = -0.15
 }
-
 nap_barbary_pirates = {
-	global_ship_trade_power = 0.15
+	embargo_efficiency = 0.2
 }
 
 # Swiss missions
@@ -5290,8 +5312,9 @@ ven_la_francocrazia = {
 	galley_cost = -0.1
 }
 
-ven_genoese_humiliation = {
-	trade_steering = 0.2
+ven_man_the_mountain_passes = {
+	defensiveness = 0.33
+	garrison_size = 0.25
 }
 
 ven_nothing_ventured_nothing_gained = {
@@ -5302,6 +5325,26 @@ ven_nothing_ventured_nothing_gained = {
 ven_venture_captain_recruitment = {
 	land_forcelimit_modifier = 0.1
 	free_leader_pool = 1
+}
+
+ven_la_francocrazia = {
+	infantry_power = 0.05
+	galley_power = 0.1
+}
+
+ven_queen_of_the_adriatic = {
+	local_development_cost = -0.2
+	allowed_num_of_buildings = 2
+	allowed_num_of_manufactories = 1
+}
+
+ven_centralization_of_power = {
+	centralize_state_cost = -0.75
+	administrative_efficiency = 0.025
+}
+
+ven_new_sewer_systems = {
+	expand_infrastructure_cost_modifier = -0.25
 }
 
 ven_mercenaries_paid_with_land = {
@@ -12630,6 +12673,12 @@ urban_expansion_modifier = {
 ven_first_printshops_of_italy_modifier = {
 	technology_cost = -0.05
 	yearly_innovativeness = 0.2
+}
+
+famagustan_merchants = {
+	local_tax_modifier = 0.5
+	local_development_cost = -0.05 
+	trade_value = 10
 }
 
 ven_plague_doctors_modifier = {

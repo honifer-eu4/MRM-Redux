@@ -1,0 +1,43 @@
+﻿l_english:
+ #Missions
+
+ emp_ven_the_italian_wars_title:0 "The Italian Wars" 
+ emp_ven_the_italian_wars_desc:0 ""
+ emp_ven_south_italian_rivals_title:0 "South Italian Rivals" 
+ emp_ven_south_italian_rivals_desc:0 ""
+ emp_ven_woe_to_the_vanquished_title:0 "Woe to the Vanquished" 
+ emp_ven_woe_to_the_vanquished_desc:0 ""
+ emp_ven_consolidate_our_hold_on_the_north_title:0 "Consolidate Our Hold on the North" 
+ emp_ven_consolidate_our_hold_on_the_north_desc:0 ""
+ emp_ven_cement_our_control_over_dalmatia_title:0 "Cement Our Control Over Dalmatia" 
+ emp_ven_cement_our_control_over_dalmatia_desc:0 ""
+ emp_ven_conquest_of_illyria_title:0 "Conquest of Illyria" 
+ emp_ven_conquest_of_illyria_desc:0 ""
+ emp_ven_recover_pannonia_title:0 "Recover Pannonia" 
+ emp_ven_recover_pannonia_desc:0 ""
+ emp_ven_embellish_venezia_title:0 "Embellish Venezia" 
+ emp_ven_embellish_venezia_desc:0 ""
+ emp_ven_growth_of_italian_cities_title:0 "Growth of Italian Cities" 
+ emp_ven_growth_of_italian_cities_desc:0 ""
+ emp_ven_centralized_governance_title:0 "Centralized Governance" 
+ emp_ven_centralized_governance_desc:0 ""
+ emp_ven_cypriot_sugar_title:0 "Cypriot Sugar" 
+ emp_ven_cypriot_sugar_desc:0 ""
+ 
+ #Modifiers
+
+ ven_queen_of_the_adriatic:0 "Queen of the Adriatic"
+ ven_queen_of_the_adriatic_desc:0 ""
+ ven_new_sewer_systems:0 "New Sewer Systems"
+ ven_new_sewer_systems_desc:0 ""
+ ven_centralization_of_power:0 "Centralization of Power"
+ ven_centralization_of_power_desc:0 ""
+ ven_man_the_mountain_passes:0 "Man the Mountain Passes"
+ ven_man_the_mountain_passes_desc:0 ""
+ #Events
+
+ #Tooltips
+ 
+ ven_merc_company_tt:0 "Completing this mission will unlock a unique cavalry mercenary company that has §G+20%§! Shock Damage"
+
+ #Other

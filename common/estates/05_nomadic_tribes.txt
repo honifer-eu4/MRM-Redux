@@ -19,6 +19,7 @@ estate_nomadic_tribes = {
 					was_tag = TUN
 				}
 				NOT = { has_reform = al_andalusia_government }
+				NOT = { has_reform = italiyan_government }
 			}
 			has_country_modifier = enable_estate_nomadic_tribes_modifier 
 			has_country_flag = turkoman_unlocked_tribes

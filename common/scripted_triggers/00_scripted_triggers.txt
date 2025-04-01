@@ -594,12 +594,14 @@ was_never_end_game_tag_trigger = {	#Country Scope
 				NOT = { was_tag = LAE }
 				NOT = { was_tag = AUH }
 				NOT = { was_tag = KOF }
+				NOT = { was_tag = ITY }
 				NOT = { was_tag = ZAZ }
 				NOT = { was_tag = NSE }
 				NOT = { has_country_flag = habsburg_empire_proclaimed }
 				NOT = { tag = NSE } 
 				NOT = { tag = ZAZ }
 				NOT = { tag = KOF }
+				NOT = { tag = ITY }
 				NOT = { tag = AUH }
 				NOT = { tag = LAE }
 				NOT = { tag = FRA }

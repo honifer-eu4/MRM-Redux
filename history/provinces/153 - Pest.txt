@@ -23,6 +23,7 @@ discovered_by = muslim
 discovered_by = ottoman
 extra_cost = 16
 center_of_trade = 2
+fort_15th = yes
 add_permanent_province_modifier = {
 	name = influential_jewish_minority
 	duration = -1

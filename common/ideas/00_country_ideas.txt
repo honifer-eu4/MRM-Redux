@@ -2305,7 +2305,9 @@ NAP_ideas = {
 		global_autonomy = -0.05
 	}
 	expanded_arsenale = {
-		global_ship_cost = -0.1
+		global_ship_cost = -0.15
+		global_ship_recruit_speed = -0.25
+		galley_power = 0.1
 	}
 	city_of_artists = {
 		prestige = 1
@@ -2336,7 +2338,7 @@ KOF_ideas = {
 	free = yes
 	
 	kof_repopulate_africa = {
-		development_cost = -0.1
+		development_cost = -0.075
 	}
 	kof_fanatical_christianity = {
 		papal_influence = 3
@@ -2349,9 +2351,11 @@ KOF_ideas = {
 		recover_army_morale_speed = 0.1
 	}
 	kof_recruit_condotierii = {
-		infantry_cost = -0.1
+		reinforce_speed = 0.2
+		mercenary_manpower = 0.15
 	}
 	kof_reberberization = {
+		culture_conversion_cost = -0.15
 		num_accepted_cultures = 2
 	}
 	kof_legacy_of_saints = {
@@ -2366,7 +2370,7 @@ SIC_ideas = {
 	}
 	
 	bonus = {
-		prestige = 1
+		infantry_power = 0.1
 	}
 	
 	trigger = {
@@ -10058,7 +10062,7 @@ ROT_ideas = {
 		defensiveness = 0.2
 	}
 	bonus = {
-		global_tax_modifier = 0.1
+		global_manpower_modifier = 0.2
 	}
 	trigger = {
 		tag = ROT
@@ -10068,25 +10072,25 @@ ROT_ideas = {
 	ROT_end_of_the_line = {
 		republican_tradition = 0.5
 	}
-	ROT_beautiful_city = {
-		prestige = 1
-		global_institution_spread = 0.1
-	}
 	ROT_drink_of_war = {
 		discipline = 0.05
-	}
-	ROT_hinterland_knights = {
-		build_cost = -0.1
 	}
 	ROT_zarfat_registry = {
 		no_religion_penalty = yes
 	}
+	ROT_beautiful_city = {
+		prestige = 1
+		global_institution_spread = 0.1
+	}
+	ROT_hinterland_knights = {
+		build_cost = -0.1
+	}
 	ROT_holy_blood = {
-		global_prov_trade_power_modifier = 0.1
+		production_efficiency = 0.2	
 	}
 	ROT_klingentorturm = {
 		garrison_size = 0.2
-		global_manpower_modifier = 0.1
+		global_tax_modifier = 0.15
 	}
 }
 
@@ -12789,13 +12793,13 @@ TUN_ideas = {
 	}
 	corsairs = {
 		navy_tradition = 1
-		galley_cost = -0.25
+		galley_cost = -0.5
 	}
 	tun_attract_foreign_pirates = {
 		global_sailors_modifier = 0.25
 	}
 	tun_board_of_captains = {
-		leader_naval_fire = 1
+		leader_naval_manuever = 1
 	}
 	tun_export_monopolies = {
 		global_own_trade_power = 0.2
@@ -12803,6 +12807,46 @@ TUN_ideas = {
 	}
 	tun_caliphate = {
 		land_morale = 0.1
+	}
+}
+
+ITY_ideas = {
+	start = {
+		infantry_power = 0.15
+		galley_power = 0.2		
+	}
+	bonus = {
+		land_morale = 0.15
+	}
+	trigger = {
+		tag = ITY
+	}
+	free = yes
+	ity_italian_shipbuilding = {
+		naval_forcelimit_modifier = 0.25
+		has_galleass = yes
+		allowed_galleass_fraction = 0.33
+	}
+	ity_arab_italian_architecture = {
+		build_cost = -0.1
+	}
+	ity_italian_merchants = {
+		trade_efficiency = 0.15
+		global_trade_power = 0.1
+	}
+	ity_sailors_of_the_mediterranean = {
+		global_sailors_modifier = 0.25
+	}
+	ity_an_italian_sultunate = {
+		legitimacy = 1
+		prestige = 0.5
+	}
+	ity_experienced_captains = {
+		leader_naval_manuever = 2
+	}
+	ity_islamization_of_italy = {
+		global_missionary_strength = 0.02
+		manpower_in_true_faith_provinces = 0.15
 	}
 }
 
@@ -13734,11 +13778,11 @@ LOT_ideas = {
 FKN_ideas = {
 	start = {
 		core_creation = -0.1
-		discipline = 0.05
+		land_morale = 0.1	
 	}
 	
 	bonus = {
-		monarch_military_power = 1
+		leader_siege = 1
 	}
 	
 	trigger = {
@@ -13746,28 +13790,29 @@ FKN_ideas = {
 	}
 	free = yes		#will be added at load.
 	
-	fkn_duchy_restored = {
-		cavalry_cost = -0.2
-	}
-	fkn_main_trading = {
-		movement_speed = 0.1
+	fkn_free_knights_of_franconia = {
+		cavalry_power = 0.25	
 	}
 	fkn_rugged_land_of_fortresses = {
 		defensiveness = 0.2
 		garrison_size = 0.2
 	}
-	fkn_free_knights_of_franconia = {
-		cavalry_power = 0.25
+	fkn_main_trading = {
+		movement_speed = 0.1
 	}
-	franconian_wine = { #in WBG_ideas
-		#production_efficiency = 0.1
-	}
-	fkn_baroque = {
-		land_morale = 0.1
+	fkn_work_ethic = { 
+		global_trade_goods_size_modifier = 0.1
 	}
 	fkn_franconian_bourgeoisie = {
 		nobles_loyalty_modifier = 0.1
 		advisor_cost = -0.1
+	}
+	fkn_duchy_restored = {
+		governing_capacity_modifier = 0.15
+		overextension_impact_modifier = -0.15	
+	}
+	fkn_baroque = {
+		cavalry_fire = 0.25
 	}
 }
 
@@ -13849,7 +13894,7 @@ CLI_ideas = {
 
 WES_ideas = {
 	start = {
-		reform_progress_growth = 0.15
+		reform_progress_growth = 0.2
 		land_forcelimit_modifier = 0.2
 	}
 	bonus = {
@@ -13863,9 +13908,9 @@ WES_ideas = {
 	wes_jewish_rights = {
 		idea_cost = -0.1
 	}
-	wes_westphalian_decentralisation  = {
-		build_cost = -0.1
-		development_cost = -0.1
+	wes_forges_of_nuremburg = {
+		artillery_power = 0.15
+		artillery_cost = -0.15
 	}
 	wes_increased_conscription = {
 		global_manpower_modifier = 0.20
@@ -13874,11 +13919,11 @@ WES_ideas = {
 		num_accepted_cultures = 1
 		same_culture_advisor_cost = -0.25
 	}
-	wes_taxation = {
-		global_tax_modifier = 0.15
+	wes_westphalian_decentralisation  = {
+		build_cost = -0.1
 	}
 	wes_enlightenment = {
-		infantry_power = 0.1
+		fire_damage = 0.2
 	}
 	wes_cities_of_the_rhineland = {
 		trade_efficiency = 0.1

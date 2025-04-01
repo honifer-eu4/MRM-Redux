@@ -672,33 +672,11 @@ country_event = {
 	major = yes
 	
 	option = {
-		name = flavor_cri.8.a
-		persia_region = {
-			limit = {
-				owned_by = ROOT
-			}
-			add_core = ILK
-			if = {
-				limit = { is_core = ROOT }
-				remove_core = ROOT
-			}
-		}
-		release = ILK
-		create_march = ILK
-		ILK = {
-			change_government = monarchy
-			#set_legacy_government = despotic_monarchy
-			change_primary_culture = ROOT
-			change_religion = ROOT
-			define_ruler = {
-				dynasty = ROOT
-				culture = ROOT
-				religion = ROOT
-			}
-		}
-	}
-	option = {
 		name = flavor_cri.8.b
+		add_country_modifier = {
+			name = shy_conquest_of_persia
+			duration = -1
+		}
 		4338 = {
 			add_base_tax = 2
 			add_base_manpower = 2

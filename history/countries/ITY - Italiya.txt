@@ -1,0 +1,6 @@
+government = monarchy
+add_government_reform = italiyan_government
+technology_group = muslim
+religion = ibadi
+primary_culture = tunisian
+capital = 125	# Palermo

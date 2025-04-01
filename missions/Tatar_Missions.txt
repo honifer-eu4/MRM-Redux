@@ -197,6 +197,10 @@ tatar_missions_1 = {
 			}
 		}
 		effect = {
+			add_country_modifier = {
+				name = shy_rule_ruthenia
+				duration = -1
+			}
 			add_adm_power = 100
 			add_mil_power = 100
 			add_prestige = 25
@@ -514,6 +518,10 @@ tatar_missions_slot_2 = {
 			}
 		}
 		effect = {
+			add_country_modifier = {
+				name = shy_humbled_muscovy
+				duration = -1
+			}
 			add_adm_power = 100
 			add_mil_power = 100
 			add_prestige = 25
@@ -843,7 +851,6 @@ tatar_missions_1_a = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = SHY
 		has_country_flag = formed_bukhara_flag 
 		NOT = { map_setup = map_setup_random }
 	}
@@ -851,6 +858,7 @@ tatar_missions_1_a = {
 
 	shy_restore_the_silk_road = {
 		icon = mission_asian_city 
+		position = 6
 		provinces_to_highlight = {
 			culture = afghani
 			NOT = {

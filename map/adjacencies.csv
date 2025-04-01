@@ -80,6 +80,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 4560;1750;sea;1295;-1;-1;-1;-1;Alacant-Ibiza
 28;36;sea;1254;-1;-1;-1;-1;Nyland-Reval
 235;87;sea;1271;-1;-1;-1;-1;Calais-Kent
+233;170;sea;1272;2732;1524;2747;1491;Cornwall-Penn-ar-Bed
 122;143;sea;1310;-1;-1;-1;-1;Salento-Avloyna
 1099;402;sea;4346;-1;-1;-1;-1;Suqutra-Qishn
 -1;-1;;-1;-1;-1;-1;-1;-1;

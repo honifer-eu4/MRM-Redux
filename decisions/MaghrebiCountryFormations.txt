@@ -323,6 +323,7 @@ country_decisions = {
 			}
 			NOT = { tag = MOR }
 			NOT = { tag = TUN }
+			NOT = { was_tag = TUN}
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
 			NOT = { tag = POR }

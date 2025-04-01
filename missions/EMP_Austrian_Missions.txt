@@ -89,7 +89,7 @@ emp_hab_prestige_branch = {
 			province_id = 134
 			OR = {
 				NOT = { owned_by = root }
-				NOT = { development = 50 }
+				NOT = { development = 40 }
 				NOT = { num_of_buildings_in_province = 6 }
 			}
 		}

@@ -102,12 +102,9 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 3 }
 				}
-				hidden_effect = {
-					set_in_empire = no
-				}
-				set_government_rank = 2
+				set_government_rank = 3
 			}
 			change_tag = ITA
 			on_change_tag_effect = yes

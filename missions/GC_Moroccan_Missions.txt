@@ -191,7 +191,14 @@ gc_morocco_1 = {
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT				
-			}			
+			}
+			katsina_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT 
+			}		
 		}
 	}
 	gc_mor_mali = {
@@ -1286,7 +1293,7 @@ granada_slot_2_missions = {
 
 	adu_reconversion_of_iberia = { #art
 		icon = mission_islamic_golden_age
-		required_missions = { gra_own_iberia adu_develop_cordoba }
+		required_missions = { adu_develop_cordoba }
 		
 		provinces_to_highlight = {
 			region = iberia_region
@@ -1305,20 +1312,9 @@ granada_slot_2_missions = {
 		}
 		
 		effect = {
-			custom_tooltip = adu_rebuilding_mosques_tt
-			hidden_effect = {
-				every_owned_province = {
-					limit = {
-						region = iberia_region 
-						NOT = {
-							religion_group = muslim
-						}
-					}
-					add_province_modifier = {
-						name = gra_rebuilding_mosques
-						duration = 18250
-					}
-				}
+			add_country_modifier = {
+				name = gra_rebuilding_mosques
+				duration = 18250
 			}
 		}
 	}

@@ -116,6 +116,8 @@ redux_PR_fort_code_is_strait_trigger = {
             province_id = 316
             province_id = 151
             province_id = 4779
+            province_id = 233
+            province_id = 170
             # Middle East/Asia
             province_id = 398
             province_id = 431

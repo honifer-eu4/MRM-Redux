@@ -211,6 +211,14 @@ country_event = {
 				name = "redux_eng_hundred_years_war"
 				duration = 3650
 			}
+			brittany_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
 		}
 		FRA = {
 			add_opinion = {

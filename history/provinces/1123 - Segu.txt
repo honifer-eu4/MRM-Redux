@@ -2,7 +2,7 @@
 
 owner = MAL
 controller = MAL
-culture = bambara
+culture = mali
 is_city = yes
 base_manpower = 2
 religion = shamanism #Fetishism

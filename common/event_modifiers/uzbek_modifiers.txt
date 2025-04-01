@@ -3,6 +3,19 @@ shy_conquest_of_tibet = {
     global_unrest = -3
 }
 
+shy_conquest_of_persia = {
+    trade_steering = 0.2
+    trade_efficiency = 0.1
+}
+
+shy_humbled_muscovy = {
+    cavalry_power = 0.075
+}
+
+shy_rule_ruthenia = {
+    shock_damage = 0.15
+}
+
 shy_siberian_frontier_mod = {
     may_establish_frontier = yes
 }

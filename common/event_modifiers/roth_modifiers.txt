@@ -1,6 +1,5 @@
 fkn_kingdom_of_the_franks_modifier = {
-    cavalry_fire = 0.2
-    cavalry_power = 0.05
+    discipline = 0.05
 }
 
 wes_peace_of_westphalia_mod = {

@@ -859,7 +859,7 @@ dom_cas_missions_2 = {
 				limit = { 
 					NOT = { religion = catholic }
 				}
-				has_advisor = inquisitor 
+				inquisitor = 1 
 			}
 		}
 		effect = {

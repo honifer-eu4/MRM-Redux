@@ -65,6 +65,7 @@
  redux_formableInfoEvents.1.chl:0 "Chile"
  redux_formableInfoEvents.1.lap:0 "La Plata"
  redux_formableInfoEvents.1.lus:0 "Lusitania"
+ redux_formableInfoEvents.1.ity:0 "Italiya"
 
  # Lotharingia 
 
@@ -91,7 +92,7 @@
  # Spain
 
  redux_formableInfoEvents.5.title:0 "Spain Formable Information"
- redux_formableInfoEvents.5.desc:0 "@SPA Spain is formable through the decisions §GForm Spanish Nation Diplomatically§! and §GForm Spanish Nation Militarily§!.\n\nNational Ideas:\n Traditions: §G+10%§! Morale of Armies and §G+5%§! Discipline\n §G+2§! Yearly Papal Influence / §G+25%§! Church Power Modifier / §G+0.5§! Monthly Fervor\n §G+1§! Colonist and Can Fabricate Claims in colonial regions\n §G+10%§! Institution Spread and §G+10%§! Reform Progress Growth\n §G+25%§! Naval Force Limit Modifier and §G+10%§! Heavy Ship Combat Ability\n §G-5%§! Development Cost and §G+15%§! Global Tariffs\n §G+10%§! National Manpower Modifier and §G+1§! Yearly Prestige\n §G+1§! Diplomatic Possible Policy and §G+5%§! Estate Loyalty Change on Privilege Revoked\n Ambition: §G+0.75§! Artillery Fire\n\nOther Formables: No. Spain is an end-game tag. \n\nMissions: Forming Spain §Gextends§! the mission tree for Castile and §Greplaces§! the mission tree for any other country. \n\nOther Notable Information:"
+ redux_formableInfoEvents.5.desc:0 "@SPA Spain is formable through the decisions §GForm Spanish Nation Diplomatically§! and §GForm Spanish Nation Militarily§!.\n\nNational Ideas:\n Traditions: §G+10%§! Morale of Armies and §G+5%§! Discipline\n §G+2§! Yearly Papal Influence / §G+25%§! Church Power Modifier / §G+0.5§! Monthly Fervor\n §G+1§! Colonist and Can Fabricate Claims in colonial regions\n §G+10%§! Institution Spread and §G+10%§! Reform Progress Growth\n §G+25%§! Naval Force Limit Modifier and §G+10%§! Heavy Ship Combat Ability\n §G-5%§! Development Cost and §G+15%§! Global Tariffs\n §G+10%§! National Manpower Modifier and §G+1§! Yearly Prestige\n §G+1§! Diplomatic Possible Policy and §G+5%§! Estate Loyalty Change on Privilege Revoked\n Ambition: §G+0.5§! Artillery Fire\n\nOther Formables: No. Spain is an end-game tag. \n\nMissions: Forming Spain §Gextends§! the mission tree for Castile and §Greplaces§! the mission tree for any other country. \n\nOther Notable Information:"
  redux_formableInfoEvents.5.back:0 "Back"
  redux_formableInfoEvents.5.exit:0 "Close"
 
@@ -113,7 +114,7 @@
  # Kingdom of Africa
 
  redux_formableInfoEvents.8.title:0 "Kingdom of Africa Formable Information"
- redux_formableInfoEvents.8.desc:0 "The @KOF Kingdom of Africa is formable through the mission §GKingdom of Africa§!.\n\nNational Ideas:\n Traditions: §G+20%§! Galley Combat Ability and §G+15%§! Shock Damage\n §G-10%§! Development Cost\n §G+3§! Yearly Papal Influence\n §G+2%§! Missionary Strength and §G+2§! Tolerance of Heathens\n §G+10%§! Recover Army Morale Speed\n §G-10%§! Infantry Cost\n §G+2§! Max Promoted Cultures\n §G+15%§! Morale of Armies\n Ambition: §G+10%§! Infantry Combat Ability\n\nOther Formables: No. The Kingdom of Africa is an end-game tag. \n\nMissions: Forming the Kingdom of Africa §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.8.desc:0 "The @KOF Kingdom of Africa is formable through the mission §GKingdom of Africa§!.\n\nNational Ideas:\n Traditions: §G+20%§! Galley Combat Ability and §G+15%§! Shock Damage\n §G-7.5%§! Development Cost\n §G+3§! Yearly Papal Influence\n §G+2%§! Missionary Strength and §G+2§! Tolerance of Heathens\n §G+10%§! Recover Army Morale Speed\n §G+20%§! Reinforce Speed and §G+15%§! Mercenary Manpower\n §G-15%§! Culture Conversion Cost and §G+2§! Max Promoted Cultures\n §G+15%§! Morale of Armies\n Ambition: §G+10%§! Infantry Combat Ability\n\nOther Formables: No. The Kingdom of Africa is an end-game tag. \n\nMissions: Forming the Kingdom of Africa §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
  redux_formableInfoEvents.8.back:0 "Back"
  redux_formableInfoEvents.8.exit:0 "Close"
 
@@ -181,7 +182,7 @@
 # Franconia
  
  redux_formableInfoEvents.17.title:0 "Franconia Formable Information"
- redux_formableInfoEvents.17.desc:0 "@FKN Franconia is formable through the decision §GForm Franconia§!.\n\nNational Ideas:\n Traditions: §G+5%§! Discipline and §G-10%§! Core Creation Cost\n §G-20%§! Cavalry Cost\n §G+10%§! Movement Speed\n §G+20%§! Fort Defense and §G+20%§! Garrison Size\n §G+25%§! Cavalry Combat Ability\n §G+10%§! Production Efficiency\n §G+10%§! Morale of Armies\n §G-10%§! Advisor Costs and §G+10%§! Nobility Loyalty Equilibrium\n Ambition: §G+1§! Monarch Military Skill\n\nOther Formables: Yes. Franconia is not an end-game tag and can form @GER Germany. \n\nMissions: Forming Franconia §Gextends§! the mission tree. \n\nOther Notable Information: Notable Missions include missions for conquering France that grant §G+5%§! Cavalry Combat Ability, §G+0.2§! Cavalry Fire, §G+10%§! Manpower Recovery Speed, and §G+10%§! Morale of Armies."
+ redux_formableInfoEvents.17.desc:0 "@FKN Franconia is formable through the decision §GForm Franconia§!.\n\nNational Ideas:\n Traditions: §G+10%§! Morale of Armies and §G-10%§! Core Creation Cost\n §G+25%§! Cavalry Combat Ability\n §G+20%§! Fort Defense and §G+20%§! Garrison Size\n  §G+10%§! Movement Speed\n §G+10%§! Goods Produced\n §G-10%§! Advisor Costs and §G+10%§! Nobility Loyalty Equilibrium\n §G+0.25§! Cavalry Fire\n §G+15%§! Governing Capacity and §G-15%§! Overextension Impact\n Ambition: §G+1§! Land Leader Siege\n\nOther Formables: Yes. Franconia is not an end-game tag and can form @GER Germany. \n\nMissions: Forming Franconia §Gextends§! the mission tree. \n\nOther Notable Information: Notable Missions include missions for conquering France that grant §G+5%§! Discipline, §G+5%§! Morale of Armies, and §G+0.25§! Cavalry Fire. Franconia also has the Franconian Elective Monarchy government type that gives §G+1§! Yearly Army Tradition, §G+10%§! Nobility Loyalty Equilibrium, §Y+5%§! Nobility Influence, and §G+1§! Nobility Max Privileges as well as the elective monarchy mechanic which gives better rulers than a normal monarchy."
  redux_formableInfoEvents.17.back:0 "Back"
  redux_formableInfoEvents.17.exit:0 "Close"
  redux_formableInfoEvents.17.ger:0 "Germany"
@@ -189,7 +190,7 @@
 # Westphalia
  
  redux_formableInfoEvents.18.title:0 "Westphalia Formable Information"
- redux_formableInfoEvents.18.desc:0 "@WES Westphalia is formable through the decision §GForm Westphalia§!.\n\nNational Ideas:\n Traditions: §G+20%§! Land Force Limit and §G+15%§! Reform Progress Growth\n §G-10%§! Idea Cost\n §G-10%§! Construction Cost and §G-10%§! Development Cost\n §G+20%§! National Manpower Modifier\n §G+1§! Max Promoted Culture and §G-25%§! Cost of Advisors with Ruler's Culture\n §G+15%§! Global Tax Modifier\n §G+10%§! Infantry Combat Ability\n §G+10%§! Trade Efficiency\n Ambition: §G+5%§! Discipline\n\nOther Formables: Yes. Westphalia is not an end-game tag and can form @GER Germany. \n\nMissions: Forming Westphalia §Greplaces§! the mission tree. \n\nOther Notable Information: Notable Missions include a mission that grants §G-10%§! Development Cost."
+ redux_formableInfoEvents.18.desc:0 "@WES Westphalia is formable through the decision §GForm Westphalia§!.\n\nNational Ideas:\n Traditions: §G+20%§! Land Force Limit and §G+20%§! Reform Progress Growth\n §G-10%§! Idea Cost\n §G+15%§! Artillery Combat Ability and §G-15%§! Artillery Cost\n §G+20%§! National Manpower Modifier\n §G+1§! Max Promoted Culture and §G-25%§! Cost of Advisors with Ruler's Culture\n §G-10%§! Construction Cost\n §G+20%§! Land Fire Damage\n §G+10%§! Trade Efficiency\n Ambition: §G+5%§! Discipline\n\nOther Formables: Yes. Westphalia is not an end-game tag and can form @GER Germany. \n\nMissions: Forming Westphalia §Greplaces§! the mission tree. \n\nOther Notable Information: Notable Missions include a mission that grants §G-10%§! Development Cost."
  redux_formableInfoEvents.18.back:0 "Back"
  redux_formableInfoEvents.18.exit:0 "Close"
  redux_formableInfoEvents.18.ger:0 "Germany"
@@ -360,6 +361,13 @@
  redux_formableInfoEvents.41.desc:0 "@POR Lusitania is formable through the decision §GForm Lusitanian Nation§!. \n\nNational Ideas: Lusitania does not change national ideas and keeps Portugal's. \n\nOther Formables: No. \n\nOther Notable Information: Forming Lusitania unlocks an extra part of the mission tree. Notable missions include a morale mission if we are at war, a mission providing cores on Iberia if we manage to take Navarra or Roussillon, and missions providing claims on regions including the Maghreb and France."
  redux_formableInfoEvents.41.back:0 "Back"
  redux_formableInfoEvents.41.exit:0 "Close"
+
+# Lusitania
+
+ redux_formableInfoEvents.42.title:0 "Italiya Formable Information"
+ redux_formableInfoEvents.42.desc:0 "@ITY Italiya is formable through the decision §GForm Italiyan Nation§!. \n\nNational Ideas:\n Traditions: §G+15%§! Infantry Combat Ability and §G+20%§! Galley Combat Ability\n §G+25%§! Naval Force Limit, §G+33%§! Galleass Force Limit, and Country Allows Galleass Ships\n §G-10%§! Construction Cost\n §G+15%§! Trade Efficiency and §G+10%§! Global Trade Power\n §G+25%§! National Sailors Modifier\n §G+1§! Yearly Legitimacy and §G+0.5§! Yearly Prestige\n §G+2§! Naval Leader Manuever\n §G+2%§! Missionary Strength §G+15%§! Manpower in True Faith Provinces\n Ambition: §G+15%§! Morale of Armies\n\nOther Formables: No. Italiya is an end-game tag. \n\nMissions: Forming Italiya §Rdoes not change§! the mission tree. \n\nOther Notable Information: Forming Italiya unlocks a unique government type with the same modifiers as Sicilian Emirate in addition to the Ottoman harem mechanic which provides better heirs."
+ redux_formableInfoEvents.42.back:0 "Back"
+ redux_formableInfoEvents.42.exit:0 "Close"
 
 # Canada
 

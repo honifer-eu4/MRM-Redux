@@ -70,6 +70,7 @@ monarchy = {
 				caliphate_reform
 				barbary_sultanate_reform
 				sicilian_emirate_restored
+				italiyan_government
 				roman_empire_reform
 				persian_government_reform
 				zoroastrian_persian_government_reform

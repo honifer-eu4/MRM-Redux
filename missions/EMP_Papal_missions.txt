@@ -954,56 +954,8 @@ emp_pap_slot_5 = {
 		}
 
 		trigger = {
-			if = {
-				limit = {
-					exists = LIT
-					LIT = {
-						religion = catholic
-					}
-				}
-				LIT = {
-					has_opinion = {
-						who = ROOT
-						value = 100
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					NOT = { exists = LIT }
-					exists = POL
-					POL = {
-						religion = catholic
-					}
-				}
-				POL = {
-					has_opinion = {
-						who = ROOT
-						value = 100
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					NOT = { exists = LIT }
-					NOT = { exists = POL }
-					exists = PLC
-					PLC = {
-						religion = catholic
-					}
-				}
-				PLC = {
-					has_opinion = {
-						who = ROOT
-						value = 100
-					}
-				}
-			}
-			else = {
-				ruthenia_region = {
-					type = all
-					religion = catholic
-				}
+			LIT = {
+				religion_group = christian
 			}
 		}
 		effect = {
