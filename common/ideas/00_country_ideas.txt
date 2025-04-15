@@ -1723,7 +1723,6 @@ LIT_ideas = {
 	}
 	lithuanian_hussars = {
 		cavalry_cost = -0.1
-		can_recruit_hussars = yes
 	}
 	statutes_of_lithuania = {
 		global_unrest = -2
@@ -1764,7 +1763,6 @@ LIT2_ideas = {
 	}
 	lithuanian_hussars = {
 		cavalry_cost = -0.1
-		can_recruit_hussars = yes
 	}
 	statutes_of_lithuania = {
 		global_unrest = -2
@@ -1847,7 +1845,7 @@ PLC_LIT_ideas = {
 	}
 	lithuanian_hussars = {
 		cavalry_power = 0.25
-		can_recruit_hussars = yes 
+		can_recruit_hussars = yes
 	}
 	statutes_of_lithuania = {
 		global_unrest = -2
@@ -3556,7 +3554,7 @@ USA_ideas = {
 	}
 	empire_of_liberty = {
 		yearly_army_professionalism = 0.01
-		drill_decay_modifier = -0.25
+		drill_decay_modifier = -0.15
  	}
 }
 
@@ -6655,10 +6653,10 @@ ZAZ_ideas = {
 	}
 	zaz_zaporzhian_tolerance = {
 		production_efficiency = 0.1
+		tax_income = 0.1
 	}
 	zaz_army_first = {
 		cavalry_cost = -0.1
-		can_recruit_hussars = yes
 	}
 }
 

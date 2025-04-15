@@ -46,7 +46,7 @@ adu_western_caliph = {
 }
 
 the_stables_of_cordoba = {
-	cavalry_cost = -0.2
+	cavalry_cost = -0.1
 }
 
 adu_moorish_shock_cav_expansion = {	

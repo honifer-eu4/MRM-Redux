@@ -25,10 +25,6 @@ country_event = {
 			name = "lit_conquered_rus"
 			duration = -1
 		}
-        add_country_modifier = { 
-			name = broke_the_rus
-			duration = 9125 
-		}
     }
 
     option = {
@@ -50,9 +46,5 @@ country_event = {
 			name = "lit_lord_of_the_rus"
 			duration = -1
 		}
-        add_country_modifier = {
-            name = "redux_lith_rus" 
-            duration = 9125
-        }
     }
 }

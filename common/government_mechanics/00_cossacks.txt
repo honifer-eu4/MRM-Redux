@@ -9,17 +9,17 @@ cossacks_mechanic = {
 		cossacks_adm_power = {
 			max = 150
 			monarch_power = ADM
-			base_monthly_growth = 3
+			base_monthly_growth = 2
 		}
 		cossacks_dip_power = {
 			max = 150
 			monarch_power = DIP
-			base_monthly_growth = 3
+			base_monthly_growth = 2
 		}
 		cossacks_mil_power = {
 			max = 150
 			monarch_power = MIL
-			base_monthly_growth = 3
+			base_monthly_growth = 2
 		}
 	}
 	
@@ -69,7 +69,7 @@ cossacks_mechanic = {
 								}
 							}
 						}
-						add_random_development = 1
+						add_random_development = 2
 					}
 				}
 				event_target:source_country = {
@@ -125,7 +125,7 @@ cossacks_mechanic = {
 				create_unit_forcelimit_percentage = {
 					type = cavalry
 					special_unit_category = cossacks
-					force_limit_percentage = 0.15
+					force_limit_percentage = 0.1
 					capped_by_special_force_limit = yes
 				}
 				add_war_exhaustion = -2

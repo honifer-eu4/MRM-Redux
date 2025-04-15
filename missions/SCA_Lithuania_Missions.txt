@@ -907,12 +907,27 @@ lit_dlc_3 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			dagestan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			circassia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
 			add_mil_power = 100
 			add_country_modifier = {
 				name = "tr_ended_tatar_yoke"
 				duration = 7300
+			}
+			central_asia_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -1029,9 +1044,20 @@ lit_dlc_4 = {
 			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = lit_landed_cossack_lords_modifier
-				duration = 7300 
+			add_government_power = {
+				mechanic_type = cossacks_mechanic
+				power_type = cossacks_adm_power
+				value = 100
+			}
+			add_government_power = {
+				mechanic_type = cossacks_mechanic
+				power_type = cossacks_dip_power
+				value = 100
+			}
+			add_government_power = {
+				mechanic_type = cossacks_mechanic
+				power_type = cossacks_mil_power
+				value = 100
 			}
 			add_republican_tradition = 10
 		}
@@ -1129,6 +1155,20 @@ lit_dlc_4 = {
 		}
 		effect = {
 			russia_region = {
+				limit = { 
+					NOT = { owned_by = ROOT } 
+					NOT = { is_core = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			ural_region = {
+				limit = { 
+					NOT = { owned_by = ROOT } 
+					NOT = { is_core = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			west_siberia_region = {
 				limit = { 
 					NOT = { owned_by = ROOT } 
 					NOT = { is_core = ROOT } 
@@ -1253,9 +1293,21 @@ lit_dlc_4 = {
 			owns_core_province = 285
 		}
 		effect = {
-			country_event = { id = flavor_lit.17 }
-			custom_tooltip = redux_lith_tribes_tt
 			crimea_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			dagestan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			circassia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }

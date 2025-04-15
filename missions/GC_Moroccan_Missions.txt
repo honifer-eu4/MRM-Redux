@@ -1376,6 +1376,11 @@ granada_slot_3_missions = {
 		trigger = {
 			ROOT = {
 				OR = {
+					war_with = CAS
+					war_with = SPA
+					war_with = POR
+				}
+				OR = {
 					owns = 2754
 					owns = 219
 				}

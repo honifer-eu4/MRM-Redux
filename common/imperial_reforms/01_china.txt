@@ -274,7 +274,7 @@ reform_the_military_branch_decision = {
 	} 
 	emperor = { 
 		movement_speed = 0.1
-		drill_decay_modifier = -0.25 
+		drill_decay_modifier = -0.15
 	}
 }
 

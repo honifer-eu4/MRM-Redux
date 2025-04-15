@@ -25,11 +25,6 @@ redux_lith_moscow = {
     inflation_reduction = 0.15
 }
 
-redux_lith_rus = {
-    infantry_power = 0.1
-    artillery_power = 0.1
-}
-
 redux_lith_absolutism_mod = {
     max_absolutism_effect = 0.1
     legitimacy = 1

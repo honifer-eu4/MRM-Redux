@@ -17,7 +17,7 @@ swiss_defend_the_confederation = {
 }
 elite_swiss_pikemen = {
 	shock_damage = 0.075
-	drill_decay_modifier = -0.2
+	drill_decay_modifier = -0.15
 }
 swi_mercenary_profits_mod = {
 	global_tax_modifier = 0.15

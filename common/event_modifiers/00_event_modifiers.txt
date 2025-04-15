@@ -5840,7 +5840,7 @@ guru_granth_sahib_spread = {
 
 guru_granth_sahib_military = {
 	drill_gain_modifier = 0.5
-	drill_decay_modifier = -0.25
+	drill_decay_modifier = -0.15
 	religion = yes
 }
 
@@ -9929,13 +9929,13 @@ elite_revolutionary_guard_modifier_country = {
 
 professional_revolutionary_guard_modifier = {
 	is_revolutionary_guard_modifier = yes
-	drill_decay_modifier = -0.25
+	drill_decay_modifier = -0.15
 	land_maintenance_modifier = 0.5
 }
 
 mass_revolutionary_guard_modifier = {
 	is_revolutionary_guard_modifier = yes
-	drill_decay_modifier = 0.5
+	drill_decay_modifier = 0.15
 }
 
 mass_revolutionary_guard_modifier_country = {
@@ -11679,7 +11679,7 @@ estate_maratha_monopoly_of_gems_mod = {
 }
 
 estate_janissary_professional_soldiers_mod = {
-	drill_decay_modifier = -0.25
+	drill_decay_modifier = -0.15
 	reinforce_cost_modifier = -0.1
 	is_janissary_modifier = yes
 }
