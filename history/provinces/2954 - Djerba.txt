@@ -18,8 +18,6 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 extra_cost = 8
-center_of_trade = 1
-
 
 1489.1.1 = { unrest = 4 } # Abu Zikriya Yahya overthrown by Abul Mumin
 1490.1.1 = { unrest = 0 } # Abu Yahya recaptures the power

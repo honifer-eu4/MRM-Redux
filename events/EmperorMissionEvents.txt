@@ -262,118 +262,220 @@ country_event = {
 # Swabian nations join the rising Swabia
 country_event = {
 	id = emp_mission_events.11
-	title = emp_mission_events.11.name
+	title = emp_mission_events.11.t
 	desc = emp_mission_events.11.desc
 	picture = CONQUEST_eventPicture
 	
 	is_triggered_only = yes
 	
-	option = { # join them
-		name = emp_mission_events.11.a
-		
-		from = {
-			hidden_effect = { country_event = { id = emp_mission_events.13 } }
-			tooltip = { inherit = root }
-		}
-		if = {
-			limit = { ai = no }
-			custom_tooltip = full_annexation_tooltip
-		}
-
-		ai_chance = {
-			factor = 1.5
-			modifier = {
-				factor = 0.5
-				NOT = {
-					has_opinion = {
-						who = from
-						value = 100
-					}
-				}
-			}
-			modifier = {
-				factor = 2
-				has_opinion = {
-					who = from
-					value = 150
-				}
-			}
-			modifier = {
-				factor = 2
-				has_opinion = {
-					who = from
-					value = 190
-				}
-			}
-			modifier = {
-				factor = 0.5
-				num_of_cities = 3
-			}
-			modifier = {
-				factor = 0.1
-				num_of_cities = 5
-			}
-		}
+	option = {
+		name = emp_mission_events.11.c
+		vassalize = NUM
+		vassalize = BYT
+		vassalize = BAM
+		vassalize = COB
 	}
-	option = { # do not join them
+	option = { 
 		name = emp_mission_events.11.b
-
-		add_stability = -1
-		from = { country_event = { id = emp_mission_events.12 } }
-		
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_opinion = {
-					who = from
-					value = 120
-				}
-				NOT = {
-					num_of_cities = 5
-				}
-			}
+		67 = {
+			add_territorial_core = ROT
 		}
+		4717 = {
+			add_territorial_core = ROT
+		}
+		66 = {
+			add_territorial_core = ROT
+		}
+		4716 = {
+			add_territorial_core = ROT
+		}		
 	}
 }
 
-# They said no to .11
 country_event = {
-	id = emp_mission_events.12
-	title = emp_mission_events.12.name
-	desc = emp_mission_events.12.desc
+	id = emp_mission_events.70
+	title = emp_mission_events.70.name
+	desc = emp_mission_events.70.desc
+	picture = CONQUEST_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = emp_mission_events.70.a
+		weser_area = {
+			limit = {
+				NOT = { owned_by = root }
+				NOT = { is_permanent_claim = root }
+			}
+			add_permanent_claim = root
+		}
+		lower_saxony_area = {
+			limit = {
+				NOT = { owned_by = root }
+				NOT = { is_permanent_claim = root }
+			}
+			add_permanent_claim = root
+		}
+		northern_saxony_area = {
+			limit = {
+				NOT = { owned_by = root }
+				NOT = { is_permanent_claim = root }
+			}
+			add_permanent_claim = root
+		}
+		south_saxony_area = {
+			limit = {
+				NOT = { owned_by = root }
+				NOT = { is_permanent_claim = root }
+			}
+			add_permanent_claim = root
+		}
+		mecklenburg_area = {
+			limit = {
+				NOT = { owned_by = root }
+				NOT = { is_permanent_claim = root }
+			}
+			add_permanent_claim = root
+		}
+		mittelmark_area = {
+			limit = {
+				NOT = { owned_by = root }
+				NOT = { is_permanent_claim = root }
+			}
+			add_permanent_claim = root
+		}
+		set_country_flag = wes_north_germany
+	}
+	option = { 
+		name = emp_mission_events.70.b
+		alsace_area = {
+			limit = {
+				NOT = { owned_by = root }
+				NOT = { is_permanent_claim = root }
+			}
+			add_permanent_claim = root
+		}
+		upper_rhineland_area = {
+			limit = {
+				NOT = { owned_by = root }
+				NOT = { is_permanent_claim = root }
+			}
+			add_permanent_claim = root
+		}	
+		lower_swabia_area = {
+			limit = {
+				NOT = { owned_by = root }
+				NOT = { is_permanent_claim = root }
+			}
+			add_permanent_claim = root
+		}
+		upper_swabia_area = {
+			limit = {
+				NOT = { owned_by = root }
+				NOT = { is_permanent_claim = root }
+			}
+			add_permanent_claim = root
+		}
+		upper_bavaria_area = {
+			limit = {
+				NOT = { owned_by = root }
+				NOT = { is_permanent_claim = root }
+			}
+			add_permanent_claim = root
+		}
+		lower_bavaria_area = {
+			limit = {
+				NOT = { owned_by = root }
+				NOT = { is_permanent_claim = root }
+			}
+			add_permanent_claim = root
+		}
+		set_country_flag = wes_south_germany		
+	}
+}
+
+country_event = {
+	id = emp_mission_events.71
+	title = emp_mission_events.71.name
+	desc = emp_mission_events.71.desc
 	picture = DIPLOMACY_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = UNFORTUNATE
-		from = {
-			every_owned_province = {
-				limit = {
-					culture = swabian
-				}
-				add_claim = root
+		name = emp_mission_events.71.a
+		67 = {
+			add_permanent_province_modifier = {
+				name = nurnberg_arsenal_1
+			}
+		}
+		83 = {
+			add_province_modifier = {
+				name = rot_arsenal
+				duration = -1
+			}
+		}
+		57 = {
+			add_province_modifier = {
+				name = rot_arsenal
+				duration = -1
+			}
+		}
+	}
+		option = {
+		name = emp_mission_events.71.b
+		67 = {
+			add_permanent_province_modifier = {
+				name = nurnberg_arsenal_2
+			}
+		}
+		83 = {
+			add_province_modifier = {
+				name = rot_arsenal
+				duration = -1
+			}
+		}
+		57 = {
+			add_province_modifier = {
+				name = rot_arsenal
+				duration = -1
 			}
 		}
 	}
 }
 
-# They said yes to .11
 country_event = {
-	id = emp_mission_events.13
-	title = emp_mission_events.13.name
-	desc = emp_mission_events.13.desc
+	id = emp_mission_events.72
+	title = emp_mission_events.72.name
+	desc = emp_mission_events.72.desc
 	picture = DIPLOMACY_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EXCELLENT
-		inherit = from
+		name = emp_mission_events.72.a
+		define_general = {
+			name = "Albert Alcibiades"
+			shock = 4
+			fire = 5
+			manuever = 3
+			siege = 0
+			trait = cannoneer_personality
+		}
+	}
+
+	option = {
+		name = emp_mission_events.72.b
+		define_general = {
+			name = "Götz von Berlichingen"
+			shock = 5
+			fire = 4
+			manuever = 3
+			siege = 0
+			trait = cuirassier_leader_personality
+		}
 	}
 }
-
 
 
 country_event = {
@@ -386,8 +488,8 @@ country_event = {
 	
 	option = {
 		name = OH_NO
-		tooltip = {
-			from = { vassalize = root }
+		FROM = {
+			inherit = ROOT
 		}
 	}
 }

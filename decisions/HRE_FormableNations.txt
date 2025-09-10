@@ -297,14 +297,14 @@ country_decisions = {
 			change_tag = FKN
 			on_change_tag_effect = yes
 			restore_country_name_effect = yes
-			franconia_area = {
+			lorraine_area = {
 				limit = {
 					NOT = { owned_by = root }
 					NOT = { is_permanent_claim = root }
 				}
 				add_permanent_claim = root
 			}
-			upper_franconia_area = {
+			wallonia_area = {
 				limit = {
 					NOT = { owned_by = root }
 					NOT = { is_permanent_claim = root }
@@ -314,6 +314,16 @@ country_decisions = {
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
+			}
+			add_accepted_culture_or_dip_power = {
+				culture = hessian
+				dip_reward = yes
+				free = yes
+			}
+			add_accepted_culture_or_dip_power = {
+				culture = hannoverian
+				dip_reward = yes
+				free = yes
 			}
 			add_prestige = 25
 			set_country_flag = formed_franconia_flag
@@ -929,14 +939,22 @@ country_decisions = {
 					NOT = { primary_culture = hessian }
 					NOT = { accepted_culture = hessian }
 				}
-				add_accepted_culture = hessian
+				add_accepted_culture_or_dip_power = {
+					culture = hessian
+					dip_reward = yes
+					free = yes
+				}			
 			}
 			if = {
 				limit = {
 					NOT = { primary_culture = hannoverian }
 					NOT = { accepted_culture = hannoverian }
 				}
-				add_accepted_culture = hannoverian
+				add_accepted_culture_or_dip_power = {
+					culture = hannoverian
+					dip_reward = yes
+					free = yes
+				}
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"

@@ -912,6 +912,55 @@ efficienct_merchants = {
 	global_trade_power = 0.15
 }
 
+rot_controls_rhine_river = {
+	global_trade_power = 0.05
+}
+
+rot_public_works = {
+	great_project_upgrade_cost = -0.25
+	great_project_upgrade_time = -0.4
+	center_of_trade_upgrade_cost = -0.25
+}
+
+rot_crown_jewel_of_germany = {
+	warscore_cost_vs_other_religion = -0.15
+}
+
+rot_growing_city = {
+	local_build_cost = -0.1
+	local_build_time = -0.15
+	local_development_cost = -0.025
+}
+
+rot_trade_boom = {
+	trade_goods_size_modifier = 0.1
+}
+
+nurnberg_arsenal_1 = {
+	trade_goods_size = 1
+	artillery_power = 0.05
+}
+
+nurnberg_arsenal_2 = {
+	trade_goods_size = 1
+	cavalry_power = 0.05
+}
+
+rot_arsenal = {
+	trade_goods_size_modifier = 0.15
+}
+
+rot_building_a_fleet = {
+	heavy_ship_cost = -0.2
+	galley_cost = -0.2
+	ship_recruit_speed = -0.33
+}
+
+rot_german_fleet = {
+	naval_forcelimit_modifier = 0.15
+	naval_morale_damage = 0.15
+}
+
 local_trade_focus = {
 	global_own_trade_power = 0.05
 	global_foreign_trade_power = -0.05

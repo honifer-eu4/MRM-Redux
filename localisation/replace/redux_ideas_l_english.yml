@@ -50,7 +50,10 @@
  obj_win_religious_war:0 "Power Projection"
  obj_win_religious_war_desc:0 "Power Projection must be at least 75."
  ab_age_of_the_landsknechts:0 "Age of the Landsknechts"
+ ab_transfer_vassal_wargoal:0 "Dynastic Claims"
  ab_extra_colonist:0 "Settling the New World"
+ obj_many_vassals_desc:0 "Have at least four different vassals at the same time."
+
  
  # Governments
  mechanic_new_order_regiment_buff_yes:1 "The §YMobilize New Order Regiments§! interaction grants an additional §G+5.0%§! Infantry Combat Ability!"

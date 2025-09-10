@@ -19,3 +19,10 @@
  redux_destroy_estates_info_title:0 "Destroy the Estates Information"
  redux_destroy_estates_info_desc:0 "Click to see a short event explaining the §Y'Destroy the Estates§! mechanic in this mod."
  redux_qol.2.a:0 "Close"
+
+ #Diplomatic Actions
+ pgl_lift_fog_of_war_title: "Lift Fog of War"
+ pgl_lift_fog_of_war_desc: "Lift the Fog of War on this nation for 5 years, allowing us to see their nation in detail them without committing to an alliance. The AI will never take this decision."
+ pgl_lift_fog_of_war_dialog: "[This.GetName] asks that we lift the fog of war over our nation for them. This would allow them to see our nation in full, and spectate wars."
+ pgl_lift_fog_of_war_tooltip: "Ask that they lift their fog of war."
+ pgl_lift_fog_of_war_alert_tooltip: "Ask that they lift their fog of war for 5 years."

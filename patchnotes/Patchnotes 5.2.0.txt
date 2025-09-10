@@ -1,0 +1,127 @@
+MRM Redux Patch 5.0.0:
+
+############# General/Bugfixes ###############
+
+Bukhara's dev cost mission now appears as intended
+Counter-Reformation and Council of Trent should now always happen around 1550
+Tunis's religion mods now give tolerance as intended instead of max tolerance
+Maderia sugar cane is now a permanent province modifier 
+Colonial nations can't do destroy estates
+Morocco now has 10 HCA as intended and can take their salt mine mission before defeating Portugal
+Ingerland can no longer spam gold in all of Mexico and Southern US, thanks Lorb
+Removed Great Greek Revolt
+
+################## Ages ######################
+
+AI can no longer golden era
+
+Age of Discovery:
+    The former transfer subjects ability now allows for claim fabrication with no additional cost instead of 50% cheaper transfer of subjects in peace deals 
+    Feudal Society objective now requires 4 subjects instead of 5
+
+
+############# Country-specific ###############
+Turks:
+    Temporarily removed Greek Revolt
+    
+Hungary:
+    Added fort to Pest
+
+Sweden:
+    Added fort to Stockholm
+
+Hormuz:
+    Added fort to Hormuz
+
+France:
+    Moved fort from Chatres to Paris
+    Added starting perma claims on Brittany 
+
+England: 
+    Added fort to Cornwall
+    Added claims to Brittany in opening mission
+
+Morocco:
+    Rearranged some Andalusia mods and missions
+    Added -0.25 IPA to their recovery mission
+    Decision to reduce travel time between Morocco and Sub-Saharan Africa
+
+Rothenburg:
+    Minor idea changes for Roth and its formables, plus some playing around with mission reward modifiers
+
+Tunis: 
+    Now starts with Sirte in 1444
+    New Italian formable and unique gov type with the harem attribute + a few QoL missions including a mirrored Calabrian silk mission for Sicily and some development after conquering Berbers
+
+Uzbek:
+    Temporarily removed Timurid decision
+    Added some new mission rewards for conquering Persia, Russia, and Ruthenia
+    Added fort to capital
+
+Austria: 
+    Reworked claims on a mission and lowered dev requirement for Viennese Waltz
+
+Burgundy:
+    Conquer Liege no longer requires Aachen
+
+Portugal and Spain: 
+    Artillery fire in ideas reduced to 0.5, Spain can gain an additional 0.25 through conquering Naples
+    Spain no longer has access to Holy Orders at game start, they can get them by defeating Morocco or waiting until 1550
+
+Italian nations: 
+    Naples now starts with all of Sicily, Venice starts with Cyprus as a vassal, Sardinia now owns Corsica, and Milan starts with a core on Lucca
+    Claim missions reworked, as well as additional missions added/reworked for conquering land outside of Italy
+    Each Italian can get a unique cav merc company upon completing one of their external expansion routes
+    Some other minor changes to their missions trees such as Milan getting a 50% of mil advisor and Naples getting a cc mission
+    Minor tweaks to the ideas of Naples and her formables and Venice 
+
+################# Estates ####################
+
+
+################ Mechanics ###################
+
+Defines:
+    Reduced supply depot cost to 5 mil instead of 20
+
+Trade:
+    Northern Mediterranean: 
+        Combines Venice and Genoa into one trade node without the Provence state
+        The Pisa, Rijeka, and Lucca trade centers have been removed with one more being added in Torino
+    
+    Southern Mediterranean:
+        This is now an end node, it receives incoming trade from Alexandra, Sevilla, Valencia, and Katsina
+        Malta TC moved to Messina
+
+    Bordeaux: 
+        Gained the Provence state
+
+    Champagne:
+        Added a trade center in Namur
+
+    Rhineland:
+        Removed the trade center in Mainz, added one in Rothenburg and Hanover
+
+Map: 
+    Changes to African cultures to reduce the rebel spam, Katsina added to the Solus Europa bookmark to compensate Tunis for Naples gaining Sicily
+    Removed some vanilla autonomy modifiers from Berber provinces, added 3 dev to Fezzan
+    Cyprus now starts with the Famagusta province modifier
+    Reworked fort placement in Tunis and Naples to account for map changes
+    Messina trade good changed to wine
+    Added strait crossing between Cornwall and Penn-ar-Bed
+    Cornwall is now a hills title (instead of coastline)
+    Kent is now a march tile (instead of farmlands)
+    Sirte is now a coastal desert tile (instead of desert)
+    Oxford is now a farmlands tile (instead of grasslands)
+    Coastline is now +0.1 devcost instead of +0.15
+
+General:
+    Minor buffs to Milan and Naple's province monuments
+    Idea groups now unlocked at adm tech: 5, 7, 10, 13, 16, 19, 22, 25
+
+################ Religions ###################
+
+############### Idea groups ##################
+
+Court/Offensive policy now gives -0.15 MDR instead of 0.15 MD
+
+################# Colonies ###################

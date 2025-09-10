@@ -24,6 +24,15 @@ wes_reformed_government = {
     republican_tradition = 1
 }
 
+wes_german_forests = {
+    infantry_power = 0.05
+}
+
+wes_mountain_fortresses = {
+    siege_ability = 0.2
+    land_attrition = -0.15
+}
+
 redux_ger_fkn_mod = {
     infantry_power = -0.25 
     cavalry_power = 0.25

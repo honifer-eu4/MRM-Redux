@@ -13906,7 +13906,7 @@ WES_ideas = {
 	wes_jewish_rights = {
 		idea_cost = -0.1
 	}
-	wes_forges_of_nuremburg = {
+	wes_artillery_primacy = {
 		artillery_power = 0.15
 		artillery_cost = -0.15
 	}
@@ -13920,8 +13920,8 @@ WES_ideas = {
 	wes_westphalian_decentralisation  = {
 		build_cost = -0.1
 	}
-	wes_enlightenment = {
-		fire_damage = 0.2
+	wes_forges_of_nuremburg = {
+		fire_damage = 0.15
 	}
 	wes_cities_of_the_rhineland = {
 		trade_efficiency = 0.1

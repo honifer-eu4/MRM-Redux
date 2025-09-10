@@ -1,7 +1,7 @@
 #125 - Palermo
 
-owner = NAP
-controller = NAP
+owner = TUN
+controller = TUN
 culture = sicilian 
 religion = catholic 
 hre = no 
@@ -13,6 +13,7 @@ capital = "Palermo"
 is_city = yes
 add_core = SIC
 add_core = NAP
+add_core = TUN
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

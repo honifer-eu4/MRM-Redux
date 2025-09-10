@@ -1145,7 +1145,7 @@ granada_development_missions = {
 				owns_core_province = 4547
 				owns_core_province = 221
 				owns_core_province = 222
-				owns_core_province = 4450
+				owns_core_province = 4550
 				218 = {
 					has_manufactory_trigger = yes
 				}
@@ -1167,7 +1167,7 @@ granada_development_missions = {
 				222 = {
 					has_manufactory_trigger = yes
 				}
-				4450 = {
+				4550 = {
 					has_manufactory_trigger = yes
 				}
 			}

@@ -185,9 +185,7 @@ merc_hessian_jaegerkorps_2 = {
 		has_country_flag = redux_FKN_jaegerkorps
 	}
 	modifier = {
-		fire_damage_received = -0.1
-		shock_damage_received = -0.1
-		discipline = 0.025
+		cavalry_fire = 0.25
 	}
 }
 
