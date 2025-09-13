@@ -1,4 +1,4 @@
-MRM Redux Patch 5.0.0:
+MRM Redux Patch 5.2.0:
 
 ############# General/Bugfixes ###############
 
@@ -28,6 +28,7 @@ Naples/Tunis:
 
 ################ Mechanics ###################
 
+Added a remove FoW button
 
 ################ Religions ###################
 
