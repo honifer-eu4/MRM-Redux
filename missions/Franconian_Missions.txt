@@ -780,7 +780,7 @@ franconia_splendour_group = {
 		}
 	}
 
-	wes_rheinland_start = {
+	rot_rheinland_start = {
 		icon = dominant_economy
 		position = 3
 		
@@ -808,9 +808,9 @@ franconia_splendour_group = {
 		}
 	}
 	
-	wes_rheinland_end = {
+	rot_rheinland_end = {
 		icon = mission_se_along_the_river
-		required_missions = { wes_rheinland_start }
+		required_missions = { rot_rheinland_start }
 		
 		provinces_to_highlight = {
 
@@ -1342,9 +1342,9 @@ franconia_splendour_group_3 = {
 			4715 = {
 				owned_by = ROOT
 				is_core = ROOT 
-				development = 50
+				development = 40
 				num_of_buildings_in_province = 10
-				num_of_times_expanded_infrastructure = 3
+				num_of_times_expanded_infrastructure = 2
 			}
 		}
 		effect = {
@@ -1438,6 +1438,27 @@ franconia_splendour_group_4 = {
 					name = rot_trade_boom
 					duration = 3650
 				}
+			}
+			hidden_effect = { 
+				every_owned_province = { 
+					limit = { 
+						has_production_building_trigger = yes 
+						base_production = 8
+						OR = {
+							trade_goods = cloth
+							trade_goods = paper
+							trade_goods = glass
+						}					
+					}
+					add_province_modifier = {
+						name = rot_growing_city
+						duration = -1
+					}
+					add_province_modifier = {
+						name = rot_trade_boom
+						duration = 3650
+					}
+				}					
 			}
 		}
 	}

@@ -336,8 +336,10 @@
  wes_hre_peace_locked_desc:0 "As religious warfare ravages its way through Europe, the need for a truce begins to increase. The talks in Westphalia will determine the future of the Holy Roman Empire and the entire Christian world."
  wes_hre_peace_unlocked_title:0 "Peace of Westphalia"
  wes_hre_peace_unlocked_desc:0 "As religious warfare ravages its way through Europe, the need for a truce begins to increase. The talks in Westphalia will determine the future of the Holy Roman Empire and the entire Christian world."
- wes_rheinland_start_title:0 "Rhenish Trade Supremacy"
- wes_rheinland_start_desc:0 "The concept of a nation unfortunately does not exist amongst the Rhenish people, although they would be a great asset to the realm. Perhaps by proving ourselves the dominant trade power in the Rhineland, we may create some sense of bond between the Rhenish people and our own."
+ rot_rheinland_start_title:0 "Rhenish Trade Supremacy"
+ rot_rheinland_start_desc:0 "The concept of a nation unfortunately does not exist amongst the Rhenish people, although they would be a great asset to the realm. Perhaps by proving ourselves the dominant trade power in the Rhineland, we may create some sense of bond between the Rhenish people and our own."
+ rot_rheinland_end_title:0 "Dominate the Rhine"
+ rot_rheinland_end_desc:0 "With the trade in the Rhineland truly in our iron grasp, none can deny our divine sovereignty over the region."
 
  rot_beautification_of_the_realm_title:0 "Beautification of the Realm"
  rot_beautification_of_the_realm_desc:0 "With full coffers and a stable realm we have begun to attract many great artists and architects, perhaps we can use this windfall to begin a number of public works projects to improve our realm and prestige."
