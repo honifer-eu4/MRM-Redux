@@ -18,6 +18,10 @@
  desc_shy_conquest_of_tibet:0 "Tibet has been brought under the rule of our empire."
  shy_siberian_frontier_mod:0 "Siberian Frontier"
  desc_shy_siberian_frontier_desc:0 "With the Russians safely removed as a threat, we are now focusing on colonizing the wastelands of Siberia."
+ shy_humbled_muscovy:0 "Humbled Muscovy"
+ shy_humbled_muscovy_desc:0 ""
+ shy_rule_ruthenia:0 "Rule Ruthenia"
+ shy_rule_ruthenia_desc:0 ""
 
  #Events
  
