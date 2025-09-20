@@ -1022,6 +1022,8 @@ estate_nobles_strong_duchies = {
 						is_subject_of_type = personal_union
 						is_subject_of_type = incorporated_vassal
 						is_subject_of_type = integrated_personal_union
+						is_subject_of_type = eyalet
+						is_subject_of_type = core_eyalet
 					}
 				}
 			}
