@@ -4000,19 +4000,6 @@ on_capital_moved_effect = {
 			}
 		}
     }
-	if = {
-		limit = { 
-			owner = { has_reform = great_mongol_state_reform }
-		}
-		FROM = { remove_province_modifier = allow_banners_capital_modifier }
-		ROOT = {
-			add_province_modifier = {
-				name = allow_banners_capital_modifier
-				duration = -1
-				hidden = yes
-			}
-		}
-	}
 }
 
 on_government_change_effect = {
