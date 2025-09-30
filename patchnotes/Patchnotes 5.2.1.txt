@@ -39,6 +39,7 @@ Portugal:
 Austria:
     Greater Austria formable reworked, Austria is now also able to form Germany but loses the Greater Austria reform
     Mission rewards reworked for conquering Prussia/BB, Franconia, and Burgundy
+    Viennese Waltz only requires 40 dev and now gives 10% noble loyalty (was 50 dev and 5%0
 
 Tunis:
     Nerfed mission for conquering Sicily from 400 to 100 adm
@@ -49,6 +50,9 @@ Bukhara:
 Afghanistan:
     Now receives perma claims on all of Hindustan, Khorosan, and Western India since they have no missions
 
+Poland:
+    Made it so refusing Niezawa priv is actually feasible 
+    
 ################# Estates ####################
 
 ################ Mechanics ###################

@@ -47,10 +47,10 @@ poland_sca_slot_1 = { #Made by William 'Big Boss' S.
 						NOT = { 
 							num_of_estate_privileges = {
 								estate = estate_nobles 
-								value = 2
+								value = 4
 							}
 						}
-						crown_land_share = 50
+						crown_land_share = 30
 					}
 				}
 			}

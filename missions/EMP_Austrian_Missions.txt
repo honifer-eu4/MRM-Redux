@@ -97,7 +97,7 @@ emp_hab_prestige_branch = {
 			OR = {
 				134 = {
 					owned_by = root
-					development = 50
+					development = 40
 					num_of_buildings_in_province = 6
 				}
 				AND = {
