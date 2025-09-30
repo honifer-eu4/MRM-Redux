@@ -63,6 +63,18 @@ country_decisions = {
             bay_of_bengal_area = {
                 discover_country = ROOT
             }
+                        hindusthan_region = {
+                limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = ROOT
+            }
+            west_india_region = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = ROOT
+            }
+            khorasan_region = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = ROOT
+            }
             set_capital = 451 
             define_ruler = {
                 name = "Shah I Shahnah"

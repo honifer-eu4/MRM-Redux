@@ -2327,7 +2327,7 @@ austrian_dual_monarchy = {
 
 habsburg_empire = {
 	icon = "austrian_dual_monarchy_reform"
-	allow_normal_conversion = yes
+	allow_normal_conversion = no
 	potential = {
 		is_revolutionary = no
 		tag = HAB
@@ -2342,9 +2342,6 @@ habsburg_empire = {
 		global_autonomy = -0.05
 	}
 	fixed_rank = 3
-	custom_attributes = {
-		ai = no
-	}
 }
 
 principality = {

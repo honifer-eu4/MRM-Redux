@@ -100,16 +100,6 @@ country_event = {
     major = yes
 
     option = {
-        name = "hab_mission_events.EVTOPTA16"
-        ai_chance = {
-            factor = 0
-        }
-        set_country_flag = habsburg_empire_proclaimed
-        add_government_reform = habsburg_empire
-        override_country_name = HAB_Greater
-    }
-
-    option = {
         name = "hab_mission_events.EVTOPTB16"
         ai_chance = {
             factor = 100

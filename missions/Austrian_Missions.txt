@@ -417,7 +417,7 @@ hab_north_german_expansion = {
 		effect = {
 			add_country_modifier = {
 				name = hab_owns_prussia
-				duration = -1
+				duration = 3650
 			}
 		}
 	}
@@ -709,6 +709,9 @@ hab_protect_the_balkans = {
 			}
 		}
 		trigger = {
+			NOT = {
+				has_country_flag = habsburg_empire_proclaimed
+			}
 			slovakia_area = {
 				type = all
 				owned_by = root
@@ -749,7 +752,6 @@ hab_protect_the_balkans = {
 			country_event = {
 				id = hab_mission_events.16
 			}
-			custom_tooltip = hab_form_ahu_tooltip
 		}
 	}
 }

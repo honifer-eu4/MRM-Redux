@@ -760,7 +760,7 @@ gc_tunis_3 = {
 				duration = 7300
 			}
 			add_treasury = 300
-			add_adm_power = 400
+			add_adm_power = 100
 			calabria_area = {
 				limit = {
 					NOT = { is_core = ROOT }

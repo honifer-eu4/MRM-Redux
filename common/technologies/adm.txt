@@ -239,6 +239,7 @@ technology = { #National Sovereignty
 	expects_institution = {
 		feudalism = 0.5
 	}
+	cathedral = yes
 }
 
 technology = { #Cathedral
@@ -249,7 +250,7 @@ technology = { #Cathedral
 	}
 	
 	#Cathedral
-	cathedral = yes
+	furnace = yes
 	administrative_efficiency = 0.1
 	allowed_idea_groups = 6
 }
@@ -260,7 +261,7 @@ technology = { #Absolute Rulership
 	expects_institution = {
 		feudalism = 0.5
 	}
-	
+	town_hall = yes
 	republican_dictatorship = yes
 	governing_capacity = 250
 }
@@ -273,8 +274,8 @@ technology = { #Land Clearance
 	}
 	
 	#Land Clearance
+	administrative_efficiency = 0.1
 	production_efficiency 	=	0.02
-	furnace = yes
 }
 
 technology = { #The Constitution
@@ -287,7 +288,6 @@ technology = { #The Constitution
 	constitutional_monarchy = yes
 	constitutional_republic = yes  
 
-	town_hall = yes
 	allowed_idea_groups	= 7
 }
 
@@ -308,7 +308,6 @@ technology = { #Bonds and Tontines
 	expects_institution = {
 		feudalism = 0.5
 	}
-	
 	counting_house = yes  
 	governing_capacity = 250
 }
@@ -321,6 +320,7 @@ technology = { #Improved Production
 	}
 	
 	#Improved Farm Animals
+	administrative_efficiency = 0.1
 	production_efficiency 	=	0.02
 	allowed_idea_groups = 8
 }
@@ -331,8 +331,7 @@ technology = { #Separation of Powers
 	expects_institution = {
 		feudalism = 0.5
 	}
-	
-	administrative_efficiency = 0.1
+	development_cost_modifier = -0.1	
 }
 
 technology = { #Modern Bureaucracy
@@ -342,8 +341,6 @@ technology = { #Modern Bureaucracy
 		feudalism = 0.5
 	}
 
-	administrative_efficiency = 0.1
-	development_cost_modifier = -0.1	
 	governing_capacity = 250
 }
 

@@ -137,7 +137,7 @@
  # Germany
 
  redux_formableInfoEvents.11.title:0 "Germany Formable Information"
- redux_formableInfoEvents.11.desc:0 "@GER Germany is formable through the decision §GForm German Nation§!.\n\nNational Ideas:\n Traditions: §G+25%§! Infantry Combat Ability and §G+1§! Yearly Legitimacy\n §G+25%§! National Manpower Modifier\n §G-10%§! Technology Cost\n §G+5%§! Discipline\n §G+10%§! Trade Efficiency\n §G+0.5§! Yearly Army Tradition\n §G+5%§! Administrative Efficiency\n §G+20%§! Goods Produced Modifier\n Ambition: §G+33%§! Land Force Limit Modifier\n\nOther Formables: No. Germany is an end-game tag. \n\nMissions: Forming Germany §Greplaces§! the mission tree. \n\nOther Notable Information: If formed by @FKN Franconia, Germany will gain access to a decision that replaces the Infantry Combat Ability in their ideas with Cavalry Combat Ability."
+ redux_formableInfoEvents.11.desc:0 "@GER Germany is formable through the decision §GForm German Nation§!.\n\nNational Ideas:\n Traditions: §G+25%§! Infantry Combat Ability and §G+1§! Yearly Legitimacy\n §G+25%§! National Manpower Modifier\n §G-10%§! Technology Cost\n §G+5%§! Discipline\n §G+10%§! Trade Efficiency\n §G+0.5§! Yearly Army Tradition\n §G+5%§! Administrative Efficiency\n §G+20%§! Goods Produced Modifier\n Ambition: §G+33%§! Land Force Limit Modifier and §G-10%§! Fire Damage Receieved\n\nOther Formables: No. Germany is an end-game tag. \n\nMissions: Forming Germany §Greplaces§! the mission tree. \n\nOther Notable Information: If formed by @FKN Franconia, Germany will gain access to a decision that replaces the Infantry Combat Ability in their ideas with Cavalry Combat Ability."
  redux_formableInfoEvents.11.back:0 "Back"
  redux_formableInfoEvents.11.exit:0 "Close"
 
@@ -168,7 +168,7 @@
 # Greater Austria
 
  redux_formableInfoEvents.15.title:0 "Greater Austrian Formable Information"
- redux_formableInfoEvents.15.desc:0 "@HAB Greater Austria is formable through the mission §GUnite the Crowns§!. \n\nNational Ideas: Greater Austria does not change ideas and keeps Austria's.\n\nOther Formables: No. Greater Austria is an end-game tag.\n\nMissions: Forming Greater Austria §Rdoes not change§! the mission tree.\n\nOther Notable Information: Forming Greater Austria unlocks a Tier 1 government reform, granting the following modifiers:\n §G+5%§! Administrative Efficiency\n §G+15%§! Infantry Combat Ability\n §G+15%§! Manpower Recovery Speed\n §G-25%§! Culture Conversion Cost\n §G-0.05§! Monthly Autonomy Change\n §G+25%§! Governing Capacity Modifier"
+ redux_formableInfoEvents.15.desc:0 "@HAB Greater Austria is formable through the mission §GUnite the Crowns§!. \n\nNational Ideas: Greater Austria does not change ideas and keeps Austria's.\n\nOther Formables: Yes. Franconia is not an end-game tag and can form @GER Germany.\n\nMissions: Forming Greater Austria §Rdoes not change§! the mission tree.\n\nOther Notable Information: Forming Greater Austria unlocks a Tier 1 government reform, granting the following modifiers:\n §G+5%§! Administrative Efficiency\n §G+15%§! Infantry Combat Ability\n §G+15%§! Manpower Recovery Speed\n §G-25%§! Culture Conversion Cost\n §G-0.05§! Monthly Autonomy Change\n §G+25%§! Governing Capacity Modifier"
  redux_formableInfoEvents.15.back:0 "Back"
  redux_formableInfoEvents.15.exit:0 "Close"
 
@@ -182,7 +182,7 @@
 # Franconia
  
  redux_formableInfoEvents.17.title:0 "Franconia Formable Information"
- redux_formableInfoEvents.17.desc:0 "@FKN Franconia is formable through the decision §GForm Franconia§!.\n\nNational Ideas:\n Traditions: §G+10%§! Morale of Armies and §G-10%§! Core Creation Cost\n §G+25%§! Cavalry Combat Ability\n §G+20%§! Fort Defense and §G+20%§! Garrison Size\n  §G+10%§! Movement Speed\n §G+10%§! Goods Produced\n §G-10%§! Advisor Costs and §G+10%§! Nobility Loyalty Equilibrium\n §G+0.25§! Cavalry Fire\n §G+15%§! Governing Capacity and §G-15%§! Overextension Impact\n Ambition: §G+1§! Land Leader Siege\n\nOther Formables: Yes. Franconia is not an end-game tag and can form @GER Germany. \n\nMissions: Forming Franconia §Gextends§! the mission tree. \n\nOther Notable Information: Notable Missions include missions for conquering France that grant §G+5%§! Discipline, §G+5%§! Morale of Armies, and §G+0.25§! Cavalry Fire. Franconia also has the Franconian Elective Monarchy government type that gives §G+1§! Yearly Army Tradition, §G+10%§! Nobility Loyalty Equilibrium, §Y+5%§! Nobility Influence, and §G+1§! Nobility Max Privileges as well as the elective monarchy mechanic which gives better rulers than a normal monarchy."
+ redux_formableInfoEvents.17.desc:0 "@FKN Franconia is formable through the decision §GForm Franconia§!.\n\nNational Ideas:\n Traditions: §G+10%§! Morale of Armies and §G-10%§! Core Creation Cost\n §G+25%§! Cavalry Combat Ability\n §G+20%§! Fort Defense and §G+20%§! Garrison Size\n  §G+10%§! Movement Speed\n §G+15%§! Goods Produced\n §G-10%§! Advisor Costs and §G+10%§! Nobility Loyalty Equilibrium\n §G+0.25§! Cavalry Fire\n §G+15%§! Governing Capacity and §G-15%§! Overextension Impact\n Ambition: §G+1§! Land Leader Fire\n\nOther Formables: Yes. Franconia is not an end-game tag and can form @GER Germany. \n\nMissions: Forming Franconia §Gextends§! the mission tree. \n\nOther Notable Information: Notable Missions include missions for conquering France that grant §G+5%§! Discipline, §G+10%§! Morale of Armies, and §G+0.25§! Cavalry Fire. Franconia also has the Franconian Elective Monarchy government type that gives §G+1§! Yearly Army Tradition, §G+10%§! Nobility Loyalty Equilibrium, §Y+5%§! Nobility Influence, and §G+1§! Nobility Max Privileges as well as the elective monarchy mechanic which gives better rulers than a normal monarchy."
  redux_formableInfoEvents.17.back:0 "Back"
  redux_formableInfoEvents.17.exit:0 "Close"
  redux_formableInfoEvents.17.ger:0 "Germany"
@@ -190,7 +190,7 @@
 # Westphalia
  
  redux_formableInfoEvents.18.title:0 "Westphalia Formable Information"
- redux_formableInfoEvents.18.desc:0 "@WES Westphalia is formable through the decision §GForm Westphalia§!.\n\nNational Ideas:\n Traditions: §G+20%§! Land Force Limit and §G+20%§! Reform Progress Growth\n §G-10%§! Idea Cost\n §G+15%§! Artillery Combat Ability and §G-15%§! Artillery Cost\n §G+20%§! National Manpower Modifier\n §G+1§! Max Promoted Culture and §G-25%§! Cost of Advisors with Ruler's Culture\n §G-10%§! Construction Cost\n §G+20%§! Land Fire Damage\n §G+10%§! Trade Efficiency\n Ambition: §G+5%§! Discipline\n\nOther Formables: Yes. Westphalia is not an end-game tag and can form @GER Germany. \n\nMissions: Forming Westphalia §Greplaces§! the mission tree. \n\nOther Notable Information: Notable Missions include a mission that grants §G-10%§! Development Cost."
+ redux_formableInfoEvents.18.desc:0 "@WES Westphalia is formable through the decision §GForm Westphalia§!.\n\nNational Ideas:\n Traditions: §G+20%§! Land Force Limit and §G+20%§! Reform Progress Growth\n §G-10%§! Idea Cost\n §G+15%§! Artillery Combat Ability and §G-15%§! Artillery Cost\n §G+20%§! National Manpower Modifier\n §G+1§! Max Promoted Culture and §G-25%§! Cost of Advisors with Ruler's Culture\n §G-10%§! Construction Cost\n §G+20%§! Land Fire Damage\n §G+15%§! Trade Efficiency\n Ambition: §G+5%§! Discipline\n\nOther Formables: Yes. Westphalia is not an end-game tag and can form @GER Germany. \n\nMissions: Forming Westphalia §Greplaces§! the mission tree. \n\nOther Notable Information: Notable Missions include a mission that grants §G-10%§! Development Cost."
  redux_formableInfoEvents.18.back:0 "Back"
  redux_formableInfoEvents.18.exit:0 "Close"
  redux_formableInfoEvents.18.ger:0 "Germany"
@@ -298,7 +298,7 @@
 # Mughals 
 
  redux_formableInfoEvents.33.title:0 "Mughals Formable Information"
- redux_formableInfoEvents.33.desc:0 "@MUG Mughals is formable through the decision §GForm Mughal Empire§!.\n\nNational Ideas:\n Traditions: §G+30%§! Cavalry Combat Ability and §G-25%§! Core Creation Cost\n §G+5%§! Discipline\n §G-1§! National Unrest and §G+15%§! National Manpower Modifier\n §G-10%§! Idea Cost\n §G+1§! Military Free Policies\n §G+15%§! Governing Capacity Modifier\n §G+1§! Yearly Prestige\n §G+10%§! Artillery Combat Ability\n Ambition: §G-10%§! Technology Cost\n\nOther Formables: No. Mughals is an end-game tag.\n\nMissions: Forming Mughals §Greplaces§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.33.desc:0 "@MUG Mughals is formable through the decision §GForm Mughal Empire§!.\n\nNational Ideas:\n Traditions: §G+20%§! Cavalry Combat Ability and §G-15%§! Core Creation Cost\n §G+5%§! Discipline\n §G-1§! National Unrest and §G+15%§! National Manpower Modifier\n §G-5%§! Idea Cost\n §G+1§! Military Free Policies\n §G+15%§! Governing Capacity Modifier\n §G+1§! Yearly Prestige\n §G+10%§! Artillery Combat Ability\n Ambition: §G-10%§! Technology Cost\n\nOther Formables: No. Mughals is an end-game tag.\n\nMissions: Forming Mughals §Greplaces§! the mission tree. \n\nOther Notable Information:"
  redux_formableInfoEvents.33.back:0 "Back"
  redux_formableInfoEvents.33.exit:0 "Close" 
 
@@ -320,7 +320,7 @@
 # Rajputana 
 
  redux_formableInfoEvents.36.title:0 "Rajputana Formable Information"
- redux_formableInfoEvents.36.desc:0 "@RJP Rajputana is formable through the decision §GUnite the Rajputs§!.\n\nNational Ideas:\n Traditions: §G+10%§! Morale of Armies and §G+1§! Military Free Policy\n §G-15%§! Core Creation Cost\n §G+15%§! National Manpower Modifier\n §G+15%§! Cavalry Combat Ability and §G+10%§! Movement Speed\n §G+10%§! Land Fire Damage\n §G+2§! Tolerance of the True Faith\n §G+10%§! Artillery Combat Ability\n §G+1§! Yearly Legitimacy\n Ambition: §G+5%§! Discipline\n\nOther Formables: Yes. Rajputana is not an end-game tag and can form @HIN Hindustan.\n\nMissions: Forming Rajputana §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
+ redux_formableInfoEvents.36.desc:0 "@RJP Rajputana is formable through the decision §GUnite the Rajputs§!.\n\nNational Ideas:\n Traditions: §G+10%§! Morale of Armies and §G+1§! Military Free Policy\n §G-15%§! Core Creation Cost\n §G+15%§! National Manpower Modifier\n §G+15%§! Infantry Combat Ability and §G+10%§! Movement Speed\n §G+10%§! Land Fire Damage\n §G+2§! Tolerance of the True Faith\n §G+10%§! Artillery Combat Ability\n §G+1§! Yearly Legitimacy\n Ambition: §G+5%§! Discipline\n\nOther Formables: Yes. Rajputana is not an end-game tag and can form @HIN Hindustan.\n\nMissions: Forming Rajputana §Rdoes not change§! the mission tree. \n\nOther Notable Information:"
  redux_formableInfoEvents.36.hin:0 "Hindustan"
  redux_formableInfoEvents.36.back:0 "Back"
  redux_formableInfoEvents.36.exit:0 "Close" 

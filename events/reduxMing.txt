@@ -83,11 +83,6 @@ country_event = {
             cede_province = AFG
             add_local_autonomy = -100
         }
-        makran_area = {
-            add_core = BAL
-            cede_province = BAL
-            add_local_autonomy = -100
-        }
         northern_sindh_area = {
             add_core = SND
             cede_province = SND

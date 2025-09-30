@@ -1356,7 +1356,7 @@ estate_jains_MUG_gujarati_trade = {
 	influence_scaled_conditional_modifier = {
 		trigger = { always = yes }
 		modifier = {
-			trade_efficiency = 0.15
+			trade_efficiency = 0.1
 		}
 	}
 	ai_will_do = {

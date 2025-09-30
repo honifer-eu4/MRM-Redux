@@ -91,11 +91,11 @@ hab_germany_united = {
 }
 
 hab_vienna_ballrooms = {
-	nobles_loyalty_modifier = 0.05
+	nobles_loyalty_modifier = 0.1
 }
 
 hab_conquered_burgundy = {
-	army_tradition_from_battle = 0.25
+	governing_capacity = 250
 }
 
 hab_defeated_swiss = {
@@ -107,11 +107,12 @@ hab_defeated_denmark = {
 }
 
 hab_defeated_franconia = {
-	build_time = -0.05
+	build_time = -0.15
+	build_cost = -0.1
 }
 
 hab_owns_prussia = {
-	army_tradition = 0.5
+	infantry_power = 0.1
 }
 
 hab_bavarian_beer = {

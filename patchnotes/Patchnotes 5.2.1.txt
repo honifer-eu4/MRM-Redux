@@ -1,0 +1,89 @@
+MRM Redux Patch 5.2.1:
+
+Includes mid-game patches
+
+############# General/Bugfixes ###############
+
+Fixed any issues or oversights with Roth mission tree
+Removed Dhimmi from Bukhara and fixed their dev cost mission 
+Halved land maintenance cost reduction on sustained discipline (-15% to -7.5%)
+Fixed Mongol formable getting banners (Moorish cav in mod)
+Changed all naval buildings (besides impressment offices) to give +1 possible buildings
+Changed impressment offices to give base manpower and much more sailors
+Made it so Eyalets count towards nobility vassal privs
+Gutted Indian mission trees 
+Removed more Siberian land and made it for both bookmarks
+Afghan and Sistan are no longer spawned in at game start for respawn purposes
+No longer able to form Timurids, enthrone Timurid prince is just a larp/monarch reroll button now
+
+################## Ages ######################
+
+############# Country-specific ###############
+Roth/Westphalia/Franconia:
+    Changed land leader siege to land leader shock in Franconia's national ideas
+    Added an additional 5% goods produced to Franconia's national ideas
+
+Mughals:
+    Nerfed nobility cav cost priv from max -50% cost reduction to -15%
+    Nerfed national ideas: 
+        30% CCA to 20%
+        -10% idea cost to -5%
+        -25% CCC to -15%
+
+Rajputana
+    Changed CCA to ICA in national ideas
+
+Portugal:
+    Lost 5% (20%-15%) ICA and -7.5% (-15%-7.5%) CC in national ideas 
+
+Austria:
+    Greater Austria formable reworked, Austria is now also able to form Germany but loses the Greater Austria reform
+    Mission rewards reworked for conquering Prussia/BB, Franconia, and Burgundy
+
+Tunis:
+    Nerfed mission for conquering Sicily from 400 to 100 adm
+
+Bukhara:
+    Tweaked Bukhara's Western expansion missions to be more challenging, but better formatted and with additional claims
+
+Afghanistan:
+    Now receives perma claims on all of Hindustan, Khorosan, and Western India since they have no missions
+
+################# Estates ####################
+
+################ Mechanics ###################
+
+################ Religions ###################
+
+################ Technology ##################
+
+Administrative:
+    Changed unlock times of mid-late game buildings to be earlier and more regular intervals
+    Changed admin efficiency to more regular and earlier intervals
+    Changed dev efficiency from tech 27 to tech 26
+
+Diplomatic
+    Changed unlock times of mid-late game buildings to be earlier and more regular intervals
+    Changed max accepted cultures to more regular and earlier intervals
+
+Military
+    Changed unlock times of mid-late game buildings to be earlier and more regular intervals
+    Added "French Gendarmes", Western cav unit for tech 6 with the same number of pips as equivalent Eastern cav (moved an offensive shock to offensive morale)
+
+############### Idea groups ##################
+
+Influence ideas:
+    Added 5% more vassal force limit contribution for land and naval fl
+
+Innovative ideas:
+    Added -10% idea cost as the finisher
+    Advisor cost moved to middle of the groups
+    Added one possible policy
+    Buffed reform progress by 10% (to 20%)
+
+Humanist ideas:
+    Buffed reform progress from 10% (to 30%)
+    Added -50% promote culture cost 
+    Added 10% manpower in accepted cultures
+
+################# Colonies ###################

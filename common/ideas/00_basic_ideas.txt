@@ -293,7 +293,7 @@ innovativeness_ideas = {
 	category = ADM
 
 	bonus = {
-		advisor_cost = -0.2
+		idea_cost = -0.1
 	}
 
 	patron_of_art  = {
@@ -309,16 +309,18 @@ innovativeness_ideas = {
 	}
 	dynamic_court = {
 		advisor_pool = 1
-		reform_progress_growth = 0.1
+		advisor_cost = -0.2
 	}
 	print_culture = {
 		global_institution_spread = 0.25
+		reform_progress_growth = 0.2
 	}
 	optimism = {
 		monthly_splendor = 2
 	}
 	expanded_policies = {
 		free_policy = 1
+		possible_policy = 1
 	}
 
 	ai_will_do = {
@@ -1524,7 +1526,7 @@ humanist_ideas = {
 	}
 	indirect_rule = {
 		years_of_nationalism = -10
-		reform_progress_growth = 0.1
+		reform_progress_growth = 0.3
 	}
 	ecumenism = {
 		global_tax_modifier = 0.2
@@ -1533,6 +1535,8 @@ humanist_ideas = {
 	}
 	cultural_ties = {
 		num_accepted_cultures = 3
+		promote_culture_cost = -0.5
+		manpower_in_accepted_culture_provinces = 0.1
 	}
 	humanist_tolerance = {
 		global_unrest = -2
@@ -1617,8 +1621,8 @@ influence_ideas = {
 	marcher_lords = {
 		vassal_forcelimit_bonus = 1
 		vassal_naval_forcelimit_bonus = 0.1
-		land_forcelimit_modifier = 0.15
-		naval_forcelimit_modifier = 0.05
+		land_forcelimit_modifier = 0.2
+		naval_forcelimit_modifier = 0.1
 	}
 
 	ai_will_do = {

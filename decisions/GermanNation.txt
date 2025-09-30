@@ -153,13 +153,6 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
-			custom_trigger_tooltip = {
-				tooltip = hre_form_germany_tt
-				OR = {
-					is_emperor = no
-					has_country_flag = can_form_germany_as_hre
-				}
-			}
 			owns_core_province = 50	# Berlin
 			owns_core_province = 57	# Brunswick
 			owns_core_province = 65	# M�nchen

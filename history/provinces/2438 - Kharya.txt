@@ -12,7 +12,7 @@ native_size = 4
 native_ferocity = 1
 native_hostileness = 3
 
-1444.11.12 = {
+1444.11.11 = {
     owner = MNG
     controller = MNG
     add_core = MNG

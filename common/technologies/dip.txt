@@ -190,7 +190,7 @@ technology = { #Man of War
 
 	naval_morale			=	0.4
 	may_slander_merchants = yes
-
+	num_accepted_cultures = 1
 	naval_battery = yes
 	naval_engagement_width = 15
 	
@@ -216,8 +216,6 @@ technology = { #The Galleass
 	}
 	
 	tradecompany = yes
-	num_accepted_cultures = 1
-
 	
 	enable = galleass
 }
@@ -246,6 +244,7 @@ technology = { #Development of Maritime Law
 		feudalism = 0.5
 	}
 	
+	num_accepted_cultures = 1
 	trade_efficiency 		= 	0.02
 	trade_range				=	20
 
@@ -278,7 +277,7 @@ technology = { #Line of Battle
 	enable = galiot
 	naval_morale			=	0.5
 	may_sow_discontent = yes
-	
+	drydock = yes 
 	naval_engagement_width = 10
 
 	
@@ -293,10 +292,8 @@ technology = { #The War Galleon
 	
 	naval_maintenance		= 	0.1	
 	range					=	50
-	
-	drydock = yes 
-	
-	
+		
+	stock_exchange = yes
 	enable = wargalleon
 	enable = frigate
 }
@@ -307,7 +304,7 @@ technology = { #Naval Professionalization
 	expects_institution = {
 		feudalism = 0.5
 	}
-
+	grand_shipyard = yes 
 	trade_efficiency 		= 	0.02
 	trade_range				=	20
 	num_accepted_cultures = 1
@@ -337,8 +334,6 @@ technology = { #Limes
 	naval_maintenance		= 	0.1
 	
 
-	stock_exchange = yes
-
 	reduced_naval_attrition = yes
 	enable = twodecker
 	enable = trabakul
@@ -367,9 +362,8 @@ technology = { #The Archipelago Frigate
 		feudalism = 0.5
 	}
 	
-	grand_shipyard = yes 
 
-	
+	num_accepted_cultures = 1
 	trade_efficiency 		= 	0.02
 	trade_range				=	20
 	enable = archipelago_frigate
@@ -400,7 +394,6 @@ technology = { #The Eastindiaman
 	
 	range					=	200
 	global_colonial_growth  = 	30
-	num_accepted_cultures = 1
 	
 	enable = eastindiaman
 	enable = great_frigate
@@ -462,7 +455,6 @@ technology = { #Superior Ship Design
 	
 	naval_morale			=	0.5
 	naval_maintenance		= 	0.1	
-	num_accepted_cultures = 1
 }
 
 technology = { #The Gold Standard

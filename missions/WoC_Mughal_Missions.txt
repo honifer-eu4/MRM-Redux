@@ -95,11 +95,6 @@ WoC_mughals_1 = {
 			
 			custom_tooltip = " "
 			
-			add_years_of_trade_income = {
-				years = 2
-				custom_tooltip = BYZ_add_2_years_of_trade_income
-			}
-			
 			custom_tooltip = " "
 			
 			give_claims = { area = khandesh_area }
@@ -504,88 +499,6 @@ WoC_mughals_1 = {
 			}
 		}
 	}
-	
-	MUG_land_assessment = {
-		icon = mission_general_land_assessment
-		required_missions = { }
-		position = 12
-		provinces_to_highlight = {
-		}
-		trigger = {
-			crown_land_share = 50
-			reform_level = 4
-		}
-		effect = {
-			if = {
-				limit = {
-					has_dlc = "Mandate of Heaven"
-				}
-				custom_tooltip = MUG_every_state_gains_20_prosperity
-				hidden_effect = {
-					every_owned_province = {
-						limit = {
-							is_state = yes
-							NOT = { has_province_flag = MUG_received_prosperity }
-						}
-						add_prosperity = 20
-						area = {
-							set_province_flag = MUG_received_prosperity
-						}
-					}
-					every_owned_province = { clr_province_flag = MUG_received_prosperity }
-				}
-				
-				custom_tooltip = " "
-			}
-			
-			set_country_flag = MUG_seize_land_gives_absolutism
-			custom_tooltip = MUG_seizing_land_will_give_absolutism
-			
-			custom_tooltip = " "
-			
-			custom_tooltip = MUG_lose_10_autonomy
-			hidden_effect = {
-				if = {
-					limit = {
-						stability = 3
-					}
-					every_owned_province = {
-						add_local_autonomy = -15
-					}
-				}
-				else = {
-					every_owned_province = {
-						add_local_autonomy = -10
-					}
-				}
-			}
-		}
-	}
-	
-	MUG_subahs = {
-		icon = mission_gharbianss
-		required_missions = { MUG_land_assessment MUG_dahsala }
-		position = 14
-		provinces_to_highlight = {
-			owned_by = ROOT
-			local_autonomy_above_min = 15
-		}
-		trigger = {
-			num_of_states = 40
-			OR = {
-				num_of_cities = 200
-				NOT = { average_autonomy_above_min = 15 }
-			}
-		}
-		effect = {
-			custom_tooltip = MUG_unlock_privilege_subahs
-			set_country_flag = MUG_unlock_privilege_subahs_flag
-			
-			custom_tooltip = " "
-			
-			add_stability_or_adm_power = yes
-		}
-	}
 }
 
 WoC_mughals_2 = {
@@ -736,7 +649,7 @@ WoC_mughals_2 = {
 			
 			create_general_with_pips = {
 				tradition = 40
-				add_fire = 2
+				add_fire = 1
 				add_siege = 1
 			}
 			
@@ -779,16 +692,6 @@ WoC_mughals_2 = {
 				}
 			}
 			custom_tooltip = MUG_syncretism_1_2
-				
-			custom_tooltip = " "
-				
-			define_advisor = {
-				type = theologian
-				skill = 3
-				culture = ROOT
-				religion = hinduism
-				cost_multiplier = 0.4
-			}
 		}
 	}
 	
@@ -1094,38 +997,6 @@ WoC_mughals_2 = {
 			}
 		}
 	}
-	
-	MUG_dahsala = {
-		icon = mission_dominate_trade_in_bengal
-		required_missions = { }
-		position = 13
-		provinces_to_highlight = {
-			owned_by = ROOT 
-			NOT = { has_courthouse_building_trigger = yes }
-		}
-		trigger = {
-			num_of_owned_provinces_with = {
-				has_courthouse_building_trigger = yes
-				value = 15
-			}
-			OR = {
-				has_adm_advisor_3 = yes
-				treasurer = 1
-			}
-		}
-		effect = {
-			custom_tooltip = MUG_treasurer_upgrade
-			set_country_flag = MUG_treasurer_upgrade_flag
-			
-			custom_tooltip = " "
-			
-			add_years_of_income = 1
-			
-			custom_tooltip = " "
-			
-			change_government_reform_progress = 50
-		}
-	}
 }
 
 WoC_mughals_3 = {
@@ -1363,11 +1234,6 @@ WoC_mughals_3 = {
 						}
 					}
 				}
-			}
-			
-			add_country_modifier = {
-				name = MUG_social_mobility
-				duration = 7300
 			}
 		}
 	}
@@ -1673,10 +1539,6 @@ WoC_mughals_4 = {
 			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = MUG_east_1
-				duration = -1
-			}
 			
 			give_claims = { area = orissa_area }
 			give_claims = { area = garjat_area }
@@ -1791,18 +1653,7 @@ WoC_mughals_4 = {
 				value = 12
 			}
 		}
-		effect = {
-			hidden_effect = {
-				remove_country_modifier = MUG_east_1
-				add_country_modifier = {
-					name = MUG_east_2
-					duration = -1
-				}
-			}
-			custom_tooltip = MUG_east_1_2
-			
-			custom_tooltip = " "
-			
+		effect = {					
 			give_claims = { area = south_carnatic_area }
 			give_claims = { area = lanka_area }
 			give_claims = { area = south_lanka_area }
@@ -2103,17 +1954,7 @@ WoC_mughals_4_2 = {
 				}
 			}
 		}
-		effect = {
-			define_general = {
-				name = "Man Singh"
-				shock = 5
-				fire = 4
-				manuever = 3
-				siege = 1
-			}
-			
-			custom_tooltip = " "
-			
+		effect = {		
 			custom_tooltip = MUG_distribute_10_base_manpower
 			hidden_effect = {
 				random_owned_province = { limit = { culture = rajput } add_base_manpower = 1 }
@@ -2373,7 +2214,7 @@ WoC_mughals_5 = {
 			custom_tooltip = " "
 			
 			create_general = { 
-				tradition = 80
+				tradition = 40
 				add_fire = 1
 				add_siege = 1
 			}
@@ -2511,10 +2352,7 @@ WoC_mughals_5 = {
 		}
 		trigger = {
 			num_of_battles = { amount = 80 }
-			OR = {
-				num_of_cavalry = 20
-				cavalry_fraction = 0.25
-			}
+			num_of_cavalry = 200
 		}
 		effect = {
 			country_event_with_option_insight = {
@@ -2590,14 +2428,6 @@ WoC_mughals_5 = {
 			}
 			
 			change_innovativeness = 3
-			
-			custom_tooltip = " "
-			
-			define_advisor = {
-				type = fortification_expert 
-				skill = 3
-				cost_multiplier = 0.33
-			}
 		}
 	}
 }

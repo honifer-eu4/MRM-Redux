@@ -1014,4 +1014,150 @@ country_decisions = {
 			factor = 1
 		}
 	}
+
+	form_greater_austria = {
+		major = yes
+		potential = {
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = habsburg_empire_proclaimed }
+			tag = HAB
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = slovakia_area
+				area = transdanubia_area
+				area = malopolska_area 
+				area = silesia_area
+				area = central_poland_area
+				area = venetia_area
+				area = po_valley_area
+				area = carinthia_area
+				area = romandie_area
+				area = switzerland_area
+				area = erzgebirge_area
+				area = bohemia_area
+				area = moravia_area
+				area = austria_proper_area
+				area = tirol_area
+				area = inner_austria_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			AND = {
+				austria_proper_area = {
+					type = all
+					owned_by = ROOT
+					is_core = root 
+				}
+				tirol_area = {
+					type = all
+					owned_by = ROOT
+					is_core = root 
+				}
+				inner_austria_area = {
+					type = all
+					owned_by = ROOT
+					is_core = root 
+				}
+				erzgebirge_area = {
+					type = all
+					owned_by = ROOT
+					is_core = root 
+				}
+				bohemia_area = {
+					type = all
+					owned_by = ROOT
+					is_core = root 
+				}
+				moravia_area = {
+					type = all
+					owned_by = ROOT
+					is_core = root 
+				}
+				OR = {
+					AND = {
+						slovakia_area = {
+							type = all
+							owned_by = root
+							is_core = root 
+						}
+						transdanubia_area = {
+							type = all
+							owned_by = root
+							is_core = root 
+						}
+						malopolska_area = {
+							type = all
+							owned_by = root
+							is_core = root 
+						}
+						silesia_area = {
+							type = all
+							owned_by = root
+							is_core = root 
+						}
+						central_poland_area = {
+							type = all
+							owned_by = root
+							is_core = root 
+						}
+					}
+					AND = {
+						switzerland_area = {
+							type = all
+							owned_by = root
+							is_core = root 
+						}
+						romandie_area = {
+							type = all
+							owned_by = root
+							is_core = root 
+						}
+						venetia_area = {
+							type = all
+							owned_by = root
+							is_core = root 
+						}
+						carinthia_area = {
+							type = all
+							owned_by = root
+							is_core = root 
+						}
+						po_valley_area = {
+							type = all
+							owned_by = root
+							is_core = root 
+						}
+					}
+				}
+			}
+		} 
+		effect = {
+			add_prestige = 25
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+					is_part_of_hre = no
+				}
+				set_government_rank = 3
+			}
+			set_country_flag = habsburg_empire_proclaimed
+			add_government_reform = habsburg_empire
+        	override_country_name = HAB_Greater	
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+		}
+	}
 }
