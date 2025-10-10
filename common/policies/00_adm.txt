@@ -617,8 +617,7 @@ enlightened_aristocracy = {
 		full_idea_group = aristocracy_ideas
 	}	
 	
-	production_efficiency = 0.15
-	religious_unity = 0.2
+	cavalry_cost = -0.15
 	
 	effect = {}
 	removed_effect = {}

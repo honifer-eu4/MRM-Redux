@@ -298,10 +298,10 @@ innovativeness_ideas = {
 
 	patron_of_art  = {
 		prestige_decay = -0.01
-		yearly_innovativeness = 1.5
+		yearly_innovativeness = 0.5
 	}
 	empiricism = {
-		innovativeness_gain = 1
+		innovativeness_gain = 0.5
 	}
 	scientific_revolution = {
 		technology_cost = -0.1
@@ -491,7 +491,7 @@ spy_ideas = {
 	}
 	
 	privateers = {
-		mercantilism_cost = -0.5
+		mercantilism_cost = -0.35
 		global_trade_power = 0.15
 	}
 	

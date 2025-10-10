@@ -554,7 +554,7 @@ estate_burghers_free_enterprise = {
 		modifier = {
 			max_absolutism = 8
 			trade_efficiency = 0.1
-			development_cost = -0.05
+			development_cost = -0.025
 		}
 	}
 	conditional_modifier = {

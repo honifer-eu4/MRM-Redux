@@ -5138,7 +5138,7 @@ bur_pope_is_hated = {
 }
 
 bur_lowlands_secured_mod = {
-	local_autonomy = -0.1
+	local_autonomy = -0.05
 	local_unrest = -2
 }
 
@@ -9048,6 +9048,9 @@ chi_imperial_center_of_commerce_modifier = {
 #France 
 
 fra_reintegration_of_burgundian_lands_modifier = { 
+	country_admin_power = 1
+}
+bur_integration_of_french_lands_modifier = { 
 	country_admin_power = 1
 }
 fra_charlemagne_legacy_modifier = {

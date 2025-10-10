@@ -43,9 +43,9 @@
  bur_join_the_empire_tooltip_2:0 "All owned provinces in Europe will become part of the @HLR Holy Roman Empire."
  bur_form_nation_tt:0 "If @BUR Burgundy formed another nation, it must meet the above requirements as well."
  redux_bur_nobles_tt:0 "The §Y'Strong Duchies'§! Nobility privilege will now grant §G+1 Nobility Max Privileges§!.\n\nThe §Y'Nobility Integration Policy'§! Nobility privilege will no longer have a Liberty Desire malus."
- bur_league_tt:0 "We will gain access to the §Y'Support From Disloyal Appanages'§! triggered modifier while at war with France, granting §G+10 Land Force Limit§! and §G+10,000 Manpower§!."
- bur_league_tt_2:0 "@BUR Burgundy will gain access to the §Y'Support From Disloyal Appanages'§! triggered modifier while at war with us, granting §G+10 Land Force Limit§! and §G+10,000 Manpower§!. We will be able to disable this modifier by completing the §Y'Movement of Centralization'§! mission."
- bur_league_tt_3:0 "@LOT Lotharingia will gain access to the §Y'Support From Disloyal Appanages'§! triggered modifier while at war with us, granting §G+10 Land Force Limit§! and §G+10,000 Manpower§!. We will be able to disable this modifier by completing the §Y'Movement of Centralization'§! mission."
+ bur_league_tt:0 "We will gain access to the §Y'Support From Disloyal Appanages'§! triggered modifier while at war with France, granting §G+15% Manpower Recovery Speed§!."
+ bur_league_tt_2:0 "@BUR Burgundy will gain access to the §Y'Support From Disloyal Appanages'§! triggered modifier while at war with us, granting §G+15% Manpower Recovery Speed§!. We will be able to disable this modifier by completing the §Y'Movement of Centralization'§! mission."
+ bur_league_tt_3:0 "@LOT Lotharingia will gain access to the §Y'Support From Disloyal Appanages'§! triggered modifier while at war with us, granting §G+15% Manpower Recovery Speed§!. We will be able to disable this modifier by completing the §Y'Movement of Centralization'§! mission."
  bur_great_trial_tt:0 "§RThis modifier will expire upon the conclusion of our war with @FRA France!§!"
  bur_marie_tt:0 "This event will give us the option to get §YMarie de Bourgogne§! (4/5/3) as our heir."
 

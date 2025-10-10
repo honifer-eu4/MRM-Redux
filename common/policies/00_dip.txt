@@ -1092,7 +1092,7 @@ the_wooden_wall = {
 }
 
 streamlined_galley_production = {
-	monarch_power = DIP
+	monarch_power = MIL
 	potential = {
 		has_idea_group = maritime_ideas
 		has_idea_group = quantity_ideas
@@ -1103,8 +1103,7 @@ streamlined_galley_production = {
 		full_idea_group = quantity_ideas
 	}
 	
-	leader_cost = -0.075
-	movement_speed = 0.075
+	shock_damage_received = -0.125
 
 	ai_will_do = {
 		factor = 1

@@ -931,7 +931,7 @@ emp_burgundy_3 = {
 			}
 			add_country_modifier = { 
 				name = "burgundy_sovereignty_mod"
-				duration = 9125
+				duration = 5475
 			}
 		}
 	}
@@ -1643,18 +1643,26 @@ emp_burgundy_4 = {
 		required_missions = { emp_bur_league_of_public_weal emp_bur_sovereignty }
 		trigger = {
 			OR = {
-				war_with = FRA
-				NOT = { exists = FRA }
+				defensive_war_with = FRA
+				has_won_war_against = {
+					who = FRA
+				}
 			}
 		}
 		effect = {
 			if = {
-				limit = { exists = FRA }
+				limit = { defensive_war_with = FRA }
 				add_country_modifier = {
 					name = "bur_great_trial_mod"
 					duration = -1 
 				}
 				custom_tooltip = bur_great_trial_tt
+			}
+			else = {
+				add_prestige_or_monarch_power = {
+					amount = 25
+				}
+				add_war_exhaustion = -2
 			}
 		}
 	}
@@ -1671,14 +1679,9 @@ emp_burgundy_4 = {
 			}
 		}
 		effect = {
-			add_treasury = 500
-			add_manpower = 10
-			add_adm_power = 100
-			add_dip_power = 100
-			add_mil_power = 100
-			add_country_modifier = {
-				name = "bur_glory_mod"
-				duration = 3650
+			add_country_modifier = { 
+				name = bur_integration_of_french_lands_modifier
+				duration = 7300
 			}
 		}
 	}

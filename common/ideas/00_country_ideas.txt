@@ -2291,11 +2291,13 @@ NAP_ideas = {
 	
 	free = yes
 	
+	expanded_arsenale = {
+		global_ship_cost = -0.15
+		global_ship_recruit_speed = -0.25
+		galley_power = 0.1
+	}
 	consolidate_the_royal_domain = {
 		global_trade_goods_size_modifier = 0.1
-	}
-	academia_pontaniana = {
-		technology_cost = -0.05
 	}
 	encouraged_city_living = {
 		development_cost = -0.1 #Often among the largest cities of Europe
@@ -2303,10 +2305,8 @@ NAP_ideas = {
 	crush_the_barons = {
 		global_autonomy = -0.05
 	}
-	expanded_arsenale = {
-		global_ship_cost = -0.15
-		global_ship_recruit_speed = -0.25
-		galley_power = 0.1
+	academia_pontaniana = {
+		technology_cost = -0.05
 	}
 	city_of_artists = {
 		prestige = 1
