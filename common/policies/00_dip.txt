@@ -1091,30 +1091,6 @@ the_wooden_wall = {
 	}
 }
 
-streamlined_galley_production = {
-	monarch_power = MIL
-	potential = {
-		has_idea_group = maritime_ideas
-		has_idea_group = quantity_ideas
-	}
-	
-	allow = {
-		full_idea_group = maritime_ideas
-		full_idea_group = quantity_ideas
-	}
-	
-	shock_damage_received = -0.125
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { num_of_galley = 10 }
-		}		
-	}	
-
-}
-
 protected_shipping_lanes = {
 	monarch_power = DIP
 	potential = {
